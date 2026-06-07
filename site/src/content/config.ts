@@ -21,6 +21,8 @@ const buildings = defineCollection({
     tags: z.array(z.string()).default([]),
     publishedAt: z.coerce.date(),
     heroImage: z.string().optional(),
+    heroImageCredit: z.string().optional(), // 「作者 / ライセンス」
+    heroImageLink: z.string().optional(), // Wikimedia Commonsのファイルページ
     summary: z.string().optional(),
     // 事実確認の状態。false の記事には「未検証」バッジを出す。
     verified: z.boolean().default(false),

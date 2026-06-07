@@ -8,14 +8,17 @@ interface Props {
   heightM?: number;
   summary?: string;
   verified: boolean;
+  heroImage?: string;
 }
-const { url, title, buildingType, area, completedYear, heightM, summary, verified } = Astro.props;
+const { url, title, buildingType, area, completedYear, heightM, summary, verified, heroImage } = Astro.props;
 const typeLabel = buildingType === 'office' ? 'オフィス' : 'マンション';
 const metaBits = [area, completedYear ? `${completedYear}年竣工` : null, heightM ? `高さ${heightM}m` : null].filter(Boolean);
 ---
 <article class="card">
   <a href={url}>
-    <div class="thumb">{title.slice(0, 1)}</div>
+    {heroImage
+      ? <div class="thumb thumb-img"><img src={heroImage} alt={`${title}の外観`} loading="lazy" /></div>
+      : <div class="thumb">{title.slice(0, 1)}</div>}
     <div class="body">
       <div class="taglist">
         <span class={`badge ${buildingType}`}>{typeLabel}</span>

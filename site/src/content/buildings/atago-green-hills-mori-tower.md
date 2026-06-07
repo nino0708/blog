@@ -10,6 +10,9 @@ developer: "森ビル"
 tags: ["港区", "超高層ビル", "再開発", "森ビル", "愛宕"]
 publishedAt: 2026-06-07
 summary: "愛宕山のふもと、緑と一体で計画された複合再開発のタワー。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Atago_Green_Hills_-_Mori_tower.JPG"
+heroImageCredit: "ishizima http://picasaweb.google.com/ishizima / CC BY 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Atago_Green_Hills_-_Mori_tower.JPG"
 verified: true
 sources: ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
 ---

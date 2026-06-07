@@ -4,6 +4,7 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildPrompt, buildVerifyPrompt, buildFixSuffix } from './prompts.mjs';
+import { fetchCommonsImage } from './commons.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -16,6 +17,7 @@ const cfg = {
   model: process.env.MODEL || 'claude-sonnet-4-6',
   anthropicKey: process.env.ANTHROPIC_API_KEY,
   githubToken: process.env.GITHUB_TOKEN,
+  buildProject: process.env.BUILD_PROJECT_NAME,
 };
 
 const LOCAL = process.argv.includes('--local');
@@ -58,6 +60,9 @@ function buildFrontmatter(b, body) {
   lines.push(`tags: [${(b.tags || []).map(yamlString).join(', ')}]`);
   lines.push(`publishedAt: ${today}`);
   if (b.summary) lines.push(`summary: ${yamlString(b.summary)}`);
+  if (b.heroImage) lines.push(`heroImage: ${yamlString(b.heroImage)}`);
+  if (b.heroImageCredit) lines.push(`heroImageCredit: ${yamlString(b.heroImageCredit)}`);
+  if (b.heroImageLink) lines.push(`heroImageLink: ${yamlString(b.heroImageLink)}`);
   lines.push(`verified: ${b.verified ? 'true' : 'false'}`);
   lines.push(`sources: [${(b.sources || []).map(yamlString).join(', ')}]`);
   lines.push('---');
@@ -145,6 +150,15 @@ async function commitToGithub(octokit, slug, content) {
   return path;
 }
 
+// コミット後に CodeBuild を起動してビルド&デプロイさせる（Webhook不使用）。
+async function triggerBuild() {
+  if (!cfg.buildProject) return;
+  const { CodeBuildClient, StartBuildCommand } = await import('@aws-sdk/client-codebuild');
+  const cb = new CodeBuildClient({});
+  await cb.send(new StartBuildCommand({ projectName: cfg.buildProject, sourceVersion: cfg.branch }));
+  console.log(`CodeBuild起動: ${cfg.buildProject}`);
+}
+
 export async function handler() {
   await resolveSecrets();
   const seed = loadSeed();
@@ -179,6 +193,22 @@ export async function handler() {
     return { status: 'rejected', slug: next.slug, issues };
   }
   console.log(`ファクトチェック合格（試行${attempts}回）`);
+
+  // 建物画像(Wikimedia Commons, CCライセンス)を取得。出典・作者・ライセンスを必ず付与。
+  try {
+    const img = await fetchCommonsImage(next.title);
+    if (img?.url) {
+      next.heroImage = img.url;
+      next.heroImageCredit = [img.author, img.license].filter(Boolean).join(' / ');
+      next.heroImageLink = img.source;
+      console.log(`画像取得: ${next.heroImageCredit}`);
+    } else {
+      console.log('画像が見つからず（画像なしで公開）');
+    }
+  } catch (e) {
+    console.log(`画像取得スキップ: ${e.message}`);
+  }
+
   const content = buildFrontmatter(next, body);
 
   if (LOCAL) {
@@ -190,7 +220,8 @@ export async function handler() {
   }
 
   const path = await commitToGithub(octokit, next.slug, content);
-  console.log(`コミット完了: ${path}（CodeBuildのwebhookでデプロイされます）`);
+  console.log(`コミット完了: ${path}`);
+  await triggerBuild();
   return { status: 'committed', slug: next.slug, path };
 }
 

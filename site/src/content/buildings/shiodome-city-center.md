@@ -9,6 +9,9 @@ heightM: 216
 tags: ["港区", "超高層ビル", "汐留", "再開発"]
 publishedAt: 2026-06-07
 summary: "汐留シオサイトの一角を占める、低層に旧新橋停車場を擁する高層オフィス。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Shiodome_City_Center_underground.jpg"
+heroImageCredit: "Yuta Aoki / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shiodome_City_Center_underground.jpg"
 verified: true
 sources: ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
 ---

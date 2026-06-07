@@ -94,16 +94,12 @@ Resources:
           - { Name: SITE_BUCKET, Value: !Ref SiteBucketName }
           - { Name: DISTRIBUTION_ID, Value: !Ref DistributionId }
           - { Name: SITE_URL, Value: !Ref SiteUrl }
+      SourceVersion: !Ref GitHubBranch
       Source:
         Type: GITHUB
         Location: !Sub 'https://github.com/${GitHubOwner}/${GitHubRepo}.git'
         BuildSpec: !Ref BuildSpecPath
-      Triggers:
-        Webhook: true
-        FilterGroups:
-          - - { Type: EVENT, Pattern: PUSH }
-            - { Type: HEAD_REF, Pattern: !Sub '^refs/heads/${GitHubBranch}$' }
-            - { Type: FILE_PATH, Pattern: '^site/' }
+      # Webhookは使わず、記事生成Lambdaがコミット後に StartBuild で起動する
 
   # ---------- Lambda (記事自動生成) ----------
   GeneratorRole:
@@ -125,6 +121,13 @@ Resources:
               - Effect: Allow
                 Action: secretsmanager:GetSecretValue
                 Resource: [!Ref AnthropicSecretArn, !Ref GitHubTokenSecretArn]
+        - PolicyName: start-build
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: codebuild:StartBuild
+                Resource: !GetAtt BuildProject.Arn
 
   GeneratorFunction:
     Type: AWS::Lambda::Function
@@ -147,6 +150,7 @@ Resources:
           MODEL: !Ref Model
           ANTHROPIC_SECRET_ARN: !Ref AnthropicSecretArn
           GITHUB_TOKEN_SECRET_ARN: !Ref GitHubTokenSecretArn
+          BUILD_PROJECT_NAME: !Ref BuildProject
 
   ScheduleRule:
     Type: AWS::Events::Rule

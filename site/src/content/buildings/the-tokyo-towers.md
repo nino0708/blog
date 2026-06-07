@@ -10,6 +10,9 @@ developer: 住友不動産ほか
 tags: ["中央区", "タワーマンション", "勝どき", "ツインタワー"]
 publishedAt: 2026-05-28
 summary: 勝どきのウォーターフロントに立つ、ツインタワー構成の大規模タワーマンション。
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/The_Towers_Daiba.JPG/1280px-The_Towers_Daiba.JPG"
+heroImageCredit: "Kakidai / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:The_Towers_Daiba.JPG"
 verified: false
 sources:
   - "（要確認）公式パンフレット・公開資料で竣工年・高さ・戸数を裏取りすること"

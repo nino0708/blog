@@ -27,6 +27,7 @@ const posts = (await getCollection('buildings')).sort(
         heightM={post.data.heightM}
         summary={post.data.summary}
         verified={post.data.verified}
+        heroImage={post.data.heroImage}
       />
     ))}
   </section>

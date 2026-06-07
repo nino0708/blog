@@ -7,11 +7,13 @@
 
 ```
 ①コンテンツ自動生成
-  EventBridge(週次) ─▶ Lambda(generator)
-                         ├─ seed(buildings.json)の「事実」を読む
+  EventBridge(毎日6:30 JST) ─▶ Lambda(generator)
+                         ├─ seed(buildings.json)の「事実」を読む(verified:trueのみ)
                          ├─ Claude APIで紹介文(本文)だけ生成 ※事実は創作させない
-                         └─ GitHubに Markdown をコミット
-                                     │ push (webhook)
+                         ├─ ファクトチェック(別LLM) 合格時のみ
+                         ├─ GitHub(nino0708/blog)に Markdown をコミット
+                         └─ CodeBuild を StartBuild で起動
+                                     │
 ②ビルド & デプロイ                   ▼
   CodeBuild ─ Astro build ─▶ S3 sync ─▶ CloudFront invalidation
                                      │

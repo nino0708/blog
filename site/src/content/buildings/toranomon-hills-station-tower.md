@@ -10,6 +10,9 @@ developer: "森ビル"
 tags: ["港区", "超高層ビル", "再開発", "森ビル", "虎ノ門", "駅直結"]
 publishedAt: 2026-06-07
 summary: "日比谷線虎ノ門ヒルズ駅と一体開発された、虎ノ門ヒルズの最新タワー。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Toranomon_Hills_Station_Tower_1.jpg/1280px-Toranomon_Hills_Station_Tower_1.jpg"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Toranomon_Hills_Station_Tower_1.jpg"
 verified: true
 sources: ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
 ---

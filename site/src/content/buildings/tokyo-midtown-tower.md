@@ -10,6 +10,9 @@ developer: "三井不動産"
 tags: ["港区", "超高層ビル", "複合開発", "赤坂"]
 publishedAt: 2026-06-07
 summary: "赤坂・檜町に誕生した、緑とアートを核とする大規模複合開発のシンボルタワー。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Midtown_Tower_from_Tokyo_Midtown.jpg/1280px-Midtown_Tower_from_Tokyo_Midtown.jpg"
+heroImageCredit: "itoshin87 / Public domain"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Midtown_Tower_from_Tokyo_Midtown.jpg"
 verified: true
 sources: ["三井不動産 公開情報（最終確認推奨）"]
 ---

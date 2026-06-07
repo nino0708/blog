@@ -60,6 +60,19 @@ const specs = [
     <h1>{d.title}</h1>
     {d.summary && <p class="lead">{d.summary}</p>}
 
+    {d.heroImage && (
+      <figure class="hero-figure">
+        <img src={d.heroImage} alt={`${d.title}の外観`} loading="lazy" />
+        {d.heroImageCredit && (
+          <figcaption>
+            写真: {d.heroImageLink
+              ? <a href={d.heroImageLink} target="_blank" rel="nofollow noopener">{d.heroImageCredit}</a>
+              : d.heroImageCredit} （Wikimedia Commons）
+          </figcaption>
+        )}
+      </figure>
+    )}
+
     <dl class="spec">
       {specs.map(([k, v]) => (
         <div><dt>{k}</dt><dd>{v}</dd></div>

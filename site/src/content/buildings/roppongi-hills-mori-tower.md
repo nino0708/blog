@@ -10,6 +10,9 @@ developer: "森ビル"
 tags: ["港区", "超高層ビル", "再開発", "森ビル", "六本木"]
 publishedAt: 2026-06-07
 summary: "『文化都心』を掲げた六本木ヒルズの中核。東京の大規模再開発の先駆け。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio.jpg/1280px-%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio.jpg"
+heroImageCredit: "kanesue / CC BY 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio.jpg"
 verified: true
 sources: ["森ビル 公開情報（要最終確認）"]
 ---
