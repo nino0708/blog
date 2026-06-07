@@ -1,0 +1,14 @@
+{
+  "name": "tokyo-building-blog-generator",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "東京の建物記事をseedデータ＋Claudeで生成し、GitHubにMarkdownをコミットするLambda",
+  "main": "index.mjs",
+  "scripts": {
+    "local": "node index.mjs --local"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "@octokit/rest": "^21.0.0"
+  }
+}

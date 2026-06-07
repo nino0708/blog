@@ -1,0 +1,29 @@
+---
+interface Props {
+  url: string;
+  title: string;
+  buildingType: 'office' | 'residence';
+  area: string;
+  completedYear?: number;
+  heightM?: number;
+  summary?: string;
+  verified: boolean;
+}
+const { url, title, buildingType, area, completedYear, heightM, summary, verified } = Astro.props;
+const typeLabel = buildingType === 'office' ? 'オフィス' : 'マンション';
+const metaBits = [area, completedYear ? `${completedYear}年竣工` : null, heightM ? `高さ${heightM}m` : null].filter(Boolean);
+---
+<article class="card">
+  <a href={url}>
+    <div class="thumb">{title.slice(0, 1)}</div>
+    <div class="body">
+      <div class="taglist">
+        <span class={`badge ${buildingType}`}>{typeLabel}</span>
+        {!verified && <span class="badge unverified">未検証</span>}
+      </div>
+      <h3>{title}</h3>
+      <div class="meta">{metaBits.join(' ・ ')}</div>
+      {summary && <p class="summary">{summary}</p>}
+    </div>
+  </a>
+</article>

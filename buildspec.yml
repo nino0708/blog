@@ -1,0 +1,31 @@
+version: 0.2
+
+# CodeBuild: Astroをビルドして S3 へ同期し CloudFront を無効化する。
+# 環境変数 SITE_BUCKET / DISTRIBUTION_ID / SITE_URL は 02-pipeline スタックが注入。
+# 前提: このリポジトリ(nino0708/blog)のルートに site/ generator/ infra/ がある構成。
+env:
+  variables:
+    SITE_SUBDIR: "site"
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - cd "$SITE_SUBDIR"
+      - npm ci || npm install
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      # HTML 以外（ハッシュ付きアセット）は長期キャッシュ
+      - aws s3 sync ./dist "s3://$SITE_BUCKET" --delete --exclude "*.html" --exclude "*.xml" --cache-control "public,max-age=31536000,immutable"
+      # HTML / XML は短めのキャッシュ
+      - aws s3 sync ./dist "s3://$SITE_BUCKET" --delete --exclude "*" --include "*.html" --include "*.xml" --include "*.txt" --cache-control "public,max-age=300"
+      - aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --paths "/*"
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: site/dist

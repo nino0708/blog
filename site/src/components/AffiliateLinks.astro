@@ -1,0 +1,54 @@
+---
+import {
+  affiliateEnabled,
+  rakutenTravelSearch,
+  rakutenBooksSearch,
+  amazonSearch,
+} from '../config/affiliate';
+
+interface Props {
+  title: string;
+  area: string;
+  buildingType: 'office' | 'residence';
+}
+const { title, area, buildingType } = Astro.props;
+
+// 建物の文脈に沿った関連リンク（検索ベースなのでリンク切れに強い）
+const links = [
+  {
+    label: `${area}周辺のホテルを探す`,
+    note: '楽天トラベル',
+    url: rakutenTravelSearch(area),
+  },
+  {
+    label: '東京の建築・再開発の関連書籍',
+    note: '楽天ブックス',
+    url: rakutenBooksSearch(`東京 建築 ${buildingType === 'residence' ? 'マンション' : '超高層ビル'}`),
+  },
+  {
+    label: `「${title}」を調べる`,
+    note: 'Amazon',
+    url: amazonSearch(`${title} 東京`),
+  },
+];
+---
+<section class="affiliate" aria-label="関連リンク（広告）">
+  <div class="affiliate-head">
+    <h2>関連リンク</h2>
+    {affiliateEnabled && <span class="pr-badge">PR</span>}
+  </div>
+  {affiliateEnabled && (
+    <p class="affiliate-disclosure">
+      ※ 以下のリンクには広告（アフィリエイト）が含まれます。リンク先での購入・予約により当サイトが収益を得る場合があります。
+    </p>
+  )}
+  <ul class="affiliate-list">
+    {links.map((l) => (
+      <li>
+        <a href={l.url} target="_blank" rel="nofollow sponsored noopener">
+          {l.label}<span class="aff-note">{l.note} ↗</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>

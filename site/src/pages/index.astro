@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BuildingCard from '../components/BuildingCard.astro';
+
+const posts = (await getCollection('buildings')).sort(
+  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
+);
+---
+<BaseLayout title="Tokyo Towers Journal">
+  <section class="hero">
+    <h1>東京の空をつくる、巨大建築の記録。</h1>
+    <p>
+      港区・千代田区・中央区を中心に、東京の大型オフィスビルとタワーマンションを
+      一棟ずつ巡って紹介する趣味のブログです。竣工年・高さ・開発の背景を、公開情報をもとに記録しています。
+    </p>
+  </section>
+
+  <section class="grid">
+    {posts.map((post) => (
+      <BuildingCard
+        url={`/buildings/${post.slug}/`}
+        title={post.data.title}
+        buildingType={post.data.buildingType}
+        area={post.data.area}
+        completedYear={post.data.completedYear}
+        heightM={post.data.heightM}
+        summary={post.data.summary}
+        verified={post.data.verified}
+      />
+    ))}
+  </section>
+</BaseLayout>

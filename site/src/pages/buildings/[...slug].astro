@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AffiliateLinks from '../../components/AffiliateLinks.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('buildings');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const d = post.data;
+const typeLabel = d.buildingType === 'office' ? 'オフィスビル' : 'マンション';
+
+const pageUrl = new URL(`/buildings/${post.slug}/`, Astro.site ?? 'https://example.com').toString();
+const metaDescription =
+  d.summary ?? `${d.title}（${d.area}${d.completedYear ? `・${d.completedYear}年竣工` : ''}）の建築・再開発の記録。`;
+
+// 構造化データ: 記事(Article) + 主題の建物(該当する建築タイプ)
+const buildingLd: Record<string, unknown> = {
+  '@type': d.buildingType === 'residence' ? 'ApartmentComplex' : 'LandmarksOrHistoricalBuildings',
+  name: d.title,
+  address: { '@type': 'PostalAddress', addressLocality: d.area, addressRegion: '東京都', addressCountry: 'JP' },
+};
+if (d.address) (buildingLd.address as Record<string, unknown>).streetAddress = d.address;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: d.title,
+  description: metaDescription,
+  inLanguage: 'ja',
+  datePublished: d.publishedAt.toISOString(),
+  mainEntityOfPage: pageUrl,
+  about: buildingLd,
+  publisher: { '@type': 'Organization', name: 'Tokyo Towers Journal' },
+};
+
+const specs = [
+  ['用途', typeLabel],
+  ['エリア', d.area],
+  ['竣工', d.completedYear ? `${d.completedYear}年` : null],
+  ['階数', d.floorsAbove ? `地上${d.floorsAbove}階${d.floorsBelow ? `／地下${d.floorsBelow}階` : ''}` : null],
+  ['高さ', d.heightM ? `${d.heightM}m` : null],
+  ['延床面積', d.totalFloorAreaM2 ? `約${d.totalFloorAreaM2.toLocaleString()}㎡` : null],
+  ['開発', d.developer],
+  ['設計', d.architect],
+].filter(([, v]) => v);
+---
+<BaseLayout title={d.title} description={metaDescription} ogType="article" jsonLd={jsonLd}>
+  <p class="breadcrumb"><a href="/">記事一覧</a> ／ {d.area}</p>
+  <article class="article">
+    <div class="taglist">
+      <span class={`badge ${d.buildingType}`}>{typeLabel}</span>
+      {!d.verified && <span class="badge unverified">未検証（事実確認中）</span>}
+    </div>
+    <h1>{d.title}</h1>
+    {d.summary && <p class="lead">{d.summary}</p>}
+
+    <dl class="spec">
+      {specs.map(([k, v]) => (
+        <div><dt>{k}</dt><dd>{v}</dd></div>
+      ))}
+    </dl>
+
+    <Content />
+
+    <AffiliateLinks title={d.title} area={d.area} buildingType={d.buildingType} />
+
+    {d.tags.length > 0 && (
+      <div class="taglist" style="margin-top:28px">
+        {d.tags.map((t) => <a class="tag" href={`/tags/${encodeURIComponent(t)}/`}>#{t}</a>)}
+      </div>
+    )}
+
+    {d.sources.length > 0 && (
+      <section style="margin-top:24px">
+        <h2>参考・出典</h2>
+        <ul>{d.sources.map((s) => <li>{s.startsWith('http') ? <a href={s}>{s}</a> : s}</li>)}</ul>
+      </section>
+    )}
+  </article>
+</BaseLayout>

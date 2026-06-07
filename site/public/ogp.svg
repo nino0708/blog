@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f5fae"/>
+      <stop offset="1" stop-color="#0e2d54"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g fill="#ffffff" opacity="0.16">
+    <rect x="120" y="320" width="70" height="230"/>
+    <rect x="210" y="250" width="90" height="300"/>
+    <rect x="320" y="180" width="80" height="370"/>
+    <rect x="420" y="300" width="70" height="250"/>
+    <rect x="900" y="260" width="80" height="290"/>
+    <rect x="1000" y="200" width="90" height="350"/>
+  </g>
+  <text x="600" y="300" text-anchor="middle" fill="#ffffff" font-size="76" font-weight="800" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">Tokyo Towers Journal</text>
+  <text x="600" y="370" text-anchor="middle" fill="#cfe0f6" font-size="34" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">東京の巨大建築を巡る記録</text>
+</svg>

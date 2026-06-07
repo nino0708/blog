@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BuildingCard from '../../components/BuildingCard.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('buildings');
+  const tags = [...new Set(posts.flatMap((p) => p.data.tags))];
+  return tags.map((tag) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: posts
+        .filter((p) => p.data.tags.includes(tag))
+        .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()),
+    },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+---
+<BaseLayout title={`#${tag} の記事`}>
+  <section class="hero">
+    <h1>#{tag}</h1>
+    <p>「{tag}」に関する建築記事 {posts.length} 件</p>
+  </section>
+  <section class="grid">
+    {posts.map((post) => (
+      <BuildingCard
+        url={`/buildings/${post.slug}/`}
+        title={post.data.title}
+        buildingType={post.data.buildingType}
+        area={post.data.area}
+        completedYear={post.data.completedYear}
+        heightM={post.data.heightM}
+        summary={post.data.summary}
+        verified={post.data.verified}
+      />
+    ))}
+  </section>
+</BaseLayout>
