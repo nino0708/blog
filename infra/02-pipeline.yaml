@@ -18,6 +18,14 @@ Parameters:
   SiteUrl:
     Type: String
     Description: 公開URL(末尾スラッシュなし)。canonical/sitemap/OGに使用。例 https://xxxx.cloudfront.net
+  RakutenAffiliateId:
+    Type: String
+    Default: ''
+    Description: 楽天アフィリエイトID。公開値(リンクHTMLに出る/秘密ではない)。空ならアフィリ無効。
+  AmazonAssociateTag:
+    Type: String
+    Default: ''
+    Description: Amazonアソシエイトタグ(任意)。空なら付与しない。
   GitHubOwner:
     Type: String
   GitHubRepo:
@@ -94,6 +102,8 @@ Resources:
           - { Name: SITE_BUCKET, Value: !Ref SiteBucketName }
           - { Name: DISTRIBUTION_ID, Value: !Ref DistributionId }
           - { Name: SITE_URL, Value: !Ref SiteUrl }
+          - { Name: PUBLIC_RAKUTEN_AFFILIATE_ID, Value: !Ref RakutenAffiliateId }
+          - { Name: PUBLIC_AMAZON_ASSOCIATE_TAG, Value: !Ref AmazonAssociateTag }
       SourceVersion: !Ref GitHubBranch
       Source:
         Type: GITHUB
