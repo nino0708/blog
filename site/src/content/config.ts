@@ -30,4 +30,20 @@ const buildings = defineCollection({
   }),
 });
 
-export const collections = { buildings };
+// 英語版記事。数値の事実(竣工年・高さ等)は日本語版(buildings)を唯一の出典とし、
+// ここでは言語依存のテキスト(タイトル・要約・エリア名・本文・タグ・開発/設計の英語表記)だけを持つ。
+// slug は日本語版と一致させ、ページ側で同一 slug の buildings エントリと突き合わせて数値を補う。
+// コレクション名は src/content/ 直下のディレクトリ名と一致させる必要がある（= 'buildings-en'）。
+const buildingsEn = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    area: z.string(), // 例: Minato City
+    summary: z.string().optional(),
+    developer: z.string().optional(),
+    architect: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { buildings, 'buildings-en': buildingsEn };

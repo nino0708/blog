@@ -1,0 +1,81 @@
+---
+// 記事詳細の本体マークアップ（日本語/英語ページで共用）。
+// 本文(レンダリング済みMarkdown)はデフォルトスロットで受け取る。
+import AffiliateLinks from './AffiliateLinks.astro';
+import { useT, buildingTypeLabel, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  summary?: string;
+  area: string;
+  buildingType: 'office' | 'residence';
+  verified: boolean;
+  heroImage?: string;
+  heroImageCredit?: string;
+  heroImageLink?: string;
+  specs: [string, string][];
+  tags: string[];
+  /** タグページへのリンク基底（'/tags/' or '/en/tags/'） */
+  tagBase: string;
+  sources: string[];
+  /** パンくず「記事一覧」のリンク先（'/' or '/en/'） */
+  listPath: string;
+  /** アフィリエイト検索に使うJPキーワード（英語ページ用） */
+  searchTitle?: string;
+  searchArea?: string;
+}
+const {
+  lang, title, summary, area, buildingType, verified,
+  heroImage, heroImageCredit, heroImageLink,
+  specs, tags, tagBase, sources, listPath, searchTitle, searchArea,
+} = Astro.props;
+const t = useT(lang);
+const typeLabel = buildingTypeLabel(lang, buildingType);
+const commonsLabel = lang === 'ja' ? 'Wikimedia Commons' : 'via Wikimedia Commons';
+---
+<p class="breadcrumb"><a href={listPath}>{t('breadcrumb.list')}</a> ／ {area}</p>
+<article class="article">
+  <div class="taglist">
+    <span class={`badge ${buildingType}`}>{typeLabel}</span>
+    {!verified && <span class="badge unverified">{t('badge.unverified')}</span>}
+  </div>
+  <h1>{title}</h1>
+  {summary && <p class="lead">{summary}</p>}
+
+  {heroImage && (
+    <figure class="hero-figure">
+      <img src={heroImage} alt={title} loading="lazy" />
+      {heroImageCredit && (
+        <figcaption>
+          {t('photo.by')}: {heroImageLink
+            ? <a href={heroImageLink} target="_blank" rel="nofollow noopener">{heroImageCredit}</a>
+            : heroImageCredit} （{commonsLabel}）
+        </figcaption>
+      )}
+    </figure>
+  )}
+
+  <dl class="spec">
+    {specs.map(([k, v]) => (
+      <div><dt>{k}</dt><dd>{v}</dd></div>
+    ))}
+  </dl>
+
+  <slot />
+
+  <AffiliateLinks lang={lang} title={title} area={area} buildingType={buildingType} searchTitle={searchTitle} searchArea={searchArea} />
+
+  {tags.length > 0 && (
+    <div class="taglist" style="margin-top:28px">
+      {tags.map((tag) => <a class="tag" href={`${tagBase}${encodeURIComponent(tag)}/`}>#{tag}</a>)}
+    </div>
+  )}
+
+  {sources.length > 0 && (
+    <section style="margin-top:24px">
+      <h2>{t('sources.title')}</h2>
+      <ul>{sources.map((s) => <li>{s.startsWith('http') ? <a href={s}>{s}</a> : s}</li>)}</ul>
+    </section>
+  )}
+</article>

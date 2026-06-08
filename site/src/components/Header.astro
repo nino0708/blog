@@ -1,11 +1,23 @@
 ---
+import { useT, localizePath, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  /** もう一方の言語での同一ページのパス。無ければその言語のトップへ。 */
+  altPath?: string | null;
+}
+const { lang, altPath = null } = Astro.props;
+const t = useT(lang);
+const other: Lang = lang === 'ja' ? 'en' : 'ja';
+const switchHref = altPath ?? localizePath(other, '/');
 ---
 <header class="site-header">
   <div class="container inner">
-    <a href="/" class="brand">Tokyo <span>Towers</span> Journal</a>
+    <a href={localizePath(lang, '/')} class="brand">Tokyo <span>Towers</span> Journal</a>
     <nav class="nav">
-      <a href="/">記事一覧</a>
-      <a href="/about/">このブログについて</a>
+      <a href={localizePath(lang, '/')}>{t('nav.home')}</a>
+      <a href={localizePath(lang, '/about/')}>{t('nav.about')}</a>
+      <a class="lang-switch" href={switchHref} hreflang={other} lang={other}>{t('lang.other')}</a>
     </nav>
   </div>
 </header>

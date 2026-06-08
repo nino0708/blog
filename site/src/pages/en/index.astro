@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BuildingCard from '../../components/BuildingCard.astro';
+import { useT } from '../../i18n/ui';
+
+const lang = 'en';
+const t = useT(lang);
+
+// 英語版は翻訳済み(buildingsEn)の建物のみ掲載。数値はJP版から補う。
+const jp = await getCollection('buildings');
+const jpBySlug = new Map(jp.map((p) => [p.slug, p]));
+const posts = (await getCollection('buildings-en'))
+  .map((en) => ({ en, jp: jpBySlug.get(en.slug) }))
+  .filter((x) => x.jp)
+  .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
+---
+<BaseLayout title="Tokyo Towers Journal" lang={lang} altPath="/">
+  <section class="hero">
+    <h1>{t('home.title')}</h1>
+    <p>{t('home.desc')}</p>
+  </section>
+
+  <section class="grid">
+    {posts.map(({ en, jp }) => (
+      <BuildingCard
+        lang={lang}
+        url={`/en/buildings/${en.slug}/`}
+        title={en.data.title}
+        buildingType={jp!.data.buildingType}
+        area={en.data.area}
+        completedYear={jp!.data.completedYear}
+        heightM={jp!.data.heightM}
+        summary={en.data.summary}
+        verified={jp!.data.verified}
+        heroImage={jp!.data.heroImage}
+      />
+    ))}
+  </section>
+</BaseLayout>

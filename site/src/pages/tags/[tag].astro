@@ -17,9 +17,10 @@ export async function getStaticPaths() {
   }));
 }
 
+const lang = 'ja';
 const { tag, posts } = Astro.props;
 ---
-<BaseLayout title={`#${tag} の記事`}>
+<BaseLayout title={`#${tag} の記事`} lang={lang}>
   <section class="hero">
     <h1>#{tag}</h1>
     <p>「{tag}」に関する建築記事 {posts.length} 件</p>
@@ -27,6 +28,7 @@ const { tag, posts } = Astro.props;
   <section class="grid">
     {posts.map((post) => (
       <BuildingCard
+        lang={lang}
         url={`/buildings/${post.slug}/`}
         title={post.data.title}
         buildingType={post.data.buildingType}

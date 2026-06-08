@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BuildingCard from '../../../components/BuildingCard.astro';
+
+export async function getStaticPaths() {
+  const jp = await getCollection('buildings');
+  const jpBySlug = new Map(jp.map((p) => [p.slug, p]));
+  const en = (await getCollection('buildings-en')).filter((p) => jpBySlug.has(p.slug));
+  const tags = [...new Set(en.flatMap((p) => p.data.tags))];
+  return tags.map((tag) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: en
+        .filter((p) => p.data.tags.includes(tag))
+        .map((p) => ({ en: p, jp: jpBySlug.get(p.slug)! }))
+        .sort((a, b) => b.jp.data.publishedAt.valueOf() - a.jp.data.publishedAt.valueOf()),
+    },
+  }));
+}
+
+const lang = 'en';
+const { tag, posts } = Astro.props;
+---
+<BaseLayout title={`#${tag}`} lang={lang}>
+  <section class="hero">
+    <h1>#{tag}</h1>
+    <p>{posts.length} article{posts.length === 1 ? '' : 's'} tagged “{tag}”</p>
+  </section>
+  <section class="grid">
+    {posts.map(({ en, jp }) => (
+      <BuildingCard
+        lang={lang}
+        url={`/en/buildings/${en.slug}/`}
+        title={en.data.title}
+        buildingType={jp.data.buildingType}
+        area={en.data.area}
+        completedYear={jp.data.completedYear}
+        heightM={jp.data.heightM}
+        summary={en.data.summary}
+        verified={jp.data.verified}
+        heroImage={jp.data.heroImage}
+      />
+    ))}
+  </section>
+</BaseLayout>

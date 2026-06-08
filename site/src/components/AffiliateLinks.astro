@@ -5,42 +5,50 @@ import {
   rakutenBooksSearch,
   amazonSearch,
 } from '../config/affiliate';
+import { useT, type Lang } from '../i18n/ui';
 
 interface Props {
+  lang: Lang;
   title: string;
   area: string;
   buildingType: 'office' | 'residence';
+  /** 検索に使うキーワード(日本語)。楽天/Amazonは日本語サービスのため、表示は英語でも検索語はJPを使う。 */
+  searchTitle?: string;
+  searchArea?: string;
 }
-const { title, area, buildingType } = Astro.props;
+const { lang, title, area, buildingType, searchTitle, searchArea } = Astro.props;
+const t = useT(lang);
+const kwTitle = searchTitle ?? title;
+const kwArea = searchArea ?? area;
+const noteHotel = lang === 'ja' ? '楽天トラベル' : 'Rakuten Travel';
+const noteBooks = lang === 'ja' ? '楽天ブックス' : 'Rakuten Books';
 
 // 建物の文脈に沿った関連リンク（検索ベースなのでリンク切れに強い）
 const links = [
   {
-    label: `${area}周辺のホテルを探す`,
-    note: '楽天トラベル',
-    url: rakutenTravelSearch(area),
+    label: lang === 'ja' ? `${area}周辺のホテルを探す` : `${t('affiliate.hotel')} (${area})`,
+    note: noteHotel,
+    url: rakutenTravelSearch(kwArea),
   },
   {
-    label: '東京の建築・再開発の関連書籍',
-    note: '楽天ブックス',
+    label: t('affiliate.books'),
+    note: noteBooks,
     url: rakutenBooksSearch(`東京 建築 ${buildingType === 'residence' ? 'マンション' : '超高層ビル'}`),
   },
   {
-    label: `「${title}」を調べる`,
+    label: lang === 'ja' ? `「${title}」を調べる` : `${title} ${t('affiliate.search')}`,
     note: 'Amazon',
-    url: amazonSearch(`${title} 東京`),
+    url: amazonSearch(`${kwTitle} 東京`),
   },
 ];
 ---
-<section class="affiliate" aria-label="関連リンク（広告）">
+<section class="affiliate" aria-label={t('affiliate.aria')}>
   <div class="affiliate-head">
-    <h2>関連リンク</h2>
+    <h2>{t('affiliate.title')}</h2>
     {affiliateEnabled && <span class="pr-badge">PR</span>}
   </div>
   {affiliateEnabled && (
-    <p class="affiliate-disclosure">
-      ※ 以下のリンクには広告（アフィリエイト）が含まれます。リンク先での購入・予約により当サイトが収益を得る場合があります。
-    </p>
+    <p class="affiliate-disclosure">{t('affiliate.disclosure')}</p>
   )}
   <ul class="affiliate-list">
     {links.map((l) => (

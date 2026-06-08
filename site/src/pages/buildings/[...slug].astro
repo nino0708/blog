@@ -1,20 +1,22 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import AffiliateLinks from '../../components/AffiliateLinks.astro';
+import BuildingArticle from '../../components/BuildingArticle.astro';
+import { buildSpecs } from '../../i18n/ui';
 
 export async function getStaticPaths() {
   const posts = await getCollection('buildings');
+  const enSlugs = new Set((await getCollection('buildings-en')).map((p) => p.slug));
   return posts.map((post) => ({
     params: { slug: post.slug },
-    props: { post },
+    props: { post, hasEn: enSlugs.has(post.slug) },
   }));
 }
 
-const { post } = Astro.props;
+const lang = 'ja';
+const { post, hasEn } = Astro.props;
 const { Content } = await post.render();
 const d = post.data;
-const typeLabel = d.buildingType === 'office' ? 'オフィスビル' : 'マンション';
 
 const pageUrl = new URL(`/buildings/${post.slug}/`, Astro.site ?? 'https://example.com').toString();
 const metaDescription =
@@ -39,61 +41,26 @@ const jsonLd = {
   publisher: { '@type': 'Organization', name: 'Tokyo Towers Journal' },
 };
 
-const specs = [
-  ['用途', typeLabel],
-  ['エリア', d.area],
-  ['竣工', d.completedYear ? `${d.completedYear}年` : null],
-  ['階数', d.floorsAbove ? `地上${d.floorsAbove}階${d.floorsBelow ? `／地下${d.floorsBelow}階` : ''}` : null],
-  ['高さ', d.heightM ? `${d.heightM}m` : null],
-  ['延床面積', d.totalFloorAreaM2 ? `約${d.totalFloorAreaM2.toLocaleString()}㎡` : null],
-  ['開発', d.developer],
-  ['設計', d.architect],
-].filter(([, v]) => v);
+const specs = buildSpecs(lang, d);
+const altPath = hasEn ? `/en/buildings/${post.slug}/` : null;
 ---
-<BaseLayout title={d.title} description={metaDescription} ogType="article" jsonLd={jsonLd}>
-  <p class="breadcrumb"><a href="/">記事一覧</a> ／ {d.area}</p>
-  <article class="article">
-    <div class="taglist">
-      <span class={`badge ${d.buildingType}`}>{typeLabel}</span>
-      {!d.verified && <span class="badge unverified">未検証（事実確認中）</span>}
-    </div>
-    <h1>{d.title}</h1>
-    {d.summary && <p class="lead">{d.summary}</p>}
-
-    {d.heroImage && (
-      <figure class="hero-figure">
-        <img src={d.heroImage} alt={`${d.title}の外観`} loading="lazy" />
-        {d.heroImageCredit && (
-          <figcaption>
-            写真: {d.heroImageLink
-              ? <a href={d.heroImageLink} target="_blank" rel="nofollow noopener">{d.heroImageCredit}</a>
-              : d.heroImageCredit} （Wikimedia Commons）
-          </figcaption>
-        )}
-      </figure>
-    )}
-
-    <dl class="spec">
-      {specs.map(([k, v]) => (
-        <div><dt>{k}</dt><dd>{v}</dd></div>
-      ))}
-    </dl>
-
+<BaseLayout title={d.title} description={metaDescription} lang={lang} ogType="article" altPath={altPath} jsonLd={jsonLd}>
+  <BuildingArticle
+    lang={lang}
+    title={d.title}
+    summary={d.summary}
+    area={d.area}
+    buildingType={d.buildingType}
+    verified={d.verified}
+    heroImage={d.heroImage}
+    heroImageCredit={d.heroImageCredit}
+    heroImageLink={d.heroImageLink}
+    specs={specs}
+    tags={d.tags}
+    tagBase="/tags/"
+    sources={d.sources}
+    listPath="/"
+  >
     <Content />
-
-    <AffiliateLinks title={d.title} area={d.area} buildingType={d.buildingType} />
-
-    {d.tags.length > 0 && (
-      <div class="taglist" style="margin-top:28px">
-        {d.tags.map((t) => <a class="tag" href={`/tags/${encodeURIComponent(t)}/`}>#{t}</a>)}
-      </div>
-    )}
-
-    {d.sources.length > 0 && (
-      <section style="margin-top:24px">
-        <h2>参考・出典</h2>
-        <ul>{d.sources.map((s) => <li>{s.startsWith('http') ? <a href={s}>{s}</a> : s}</li>)}</ul>
-      </section>
-    )}
-  </article>
+  </BuildingArticle>
 </BaseLayout>

@@ -1,6 +1,6 @@
 # Tokyo Towers Journal
 
-東京の大型オフィスビル・タワーマンションを巡る趣味の建築情報ブログ。
+東京の大型オフィスビル・タワーマンションを巡る趣味の建築情報ブログ。**日本語/英語のマルチランゲージ**（インバウンド観光客向けに英語版も配信）。
 **Astro（静的サイト）+ S3/CloudFront 配信 + 記事自動生成（Lambda）+ AWSネイティブCI/CD（CodeBuild）** で構成。
 
 ## アーキテクチャ
@@ -9,9 +9,9 @@
 ①コンテンツ自動生成
   EventBridge(毎日6:30 JST) ─▶ Lambda(generator)
                          ├─ seed(buildings.json)の「事実」を読む(verified:trueのみ)
-                         ├─ Claude APIで紹介文(本文)だけ生成 ※事実は創作させない
-                         ├─ ファクトチェック(別LLM) 合格時のみ
-                         ├─ GitHub(nino0708/blog)に Markdown をコミット
+                         ├─ Claude APIで紹介文(本文)だけ生成 ※事実は創作させない（日本語＋英語）
+                         ├─ ファクトチェック(別LLM) 日英それぞれ合格時のみ
+                         ├─ GitHub(nino0708/blog)に Markdown をコミット(JA: buildings/, EN: buildings-en/)
                          └─ CodeBuild を StartBuild で起動
                                      │
 ②ビルド & デプロイ                   ▼
@@ -25,7 +25,8 @@
 - **事実とAIの分離**: 竣工年・高さ等の事実は `generator/data/buildings.json` が唯一の出典。Claudeは文章化のみで、数値や固有名詞を創作しない（実在建物の誤情報・ハルシネーション対策）。`verified:false` の記事には「未検証」バッジが付く。
 - **二重のファクトチェック**: 自動公開は `verified:true`（人が出典で裏取り済み）の建物だけ。さらに生成後にLLM検証パスが「確定事実を超える断定（数値・年・順位・固有名詞）」を検出し、NGなら1回再生成→なお不合格なら**公開しない**。誤った記事が自動公開されない設計。
 - **毎日 朝6:30 JST 公開**: EventBridgeが毎日1棟ずつ生成・公開（要 `verified:true` のストック）。
-- **SEO**: 各ページに canonical / OGP / Twitterカード / JSON-LD構造化データ、自前 `sitemap.xml`、`robots.txt` を出力。
+- **多言語(i18n)**: 日本語をルート(`/`)、英語を `/en/` 配下に配信。数値の事実は日本語seedが唯一の出典で、英語ページは同一slugのJP記事から数値を補い、言語依存テキスト(タイトル・要約・本文・タグ)だけを英語版に持つ（数値の二重管理を避ける）。UI文言は `site/src/i18n/ui.ts` に集約。
+- **SEO**: 各ページに canonical / OGP / Twitterカード / JSON-LD構造化データ、自前 `sitemap.xml`、`robots.txt` を出力。日英の対訳ページは `hreflang`（`ja`/`en`/`x-default`）で相互リンクし、sitemapにも `xhtml:link` で対訳を明示。
 - **アフィリエイト**: 記事下に文脈リンク（楽天トラベル/楽天ブックス/Amazon）。ステマ規制対応のPR表記つき。IDは環境変数で注入（公開リポジトリに直書きしない）。
 - **CodeCommitは不使用**: AWS CodeCommitは新規顧客の受付を終了しているため、ソースはGitHub、ビルド/デプロイをCodeBuildで回す現実的なAWSネイティブ構成。
 - **OAC + CloudFront Function**: S3は完全非公開。`/path/` → `/path/index.html` の書き換えはCloudFront Functionで行う。
@@ -35,13 +36,15 @@
 ```
 tokyo-building-blog/
 ├── site/                 # Astro フロントエンド
-│   ├── src/content/buildings/   # 記事Markdown（Lambdaがここに追記）
-│   ├── src/pages/        # 一覧 / 記事 / タグ / about / 404
+│   ├── src/content/buildings/      # 日本語記事Markdown（Lambdaがここに追記）
+│   ├── src/content/buildings-en/   # 英語記事Markdown（同上・slugはJPと一致）
+│   ├── src/i18n/ui.ts    # UI文言辞書・パス変換・spec整形（多言語の中核）
+│   ├── src/pages/        # JP: 一覧/記事/タグ/about/404、EN: src/pages/en/配下
 │   └── src/components, layouts, styles
 ├── generator/            # 記事生成Lambda
-│   ├── data/buildings.json   # 建物seed（事実の出典）★ここを育てる
-│   ├── index.mjs         # ハンドラ（seed→Claude→GitHubコミット）
-│   └── prompts.mjs
+│   ├── data/buildings.json   # 建物seed（事実の出典）★ここを育てる。*_en に英語の固有名詞
+│   ├── index.mjs         # ハンドラ（seed→Claude→日英ファクトチェック→GitHubコミット）
+│   └── prompts.mjs       # 日本語/英語の生成・検証プロンプト
 ├── infra/
 │   ├── 01-hosting.yaml   # S3 + CloudFront + (任意)ACM/独自ドメイン
 │   └── 02-pipeline.yaml  # CodeBuild + Lambda + EventBridge
@@ -54,7 +57,7 @@ tokyo-building-blog/
 cd site
 npm install
 npm run dev      # http://localhost:4321
-npm run build    # dist/ を生成（13ページ確認済み）
+npm run build    # dist/ を生成（日英あわせて43ページ確認済み）
 ```
 
 記事をローカルで1本生成して確認:

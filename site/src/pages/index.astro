@@ -2,23 +2,24 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BuildingCard from '../components/BuildingCard.astro';
+import { useT } from '../i18n/ui';
 
+const lang = 'ja';
+const t = useT(lang);
 const posts = (await getCollection('buildings')).sort(
   (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
 );
 ---
-<BaseLayout title="Tokyo Towers Journal">
+<BaseLayout title="Tokyo Towers Journal" lang={lang} altPath="/en/">
   <section class="hero">
-    <h1>東京の空をつくる、巨大建築の記録。</h1>
-    <p>
-      港区・千代田区・中央区を中心に、東京の大型オフィスビルとタワーマンションを
-      一棟ずつ巡って紹介する趣味のブログです。竣工年・高さ・開発の背景を、公開情報をもとに記録しています。
-    </p>
+    <h1>{t('home.title')}</h1>
+    <p>{t('home.desc')}</p>
   </section>
 
   <section class="grid">
     {posts.map((post) => (
       <BuildingCard
+        lang={lang}
         url={`/buildings/${post.slug}/`}
         title={post.data.title}
         buildingType={post.data.buildingType}

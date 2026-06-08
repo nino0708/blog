@@ -3,7 +3,10 @@ import { Octokit } from '@octokit/rest';
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { buildPrompt, buildVerifyPrompt, buildFixSuffix } from './prompts.mjs';
+import {
+  buildPrompt, buildVerifyPrompt, buildFixSuffix,
+  buildEnPrompt, buildEnVerifyPrompt, buildEnFixSuffix,
+} from './prompts.mjs';
 import { fetchCommonsImage } from './commons.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -14,6 +17,7 @@ const cfg = {
   branch: process.env.GITHUB_BRANCH || 'main',
   // リポジトリ(nino0708/blog)内の記事Markdown格納先
   contentDir: process.env.CONTENT_DIR || 'site/src/content/buildings',
+  contentDirEn: process.env.CONTENT_DIR_EN || 'site/src/content/buildings-en',
   model: process.env.MODEL || 'claude-sonnet-4-6',
   anthropicKey: process.env.ANTHROPIC_API_KEY,
   githubToken: process.env.GITHUB_TOKEN,
@@ -69,6 +73,26 @@ function buildFrontmatter(b, body) {
   lines.push('');
   if (!b.verified) {
     lines.push('> この記事は事実確認中（未検証）です。数値は出典での裏取り後に確定します。');
+    lines.push('');
+  }
+  lines.push(body.trim());
+  lines.push('');
+  return lines.join('\n');
+}
+
+// 英語版のfront matter。数値の事実はsite側でJP版から補うため、ここでは言語依存のテキストのみ。
+function buildEnFrontmatter(b, body) {
+  const lines = ['---'];
+  lines.push(`title: ${yamlString(b.title_en || b.title)}`);
+  lines.push(`area: ${yamlString(b.area_en || b.area)}`);
+  if (b.summary_en || b.summary) lines.push(`summary: ${yamlString(b.summary_en || b.summary)}`);
+  if (b.developer_en || b.developer) lines.push(`developer: ${yamlString(b.developer_en || b.developer)}`);
+  if (b.architect_en || b.architect) lines.push(`architect: ${yamlString(b.architect_en || b.architect)}`);
+  lines.push(`tags: [${(b.tags_en || b.tags || []).map(yamlString).join(', ')}]`);
+  lines.push('---');
+  lines.push('');
+  if (!b.verified) {
+    lines.push('> This article is undergoing fact-checking (unverified). Figures will be finalized after confirmation against sources.');
     lines.push('');
   }
   lines.push(body.trim());
@@ -137,8 +161,35 @@ async function generateVerifiedBody(b) {
   return { body: null, attempts: 2, issues: check.issues };
 }
 
-async function commitToGithub(octokit, slug, content) {
-  const path = `${cfg.contentDir}/${slug}.md`;
+// 英語本文を確定事実に照らして検証。{ok, issues} を返す。
+async function verifyEnBody(b, body) {
+  const raw = await askText(buildEnVerifyPrompt(b, body), 1024);
+  const json = raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1);
+  try {
+    const parsed = JSON.parse(json);
+    return { ok: parsed.ok === true, issues: Array.isArray(parsed.issues) ? parsed.issues : [] };
+  } catch {
+    return { ok: false, issues: ['Failed to parse verification result (withheld for safety)'] };
+  }
+}
+
+// 英語本文を生成 → 検証 → NGなら指摘を反映して1回だけ再生成 → なお不合格なら null。
+async function generateVerifiedEnBody(b) {
+  let body = await askText(buildEnPrompt(b));
+  let check = await verifyEnBody(b, body);
+  if (check.ok) return { body, attempts: 1 };
+
+  console.log(`  [EN] ファクトチェック指摘(1回目): ${check.issues.join(' / ')}`);
+  body = await askText(buildEnPrompt(b) + buildEnFixSuffix(check.issues));
+  check = await verifyEnBody(b, body);
+  if (check.ok) return { body, attempts: 2 };
+
+  console.log(`  [EN] ファクトチェック指摘(2回目): ${check.issues.join(' / ')}`);
+  return { body: null, attempts: 2, issues: check.issues };
+}
+
+async function commitToGithub(octokit, contentDir, slug, content) {
+  const path = `${contentDir}/${slug}.md`;
   await octokit.repos.createOrUpdateFileContents({
     owner: cfg.owner,
     repo: cfg.repo,
@@ -211,18 +262,39 @@ export async function handler() {
 
   const content = buildFrontmatter(next, body);
 
-  if (LOCAL) {
-    const out = join(__dirname, '..', 'site', 'src', 'content', 'buildings', `${next.slug}.md`);
-    mkdirSync(dirname(out), { recursive: true });
-    writeFileSync(out, content, 'utf-8');
-    console.log(`ローカル出力: ${out}`);
-    return { status: 'local', slug: next.slug };
+  // 英語版も同じ事実から生成し、英語ファクトチェックに通ったときだけ公開する。
+  // 不合格でも日本語版は公開する（英語は次回以降に再挑戦できる）。
+  let enContent = null;
+  const enResult = await generateVerifiedEnBody(next);
+  if (enResult.body) {
+    enContent = buildEnFrontmatter(next, enResult.body);
+    console.log(`英語版ファクトチェック合格（試行${enResult.attempts}回）`);
+  } else {
+    console.log(`英語版はファクトチェック不合格のため見送り（日本語版のみ公開）: ${next.slug}`);
   }
 
-  const path = await commitToGithub(octokit, next.slug, content);
-  console.log(`コミット完了: ${path}`);
+  if (LOCAL) {
+    const outJa = join(__dirname, '..', 'site', 'src', 'content', 'buildings', `${next.slug}.md`);
+    mkdirSync(dirname(outJa), { recursive: true });
+    writeFileSync(outJa, content, 'utf-8');
+    console.log(`ローカル出力(JA): ${outJa}`);
+    if (enContent) {
+      const outEn = join(__dirname, '..', 'site', 'src', 'content', 'buildings-en', `${next.slug}.md`);
+      mkdirSync(dirname(outEn), { recursive: true });
+      writeFileSync(outEn, enContent, 'utf-8');
+      console.log(`ローカル出力(EN): ${outEn}`);
+    }
+    return { status: 'local', slug: next.slug, en: Boolean(enContent) };
+  }
+
+  const path = await commitToGithub(octokit, cfg.contentDir, next.slug, content);
+  console.log(`コミット完了(JA): ${path}`);
+  if (enContent) {
+    const pathEn = await commitToGithub(octokit, cfg.contentDirEn, next.slug, enContent);
+    console.log(`コミット完了(EN): ${pathEn}`);
+  }
   await triggerBuild();
-  return { status: 'committed', slug: next.slug, path };
+  return { status: 'committed', slug: next.slug, path, en: Boolean(enContent) };
 }
 
 // ローカル実行 / Lambda外実行のエントリ

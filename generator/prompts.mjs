@@ -52,6 +52,81 @@ export function buildFixSuffix(issues) {
     .join('\n')}\n上記の問題を取り除き、確定事実だけに基づいて書き直してください。`;
 }
 
+// ---- 英語版 ----
+// 英語記事も「事実は与えたものだけ」を厳守する。固有名詞は seed の *_en を出典にする。
+function factsAllowListEn(b) {
+  const typeLabel = b.buildingType === 'office' ? 'office building' : 'residential building';
+  return [
+    ['Name', b.title_en || b.title],
+    ['Use', typeLabel],
+    ['Area', b.area_en || b.area],
+    ['Completed', b.completedYear ? `${b.completedYear}` : null],
+    ['Floors above ground', b.floorsAbove ? `${b.floorsAbove}` : null],
+    ['Floors below ground', b.floorsBelow ? `${b.floorsBelow}` : null],
+    ['Height', b.heightM ? `${b.heightM} m` : null],
+    ['Total floor area', b.totalFloorAreaM2 ? `${b.totalFloorAreaM2} m²` : null],
+    ['Developer', b.developer_en || b.developer],
+    ['Architect', b.architect_en || b.architect],
+  ]
+    .filter(([, v]) => v)
+    .map(([k, v]) => `- ${k}: ${v}`)
+    .join('\n');
+}
+
+export function buildEnPrompt(b) {
+  const isResidence = b.buildingType === 'residence';
+  return `You are the writer of a hobby blog touring Tokyo's high-rise architecture, writing for an international audience (including tourists).
+(Note: this text will later be fact-checked by a separate checker. Stating numbers, proper nouns or assertions not in the confirmed facts will fail the check.)
+Write the "body" of an introductory article about the following building.
+
+[Confirmed facts (do NOT invent any number or proper noun beyond these)]
+${factsAllowListEn(b)}
+
+[Strict rules]
+- Do not write specific figures not listed above (number of units, rent, price per tsubo, exact height, etc.) or proper nouns you cannot confirm (tenant names, resident companies, famous residents, etc.). Do not mention things you are unsure of.
+- Do not write unfounded speculation or generalizations (e.g. "popular with startups", "attracts a certain crowd", "always bustling"). Do not invent attributes or types of users not in the confirmed facts.
+- ${isResidence ? 'For residences, stay strictly on "architecture and streetscape"; do not write residents\' personal information, price forecasts or investment advice.' : 'As an office building, focus on its impact on the city and the context of redevelopment.'}
+- Where a fact is hard to assert, use hedged expressions ("is said to", "reportedly"). Limit such hedges to about twice across the whole article.
+
+[Format]
+- Markdown. Output the body only (no H1 title, no front matter; start from an H2 "## " heading).
+- Use 2-3 headings (##); the final one must be "## Summary".
+- Keep the whole article to roughly 500-750 words. Avoid redundant restatement; be concise.
+- A calm tone, midway between a city-walk essay and architectural commentary. Natural, fluent English (not a literal translation).
+
+Output the body only.`;
+}
+
+export function buildEnVerifyPrompt(b, body) {
+  return `You are a strict fact-checker. Check whether the following blog body contains assertive factual claims that cannot be backed up by the "confirmed facts" alone.
+
+[Confirmed facts (the only verified information)]
+${factsAllowListEn(b)}
+
+[Rules]
+- Flag the following "assertions beyond the confirmed facts":
+  - Specific numbers, years, areas, unit counts, rankings (e.g. "tallest in Japan", "largest in Tokyo")
+  - Proper nouns not in the confirmed facts (tenant names, resident companies, personal names, awards, etc.)
+  - Assertive historical claims ("the first to...", "in year X, Y happened") not in the confirmed facts
+- Do not flag general/common geographic descriptions, or clearly hedged expressions ("is said to", "reportedly").
+- When in doubt, flag it (judge strictly).
+
+[Output] Output ONLY this JSON (no surrounding text or markdown):
+{"ok": true, "issues": []}
+or
+{"ok": false, "issues": ["the problematic statement and why", "..."]}
+ok is true only when there are zero issues.
+
+[Body to verify]
+${body}`;
+}
+
+export function buildEnFixSuffix(issues) {
+  return `\n\n[Issues raised in the previous fact-check (must be fixed)]\n${issues
+    .map((s) => `- ${s}`)
+    .join('\n')}\nRemove the above problems and rewrite based only on the confirmed facts.`;
+}
+
 // 生成済み本文を「確定事実」に照らして検証するプロンプト。
 // 事実を超える断定（数値・年・固有名詞・序数/最上級など）を検出させる。
 export function buildVerifyPrompt(b, body) {

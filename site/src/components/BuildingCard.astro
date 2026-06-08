@@ -1,5 +1,8 @@
 ---
+import { useT, buildingTypeLabel, buildCardMeta, type Lang } from '../i18n/ui';
+
 interface Props {
+  lang: Lang;
   url: string;
   title: string;
   buildingType: 'office' | 'residence';
@@ -10,22 +13,23 @@ interface Props {
   verified: boolean;
   heroImage?: string;
 }
-const { url, title, buildingType, area, completedYear, heightM, summary, verified, heroImage } = Astro.props;
-const typeLabel = buildingType === 'office' ? 'オフィス' : 'マンション';
-const metaBits = [area, completedYear ? `${completedYear}年竣工` : null, heightM ? `高さ${heightM}m` : null].filter(Boolean);
+const { lang, url, title, buildingType, area, completedYear, heightM, summary, verified, heroImage } = Astro.props;
+const t = useT(lang);
+const typeLabel = buildingTypeLabel(lang, buildingType, true);
+const meta = buildCardMeta(lang, { area, completedYear, heightM });
 ---
 <article class="card">
   <a href={url}>
     {heroImage
-      ? <div class="thumb thumb-img"><img src={heroImage} alt={`${title}の外観`} loading="lazy" /></div>
+      ? <div class="thumb thumb-img"><img src={heroImage} alt={title} loading="lazy" /></div>
       : <div class="thumb">{title.slice(0, 1)}</div>}
     <div class="body">
       <div class="taglist">
         <span class={`badge ${buildingType}`}>{typeLabel}</span>
-        {!verified && <span class="badge unverified">未検証</span>}
+        {!verified && <span class="badge unverified">{t('badge.unverified.short')}</span>}
       </div>
       <h3>{title}</h3>
-      <div class="meta">{metaBits.join(' ・ ')}</div>
+      <div class="meta">{meta}</div>
       {summary && <p class="summary">{summary}</p>}
     </div>
   </a>

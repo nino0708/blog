@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BuildingArticle from '../../../components/BuildingArticle.astro';
+import { buildSpecs } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const jp = await getCollection('buildings');
+  const jpBySlug = new Map(jp.map((p) => [p.slug, p]));
+  const en = await getCollection('buildings-en');
+  // 数値の出典となるJP版が存在する英語記事だけをページ化する。
+  return en
+    .filter((post) => jpBySlug.has(post.slug))
+    .map((post) => ({
+      params: { slug: post.slug },
+      props: { post, jp: jpBySlug.get(post.slug)! },
+    }));
+}
+
+const lang = 'en';
+const { post, jp } = Astro.props;
+const { Content } = await post.render();
+const e = post.data;
+const f = jp.data; // 数値の事実（言語非依存）
+
+// 英語表記が無いフィールドは日本語版にフォールバック
+const developer = e.developer ?? f.developer;
+const architect = e.architect ?? f.architect;
+
+const pageUrl = new URL(`/en/buildings/${post.slug}/`, Astro.site ?? 'https://example.com').toString();
+const metaDescription =
+  e.summary ?? `${e.title}${f.completedYear ? ` (completed ${f.completedYear})` : ''} — a record of architecture and redevelopment in ${e.area}, Tokyo.`;
+
+const buildingLd: Record<string, unknown> = {
+  '@type': f.buildingType === 'residence' ? 'ApartmentComplex' : 'LandmarksOrHistoricalBuildings',
+  name: e.title,
+  address: { '@type': 'PostalAddress', addressLocality: e.area, addressRegion: 'Tokyo', addressCountry: 'JP' },
+};
+if (f.address) (buildingLd.address as Record<string, unknown>).streetAddress = f.address;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: e.title,
+  description: metaDescription,
+  inLanguage: 'en',
+  datePublished: f.publishedAt.toISOString(),
+  mainEntityOfPage: pageUrl,
+  about: buildingLd,
+  publisher: { '@type': 'Organization', name: 'Tokyo Towers Journal' },
+};
+
+const specs = buildSpecs(lang, {
+  buildingType: f.buildingType,
+  area: e.area,
+  completedYear: f.completedYear,
+  floorsAbove: f.floorsAbove,
+  floorsBelow: f.floorsBelow,
+  heightM: f.heightM,
+  totalFloorAreaM2: f.totalFloorAreaM2,
+  developer,
+  architect,
+});
+---
+<BaseLayout title={e.title} description={metaDescription} lang={lang} ogType="article" altPath={`/buildings/${post.slug}/`} jsonLd={jsonLd}>
+  <BuildingArticle
+    lang={lang}
+    title={e.title}
+    summary={e.summary}
+    area={e.area}
+    buildingType={f.buildingType}
+    verified={f.verified}
+    heroImage={f.heroImage}
+    heroImageCredit={f.heroImageCredit}
+    heroImageLink={f.heroImageLink}
+    specs={specs}
+    tags={e.tags}
+    tagBase="/en/tags/"
+    sources={f.sources}
+    listPath="/en/"
+    searchTitle={f.title}
+    searchArea={f.area}
+  >
+    <Content />
+  </BuildingArticle>
+</BaseLayout>
