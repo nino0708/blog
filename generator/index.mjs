@@ -100,6 +100,30 @@ function buildEnFrontmatter(b, body) {
   return lines.join('\n');
 }
 
+// 既存記事のheroImage URLから、Commonsの正規化ファイルタイトルを復元して集める（重複回避用）。
+function fileTitleFromUrl(url) {
+  try {
+    const base = decodeURIComponent(url.split('/').pop() || '');
+    return base.replace(/^\d+px-/, '').replace(/\.[a-z0-9]+$/i, '').replace(/_/g, ' ').trim().toLowerCase();
+  } catch {
+    return '';
+  }
+}
+
+function collectUsedImageTitles() {
+  const set = new Set();
+  const dir = join(__dirname, '..', 'site', 'src', 'content', 'buildings');
+  if (!existsSync(dir)) return set;
+  for (const f of readdirSync(dir).filter((n) => n.endsWith('.md'))) {
+    const m = readFileSync(join(dir, f), 'utf-8').match(/^heroImage:\s*"?([^"\n]+)"?/m);
+    if (m) {
+      const t = fileTitleFromUrl(m[1]);
+      if (t) set.add(t);
+    }
+  }
+  return set;
+}
+
 async function getExistingSlugs(octokit) {
   try {
     const { data } = await octokit.repos.getContent({
@@ -246,8 +270,10 @@ export async function handler() {
   console.log(`ファクトチェック合格（試行${attempts}回）`);
 
   // 建物画像(Wikimedia Commons, CCライセンス)を取得。出典・作者・ライセンスを必ず付与。
+  // 既出画像との重複を避けるため、ローカルでは既存記事のheroImageを集めて渡す。
+  const usedTitles = LOCAL ? collectUsedImageTitles() : new Set();
   try {
-    const img = await fetchCommonsImage(next.title);
+    const img = await fetchCommonsImage(next, { usedTitles });
     if (img?.url) {
       next.heroImage = img.url;
       next.heroImageCredit = [img.author, img.license].filter(Boolean).join(' / ');
