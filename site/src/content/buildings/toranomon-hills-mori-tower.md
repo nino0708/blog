@@ -10,6 +10,9 @@ developer: "森ビル"
 tags: ["港区", "超高層ビル", "再開発", "森ビル"]
 publishedAt: 2026-06-07
 summary: "環状第2号線の上に立つ、虎ノ門エリア再生の起点となった超高層オフィスビル。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%E8%99%8E%E3%83%8E%E9%96%80%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC.jpg/1280px-%E8%99%8E%E3%83%8E%E9%96%80%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC.jpg"
+heroImageCredit: "おつみださ / CC BY 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:%E8%99%8E%E3%83%8E%E9%96%80%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC.jpg"
 verified: true
 sources: ["森ビル 公開情報（最終確認推奨）"]
 ---

@@ -10,6 +10,9 @@ developer: 住友不動産ほか
 tags: ["中央区", "タワーマンション", "勝どき", "ツインタワー"]
 publishedAt: 2026-05-28
 summary: 勝どきのウォーターフロントに立つ、ツインタワー構成の大規模タワーマンション。
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/ff/THE_TOKYO_TOWERS_JPN_0249.jpg"
+heroImageCredit: "TTT58 / Public domain"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:THE_TOKYO_TOWERS_JPN_0249.jpg"
 verified: false
 sources:
   - "（要確認）公式パンフレット・公開資料で竣工年・高さ・戸数を裏取りすること"
