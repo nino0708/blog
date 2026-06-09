@@ -408,6 +408,26 @@
       "summary_en": "Directly connected to Shibuya Station. The core of Shibuya's redevelopment, known for the rooftop SHIBUYA SKY observation deck.",
       "verified": true,
       "sources": ["公開情報（要最終確認）"]
+    },
+    {
+      "slug": "ntt-docomo-yoyogi-building",
+      "title": "NTTドコモ代々木ビル（ドコモタワー）",
+      "title_en": "NTT DoCoMo Yoyogi Building (Docomo Tower)",
+      "buildingType": "office",
+      "area": "渋谷区",
+      "area_en": "Shibuya City",
+      "address": "東京都渋谷区千駄ヶ谷",
+      "completedYear": 2000,
+      "floorsAbove": 27,
+      "heightM": 240,
+      "developer": "NTTドコモ",
+      "developer_en": "NTT DoCoMo",
+      "tags": ["渋谷区", "超高層ビル", "代々木", "名建築", "新宿"],
+      "tags_en": ["Shibuya City", "Skyscraper", "Yoyogi", "Notable architecture", "Shinjuku"],
+      "summary": "新宿の南に立つ、時計塔とエンパイアステートビル風の意匠で知られるNTTドコモの超高層ビル。",
+      "summary_en": "A supertall NTT DoCoMo building just south of Shinjuku, known for its clock tower and Empire State Building–like silhouette.",
+      "verified": true,
+      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』等の公開情報（高さ240m・地上27階・2000年竣工。要最終確認）"]
     }
   ]
 }
