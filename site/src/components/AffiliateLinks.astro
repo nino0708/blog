@@ -1,9 +1,8 @@
 ---
 import {
   affiliateEnabled,
-  rakutenTravelSearch,
+  rakutenTravelArea,
   rakutenBooksSearch,
-  amazonSearch,
 } from '../config/affiliate';
 import { useT, type Lang } from '../i18n/ui';
 
@@ -23,22 +22,31 @@ const kwArea = searchArea ?? area;
 const noteHotel = lang === 'ja' ? '楽天トラベル' : 'Rakuten Travel';
 const noteBooks = lang === 'ja' ? '楽天ブックス' : 'Rakuten Books';
 
-// 建物の文脈に沿った関連リンク（検索ベースなのでリンク切れに強い）
+// 地図リンク用のキーワード(建物名＋エリア)。楽天は日本語サービスなので英語ページでもJP語を使う。
+const mapQuery = encodeURIComponent(`${kwTitle} ${kwArea}`);
+const noteMap = lang === 'ja' ? 'Googleマップ' : 'Google Maps';
+
+// 関連リンク。sponsored=アフィリエイト広告、それ以外(地図)は通常リンク。
 const links = [
   {
-    label: lang === 'ja' ? `${area}周辺のホテルを探す` : `${t('affiliate.hotel')} (${area})`,
+    // ホテル: 区別の楽天トラベル エリアページ(実在URL)。区不明時は東京エリア。
+    label: lang === 'ja' ? `${area}のホテルを探す` : `Find hotels in ${area}`,
     note: noteHotel,
-    url: rakutenTravelSearch(kwArea),
+    url: rakutenTravelArea(kwArea),
+    sponsored: true,
   },
   {
     label: t('affiliate.books'),
     note: noteBooks,
     url: rakutenBooksSearch(`東京 建築 ${buildingType === 'residence' ? 'マンション' : '超高層ビル'}`),
+    sponsored: true,
   },
   {
-    label: lang === 'ja' ? `「${title}」を調べる` : `${title} ${t('affiliate.search')}`,
-    note: 'Amazon',
-    url: amazonSearch(`${kwTitle} 東京`),
+    // 旧Amazon(成果リンク無効＆検索結果が無関係)を廃止し、建物の場所を地図で示す実用リンクに変更。
+    label: lang === 'ja' ? 'Googleマップで場所を見る' : 'See the location on Google Maps',
+    note: noteMap,
+    url: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`,
+    sponsored: false,
   },
 ];
 ---
@@ -53,7 +61,7 @@ const links = [
   <ul class="affiliate-list">
     {links.map((l) => (
       <li>
-        <a href={l.url} target="_blank" rel="nofollow sponsored noopener">
+        <a href={l.url} target="_blank" rel={l.sponsored ? 'nofollow sponsored noopener' : 'noopener'}>
           {l.label}<span class="aff-note">{l.note} ↗</span>
         </a>
       </li>

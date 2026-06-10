@@ -48,6 +48,7 @@ const ja: Dict = {
   'affiliate.hotel': '周辺のホテルを探す',
   'affiliate.books': '東京の建築・再開発の関連書籍',
   'affiliate.search': 'を調べる',
+  'related.title': '関連記事',
 };
 
 const en: Dict = {
@@ -88,6 +89,7 @@ const en: Dict = {
   'affiliate.hotel': 'Find hotels nearby',
   'affiliate.books': 'Books on Tokyo architecture & redevelopment',
   'affiliate.search': '— search',
+  'related.title': 'Related articles',
 };
 
 const dicts: Record<Lang, Dict> = { ja, en };

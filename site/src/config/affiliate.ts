@@ -27,9 +27,24 @@ export function rakutenBooksSearch(keyword: string): string {
   return wrapRakuten(`https://books.rakuten.co.jp/search?sitem=${encodeURIComponent(keyword)}`);
 }
 
-// 楽天トラベルのエリア（キーワード）検索URL
-export function rakutenTravelSearch(keyword: string): string {
-  return wrapRakuten(`https://search.travel.rakuten.co.jp/ds/yado/?f_query=${encodeURIComponent(keyword)}`);
+// 東京23区名 → 楽天トラベルのエリアslug。該当ページ(/ds/yado/tokyo/<slug>)は実在し安定。
+const WARD_SLUG: Record<string, string> = {
+  '千代田区': 'chiyoda', '中央区': 'chuo', '港区': 'minato', '新宿区': 'shinjuku',
+  '文京区': 'bunkyo', '台東区': 'taito', '墨田区': 'sumida', '江東区': 'koto',
+  '品川区': 'shinagawa', '目黒区': 'meguro', '大田区': 'ota', '世田谷区': 'setagaya',
+  '渋谷区': 'shibuya', '中野区': 'nakano', '杉並区': 'suginami', '豊島区': 'toshima',
+  '北区': 'kita', '荒川区': 'arakawa', '板橋区': 'itabashi', '練馬区': 'nerima',
+  '足立区': 'adachi', '葛飾区': 'katsushika', '江戸川区': 'edogawa',
+};
+
+// 楽天トラベルのエリア別宿泊一覧URL。区が判らなければ東京エリアにフォールバック。
+// (旧 f_query 形式はリンク切れ(HTTP 400)だったため、実在するエリアパスに変更)
+export function rakutenTravelArea(area: string): string {
+  const slug = WARD_SLUG[(area ?? '').trim()];
+  const base = slug
+    ? `https://search.travel.rakuten.co.jp/ds/yado/tokyo/${slug}`
+    : 'https://search.travel.rakuten.co.jp/ds/yado/tokyo';
+  return wrapRakuten(base);
 }
 
 // Amazon 検索URL（アソシエイトタグ付与）

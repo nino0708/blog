@@ -176,6 +176,18 @@ a:hover { text-decoration: underline; }
 .affiliate-list a:hover { border-color: var(--brand); transform: translateY(-1px); }
 .aff-note { font-size: 0.78rem; font-weight: 600; color: var(--brand); white-space: nowrap; }
 
+/* ---- related (内部リンク) ---- */
+.related { margin: 36px 0 8px; }
+.related-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 10px; }
+.related-list a {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 13px 16px; font-weight: 700; color: var(--text); text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.related-list a:hover { border-color: var(--brand); transform: translateY(-1px); }
+.related-area { font-size: 0.78rem; font-weight: 600; color: var(--text-muted); white-space: nowrap; }
+
 /* ---- footer ---- */
 .site-footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--text-muted); font-size: 0.85rem; }
 .disclaimer { font-size: 0.78rem; color: var(--text-muted); margin-top: 8px; }

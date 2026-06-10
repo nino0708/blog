@@ -43,12 +43,33 @@ const jsonLd = {
 
 const specs = buildSpecs(lang, d);
 const altPath = hasEn ? `/en/buildings/${post.slug}/` : null;
+
+// 検索意図に寄せたSEOタイトル(建物名｜竣工年・高さ｜エリア+用途)。H1はd.titleのまま。
+const typeLabelJa = d.buildingType === 'residence' ? 'マンション' : 'オフィスビル';
+const factBits = [
+  d.completedYear ? `${d.completedYear}年竣工` : null,
+  d.heightM ? `高さ${d.heightM}m` : null,
+].filter(Boolean).join(' ');
+const seoTitle = `${d.title}｜${factBits ? `${factBits}｜` : ''}${d.area}の${typeLabelJa}`;
+
+// 内部リンク用の関連記事: 同エリア優先、次に竣工年が近い順。最大4件。
+const related = (await getCollection('buildings'))
+  .filter((p) => p.slug !== post.slug)
+  .map((p) => {
+    const sameArea = p.data.area === d.area ? 1000 : 0;
+    const gap = d.completedYear && p.data.completedYear ? Math.abs(p.data.completedYear - d.completedYear) : 999;
+    return { p, score: sameArea - gap };
+  })
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 4)
+  .map(({ p }) => ({ title: p.data.title, area: p.data.area, href: `/buildings/${p.slug}/` }));
 ---
-<BaseLayout title={d.title} description={metaDescription} lang={lang} ogType="article" altPath={altPath} jsonLd={jsonLd}>
+<BaseLayout title={seoTitle} description={metaDescription} lang={lang} ogType="article" altPath={altPath} jsonLd={jsonLd} appendSiteName={false}>
   <BuildingArticle
     lang={lang}
     title={d.title}
     summary={d.summary}
+    related={related}
     area={d.area}
     buildingType={d.buildingType}
     verified={d.verified}

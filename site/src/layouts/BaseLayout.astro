@@ -18,6 +18,8 @@ interface Props {
   altPath?: string | null;
   /** 追加で差し込む構造化データ(JSON-LD)など。head末尾に出力 */
   jsonLd?: Record<string, unknown>;
+  /** <title>末尾にサイト名を付けるか。SEO最適化済みの記事タイトルは付けない(長くなるため) */
+  appendSiteName?: boolean;
 }
 const siteName = 'Tokyo Towers Journal';
 const {
@@ -26,11 +28,12 @@ const {
   ogType = 'website',
   altPath = null,
   jsonLd,
+  appendSiteName = true,
 } = Astro.props;
 const t = useT(lang);
 const description = Astro.props.description ?? t('site.description');
 
-const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
+const fullTitle = appendSiteName && title !== siteName ? `${title} | ${siteName}` : title;
 const siteBase = Astro.site ?? new URL('https://example.com');
 // site 未設定(example.com)でも壊れないよう Astro.site をフォールバック
 const canonical = new URL(Astro.url.pathname, siteBase).toString();

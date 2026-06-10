@@ -24,11 +24,14 @@ interface Props {
   /** アフィリエイト検索に使うJPキーワード（英語ページ用） */
   searchTitle?: string;
   searchArea?: string;
+  /** 関連記事（内部リンク）。同エリア・近い竣工年の記事を呼び出し側で算出して渡す */
+  related?: { title: string; area: string; href: string }[];
 }
 const {
   lang, title, summary, area, buildingType, verified,
   heroImage, heroImageCredit, heroImageLink,
   specs, tags, tagBase, sources, listPath, searchTitle, searchArea,
+  related = [],
 } = Astro.props;
 const t = useT(lang);
 const typeLabel = buildingTypeLabel(lang, buildingType);
@@ -63,6 +66,17 @@ const commonsLabel = lang === 'ja' ? 'Wikimedia Commons' : 'via Wikimedia Common
   </dl>
 
   <slot />
+
+  {related.length > 0 && (
+    <nav class="related" aria-label={t('related.title')}>
+      <h2>{t('related.title')}</h2>
+      <ul class="related-list">
+        {related.map((r) => (
+          <li><a href={r.href}>{r.title}<span class="related-area">{r.area}</span></a></li>
+        ))}
+      </ul>
+    </nav>
+  )}
 
   <AffiliateLinks lang={lang} title={title} area={area} buildingType={buildingType} searchTitle={searchTitle} searchArea={searchArea} />
 
