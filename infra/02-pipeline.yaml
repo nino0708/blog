@@ -143,7 +143,8 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub '${ProjectName}-generator'
-      Runtime: nodejs20.x
+      # 2026-06-10 Node.js(nodejs20.x)からPythonへ移植。依存ゼロ(標準ライブラリのみ)、boto3はランタイム同梱。
+      Runtime: python3.13
       Handler: index.handler
       Role: !GetAtt GeneratorRole.Arn
       Timeout: 300
@@ -167,7 +168,9 @@ Resources:
     Properties:
       Name: !Sub '${ProjectName}-daily'
       ScheduleExpression: !Ref ScheduleExpression
-      State: ENABLED
+      # 2026-06-10 毎日の投稿はネタ帳ベースのクラウドルーティン(builtjapan-daily-article)に一本化。
+      # このLambda自動投稿は停止中。再デプロイで二重投稿に戻さないため DISABLED 固定。
+      State: DISABLED
       Targets:
         - Id: generator
           Arn: !GetAtt GeneratorFunction.Arn
