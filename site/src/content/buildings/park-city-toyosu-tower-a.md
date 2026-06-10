@@ -13,6 +13,9 @@ architect: "三井住友建設・鹿島建設JV"
 tags: ["江東区", "タワーマンション", "ウォーターフロント", "豊洲", "再開発"]
 publishedAt: 2026-06-09
 summary: "造船所跡地の湾岸再開発に生まれた、運河沿いに立つ52階建てのタワーマンション。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Tower_A_at_Park_City_Toyosu_complex.JPG/1280px-Tower_A_at_Park_City_Toyosu_complex.JPG"
+heroImageCredit: "Harani0403 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tower_A_at_Park_City_Toyosu_complex.JPG"
 verified: true
 sources: ["パークシティ豊洲 - Wikipedia（高さは資料により179.49m/179.96m等の差異あり・要最終確認）", "skyscraperclub.com"]
 ---
