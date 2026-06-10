@@ -85,7 +85,7 @@ const related = (await getCollection('buildings'))
     return { title: en.title, area: en.area, href: `/en/buildings/${p.slug}/` };
   });
 ---
-<BaseLayout title={seoTitle} description={metaDescription} lang={lang} ogType="article" altPath={`/buildings/${post.slug}/`} jsonLd={jsonLd} appendSiteName={false}>
+<BaseLayout title={seoTitle} description={metaDescription} lang={lang} ogType="article" altPath={`/buildings/${post.slug}/`} jsonLd={jsonLd} appendSiteName={false} ogImage={f.heroImage}>
   <BuildingArticle
     lang={lang}
     title={e.title}

@@ -64,7 +64,7 @@ const related = (await getCollection('buildings'))
   .slice(0, 4)
   .map(({ p }) => ({ title: p.data.title, area: p.data.area, href: `/buildings/${p.slug}/` }));
 ---
-<BaseLayout title={seoTitle} description={metaDescription} lang={lang} ogType="article" altPath={altPath} jsonLd={jsonLd} appendSiteName={false}>
+<BaseLayout title={seoTitle} description={metaDescription} lang={lang} ogType="article" altPath={altPath} jsonLd={jsonLd} appendSiteName={false} ogImage={d.heroImage}>
   <BuildingArticle
     lang={lang}
     title={d.title}

@@ -20,6 +20,8 @@ interface Props {
   jsonLd?: Record<string, unknown>;
   /** <title>末尾にサイト名を付けるか。SEO最適化済みの記事タイトルは付けない(長くなるため) */
   appendSiteName?: boolean;
+  /** OGP/Twitterカード画像のURL。記事はheroImage(建物写真)を渡す。未指定は /ogp.svg */
+  ogImage?: string;
 }
 const siteName = 'Tokyo Towers Journal';
 const {
@@ -29,6 +31,7 @@ const {
   altPath = null,
   jsonLd,
   appendSiteName = true,
+  ogImage,
 } = Astro.props;
 const t = useT(lang);
 const description = Astro.props.description ?? t('site.description');
@@ -37,7 +40,10 @@ const fullTitle = appendSiteName && title !== siteName ? `${title} | ${siteName}
 const siteBase = Astro.site ?? new URL('https://example.com');
 // site 未設定(example.com)でも壊れないよう Astro.site をフォールバック
 const canonical = new URL(Astro.url.pathname, siteBase).toString();
-const ogImage = new URL('/ogp.svg', siteBase).toString();
+// 記事は建物写真(絶対URL)をOG画像に。未指定/相対は既定の /ogp.svg にフォールバック。
+const ogImageUrl = ogImage
+  ? (ogImage.startsWith('http') ? ogImage : new URL(ogImage, siteBase).toString())
+  : new URL('/ogp.svg', siteBase).toString();
 const altUrl = altPath ? new URL(altPath, siteBase).toString() : null;
 // hreflang: 自言語=canonical、もう一方=altUrl。x-default は日本語(ルート)を指す。
 const jaUrl = lang === 'ja' ? canonical : altUrl;
@@ -72,15 +78,16 @@ const websiteLd = {
     <meta property="og:description" content={description} />
     <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={ogImageUrl} />
     <meta property="og:locale" content={ogLocale[lang]} />
     {altUrl && <meta property="og:locale:alternate" content={ogLocale[lang === 'ja' ? 'en' : 'ja']} />}
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@builtjapan" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image" content={ogImageUrl} />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap.xml" />
