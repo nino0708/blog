@@ -188,6 +188,25 @@ a:hover { text-decoration: underline; }
 .related-list a:hover { border-color: var(--brand); transform: translateY(-1px); }
 .related-area { font-size: 0.78rem; font-weight: 600; color: var(--text-muted); white-space: nowrap; }
 
+/* ---- category (coming soon) ---- */
+.coming-soon {
+  margin: 28px 0; padding: 40px 24px; text-align: center;
+  background: var(--surface); border: 1px dashed var(--line); border-radius: 14px; color: var(--text-muted);
+}
+.coming-soon-badge {
+  display: inline-block; margin-bottom: 12px; padding: 6px 16px; border-radius: 999px;
+  background: var(--brand); color: #fff; font-weight: 800; letter-spacing: 0.04em;
+}
+.cat-list { display: grid; gap: 12px; margin: 24px 0; }
+.cat-card {
+  display: flex; flex-direction: column; gap: 4px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px;
+  text-decoration: none; transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.cat-card:hover { border-color: var(--brand); transform: translateY(-1px); }
+.cat-card-title { font-weight: 700; color: var(--text); }
+.cat-card-summary { font-size: 0.85rem; color: var(--text-muted); }
+
 /* ---- ranking ---- */
 .ranking-list { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 12px; }
 .ranking-list li {

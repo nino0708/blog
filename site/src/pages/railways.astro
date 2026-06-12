@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CategoryView from '../components/CategoryView.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('railways');
+const title = '鉄道';
+const description = '山手線や地下鉄、ターミナル駅など、東京・関東の鉄道の路線と駅を紹介していきます。';
+---
+<BaseLayout title={`${title}｜関東のインフラ`} description={description} lang="ja" appendSiteName={false}>
+  <CategoryView title={title} description={description} posts={posts} basePath="/railways/" />
+</BaseLayout>

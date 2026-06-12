@@ -16,7 +16,7 @@ const ja: Dict = {
   'site.description':
     '東京の大型オフィスビル・タワーマンションを巡る建築情報ブログ。竣工年・高さ・再開発の背景を公開情報をもとに記録します。',
   'lang.other': 'English',
-  'nav.home': '記事一覧',
+  'nav.home': 'ビル・マンション',
   'nav.about': 'このブログについて',
   'type.office': 'オフィスビル',
   'type.residence': 'マンション',
@@ -57,7 +57,7 @@ const en: Dict = {
   'site.description':
     "A blog exploring Tokyo's major office towers and high-rise residences — recording completion years, heights and the story behind each redevelopment, based on public information.",
   'lang.other': '日本語',
-  'nav.home': 'Articles',
+  'nav.home': 'Buildings',
   'nav.about': 'About',
   'type.office': 'Office tower',
   'type.residence': 'Residential tower',

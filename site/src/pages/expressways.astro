@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CategoryView from '../components/CategoryView.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('expressways');
+const title = '高速道路';
+const description = '首都高速をはじめとする、関東の高速道路の路線・ジャンクション・橋梁を紹介していきます。';
+---
+<BaseLayout title={`${title}｜関東のインフラ`} description={description} lang="ja" appendSiteName={false}>
+  <CategoryView title={title} description={description} posts={posts} basePath="/expressways/" />
+</BaseLayout>

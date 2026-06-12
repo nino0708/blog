@@ -1,0 +1,33 @@
+---
+// カテゴリ(高速道路・鉄道・観光)のランディング表示。
+// 記事が0件なら「Coming soon...」、1件以上あれば自動で一覧化する(将来の拡張用)。
+interface Item { slug: string; data: { title: string; summary?: string; area?: string } }
+interface Props {
+  title: string;
+  description: string;
+  posts: Item[];
+  basePath: string; // 例: '/expressways/'
+}
+const { title, description, posts, basePath } = Astro.props;
+---
+<p class="breadcrumb"><a href="/">記事一覧</a> ／ {title}</p>
+<article class="article">
+  <h1>{title}</h1>
+  <p class="lead">{description}</p>
+
+  {posts.length === 0 ? (
+    <div class="coming-soon">
+      <span class="coming-soon-badge">Coming soon...</span>
+      <p>このカテゴリの記事は準備中です。順次公開していきます。</p>
+    </div>
+  ) : (
+    <div class="cat-list">
+      {posts.map((p) => (
+        <a class="cat-card" href={`${basePath}${p.slug}/`}>
+          <span class="cat-card-title">{p.data.title}</span>
+          {p.data.summary && <span class="cat-card-summary">{p.data.summary}</span>}
+        </a>
+      ))}
+    </div>
+  )}
+</article>

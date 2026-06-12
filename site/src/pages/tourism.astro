@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CategoryView from '../components/CategoryView.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('tourism');
+const title = '観光';
+const description = '東京タワーや東京スカイツリーなど、関東の観光名所・ランドマークを建築の視点で紹介していきます。';
+---
+<BaseLayout title={`${title}｜関東のランドマーク`} description={description} lang="ja" appendSiteName={false}>
+  <CategoryView title={title} description={description} posts={posts} basePath="/tourism/" />
+</BaseLayout>

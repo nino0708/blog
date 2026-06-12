@@ -46,4 +46,29 @@ const buildingsEn = defineCollection({
   }),
 });
 
-export const collections = { buildings, 'buildings-en': buildingsEn };
+// 今後の拡張カテゴリ(高速道路の路線・鉄道の路線・観光)。
+// ビルとはフィールドが異なるため、汎用的な共通スキーマを使う。記事を追加するとカテゴリページが自動で一覧化する。
+const genericCategorySchema = z.object({
+  title: z.string(),
+  area: z.string().optional(), // エリア/区間/沿線など
+  summary: z.string().optional(),
+  tags: z.array(z.string()).default([]),
+  publishedAt: z.coerce.date(),
+  heroImage: z.string().optional(),
+  heroImageCredit: z.string().optional(),
+  heroImageLink: z.string().optional(),
+  verified: z.boolean().default(false),
+  sources: z.array(z.string()).default([]),
+});
+
+const expressways = defineCollection({ type: 'content', schema: genericCategorySchema });
+const railways = defineCollection({ type: 'content', schema: genericCategorySchema });
+const tourism = defineCollection({ type: 'content', schema: genericCategorySchema });
+
+export const collections = {
+  buildings,
+  'buildings-en': buildingsEn,
+  expressways,
+  railways,
+  tourism,
+};
