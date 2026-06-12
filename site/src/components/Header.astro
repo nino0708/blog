@@ -16,6 +16,7 @@ const switchHref = altPath ?? localizePath(other, '/');
     <a href={localizePath(lang, '/')} class="brand">Tokyo <span>Towers</span> Journal</a>
     <nav class="nav">
       <a href={localizePath(lang, '/')}>{t('nav.home')}</a>
+      {lang === 'ja' && <a href="/rankings/">ランキング</a>}
       <a href={localizePath(lang, '/about/')}>{t('nav.about')}</a>
       <a class="lang-switch" href={switchHref} hreflang={other} lang={other}>{t('lang.other')}</a>
     </nav>

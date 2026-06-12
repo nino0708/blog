@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = '関東の高層ビル 高さランキング Top5';
+const description =
+  '関東（東京・神奈川）にある完成済みの高層ビルを高さ順に紹介。麻布台ヒルズ森JPタワー、横浜ランドマークタワーなど、関東を代表する超高層建築の高さランキングです。';
+
+// 高さは各種公開情報(Wikipedia「日本の超高層建築物・構築物の一覧」等)に基づく。塔(東京タワー等)は除く。
+const ranking = [
+  { rank: 1, name: '麻布台ヒルズ 森JPタワー', heightM: 325.4, year: 2023, area: '港区', slug: 'azabudai-hills-mori-jp-tower' },
+  { rank: 2, name: '横浜ランドマークタワー', heightM: 296.33, year: 1993, area: '横浜市西区', slug: 'yokohama-landmark-tower' },
+  { rank: 3, name: '虎ノ門ヒルズ ステーションタワー', heightM: 265.75, year: 2023, area: '港区', slug: 'toranomon-hills-station-tower' },
+  { rank: 4, name: '麻布台ヒルズ レジデンスB', heightM: 262.82, year: 2025, area: '港区', slug: 'azabudai-hills-residence-b' },
+  { rank: 5, name: '東京ミッドタウン・タワー', heightM: 248.1, year: 2007, area: '港区', slug: 'tokyo-midtown-tower' },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: title,
+  itemListElement: ranking.map((r) => ({
+    '@type': 'ListItem',
+    position: r.rank,
+    name: r.name,
+    url: `https://builtjapan.com/buildings/${r.slug}/`,
+  })),
+};
+---
+<BaseLayout title={title} description={description} lang="ja" appendSiteName={false} jsonLd={jsonLd}>
+  <p class="breadcrumb"><a href="/">記事一覧</a> ／ ランキング</p>
+  <article class="article">
+    <h1>{title}</h1>
+    <p class="lead">{description}</p>
+
+    <ol class="ranking-list">
+      {ranking.map((r) => (
+        <li>
+          <span class="rank-no">{r.rank}</span>
+          <div class="rank-body">
+            <a class="rank-name" href={`/buildings/${r.slug}/`}>{r.name}</a>
+            <span class="rank-meta">高さ {r.heightM}m ・ {r.year}年竣工 ・ {r.area}</span>
+          </div>
+        </li>
+      ))}
+    </ol>
+
+    <p class="rank-note">※ 完成済みのビル（建築物）が対象。東京スカイツリーや東京タワー等の塔（構造物）は除く。高さは各種公開情報（Wikipedia「日本の超高層建築物・構築物の一覧」等）に基づく目安です。2028年竣工予定のTorch Tower（約390m）など建設中の建物は含みません。</p>
+  </article>
+</BaseLayout>

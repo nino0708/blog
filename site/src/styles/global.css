@@ -188,6 +188,26 @@ a:hover { text-decoration: underline; }
 .related-list a:hover { border-color: var(--brand); transform: translateY(-1px); }
 .related-area { font-size: 0.78rem; font-weight: 600; color: var(--text-muted); white-space: nowrap; }
 
+/* ---- ranking ---- */
+.ranking-list { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 12px; }
+.ranking-list li {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px;
+}
+.rank-no {
+  flex: none; width: 40px; height: 40px; border-radius: 999px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 1.1rem; color: #fff; background: var(--brand);
+}
+.ranking-list li:first-child .rank-no { background: #d4af37; }
+.ranking-list li:nth-child(2) .rank-no { background: #9aa3ad; }
+.ranking-list li:nth-child(3) .rank-no { background: #b08d57; }
+.rank-body { display: flex; flex-direction: column; gap: 2px; }
+.rank-name { font-weight: 700; font-size: 1.05rem; color: var(--text); text-decoration: none; }
+.rank-name:hover { color: var(--brand); }
+.rank-meta { font-size: 0.85rem; color: var(--text-muted); }
+.rank-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 20px; }
+
 /* ---- footer ---- */
 .site-footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--text-muted); font-size: 0.85rem; }
 .disclaimer { font-size: 0.78rem; color: var(--text-muted); margin-top: 8px; }
