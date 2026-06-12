@@ -10,7 +10,7 @@ const posts = (await getCollection('buildings')).sort(
   (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
 );
 ---
-<BaseLayout title="Tokyo Towers Journal" lang={lang} altPath="/en/">
+<BaseLayout title="Built Japan" lang={lang} altPath="/en/">
   <section class="hero">
     <h1>{t('home.title')}</h1>
     <p>{t('home.desc')}</p>

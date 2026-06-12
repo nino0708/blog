@@ -15,7 +15,7 @@ const posts = (await getCollection('buildings-en'))
   .filter((x) => x.jp)
   .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
 ---
-<BaseLayout title="Tokyo Towers Journal" lang={lang} altPath="/">
+<BaseLayout title="Built Japan" lang={lang} altPath="/">
   <section class="hero">
     <h1>{t('home.title')}</h1>
     <p>{t('home.desc')}</p>

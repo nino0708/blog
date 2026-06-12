@@ -11,7 +11,7 @@ export const ogLocale: Record<Lang, string> = { ja: 'ja_JP', en: 'en_US' };
 type Dict = Record<string, string>;
 
 const ja: Dict = {
-  'site.name': 'Tokyo Towers Journal',
+  'site.name': 'Built Japan',
   'site.tagline': '趣味で運営する東京の高層建築情報ブログ',
   'site.description':
     '東京の大型オフィスビル・タワーマンションを巡る建築情報ブログ。竣工年・高さ・再開発の背景を公開情報をもとに記録します。',
@@ -52,7 +52,7 @@ const ja: Dict = {
 };
 
 const en: Dict = {
-  'site.name': 'Tokyo Towers Journal',
+  'site.name': 'Built Japan',
   'site.tagline': "A hobby blog on Tokyo's high-rise architecture",
   'site.description':
     "A blog exploring Tokyo's major office towers and high-rise residences — recording completion years, heights and the story behind each redevelopment, based on public information.",

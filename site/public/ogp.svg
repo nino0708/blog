@@ -14,6 +14,6 @@
     <rect x="900" y="260" width="80" height="290"/>
     <rect x="1000" y="200" width="90" height="350"/>
   </g>
-  <text x="600" y="300" text-anchor="middle" fill="#ffffff" font-size="76" font-weight="800" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">Tokyo Towers Journal</text>
-  <text x="600" y="370" text-anchor="middle" fill="#cfe0f6" font-size="34" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">東京の巨大建築を巡る記録</text>
+  <text x="600" y="300" text-anchor="middle" fill="#ffffff" font-size="92" font-weight="800" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">Built Japan</text>
+  <text x="600" y="375" text-anchor="middle" fill="#cfe0f6" font-size="34" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">関東の巨大建築・インフラを巡る記録</text>
 </svg>
