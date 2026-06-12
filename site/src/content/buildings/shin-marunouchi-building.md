@@ -1,5 +1,5 @@
 ---
-title: "新丸の内ビルディング｜高さ197m・2007年竣工・丸の内仲通りの顔"
+title: "新丸の内ビルディング"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区丸の内一丁目5番1号"
@@ -12,6 +12,9 @@ architect: "三菱地所設計"
 tags: ["千代田区", "丸の内", "再開発", "複合開発", "超高層ビル"]
 publishedAt: 2026-06-12
 summary: "丸ビルに向き合う地上38階・高さ約197mの複合ビル。英国のホプキンス・アーキテクツがコンセプトデザインを手がけ、2007年に三菱地所が竣工した。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Shin_Marunouchi_Bldg.jpg/1280px-Shin_Marunouchi_Bldg.jpg"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shin_Marunouchi_Bldg.jpg"
 verified: true
 sources: ["新丸の内ビルディング - Wikipedia（地上38階・地下4階・高さ197.600m・2007年竣工）", "新丸の内ビルディング 東京都千代田区 超高層オフィスビル（www.eonet.ne.jp）"]
 ---

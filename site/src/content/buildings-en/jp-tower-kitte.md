@@ -1,5 +1,5 @@
 ---
-title: "JP Tower (KITTE) | The 1931 Post Office Wall Beneath a 200m Skyscraper"
+title: "JP Tower (KITTE)"
 area: "Chiyoda City"
 summary: "A 38-story, 200-meter mixed-use tower completed in 2012, built around the preserved facade of the 1931 Tokyo Central Post Office. The lower floors house the KITTE retail complex, with interiors designed by Kengo Kuma."
 developer: "Japan Post, JR East, Mitsubishi Estate"

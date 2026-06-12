@@ -1,5 +1,5 @@
 ---
-title: "JPタワー（KITTE）｜旧東京中央郵便局を継ぐ高さ200m・2012年竣工の複合ビル"
+title: "JPタワー（KITTE）"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区丸の内二丁目7番2号"
@@ -12,6 +12,9 @@ architect: "三菱地所設計"
 tags: ["千代田区", "丸の内", "再開発", "複合開発", "超高層ビル", "近代建築保存"]
 publishedAt: 2026-06-12
 summary: "旧東京中央郵便局の外壁を保存・活用した低層部と地上38階・高さ200mの高層棟が一体となった複合ビル。2012年竣工。商業施設KITTEを内包する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/JP_Tower_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg/1280px-JP_Tower_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg"
+heroImageCredit: "そらみみ (Soramimi) / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:JP_Tower_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg"
 verified: true
 sources: ["JPタワー - Wikipedia（地上38階・地下4階・軒高200.0m・2012年竣工）", "東京中央郵便局 - Wikipedia（1931年竣工・吉田鉄郎設計）", "KITTE 内装デザイン 隈研吾（kkaa.co.jp・商店建築ブログ）"]
 ---

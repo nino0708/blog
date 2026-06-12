@@ -1,5 +1,5 @@
 ---
-title: "Shin-Marunouchi Building | 197m, 2007 — The Naka-dori Landmark Facing the Maru Building"
+title: "Shin-Marunouchi Building"
 area: "Chiyoda City"
 summary: "A 38-story, 197-meter office-and-retail complex completed in 2007. Developed by Mitsubishi Estate with a concept design by Hopkins Architects, it faces the Marunouchi Building directly across Naka-dori."
 developer: "Mitsubishi Estate"
