@@ -96,8 +96,9 @@ const websiteLd = {
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
+    <a class="skip-link" href="#main">{t('a11y.skip')}</a>
     <Header lang={lang} altPath={altPath} />
-    <main class="container">
+    <main id="main" class="container">
       <slot />
     </main>
     <Footer lang={lang} />

@@ -12,6 +12,9 @@ architect: "KPF（コーン・ペダーセン・フォックス）"
 tags: ["千代田区", "大手町", "超高層ビル", "再開発", "複合開発"]
 publishedAt: 2026-06-12
 summary: "皇居と東京駅の間、大手町の一等地に2014年竣工した地上38階・高さ約200mの複合超高層。KPF設計で、足元に都市の森「大手町の森」を抱え、最上部にラグジュアリーホテル「アマン東京」を内包する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%C5%8Ctemachi_Tower.jpg/1280px-%C5%8Ctemachi_Tower.jpg"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:%C5%8Ctemachi_Tower.jpg"
 verified: true
 sources: ["The Skyscraper Center: The Otemachi Tower - roof height 199.7m, 38 floors above / 6 floors below, completed April 2014 (skyscrapercenter.com/building/the-otemachi-tower/13981)", "東京建物・大成建設プレスリリース 2013年8月29日「大手町タワー一次竣工のお知らせ」(pdf.irpocket.com/C8804/qnwX/aqR9/It3Y.pdf)", "KPF公式サイト - The Otemachi Tower プロジェクトページ (kpf.com/project/the-otemachi-tower)"]
 ---

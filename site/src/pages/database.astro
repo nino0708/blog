@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DatabaseView from '../components/DatabaseView.astro';
+import { getCollection } from 'astro:content';
+
+// 図鑑に載る「記事のある建物」を ItemList 構造化データで列挙（内部リンク強化・SEO）。
+const articles = await getCollection('buildings');
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: '東京の高層建築 建物図鑑',
+  numberOfItems: articles.length,
+  itemListElement: articles.map((a, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: a.data.title,
+    url: `https://builtjapan.com/buildings/${a.slug}/`,
+  })),
+};
+
+const title = '建物図鑑｜東京の高層建築データベース';
+const description =
+  '東京を中心とした高層オフィスビル・タワーマンション・タワーを一棟ずつ集めた、検索・並べ替えできる建物データベース（百科事典）。竣工年・高さ・エリアから引けます。';
+---
+<BaseLayout title={title} description={description} lang="ja" altPath="/en/database/" appendSiteName={false} jsonLd={jsonLd}>
+  <p class="breadcrumb"><a href="/">記事一覧</a> ／ 建物図鑑</p>
+  <DatabaseView lang="ja" />
+</BaseLayout>

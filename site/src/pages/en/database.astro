@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DatabaseView from '../../components/DatabaseView.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('buildings');
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Tokyo High-rise Building Database',
+  numberOfItems: articles.length,
+  itemListElement: articles.map((a, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: a.data.title,
+    url: `https://builtjapan.com/en/buildings/${a.slug}/`,
+  })),
+};
+
+const title = 'Building Database | Tokyo High-rise Architecture';
+const description =
+  'A searchable database (encyclopedia) of Tokyo’s high-rise office towers, residential towers and structures — building by building. Look them up by completion year, height and area.';
+---
+<BaseLayout title={title} description={description} lang="en" altPath="/database/" appendSiteName={false} jsonLd={jsonLd}>
+  <p class="breadcrumb"><a href="/en/">Articles</a> ／ Building Database</p>
+  <DatabaseView lang="en" />
+</BaseLayout>

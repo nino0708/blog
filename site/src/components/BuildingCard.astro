@@ -22,7 +22,13 @@ const meta = buildCardMeta(lang, { area, completedYear, heightM });
   <a href={url}>
     {heroImage
       ? <div class="thumb thumb-img"><img src={heroImage} alt={title} loading="lazy" /></div>
-      : <div class="thumb">{title.slice(0, 1)}</div>}
+      : (
+        <div class="thumb thumb-fallback">
+          <span class="thumb-type">{typeLabel}</span>
+          <span class="thumb-area">{area}</span>
+          {heightM && <span class="thumb-height">{heightM}m</span>}
+        </div>
+      )}
     <div class="body">
       <div class="taglist">
         <span class={`badge ${buildingType}`}>{typeLabel}</span>

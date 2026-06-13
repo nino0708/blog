@@ -1,0 +1,344 @@
+---
+// 建物図鑑（百科事典）の一覧表示。
+// 全既知の高層建築を「レジストリ(数値の無いスタブ含む)」＋「公開記事のライブデータ(数値あり)」でマージし、
+// 検索・種別フィルタ・並べ替えできる引きやすい一覧にする。数値は既存データの転記のみ（創作しない）。
+import { getCollection } from 'astro:content';
+import registryData from '../data/buildings-registry.json';
+import { useT, localizePath, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useT(lang);
+
+type BType = 'office' | 'residence' | 'tower';
+interface Row {
+  slug: string;
+  title: string;
+  area: string;
+  buildingType: BType;
+  completedYear?: number;
+  heightM?: number;
+  floorsAbove?: number;
+  verified: boolean;
+  hasArticle: boolean;
+}
+
+const articles = await getCollection('buildings');
+const enArticles = await getCollection('buildings-en');
+const artMap = new Map(articles.map((p) => [p.slug, p.data]));
+const enMap = new Map(enArticles.map((p) => [p.slug, p.data]));
+
+// slug でユニーク化。まずレジストリ、次に記事front matterで上書き（数値は記事優先）。
+const merged = new Map<string, any>();
+for (const r of (registryData as any).buildings) {
+  merged.set(r.slug, { ...r, hasArticle: false });
+}
+for (const a of articles) {
+  const base = merged.get(a.slug) ?? {};
+  merged.set(a.slug, {
+    ...base,
+    slug: a.slug,
+    title: a.data.title,
+    title_en: base.title_en,
+    area: a.data.area ?? base.area,
+    area_en: base.area_en,
+    buildingType: a.data.buildingType ?? base.buildingType ?? 'office',
+    completedYear: a.data.completedYear ?? base.completedYear,
+    heightM: a.data.heightM ?? base.heightM,
+    floorsAbove: a.data.floorsAbove ?? base.floorsAbove,
+    verified: a.data.verified ?? base.verified ?? false,
+    hasArticle: true,
+  });
+}
+
+// 表示用に言語へ寄せる（英語が無ければ日本語名にフォールバック＝正直に）。
+function localized(b: any): { title: string; area: string } {
+  if (lang === 'en') {
+    const en = b.hasArticle ? enMap.get(b.slug) : null;
+    return {
+      title: en?.title ?? b.title_en ?? b.title,
+      area: en?.area ?? b.area_en ?? b.area,
+    };
+  }
+  return { title: b.title, area: b.area };
+}
+
+const rows: Row[] = [...merged.values()].map((b) => {
+  const l = localized(b);
+  return {
+    slug: b.slug,
+    title: l.title,
+    area: l.area ?? '',
+    buildingType: (b.buildingType ?? 'office') as BType,
+    completedYear: b.completedYear,
+    heightM: b.heightM,
+    floorsAbove: b.floorsAbove,
+    verified: Boolean(b.verified),
+    hasArticle: Boolean(b.hasArticle),
+  };
+});
+
+// 初期表示順: 高さ降順（無い建物は末尾）→竣工年降順→名前。
+rows.sort((a, b) => {
+  const ha = a.heightM ?? -1, hb = b.heightM ?? -1;
+  if (hb !== ha) return hb - ha;
+  const ya = a.completedYear ?? -1, yb = b.completedYear ?? -1;
+  if (yb !== ya) return yb - ya;
+  return a.title.localeCompare(b.title, lang === 'ja' ? 'ja' : 'en');
+});
+
+const total = rows.length;
+const withArticle = rows.filter((r) => r.hasArticle).length;
+
+const typeLabel = (ty: BType, short = false) =>
+  t(`type.${ty}${short ? '.short' : ''}`);
+const dash = '—';
+const fmtHeight = (m?: number) => (m ? (lang === 'ja' ? `${m}m` : `${m} m`) : dash);
+const fmtYear = (y?: number) => (y ? (lang === 'ja' ? `${y}年` : `${y}`) : dash);
+
+const countLine =
+  lang === 'ja'
+    ? `収録 ${total} 棟 ・ 記事 ${withArticle} 本`
+    : `${total} buildings · ${withArticle} articles`;
+const note =
+  lang === 'ja'
+    ? '※ 数値（高さ・竣工年・階数）は各種公開情報をもとにした目安です。「準備中」の建物は順次、記事と詳細データを追加していきます。'
+    : '* Figures (height, year, floors) are approximate, based on public sources. Buildings marked “Coming soon” will gain articles and detailed data over time.';
+
+const buildingsBase = localizePath(lang, '/buildings/');
+---
+<section class="db" id="db">
+  <header class="db-head">
+    <h1>{t('db.title')}</h1>
+    <p class="lead">{t('db.lead')}</p>
+    <p class="db-count" id="db-count" data-total={total}>{countLine}</p>
+  </header>
+
+  <div class="db-controls">
+    <input
+      type="search"
+      id="db-search"
+      class="db-search"
+      placeholder={t('db.search.placeholder')}
+      autocomplete="off"
+      aria-label={t('db.search.placeholder')}
+    />
+    <div class="db-filters" role="group" aria-label={t('db.filter.label')}>
+      <button class="db-chip is-active" data-type="all">{t('db.filter.all')}</button>
+      <button class="db-chip" data-type="office">{typeLabel('office', true)}</button>
+      <button class="db-chip" data-type="residence">{typeLabel('residence', true)}</button>
+      <button class="db-chip" data-type="tower">{typeLabel('tower', true)}</button>
+    </div>
+    <label class="db-sort">
+      <span>{t('db.sort.label')}</span>
+      <select id="db-sort">
+        <option value="height">{t('db.sort.height')}</option>
+        <option value="year">{t('db.sort.year')}</option>
+        <option value="name">{t('db.sort.name')}</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="db-table-wrap">
+    <table class="db-table">
+      <thead>
+        <tr>
+          <th class="c-name">{t('db.col.name')}</th>
+          <th class="c-area">{t('db.col.area')}</th>
+          <th class="c-type">{t('db.col.type')}</th>
+          <th class="c-year">{t('db.col.year')}</th>
+          <th class="c-height">{t('db.col.height')}</th>
+          <th class="c-status">{t('db.col.status')}</th>
+        </tr>
+      </thead>
+      <tbody id="db-rows">
+        {rows.map((r) => (
+          <tr
+            class="db-row"
+            data-name={r.title.toLowerCase()}
+            data-area={r.area.toLowerCase()}
+            data-type={r.buildingType}
+            data-height={r.heightM ?? ''}
+            data-year={r.completedYear ?? ''}
+            data-article={r.hasArticle ? '1' : '0'}
+          >
+            <td class="c-name" data-label={t('db.col.name')}>
+              {r.hasArticle ? (
+                <a href={`${buildingsBase}${r.slug}/`}>{r.title}</a>
+              ) : (
+                <span>{r.title}</span>
+              )}
+            </td>
+            <td class="c-area" data-label={t('db.col.area')}>{r.area || dash}</td>
+            <td class="c-type" data-label={t('db.col.type')}>
+              <span class={`badge ${r.buildingType}`}>{typeLabel(r.buildingType, true)}</span>
+            </td>
+            <td class="c-year" data-label={t('db.col.year')}>{fmtYear(r.completedYear)}</td>
+            <td class="c-height" data-label={t('db.col.height')}>{fmtHeight(r.heightM)}</td>
+            <td class="c-status" data-label={t('db.col.status')}>
+              {r.hasArticle ? (
+                <a class="db-read" href={`${buildingsBase}${r.slug}/`}>{t('db.readArticle')}</a>
+              ) : (
+                <span class="db-stub">{t('db.stub')}</span>
+              )}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="db-empty" id="db-empty" hidden>{t('db.empty')}</p>
+  </div>
+
+  <p class="rank-note">{note}</p>
+</section>
+
+<script is:inline define:vars={{ countLabel: lang === 'ja' ? '棟' : '', lang }}>
+  (function () {
+    const root = document.getElementById('db');
+    if (!root) return;
+    const search = root.querySelector('#db-search');
+    const chips = [...root.querySelectorAll('.db-chip')];
+    const sortSel = root.querySelector('#db-sort');
+    const tbody = root.querySelector('#db-rows');
+    const empty = root.querySelector('#db-empty');
+    const countEl = root.querySelector('#db-count');
+    const total = Number(countEl?.dataset.total || '0');
+    const rows = [...tbody.querySelectorAll('.db-row')];
+
+    let activeType = 'all';
+
+    function num(v) {
+      const n = parseFloat(v);
+      return Number.isFinite(n) ? n : -1;
+    }
+
+    function apply() {
+      const q = (search.value || '').trim().toLowerCase();
+      let shown = 0;
+      for (const tr of rows) {
+        const matchType = activeType === 'all' || tr.dataset.type === activeType;
+        const matchText = !q || tr.dataset.name.includes(q) || tr.dataset.area.includes(q);
+        const show = matchType && matchText;
+        tr.hidden = !show;
+        if (show) shown++;
+      }
+      empty.hidden = shown !== 0;
+      if (countEl) {
+        countEl.textContent =
+          lang === 'ja'
+            ? (shown === total ? `収録 ${total} 棟` : `表示 ${shown} / ${total} 棟`)
+            : (shown === total ? `${total} buildings` : `${shown} / ${total} buildings`);
+      }
+    }
+
+    function sortRows(mode) {
+      const sorted = rows.slice().sort((a, b) => {
+        if (mode === 'name') {
+          return a.dataset.name.localeCompare(b.dataset.name, lang === 'ja' ? 'ja' : 'en');
+        }
+        const key = mode === 'year' ? 'year' : 'height';
+        return num(b.dataset[key]) - num(a.dataset[key]);
+      });
+      for (const tr of sorted) tbody.appendChild(tr);
+    }
+
+    search.addEventListener('input', apply);
+    chips.forEach((c) =>
+      c.addEventListener('click', () => {
+        chips.forEach((x) => x.classList.remove('is-active'));
+        c.classList.add('is-active');
+        activeType = c.dataset.type;
+        apply();
+      })
+    );
+    sortSel.addEventListener('change', () => sortRows(sortSel.value));
+  })();
+</script>
+
+<style>
+  .db { margin: 28px 0 48px; }
+  .db-head h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); margin: 8px 0 8px; }
+  .db-head .lead { color: var(--text-muted); margin: 0 0 6px; max-width: 70ch; }
+  .db-count { color: var(--brand); font-weight: 700; font-size: 0.92rem; margin: 6px 0 0; }
+
+  .db-controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+    margin: 22px 0 14px;
+    position: sticky; top: 62px; z-index: 5;
+    padding: 12px; border-radius: 14px;
+    background: var(--surface-glass);
+    backdrop-filter: saturate(1.4) blur(10px);
+    border: 1px solid var(--line);
+  }
+  .db-search {
+    flex: 1 1 220px; min-width: 180px;
+    padding: 10px 14px; font-size: 0.95rem;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: var(--surface); color: var(--text);
+  }
+  .db-search:focus { outline: none; border-color: var(--brand); }
+  .db-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+  .db-chip {
+    border: 1px solid var(--line); background: var(--surface);
+    color: var(--text-muted); font-weight: 700; font-size: 0.82rem;
+    padding: 7px 14px; border-radius: 999px; cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .db-chip:hover { border-color: var(--brand); color: var(--brand); }
+  .db-chip.is-active { background: var(--brand); border-color: var(--brand); color: #fff; }
+  .db-sort { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(--text-muted); }
+  .db-sort select {
+    border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px;
+    background: var(--surface); color: var(--text); font-size: 0.85rem;
+  }
+
+  .db-table-wrap {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
+  }
+  .db-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  .db-table thead th {
+    text-align: left; font-size: 0.76rem; color: var(--text-muted);
+    font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase;
+    padding: 14px 16px; background: var(--bg); border-bottom: 1px solid var(--line);
+    white-space: nowrap;
+  }
+  .db-table tbody td { padding: 13px 16px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  .db-table tbody tr:last-child td { border-bottom: none; }
+  .db-table tbody tr:hover { background: var(--brand-soft); }
+  .c-name a { font-weight: 700; color: var(--text); }
+  .c-name a:hover { color: var(--brand); }
+  .c-name span { font-weight: 700; color: var(--text); }
+  .c-area { color: var(--text-muted); white-space: nowrap; }
+  .c-year, .c-height { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--text-muted); }
+  .c-status { white-space: nowrap; }
+  .badge.tower { background: #e7f0ea; color: #2e7d52; }
+  .db-read { font-weight: 700; font-size: 0.85rem; color: var(--brand); }
+  .db-stub {
+    font-size: 0.74rem; font-weight: 700; color: var(--text-muted);
+    background: var(--bg); border: 1px dashed var(--line);
+    padding: 3px 10px; border-radius: 999px;
+  }
+  .db-empty { text-align: center; color: var(--text-muted); padding: 32px 16px; margin: 0; }
+  .rank-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 16px; }
+
+  /* モバイル: テーブルをカード様に縦積み */
+  @media (max-width: 640px) {
+    .db-controls { position: static; top: auto; }
+    .db-table thead { display: none; }
+    .db-table, .db-table tbody, .db-table tr, .db-table td { display: block; width: 100%; }
+    .db-table tbody tr {
+      border-bottom: 8px solid var(--bg); padding: 6px 4px 10px;
+    }
+    .db-table tbody td {
+      border: none; padding: 4px 16px; display: flex; justify-content: space-between; gap: 12px;
+    }
+    .db-table tbody td.c-name { padding-top: 12px; }
+    .db-table tbody td::before {
+      content: attr(data-label); color: var(--text-muted);
+      font-size: 0.74rem; font-weight: 700; flex: none;
+    }
+    .db-table tbody td.c-name::before { display: none; }
+    .c-name a, .c-name span { font-size: 1.02rem; }
+  }
+</style>

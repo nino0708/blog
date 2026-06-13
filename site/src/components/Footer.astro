@@ -1,5 +1,5 @@
 ---
-import { useT, type Lang } from '../i18n/ui';
+import { useT, localizePath, type Lang } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
@@ -10,7 +10,42 @@ const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
   <div class="container">
-    <div>© {year} Built Japan — {t('site.tagline')}</div>
-    <p class="disclaimer">{t('footer.disclaimer')}</p>
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <a href={localizePath(lang, '/')} class="brand">Built <span>Japan</span></a>
+        <p class="disclaimer">{t('footer.disclaimer')}</p>
+      </div>
+
+      <nav class="footer-col" aria-label={t('footer.explore')}>
+        <h2>{t('footer.explore')}</h2>
+        <ul>
+          <li><a href={localizePath(lang, '/')}>{t('nav.home')}</a></li>
+          <li><a href={localizePath(lang, '/database/')}>{t('nav.database')}</a></li>
+          {lang === 'ja' && <li><a href="/rankings/">ランキング</a></li>}
+          <li><a href={localizePath(lang, '/about/')}>{t('nav.about')}</a></li>
+        </ul>
+      </nav>
+
+      {lang === 'ja' && (
+        <nav class="footer-col" aria-label={t('footer.categories')}>
+          <h2>{t('footer.categories')}</h2>
+          <ul>
+            <li><a href="/">ビル・マンション</a></li>
+            <li><a href="/expressways/">高速道路</a></li>
+            <li><a href="/railways/">鉄道</a></li>
+            <li><a href="/tourism/">観光</a></li>
+          </ul>
+        </nav>
+      )}
+
+      <nav class="footer-col" aria-label={t('footer.follow')}>
+        <h2>{t('footer.follow')}</h2>
+        <ul>
+          <li><a href="https://x.com/builtjapan" target="_blank" rel="noopener">{t('footer.x')}</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">© {year} Built Japan — {t('site.tagline')}</div>
   </div>
 </footer>

@@ -11,6 +11,9 @@ architect: "三菱地所設計"
 tags: ["千代田区", "大手町", "超高層ビル", "再開発", "建設中"]
 publishedAt: 2026-06-12
 summary: "東京駅日本橋口前の常盤橋街区で三菱地所が進める大規模再開発「TOKYO TORCH」の中核棟。竣工予定2027年度のトーチタワーは地上63階・高さ390mで、完成すれば日本最高の超高層となる見込み。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Torch_Tower_202604.jpg/1280px-Torch_Tower_202604.jpg"
+heroImageCredit: "皓月旗 / CC BY 4.0（2026年4月撮影・建設中）"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Torch_Tower_202604.jpg"
 verified: true
 sources: ["三菱地所プレスリリース 2023年9月27日「Torch Tower 新築工事着工」- 地上63階・地下4階・高さ390m・竣工予定2027年度 (mec.co.jp/news/detail/2023/09/27_mec230927_torchtower)", "prtimes.jp 三菱地所 2021年「常盤橋タワー竣工」- 地上38階・地下5階・高さ約212m・三菱地所設計・戸田建設施工", "TOKYO TORCH公式サイト tokyotorch.mec.co.jp（高さ390m・63階、竣工予定2027年度）"]
 ---
