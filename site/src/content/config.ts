@@ -11,6 +11,9 @@ const buildings = defineCollection({
     buildingType: z.enum(['office', 'residence']),
     area: z.string(), // 例: 港区
     address: z.string().optional(),
+    // 任意の緯度経度。あれば記事末の地図をピン精度で表示し、無ければ建物名でジオコーディングする。
+    lat: z.number().optional(),
+    lng: z.number().optional(),
     completedYear: z.number().int().optional(),
     floorsAbove: z.number().int().optional(),
     floorsBelow: z.number().int().optional(),

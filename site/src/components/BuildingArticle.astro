@@ -26,16 +26,29 @@ interface Props {
   searchArea?: string;
   /** 関連記事（内部リンク）。同エリア・近い竣工年の記事を呼び出し側で算出して渡す */
   related?: { title: string; area: string; href: string }[];
+  /** 記事末の地図用。lat/lng があればピン精度、無ければ mapLabel(建物名)でジオコーディングする */
+  lat?: number;
+  lng?: number;
+  mapLabel?: string;
 }
 const {
   lang, title, summary, area, buildingType, verified,
   heroImage, heroImageCredit, heroImageLink,
   specs, tags, tagBase, sources, listPath, searchTitle, searchArea,
   related = [],
+  lat, lng, mapLabel,
 } = Astro.props;
 const t = useT(lang);
 const typeLabel = buildingTypeLabel(lang, buildingType);
 const commonsLabel = lang === 'ja' ? 'Wikimedia Commons' : 'via Wikimedia Commons';
+
+// 地図クエリ: 緯度経度があればそれを優先、無ければ建物名（無ければタイトル）で検索。
+const hasCoords = typeof lat === 'number' && typeof lng === 'number';
+const mapQuery = hasCoords ? `${lat},${lng}` : (mapLabel ?? title);
+const q = encodeURIComponent(mapQuery);
+// APIキー不要の埋め込み（課金なし）。hl で地図ラベルの言語を切り替える。
+const mapEmbedSrc = `https://maps.google.com/maps?q=${q}&z=16&hl=${lang}&output=embed`;
+const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
 ---
 <p class="breadcrumb"><a href={listPath}>{t('breadcrumb.list')}</a> ／ {area}</p>
 <article class="article">
@@ -92,4 +105,44 @@ const commonsLabel = lang === 'ja' ? 'Wikimedia Commons' : 'via Wikimedia Common
       <ul>{sources.map((s) => <li>{s.startsWith('http') ? <a href={s}>{s}</a> : s}</li>)}</ul>
     </section>
   )}
+
+  <section class="map-section" aria-label={t('map.title')}>
+    <h2>{t('map.title')}</h2>
+    <div class="map-embed">
+      <iframe
+        title={`${title}${hasCoords ? '' : ` — ${t('map.title')}`}`}
+        src={mapEmbedSrc}
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="map-link">
+      <a href={mapsHref} target="_blank" rel="noopener nofollow">{t('map.open')} ↗</a>
+    </p>
+  </section>
 </article>
+
+<style>
+  .map-section { margin-top: 32px; }
+  .map-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+  }
+  .map-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .map-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+</style>

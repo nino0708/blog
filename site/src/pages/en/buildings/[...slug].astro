@@ -104,6 +104,9 @@ const related = (await getCollection('buildings'))
     listPath="/en/"
     searchTitle={f.title}
     searchArea={f.area}
+    lat={f.lat}
+    lng={f.lng}
+    mapLabel={f.title}
   >
     <Content />
   </BuildingArticle>

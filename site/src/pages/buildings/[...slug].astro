@@ -81,6 +81,9 @@ const related = (await getCollection('buildings'))
     tagBase="/tags/"
     sources={d.sources}
     listPath="/"
+    lat={d.lat}
+    lng={d.lng}
+    mapLabel={d.title}
   >
     <Content />
   </BuildingArticle>

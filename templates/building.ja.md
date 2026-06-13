@@ -4,6 +4,8 @@ title: "＜建物の正式名称＞"
 buildingType: office          # office=オフィスビル / residence=マンション
 area: "＜エリア。例: 港区＞"
 address: "＜住所。例: 東京都港区虎ノ門＞"   # 不明なら行ごと削除
+lat: 00.000000                # 緯度。記事末の地図がこの座標にピンを立てる。不明なら lat/lng 行ごと削除（建物名で自動表示される）
+lng: 000.000000               # 経度。lat とセットで入れる
 completedYear: 0000           # 竣工年。不明なら行ごと削除
 floorsAbove: 00               # 地上階数。不明なら行ごと削除
 floorsBelow: 0                # 地下階数。不明なら行ごと削除
