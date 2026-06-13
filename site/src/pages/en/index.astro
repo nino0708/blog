@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BuildingCard from '../../components/BuildingCard.astro';
+import registryData from '../../data/buildings-registry.json';
 import { useT } from '../../i18n/ui';
 
 const lang = 'en';
@@ -14,12 +15,36 @@ const posts = (await getCollection('buildings-en'))
   .map((en) => ({ en, jp: jpBySlug.get(en.slug) }))
   .filter((x) => x.jp)
   .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
+
+// 建物の収録数は言語共通の母数(レジストリ ∪ 記事)。記事数は英語化済みの本数。
+const slugs = new Set<string>((registryData as any).buildings.map((b: any) => b.slug));
+for (const p of jp) slugs.add(p.slug);
+const buildingCount = slugs.size;
+const articleCount = posts.length;
 ---
 <BaseLayout title="Built Japan" lang={lang} altPath="/">
-  <section class="hero">
-    <h1>{t('home.title')}</h1>
-    <p>{t('home.desc')}</p>
+  <section class="home-hero">
+    <div class="home-hero-inner">
+      <p class="eyebrow">{t('home.eyebrow')}</p>
+      <h1>{t('home.title')}</h1>
+      <p class="home-hero-desc">{t('home.desc')}</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/en/database/">{t('home.cta.database')}</a>
+        <a class="btn btn-ghost" href="/rankings/">{t('home.cta.rankings')}</a>
+      </div>
+      <ul class="hero-stats">
+        <li><b>{buildingCount}</b><span>{t('home.stat.buildings')}</span></li>
+        <li><b>{articleCount}</b><span>{t('home.stat.articles')}</span></li>
+        <li><b>JP / EN</b><span>{t('home.stat.bilingual')}</span></li>
+      </ul>
+    </div>
+    <div class="hero-skyline" aria-hidden="true"></div>
   </section>
+
+  <div class="section-head">
+    <h2>{t('home.section.latest')}</h2>
+    <p>{t('home.section.latest.desc')}</p>
+  </div>
 
   <section class="grid">
     {posts.map(({ en, jp }) => (

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BuildingCard from '../components/BuildingCard.astro';
+import registryData from '../data/buildings-registry.json';
 import { useT } from '../i18n/ui';
 
 const lang = 'ja';
@@ -9,12 +10,36 @@ const t = useT(lang);
 const posts = (await getCollection('buildings')).sort(
   (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
 );
+
+// ヒーローのスタッツ用カウント（図鑑と同じ母数: レジストリ ∪ 記事）。
+const slugs = new Set<string>((registryData as any).buildings.map((b: any) => b.slug));
+for (const p of posts) slugs.add(p.slug);
+const buildingCount = slugs.size;
+const articleCount = posts.length;
 ---
 <BaseLayout title="Built Japan" lang={lang} altPath="/en/">
-  <section class="hero">
-    <h1>{t('home.title')}</h1>
-    <p>{t('home.desc')}</p>
+  <section class="home-hero">
+    <div class="home-hero-inner">
+      <p class="eyebrow">{t('home.eyebrow')}</p>
+      <h1>{t('home.title')}</h1>
+      <p class="home-hero-desc">{t('home.desc')}</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/database/">{t('home.cta.database')}</a>
+        <a class="btn btn-ghost" href="/rankings/">{t('home.cta.rankings')}</a>
+      </div>
+      <ul class="hero-stats">
+        <li><b>{buildingCount}</b><span>{t('home.stat.buildings')}</span></li>
+        <li><b>{articleCount}</b><span>{t('home.stat.articles')}</span></li>
+        <li><b>JP / EN</b><span>{t('home.stat.bilingual')}</span></li>
+      </ul>
+    </div>
+    <div class="hero-skyline" aria-hidden="true"></div>
   </section>
+
+  <div class="section-head">
+    <h2>{t('home.section.latest')}</h2>
+    <p>{t('home.section.latest.desc')}</p>
+  </div>
 
   <section class="grid">
     {posts.map((post) => (

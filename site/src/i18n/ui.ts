@@ -59,6 +59,14 @@ const ja: Dict = {
   'home.title': '東京の空をつくる、巨大建築の記録。',
   'home.desc':
     '港区・千代田区・中央区を中心に、東京の大型オフィスビルとタワーマンションを一棟ずつ巡って紹介する趣味のブログです。竣工年・高さ・開発の背景を、公開情報をもとに記録しています。',
+  'home.eyebrow': 'TOKYO HIGH-RISE ARCHITECTURE',
+  'home.cta.database': '建物図鑑を見る',
+  'home.cta.rankings': '高さランキング',
+  'home.stat.buildings': '棟を収録',
+  'home.stat.articles': '本の記事',
+  'home.stat.bilingual': '日本語 / English',
+  'home.section.latest': '新着の建物',
+  'home.section.latest.desc': '最近とりあげた一棟。竣工年・高さ・開発の背景までまとめています。',
   'about.title': 'このブログについて',
   'footer.disclaimer':
     '掲載情報は公開情報をもとにした個人の記録であり、正確性・最新性を保証するものではありません。物件・居住者のプライバシーに配慮し、内部情報や個人を特定する情報は扱いません。',
@@ -128,6 +136,14 @@ const en: Dict = {
   'home.title': 'A record of the giant buildings shaping Tokyo’s skyline.',
   'home.desc':
     "A hobby blog touring Tokyo's major office towers and high-rise residences one by one — mostly in Minato, Chiyoda and Chuo wards. Completion years, heights and the background of each development, recorded from public sources.",
+  'home.eyebrow': 'TOKYO HIGH-RISE ARCHITECTURE',
+  'home.cta.database': 'Browse the database',
+  'home.cta.rankings': 'Height rankings',
+  'home.stat.buildings': 'buildings',
+  'home.stat.articles': 'articles',
+  'home.stat.bilingual': 'Japanese / English',
+  'home.section.latest': 'Latest buildings',
+  'home.section.latest.desc': 'The buildings we covered most recently — completion year, height and the story behind each development.',
   'about.title': 'About this blog',
   'footer.disclaimer':
     "This site is a personal record based on public information; accuracy and timeliness are not guaranteed. Out of respect for residents' privacy, no internal or personally identifying information is published.",
