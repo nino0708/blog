@@ -63,6 +63,8 @@ const websiteLd = {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- JS有効を示すクラスを描画前に付与(スクロール演出の初期非表示はJS有効時のみ＝no-JSでも内容は必ず表示) -->
+    <script is:inline>document.documentElement.classList.add('js');</script>
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -110,5 +112,30 @@ const websiteLd = {
       <slot />
     </main>
     <Footer lang={lang} />
+
+    <!-- スクロール演出: [data-reveal] が視界に入ったら .is-in を付けてフェードアップ(追加のみ・描画ロジック非干渉) -->
+    <script is:inline>
+      (function () {
+        var els = document.querySelectorAll('[data-reveal]');
+        if (!els.length) return;
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduce || !('IntersectionObserver' in window)) {
+          els.forEach(function (el) { el.classList.add('is-in'); });
+          return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (!e.isIntersecting) return;
+            var el = e.target;
+            // 同じ親の中での順番に応じて軽くずらして“流れる”演出に(最大240ms)
+            var sibs = el.parentElement ? [].indexOf.call(el.parentElement.children, el) : 0;
+            el.style.transitionDelay = Math.min(sibs % 12, 6) * 40 + 'ms';
+            el.classList.add('is-in');
+            io.unobserve(el);
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        els.forEach(function (el) { io.observe(el); });
+      })();
+    </script>
   </body>
 </html>

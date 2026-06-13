@@ -13,6 +13,9 @@ architect: "シーザー・ペリ & Associates Japan、日本設計"
 tags: ["中央区", "日本橋", "超高層ビル", "複合施設", "ホテル", "再開発"]
 publishedAt: 2026-06-13
 summary: "重要文化財・三井本館に隣接して建つ地上39階・高さ約195mの超高層複合ビル。2005年竣工、三井不動産が開発。30〜38階にマンダリン オリエンタル 東京を内包し、歴史と現代建築が共存する日本橋室町の顔となっている。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Nihonbashi_mitsui_tower01s3872.jpg/1280px-Nihonbashi_mitsui_tower01s3872.jpg"
+heroImageCredit: "663highland / CC BY 2.5"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Nihonbashi_mitsui_tower01s3872.jpg"
 verified: true
 sources: ["日本橋三井タワー - Wikipedia（地上39階・地下4階・高さ194.69m・2005年竣工・シーザー・ペリ & Associates Japan設計）", "東京都環境局 建物諸元2026年1月現在（所在 中央区日本橋室町二丁目1番1号・延床面積133,855.68㎡）", "三井本館 - Wikipedia（1929年竣工・重要文化財・トローブリッジ＆リヴィングストン設計）"]
 ---

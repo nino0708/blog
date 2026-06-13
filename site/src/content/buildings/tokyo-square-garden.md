@@ -12,6 +12,9 @@ architect: "日建設計・日本設計（基本設計）"
 tags: ["中央区", "京橋", "超高層ビル", "環境配慮型", "再開発", "オフィス"]
 publishedAt: 2026-06-13
 summary: "緑のテラスを各フロアに重ねた環境配慮型の高層オフィスビル。2013年竣工、地上24階・高さ約124m。東京メトロ京橋駅直結。第57回BCS賞受賞。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tokyo_Square_Garden.jpg/1280px-Tokyo_Square_Garden.jpg"
+heroImageCredit: "Yasu (talk) / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Square_Garden.jpg"
 verified: true
 sources: ["東京スクエアガーデン - Wikipedia（地上24階・塔屋2階・地下4階・高さ124.450m・2013年3月27日竣工）", "清水建設設計本部 works（基本設計: 日建設計・日本設計共同企業体、施工: 清水・大成共同企業体）", "オフィスナビ 東京スクエアガーデン（基準階面積3,465.34m²）"]
 ---

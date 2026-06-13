@@ -10,8 +10,17 @@
   --brand-ink: #14365f; /* ヒーロー等で使う濃い紺 */
   --accent: #d98324;
   --accent-soft: #fbf0e1;
+  /* 高級感: 金・黒 */
+  --gold: #c4a052;
+  --gold-bright: #e7cf8e;
+  --gold-grad: linear-gradient(135deg, #efdca0 0%, #c79f43 55%, #9c7b2c 100%);
+  --ink: #0d1117; /* 近黒 */
+  --ink-2: #161b24;
   --radius: 16px;
   --shadow: 0 6px 24px rgba(27, 35, 48, 0.08);
+  /* 奥行きを出す多層シャドウ */
+  --shadow-lg: 0 1px 2px rgba(13, 17, 23, 0.06), 0 8px 18px rgba(13, 17, 23, 0.08), 0 24px 48px rgba(13, 17, 23, 0.10);
+  --shadow-hover: 0 2px 6px rgba(13, 17, 23, 0.10), 0 14px 30px rgba(13, 17, 23, 0.14), 0 36px 64px rgba(13, 17, 23, 0.16);
   --maxw: 980px;
   --font-display: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Noto Sans JP", system-ui, sans-serif;
   font-synthesis: none;
@@ -51,6 +60,12 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   backdrop-filter: saturate(1.4) blur(12px);
   background: var(--surface-glass);
   border-bottom: 1px solid var(--line);
+}
+/* ヘッダー下の極細ゴールドライン(高級感のアクセント) */
+.site-header::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold-bright) 50%, var(--gold) 70%, transparent);
+  opacity: 0.7;
 }
 .site-header .inner {
   display: flex;
@@ -94,24 +109,38 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   position: relative;
   overflow: hidden;
   margin: 28px 0 8px;
-  padding: clamp(32px, 5vw, 56px) clamp(22px, 5vw, 52px) clamp(96px, 12vw, 128px);
+  padding: clamp(36px, 5vw, 60px) clamp(22px, 5vw, 52px) clamp(100px, 12vw, 136px);
   border-radius: 22px;
   color: #fff;
   background:
-    radial-gradient(900px 420px at 88% -20%, rgba(217, 131, 36, 0.30), transparent 60%),
-    radial-gradient(700px 380px at 0% 120%, rgba(255, 255, 255, 0.14), transparent 55%),
-    linear-gradient(135deg, var(--brand) 0%, var(--brand-ink) 70%);
-  box-shadow: var(--shadow);
+    radial-gradient(820px 420px at 86% -18%, rgba(231, 207, 142, 0.22), transparent 60%),
+    radial-gradient(680px 360px at 4% 116%, rgba(31, 95, 174, 0.40), transparent 55%),
+    linear-gradient(150deg, #1c4d86 0%, var(--brand-ink) 42%, var(--ink) 100%);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(231, 207, 142, 0.14);
+}
+/* ゆっくり漂うゴールドの光彩(動き)。reduced-motion では止める。 */
+.home-hero::before {
+  content: ""; position: absolute; z-index: 0; inset: -40% -10% auto auto;
+  width: 60%; height: 120%;
+  background: radial-gradient(closest-side, rgba(231, 207, 142, 0.20), transparent 70%);
+  filter: blur(8px);
+  animation: heroGlow 14s ease-in-out infinite alternate;
+}
+@keyframes heroGlow {
+  0%   { transform: translate(0, 0) scale(1); opacity: 0.8; }
+  100% { transform: translate(-8%, 12%) scale(1.18); opacity: 1; }
 }
 .home-hero-inner { position: relative; z-index: 2; max-width: 46rem; }
 .home-hero .eyebrow {
   margin: 0 0 14px;
   font-size: 0.74rem; font-weight: 700; letter-spacing: 0.22em;
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--gold-bright);
 }
 .home-hero .eyebrow::before {
-  content: ""; display: inline-block; width: 26px; height: 2px;
-  background: var(--accent); margin: 0 10px 4px 0; vertical-align: middle;
+  content: ""; display: inline-block; width: 28px; height: 2px;
+  background: linear-gradient(90deg, var(--gold-bright), var(--gold));
+  margin: 0 10px 4px 0; vertical-align: middle;
 }
 .home-hero h1 {
   font-size: clamp(1.8rem, 4.6vw, 3rem); line-height: 1.28; margin: 0 0 14px;
@@ -128,29 +157,53 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 .btn:hover { text-decoration: none; transform: translateY(-2px); }
-.btn-primary { background: #fff; color: var(--brand-ink); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
-.btn-primary:hover { background: var(--accent-soft); color: var(--brand-ink); }
-.btn-ghost { background: rgba(255, 255, 255, 0.10); color: #fff; border: 1px solid rgba(255, 255, 255, 0.45); }
-.btn-ghost:hover { background: rgba(255, 255, 255, 0.18); }
+.btn-primary {
+  background: var(--gold-grad); color: #2a2008;
+  box-shadow: 0 8px 22px rgba(156, 123, 44, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.btn-primary:hover { box-shadow: 0 12px 30px rgba(156, 123, 44, 0.55); }
+.btn-ghost { background: rgba(255, 255, 255, 0.06); color: #fff; border: 1px solid rgba(231, 207, 142, 0.5); }
+.btn-ghost:hover { background: rgba(231, 207, 142, 0.14); border-color: var(--gold-bright); }
 .hero-stats {
   display: flex; flex-wrap: wrap; gap: 12px; list-style: none; margin: 28px 0 0; padding: 0;
 }
 .hero-stats li {
   display: flex; flex-direction: column; gap: 2px;
   padding: 10px 18px; border-radius: 14px;
-  background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(231, 207, 142, 0.28);
   backdrop-filter: blur(4px);
 }
-.hero-stats b { font-family: var(--font-display); font-size: 1.4rem; font-weight: 900; line-height: 1; }
-.hero-stats span { font-size: 0.76rem; color: rgba(255, 255, 255, 0.82); }
-/* 下部のビル群シルエット(CSSのみ・画像不要) */
+.hero-stats b {
+  font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; line-height: 1;
+  background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero-stats span { font-size: 0.76rem; color: rgba(255, 255, 255, 0.78); }
+/* 下部のビル群シルエット(CSSのみ・画像不要)。前後2層で奥行きを出す。 */
 .hero-skyline {
-  position: absolute; left: 0; right: 0; bottom: 0; height: clamp(70px, 11vw, 120px);
+  position: absolute; left: 0; right: 0; bottom: 0; height: clamp(80px, 12vw, 134px);
   z-index: 1; pointer-events: none;
-  background: repeating-linear-gradient(90deg, rgba(255,255,255,0.07) 0 8px, transparent 8px 16px);
+}
+.hero-skyline::before, .hero-skyline::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0;
   -webkit-mask-image: var(--skyline); mask-image: var(--skyline);
   -webkit-mask-size: cover; mask-size: cover; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
   -webkit-mask-position: bottom; mask-position: bottom;
+}
+/* 奥(遠景): 薄く・少し高く・横ずらし */
+.hero-skyline::before {
+  height: 100%; transform: translateX(18px) scaleY(1.12); transform-origin: bottom;
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(231,207,142,0.05));
+  opacity: 0.5;
+}
+/* 手前(近景): 濃いめ＋窓明かり風のドット＋上端にゴールドの稜線 */
+.hero-skyline::after {
+  height: 82%;
+  background:
+    linear-gradient(180deg, rgba(231,207,142,0.30) 0 2px, transparent 2px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.10) 0 7px, transparent 7px 15px),
+    linear-gradient(180deg, rgba(13,17,23,0.10), rgba(13,17,23,0.42));
 }
 /* ビルの輪郭(矩形の連なり)をマスクで切り出す */
 .home-hero {
@@ -168,7 +221,7 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
 }
 .section-head h2::before {
   content: ""; width: 6px; height: 1.1em; border-radius: 3px;
-  background: linear-gradient(var(--brand), var(--accent));
+  background: linear-gradient(var(--brand), var(--gold));
 }
 .section-head p { color: var(--text-muted); margin: 8px 0 0; font-size: 0.9rem; }
 
@@ -180,16 +233,24 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   padding: 12px 0 56px;
 }
 .card {
+  position: relative;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
-.card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(27,35,48,0.12); }
+/* ホバーで浮かび上がり＋上端にゴールドの稜線(高級感) */
+.card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; z-index: 3;
+  background: var(--gold-grad);
+  opacity: 0; transition: opacity 0.22s ease;
+}
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.card:hover::before { opacity: 1; }
 .card a { text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%; }
 .card .thumb {
   aspect-ratio: 16 / 9;
@@ -353,22 +414,38 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
 .rank-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 20px; }
 
 /* ---- footer ---- */
-.site-footer { border-top: 1px solid var(--line); padding: 36px 0 40px; color: var(--text-muted); font-size: 0.85rem; }
+/* フッターは近黒×ゴールドで“締める”(高級感) */
+.site-footer {
+  position: relative; margin-top: 64px;
+  padding: 48px 0 44px; color: rgba(255, 255, 255, 0.66); font-size: 0.85rem;
+  background:
+    radial-gradient(700px 300px at 90% -40%, rgba(231, 207, 142, 0.10), transparent 60%),
+    linear-gradient(180deg, var(--ink-2), var(--ink));
+}
+.site-footer::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold-bright) 50%, var(--gold) 70%, transparent);
+  opacity: 0.8;
+}
 .footer-cols {
   display: grid;
   grid-template-columns: 1.6fr repeat(3, 1fr);
   gap: 28px 24px;
 }
-.footer-brand .brand { font-size: 1.1rem; }
+.footer-brand .brand { font-size: 1.1rem; color: #fff; }
+.footer-brand .brand span { color: var(--gold-bright); }
 .footer-col h2 {
-  font-size: 0.8rem; font-weight: 700; color: var(--text);
+  font-size: 0.8rem; font-weight: 700; color: #fff;
   margin: 0 0 10px; border: none; padding: 0; letter-spacing: 0.02em;
 }
 .footer-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-.footer-col a { color: var(--text-muted); }
-.footer-col a:hover { color: var(--brand); text-decoration: none; }
-.disclaimer { font-size: 0.78rem; color: var(--text-muted); margin-top: 8px; max-width: 42ch; }
-.footer-bottom { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 0.8rem; }
+.footer-col a { color: rgba(255, 255, 255, 0.62); }
+.footer-col a:hover { color: var(--gold-bright); text-decoration: none; }
+.disclaimer { font-size: 0.78rem; color: rgba(255, 255, 255, 0.55); margin-top: 8px; max-width: 42ch; }
+.footer-bottom {
+  margin-top: 28px; padding-top: 18px; font-size: 0.8rem; color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 /* ---- skip link (a11y) ---- */
 .skip-link {
@@ -393,4 +470,21 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   .nav::-webkit-scrollbar { display: none; }
   .nav a { margin-left: 0; margin-right: 16px; white-space: nowrap; flex: none; }
   .nav .lang-switch { margin-right: 0; }
+}
+
+/* ---- scroll reveal (動き) ---- */
+/* JS有効時のみ初期非表示にし、JS無効/失敗時は必ず表示(プログレッシブ・エンハンスメント) */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.js [data-reveal].is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] { opacity: 1 !important; transform: none !important; transition: none; }
+  .home-hero::before { animation: none; }
+  .btn:hover, .card:hover { transform: none; }
+  html { scroll-behavior: auto; }
 }

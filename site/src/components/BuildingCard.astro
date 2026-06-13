@@ -18,7 +18,13 @@ const t = useT(lang);
 const typeLabel = buildingTypeLabel(lang, buildingType, true);
 const meta = buildCardMeta(lang, { area, completedYear, heightM });
 ---
-<article class="card">
+<article
+  class="card"
+  data-reveal
+  data-name={title.toLowerCase()}
+  data-year={completedYear ?? ''}
+  data-height={heightM ?? ''}
+>
   <a href={url}>
     {heroImage
       ? <div class="thumb thumb-img"><img src={heroImage} alt={title} loading="lazy" /></div>
