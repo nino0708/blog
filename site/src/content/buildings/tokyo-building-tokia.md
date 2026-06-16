@@ -13,6 +13,9 @@ architect: "三菱地所設計"
 tags: ["千代田区", "丸の内", "超高層ビル", "再開発", "複合開発"]
 publishedAt: 2026-06-15
 summary: "丸の内の南端に立つ地上33階・高さ164mの複合ビル。地下1階から地上3階の商業施設「TOKIA」と上層のオフィスで構成され、2005年に三菱地所が竣工した。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tokyo_Building%2C_Marunouchi.jpg/1280px-Tokyo_Building%2C_Marunouchi.jpg"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Building,_Marunouchi.jpg"
 verified: true
 sources: ["東京ビルディング（丸の内）- Wikipedia（地上33階・地下4階・高さ164.1m・2005年10月竣工）", "東京ビルディング - bb-building.net（延床面積149,339.85㎡・住所：千代田区丸の内二丁目7番3号）", "東京ビルTOKIA - 三菱地所プロパティマネジメント株式会社公式（名称の由来・フロア構成）"]
 ---

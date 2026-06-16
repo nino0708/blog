@@ -13,6 +13,9 @@ architect: "日建設計"
 tags: ["渋谷区", "渋谷", "超高層ビル", "再開発", "複合開発", "展望台"]
 publishedAt: 2026-06-15
 summary: "渋谷駅直上にそびえる地上47階・高さ約230mの超高層複合施設。屋上展望台「SHIBUYA SKY」を擁し、東急・JR東日本・東京メトロの3社が2019年に共同開業した渋谷再開発の象徴。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Shibuya_Scramble_Square_building.jpg/1280px-Shibuya_Scramble_Square_building.jpg"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shibuya_Scramble_Square_building.jpg"
 verified: true
 sources: ["渋谷スクランブルスクエア - Wikipedia（地上47階・地下7階・延床面積181,000㎡・2019年竣工・住所：渋谷区渋谷二丁目24番12号）", "渋谷スクランブルスクエア第Ⅰ期（東棟）- skyskysky.net（高さ約230m・設計：日建設計）", "渋谷スクランブルスクエア展望台SHIBUYA SKY - ファッションプレス（高さ地上約230m・開業2019年11月）"]
 ---
