@@ -38,8 +38,16 @@ def _strip_html(s):
 def _name_tokens(name):
     if not name:
         return []
-    lowered = re.sub(r"[()（）,，.。/:：-]", " ", name.lower())
-    return [t for t in lowered.split() if len(t) >= 3 and t not in ("the", "and")]
+    # 「（東棟）」「(East Tower)」「(TOKIA)」等の補足括弧は写真ファイル名に現れないので落とす。
+    # これを必須照合に含めると、正しい外観写真まで全部弾いてしまう(画像なしの主因)。
+    name = re.sub(r"[(（][^)）]*[)）]", " ", name)
+    lowered = re.sub(r"[,，.。/:：・·-]", " ", name.lower())
+    # Commonsのファイル名は英数字主体。ASCIIの意味トークンだけを必須照合に使う
+    # (日本語トークンはファイル名に出ず全件不一致になり、結局「画像なし」になるため)。
+    return [
+        t for t in lowered.split()
+        if len(t) >= 3 and t not in ("the", "and") and re.search(r"[a-z0-9]", t)
+    ]
 
 
 def _normalize_title(file_title):
