@@ -217,7 +217,7 @@
       "slug": "shibuya-sakura-stage",
       "area": "渋谷区",
       "angle": "桜丘口地区再開発。渋谷駅南側の更新",
-      "status": "todo"
+      "status": "done"
     },
     {
       "id": 25,
@@ -226,7 +226,7 @@
       "slug": "toranomon-hills-business-tower",
       "area": "港区",
       "angle": "森タワーに続く街区拡張。バスターミナル一体",
-      "status": "todo"
+      "status": "done"
     },
     {
       "id": 26,
