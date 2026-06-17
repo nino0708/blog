@@ -14,6 +14,13 @@ phases:
     commands:
       - cd "$SITE_SUBDIR"
       - npm ci || npm install
+  pre_build:
+    commands:
+      # heroImage 欠落記事に Commons の外観写真を自動補完(毎ビルドで自己修復)。
+      # 標準ライブラリのみ・非致命(失敗してもビルドは続行)。誤画像より画像なしを優先。
+      - cd "$CODEBUILD_SRC_DIR"
+      - python3 generator/backfill_images.py || echo "backfill skipped (non-fatal)"
+      - cd "$CODEBUILD_SRC_DIR/$SITE_SUBDIR"
   build:
     commands:
       - npm run build

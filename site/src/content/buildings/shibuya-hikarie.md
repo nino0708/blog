@@ -13,6 +13,9 @@ architect: "日建設計・東急設計コンサルタント"
 tags: ["渋谷区", "渋谷", "超高層ビル", "再開発", "複合開発"]
 publishedAt: 2026-06-16
 summary: "2012年に開業した地上34階・高さ約182.5メートルの超高層複合施設。東急文化会館の跡地に生まれ、渋谷駅東口のランドマークとして渋谷再開発の先陣を切った。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Shibuya_Hikarie_2.jpg/1280px-Shibuya_Hikarie_2.jpg"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shibuya_Hikarie_2.jpg"
 verified: true
 sources:
   - "渋谷ヒカリエ - Wikipedia（地上34階・地下4階・高さ182.5m・延床面積約144,545㎡・2012年竣工）"

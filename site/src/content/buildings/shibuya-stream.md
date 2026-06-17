@@ -13,6 +13,9 @@ architect: "東急設計コンサルタント"
 tags: ["渋谷区", "渋谷", "超高層ビル", "再開発", "複合開発", "渋谷川"]
 publishedAt: 2026-06-16
 summary: "2018年に開業した地上35階・高さ約180メートルの超高層複合施設。旧東横線渋谷駅の地上ホーム跡地に建ち、渋谷川の再生とともに渋谷駅南口エリアに新たな水辺空間をもたらした。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Shibuya_Stream-1b.jpg/1280px-Shibuya_Stream-1b.jpg"
+heroImageCredit: "江戸村のとくぞう / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shibuya_Stream-1b.jpg"
 verified: true
 sources:
   - "渋谷ストリーム - Wikipedia（地上35階・地下4階・高さ約180m・2018年9月13日開業）"
