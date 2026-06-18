@@ -104,6 +104,13 @@ const websiteLd = {
 
     <script type="application/ld+json" set:html={JSON.stringify(websiteLd)} />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+
+    {/* Cloudflare Web Analytics (Cookie不要・軽量。流入元/国/PVを計測。tokenは公開値) */}
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "16491eb520064b6fa0fa463cabda6dd1"}'
+    ></script>
   </head>
   <body>
     <a class="skip-link" href="#main">{t('a11y.skip')}</a>
