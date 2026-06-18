@@ -1,5 +1,8 @@
 ---
 title: "虎ノ門ヒルズ ビジネスタワー"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Architecture_in_Toranomon_%28cropped%29_-_Toranomon_Hills_Business_Tower.jpg/1280px-Architecture_in_Toranomon_%28cropped%29_-_Toranomon_Hills_Business_Tower.jpg"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Architecture_in_Toranomon_(cropped)_-_Toranomon_Hills_Business_Tower.jpg"
 buildingType: office
 area: "港区"
 address: "東京都港区虎ノ門1-17-1"

@@ -1,5 +1,8 @@
 ---
 title: "Toranomon Hills Business Tower"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Architecture_in_Toranomon_%28cropped%29_-_Toranomon_Hills_Business_Tower.jpg/1280px-Architecture_in_Toranomon_%28cropped%29_-_Toranomon_Hills_Business_Tower.jpg"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Architecture_in_Toranomon_(cropped)_-_Toranomon_Hills_Business_Tower.jpg"
 area: "Minato City"
 summary: "A 36-story, 185-metre supertall completed in January 2020 as the second tower in the Toranomon Hills complex. Directly connected to the new Toranomon Hills Metro station, it houses the ARCH innovation hub alongside some 96,000 square metres of office space."
 developer: "Toranomon 1-chome District Urban Redevelopment Association (Mori Building)"

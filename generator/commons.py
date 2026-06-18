@@ -37,6 +37,13 @@ _REJECT_PATTERNS = [
     re.compile(r"staircase", re.I),
     re.compile(r"entrance", re.I),
     re.compile(r"restaurant", re.I),
+    re.compile(r"yokocho", re.I),         # 〜横丁(館内の飲食街)
+    re.compile(r"arcade", re.I),          # アーケード/商業フロア内
+    re.compile(r"food court", re.I),
+    re.compile(r"\bcafe", re.I),
+    re.compile(r"\bshop", re.I),          # shop / shopping
+    re.compile(r"\bmall\b", re.I),
+    re.compile(r"\bhall\b", re.I),
     re.compile(r"\bdetail", re.I),       # Details of ...(細部の寄り)
     re.compile(r"passing near", re.I),    # 上空通過の航空機等
     re.compile(r"back alley", re.I),
@@ -54,6 +61,8 @@ _REJECT_PATTERNS = [
     re.compile(r"館内"),
     re.compile(r"室内"),
     re.compile(r"ロビー"),
+    re.compile(r"横丁"),
+    re.compile(r"吹き抜け"),
     re.compile(r"看板"),
     re.compile(r"地図"),
 ]
