@@ -1,5 +1,8 @@
 ---
 title: "東京ポートシティ竹芝"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Portcity_Takeshiba_%28cropped%29.jpg/1280px-Portcity_Takeshiba_%28cropped%29.jpg"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Portcity_Takeshiba_(cropped).jpg"
 buildingType: office
 area: "港区"
 address: "東京都港区海岸1丁目7-1"

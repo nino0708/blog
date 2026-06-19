@@ -1,5 +1,8 @@
 ---
 title: "Tokyo Portcity Takeshiba"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Portcity_Takeshiba_%28cropped%29.jpg/1280px-Portcity_Takeshiba_%28cropped%29.jpg"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Portcity_Takeshiba_(cropped).jpg"
 area: "Minato City"
 summary: "A 40-story smart-building tower completed in May 2020 on the Takeshiba waterfront, standing approximately 208 metres tall. Developed by Tokyu Land Corporation Group, its IoT platform with over 1,300 sensors manages the building environment in real time."
 developer: "Albero Grande (Tokyu Land Corporation Group)"
