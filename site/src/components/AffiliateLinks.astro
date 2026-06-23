@@ -29,8 +29,9 @@ const noteMap = lang === 'ja' ? 'Googleマップ' : 'Google Maps';
 // 関連リンク。sponsored=アフィリエイト広告、それ以外(地図)は通常リンク。
 const links = [
   {
-    // ホテル: 区別の楽天トラベル エリアページ(実在URL)。区不明時は東京エリア。
-    label: lang === 'ja' ? `${area}のホテルを探す` : `Find hotels in ${area}`,
+    // ホテル: 楽天トラベルの東京23区一覧(静的ディレクトリ・常に宿が出る/0件化しない)。
+    // 区単位URLは楽天に無いため、表示も実態に合わせ「東京」のホテルとする。
+    label: lang === 'ja' ? '東京のホテルを探す' : 'Find hotels in Tokyo',
     note: noteHotel,
     url: rakutenTravelArea(kwArea),
     sponsored: true,
