@@ -27,24 +27,15 @@ export function rakutenBooksSearch(keyword: string): string {
   return wrapRakuten(`https://books.rakuten.co.jp/search?sitem=${encodeURIComponent(keyword)}`);
 }
 
-// 東京23区名 → 楽天トラベルのエリアslug。該当ページ(/ds/yado/tokyo/<slug>)は実在し安定。
-const WARD_SLUG: Record<string, string> = {
-  '千代田区': 'chiyoda', '中央区': 'chuo', '港区': 'minato', '新宿区': 'shinjuku',
-  '文京区': 'bunkyo', '台東区': 'taito', '墨田区': 'sumida', '江東区': 'koto',
-  '品川区': 'shinagawa', '目黒区': 'meguro', '大田区': 'ota', '世田谷区': 'setagaya',
-  '渋谷区': 'shibuya', '中野区': 'nakano', '杉並区': 'suginami', '豊島区': 'toshima',
-  '北区': 'kita', '荒川区': 'arakawa', '板橋区': 'itabashi', '練馬区': 'nerima',
-  '足立区': 'adachi', '葛飾区': 'katsushika', '江戸川区': 'edogawa',
-};
-
-// 楽天トラベルのエリア別宿泊一覧URL。区が判らなければ東京エリアにフォールバック。
-// (旧 f_query 形式はリンク切れ(HTTP 400)だったため、実在するエリアパスに変更)
-export function rakutenTravelArea(area: string): string {
-  const slug = WARD_SLUG[(area ?? '').trim()];
-  const base = slug
-    ? `https://search.travel.rakuten.co.jp/ds/yado/tokyo/${slug}`
-    : 'https://search.travel.rakuten.co.jp/ds/yado/tokyo';
-  return wrapRakuten(base);
+// 楽天トラベルのホテル一覧URL。
+// 経緯: /ds/yado/tokyo/<区slug> 方式は楽天に実在しない無効パスで、空室検索SPAに落ちて
+// 「0件（該当する空室なし）」になっていた（本番URLで確認）。
+// 対策として、確実に宿が並ぶ静的ディレクトリ「東京23区一覧」へ固定する。
+// 23区一覧は全区(港区/千代田区等)の宿を含み、常に2700件超が表示され0件化しない。
+// 区単位の個別URLは楽天トラベルに存在しない(広域エリアのみ)ため、推測URLは作らない。
+// 引数 area は呼び出し側互換のため受けるがURLには使わない。
+export function rakutenTravelArea(_area?: string): string {
+  return wrapRakuten('https://travel.rakuten.co.jp/yado/tokyo/tokyo.html');
 }
 
 // Amazon 検索URL（アソシエイトタグ付与）
