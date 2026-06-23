@@ -1,5 +1,8 @@
 ---
 title: "msb Tamachi"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Tamachi_Station_Tower_N_and_S.jpg/1280px-Tamachi_Station_Tower_N_and_S.jpg"
+heroImageCredit: "Beryllium Transistor / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tamachi_Station_Tower_N_and_S.jpg"
 area: "Minato City"
 summary: "A large mixed-use complex on the former Tokyo Gas Shibaura factory site, completed in full in July 2020. Tamachi Station Tower N stands 36 floors and 180.08 metres tall, paired with a 31-floor Tower S (168.88 m), a Pullman hotel, and 36 retail outlets near Tamachi Station."
 developer: "Tokyo Gas, Mitsui Fudosan, Mitsubishi Estate"

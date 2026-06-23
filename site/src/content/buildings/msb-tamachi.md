@@ -1,5 +1,8 @@
 ---
 title: "msb Tamachi（ムスブ田町）"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Tamachi_Station_Tower_N_and_S.jpg/1280px-Tamachi_Station_Tower_N_and_S.jpg"
+heroImageCredit: "Beryllium Transistor / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tamachi_Station_Tower_N_and_S.jpg"
 buildingType: office
 area: "港区"
 address: "東京都港区芝浦"
