@@ -14,6 +14,9 @@ architect: "三菱地所設計"
 tags: ["港区", "超高層ビル", "品川", "港南", "再開発"]
 publishedAt: 2026-06-23
 summary: "品川駅港南口に広がる7棟構成の大規模複合街区。最高棟の品川グランドセントラルタワーは地上32階・高さ約148m。幅約45m・長さ約400mの品川セントラルガーデンを軸に、オフィス・商業・ホール・住宅が一体で整備され、品川インターシティとともに港南エリアの国際ビジネス拠点形成を牽引した。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinagawa_Grand_Central_Tower_2014.JPG/1280px-Shinagawa_Grand_Central_Tower_2014.JPG"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinagawa_Grand_Central_Tower_2014.JPG"
 verified: true
 sources:
   - "品川グランドコモンズ - Wikipedia（https://ja.wikipedia.org/wiki/%E5%93%81%E5%B7%9D%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%82%B3%E3%83%A2%E3%83%B3%E3%82%BA）：竣工年は一部資料で2003年4月、別資料では2004年3月と記載が割れる"
