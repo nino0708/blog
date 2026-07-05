@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BuildingCard from '../../components/BuildingCard.astro';
+import Pager from '../../components/Pager.astro';
+import { useT } from '../../i18n/ui';
+
+export async function getStaticPaths() {
+  const PER_PAGE = 20;
+  const all = (await getCollection('buildings')).sort(
+    (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
+  );
+  const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+  const paths = [];
+  // 1ページ目はルート(/)が担うので 2ページ目以降だけを生成する。
+  for (let p = 2; p <= totalPages; p++) {
+    paths.push({
+      params: { page: String(p) },
+      props: {
+        pagePosts: all.slice((p - 1) * PER_PAGE, p * PER_PAGE),
+        current: p,
+        totalPages,
+      },
+    });
+  }
+  return paths;
+}
+
+interface Props {
+  pagePosts: CollectionEntry<'buildings'>[];
+  current: number;
+  totalPages: number;
+}
+const { pagePosts, current, totalPages } = Astro.props as Props;
+
+const lang = 'ja';
+const t = useT(lang);
+const heading = t('home.section.latest');
+---
+<BaseLayout title={`${heading}（${current}ページ目）`} lang={lang}>
+  <div class="section-head section-head-sub" data-reveal>
+    <p class="crumb"><a href="/">{t('nav.home')}</a></p>
+    <h1>{heading}</h1>
+    <p>{current} / {totalPages} ページ</p>
+  </div>
+
+  <section class="grid grid-2">
+    {pagePosts.map((post) => (
+      <BuildingCard
+        lang={lang}
+        url={`/buildings/${post.slug}/`}
+        title={post.data.title}
+        buildingType={post.data.buildingType}
+        area={post.data.area}
+        completedYear={post.data.completedYear}
+        heightM={post.data.heightM}
+        summary={post.data.summary}
+        verified={post.data.verified}
+        heroImage={post.data.heroImage}
+      />
+    ))}
+  </section>
+
+  <Pager current={current} total={totalPages} basePath="/" lang={lang} />
+</BaseLayout>

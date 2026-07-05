@@ -2,20 +2,26 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BuildingCard from '../components/BuildingCard.astro';
+import Pager from '../components/Pager.astro';
 import registryData from '../data/buildings-registry.json';
 import { useT } from '../i18n/ui';
 
 const lang = 'ja';
 const t = useT(lang);
-const posts = (await getCollection('buildings')).sort(
+const allPosts = (await getCollection('buildings')).sort(
   (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
 );
 
+// 1ページ20件・新着順。21件目以降は /page/2/ … へ（別ページ表示）。
+const PER_PAGE = 20;
+const totalPages = Math.max(1, Math.ceil(allPosts.length / PER_PAGE));
+const posts = allPosts.slice(0, PER_PAGE);
+
 // ヒーローのスタッツ用カウント（図鑑と同じ母数: レジストリ ∪ 記事）。
 const slugs = new Set<string>((registryData as any).buildings.map((b: any) => b.slug));
-for (const p of posts) slugs.add(p.slug);
+for (const p of allPosts) slugs.add(p.slug);
 const buildingCount = slugs.size;
-const articleCount = posts.length;
+const articleCount = allPosts.length;
 ---
 <BaseLayout title="Built Japan" lang={lang} altPath="/en/">
   <section class="home-hero">
@@ -41,20 +47,7 @@ const articleCount = posts.length;
     <p>{t('home.section.latest.desc')}</p>
   </div>
 
-  <div class="grid-sort" data-reveal>
-    <label class="home-sort">
-      <span>{t('home.sort.label')}</span>
-      <select id="home-sort" aria-label={t('home.sort.label')}>
-        <option value="latest">{t('home.sort.latest')}</option>
-        <option value="name">{t('home.sort.name')}</option>
-        <option value="newest">{t('home.sort.newest')}</option>
-        <option value="oldest">{t('home.sort.oldest')}</option>
-        <option value="height">{t('home.sort.height')}</option>
-      </select>
-    </label>
-  </div>
-
-  <section class="grid" id="home-grid">
+  <section class="grid grid-2">
     {posts.map((post) => (
       <BuildingCard
         lang={lang}
@@ -71,65 +64,5 @@ const articleCount = posts.length;
     ))}
   </section>
 
-  <script is:inline define:vars={{ lang }}>
-    (function () {
-      const grid = document.getElementById('home-grid');
-      const sel = document.getElementById('home-sort');
-      if (!grid || !sel) return;
-      const cards = [...grid.querySelectorAll('.card')];
-      // 初期DOM順（= 新着順）を控える。
-      cards.forEach((c, i) => (c.dataset.order = String(i)));
-
-      const num = (v) => {
-        const n = parseFloat(v);
-        return Number.isFinite(n) ? n : null;
-      };
-
-      function sortBy(mode) {
-        const sorted = cards.slice().sort((a, b) => {
-          if (mode === 'latest') {
-            return Number(a.dataset.order) - Number(b.dataset.order);
-          }
-          if (mode === 'name') {
-            return a.dataset.name.localeCompare(b.dataset.name, lang === 'ja' ? 'ja' : 'en');
-          }
-          // year / height は数値降順・昇順。値の無いものは常に末尾。
-          const key = mode === 'height' ? 'height' : 'year';
-          const va = num(a.dataset[key]);
-          const vb = num(b.dataset[key]);
-          if (va === null && vb === null) return Number(a.dataset.order) - Number(b.dataset.order);
-          if (va === null) return 1;
-          if (vb === null) return -1;
-          return mode === 'oldest' ? va - vb : vb - va;
-        });
-        for (const c of sorted) grid.appendChild(c);
-      }
-
-      sel.addEventListener('change', () => sortBy(sel.value));
-    })();
-  </script>
-
-  <style>
-    .grid-sort {
-      display: flex;
-      justify-content: flex-end;
-      margin: 0 0 14px;
-    }
-    .home-sort {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-    }
-    .home-sort select {
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 8px 10px;
-      background: var(--surface);
-      color: var(--text);
-      font-size: 0.85rem;
-    }
-    .home-sort select:focus { outline: none; border-color: var(--brand); }
-  </style>
+  <Pager current={1} total={totalPages} basePath="/" lang={lang} />
 </BaseLayout>

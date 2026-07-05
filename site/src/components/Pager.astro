@@ -1,0 +1,56 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  current: number;
+  total: number;
+  /** ページ1のパス。'/' か '/en/'。2ページ目以降は `${basePath}page/N/` になる */
+  basePath: string;
+  lang: Lang;
+}
+const { current, total, basePath, lang } = Astro.props;
+
+const pageUrl = (n: number) => (n <= 1 ? basePath : `${basePath}page/${n}/`);
+
+// 先頭・末尾・現在ページ±1 を残し、離れた区間は … でまとめる（ページ数が増えても崩れない）。
+function pageItems(cur: number, tot: number): Array<number | '…'> {
+  const keep = new Set<number>();
+  for (let i = 1; i <= tot; i++) {
+    if (i === 1 || i === tot || (i >= cur - 1 && i <= cur + 1)) keep.add(i);
+  }
+  const out: Array<number | '…'> = [];
+  let prev = 0;
+  for (const n of [...keep].sort((a, b) => a - b)) {
+    if (prev && n - prev > 1) out.push('…');
+    out.push(n);
+    prev = n;
+  }
+  return out;
+}
+
+const items = pageItems(current, total);
+const prevLabel = lang === 'ja' ? '前へ' : 'Prev';
+const nextLabel = lang === 'ja' ? '次へ' : 'Next';
+const navLabel = lang === 'ja' ? 'ページ送り' : 'Pagination';
+---
+{total > 1 && (
+  <nav class="pager" aria-label={navLabel}>
+    {current > 1
+      ? <a class="pager-edge" href={pageUrl(current - 1)} rel="prev">‹ {prevLabel}</a>
+      : <span class="pager-edge is-disabled">‹ {prevLabel}</span>}
+    <ul class="pager-list">
+      {items.map((it) =>
+        it === '…' ? (
+          <li><span class="pager-ellipsis" aria-hidden="true">…</span></li>
+        ) : it === current ? (
+          <li><span class="pager-num is-current" aria-current="page">{it}</span></li>
+        ) : (
+          <li><a class="pager-num" href={pageUrl(it)}>{it}</a></li>
+        )
+      )}
+    </ul>
+    {current < total
+      ? <a class="pager-edge" href={pageUrl(current + 1)} rel="next">{nextLabel} ›</a>
+      : <span class="pager-edge is-disabled">{nextLabel} ›</span>}
+  </nav>
+)}

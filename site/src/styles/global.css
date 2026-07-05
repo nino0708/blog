@@ -232,6 +232,48 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   gap: 20px;
   padding: 12px 0 56px;
 }
+/* 新着一覧: PC=2列 / スマホ=1列 固定（1ページ20件のページング前提） */
+.grid.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-bottom: 28px;
+}
+@media (max-width: 640px) {
+  .grid.grid-2 { grid-template-columns: 1fr; }
+}
+
+/* ---- pager (ページ送り) ---- */
+.pager {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+  gap: 8px; margin: 4px 0 56px;
+}
+.pager-list {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  list-style: none; margin: 0; padding: 0;
+}
+.pager-num, .pager-edge {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 40px; height: 40px; padding: 0 12px;
+  border: 1px solid var(--line); border-radius: 10px;
+  background: var(--surface); color: var(--text);
+  font-size: 0.9rem; font-weight: 600; text-decoration: none;
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+.pager-num:hover, .pager-edge:hover { border-color: var(--brand); color: var(--brand); }
+.pager-num.is-current {
+  background: var(--brand); border-color: var(--brand); color: #fff; cursor: default;
+}
+.pager-edge.is-disabled { opacity: 0.4; pointer-events: none; }
+.pager-ellipsis {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 24px; height: 40px; color: var(--text-muted);
+}
+.section-head-sub .crumb { margin: 0 0 4px; font-size: 0.82rem; }
+.section-head-sub .crumb a { color: var(--brand); text-decoration: none; }
+.section-head-sub .crumb a:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  .pager-num, .pager-edge { min-width: 36px; height: 36px; padding: 0 9px; font-size: 0.85rem; }
+  .pager-ellipsis { height: 36px; }
+}
 .card {
   position: relative;
   background: var(--surface);

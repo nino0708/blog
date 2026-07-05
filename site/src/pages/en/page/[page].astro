@@ -1,0 +1,72 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BuildingCard from '../../../components/BuildingCard.astro';
+import Pager from '../../../components/Pager.astro';
+import { useT } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const PER_PAGE = 20;
+  const jp = await getCollection('buildings');
+  const jpBySlug = new Map(jp.map((p) => [p.slug, p]));
+  const all = (await getCollection('buildings-en'))
+    .map((en) => ({ en, jp: jpBySlug.get(en.slug) }))
+    .filter((x) => x.jp)
+    .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
+  const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+  const paths = [];
+  for (let p = 2; p <= totalPages; p++) {
+    paths.push({
+      params: { page: String(p) },
+      props: {
+        pagePosts: all.slice((p - 1) * PER_PAGE, p * PER_PAGE),
+        current: p,
+        totalPages,
+      },
+    });
+  }
+  return paths;
+}
+
+interface Row {
+  en: CollectionEntry<'buildings-en'>;
+  jp: CollectionEntry<'buildings'>;
+}
+interface Props {
+  pagePosts: Row[];
+  current: number;
+  totalPages: number;
+}
+const { pagePosts, current, totalPages } = Astro.props as Props;
+
+const lang = 'en';
+const t = useT(lang);
+const heading = t('home.section.latest');
+---
+<BaseLayout title={`${heading} (Page ${current})`} lang={lang}>
+  <div class="section-head section-head-sub" data-reveal>
+    <p class="crumb"><a href="/en/">{t('nav.home')}</a></p>
+    <h1>{heading}</h1>
+    <p>Page {current} / {totalPages}</p>
+  </div>
+
+  <section class="grid grid-2">
+    {pagePosts.map(({ en, jp }) => (
+      <BuildingCard
+        lang={lang}
+        url={`/en/buildings/${en.slug}/`}
+        title={en.data.title}
+        buildingType={jp.data.buildingType}
+        area={en.data.area}
+        completedYear={jp.data.completedYear}
+        heightM={jp.data.heightM}
+        summary={en.data.summary}
+        verified={jp.data.verified}
+        heroImage={jp.data.heroImage}
+      />
+    ))}
+  </section>
+
+  <Pager current={current} total={totalPages} basePath="/en/" lang={lang} />
+</BaseLayout>
