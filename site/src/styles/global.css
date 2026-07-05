@@ -254,14 +254,23 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
 .card a { text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%; }
 .card .thumb {
   aspect-ratio: 16 / 9;
+  /* iOS Safariでは縦flexアイテムが中のimg実寸に引き伸ばされaspect-ratioが無視される。
+     min-height:0 とoverflowで16:9を強制する */
+  min-height: 0;
+  overflow: hidden;
   background: linear-gradient(135deg, #cfdcf0, #e9eef6);
   display: grid; place-items: center;
   color: var(--brand);
   font-weight: 700;
   font-size: 1.6rem;
 }
-.card .thumb-img { padding: 0; }
-.card .thumb-img img { width: 100%; height: 100%; object-fit: cover; }
+/* 画像は絶対配置でaspect-ratioボックスを確実に埋める(imgの実寸が高さを押し上げないように) */
+.card .thumb-img { padding: 0; position: relative; }
+.card .thumb-img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
 /* 写真が無い時のフォールバック: 1文字ではなく種別・エリア・高さの情報パネルにする */
 .card .thumb-fallback {
   background:
