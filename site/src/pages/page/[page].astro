@@ -7,7 +7,7 @@ import Pager from '../../components/Pager.astro';
 import { useT } from '../../i18n/ui';
 
 export async function getStaticPaths() {
-  const PER_PAGE = 20;
+  const PER_PAGE = 10;
   const all = (await getCollection('buildings')).sort(
     (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
   );

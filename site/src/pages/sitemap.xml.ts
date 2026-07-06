@@ -48,7 +48,7 @@ export const GET: APIRoute = async ({ site }) => {
   for (const t of enTags) urls.push({ loc: `${base}/en/tags/${encodeURI(t)}/` });
 
   // 新着一覧のページング(2ページ目以降)。1ページ目はルート(/ , /en/)で既出。
-  const PER_PAGE = 20;
+  const PER_PAGE = 10;
   const jaPages = Math.ceil(posts.length / PER_PAGE);
   const enPages = Math.ceil(enPosts.filter((p) => jpSlugs.has(p.slug)).length / PER_PAGE);
   for (let p = 2; p <= jaPages; p++) urls.push({ loc: `${base}/page/${p}/` });

@@ -17,8 +17,8 @@ const allPosts = (await getCollection('buildings-en'))
   .filter((x) => x.jp)
   .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
 
-// 1ページ20件・新着順。21件目以降は /en/page/2/ … へ。
-const PER_PAGE = 20;
+// 1ページ10件・新着順。11件目以降は /en/page/2/ … へ。
+const PER_PAGE = 10;
 const totalPages = Math.max(1, Math.ceil(allPosts.length / PER_PAGE));
 const posts = allPosts.slice(0, PER_PAGE);
 

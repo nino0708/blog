@@ -12,8 +12,9 @@ const allPosts = (await getCollection('buildings')).sort(
   (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
 );
 
-// 1ページ20件・新着順。21件目以降は /page/2/ … へ（別ページ表示）。
-const PER_PAGE = 20;
+// 1ページ10件・新着順。11件目以降は /page/2/ … へ（別ページ表示）。
+// 少なめ＋縦長サムネで1枠を大きく取り、ビルの高さが伝わるようにする。
+const PER_PAGE = 10;
 const totalPages = Math.max(1, Math.ceil(allPosts.length / PER_PAGE));
 const posts = allPosts.slice(0, PER_PAGE);
 

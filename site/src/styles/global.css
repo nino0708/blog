@@ -232,13 +232,20 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   gap: 20px;
   padding: 12px 0 56px;
 }
-/* 新着一覧: PC=2列 / スマホ=1列 固定（1ページ20件のページング前提） */
+/* 新着一覧: PC=2列 / スマホ=1列 固定（1ページ10件のページング前提） */
 .grid.grid-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding-bottom: 28px;
 }
 @media (max-width: 640px) {
   .grid.grid-2 { grid-template-columns: 1fr; }
+}
+/* 新着一覧のカードだけサムネを縦長(4:5)にして、ビルの高さが伝わるようにする。
+   他の一覧(タグ/カテゴリ)は従来の16:9のまま。 */
+.grid.grid-2 .card .thumb { aspect-ratio: 4 / 5; }
+/* スマホは1列で全幅=縦長すぎるため、少し抑えた縦長(4:4.5相当)にする */
+@media (max-width: 640px) {
+  .grid.grid-2 .card .thumb { aspect-ratio: 4 / 4.5; }
 }
 
 /* ---- pager (ページ送り) ---- */
