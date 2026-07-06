@@ -2,6 +2,7 @@
 // 記事詳細の本体マークアップ（日本語/英語ページで共用）。
 // 本文(レンダリング済みMarkdown)はデフォルトスロットで受け取る。
 import AffiliateLinks from './AffiliateLinks.astro';
+import AffiliateRail from './AffiliateRail.astro';
 import { useT, buildingTypeLabel, type Lang } from '../i18n/ui';
 
 interface Props {
@@ -122,6 +123,8 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
     </p>
   </section>
 </article>
+
+<AffiliateRail lang={lang} area={area} buildingType={buildingType} searchArea={searchArea} />
 
 <style>
   .map-section { margin-top: 32px; }

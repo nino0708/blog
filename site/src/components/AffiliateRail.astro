@@ -1,0 +1,159 @@
+---
+// 記事ページの左右余白に追従表示する楽天アフィリカード（PC広画面のみ）。
+// 既存の記事内 AffiliateLinks とは別プレゼンで、露出（回遊）を増やすための追加要素。
+// 左=楽天ブックス（関連書籍/写真集）、右=楽天トラベル（東京のホテル）。
+// - 画面幅が十分に広い時（>=1440px）だけ表示。それ未満（タブレット/スマホ）は非表示で
+//   既存レイアウトに一切干渉しない（DOM/クラスの契約は変えず、追加のみ）。
+// - 半透明の白カード＋薄影でサイトのクリーン＋透明感を維持。
+// - ×で閉じられる（同一セッション中は再表示しない）。
+import { rakutenBooksSearch, rakutenTravelArea } from '../config/affiliate';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  area: string;
+  buildingType: 'office' | 'residence';
+  /** アフィリ検索に使うJPキーワード（英語ページ用に呼び出し側が渡す） */
+  searchArea?: string;
+}
+const { lang, area, buildingType, searchArea } = Astro.props;
+const kwArea = searchArea ?? area;
+const ja = lang === 'ja';
+
+// 左: 関連書籍（写真集・資料）。用途に応じてキーワードを寄せる。
+const booksKeyword = `東京 建築 ${buildingType === 'residence' ? 'マンション' : '超高層ビル'} 写真集`;
+const cards = [
+  {
+    side: 'left' as const,
+    eyebrow: ja ? '関連書籍' : 'Books',
+    title: ja ? '建築を、もっと読む' : 'Read more on architecture',
+    note: ja ? '楽天ブックス' : 'Rakuten Books',
+    cta: ja ? '写真集・資料を見る' : 'Browse books',
+    url: rakutenBooksSearch(booksKeyword),
+  },
+  {
+    side: 'right' as const,
+    eyebrow: ja ? 'この街に泊まる' : 'Stay nearby',
+    title: ja ? `${area}を歩く拠点に` : `A base to explore ${area}`,
+    note: ja ? '楽天トラベル' : 'Rakuten Travel',
+    cta: ja ? '東京のホテルを探す' : 'Find hotels in Tokyo',
+    url: rakutenTravelArea(kwArea),
+  },
+];
+---
+<aside class="aff-rail" aria-label={ja ? 'おすすめ（PR）' : 'Sponsored recommendations'} data-aff-rail hidden>
+  {cards.map((c) => (
+    <div class={`aff-rail-card aff-rail-${c.side}`}>
+      <button class="aff-rail-close" type="button" aria-label={ja ? '閉じる' : 'Dismiss'} data-aff-close>×</button>
+      <span class="aff-rail-pr">PR</span>
+      <p class="aff-rail-eyebrow">{c.eyebrow}</p>
+      <p class="aff-rail-title">{c.title}</p>
+      <a class="aff-rail-cta" href={c.url} target="_blank" rel="nofollow sponsored noopener">
+        {c.cta} <span aria-hidden="true">↗</span>
+      </a>
+      <span class="aff-rail-note">{c.note}</span>
+    </div>
+  ))}
+</aside>
+
+<style>
+  /* 既定は非表示。広いPCでだけ余白に出す（レイアウト非干渉のため display 切替のみ）。 */
+  .aff-rail { display: none; }
+
+  @media (min-width: 1440px) {
+    /* JS有効時のみ表示（[hidden] を JS が外す）。no-JSでも記事本文には影響しない。 */
+    :global(.js) .aff-rail:not([hidden]) { display: block; }
+
+    .aff-rail-card {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 190px;
+      z-index: 5;
+      padding: 16px 16px 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: saturate(1.4) blur(12px);
+      -webkit-backdrop-filter: saturate(1.4) blur(12px);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-lg);
+      /* 初期フェードイン */
+      opacity: 0;
+      animation: affRailIn 0.5s ease 0.4s forwards;
+    }
+    /* 上端のゴールド稜線（サイトの高級感アクセントに合わせる） */
+    .aff-rail-card::before {
+      content: ""; position: absolute; top: 0; left: 16px; right: 16px; height: 2px;
+      background: var(--gold-grad); border-radius: 2px; opacity: 0.85;
+    }
+    /* コンテナ(=--maxw)の外側、左右余白の中央寄りに配置。
+       左カードの右端 = 画面中央 - maxw/2 - gap。右カードは左右反転。 */
+    .aff-rail-left  { right: calc(50vw + 490px + 24px); }
+    .aff-rail-right { left:  calc(50vw + 490px + 24px); }
+
+    .aff-rail-close {
+      position: absolute; top: 8px; right: 8px;
+      width: 22px; height: 22px; padding: 0; line-height: 1;
+      border: none; border-radius: 999px; cursor: pointer;
+      background: transparent; color: var(--text-muted); font-size: 1.05rem;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .aff-rail-close:hover { background: rgba(0, 0, 0, 0.06); color: var(--text); }
+
+    .aff-rail-pr {
+      display: inline-block; font-size: 0.6rem; font-weight: 700; color: #fff;
+      background: var(--text-muted); padding: 1px 6px; border-radius: 4px; letter-spacing: 0.04em;
+    }
+    .aff-rail-eyebrow {
+      margin: 10px 0 2px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.02em;
+      color: var(--brand);
+    }
+    .aff-rail-title {
+      margin: 0 0 12px; font-family: var(--font-display);
+      font-size: 0.92rem; font-weight: 700; line-height: 1.45; color: var(--text);
+    }
+    .aff-rail-cta {
+      display: block; text-align: center;
+      padding: 9px 10px; border-radius: 999px;
+      background: var(--brand); color: #fff; font-size: 0.8rem; font-weight: 700;
+      text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .aff-rail-cta:hover {
+      text-decoration: none; transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(31, 95, 174, 0.35);
+    }
+    .aff-rail-note {
+      display: block; margin-top: 8px; text-align: center;
+      font-size: 0.68rem; color: var(--text-muted);
+    }
+  }
+
+  @keyframes affRailIn {
+    to { opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .aff-rail-card { animation: none; opacity: 1; }
+  }
+  @media print {
+    .aff-rail { display: none !important; }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var rail = document.querySelector('[data-aff-rail]');
+    if (!rail) return;
+    var KEY = 'bj-aff-rail-dismissed';
+    try {
+      if (sessionStorage.getItem(KEY) === '1') return; // 閉じた後はセッション中出さない
+    } catch (e) {}
+    rail.removeAttribute('hidden'); // JS有効時に表示解禁
+    rail.addEventListener('click', function (e) {
+      var t = e.target;
+      if (t && t.closest && t.closest('[data-aff-close]')) {
+        rail.setAttribute('hidden', '');
+        try { sessionStorage.setItem(KEY, '1'); } catch (e2) {}
+      }
+    });
+  })();
+</script>
