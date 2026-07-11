@@ -68,10 +68,19 @@ const expressways = defineCollection({ type: 'content', schema: genericCategoryS
 const railways = defineCollection({ type: 'content', schema: genericCategorySchema });
 const tourism = defineCollection({ type: 'content', schema: genericCategorySchema });
 
+const expresswaysEnSchema = z.object({
+  title: z.string(),
+  area: z.string().optional(),
+  summary: z.string().optional(),
+  tags: z.array(z.string()).default([]),
+});
+const expresswaysEn = defineCollection({ type: 'content', schema: expresswaysEnSchema });
+
 export const collections = {
   buildings,
   'buildings-en': buildingsEn,
   expressways,
+  'expressways-en': expresswaysEn,
   railways,
   tourism,
 };
