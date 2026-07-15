@@ -20,8 +20,10 @@ interface Props {
   jsonLd?: Record<string, unknown>;
   /** <title>末尾にサイト名を付けるか。SEO最適化済みの記事タイトルは付けない(長くなるため) */
   appendSiteName?: boolean;
-  /** OGP/Twitterカード画像のURL。記事はheroImage(建物写真)を渡す。未指定は /ogp.svg */
+  /** OGP/Twitterカード画像のURL。記事はheroImage(建物写真)を渡す。未指定は /ogp.png */
   ogImage?: string;
+  /** 検索エンジンにインデックスさせないページ(404・薄いユーティリティページ等)で true */
+  noindex?: boolean;
 }
 const siteName = 'Built Japan';
 const {
@@ -32,6 +34,7 @@ const {
   jsonLd,
   appendSiteName = true,
   ogImage,
+  noindex = false,
 } = Astro.props;
 const t = useT(lang);
 const description = Astro.props.description ?? t('site.description');
@@ -40,21 +43,39 @@ const fullTitle = appendSiteName && title !== siteName ? `${title} | ${siteName}
 const siteBase = Astro.site ?? new URL('https://example.com');
 // site 未設定(example.com)でも壊れないよう Astro.site をフォールバック
 const canonical = new URL(Astro.url.pathname, siteBase).toString();
-// 記事は建物写真(絶対URL)をOG画像に。未指定/相対は既定の /ogp.svg にフォールバック。
+// 記事は建物写真(絶対URL)をOG画像に。未指定/相対は既定の /ogp.png にフォールバック。
+// SVGはX/Facebook/LINE等がOGカードで描画しないためPNG(1200×630)を既定にする。
 const ogImageUrl = ogImage
   ? (ogImage.startsWith('http') ? ogImage : new URL(ogImage, siteBase).toString())
-  : new URL('/ogp.svg', siteBase).toString();
+  : new URL('/ogp.png', siteBase).toString();
 const altUrl = altPath ? new URL(altPath, siteBase).toString() : null;
 // hreflang: 自言語=canonical、もう一方=altUrl。x-default は日本語(ルート)を指す。
 const jaUrl = lang === 'ja' ? canonical : altUrl;
 const enUrl = lang === 'en' ? canonical : altUrl;
 
+const orgUrl = siteBase.toString();
+const logoUrl = new URL('/ogp.png', siteBase).toString();
+// サイト全体のエンティティ。WebSite と Organization を @id で相互参照し、ブランド認識を補強する。
 const websiteLd = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: siteName,
-  url: siteBase.toString(),
-  inLanguage: lang,
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${orgUrl}#website`,
+      name: siteName,
+      url: orgUrl,
+      inLanguage: lang,
+      publisher: { '@id': `${orgUrl}#org` },
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${orgUrl}#org`,
+      name: siteName,
+      url: orgUrl,
+      logo: { '@type': 'ImageObject', url: logoUrl },
+      sameAs: ['https://x.com/builtjapan'],
+    },
+  ],
 };
 ---
 
@@ -67,6 +88,7 @@ const websiteLd = {
     <script is:inline>document.documentElement.classList.add('js');</script>
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonical} />
 
     <!-- 多言語の相互リンク(hreflang) -->
@@ -81,6 +103,10 @@ const websiteLd = {
     <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:alt" content={title} />
+    {!ogImage && <meta property="og:image:type" content="image/png" />}
+    {!ogImage && <meta property="og:image:width" content="1200" />}
+    {!ogImage && <meta property="og:image:height" content="630" />}
     <meta property="og:locale" content={ogLocale[lang]} />
     {altUrl && <meta property="og:locale:alternate" content={ogLocale[lang === 'ja' ? 'en' : 'ja']} />}
 

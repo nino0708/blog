@@ -37,16 +37,37 @@ const buildingLd: Record<string, unknown> = {
   address: { '@type': 'PostalAddress', addressLocality: e.area, addressRegion: 'Tokyo', addressCountry: 'JP' },
 };
 if (f.address) (buildingLd.address as Record<string, unknown>).streetAddress = f.address;
+const base = (Astro.site ?? new URL('https://example.com')).toString().replace(/\/$/, '');
+const iso = f.publishedAt.toISOString();
+// Article(画像/更新日/著者/発行者ロゴまで補完しリッチリザルト対象に) + パンくずを1つの@graphで出力。
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: e.title,
-  description: metaDescription,
-  inLanguage: 'en',
-  datePublished: f.publishedAt.toISOString(),
-  mainEntityOfPage: pageUrl,
-  about: buildingLd,
-  publisher: { '@type': 'Organization', name: 'Built Japan' },
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: e.title,
+      description: metaDescription,
+      inLanguage: 'en',
+      datePublished: iso,
+      dateModified: iso,
+      mainEntityOfPage: pageUrl,
+      ...(f.heroImage ? { image: [f.heroImage] } : {}),
+      author: { '@type': 'Organization', name: 'Built Japan', url: `${base}/` },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Built Japan',
+        logo: { '@type': 'ImageObject', url: `${base}/ogp.png` },
+      },
+      about: buildingLd,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${base}/en/` },
+        { '@type': 'ListItem', position: 2, name: e.title, item: pageUrl },
+      ],
+    },
+  ],
 };
 
 const specs = buildSpecs(lang, {
