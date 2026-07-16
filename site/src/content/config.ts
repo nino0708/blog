@@ -76,11 +76,20 @@ const expresswaysEnSchema = z.object({
 });
 const expresswaysEn = defineCollection({ type: 'content', schema: expresswaysEnSchema });
 
+const railwaysEnSchema = z.object({
+  title: z.string(),
+  area: z.string().optional(),
+  summary: z.string().optional(),
+  tags: z.array(z.string()).default([]),
+});
+const railwaysEn = defineCollection({ type: 'content', schema: railwaysEnSchema });
+
 export const collections = {
   buildings,
   'buildings-en': buildingsEn,
   expressways,
   'expressways-en': expresswaysEn,
   railways,
+  'railways-en': railwaysEn,
   tourism,
 };
