@@ -775,7 +775,7 @@
       "slug": "tokyo-metro-ginza-line",
       "area": "都心",
       "angle": "東洋初の地下鉄。日本の地下鉄史の起点",
-      "status": "todo"
+      "status": "done"
     },
     {
       "id": 87,
@@ -784,7 +784,7 @@
       "slug": "yamanote-line",
       "area": "都心環状",
       "angle": "東京の骨格を形づくる環状線と駅の更新",
-      "status": "todo"
+      "status": "done"
     },
     {
       "id": 88,
