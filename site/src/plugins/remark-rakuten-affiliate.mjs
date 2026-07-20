@@ -4,10 +4,10 @@
 // アフィリラップされておらず、クリックされても成果ゼロ＝PRとして機能していなかった。さらに
 // 飛び先が楽天トラベルのトップで、宿一覧が出ない。
 //
-// 対策: 本文リンクを (1)確実に宿が並ぶ「東京23区一覧」へ向け (2)affiliate.ts と同じ転送形式で
+// 対策: 本文リンクを (1)確実に宿が並ぶURLへ向け (2)affiliate.ts と同じ転送形式で
 // アフィリIDでラップする。IDはビルド時 env(PUBLIC_RAKUTEN_AFFILIATE_ID)から取得し、リポジトリには
-// 埋め込まない。ID未設定なら素の一覧URL(成果なし)にフォールバックする。
-// 区単位の静的URLは楽天トラベルに存在しない(広域エリアのみ)ため、東京23区一覧を終点にする。
+// 埋め込まない。ID未設定なら素のURL(成果なし)にフォールバックする。
+// 区単位の静的URL(例: ikebukuro.html)は保持し、ルートへのリンクのみ東京23区一覧に転送する。
 
 const RAKUTEN_AFFILIATE_ID = process.env.PUBLIC_RAKUTEN_AFFILIATE_ID ?? '';
 
@@ -21,7 +21,17 @@ function wrapRakuten(targetUrl) {
   return `https://hb.afl.rakuten.co.jp/hgc/${RAKUTEN_AFFILIATE_ID}/?pc=${enc}&m=${enc}`;
 }
 
-const AFFILIATE_URL = wrapRakuten(TOKYO_HOTELS_URL);
+// 楽天トラベルのルートURLを東京23区一覧に置き換える。
+// 区単位URL(例: /yado/tokyo/ikebukuro.html)はそのまま保持する。
+function resolveDestination(url) {
+  try {
+    const u = new URL(url, 'https://travel.rakuten.co.jp');
+    const p = u.pathname.replace(/\/+$/, '');
+    return (p === '' || p === '/') ? TOKYO_HOTELS_URL : url;
+  } catch (_) {
+    return TOKYO_HOTELS_URL;
+  }
+}
 
 // travel.rakuten.co.jp を指すリンクか(スキーム有無・www有無を許容)。
 const isRakutenTravel = (url) =>
@@ -39,7 +49,7 @@ export default function remarkRakutenAffiliate() {
   return (tree) => {
     walk(tree, (node) => {
       if (node.type !== 'link' || !isRakutenTravel(node.url)) return;
-      node.url = AFFILIATE_URL;
+      node.url = wrapRakuten(resolveDestination(node.url));
       // mdast→hast へ渡す属性。広告リンクなので nofollow sponsored、別タブで開く。
       node.data = node.data || {};
       node.data.hProperties = {

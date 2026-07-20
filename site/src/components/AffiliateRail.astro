@@ -6,7 +6,7 @@
 //   既存レイアウトに一切干渉しない（DOM/クラスの契約は変えず、追加のみ）。
 // - 半透明の白カード＋薄影でサイトのクリーン＋透明感を維持。
 // - ×で閉じられる（同一セッション中は再表示しない）。
-import { rakutenBooksSearch, rakutenTravelArea } from '../config/affiliate';
+import { rakutenBooksSearch, rakutenTravelArea, rakutenTravelLabel } from '../config/affiliate';
 import type { Lang } from '../i18n/ui';
 
 interface Props {
@@ -36,7 +36,7 @@ const cards = [
     eyebrow: ja ? 'この街に泊まる' : 'Stay nearby',
     title: ja ? `${area}を歩く拠点に` : `A base to explore ${area}`,
     note: ja ? '楽天トラベル' : 'Rakuten Travel',
-    cta: ja ? '東京のホテルを探す' : 'Find hotels in Tokyo',
+    cta: rakutenTravelLabel(kwArea, ja ? 'ja' : 'en'),
     url: rakutenTravelArea(kwArea),
   },
 ];

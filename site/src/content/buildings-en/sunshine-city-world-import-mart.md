@@ -13,6 +13,8 @@ To the east of Ikebukuro Station, a long covered shopping street leads toward a 
 
 The World Import Mart Building holds several distinct attractions. On the rooftop, Sunshine Aquarium and the planetarium Manten offer open-air experiences suspended above the Ikebukuro skyline. On the second floor, the indoor theme park Namja Town fills a sprawling space with food courts, games, and seasonal events. Exhibition halls on the middle floors have hosted trade fairs and large-scale events since the complex first opened. The combination — aquarium, planetarium, theme park, and exhibition — stacked in a single building reflects the scale of ambition that shaped 1970s mixed-use development in Japan: not a cluster of offices, but a vertical city in miniature.
 
+Planning a stay near Sunshine City? Ikebukuro has a wide range of hotels within a short walk of the complex, from full-service city hotels to compact business hotels near the station. [Find hotels near Ikebukuro on Rakuten Travel](https://travel.rakuten.co.jp/yado/tokyo/ikebukuro.html).
+
 ## From Sugamo Prison to a Postwar Entertainment District
 
 The site carries a significant history. Before development began, the land was occupied by the Tokyo Detention House, which during the Allied occupation became known as Sugamo Prison. It was here that seven Class-A war criminals, including former Prime Minister Hideki Tojo, were executed in December 1948. When the detention house relocated to Katsushika Ward in 1971, the large central site became available for redevelopment.
@@ -25,4 +27,4 @@ Sunshine City World Import Mart Building was completed in 1978 in Higashi-Ikebuk
 
 Related: [Sunshine 60](/buildings/sunshine-60/)
 
-Looking for a hotel near Ikebukuro? [Rakuten Travel](https://travel.rakuten.co.jp/) covers hotels throughout the Ikebukuro and Toshima areas.
+Looking for a hotel near Ikebukuro? [Find hotels near Ikebukuro on Rakuten Travel](https://travel.rakuten.co.jp/yado/tokyo/ikebukuro.html).
