@@ -2,11 +2,30 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryView from '../components/CategoryView.astro';
 import { getCollection } from 'astro:content';
+import { CATEGORIES, PER_PAGE } from '../lib/category';
 
-const posts = await getCollection('expressways');
-const title = '高速道路';
-const description = '首都高速をはじめとする、関東の高速道路の路線・ジャンクション・橋梁を紹介していきます。';
+const meta = CATEGORIES.expressways;
+// 新着順。2ページ目以降は /expressways/page/N/ が担う(トップの新着一覧と同じ1ページ10件)。
+const all = (await getCollection('expressways')).sort(
+  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
+);
+const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+const posts = all.slice(0, PER_PAGE);
 ---
-<BaseLayout title={`${title}｜関東のインフラ`} description={description} lang="ja" altPath="/en/expressways/" appendSiteName={false}>
-  <CategoryView title={title} description={description} posts={posts} basePath="/expressways/" />
+<BaseLayout
+  title={`${meta.label.ja}｜関東のインフラ`}
+  description={meta.description.ja}
+  lang="ja"
+  altPath="/en/expressways/"
+  appendSiteName={false}
+>
+  <CategoryView
+    lang="ja"
+    title={meta.label.ja}
+    description={meta.description.ja}
+    posts={posts}
+    basePath="/expressways/"
+    current={1}
+    totalPages={totalPages}
+  />
 </BaseLayout>

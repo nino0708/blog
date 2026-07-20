@@ -1,0 +1,56 @@
+---
+// 拡張カテゴリ一覧の2ページ目以降(英語)。1ページ目は /en/<category>/ が担う。
+// 並び順・サムネイルは日本語版を出典にする(英語コレクションは publishedAt/heroImage を持たない)。
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import CategoryView from '../../../../components/CategoryView.astro';
+import { CATEGORIES, PER_PAGE, type CategoryKey } from '../../../../lib/category';
+
+export async function getStaticPaths() {
+  const keys = (Object.keys(CATEGORIES) as CategoryKey[]).filter((k) => CATEGORIES[k].hasEn);
+  const paths = [];
+  for (const key of keys) {
+    const jaBySlug = new Map((await getCollection(key)).map((p) => [p.slug, p]));
+    const all = (await getCollection(`${key}-en` as 'railways-en'))
+      .filter((p) => jaBySlug.has(p.slug))
+      .map((p) => ({ ...p, heroImage: jaBySlug.get(p.slug)!.data.heroImage }))
+      .sort(
+        (a, b) =>
+          jaBySlug.get(b.slug)!.data.publishedAt.valueOf() -
+          jaBySlug.get(a.slug)!.data.publishedAt.valueOf()
+      );
+    const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+    for (let p = 2; p <= totalPages; p++) {
+      paths.push({
+        params: { category: key, page: String(p) },
+        props: {
+          key,
+          posts: all.slice((p - 1) * PER_PAGE, p * PER_PAGE),
+          current: p,
+          totalPages,
+        },
+      });
+    }
+  }
+  return paths;
+}
+
+const { key, posts, current, totalPages } = Astro.props;
+const meta = CATEGORIES[key as CategoryKey];
+---
+<BaseLayout
+  title={`${meta.label.en} (page ${current})`}
+  description={meta.description.en}
+  lang="en"
+  appendSiteName={false}
+>
+  <CategoryView
+    lang="en"
+    title={meta.label.en}
+    description={meta.description.en}
+    posts={posts}
+    basePath={`/en/${key}/`}
+    current={current}
+    totalPages={totalPages}
+  />
+</BaseLayout>

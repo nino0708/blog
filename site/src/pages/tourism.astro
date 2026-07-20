@@ -2,11 +2,29 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryView from '../components/CategoryView.astro';
 import { getCollection } from 'astro:content';
+import { CATEGORIES, PER_PAGE } from '../lib/category';
 
-const posts = await getCollection('tourism');
-const title = '観光';
-const description = '東京タワーや東京スカイツリーなど、関東の観光名所・ランドマークを建築の視点で紹介していきます。';
+const meta = CATEGORIES.tourism;
+// 新着順。2ページ目以降は /tourism/page/N/ が担う(トップの新着一覧と同じ1ページ10件)。
+const all = (await getCollection('tourism')).sort(
+  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
+);
+const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+const posts = all.slice(0, PER_PAGE);
 ---
-<BaseLayout title={`${title}｜関東のランドマーク`} description={description} lang="ja" appendSiteName={false}>
-  <CategoryView title={title} description={description} posts={posts} basePath="/tourism/" />
+<BaseLayout
+  title={`${meta.label.ja}｜関東のインフラ`}
+  description={meta.description.ja}
+  lang="ja"
+  appendSiteName={false}
+>
+  <CategoryView
+    lang="ja"
+    title={meta.label.ja}
+    description={meta.description.ja}
+    posts={posts}
+    basePath="/tourism/"
+    current={1}
+    totalPages={totalPages}
+  />
 </BaseLayout>

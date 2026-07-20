@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { CATEGORIES } from '../lib/category';
+import { CATEGORIES, PER_PAGE as CAT_PER_PAGE } from '../lib/category';
 
 // 自前のsitemap生成。日本語(タグ)URLも encodeURI で安全に出力する。
 // 日本語/英語の対訳ページは xhtml:link(hreflang) で相互に結ぶ。
@@ -51,6 +51,12 @@ export const GET: APIRoute = async ({ site }) => {
       const alternates = catEnSlugs.has(p.slug) ? pair(jaPath, enPath) : undefined;
       urls.push({ loc: `${base}${jaPath}`, lastmod, alternates });
       if (catEnSlugs.has(p.slug)) urls.push({ loc: `${base}${enPath}`, lastmod, alternates });
+    }
+    // カテゴリ一覧のページング(2ページ目以降)。1ページ目は上の一覧URLで既出。
+    const catPages = Math.ceil(catPosts.length / CAT_PER_PAGE);
+    for (let p = 2; p <= catPages; p++) {
+      urls.push({ loc: `${base}/${key}/page/${p}/` });
+      if (CATEGORIES[key].hasEn) urls.push({ loc: `${base}/en/${key}/page/${p}/` });
     }
   }
 

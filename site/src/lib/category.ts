@@ -4,6 +4,9 @@ import type { Lang } from '../i18n/ui';
 
 export type CategoryKey = 'expressways' | 'railways' | 'tourism';
 
+/** 1ページあたりの記事数。トップの新着一覧(1ページ10件)に合わせる。 */
+export const PER_PAGE = 10;
+
 interface CategoryMeta {
   /** バッジ・見出しに出すカテゴリ名 */
   label: Record<Lang, string>;

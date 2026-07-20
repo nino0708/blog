@@ -2,12 +2,36 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CategoryView from '../../components/CategoryView.astro';
 import { getCollection } from 'astro:content';
-import { CATEGORIES } from '../../lib/category';
+import { CATEGORIES, PER_PAGE } from '../../lib/category';
 
 const meta = CATEGORIES.railways;
-const jaSlugs = new Set((await getCollection('railways')).map((p) => p.slug));
-const posts = (await getCollection('railways-en')).filter((p) => jaSlugs.has(p.slug));
+// 英語版コレクションは画像も公開日も持たないため、同じ slug の日本語版から借りる。
+const jaBySlug = new Map((await getCollection('railways')).map((p) => [p.slug, p]));
+const all = (await getCollection('railways-en'))
+  .filter((p) => jaBySlug.has(p.slug))
+  .map((p) => ({ ...p, heroImage: jaBySlug.get(p.slug)!.data.heroImage }))
+  .sort(
+    (a, b) =>
+      jaBySlug.get(b.slug)!.data.publishedAt.valueOf() -
+      jaBySlug.get(a.slug)!.data.publishedAt.valueOf()
+  );
+const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+const posts = all.slice(0, PER_PAGE);
 ---
-<BaseLayout title={`${meta.label.en} | Infrastructure in Kanto`} description={meta.description.en} lang="en" altPath="/railways/" appendSiteName={false}>
-  <CategoryView lang="en" title={meta.label.en} description={meta.description.en} posts={posts} basePath="/en/railways/" />
+<BaseLayout
+  title={`${meta.label.en} | Infrastructure in Kanto`}
+  description={meta.description.en}
+  lang="en"
+  altPath="/railways/"
+  appendSiteName={false}
+>
+  <CategoryView
+    lang="en"
+    title={meta.label.en}
+    description={meta.description.en}
+    posts={posts}
+    basePath="/en/railways/"
+    current={1}
+    totalPages={totalPages}
+  />
 </BaseLayout>

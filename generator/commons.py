@@ -259,7 +259,14 @@ def fetch_commons_image(building, used_titles=None, subject="building"):
 
             seen_norm.add(key)
             rank = qi * 100 + page.get("index", 999)
-            candidates.append((_extra_word_count(norm, required), rank, page, ii))
+            # 道路・鉄道は俯瞰こそが全体像。走行中の車内から撮った写真は構造が伝わらず、
+            # 前走車のナンバープレートが写り込むこともあるため、空撮を優先する。
+            aerial_bonus = 0
+            if subject in ("expressway", "railway") and re.search(
+                r"aerial|from the air|航空写真|空撮", norm, re.I
+            ):
+                aerial_bonus = -5
+            candidates.append((_extra_word_count(norm, required) + aerial_bonus, rank, page, ii))
 
     if not candidates:
         return None

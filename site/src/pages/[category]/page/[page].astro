@@ -1,0 +1,48 @@
+---
+// 拡張カテゴリ一覧の2ページ目以降(日本語)。1ページ目は /<category>/ が担う。
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CategoryView from '../../../components/CategoryView.astro';
+import { CATEGORIES, PER_PAGE, type CategoryKey } from '../../../lib/category';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const key of Object.keys(CATEGORIES) as CategoryKey[]) {
+    const all = (await getCollection(key)).sort(
+      (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
+    );
+    const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+    for (let p = 2; p <= totalPages; p++) {
+      paths.push({
+        params: { category: key, page: String(p) },
+        props: {
+          key,
+          posts: all.slice((p - 1) * PER_PAGE, p * PER_PAGE),
+          current: p,
+          totalPages,
+        },
+      });
+    }
+  }
+  return paths;
+}
+
+const { key, posts, current, totalPages } = Astro.props;
+const meta = CATEGORIES[key as CategoryKey];
+---
+<BaseLayout
+  title={`${meta.label.ja}（${current}ページ目）`}
+  description={meta.description.ja}
+  lang="ja"
+  appendSiteName={false}
+>
+  <CategoryView
+    lang="ja"
+    title={meta.label.ja}
+    description={meta.description.ja}
+    posts={posts}
+    basePath={`/${key}/`}
+    current={current}
+    totalPages={totalPages}
+  />
+</BaseLayout>

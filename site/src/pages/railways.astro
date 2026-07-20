@@ -2,11 +2,30 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryView from '../components/CategoryView.astro';
 import { getCollection } from 'astro:content';
+import { CATEGORIES, PER_PAGE } from '../lib/category';
 
-const posts = await getCollection('railways');
-const title = '鉄道';
-const description = '山手線や地下鉄、ターミナル駅など、東京・関東の鉄道の路線と駅を紹介していきます。';
+const meta = CATEGORIES.railways;
+// 新着順。2ページ目以降は /railways/page/N/ が担う(トップの新着一覧と同じ1ページ10件)。
+const all = (await getCollection('railways')).sort(
+  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
+);
+const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+const posts = all.slice(0, PER_PAGE);
 ---
-<BaseLayout title={`${title}｜関東のインフラ`} description={description} lang="ja" altPath="/en/railways/" appendSiteName={false}>
-  <CategoryView title={title} description={description} posts={posts} basePath="/railways/" />
+<BaseLayout
+  title={`${meta.label.ja}｜関東のインフラ`}
+  description={meta.description.ja}
+  lang="ja"
+  altPath="/en/railways/"
+  appendSiteName={false}
+>
+  <CategoryView
+    lang="ja"
+    title={meta.label.ja}
+    description={meta.description.ja}
+    posts={posts}
+    basePath="/railways/"
+    current={1}
+    totalPages={totalPages}
+  />
 </BaseLayout>

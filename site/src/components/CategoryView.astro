@@ -1,15 +1,28 @@
 ---
 // カテゴリ(高速道路・鉄道・観光)のランディング表示。
 // 記事が0件なら「Coming soon...」、1件以上あれば自動で一覧化する(将来の拡張用)。
-interface Item { slug: string; data: { title: string; summary?: string; area?: string } }
+import Pager from './Pager.astro';
+interface Item {
+  slug: string;
+  data: { title: string; summary?: string; area?: string };
+  /** サムネイル。英語版コレクションは画像を持たないため、呼び出し側が日本語版から補って渡す。 */
+  heroImage?: string;
+}
 interface Props {
   title: string;
   description: string;
+  /** 表示するページ分だけに絞り込み済みの記事 */
   posts: Item[];
   basePath: string; // 例: '/expressways/'
   lang?: 'ja' | 'en';
+  /** ページ送り。省略時は1ページのみとして扱う */
+  current?: number;
+  totalPages?: number;
 }
-const { title, description, posts, basePath, lang = 'ja' } = Astro.props;
+const {
+  title, description, posts, basePath, lang = 'ja',
+  current = 1, totalPages = 1,
+} = Astro.props;
 const listLabel = lang === 'ja' ? '記事一覧' : 'Articles';
 const comingSoon = lang === 'ja'
   ? 'このカテゴリの記事は準備中です。順次公開していきます。'
@@ -29,10 +42,28 @@ const comingSoon = lang === 'ja'
     <div class="cat-list">
       {posts.map((p) => (
         <a class="cat-card" href={`${basePath}${p.slug}/`}>
-          <span class="cat-card-title">{p.data.title}</span>
-          {p.data.summary && <span class="cat-card-summary">{p.data.summary}</span>}
+          {(p.heroImage ?? (p.data as { heroImage?: string }).heroImage) && (
+            <div class="cat-card-thumb">
+              <img
+                src={p.heroImage ?? (p.data as { heroImage?: string }).heroImage}
+                alt={p.data.title}
+                loading="lazy"
+              />
+            </div>
+          )}
+          <div class="cat-card-body">
+            <span class="cat-card-title">{p.data.title}</span>
+            {p.data.area && <span class="cat-card-area">{p.data.area}</span>}
+            {p.data.summary && <span class="cat-card-summary">{p.data.summary}</span>}
+          </div>
         </a>
       ))}
     </div>
   )}
+
+  {posts.length > 0 && (
+    <p class="cat-count">{lang === 'ja' ? `${current} / ${totalPages} ページ` : `Page ${current} of ${totalPages}`}</p>
+  )}
 </article>
+
+<Pager current={current} total={totalPages} basePath={basePath} lang={lang} />
