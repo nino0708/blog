@@ -27,15 +27,37 @@ export function rakutenBooksSearch(keyword: string): string {
   return wrapRakuten(`https://books.rakuten.co.jp/search?sitem=${encodeURIComponent(keyword)}`);
 }
 
-// 楽天トラベルのホテル一覧URL。
-// 経緯: /ds/yado/tokyo/<区slug> 方式は楽天に実在しない無効パスで、空室検索SPAに落ちて
-// 「0件（該当する空室なし）」になっていた（本番URLで確認）。
-// 対策として、確実に宿が並ぶ静的ディレクトリ「東京23区一覧」へ固定する。
-// 23区一覧は全区(港区/千代田区等)の宿を含み、常に2700件超が表示され0件化しない。
-// 区単位の個別URLは楽天トラベルに存在しない(広域エリアのみ)ため、推測URLは作らない。
-// 引数 area は呼び出し側互換のため受けるがURLには使わない。
-export function rakutenTravelArea(_area?: string): string {
-  return wrapRakuten('https://travel.rakuten.co.jp/yado/tokyo/tokyo.html');
+// JPエリア名(area フィールド値)から楽天トラベル主要街区ページへのマッピング。
+// 楽天の「/yado/tokyo/{slug}.html」は主要観光・ビジネス街区単位の静的ディレクトリ。
+// 23区単位のURLは存在しないが、主要街区単位のページは存在しホテル一覧が常時表示される。
+// 未マッピングエリアは東京23区一覧（常時2700件超・0件化しない）にフォールバック。
+const AREA_RAKUTEN: Record<string, { slug: string; neighborhood: string; neighborhoodEn: string }> = {
+  '豊島区': { slug: 'ikebukuro',  neighborhood: '池袋',         neighborhoodEn: 'Ikebukuro'            },
+  '新宿区': { slug: 'shinjuku',   neighborhood: '新宿',         neighborhoodEn: 'Shinjuku'             },
+  '渋谷区': { slug: 'shibuya',    neighborhood: '渋谷',         neighborhoodEn: 'Shibuya'              },
+  '台東区': { slug: 'asakusa',    neighborhood: '浅草・上野',    neighborhoodEn: 'Asakusa / Ueno'      },
+  '品川区': { slug: 'shinagawa',  neighborhood: '品川',         neighborhoodEn: 'Shinagawa'            },
+  '墨田区': { slug: 'asakusa',    neighborhood: '浅草・錦糸町',  neighborhoodEn: 'Asakusa / Kinshicho'  },
+};
+
+const TOKYO_HOTELS_URL = 'https://travel.rakuten.co.jp/yado/tokyo/tokyo.html';
+
+// 楽天トラベルのホテル一覧URL。エリアが既知なら街区ページへ、不明なら東京23区一覧へ。
+export function rakutenTravelArea(area?: string): string {
+  const info = area ? AREA_RAKUTEN[area] : null;
+  const url = info
+    ? `https://travel.rakuten.co.jp/yado/tokyo/${info.slug}.html`
+    : TOKYO_HOTELS_URL;
+  return wrapRakuten(url);
+}
+
+// CTA ラベル文字列。エリアが既知なら街区名を含め、不明なら「東京」表記にフォールバック。
+export function rakutenTravelLabel(area: string | undefined, lang: 'ja' | 'en'): string {
+  const info = area ? AREA_RAKUTEN[area] : null;
+  if (!info) return lang === 'ja' ? '東京のホテルを探す' : 'Find hotels in Tokyo';
+  return lang === 'ja'
+    ? `${info.neighborhood}のホテルを探す`
+    : `Find hotels near ${info.neighborhoodEn}`;
 }
 
 // Amazon 検索URL（アソシエイトタグ付与）
