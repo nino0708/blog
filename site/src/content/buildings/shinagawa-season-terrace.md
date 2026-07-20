@@ -13,6 +13,9 @@ architect: "NTTファシリティーズ"
 tags: ["港区", "オフィスビル", "品川", "港南", "再開発"]
 publishedAt: 2026-06-27
 summary: "芝浦水再生センター上部の人工地盤に立つ港区港南の32階建てオフィスビル。約3.5ヘクタールの緑地と下水熱を活用した空調が、現役インフラとの重層利用を体現する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shinagawa_Season_Terrace_2015.jpg/1280px-Shinagawa_Season_Terrace_2015.jpg"
+heroImageCredit: "Wpcpey / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinagawa_Season_Terrace_2015.jpg"
 verified: true
 sources:
   - "品川シーズンテラス - Wikipedia（https://ja.wikipedia.org/wiki/品川シーズンテラス）：高さは資料により144m台と155m台の記録が存在"

@@ -12,6 +12,9 @@ architect: "日建設計"
 tags: ["港区", "超高層ビル", "田町", "三田"]
 publishedAt: 2026-06-21
 summary: "1990年1月竣工、地上43階・高さ180mの日本電気（NEC）本社ビル。日建設計が設計した「NECスーパータワー」の愛称で知られ、中層部に幅約42m・高さ約15mの開口部（風穴）を持つ独特のシルエットが特徴。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/NEC_Supertower_2023.jpg/1280px-NEC_Supertower_2023.jpg"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:NEC_Supertower_2023.jpg"
 verified: true
 sources:
   - "Web検索・建築データベース複数（bb-building.net、NEC公式SNS 2024年8月投稿）：竣工1990年1月、地上43階地下4階、高さ180m（軒高178.4m）、設計：日建設計、所在地：東京都港区芝五丁目7番1号"

@@ -15,6 +15,9 @@ architect: "株式会社久米設計"
 tags: ["渋谷区", "恵比寿", "超高層ビル", "再開発", "複合開発"]
 publishedAt: 2026-06-26
 summary: "渋谷区恵比寿四丁目、サッポロビール工場跡地の再開発街区に立つ地上40階・高さ約167mのオフィスビル。久米設計が設計し、1994年8月に竣工した恵比寿ガーデンプレイスの中核高層棟だ。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Yebisu_Garden_Place_Tower_2012.jpg/1280px-Yebisu_Garden_Place_Tower_2012.jpg"
+heroImageCredit: "Harani0403 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Yebisu_Garden_Place_Tower_2012.jpg"
 verified: true
 sources:
   - "恵比寿ガーデンプレイスタワー - Wikipedia（地上40階・地下5階・1994年竣工）https://ja.wikipedia.org/wiki/恵比寿ガーデンプレイス"

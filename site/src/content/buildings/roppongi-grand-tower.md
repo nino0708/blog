@@ -11,6 +11,9 @@ architect: "日建設計"
 tags: ["港区", "超高層ビル", "再開発", "六本木"]
 publishedAt: 2026-06-21
 summary: "六本木三丁目東地区の市街地再開発で2016年に竣工した地上43階・高さ約231mのオフィス・住宅複合タワー。日建設計が設計し、東京メトロ南北線・六本木一丁目駅に直結する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Sumitomo_Fudosan_Roppongi_Grand_Tower.jpg/1280px-Sumitomo_Fudosan_Roppongi_Grand_Tower.jpg"
+heroImageCredit: "稲妻ノ歯鯨 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Sumitomo_Fudosan_Roppongi_Grand_Tower.jpg"
 verified: true
 sources:
   - "住友不動産プレスリリース（2016年10月28日）：六本木三丁目東地区市街地再開発組合・住友不動産、地上43階地下2階、高さ230.76m（情報源によっては231mと表記）、設計：日建設計、施工：大成建設・大林組JV（https://www.sumitomo-rd.co.jp/uploads/20161028_release_Roppongi_Grand_Tower2.pdf）"

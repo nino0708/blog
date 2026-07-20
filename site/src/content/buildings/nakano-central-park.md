@@ -13,6 +13,9 @@ architect: "鹿島設計（サウス棟）・戸田建設（イースト棟）"
 tags: ["中野区", "オフィスビル", "再開発", "警察大学校跡地"]
 publishedAt: 2026-06-24
 summary: "警察大学校の広大な跡地に生まれた中野四季の都市再開発の中核施設。サウス棟は地上22階・高さ約100メートルを誇り、隣接する中野四季の森公園と一体の職住遊環境を形成している。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Nakano_Central_Park_S.jpg/1280px-Nakano_Central_Park_S.jpg"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Nakano_Central_Park_S.jpg"
 verified: true
 sources: ["東京建物 オフィス情報（office.tatemono.com/list/detail/461, /464）サウス棟：地上22階（塔屋1含む）地下1階・高さ99.95m・延床151,523.55m²、イースト棟：地上10階（塔屋1含む）地下2階・高さ50.60m・延床39,025.17m²", "鹿島設計 実績（kajima.co.jp/tech/kd/works/177/）サウス棟設計者：鹿島建設 一級建築士事務所", "中野セントラルパーク公式（nakano-centralpark.jp）", "minto.or.jp 中野四季の都市 再開発事業（archives/regenerate/detail22.html）"]
 ---

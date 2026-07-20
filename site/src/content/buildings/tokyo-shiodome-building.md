@@ -15,6 +15,9 @@ architect: "安井建築設計事務所（竹中工務店も設計参加）"
 tags: ["港区", "超高層ビル", "汐留", "ホテル"]
 publishedAt: 2026-06-25
 summary: "2005年1月竣工、地上37階・高さ約172mの超高層複合ビル。森トラストと住友不動産が共同開発した汐留シオサイトの一棟で、28〜37階にコンラッド東京が入居する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Tokyo_Shiodome_Building_20070317-03.jpg"
+heroImageCredit: "Kure / CC BY-SA 2.5"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Shiodome_Building_20070317-03.jpg"
 verified: true
 sources:
   - "森トラスト プレスリリース 2005年1月31日（地上37階地下4階・2005年1月竣工）"

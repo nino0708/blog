@@ -13,6 +13,9 @@ architect: "入江三宅設計事務所"
 tags: ["港区", "超高層ビル", "再開発", "赤坂", "アークヒルズ"]
 publishedAt: 2026-06-19
 summary: "1986年3月竣工の地上37階・高さ約145mのオフィス棟。森ビルが17年以上かけて推進した「アークヒルズ」再開発の中核として、日本における民間主導の大規模都市再開発の先例を示した一棟。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ARK_Mori_Building_2018.jpg/1280px-ARK_Mori_Building_2018.jpg"
+heroImageCredit: "Wpcpey / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:ARK_Mori_Building_2018.jpg"
 verified: true
 sources:
   - "OFFICE AND「アーク森ビル」（竣工1986年3月・地上37階地下4階・延床181,833㎡・設計入江三宅設計事務所・港区赤坂1-12-32）"

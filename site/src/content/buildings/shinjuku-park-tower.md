@@ -15,6 +15,9 @@ architect: "丹下健三・都市・建築設計研究所"
 tags: ["新宿区", "西新宿", "超高層ビル", "複合開発", "ホテル"]
 publishedAt: 2026-06-26
 summary: "西新宿に立つ地上52階・高さ235mの超高層複合ビル。丹下健三設計のもと1994年に竣工し、39〜52階にパークハイアット東京を内包する三棟連結型の高層複合だ。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Shinjuku_Park_Tower_9.jpg/1280px-Shinjuku_Park_Tower_9.jpg"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinjuku_Park_Tower_9.jpg"
 verified: true
 sources:
   - "新宿パークタワー - Wikipedia（地上52階・地下5階・高さ235m・1994年4月竣工、東京ガス都市開発、丹下健三・都市・建築設計研究所設計）https://ja.wikipedia.org/wiki/新宿パークタワー"

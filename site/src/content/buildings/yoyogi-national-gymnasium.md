@@ -11,6 +11,9 @@ architect: "丹下健三（意匠）、坪井善勝（構造）"
 tags: ["渋谷区", "丹下健三", "重要文化財", "1964年東京オリンピック", "吊り構造"]
 publishedAt: 2026-06-29
 summary: "丹下健三・坪井善勝が1964年に完成させた吊り構造の傑作。当時前例のない二重吊り構造で大空間を実現し、2021年に国の重要文化財に指定された。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Yoyogi-National-First-Gymnasium-03.jpg/1280px-Yoyogi-National-First-Gymnasium-03.jpg"
+heroImageCredit: "Rs1421 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Yoyogi-National-First-Gymnasium-03.jpg"
 verified: true
 sources: ["BUNGA NET 代々木競技場が重要文化財内定 https://bunganet.tokyo/yoyogi/", "清水建設 施工実績 https://www.shimz.co.jp/works/jp_lei_196409_kokuritsuokunai.html", "文化遺産オンライン https://online.bunka.go.jp/heritages/detail/551965"]
 ---

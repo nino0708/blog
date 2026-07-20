@@ -12,6 +12,9 @@ architect: "日建設計"
 tags: ["港区", "超高層ビル", "再開発", "六本木一丁目"]
 publishedAt: 2026-06-20
 summary: "2002年竣工、地上45階・高さ201メートルの超高層オフィスビル。住友不動産が六本木一丁目西地区の再開発として約14年をかけて実現した「泉ガーデン」複合街区の核をなし、駅直結・庭園一体という構成で港区に新たな街区を加えた。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Izumi_Garden_Tower_from_Tokyo_Tower.jpg/1280px-Izumi_Garden_Tower_from_Tokyo_Tower.jpg"
+heroImageCredit: "不明 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Izumi_Garden_Tower_from_Tokyo_Tower.jpg"
 verified: true
 sources:
   - "清水建設「泉ガーデン」施工実績（竣工2002年6月・地上45階地下2階・延床157,365㎡・設計：日建設計・施工：清水建設・鴻池組・浅沼組・鹿島建設・竹中工務店・三井住友建設JV）"

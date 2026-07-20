@@ -12,6 +12,9 @@ architect: "三菱地所設計（SUN VILLAGEタワー）・日建ハウジング
 tags: ["中央区", "タワーマンション", "晴海", "再開発", "オリンピック選手村跡地"]
 publishedAt: 2026-07-05
 summary: "2020年東京五輪の選手村跡地を転用した大規模住宅街区。約18ヘクタールの敷地に中層住宅と地上50階・高さ約172mのツインタワー（SKY DUO）が立ち、総戸数は約5,632戸に上る。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/HARUMI_FLAG_-_51878789983.jpg/1280px-HARUMI_FLAG_-_51878789983.jpg"
+heroImageCredit: "Dick Thomas Johnson / CC BY 2.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:HARUMI_FLAG_-_51878789983.jpg"
 verified: true
 sources: ["HARUMI FLAG SKY DUO 東急不動産ニュースリリース（https://www.tokyu-land.co.jp/news/2023/000816.html）", "超高層マンション・超高層ビル（https://skyskysky.net/construction/202402.html）", "晴海フラッグ Wikipedia英語版（https://en.wikipedia.org/wiki/Harumi_Flag）", "SKY DUO高さ: 171.95m（最高179.60m）は東急不動産ニュースリリースより"]
 ---

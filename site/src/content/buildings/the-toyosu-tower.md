@@ -15,6 +15,9 @@ architect: "清水建設"
 tags: ["江東区", "タワーマンション", "豊洲", "ウォーターフロント"]
 publishedAt: 2026-07-01
 summary: "豊洲駅至近に立つ地上43階・高さ155メートルの超高層マンション。三井不動産レジデンシャルほか4社が共同で手がけた湾岸再開発の先駆け的一棟。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/BRANZ_Tower_Toyosu.jpg/1280px-BRANZ_Tower_Toyosu.jpg"
+heroImageCredit: "Beryllium Transistor / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:BRANZ_Tower_Toyosu.jpg"
 verified: true
 sources: ["清水建設 施工実績 https://www.shimz.co.jp/works/jp_resi_200902_toyosutower.html", "三井不動産プレスリリース 2007-05-30 https://www.mitsuifudosan.co.jp/corporate/news/2007/0530/", "The Skyscraper Center #26626 https://www.skyscrapercenter.com/building/the-toyosu-tower/26626", "竣工年は清水建設施工実績・Skyscraper Centerで2009年1月、一部不動産ポータルでは2008年11月と差異あり"]
 ---

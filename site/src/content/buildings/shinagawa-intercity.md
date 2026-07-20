@@ -12,6 +12,9 @@ architect: "日本設計・大林組"
 tags: ["港区", "超高層ビル", "品川", "港南", "再開発"]
 publishedAt: 2026-06-22
 summary: "1998年竣工、旧国鉄品川駅東口貨物ヤード跡地に建つ3棟構成のオフィス街区。最高棟のA棟は地上32階・高さ144.5m。品川駅港南口のスカイラインを先導し、その後の国際ビジネス拠点としての品川東口形成の礎を築いた。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinagawa_intercity_B%2CC.JPG/1280px-Shinagawa_intercity_B%2CC.JPG"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinagawa_intercity_B,C.JPG"
 verified: true
 sources:
   - "Web検索・複数ソース（CADカフェ、CBRE、オフィス&等）：品川インターシティ竣工1998年、A棟地下2階・地上32階・高さ144.5m、B棟地下3階・地上31階・高さ139.9m、C棟地下3階・地上31階・高さ139.9m"

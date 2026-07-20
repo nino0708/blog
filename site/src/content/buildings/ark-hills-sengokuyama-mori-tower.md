@@ -13,6 +13,9 @@ architect: "森ビル株式会社一級建築士事務所"
 tags: ["港区", "超高層ビル", "再開発", "六本木", "アークヒルズ"]
 publishedAt: 2026-06-20
 summary: "2012年8月竣工、地上48階・高さ約206.7メートルの超高層複合ビル。大規模な緑地を足元に配しながらオフィスと住宅を垂直に重ね、森ビルが1986年から形成してきたアークヒルズ街区に新たな章を加えた存在。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ark_Hills_Sengokuyama_Mori_Tower.jpg/1280px-Ark_Hills_Sengokuyama_Mori_Tower.jpg"
+heroImageCredit: "稲妻ノ歯鯨 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Ark_Hills_Sengokuyama_Mori_Tower.jpg"
 verified: true
 sources:
   - "東京都環境局「アークヒルズ仙石山森タワー建物諸元（2017年11月現在）」港区六本木一丁目9番10号・地上48階地下4階・完成2012年8月・延床143,426㎡"

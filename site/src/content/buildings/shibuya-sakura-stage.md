@@ -13,6 +13,9 @@ architect: "日建設計、デザインアーキテクト：古谷誠章＋NASCA
 tags: ["渋谷区", "渋谷", "超高層ビル", "再開発", "複合開発"]
 publishedAt: 2026-06-17
 summary: "渋谷駅桜丘口地区の市街地再開発によって2023年11月に誕生した複合施設。地上39階・高さ約179mのSHIBUYAタワーを核に、四半世紀越しの構想が実現した渋谷再開発の「ラストピース」。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shibuya_Sakura_Stage_2.jpg/1280px-Shibuya_Sakura_Stage_2.jpg"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shibuya_Sakura_Stage_2.jpg"
 verified: true
 sources:
   - "渋谷駅桜丘口地区市街地再開発組合・東急不動産 竣工プレスリリース 2023年11月30日（竣工年・SHIBUYAタワー地上39階地下4階・高さ約179m）"

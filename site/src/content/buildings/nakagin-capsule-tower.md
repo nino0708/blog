@@ -12,6 +12,9 @@ architect: "黒川紀章"
 tags: ["中央区", "銀座", "メタボリズム", "近代建築"]
 publishedAt: 2026-06-28
 summary: "黒川紀章が設計した1972年竣工のメタボリズム建築の代表作。140個の交換可能なカプセルを2本のコアに取り付けた構造で、世界初の恒久使用を前提とするカプセル建築とされる。2022年に解体されたが、保存された23個のカプセルは今も世界各地で生き続けている。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Nakagin_Capsule_Tower_2017_dllu.jpg/1280px-Nakagin_Capsule_Tower_2017_dllu.jpg"
+heroImageCredit: "Dllu / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Nakagin_Capsule_Tower_2017_dllu.jpg"
 verified: true
 sources:
   - "中銀カプセルタワービル - Wikipedia（竣工1972年・黒川紀章設計・A棟13階B棟11階・地下1階・カプセル140個・延床3091.23m²・解体2022年4月）"

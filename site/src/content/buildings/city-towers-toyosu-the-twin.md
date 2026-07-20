@@ -12,6 +12,9 @@ architect: "日建設計"
 tags: ["江東区", "タワーマンション", "豊洲", "ウォーターフロント", "ツインタワー"]
 publishedAt: 2026-07-03
 summary: "豊洲三丁目に並び立つ地上48階・高さ約166メートルの超高層ツインタワーマンション。住友不動産が開発し、日建設計が設計した湾岸の双子塔。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/City_Towers_Toyosu_The_Twin_2012_Tokyo_1.jpg/1280px-City_Towers_Toyosu_The_Twin_2012_Tokyo_1.jpg"
+heroImageCredit: "Harani0403 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:City_Towers_Toyosu_The_Twin_2012_Tokyo_1.jpg"
 verified: true
 sources: ["モダンスタンダード（高さ166m記載）https://www.m-standard.co.jp/buildings/880/", "SUUMO シティタワーズ豊洲ザ・ツイン https://suumo.jp/library/tf_13/sc_13108/to_1000696375/", "一部情報（blue-style.com等）では高さ171.2mとの記載あり差異あり"]
 ---
