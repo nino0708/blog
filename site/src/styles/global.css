@@ -355,6 +355,8 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
 .badge.office { background: var(--brand-soft); color: var(--brand); }
 .badge.residence { background: #fbf0e1; color: var(--accent); }
 .badge.unverified { background: #fdeaea; color: #c0392b; }
+/* 拡張カテゴリ(高速道路・鉄道・観光)。ビル種別バッジと同系だが色で区別する。 */
+.badge.category { background: #eaf4ee; color: #2c6e49; }
 .taglist { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag { font-size: 0.8rem; background: #eef1f6; color: var(--text-muted); padding: 3px 10px; border-radius: 999px; }
 .tag:hover { background: var(--brand-soft); color: var(--brand); text-decoration: none; }

@@ -1,5 +1,6 @@
 ---
 import { useT, localizePath, type Lang } from '../i18n/ui';
+import { CATEGORIES } from '../lib/category';
 
 interface Props {
   lang: Lang;
@@ -24,9 +25,10 @@ const switchHref = altPath ?? localizePath(other, '/');
     <nav class="nav">
       <a href={localizePath(lang, '/')}>{t('nav.home')}</a>
       <a href={localizePath(lang, '/database/')}>{t('nav.database')}</a>
-      {lang === 'ja' && <a href="/expressways/">高速道路</a>}
-      {lang === 'ja' && <a href="/railways/">鉄道</a>}
-      {lang === 'ja' && <a href="/tourism/">観光</a>}
+      <a href={localizePath(lang, '/expressways/')}>{CATEGORIES.expressways.label[lang]}</a>
+      <a href={localizePath(lang, '/railways/')}>{CATEGORIES.railways.label[lang]}</a>
+      {/* 観光は日本語版のみ（英語コレクション未整備） */}
+      {lang === 'ja' && <a href="/tourism/">{CATEGORIES.tourism.label.ja}</a>}
       {lang === 'ja' && <a href="/rankings/">ランキング</a>}
       <a href={localizePath(lang, '/about/')}>{t('nav.about')}</a>
       <a class="lang-switch" href={switchHref} hreflang={other} lang={other}>{t('lang.other')}</a>

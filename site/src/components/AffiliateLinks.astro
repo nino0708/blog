@@ -11,12 +11,15 @@ interface Props {
   lang: Lang;
   title: string;
   area: string;
-  buildingType: 'office' | 'residence';
+  /** ビル記事のみ。拡張カテゴリ(鉄道・高速道路等)の記事では渡さない。 */
+  buildingType?: 'office' | 'residence';
+  /** 楽天ブックス検索の語を明示指定する(buildingType が無いカテゴリ用)。 */
+  booksKeyword?: string;
   /** 検索に使うキーワード(日本語)。楽天/Amazonは日本語サービスのため、表示は英語でも検索語はJPを使う。 */
   searchTitle?: string;
   searchArea?: string;
 }
-const { lang, title, area, buildingType, searchTitle, searchArea } = Astro.props;
+const { lang, title, area, buildingType, booksKeyword, searchTitle, searchArea } = Astro.props;
 const t = useT(lang);
 const kwTitle = searchTitle ?? title;
 const kwArea = searchArea ?? area;
@@ -38,7 +41,9 @@ const links = [
   {
     label: t('affiliate.books'),
     note: noteBooks,
-    url: rakutenBooksSearch(`東京 建築 ${buildingType === 'residence' ? 'マンション' : '超高層ビル'}`),
+    url: rakutenBooksSearch(
+      booksKeyword ?? `東京 建築 ${buildingType === 'residence' ? 'マンション' : '超高層ビル'}`,
+    ),
     sponsored: true,
   },
   {

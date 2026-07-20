@@ -1,0 +1,118 @@
+---
+// 拡張カテゴリ(高速道路・鉄道・観光)の記事詳細ページ(日本語)。
+// 3カテゴリを1ファイルで賄う。パスは getStaticPaths が返した組み合わせのみ生成されるため、
+// /tags/ や /page/ など他の動的ルートを食うことはない。
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CategoryArticle from '../../components/CategoryArticle.astro';
+import { CATEGORIES, type CategoryKey } from '../../lib/category';
+
+export async function getStaticPaths() {
+  const keys = Object.keys(CATEGORIES) as CategoryKey[];
+  const paths = [];
+  for (const key of keys) {
+    const posts = await getCollection(key);
+    const enSlugs = CATEGORIES[key].hasEn
+      ? new Set((await getCollection(`${key}-en` as 'railways-en')).map((p) => p.slug))
+      : new Set<string>();
+    for (const post of posts) {
+      // 同カテゴリの関連記事: 同エリア優先、次に公開日が近い順。最大4件。
+      const related = posts
+        .filter((p) => p.slug !== post.slug)
+        .map((p) => {
+          const sameArea = p.data.area && p.data.area === post.data.area ? 1000 : 0;
+          const gap = Math.abs(p.data.publishedAt.valueOf() - post.data.publishedAt.valueOf()) / 86400000;
+          return { p, score: sameArea - gap };
+        })
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4)
+        .map(({ p }) => ({
+          title: p.data.title,
+          area: p.data.area ?? '',
+          href: `/${key}/${p.slug}/`,
+        }));
+      paths.push({
+        params: { category: key, slug: post.slug },
+        props: { post, key, hasEn: enSlugs.has(post.slug), related },
+      });
+    }
+  }
+  return paths;
+}
+
+const lang = 'ja';
+const { post, key, hasEn, related } = Astro.props;
+const meta = CATEGORIES[key as CategoryKey];
+const { Content } = await post.render();
+const d = post.data;
+
+const pageUrl = new URL(`/${key}/${post.slug}/`, Astro.site ?? 'https://example.com').toString();
+const base = (Astro.site ?? new URL('https://example.com')).toString().replace(/\/$/, '');
+const metaDescription = d.summary ?? `${d.title}（${meta.label.ja}）の記録。`;
+const iso = d.publishedAt.toISOString();
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: d.title,
+      description: metaDescription,
+      inLanguage: 'ja',
+      datePublished: iso,
+      dateModified: iso,
+      mainEntityOfPage: pageUrl,
+      ...(d.heroImage ? { image: [d.heroImage] } : {}),
+      author: { '@type': 'Organization', name: 'Built Japan', url: `${base}/` },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Built Japan',
+        logo: { '@type': 'ImageObject', url: `${base}/ogp.png` },
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'ホーム', item: `${base}/` },
+        { '@type': 'ListItem', position: 2, name: meta.label.ja, item: `${base}/${key}/` },
+        { '@type': 'ListItem', position: 3, name: d.title, item: pageUrl },
+      ],
+    },
+  ],
+};
+
+// タグページはビル記事のタグからのみ生成されるため、存在するものだけリンクする。
+const buildingTags = [...new Set((await getCollection('buildings')).flatMap((p) => p.data.tags))];
+const seoTitle = `${d.title}｜${d.area ? `${d.area}の` : ''}${meta.label.ja}`;
+---
+<BaseLayout
+  title={seoTitle}
+  description={metaDescription}
+  lang={lang}
+  ogType="article"
+  altPath={hasEn ? `/en/${key}/${post.slug}/` : null}
+  jsonLd={jsonLd}
+  appendSiteName={false}
+  ogImage={d.heroImage}
+>
+  <CategoryArticle
+    lang={lang}
+    title={d.title}
+    summary={d.summary}
+    area={d.area}
+    categoryLabel={meta.label.ja}
+    verified={d.verified}
+    heroImage={d.heroImage}
+    heroImageCredit={d.heroImageCredit}
+    heroImageLink={d.heroImageLink}
+    tags={d.tags}
+    tagBase="/tags/"
+    linkableTags={buildingTags}
+    sources={d.sources}
+    listPath={`/${key}/`}
+    related={related}
+    booksKeyword={meta.booksKeyword}
+  >
+    <Content />
+  </CategoryArticle>
+</BaseLayout>

@@ -1,0 +1,142 @@
+---
+// 拡張カテゴリ(高速道路・鉄道・観光)の記事詳細。日本語/英語ページで共用。
+// ビル記事(BuildingArticle)と違い buildingType や諸元(高さ・階数)を持たないため、
+// 見た目を揃えつつスペック表を省いた構成にしている。本文はデフォルトスロットで受け取る。
+import AffiliateLinks from './AffiliateLinks.astro';
+import { useT, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  summary?: string;
+  /** エリア/区間/沿線。パンくずとホテル検索のキーワードに使う */
+  area?: string;
+  /** カテゴリ表示名（例: 鉄道 / Railways）。バッジに出す */
+  categoryLabel: string;
+  verified: boolean;
+  heroImage?: string;
+  heroImageCredit?: string;
+  heroImageLink?: string;
+  tags: string[];
+  /** タグページへのリンク基底（'/tags/' or '/en/tags/'） */
+  tagBase: string;
+  /** タグページが存在するタグ。ここに無いタグはリンクせず素のチップで出す（404回避） */
+  linkableTags?: string[];
+  sources: string[];
+  /** パンくず「記事一覧」のリンク先 */
+  listPath: string;
+  /** 同カテゴリの関連記事（内部リンク） */
+  related?: { title: string; area: string; href: string }[];
+  /** 楽天ブックス検索に使うキーワード */
+  booksKeyword?: string;
+  /** 地図の検索語。路線名など広域はピンが曖昧になるため呼び出し側で調整可能にする */
+  mapLabel?: string;
+}
+const {
+  lang, title, summary, area, categoryLabel, verified,
+  heroImage, heroImageCredit, heroImageLink,
+  tags, tagBase, linkableTags = [], sources, listPath,
+  related = [], booksKeyword, mapLabel,
+} = Astro.props;
+const t = useT(lang);
+const commonsLabel = lang === 'ja' ? 'Wikimedia Commons' : 'via Wikimedia Commons';
+const linkable = new Set(linkableTags);
+
+const q = encodeURIComponent(mapLabel ?? title);
+const mapEmbedSrc = `https://maps.google.com/maps?q=${q}&z=14&hl=${lang}&output=embed`;
+const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
+---
+<p class="breadcrumb"><a href={listPath}>{t('breadcrumb.list')}</a>{area ? ` ／ ${area}` : ''}</p>
+<article class="article">
+  <div class="taglist">
+    <span class="badge category">{categoryLabel}</span>
+    {!verified && <span class="badge unverified">{t('badge.unverified')}</span>}
+  </div>
+  <h1>{title}</h1>
+  {summary && <p class="lead">{summary}</p>}
+
+  {heroImage && (
+    <figure class="hero-figure">
+      <img src={heroImage} alt={title} loading="lazy" />
+      {heroImageCredit && (
+        <figcaption>
+          {t('photo.by')}: {heroImageLink
+            ? <a href={heroImageLink} target="_blank" rel="nofollow noopener">{heroImageCredit}</a>
+            : heroImageCredit} （{commonsLabel}）
+        </figcaption>
+      )}
+    </figure>
+  )}
+
+  <slot />
+
+  {related.length > 0 && (
+    <nav class="related" aria-label={t('related.title')}>
+      <h2>{t('related.title')}</h2>
+      <ul class="related-list">
+        {related.map((r) => (
+          <li><a href={r.href}>{r.title}<span class="related-area">{r.area}</span></a></li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  <AffiliateLinks lang={lang} title={title} area={area ?? ''} booksKeyword={booksKeyword} />
+
+  {tags.length > 0 && (
+    <div class="taglist" style="margin-top:28px">
+      {tags.map((tag) => (
+        linkable.has(tag)
+          ? <a class="tag" href={`${tagBase}${encodeURIComponent(tag)}/`}>#{tag}</a>
+          : <span class="tag">#{tag}</span>
+      ))}
+    </div>
+  )}
+
+  {sources.length > 0 && (
+    <section style="margin-top:24px">
+      <h2>{t('sources.title')}</h2>
+      <ul>{sources.map((s) => <li>{s.startsWith('http') ? <a href={s}>{s}</a> : s}</li>)}</ul>
+    </section>
+  )}
+
+  <section class="map-section" aria-label={t('map.title')}>
+    <h2>{t('map.title')}</h2>
+    <div class="map-embed">
+      <iframe
+        title={`${title} — ${t('map.title')}`}
+        src={mapEmbedSrc}
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="map-link">
+      <a href={mapsHref} target="_blank" rel="noopener nofollow">{t('map.open')} ↗</a>
+    </p>
+  </section>
+</article>
+
+<style>
+  .map-section { margin-top: 32px; }
+  .map-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+  }
+  .map-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .map-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+</style>

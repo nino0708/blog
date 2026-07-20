@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CategoryView from '../../components/CategoryView.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES } from '../../lib/category';
+
+const meta = CATEGORIES.railways;
+const jaSlugs = new Set((await getCollection('railways')).map((p) => p.slug));
+const posts = (await getCollection('railways-en')).filter((p) => jaSlugs.has(p.slug));
+---
+<BaseLayout title={`${meta.label.en} | Infrastructure in Kanto`} description={meta.description.en} lang="en" altPath="/railways/" appendSiteName={false}>
+  <CategoryView lang="en" title={meta.label.en} description={meta.description.en} posts={posts} basePath="/en/railways/" />
+</BaseLayout>

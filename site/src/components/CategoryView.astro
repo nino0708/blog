@@ -7,10 +7,15 @@ interface Props {
   description: string;
   posts: Item[];
   basePath: string; // 例: '/expressways/'
+  lang?: 'ja' | 'en';
 }
-const { title, description, posts, basePath } = Astro.props;
+const { title, description, posts, basePath, lang = 'ja' } = Astro.props;
+const listLabel = lang === 'ja' ? '記事一覧' : 'Articles';
+const comingSoon = lang === 'ja'
+  ? 'このカテゴリの記事は準備中です。順次公開していきます。'
+  : 'Articles in this category are on the way.';
 ---
-<p class="breadcrumb"><a href="/">記事一覧</a> ／ {title}</p>
+<p class="breadcrumb"><a href={lang === 'ja' ? '/' : '/en/'}>{listLabel}</a> ／ {title}</p>
 <article class="article">
   <h1>{title}</h1>
   <p class="lead">{description}</p>
@@ -18,7 +23,7 @@ const { title, description, posts, basePath } = Astro.props;
   {posts.length === 0 ? (
     <div class="coming-soon">
       <span class="coming-soon-badge">Coming soon...</span>
-      <p>このカテゴリの記事は準備中です。順次公開していきます。</p>
+      <p>{comingSoon}</p>
     </div>
   ) : (
     <div class="cat-list">

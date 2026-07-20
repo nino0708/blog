@@ -1,0 +1,111 @@
+---
+// 拡張カテゴリの記事詳細ページ(英語)。
+// 公開日・検証状態・出典・写真は日本語版を唯一の出典とし、英語版コレクションからは
+// 言語依存のテキスト(タイトル・要約・エリア名・本文・タグ)だけを取る。
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CategoryArticle from '../../../components/CategoryArticle.astro';
+import { CATEGORIES, type CategoryKey } from '../../../lib/category';
+
+export async function getStaticPaths() {
+  const keys = (Object.keys(CATEGORIES) as CategoryKey[]).filter((k) => CATEGORIES[k].hasEn);
+  const paths = [];
+  for (const key of keys) {
+    const enPosts = await getCollection(`${key}-en` as 'railways-en');
+    const jaPosts = await getCollection(key);
+    const jaBySlug = new Map(jaPosts.map((p) => [p.slug, p]));
+    // 日本語版が無い英語記事は事実フィールドを引けないため出さない
+    const pairs = enPosts.filter((p) => jaBySlug.has(p.slug));
+    for (const post of pairs) {
+      const related = pairs
+        .filter((p) => p.slug !== post.slug)
+        .slice(0, 4)
+        .map((p) => ({
+          title: p.data.title,
+          area: p.data.area ?? '',
+          href: `/en/${key}/${p.slug}/`,
+        }));
+      paths.push({
+        params: { category: key, slug: post.slug },
+        props: { post, ja: jaBySlug.get(post.slug)!, key, related },
+      });
+    }
+  }
+  return paths;
+}
+
+const lang = 'en';
+const { post, ja, key, related } = Astro.props;
+const meta = CATEGORIES[key as CategoryKey];
+const { Content } = await post.render();
+const d = post.data;
+const f = ja.data; // 事実フィールド(日本語版が出典)
+
+const pageUrl = new URL(`/en/${key}/${post.slug}/`, Astro.site ?? 'https://example.com').toString();
+const base = (Astro.site ?? new URL('https://example.com')).toString().replace(/\/$/, '');
+const metaDescription = d.summary ?? `${d.title} — ${meta.label.en} in Tokyo.`;
+const iso = f.publishedAt.toISOString();
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: d.title,
+      description: metaDescription,
+      inLanguage: 'en',
+      datePublished: iso,
+      dateModified: iso,
+      mainEntityOfPage: pageUrl,
+      ...(f.heroImage ? { image: [f.heroImage] } : {}),
+      author: { '@type': 'Organization', name: 'Built Japan', url: `${base}/` },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Built Japan',
+        logo: { '@type': 'ImageObject', url: `${base}/ogp.png` },
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${base}/en/` },
+        { '@type': 'ListItem', position: 2, name: meta.label.en, item: `${base}/en/${key}/` },
+        { '@type': 'ListItem', position: 3, name: d.title, item: pageUrl },
+      ],
+    },
+  ],
+};
+
+const seoTitle = `${d.title} | ${meta.label.en} in Tokyo`;
+---
+<BaseLayout
+  title={seoTitle}
+  description={metaDescription}
+  lang={lang}
+  ogType="article"
+  altPath={`/${key}/${post.slug}/`}
+  jsonLd={jsonLd}
+  appendSiteName={false}
+  ogImage={f.heroImage}
+>
+  <CategoryArticle
+    lang={lang}
+    title={d.title}
+    summary={d.summary}
+    area={d.area}
+    categoryLabel={meta.label.en}
+    verified={f.verified}
+    heroImage={f.heroImage}
+    heroImageCredit={f.heroImageCredit}
+    heroImageLink={f.heroImageLink}
+    tags={d.tags}
+    tagBase="/en/tags/"
+    sources={f.sources}
+    listPath={`/en/${key}/`}
+    related={related}
+    booksKeyword={meta.booksKeyword}
+    mapLabel={f.title}
+  >
+    <Content />
+  </CategoryArticle>
+</BaseLayout>

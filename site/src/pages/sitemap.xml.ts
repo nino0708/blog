@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
+import { CATEGORIES } from '../lib/category';
 
 // 自前のsitemap生成。日本語(タグ)URLも encodeURI で安全に出力する。
 // 日本語/英語の対訳ページは xhtml:link(hreflang) で相互に結ぶ。
@@ -30,10 +31,28 @@ export const GET: APIRoute = async ({ site }) => {
     { loc: `${base}/database/`, alternates: pair('/database/', '/en/database/') },
     { loc: `${base}/en/database/`, alternates: pair('/database/', '/en/database/') },
     { loc: `${base}/rankings/` },
-    { loc: `${base}/expressways/` },
-    { loc: `${base}/railways/` },
+    { loc: `${base}/expressways/`, alternates: pair('/expressways/', '/en/expressways/') },
+    { loc: `${base}/en/expressways/`, alternates: pair('/expressways/', '/en/expressways/') },
+    { loc: `${base}/railways/`, alternates: pair('/railways/', '/en/railways/') },
+    { loc: `${base}/en/railways/`, alternates: pair('/railways/', '/en/railways/') },
     { loc: `${base}/tourism/` },
   ];
+
+  // 拡張カテゴリ(高速道路・鉄道・観光)の記事。英語版があれば hreflang で相互に結ぶ。
+  for (const key of ['expressways', 'railways', 'tourism'] as const) {
+    const catPosts = await getCollection(key);
+    const catEnSlugs = CATEGORIES[key].hasEn
+      ? new Set((await getCollection(`${key}-en` as 'railways-en')).map((p) => p.slug))
+      : new Set<string>();
+    for (const p of catPosts) {
+      const jaPath = `/${key}/${encodeURI(p.slug)}/`;
+      const enPath = `/en/${key}/${encodeURI(p.slug)}/`;
+      const lastmod = p.data.publishedAt.toISOString().slice(0, 10);
+      const alternates = catEnSlugs.has(p.slug) ? pair(jaPath, enPath) : undefined;
+      urls.push({ loc: `${base}${jaPath}`, lastmod, alternates });
+      if (catEnSlugs.has(p.slug)) urls.push({ loc: `${base}${enPath}`, lastmod, alternates });
+    }
+  }
 
   for (const p of posts) {
     const jaPath = `/buildings/${encodeURI(p.slug)}/`;
