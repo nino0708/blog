@@ -178,6 +178,21 @@ def load_targets():
 
 
 def main():
+    # image_health.py が GitHub Actions 経由で実行した場合のフラグ
+    # ワークフロー内で repair まで完了しているので、ここでは結果を読み出すだけでよい
+    workflow_flag = os.path.join(REPORT_DIR, ".workflow-ran")
+    if os.path.exists(workflow_flag):
+        os.remove(workflow_flag)
+        state = json.load(open(STATE_JSON, encoding="utf-8")) if os.path.exists(STATE_JSON) else {}
+        gave_up = [(s, v.get("reason", "")) for s, v in state.items() if v.get("gaveUp")]
+        fixed_count = sum(1 for v in state.values() if not v.get("gaveUp"))
+        print(f"\nrepair: ワークフロー実行済み — 修復 {fixed_count} 件 / 諦め {len(gave_up)} 件")
+        if gave_up:
+            print("\n=== 人の判断が必要（3回試して直らなかった） ===")
+            for slug, why in gave_up:
+                print(f"- {slug}: {why}")
+        return 2 if gave_up else 0
+
     targets = load_targets()
     state = json.load(open(STATE_JSON, encoding="utf-8")) if os.path.exists(STATE_JSON) else {}
 
