@@ -1,0 +1,75 @@
+name: 画像監視・修復
+
+on:
+  workflow_dispatch:
+    inputs:
+      triggered_by:
+        description: "トリガー元 (例: builtjapan-bot)"
+        required: false
+        default: "manual"
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: ヘルスチェック (analytics/image_health.py)
+        # 終了コード1=異常あり は正常終了扱い。スクリプトが reports/ に結果を書く。
+        run: python3 analytics/image_health.py || true
+
+      - name: 修復 (generator/repair_images.py)
+        id: repair
+        # 終了コード2=諦めあり。後のステップで gave_up フラグとして使う。
+        run: |
+          python3 generator/repair_images.py
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+        continue-on-error: true
+
+      - name: 諦めリストをファイルに保存
+        if: steps.repair.outputs.exit_code == '2'
+        run: |
+          python3 - <<'EOF'
+          import json, os
+          STATE = "reports/image-repair-state.json"
+          if not os.path.exists(STATE):
+              print("[]")
+          else:
+              state = json.load(open(STATE, encoding="utf-8"))
+              gave_up = [{"slug": s, "reason": v.get("reason", "")}
+                         for s, v in state.items() if v.get("gaveUp")]
+              with open("reports/image-repair-gave-up.json", "w", encoding="utf-8") as f:
+                  json.dump(gave_up, f, ensure_ascii=False, indent=2)
+              print(f"諦めリスト: {len(gave_up)} 件 → reports/image-repair-gave-up.json")
+          EOF
+
+      - name: 変更をコミット & プッシュ
+        run: |
+          git config user.email "bot@builtjapan.com"
+          git config user.name "builtjapan-bot"
+          git add \
+            reports/image-health-latest.md \
+            reports/image-health-latest.json \
+            reports/image-repair-state.json \
+            reports/image-repair-gave-up.json \
+            "site/src/content/buildings/" \
+            2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "変更なし。コミットをスキップ。"
+          else
+            COUNT=$(git diff --cached --name-only -- 'site/src/content/buildings/*.md' \
+                    2>/dev/null | wc -l | tr -d ' ')
+            git commit -m "画像監視部: ヒーロー画像を修復(${COUNT}件)"
+            git push origin HEAD:main
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
