@@ -2,6 +2,9 @@
 title: "新宿駅"
 area: "新宿区"
 summary: "1885年（明治18年）開業。JR東日本・小田急・京王・東京メトロ・都営地下鉄の5社が乗り入れ、36のホームと69の直接出口を持つ世界最多乗降客数のターミナル駅。西口の超高層タワーを核とした「新宿グランドターミナル」再編計画が現在進行中だ。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Shinjuku_Station_2023-07-22.jpg/1280px-Shinjuku_Station_2023-07-22.jpg"
+heroImageCredit: "Dick Thomas Johnson / CC BY 2.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinjuku_Station_2023-07-22.jpg"
 tags: ["新宿区", "新宿", "鉄道", "ターミナル駅", "再開発", "JR東日本", "小田急"]
 publishedAt: 2026-07-17
 verified: true

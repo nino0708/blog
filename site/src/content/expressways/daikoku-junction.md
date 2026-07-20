@@ -2,6 +2,9 @@
 title: "大黒ジャンクション"
 area: "横浜市鶴見区"
 summary: "神奈川県横浜市鶴見区大黒ふ頭に立つ首都高速湾岸線と神奈川5号大黒線の接続点。微分幾何学を駆使して設計された複雑な曲線が特徴で、大黒パーキングエリアを併設する。1994年12月開通。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Aerial_view_of_Daikoku_Junction.jpg/1280px-Aerial_view_of_Daikoku_Junction.jpg"
+heroImageCredit: "Hovering Cat / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Daikoku_Junction.jpg"
 tags: ["首都高", "高速道路", "大黒ジャンクション", "横浜市", "鶴見区", "湾岸線", "神奈川5号大黒線"]
 publishedAt: 2026-07-15
 verified: true

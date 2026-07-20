@@ -2,6 +2,9 @@
 title: "上野駅"
 area: "台東区"
 summary: "1883年（明治16年）開業、東北・上越・北陸新幹線と多数の在来線が集まる「北の玄関口」。地平・高架・地下の3層22番線を持つ複合構造と、行き止まり式の地平ホームが醸す独特の空気は、今も東京の鉄道風景の中で際立つ。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ueno_Station_20150410_132749.jpg/1280px-Ueno_Station_20150410_132749.jpg"
+heroImageCredit: "Ka23 13 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Ueno_Station_20150410_132749.jpg"
 tags: ["台東区", "上野", "鉄道", "ターミナル駅", "歴史建築", "JR東日本", "新幹線"]
 publishedAt: 2026-07-18
 verified: true

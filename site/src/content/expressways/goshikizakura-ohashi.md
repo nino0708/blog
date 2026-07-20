@@ -2,6 +2,9 @@
 title: "五色桜大橋"
 area: "足立区"
 summary: "荒川上に架かる首都高速中央環状線（C2）の橋。橋長146.2mのダブルデッキ式ニールセンローゼ橋として2002年12月に開通し、この構造形式では世界初の事例を記録した。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Goshikizakura_%C5%8Chashi_Bridge_on_Arakawa_River_20160827_%2829752817732%29.jpg/1280px-Goshikizakura_%C5%8Chashi_Bridge_on_Arakawa_River_20160827_%2829752817732%29.jpg"
+heroImageCredit: "Ray Swi-hymn from Sijhih-Taipei, Taiwan / CC BY-SA 2.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Goshikizakura_%C5%8Chashi_Bridge_on_Arakawa_River_20160827_(29752817732).jpg"
 tags: ["首都高", "中央環状線", "足立区", "橋梁", "荒川", "都市インフラ", "C2"]
 publishedAt: 2026-07-16
 verified: true

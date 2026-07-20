@@ -12,6 +12,9 @@ architect: "大林組"
 tags: ["中央区", "タワーマンション", "再開発", "勝どき", "湾岸"]
 publishedAt: 2026-07-06
 summary: "勝どき駅前地区第一種市街地再開発事業として都市再生機構が施行した地上55階・高さ192.2mの超高層複合タワー。住宅712戸に保育園・児童館を加えた複合棟で、2010年に竣工した勝どきのランドマーク。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Kachidoki_View_Tower_2012_Tokyo.jpg/1280px-Kachidoki_View_Tower_2012_Tokyo.jpg"
+heroImageCredit: "Harani0403 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Kachidoki_View_Tower_2012_Tokyo.jpg"
 verified: true
 sources:
   - "大林組実績（https://www.obayashi.co.jp/works/detail/work_1448.html）—設計・施工を大林組が担当"

@@ -2,6 +2,9 @@
 title: "江戸橋ジャンクション"
 area: "中央区"
 summary: "1963年12月21日に首都高速初のジャンクションとして誕生した、中央区日本橋の日本橋川上空の交差点。都心環状線（C1）と複数の放射系路線が分合流する渋滞の名所として知られる。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Shutoko_expressway_Edobashi_junction_001.jpg/1280px-Shutoko_expressway_Edobashi_junction_001.jpg"
+heroImageCredit: "Ebiebi2 / Public domain"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shutoko_expressway_Edobashi_junction_001.jpg"
 tags: ["首都高", "高速道路", "江戸橋ジャンクション", "中央区", "都心環状線", "都市インフラ"]
 publishedAt: 2026-07-14
 verified: true

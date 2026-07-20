@@ -12,6 +12,9 @@ architect: "三井住友建設"
 tags: ["中央区", "タワーマンション", "晴海", "勝どき", "再開発"]
 publishedAt: 2026-07-11
 summary: "イースト棟・ウエスト棟の2棟一体で2015年9月に完成した、晴海の地上52階建てツインタワーマンション。住友不動産が開発し、大型スパや眺望ラウンジなど充実した共用施設を備える。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/DEUX_TOURS_CANAL%26SPA_WEST.jpg/1280px-DEUX_TOURS_CANAL%26SPA_WEST.jpg"
+heroImageCredit: "Yama0904 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:DEUX_TOURS_CANAL%26SPA_WEST.jpg"
 verified: true
 sources:
   - "住友不動産 DEUX TOURS プレスリリース 2013年11月 (sumitomo-rd.co.jp/uploads/deux_tours.pdf)"

@@ -2,6 +2,9 @@
 title: "渋谷駅（大改造）"
 area: "渋谷区"
 summary: "1885年（明治18年）開業。JR東日本・東京メトロ・東急・京王の4社9路線が乗り入れるすり鉢状の谷底のターミナル駅。地形と地下河川が生む難工事として「100年に一度」の大改造が続き、2034年度の全体完成を目指す。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Shibuya_station_redevelopment_2024.jpg/1280px-Shibuya_station_redevelopment_2024.jpg"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shibuya_station_redevelopment_2024.jpg"
 tags: ["渋谷区", "渋谷", "鉄道", "再開発", "JR東日本", "東急", "東京メトロ", "京王"]
 publishedAt: 2026-07-17
 verified: true

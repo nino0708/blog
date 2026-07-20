@@ -9,6 +9,9 @@ developer: "住友不動産"
 tags: ["港区", "タワーマンション", "港南", "品川", "定期借地権"]
 publishedAt: 2026-07-08
 summary: "品川駅南東、港南エリアに2008年竣工した地上43階建ての大規模タワーマンション。住友不動産が手がけた定期借地権付き物件で、港南の街の変化を象徴する存在。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/City_tower_shinagawa_konan_minato_tokyo_2009.JPG/1280px-City_tower_shinagawa_konan_minato_tokyo_2009.JPG"
+heroImageCredit: "User:Kentin / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:City_tower_shinagawa_konan_minato_tokyo_2009.JPG"
 verified: true
 sources:
   - "住友不動産ステップ シティタワー品川（竣工2008年・地上43階・港南4-2-7）https://www.stepon.co.jp/premier/cttw-shinagawa/"

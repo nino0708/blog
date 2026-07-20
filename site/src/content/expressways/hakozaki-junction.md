@@ -2,6 +2,9 @@
 title: "箱崎ジャンクション"
 area: "中央区"
 summary: "東京都中央区日本橋箱崎町に位置する首都高速の要衝。都心環状線（C1）・6号向島線・9号深川線が絡み合う4層立体構造と、高速道路内のロータリーという異例の設計が「キング・オブ・ジャンクション」の異名を生んだ。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Hakozaki_Junction_-_04.jpg/1280px-Hakozaki_Junction_-_04.jpg"
+heroImageCredit: "Kabacchi / CC BY 2.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Hakozaki_Junction_-_04.jpg"
 tags: ["首都高", "高速道路", "箱崎ジャンクション", "中央区", "都心環状線", "都市インフラ"]
 publishedAt: 2026-07-13
 verified: true

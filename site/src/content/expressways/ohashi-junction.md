@@ -2,6 +2,9 @@
 title: "大橋ジャンクション"
 area: "目黒区"
 summary: "目黒区大橋に立つ首都高速3号渋谷線と中央環状線（C2）の乗り継ぎ点。地上約35mの高架と地下約36mの山手トンネルを結ぶ4層ループ構造を覆蓋で包み、その屋上に「目黒天空庭園」（約7,000m²）を生んだ都市土木の傑作。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ohashi_Junction_20130506_004.jpg/1280px-Ohashi_Junction_20130506_004.jpg"
+heroImageCredit: "掬茶 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Ohashi_Junction_20130506_004.jpg"
 tags: ["首都高", "高速道路", "大橋ジャンクション", "目黒区", "目黒天空庭園", "中央環状線", "都市インフラ"]
 publishedAt: 2026-07-13
 verified: true

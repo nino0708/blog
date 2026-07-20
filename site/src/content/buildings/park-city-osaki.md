@@ -12,6 +12,9 @@ architect: "日本設計"
 tags: ["品川区", "タワーマンション", "大崎", "再開発", "市街地再開発"]
 publishedAt: 2026-07-10
 summary: "北品川五丁目第1地区の市街地再開発事業として2015年5月に竣工した地上40階・高さ約141mの超高層マンション。オフィス棟・商業施設と一体で整備された大崎駅前の複合街区の住宅棟だ。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Park_City_Osaki%28Osaki_Bright_Core%29.jpg/1280px-Park_City_Osaki%28Osaki_Bright_Core%29.jpg"
+heroImageCredit: "Wakuwaku99 / Public domain"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Park_City_Osaki(Osaki_Bright_Core).jpg"
 verified: true
 sources:
   - "パークシティ大崎 ザ タワー - Wikipedia https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%86%E3%82%A3%E5%A4%A7%E5%B4%8E_%E3%82%B6_%E3%82%BF%E3%83%AF%E3%83%BC"
