@@ -10,8 +10,9 @@
     "gaveUp": true
   },
   "shinonome-canal-court-codan": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "sunshine-city-world-import-mart": {
     "attempts": 3,
@@ -24,11 +25,12 @@
     "gaveUp": true
   },
   "the-parkhouse-nishishinjuku-tower60": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "brillia-tower-ikebukuro": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   }
 }
