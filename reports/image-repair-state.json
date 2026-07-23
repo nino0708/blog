@@ -30,7 +30,8 @@
     "gaveUp": true
   },
   "brillia-tower-ikebukuro": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   }
 }
