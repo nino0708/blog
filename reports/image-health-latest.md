@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-07-21 07:55 JST
-- 対象: 公開済み記事 164 ページ（https://builtjapan.com）
-- 正常表示: 150 / 164（91.5%）
-- **要対応: 14 件**（画像なし 12 / 壊れ 2 / ページ異常 0）
+- 実行: 2026-07-25 08:11 JST
+- 対象: 公開済み記事 168 ページ（https://builtjapan.com）
+- 正常表示: 156 / 168（92.9%）
+- **要対応: 12 件**（画像なし 12 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -21,13 +21,6 @@
 | [sunshine-city-world-import-mart（EN）](https://builtjapan.com/en/buildings/sunshine-city-world-import-mart/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-harumi-towers（EN）](https://builtjapan.com/en/buildings/the-parkhouse-harumi-towers/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-nishishinjuku-tower60（EN）](https://builtjapan.com/en/buildings/the-parkhouse-nishishinjuku-tower60/) | ヒーロー画像なし（プレースホルダ表示） |
-
-## 画像が壊れている（srcはあるが取得できない）
-
-| 記事 | 詳細 |
-|---|---|
-| [brillia-tower-ikebukuro（JA）](https://builtjapan.com/buildings/brillia-tower-ikebukuro/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Toshima_Ecomusee_Town_01.jpg/1000px-Toshima_Ecomusee_Town_01.jpg` |
-| [brillia-tower-ikebukuro（EN）](https://builtjapan.com/en/buildings/brillia-tower-ikebukuro/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Toshima_Ecomusee_Town_01.jpg/1000px-Toshima_Ecomusee_Town_01.jpg` |
 
 ## 直し方
 

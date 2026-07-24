@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-19T15:17:16.606986+09:00",
+  "checkedAt": "2026-07-25T08:11:33.374549+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/ark-hills-sengokuyama-mori-tower/",
@@ -20,14 +20,14 @@
       "slug": "ark-mori-building",
       "lang": "ja",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ark-Mori-Building-01.jpg"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ARK_Mori_Building_2018.jpg/1280px-ARK_Mori_Building_2018.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/ark-mori-building/",
       "slug": "ark-mori-building",
       "lang": "en",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ark-Mori-Building-01.jpg"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ARK_Mori_Building_2018.jpg/1280px-ARK_Mori_Building_2018.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/asakusa-culture-tourist-center/",
@@ -103,17 +103,15 @@
       "url": "https://builtjapan.com/buildings/brillia-tower-ikebukuro/",
       "slug": "brillia-tower-ikebukuro",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Toshima_Ecomusee_Town_01.jpg/1000px-Toshima_Ecomusee_Town_01.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Toshima_Ecomusee_Town_01.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/brillia-tower-ikebukuro/",
       "slug": "brillia-tower-ikebukuro",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Toshima_Ecomusee_Town_01.jpg/1000px-Toshima_Ecomusee_Town_01.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Toshima_Ecomusee_Town_01.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/city-tower-shinagawa/",
@@ -998,6 +996,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Tokyo_Shiodome_Building_20070317-03.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/tokyo-skytree/",
+      "slug": "tokyo-skytree",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-skytree/",
+      "slug": "tokyo-skytree",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/tokyo-square-garden/",
       "slug": "tokyo-square-garden",
       "lang": "ja",
@@ -1024,6 +1036,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Torch_Tower_202604.jpg/1280px-Torch_Tower_202604.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tokyo-tower/",
+      "slug": "tokyo-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Japan-Tokyo-tower-1024.jpg/1280px-Japan-Tokyo-tower-1024.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-tower/",
+      "slug": "tokyo-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Japan-Tokyo-tower-1024.jpg/1280px-Japan-Tokyo-tower-1024.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/tomihisa-cross/",
@@ -1142,14 +1168,14 @@
       "slug": "yoyogi-national-gymnasium",
       "lang": "ja",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Yoyogi-National-First-Gymnasium-05.jpg/1280px-Yoyogi-National-First-Gymnasium-05.jpg"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Yoyogi-National-First-Gymnasium-03.jpg/1280px-Yoyogi-National-First-Gymnasium-03.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/yoyogi-national-gymnasium/",
       "slug": "yoyogi-national-gymnasium",
       "lang": "en",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Yoyogi-National-First-Gymnasium-05.jpg/1280px-Yoyogi-National-First-Gymnasium-05.jpg"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Yoyogi-National-First-Gymnasium-03.jpg/1280px-Yoyogi-National-First-Gymnasium-03.jpg"
     }
   ]
 }
