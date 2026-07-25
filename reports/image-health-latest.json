@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-25T08:11:33.374549+09:00",
+  "checkedAt": "2026-07-26T08:11:39.295514+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/ark-hills-sengokuyama-mori-tower/",
@@ -254,6 +254,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/JP_Tower_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg/1280px-JP_Tower_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/kachidoki-bridge/",
+      "slug": "kachidoki-bridge",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kachidoki_bridge.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kachidoki-bridge/",
+      "slug": "kachidoki-bridge",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kachidoki_bridge.JPG"
+    },
+    {
       "url": "https://builtjapan.com/buildings/kachidoki-view-tower/",
       "slug": "kachidoki-view-tower",
       "lang": "ja",
@@ -392,6 +406,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/NEC_Supertower_2023.jpg/1280px-NEC_Supertower_2023.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nihonbashi-bridge/",
+      "slug": "nihonbashi-bridge",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nihonbashi_Bridge_%283767056045%29.jpg/1280px-Nihonbashi_Bridge_%283767056045%29.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nihonbashi-bridge/",
+      "slug": "nihonbashi-bridge",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nihonbashi_Bridge_%283767056045%29.jpg/1280px-Nihonbashi_Bridge_%283767056045%29.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/nihonbashi-mitsui-tower/",
