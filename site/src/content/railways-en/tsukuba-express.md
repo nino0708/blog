@@ -3,6 +3,9 @@ title: "Tsukuba Express"
 area: "Akihabara – Tsukuba"
 summary: "Metropolitan Intercity Railway's line between Akihabara and Tsukuba, opened 24 August 2005. The 58.3-kilometre, 20-station route runs at up to 130 km/h, covering the distance in as little as 45 minutes. Built alongside a 3,300-hectare land-readjustment programme along its corridor, the line is one of Japan's closest examples of railway-led urban development."
 tags: ["Tsukuba Express", "TX", "Railway", "Akihabara", "Tsukuba", "Metropolitan Intercity Railway"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9_Tsukuba_Express_TX-2000_%E6%B5%81%E5%B1%B1%E3%81%8A%E3%81%8A%E3%81%9F%E3%81%8B%E3%81%AE%E6%A3%AE%E9%A7%85_%2820240526a%29.jpg/1280px-%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9_Tsukuba_Express_TX-2000_%E6%B5%81%E5%B1%B1%E3%81%8A%E3%81%8A%E3%81%9F%E3%81%8B%E3%81%AE%E6%A3%AE%E9%A7%85_%2820240526a%29.jpg"
+heroImageCredit: "Takeshi Aida / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9_Tsukuba_Express_TX-2000_%E6%B5%81%E5%B1%B1%E3%81%8A%E3%81%8A%E3%81%9F%E3%81%8B%E3%81%AE%E6%A3%AE%E9%A7%85_%2820240526a%29.jpg"
 ---
 
 ## A Line Built Alongside Its Own City
