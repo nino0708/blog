@@ -1,6 +1,6 @@
 ---
 title: "日本橋"
-buildingType: office
+buildingType: bridge
 area: "中央区"
 address: "東京都中央区日本橋1丁目〜日本橋室町1丁目（日本橋川）"
 lat: 35.683100

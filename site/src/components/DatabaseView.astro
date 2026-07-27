@@ -10,7 +10,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const t = useT(lang);
 
-type BType = 'office' | 'residence' | 'tower';
+type BType = 'office' | 'residence' | 'tower' | 'bridge';
 interface Row {
   slug: string;
   title: string;
@@ -128,6 +128,7 @@ const buildingsBase = localizePath(lang, '/buildings/');
       <button class="db-chip" data-type="office">{typeLabel('office', true)}</button>
       <button class="db-chip" data-type="residence">{typeLabel('residence', true)}</button>
       <button class="db-chip" data-type="tower">{typeLabel('tower', true)}</button>
+    <button class="db-chip" data-type="bridge">{typeLabel('bridge', true)}</button>
     </div>
     <label class="db-sort">
       <span>{t('db.sort.label')}</span>

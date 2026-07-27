@@ -354,6 +354,7 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
 }
 .badge.office { background: var(--brand-soft); color: var(--brand); }
 .badge.residence { background: #fbf0e1; color: var(--accent); }
+.badge.bridge { background: #e7eef3; color: #35566b; }
 .badge.unverified { background: #fdeaea; color: #c0392b; }
 /* 拡張カテゴリ(高速道路・鉄道・観光)。ビル種別バッジと同系だが色で区別する。 */
 .badge.category { background: #eaf4ee; color: #2c6e49; }

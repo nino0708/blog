@@ -83,7 +83,7 @@ const specs = buildSpecs(lang, {
 });
 
 // 検索意図に寄せたSEOタイトル。H1は e.title のまま。
-const typeLabelEn = f.buildingType === 'residence' ? 'residential tower' : 'office tower';
+const typeLabelEn = f.buildingType === 'residence' ? 'residential tower' : f.buildingType === 'bridge' ? 'bridge' : 'office tower';
 const factBitsEn = [
   f.completedYear ? `Completed ${f.completedYear}` : null,
   f.heightM ? `${f.heightM}m` : null,

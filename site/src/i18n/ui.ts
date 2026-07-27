@@ -21,9 +21,11 @@ const ja: Dict = {
   'nav.about': 'このブログについて',
   'type.office': 'オフィスビル',
   'type.residence': 'マンション',
+  'type.bridge': '橋',
   'type.tower': 'タワー・構造物',
   'type.office.short': 'オフィス',
   'type.residence.short': 'マンション',
+  'type.bridge.short': '橋',
   'type.tower.short': 'タワー',
   'db.title': '建物図鑑',
   'db.lead': '東京を中心とした高層建築を一棟ずつ集めた「引ける」データベース。名前・エリアで検索し、種別や高さで並べ替えできます。記事のある建物はクリックで詳細へ。',
@@ -104,9 +106,11 @@ const en: Dict = {
   'nav.about': 'About',
   'type.office': 'Office tower',
   'type.residence': 'Residential tower',
+  'type.bridge': 'Bridge',
   'type.tower': 'Tower / structure',
   'type.office.short': 'Office',
   'type.residence.short': 'Residence',
+  'type.bridge.short': 'Bridge',
   'type.tower.short': 'Tower',
   'db.title': 'Building Database',
   'db.lead': 'A searchable encyclopedia of Tokyo’s high-rise architecture, building by building. Search by name or area, sort by type or height. Buildings with an article link to its detail page.',
@@ -195,14 +199,14 @@ export function stripLangPrefix(path: string): string {
   return path.startsWith('/en/') ? path.slice(3) : path;
 }
 
-export function buildingTypeLabel(lang: Lang, type: 'office' | 'residence', short = false): string {
+export function buildingTypeLabel(lang: Lang, type: 'office' | 'residence' | 'bridge', short = false): string {
   const t = useT(lang);
   return t(`type.${type}${short ? '.short' : ''}`);
 }
 
 /** 建物の数値事実(言語非依存)を、言語ごとのラベル付き [ラベル, 値] 配列に整形する。 */
 export interface BuildingFacts {
-  buildingType: 'office' | 'residence';
+  buildingType: 'office' | 'residence' | 'bridge';
   area: string;
   completedYear?: number;
   floorsAbove?: number;

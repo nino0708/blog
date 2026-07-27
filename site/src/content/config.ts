@@ -8,7 +8,7 @@ const buildings = defineCollection({
   schema: z.object({
     title: z.string(),
     // office: オフィスビル / residence: マンション
-    buildingType: z.enum(['office', 'residence']),
+    buildingType: z.enum(['office', 'residence', 'bridge']),
     area: z.string(), // 例: 港区
     address: z.string().optional(),
     // 任意の緯度経度。あれば記事末の地図をピン精度で表示し、無ければ建物名でジオコーディングする。

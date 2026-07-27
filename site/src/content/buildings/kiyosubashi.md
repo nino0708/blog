@@ -1,6 +1,6 @@
 ---
 title: "清洲橋"
-buildingType: office
+buildingType: bridge
 area: "中央区"
 address: "東京都中央区日本橋中洲〜江東区清澄（隅田川）"
 lat: 35.682900

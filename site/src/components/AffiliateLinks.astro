@@ -12,7 +12,7 @@ interface Props {
   title: string;
   area: string;
   /** ビル記事のみ。拡張カテゴリ(鉄道・高速道路等)の記事では渡さない。 */
-  buildingType?: 'office' | 'residence';
+  buildingType?: 'office' | 'residence' | 'bridge';
   /** 楽天ブックス検索の語を明示指定する(buildingType が無いカテゴリ用)。 */
   booksKeyword?: string;
   /** 検索に使うキーワード(日本語)。楽天/Amazonは日本語サービスのため、表示は英語でも検索語はJPを使う。 */

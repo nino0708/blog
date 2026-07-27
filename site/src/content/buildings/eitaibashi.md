@@ -1,6 +1,6 @@
 ---
 title: "永代橋"
-buildingType: office
+buildingType: bridge
 area: "中央区"
 address: "東京都中央区新川〜江東区佐賀（隅田川・永代通り）"
 lat: 35.678600
