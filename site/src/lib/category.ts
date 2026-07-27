@@ -1,5 +1,6 @@
 // 拡張カテゴリ(高速道路・鉄道・観光)の表示設定。
 // ページ側(一覧・記事詳細・sitemap)がここを唯一の出典として参照する。
+import { getCollection } from 'astro:content';
 import type { Lang } from '../i18n/ui';
 
 export type CategoryKey = 'expressways' | 'railways' | 'tourism';
@@ -52,4 +53,48 @@ export const CATEGORIES: Record<CategoryKey, CategoryMeta> = {
 export function categoryPath(lang: Lang, key: CategoryKey, slug = ''): string {
   const prefix = lang === 'en' ? '/en' : '';
   return `${prefix}/${key}/${slug}${slug ? '/' : ''}`;
+}
+
+// カテゴリに「タグ」で合流させる建物記事のタグ名。
+// 東京タワーや橋のような観光名所は buildings コレクションに置いたまま(高さランキング・地図・英語版・階数を保つ)、
+// このタグを付けると観光の一覧にも顔を出す。リンク先は /buildings/<slug>/ のまま。
+const BUILDING_TAG_BY_CATEGORY: Partial<Record<CategoryKey, string>> = {
+  tourism: '観光',
+};
+
+/** カテゴリ一覧に出す1件分。href は詳細ページへの実リンク（合流した建物は /buildings/ を指す）。 */
+export interface CategoryPost {
+  slug: string;
+  data: { title: string; summary?: string; area?: string; publishedAt: Date };
+  heroImage?: string;
+  href: string;
+}
+
+/**
+ * カテゴリ一覧に並べる記事を返す（新着順）。
+ * カテゴリ本体のコレクションに加え、BUILDING_TAG_BY_CATEGORY で指定したタグを持つ建物記事も合流させる。
+ */
+export async function getCategoryPosts(key: CategoryKey): Promise<CategoryPost[]> {
+  const own: CategoryPost[] = (await getCollection(key)).map((p) => ({
+    slug: p.slug,
+    data: p.data,
+    heroImage: p.data.heroImage,
+    href: `/${key}/${p.slug}/`,
+  }));
+
+  const tag = BUILDING_TAG_BY_CATEGORY[key];
+  const tagged: CategoryPost[] = tag
+    ? (await getCollection('buildings'))
+        .filter((b) => (b.data.tags ?? []).includes(tag))
+        .map((b) => ({
+          slug: b.slug,
+          data: b.data,
+          heroImage: b.data.heroImage,
+          href: `/buildings/${b.slug}/`,
+        }))
+    : [];
+
+  return [...own, ...tagged].sort(
+    (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
+  );
 }

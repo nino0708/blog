@@ -7,6 +7,8 @@ interface Item {
   data: { title: string; summary?: string; area?: string };
   /** サムネイル。英語版コレクションは画像を持たないため、呼び出し側が日本語版から補って渡す。 */
   heroImage?: string;
+  /** 詳細ページへの実リンク。省略時は basePath+slug。タグで合流した建物は /buildings/<slug>/ を渡す。 */
+  href?: string;
 }
 interface Props {
   title: string;
@@ -41,7 +43,7 @@ const comingSoon = lang === 'ja'
   ) : (
     <div class="cat-list">
       {posts.map((p) => (
-        <a class="cat-card" href={`${basePath}${p.slug}/`}>
+        <a class="cat-card" href={p.href ?? `${basePath}${p.slug}/`}>
           {(p.heroImage ?? (p.data as { heroImage?: string }).heroImage) && (
             <div class="cat-card-thumb">
               <img

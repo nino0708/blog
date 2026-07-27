@@ -1,14 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryView from '../components/CategoryView.astro';
-import { getCollection } from 'astro:content';
-import { CATEGORIES, PER_PAGE } from '../lib/category';
+import { CATEGORIES, PER_PAGE, getCategoryPosts } from '../lib/category';
 
 const meta = CATEGORIES.tourism;
-// 新着順。2ページ目以降は /tourism/page/N/ が担う(トップの新着一覧と同じ1ページ10件)。
-const all = (await getCollection('tourism')).sort(
-  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
-);
+// 新着順。観光コレクションに加え「観光」タグ付きの建物(東京タワー・橋など)も合流する。
+// 2ページ目以降は /tourism/page/N/ が担う(トップの新着一覧と同じ1ページ10件)。
+const all = await getCategoryPosts('tourism');
 const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
 const posts = all.slice(0, PER_PAGE);
 ---

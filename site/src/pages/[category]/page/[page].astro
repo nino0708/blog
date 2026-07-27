@@ -1,16 +1,13 @@
 ---
 // 拡張カテゴリ一覧の2ページ目以降(日本語)。1ページ目は /<category>/ が担う。
-import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import CategoryView from '../../../components/CategoryView.astro';
-import { CATEGORIES, PER_PAGE, type CategoryKey } from '../../../lib/category';
+import { CATEGORIES, PER_PAGE, getCategoryPosts, type CategoryKey } from '../../../lib/category';
 
 export async function getStaticPaths() {
   const paths = [];
   for (const key of Object.keys(CATEGORIES) as CategoryKey[]) {
-    const all = (await getCollection(key)).sort(
-      (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
-    );
+    const all = await getCategoryPosts(key);
     const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
     for (let p = 2; p <= totalPages; p++) {
       paths.push({
