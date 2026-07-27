@@ -16,12 +16,26 @@
       "heightM": 247,
       "developer": "森ビル",
       "developer_en": "Mori Building",
-      "tags": ["港区", "超高層ビル", "再開発", "森ビル", "虎ノ門"],
-      "tags_en": ["Minato City", "Skyscraper", "Redevelopment", "Mori Building", "Toranomon"],
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "再開発",
+        "森ビル",
+        "虎ノ門"
+      ],
+      "tags_en": [
+        "Minato City",
+        "Skyscraper",
+        "Redevelopment",
+        "Mori Building",
+        "Toranomon"
+      ],
       "summary": "環状第2号線の上に立つ、虎ノ門エリア再生の起点となった超高層オフィスビル。",
       "summary_en": "A supertall office building standing above Loop Route 2 — the starting point of the regeneration of the Toranomon area.",
       "verified": true,
-      "sources": ["森ビル 公開情報（高さは資料により247m/255mと差異あり・要最終確認）"]
+      "sources": [
+        "森ビル 公開情報（高さは資料により247m/255mと差異あり・要最終確認）"
+      ]
     },
     {
       "slug": "toranomon-hills-station-tower",
@@ -36,12 +50,28 @@
       "heightM": 266,
       "developer": "森ビル",
       "developer_en": "Mori Building",
-      "tags": ["港区", "超高層ビル", "再開発", "森ビル", "虎ノ門", "駅直結"],
-      "tags_en": ["Minato City", "Skyscraper", "Redevelopment", "Mori Building", "Toranomon", "Station-connected"],
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "再開発",
+        "森ビル",
+        "虎ノ門",
+        "駅直結"
+      ],
+      "tags_en": [
+        "Minato City",
+        "Skyscraper",
+        "Redevelopment",
+        "Mori Building",
+        "Toranomon",
+        "Station-connected"
+      ],
       "summary": "日比谷線虎ノ門ヒルズ駅と一体開発された、虎ノ門ヒルズの最新タワー。",
       "summary_en": "The newest tower of Toranomon Hills, developed integrally with Toranomon Hills Station on the Hibiya Line.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "tokyo-midtown-tower",
@@ -56,12 +86,24 @@
       "heightM": 248,
       "developer": "三井不動産",
       "developer_en": "Mitsui Fudosan",
-      "tags": ["港区", "超高層ビル", "複合開発", "赤坂"],
-      "tags_en": ["Minato City", "Skyscraper", "Mixed-use", "Akasaka"],
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "複合開発",
+        "赤坂"
+      ],
+      "tags_en": [
+        "Minato City",
+        "Skyscraper",
+        "Mixed-use",
+        "Akasaka"
+      ],
       "summary": "防衛庁跡地に誕生した、緑とアートを核とする大規模複合開発のシンボルタワー。",
       "summary_en": "The symbolic tower of a large mixed-use development on the former Defense Agency site, built around greenery and art.",
       "verified": true,
-      "sources": ["三井不動産 公開情報（要最終確認）"]
+      "sources": [
+        "三井不動産 公開情報（要最終確認）"
+      ]
     },
     {
       "slug": "roppongi-hills-mori-tower",
@@ -76,12 +118,26 @@
       "heightM": 238,
       "developer": "森ビル",
       "developer_en": "Mori Building",
-      "tags": ["港区", "超高層ビル", "再開発", "森ビル", "六本木"],
-      "tags_en": ["Minato City", "Skyscraper", "Redevelopment", "Mori Building", "Roppongi"],
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "再開発",
+        "森ビル",
+        "六本木"
+      ],
+      "tags_en": [
+        "Minato City",
+        "Skyscraper",
+        "Redevelopment",
+        "Mori Building",
+        "Roppongi"
+      ],
       "summary": "『文化都心』を掲げた六本木ヒルズの中核。東京の大規模再開発の先駆け。",
       "summary_en": "The core of Roppongi Hills, which championed an 'arts and cultural city.' A pioneer of large-scale redevelopment in Tokyo.",
       "verified": true,
-      "sources": ["森ビル 公開情報（要最終確認）"]
+      "sources": [
+        "森ビル 公開情報（要最終確認）"
+      ]
     },
     {
       "slug": "atago-green-hills-mori-tower",
@@ -96,12 +152,26 @@
       "heightM": 187,
       "developer": "森ビル",
       "developer_en": "Mori Building",
-      "tags": ["港区", "超高層ビル", "再開発", "森ビル", "愛宕"],
-      "tags_en": ["Minato City", "Skyscraper", "Redevelopment", "Mori Building", "Atago"],
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "再開発",
+        "森ビル",
+        "愛宕"
+      ],
+      "tags_en": [
+        "Minato City",
+        "Skyscraper",
+        "Redevelopment",
+        "Mori Building",
+        "Atago"
+      ],
       "summary": "愛宕山のふもと、緑と一体で計画された複合再開発のタワー。",
       "summary_en": "A redevelopment tower at the foot of Mt. Atago, planned together with its greenery.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "shiodome-city-center",
@@ -114,12 +184,24 @@
       "completedYear": 2003,
       "floorsAbove": 43,
       "heightM": 216,
-      "tags": ["港区", "超高層ビル", "汐留", "再開発"],
-      "tags_en": ["Minato City", "Skyscraper", "Shiodome", "Redevelopment"],
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "汐留",
+        "再開発"
+      ],
+      "tags_en": [
+        "Minato City",
+        "Skyscraper",
+        "Shiodome",
+        "Redevelopment"
+      ],
       "summary": "汐留シオサイトの一角を占める、低層に旧新橋停車場を擁する高層オフィス。",
       "summary_en": "A high-rise office in Shiodome Sio-Site, with the former Shimbashi Station preserved at its base.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "dentsu-headquarters",
@@ -134,12 +216,24 @@
       "heightM": 213,
       "architect": "ジャン・ヌーヴェル",
       "architect_en": "Jean Nouvel",
-      "tags": ["港区", "超高層ビル", "汐留", "名建築"],
-      "tags_en": ["Minato City", "Skyscraper", "Shiodome", "Notable architecture"],
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "汐留",
+        "名建築"
+      ],
+      "tags_en": [
+        "Minato City",
+        "Skyscraper",
+        "Shiodome",
+        "Notable architecture"
+      ],
       "summary": "ジャン・ヌーヴェルが設計を手がけた、湾曲したファサードが特徴の汐留のタワー。",
       "summary_en": "A Shiodome tower designed by Jean Nouvel, characterized by its curved façade.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "park-court-akasaka-hinokicho-tower",
@@ -154,12 +248,24 @@
       "heightM": 170,
       "developer": "三井不動産レジデンシャル",
       "developer_en": "Mitsui Fudosan Residential",
-      "tags": ["港区", "タワーマンション", "赤坂", "檜町"],
-      "tags_en": ["Minato City", "Residential tower", "Akasaka", "Hinokicho"],
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "赤坂",
+        "檜町"
+      ],
+      "tags_en": [
+        "Minato City",
+        "Residential tower",
+        "Akasaka",
+        "Hinokicho"
+      ],
       "summary": "檜町公園に隣接し、東京ミッドタウンと街区を共有する高層レジデンス。",
       "summary_en": "A high-rise residence adjoining Hinokicho Park and sharing its district with Tokyo Midtown.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "mita-garden-hills",
@@ -172,12 +278,24 @@
       "completedYear": 2025,
       "developer": "三井不動産レジデンシャルほか",
       "developer_en": "Mitsui Fudosan Residential and others",
-      "tags": ["港区", "タワーマンション", "三田", "再開発"],
-      "tags_en": ["Minato City", "Residential tower", "Mita", "Redevelopment"],
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "三田",
+        "再開発"
+      ],
+      "tags_en": [
+        "Minato City",
+        "Residential tower",
+        "Mita",
+        "Redevelopment"
+      ],
       "summary": "旧国家公務員宿舎跡地に生まれた、緑豊かな大規模レジデンス。",
       "summary_en": "A large, greenery-rich residence created on the site of former national civil servants' housing.",
       "verified": false,
-      "sources": ["（要確認）公式資料で竣工年・規模を裏取りすること"]
+      "sources": [
+        "（要確認）公式資料で竣工年・規模を裏取りすること"
+      ]
     },
     {
       "slug": "marunouchi-building",
@@ -192,12 +310,24 @@
       "heightM": 179,
       "developer": "三菱地所",
       "developer_en": "Mitsubishi Estate",
-      "tags": ["千代田区", "超高層ビル", "丸の内", "三菱地所"],
-      "tags_en": ["Chiyoda City", "Skyscraper", "Marunouchi", "Mitsubishi Estate"],
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "丸の内",
+        "三菱地所"
+      ],
+      "tags_en": [
+        "Chiyoda City",
+        "Skyscraper",
+        "Marunouchi",
+        "Mitsubishi Estate"
+      ],
       "summary": "東京駅丸の内口の正面に立つ、丸の内再構築を象徴する商業・オフィス複合ビル。",
       "summary_en": "A retail-and-office complex facing the Marunouchi side of Tokyo Station, symbolizing the rebuilding of Marunouchi.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "shin-marunouchi-building",
@@ -212,12 +342,24 @@
       "heightM": 198,
       "developer": "三菱地所",
       "developer_en": "Mitsubishi Estate",
-      "tags": ["千代田区", "超高層ビル", "丸の内", "三菱地所"],
-      "tags_en": ["Chiyoda City", "Skyscraper", "Marunouchi", "Mitsubishi Estate"],
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "丸の内",
+        "三菱地所"
+      ],
+      "tags_en": [
+        "Chiyoda City",
+        "Skyscraper",
+        "Marunouchi",
+        "Mitsubishi Estate"
+      ],
       "summary": "丸ビルと向かい合い、行幸通りに面して建つ丸の内のランドマーク。",
       "summary_en": "A Marunouchi landmark facing the Gyoko-dori avenue, across from the Marunouchi Building.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "jp-tower-kitte",
@@ -232,12 +374,24 @@
       "heightM": 200,
       "developer": "日本郵便",
       "developer_en": "Japan Post",
-      "tags": ["千代田区", "超高層ビル", "丸の内", "駅前"],
-      "tags_en": ["Chiyoda City", "Skyscraper", "Marunouchi", "Station-front"],
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "丸の内",
+        "駅前"
+      ],
+      "tags_en": [
+        "Chiyoda City",
+        "Skyscraper",
+        "Marunouchi",
+        "Station-front"
+      ],
       "summary": "旧東京中央郵便局の外壁を保存し、その上に高層部を載せた駅前のタワー。",
       "summary_en": "A tower by the station that preserves the outer walls of the former Tokyo Central Post Office and places a high-rise above them.",
       "verified": false,
-      "sources": ["（要確認）竣工年は資料により2011/2012と差異あり"]
+      "sources": [
+        "（要確認）竣工年は資料により2011/2012と差異あり"
+      ]
     },
     {
       "slug": "otemachi-tower",
@@ -250,12 +404,24 @@
       "completedYear": 2014,
       "floorsAbove": 38,
       "heightM": 200,
-      "tags": ["千代田区", "超高層ビル", "大手町", "再開発"],
-      "tags_en": ["Chiyoda City", "Skyscraper", "Otemachi", "Redevelopment"],
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "大手町",
+        "再開発"
+      ],
+      "tags_en": [
+        "Chiyoda City",
+        "Skyscraper",
+        "Otemachi",
+        "Redevelopment"
+      ],
       "summary": "足元に豊かな『大手町の森』を擁し、高層部にホテルが入る大手町のタワー。",
       "summary_en": "An Otemachi tower with the lush 'Otemachi Forest' at its base and a hotel in its upper floors.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "tokiwabashi-tower",
@@ -270,12 +436,26 @@
       "heightM": 212,
       "developer": "三菱地所",
       "developer_en": "Mitsubishi Estate",
-      "tags": ["千代田区", "超高層ビル", "大手町", "再開発", "三菱地所"],
-      "tags_en": ["Chiyoda City", "Skyscraper", "Otemachi", "Redevelopment", "Mitsubishi Estate"],
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "大手町",
+        "再開発",
+        "三菱地所"
+      ],
+      "tags_en": [
+        "Chiyoda City",
+        "Skyscraper",
+        "Otemachi",
+        "Redevelopment",
+        "Mitsubishi Estate"
+      ],
       "summary": "日本一の高さを目指すTorch Towerを擁する『TOKYO TORCH』の第一弾タワー。",
       "summary_en": "The first tower of 'TOKYO TORCH,' the project that includes the Torch Tower aiming to be Japan's tallest.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "grantokyo-north-tower",
@@ -288,12 +468,24 @@
       "completedYear": 2007,
       "floorsAbove": 43,
       "heightM": 205,
-      "tags": ["千代田区", "超高層ビル", "丸の内", "東京駅"],
-      "tags_en": ["Chiyoda City", "Skyscraper", "Marunouchi", "Tokyo Station"],
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "丸の内",
+        "東京駅"
+      ],
+      "tags_en": [
+        "Chiyoda City",
+        "Skyscraper",
+        "Marunouchi",
+        "Tokyo Station"
+      ],
       "summary": "東京駅八重洲側を画する、サウスタワーと対をなすツインのオフィスタワー。",
       "summary_en": "A twin office tower defining the Yaesu side of Tokyo Station, paired with the South Tower.",
       "verified": false,
-      "sources": ["（要確認）高さ・階数を公式資料で裏取りすること"]
+      "sources": [
+        "（要確認）高さ・階数を公式資料で裏取りすること"
+      ]
     },
     {
       "slug": "tokyo-midtown-yaesu",
@@ -308,12 +500,26 @@
       "heightM": 240,
       "developer": "三井不動産",
       "developer_en": "Mitsui Fudosan",
-      "tags": ["中央区", "超高層ビル", "八重洲", "再開発", "バスターミナル"],
-      "tags_en": ["Chuo City", "Skyscraper", "Yaesu", "Redevelopment", "Bus terminal"],
+      "tags": [
+        "中央区",
+        "超高層ビル",
+        "八重洲",
+        "再開発",
+        "バスターミナル"
+      ],
+      "tags_en": [
+        "Chuo City",
+        "Skyscraper",
+        "Yaesu",
+        "Redevelopment",
+        "Bus terminal"
+      ],
       "summary": "大型バスターミナルと小学校を内包する、八重洲再開発の中核タワー。",
       "summary_en": "The core tower of the Yaesu redevelopment, housing a large bus terminal and an elementary school.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "nihonbashi-mitsui-tower",
@@ -328,12 +534,24 @@
       "heightM": 195,
       "developer": "三井不動産",
       "developer_en": "Mitsui Fudosan",
-      "tags": ["中央区", "超高層ビル", "日本橋", "三井不動産"],
-      "tags_en": ["Chuo City", "Skyscraper", "Nihonbashi", "Mitsui Fudosan"],
+      "tags": [
+        "中央区",
+        "超高層ビル",
+        "日本橋",
+        "三井不動産"
+      ],
+      "tags_en": [
+        "Chuo City",
+        "Skyscraper",
+        "Nihonbashi",
+        "Mitsui Fudosan"
+      ],
       "summary": "重要文化財・三井本館に寄り添うように建つ、日本橋再生の起点となったタワー。",
       "summary_en": "A tower that nestles beside the Important Cultural Property Mitsui Main Building, marking the start of Nihonbashi's revival.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "nihonbashi-takashimaya-mitsui-building",
@@ -346,12 +564,24 @@
       "completedYear": 2018,
       "developer": "三井不動産",
       "developer_en": "Mitsui Fudosan",
-      "tags": ["中央区", "超高層ビル", "日本橋", "三井不動産"],
-      "tags_en": ["Chuo City", "Skyscraper", "Nihonbashi", "Mitsui Fudosan"],
+      "tags": [
+        "中央区",
+        "超高層ビル",
+        "日本橋",
+        "三井不動産"
+      ],
+      "tags_en": [
+        "Chuo City",
+        "Skyscraper",
+        "Nihonbashi",
+        "Mitsui Fudosan"
+      ],
       "summary": "重要文化財の日本橋髙島屋S.C.本館と一体で整備された高層オフィス。",
       "summary_en": "A high-rise office developed together with the Important Cultural Property Nihonbashi Takashimaya S.C. Main Building.",
       "verified": false,
-      "sources": ["（要確認）高さ・階数を公式資料で裏取りすること"]
+      "sources": [
+        "（要確認）高さ・階数を公式資料で裏取りすること"
+      ]
     },
     {
       "slug": "century-park-tower",
@@ -366,12 +596,24 @@
       "heightM": 180,
       "developer": "三井不動産",
       "developer_en": "Mitsui Fudosan",
-      "tags": ["中央区", "タワーマンション", "佃", "大川端リバーシティ21"],
-      "tags_en": ["Chuo City", "Residential tower", "Tsukuda", "Okawabata River City 21"],
+      "tags": [
+        "中央区",
+        "タワーマンション",
+        "佃",
+        "大川端リバーシティ21"
+      ],
+      "tags_en": [
+        "Chuo City",
+        "Residential tower",
+        "Tsukuda",
+        "Okawabata River City 21"
+      ],
       "summary": "大川端リバーシティ21の象徴。湾岸タワーマンションの先駆けとされる存在。",
       "summary_en": "The symbol of Okawabata River City 21, regarded as a pioneer of bayside high-rise residences.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+      ]
     },
     {
       "slug": "sunshine-60",
@@ -384,12 +626,24 @@
       "completedYear": 1978,
       "floorsAbove": 60,
       "heightM": 240,
-      "tags": ["豊島区", "超高層ビル", "池袋", "昭和の名建築"],
-      "tags_en": ["Toshima City", "Skyscraper", "Ikebukuro", "Showa-era landmark"],
+      "tags": [
+        "豊島区",
+        "超高層ビル",
+        "池袋",
+        "昭和の名建築"
+      ],
+      "tags_en": [
+        "Toshima City",
+        "Skyscraper",
+        "Ikebukuro",
+        "Showa-era landmark"
+      ],
       "summary": "1978年竣工。長く『東洋一の高さ』と称された、池袋のランドマーク。",
       "summary_en": "Completed in 1978. Long called 'the tallest in the Orient,' a landmark of Ikebukuro.",
       "verified": true,
-      "sources": ["公開情報（要最終確認）"]
+      "sources": [
+        "公開情報（要最終確認）"
+      ]
     },
     {
       "slug": "shibuya-scramble-square-east",
@@ -402,12 +656,26 @@
       "completedYear": 2019,
       "floorsAbove": 47,
       "heightM": 230,
-      "tags": ["渋谷区", "超高層ビル", "渋谷", "再開発", "駅直結"],
-      "tags_en": ["Shibuya City", "Skyscraper", "Shibuya", "Redevelopment", "Station-connected"],
+      "tags": [
+        "渋谷区",
+        "超高層ビル",
+        "渋谷",
+        "再開発",
+        "駅直結"
+      ],
+      "tags_en": [
+        "Shibuya City",
+        "Skyscraper",
+        "Shibuya",
+        "Redevelopment",
+        "Station-connected"
+      ],
       "summary": "渋谷駅直結。屋上展望施設SHIBUYA SKYで知られる渋谷再開発の中核。",
       "summary_en": "Directly connected to Shibuya Station. The core of Shibuya's redevelopment, known for the rooftop SHIBUYA SKY observation deck.",
       "verified": true,
-      "sources": ["公開情報（要最終確認）"]
+      "sources": [
+        "公開情報（要最終確認）"
+      ]
     },
     {
       "slug": "ntt-docomo-yoyogi-building",
@@ -422,12 +690,1771 @@
       "heightM": 240,
       "developer": "NTTドコモ",
       "developer_en": "NTT DoCoMo",
-      "tags": ["渋谷区", "超高層ビル", "代々木", "名建築", "新宿"],
-      "tags_en": ["Shibuya City", "Skyscraper", "Yoyogi", "Notable architecture", "Shinjuku"],
+      "tags": [
+        "渋谷区",
+        "超高層ビル",
+        "代々木",
+        "名建築",
+        "新宿"
+      ],
+      "tags_en": [
+        "Shibuya City",
+        "Skyscraper",
+        "Yoyogi",
+        "Notable architecture",
+        "Shinjuku"
+      ],
       "summary": "新宿の南に立つ、時計塔とエンパイアステートビル風の意匠で知られるNTTドコモの超高層ビル。",
       "summary_en": "A supertall NTT DoCoMo building just south of Shinjuku, known for its clock tower and Empire State Building–like silhouette.",
       "verified": true,
-      "sources": ["Wikipedia『東京都の超高層建築物・構築物の一覧』等の公開情報（高さ240m・地上27階・2000年竣工。要最終確認）"]
+      "sources": [
+        "Wikipedia『東京都の超高層建築物・構築物の一覧』等の公開情報（高さ240m・地上27階・2000年竣工。要最終確認）"
+      ]
+    },
+    {
+      "slug": "sompo-japan-headquarters",
+      "title": "損保ジャパン本社ビル",
+      "title_en": "Sompo Japan Headquarters",
+      "buildingType": "office",
+      "area": "新宿区",
+      "area_en": "Shinjuku City",
+      "address": "東京都新宿区",
+      "completedYear": 1976,
+      "floorsAbove": 43,
+      "heightM": 200,
+      "tags": [
+        "新宿区",
+        "超高層ビル",
+        "オフィスビル",
+        "新宿"
+      ],
+      "tags_en": [
+        "Shinjuku",
+        "Skyscraper",
+        "Office building",
+        "Shinjuku"
+      ],
+      "summary": "新宿区新宿エリアに立つ1976年竣工のオフィスビル（地上43階・高さ約200m）。",
+      "summary_en": "An office building in the Shinjuku area of Shinjuku City, completed in 1976 (43 floors, approx. 200 m).",
+      "verified": true,
+      "sources": [
+        "公開情報で竣工年・高さ・階数を確認済み（Wikipedia『東京都の超高層建築物・構築物の一覧』／公式）。"
+      ]
+    },
+    {
+      "slug": "shinjuku-maynds-tower",
+      "title": "新宿マインズタワー",
+      "title_en": "Shinjuku Mynds Tower",
+      "buildingType": "office",
+      "area": "渋谷区",
+      "area_en": "Shibuya City",
+      "address": "東京都渋谷区",
+      "completedYear": 1995,
+      "floorsAbove": 34,
+      "heightM": 165,
+      "tags": [
+        "渋谷区",
+        "超高層ビル",
+        "オフィスビル",
+        "代々木"
+      ],
+      "tags_en": [
+        "Shibuya",
+        "Skyscraper",
+        "Office building",
+        "Yoyogi"
+      ],
+      "summary": "渋谷区代々木エリアに立つ1995年竣工のオフィスビル（地上34階・高さ約165m）。",
+      "summary_en": "An office building in the Yoyogi area of Shibuya City, completed in 1995 (34 floors, approx. 165 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "yomiuri-shimbun-tokyo-head-office",
+      "title": "読売新聞東京本社ビル",
+      "title_en": "Yomiuri Shimbun Tokyo Head Office",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2013,
+      "floorsAbove": 33,
+      "heightM": 200,
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "大手町"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Otemachi"
+      ],
+      "summary": "千代田区大手町エリアに立つ2013年竣工のオフィスビル（地上33階・高さ約200m）。",
+      "summary_en": "An office building in the Otemachi area of Chiyoda City, completed in 2013 (33 floors, approx. 200 m).",
+      "verified": true,
+      "sources": [
+        "公開情報で竣工年・高さ・階数を確認済み（Wikipedia『東京都の超高層建築物・構築物の一覧』／公式）。"
+      ]
+    },
+    {
+      "slug": "moto-azabu-hills-forest-tower",
+      "title": "元麻布ヒルズ フォレストタワー",
+      "title_en": "Moto-Azabu Hills Forest Tower",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2002,
+      "floorsAbove": 29,
+      "heightM": 110,
+      "developer": "森ビル",
+      "developer_en": "Mori Building",
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "森ビル",
+        "元麻布"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Mori Building",
+        "Moto-Azabu"
+      ],
+      "summary": "港区元麻布エリアに立つ2002年竣工のタワーマンション（地上29階・高さ約110m）。",
+      "summary_en": "A residential tower in the Moto-Azabu area of Minato City, completed in 2002 (29 floors, approx. 110 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "grantokyo-south-tower",
+      "title": "グラントウキョウ サウスタワー",
+      "title_en": "GranTokyo South Tower",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2007,
+      "floorsAbove": 42,
+      "heightM": 205,
+      "developer": "三菱地所",
+      "developer_en": "Mitsubishi Estate",
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "三菱地所",
+        "丸の内"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Mitsubishi Estate",
+        "Marunouchi"
+      ],
+      "summary": "千代田区丸の内エリアに立つ2007年竣工のオフィスビル（地上42階・高さ約205m）。",
+      "summary_en": "An office building in the Marunouchi area of Chiyoda City, completed in 2007 (42 floors, approx. 205 m).",
+      "verified": true,
+      "sources": [
+        "公開情報で竣工年・高さ・階数を確認済み（Wikipedia『東京都の超高層建築物・構築物の一覧』／公式）。"
+      ]
+    },
+    {
+      "slug": "shinjuku-oak-city",
+      "title": "新宿オークシティ（新宿オークタワー）",
+      "title_en": "Shinjuku Oak City (Oak Tower)",
+      "buildingType": "office",
+      "area": "新宿区",
+      "area_en": "Shinjuku City",
+      "address": "東京都新宿区",
+      "completedYear": 2003,
+      "floorsAbove": 38,
+      "tags": [
+        "新宿区",
+        "高層ビル",
+        "オフィスビル",
+        "西新宿"
+      ],
+      "tags_en": [
+        "Shinjuku",
+        "High-rise",
+        "Office building",
+        "Nishi-Shinjuku"
+      ],
+      "summary": "新宿区西新宿エリアに立つ2003年竣工のオフィスビル（地上38階）。",
+      "summary_en": "An office building in the Nishi-Shinjuku area of Shinjuku City, completed in 2003 (38 floors).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "bunkyo-civic-center",
+      "title": "文京シビックセンター",
+      "title_en": "Bunkyo Civic Center",
+      "buildingType": "office",
+      "area": "文京区",
+      "area_en": "Bunkyo City",
+      "address": "東京都文京区",
+      "completedYear": 1994,
+      "floorsAbove": 28,
+      "heightM": 142,
+      "tags": [
+        "文京区",
+        "高層ビル",
+        "オフィスビル",
+        "後楽"
+      ],
+      "tags_en": [
+        "Bunkyo",
+        "High-rise",
+        "Office building",
+        "Koraku"
+      ],
+      "summary": "文京区後楽エリアに立つ1994年竣工のオフィスビル（地上28階・高さ約142m）。",
+      "summary_en": "An office building in the Koraku area of Bunkyo City, completed in 1994 (28 floors, approx. 142 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "tekko-building",
+      "title": "鉄鋼ビルディング",
+      "title_en": "Tekko Building",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2015,
+      "floorsAbove": 26,
+      "heightM": 121,
+      "tags": [
+        "千代田区",
+        "高層ビル",
+        "オフィスビル",
+        "丸の内"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "High-rise",
+        "Office building",
+        "Marunouchi"
+      ],
+      "summary": "千代田区丸の内エリアに立つ2015年竣工のオフィスビル（地上26階・高さ約121m）。",
+      "summary_en": "An office building in the Marunouchi area of Chiyoda City, completed in 2015 (26 floors, approx. 121 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "comodio-shiodome",
+      "title": "コモディオ汐留",
+      "title_en": "Comodio Shiodome",
+      "buildingType": "office",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2004,
+      "floorsAbove": 25,
+      "tags": [
+        "港区",
+        "高層ビル",
+        "オフィスビル",
+        "汐留"
+      ],
+      "tags_en": [
+        "Minato",
+        "High-rise",
+        "Office building",
+        "Shiodome"
+      ],
+      "summary": "港区汐留エリアに立つ2004年竣工のオフィスビル（地上25階）。",
+      "summary_en": "An office building in the Shiodome area of Minato City, completed in 2004 (25 floors).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "the-okura-tokyo-prestige-tower",
+      "title": "The Okura Tokyo プレステージタワー",
+      "title_en": "The Okura Tokyo Prestige Tower",
+      "buildingType": "office",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2019,
+      "floorsAbove": 41,
+      "heightM": 188,
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "オフィスビル",
+        "虎ノ門"
+      ],
+      "tags_en": [
+        "Minato",
+        "Skyscraper",
+        "Office building",
+        "Toranomon"
+      ],
+      "summary": "港区虎ノ門エリアに立つ2019年竣工のオフィスビル（地上41階・高さ約188m）。",
+      "summary_en": "An office building in the Toranomon area of Minato City, completed in 2019 (41 floors, approx. 188 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "otemachi-financial-city-grand-cube",
+      "title": "大手町フィナンシャルシティ グランキューブ",
+      "title_en": "Otemachi Financial City Grand Cube",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2016,
+      "floorsAbove": 31,
+      "heightM": 180,
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "大手町"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Otemachi"
+      ],
+      "summary": "千代田区大手町エリアに立つ2016年竣工のオフィスビル（地上31階・高さ約180m）。",
+      "summary_en": "An office building in the Otemachi area of Chiyoda City, completed in 2016 (31 floors, approx. 180 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "keio-plaza-hotel",
+      "title": "京王プラザホテル",
+      "title_en": "Keio Plaza Hotel",
+      "buildingType": "office",
+      "area": "新宿区",
+      "area_en": "Shinjuku City",
+      "address": "東京都新宿区",
+      "completedYear": 1971,
+      "floorsAbove": 47,
+      "heightM": 180,
+      "tags": [
+        "新宿区",
+        "超高層ビル",
+        "オフィスビル",
+        "新宿"
+      ],
+      "tags_en": [
+        "Shinjuku",
+        "Skyscraper",
+        "Office building",
+        "Shinjuku"
+      ],
+      "summary": "新宿区新宿エリアに立つ1971年竣工のオフィスビル（地上47階・高さ約178m）。",
+      "summary_en": "An office building in the Shinjuku area of Shinjuku City, completed in 1971 (47 floors, approx. 178 m).",
+      "verified": true,
+      "sources": [
+        "公開情報で竣工年・高さ・階数を確認済み（Wikipedia『東京都の超高層建築物・構築物の一覧』／公式）。"
+      ]
+    },
+    {
+      "slug": "sumitomo-fudosan-shinjuku-grand-tower",
+      "title": "住友不動産新宿グランドタワー",
+      "title_en": "Sumitomo Fudosan Shinjuku Grand Tower",
+      "buildingType": "office",
+      "area": "新宿区",
+      "area_en": "Shinjuku City",
+      "address": "東京都新宿区",
+      "completedYear": 2011,
+      "floorsAbove": 40,
+      "heightM": 210,
+      "developer": "住友不動産",
+      "developer_en": "Sumitomo Realty",
+      "tags": [
+        "新宿区",
+        "超高層ビル",
+        "オフィスビル",
+        "住友不動産",
+        "新宿"
+      ],
+      "tags_en": [
+        "Shinjuku",
+        "Skyscraper",
+        "Office building",
+        "Sumitomo Realty",
+        "Shinjuku"
+      ],
+      "summary": "新宿区新宿エリアに立つ2011年竣工のオフィスビル（地上40階・高さ約210m）。",
+      "summary_en": "An office building in the Shinjuku area of Shinjuku City, completed in 2011 (40 floors, approx. 210 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "central-park-tower-la-tour-shinjuku",
+      "title": "セントラルパークタワー・ラ・トゥール新宿",
+      "title_en": "Central Park Tower La Tour Shinjuku",
+      "buildingType": "residence",
+      "area": "新宿区",
+      "area_en": "Shinjuku City",
+      "address": "東京都新宿区",
+      "completedYear": 2010,
+      "floorsAbove": 44,
+      "heightM": 209,
+      "developer": "住友不動産",
+      "developer_en": "Sumitomo Realty",
+      "tags": [
+        "新宿区",
+        "タワーマンション",
+        "住友不動産",
+        "新宿"
+      ],
+      "tags_en": [
+        "Shinjuku",
+        "Residential tower",
+        "Sumitomo Realty",
+        "Shinjuku"
+      ],
+      "summary": "新宿区新宿エリアに立つ2010年竣工のタワーマンション（地上44階・高さ約209m）。",
+      "summary_en": "A residential tower in the Shinjuku area of Shinjuku City, completed in 2010 (44 floors, approx. 209 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "shibuya-fukuras",
+      "title": "渋谷フクラス",
+      "title_en": "Shibuya Fukuras",
+      "buildingType": "office",
+      "area": "渋谷区",
+      "area_en": "Shibuya City",
+      "address": "東京都渋谷区",
+      "completedYear": 2019,
+      "floorsAbove": 18,
+      "heightM": 100,
+      "developer": "東急不動産",
+      "developer_en": "Tokyu Land",
+      "tags": [
+        "渋谷区",
+        "高層ビル",
+        "オフィスビル",
+        "東急不動産",
+        "渋谷"
+      ],
+      "tags_en": [
+        "Shibuya",
+        "High-rise",
+        "Office building",
+        "Tokyu Land",
+        "Shibuya"
+      ],
+      "summary": "渋谷区渋谷エリアに立つ2019年竣工のオフィスビル（地上18階・高さ約100m）。",
+      "summary_en": "An office building in the Shibuya area of Shibuya City, completed in 2019 (18 floors, approx. 100 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "the-prudential-tower",
+      "title": "プルデンシャルタワー",
+      "title_en": "The Prudential Tower",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2002,
+      "floorsAbove": 38,
+      "heightM": 175,
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "永田町"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Nagatacho"
+      ],
+      "summary": "千代田区永田町エリアに立つ2002年竣工のオフィスビル（地上38階・高さ約175m）。",
+      "summary_en": "An office building in the Nagatacho area of Chiyoda City, completed in 2002 (38 floors, approx. 175 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "nihonbashi-muromachi-mitsui-tower",
+      "title": "日本橋室町三井タワー",
+      "title_en": "Nihonbashi Muromachi Mitsui Tower",
+      "buildingType": "office",
+      "area": "中央区",
+      "area_en": "Chuo City",
+      "address": "東京都中央区",
+      "completedYear": 2019,
+      "floorsAbove": 26,
+      "heightM": 179,
+      "developer": "三井不動産",
+      "developer_en": "Mitsui Fudosan",
+      "tags": [
+        "中央区",
+        "超高層ビル",
+        "オフィスビル",
+        "三井不動産",
+        "日本橋"
+      ],
+      "tags_en": [
+        "Chuo",
+        "Skyscraper",
+        "Office building",
+        "Mitsui Fudosan",
+        "Nihonbashi"
+      ],
+      "summary": "中央区日本橋エリアに立つ2019年竣工のオフィスビル（地上26階・高さ約179m）。",
+      "summary_en": "An office building in the Nihonbashi area of Chuo City, completed in 2019 (26 floors, approx. 179 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "otemachi-place-west-tower",
+      "title": "大手町プレイス ウエストタワー",
+      "title_en": "Otemachi Place West Tower",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2018,
+      "floorsAbove": 35,
+      "heightM": 184,
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "大手町"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Otemachi"
+      ],
+      "summary": "千代田区大手町エリアに立つ2018年竣工のオフィスビル（地上35階・高さ約184m）。",
+      "summary_en": "An office building in the Otemachi area of Chiyoda City, completed in 2018 (35 floors, approx. 184 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "kachidoki-the-tower",
+      "title": "勝どきザ・タワー",
+      "title_en": "Kachidoki The Tower",
+      "buildingType": "residence",
+      "area": "中央区",
+      "area_en": "Chuo City",
+      "address": "東京都中央区",
+      "completedYear": 2016,
+      "floorsAbove": 53,
+      "heightM": 179,
+      "tags": [
+        "中央区",
+        "タワーマンション",
+        "勝どき"
+      ],
+      "tags_en": [
+        "Chuo",
+        "Residential tower",
+        "Kachidoki"
+      ],
+      "summary": "中央区勝どきエリアに立つ2016年竣工のタワーマンション（地上53階・高さ約179m）。",
+      "summary_en": "A residential tower in the Kachidoki area of Chuo City, completed in 2016 (53 floors, approx. 179 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "shinjuku-i-land-tower",
+      "title": "新宿アイランドタワー",
+      "title_en": "Shinjuku i-Land Tower",
+      "buildingType": "office",
+      "area": "新宿区",
+      "area_en": "Shinjuku City",
+      "address": "東京都新宿区",
+      "completedYear": 1995,
+      "floorsAbove": 44,
+      "heightM": 189,
+      "tags": [
+        "新宿区",
+        "超高層ビル",
+        "オフィスビル",
+        "新宿"
+      ],
+      "tags_en": [
+        "Shinjuku",
+        "Skyscraper",
+        "Office building",
+        "Shinjuku"
+      ],
+      "summary": "新宿区新宿エリアに立つ1995年竣工のオフィスビル（地上44階・高さ約189m）。",
+      "summary_en": "An office building in the Shinjuku area of Shinjuku City, completed in 1995 (44 floors, approx. 189 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "shinagawa-grand-central-tower",
+      "title": "品川グランドセントラルタワー",
+      "title_en": "Shinagawa Grand Central Tower",
+      "buildingType": "office",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2003,
+      "floorsAbove": 44,
+      "heightM": 156,
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "オフィスビル",
+        "品川"
+      ],
+      "tags_en": [
+        "Minato",
+        "Skyscraper",
+        "Office building",
+        "Shinagawa"
+      ],
+      "summary": "港区品川エリアに立つ2003年竣工のオフィスビル（地上44階・高さ約156m）。",
+      "summary_en": "An office building in the Shinagawa area of Minato City, completed in 2003 (44 floors, approx. 156 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "tokyo-nihonbashi-tower",
+      "title": "東京日本橋タワー",
+      "title_en": "Tokyo Nihonbashi Tower",
+      "buildingType": "office",
+      "area": "中央区",
+      "area_en": "Chuo City",
+      "address": "東京都中央区",
+      "completedYear": 2015,
+      "floorsAbove": 35,
+      "heightM": 180,
+      "tags": [
+        "中央区",
+        "超高層ビル",
+        "オフィスビル",
+        "日本橋"
+      ],
+      "tags_en": [
+        "Chuo",
+        "Skyscraper",
+        "Office building",
+        "Nihonbashi"
+      ],
+      "summary": "中央区日本橋エリアに立つ2015年竣工のオフィスビル（地上35階・高さ約180m）。",
+      "summary_en": "An office building in the Nihonbashi area of Chuo City, completed in 2015 (35 floors, approx. 180 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "otemachi-one-tower",
+      "title": "大手町ワンタワー",
+      "title_en": "Otemachi One Tower",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2020,
+      "floorsAbove": 40,
+      "heightM": 200,
+      "developer": "三井不動産",
+      "developer_en": "Mitsui Fudosan",
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "三井不動産",
+        "大手町"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Mitsui Fudosan",
+        "Otemachi"
+      ],
+      "summary": "千代田区大手町エリアに立つ2020年竣工のオフィスビル（地上40階・高さ約200m）。",
+      "summary_en": "An office building in the Otemachi area of Chiyoda City, completed in 2020 (40 floors, approx. 200 m).",
+      "verified": true,
+      "sources": [
+        "公開情報で竣工年・高さ・階数を確認済み（Wikipedia『東京都の超高層建築物・構築物の一覧』／公式）。"
+      ]
+    },
+    {
+      "slug": "tokyo-garden-terrace-kioicho",
+      "title": "東京ガーデンテラス紀尾井町",
+      "title_en": "Tokyo Garden Terrace Kioicho",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2016,
+      "floorsAbove": 36,
+      "heightM": 180,
+      "developer": "西武プロパティーズ",
+      "developer_en": "Seibu Properties",
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "西武プロパティーズ",
+        "紀尾井町"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Seibu Properties",
+        "Kioicho"
+      ],
+      "summary": "千代田区紀尾井町エリアに立つ2016年竣工のオフィスビル（地上36階・高さ約180m）。",
+      "summary_en": "An office building in the Kioicho area of Chiyoda City, completed in 2016 (36 floors, approx. 180 m).",
+      "verified": true,
+      "sources": [
+        "公開情報で竣工年・高さ・階数を確認済み（Wikipedia『東京都の超高層建築物・構築物の一覧』／公式）。"
+      ]
+    },
+    {
+      "slug": "st-lukes-tower",
+      "title": "セントルークスタワー",
+      "title_en": "St. Luke's Tower",
+      "buildingType": "residence",
+      "area": "中央区",
+      "area_en": "Chuo City",
+      "address": "東京都中央区",
+      "completedYear": 1994,
+      "floorsAbove": 47,
+      "heightM": 221,
+      "tags": [
+        "中央区",
+        "タワーマンション",
+        "明石町"
+      ],
+      "tags_en": [
+        "Chuo",
+        "Residential tower",
+        "Akashicho"
+      ],
+      "summary": "中央区明石町エリアに立つ1994年竣工のタワーマンション（地上47階・高さ約221m）。",
+      "summary_en": "A residential tower in the Akashicho area of Chuo City, completed in 1994 (47 floors, approx. 221 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "otemachi-nomura-building",
+      "title": "大手町ノムラビル",
+      "title_en": "Otemachi Nomura Building",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 1994,
+      "floorsAbove": 27,
+      "heightM": 130,
+      "tags": [
+        "千代田区",
+        "高層ビル",
+        "オフィスビル",
+        "大手町"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "High-rise",
+        "Office building",
+        "Otemachi"
+      ],
+      "summary": "千代田区大手町エリアに立つ1994年竣工のオフィスビル（地上27階・高さ約130m）。",
+      "summary_en": "An office building in the Otemachi area of Chiyoda City, completed in 1994 (27 floors, approx. 130 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "shinjuku-front-tower",
+      "title": "新宿フロントタワー",
+      "title_en": "Shinjuku Front Tower",
+      "buildingType": "office",
+      "area": "新宿区",
+      "area_en": "Shinjuku City",
+      "address": "東京都新宿区",
+      "completedYear": 2011,
+      "floorsAbove": 32,
+      "heightM": 130,
+      "tags": [
+        "新宿区",
+        "高層ビル",
+        "オフィスビル",
+        "北新宿"
+      ],
+      "tags_en": [
+        "Shinjuku",
+        "High-rise",
+        "Office building",
+        "Kita-Shinjuku"
+      ],
+      "summary": "新宿区北新宿エリアに立つ2011年竣工のオフィスビル（地上32階・高さ約130m）。",
+      "summary_en": "An office building in the Kita-Shinjuku area of Shinjuku City, completed in 2011 (32 floors, approx. 130 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "park-city-toyosu-tower-b",
+      "title": "パークシティ豊洲 タワーB",
+      "title_en": "Park City Toyosu Tower B",
+      "buildingType": "residence",
+      "area": "江東区",
+      "area_en": "Koto City",
+      "address": "東京都江東区",
+      "completedYear": 2008,
+      "floorsAbove": 33,
+      "tags": [
+        "江東区",
+        "タワーマンション",
+        "豊洲"
+      ],
+      "tags_en": [
+        "Koto",
+        "Residential tower",
+        "Toyosu"
+      ],
+      "summary": "江東区豊洲エリアに立つ2008年竣工のタワーマンション（地上33階）。",
+      "summary_en": "A residential tower in the Toyosu area of Koto City, completed in 2008 (33 floors).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "sumitomo-fudosan-iidabashi-first-tower",
+      "title": "住友不動産飯田橋ファーストタワー",
+      "title_en": "Sumitomo Fudosan Iidabashi First Tower",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2010,
+      "floorsAbove": 34,
+      "heightM": 150,
+      "developer": "住友不動産",
+      "developer_en": "Sumitomo Realty",
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "住友不動産",
+        "飯田橋"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Sumitomo Realty",
+        "Iidabashi"
+      ],
+      "summary": "千代田区飯田橋エリアに立つ2010年竣工のオフィスビル（地上34階・高さ約150m）。",
+      "summary_en": "An office building in the Iidabashi area of Chiyoda City, completed in 2010 (34 floors, approx. 150 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "sapia-tower",
+      "title": "サピアタワー",
+      "title_en": "Sapia Tower",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2007,
+      "floorsAbove": 35,
+      "heightM": 166,
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "丸の内"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Marunouchi"
+      ],
+      "summary": "千代田区丸の内エリアに立つ2007年竣工のオフィスビル（地上35階・高さ約166m）。",
+      "summary_en": "An office building in the Marunouchi area of Chiyoda City, completed in 2007 (35 floors, approx. 166 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "marunouchi-trust-tower-main",
+      "title": "丸の内トラストタワー本館",
+      "title_en": "Marunouchi Trust Tower Main",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2008,
+      "floorsAbove": 37,
+      "heightM": 178,
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "丸の内"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Marunouchi"
+      ],
+      "summary": "千代田区丸の内エリアに立つ2008年竣工のオフィスビル（地上37階・高さ約178m）。",
+      "summary_en": "An office building in the Marunouchi area of Chiyoda City, completed in 2008 (37 floors, approx. 178 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "tokyo-dome-hotel",
+      "title": "東京ドームホテル",
+      "title_en": "Tokyo Dome Hotel",
+      "buildingType": "office",
+      "area": "文京区",
+      "area_en": "Bunkyo City",
+      "address": "東京都文京区",
+      "completedYear": 2000,
+      "floorsAbove": 43,
+      "heightM": 155,
+      "tags": [
+        "文京区",
+        "超高層ビル",
+        "オフィスビル",
+        "後楽"
+      ],
+      "tags_en": [
+        "Bunkyo",
+        "Skyscraper",
+        "Office building",
+        "Koraku"
+      ],
+      "summary": "文京区後楽エリアに立つ2000年竣工のオフィスビル（地上43階・高さ約155m）。",
+      "summary_en": "An office building in the Koraku area of Bunkyo City, completed in 2000 (43 floors, approx. 155 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "kasumigaseki-common-gate",
+      "title": "霞が関コモンゲート",
+      "title_en": "Kasumigaseki Common Gate",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2007,
+      "floorsAbove": 38,
+      "heightM": 178,
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "霞が関"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Kasumigaseki"
+      ],
+      "summary": "千代田区霞が関エリアに立つ2007年竣工のオフィスビル（地上38階・高さ約178m）。",
+      "summary_en": "An office building in the Kasumigaseki area of Chiyoda City, completed in 2007 (38 floors, approx. 178 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "kyobashi-edogrand",
+      "title": "京橋エドグラン",
+      "title_en": "Kyobashi Edogrand",
+      "buildingType": "office",
+      "area": "中央区",
+      "area_en": "Chuo City",
+      "address": "東京都中央区",
+      "completedYear": 2016,
+      "floorsAbove": 32,
+      "heightM": 170,
+      "tags": [
+        "中央区",
+        "超高層ビル",
+        "オフィスビル",
+        "京橋"
+      ],
+      "tags_en": [
+        "Chuo",
+        "Skyscraper",
+        "Office building",
+        "Kyobashi"
+      ],
+      "summary": "中央区京橋エリアに立つ2016年竣工のオフィスビル（地上32階・高さ約170m）。",
+      "summary_en": "An office building in the Kyobashi area of Chuo City, completed in 2016 (32 floors, approx. 170 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "world-city-towers",
+      "title": "ワールドシティタワーズ",
+      "title_en": "World City Towers",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2005,
+      "floorsAbove": 42,
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "港南"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Konan"
+      ],
+      "summary": "港区港南エリアに立つ2005年竣工のタワーマンション（地上42階）。",
+      "summary_en": "A residential tower in the Konan area of Minato City, completed in 2005 (42 floors).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "gate-city-osaki",
+      "title": "ゲートシティ大崎",
+      "title_en": "Gate City Osaki",
+      "buildingType": "office",
+      "area": "品川区",
+      "area_en": "Shinagawa City",
+      "address": "東京都品川区",
+      "completedYear": 1999,
+      "floorsAbove": 24,
+      "heightM": 118,
+      "tags": [
+        "品川区",
+        "高層ビル",
+        "オフィスビル",
+        "大崎"
+      ],
+      "tags_en": [
+        "Shinagawa",
+        "High-rise",
+        "Office building",
+        "Osaki"
+      ],
+      "summary": "品川区大崎エリアに立つ1999年竣工のオフィスビル（地上24階・高さ約118m）。",
+      "summary_en": "An office building in the Osaki area of Shinagawa City, completed in 1999 (24 floors, approx. 118 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "harumi-flag-sky-duo",
+      "title": "HARUMI FLAG SKY DUO",
+      "title_en": "Harumi Flag Sky Duo",
+      "buildingType": "residence",
+      "area": "中央区",
+      "area_en": "Chuo City",
+      "address": "東京都中央区",
+      "completedYear": 2024,
+      "floorsAbove": 50,
+      "heightM": 179,
+      "tags": [
+        "中央区",
+        "タワーマンション",
+        "晴海"
+      ],
+      "tags_en": [
+        "Chuo",
+        "Residential tower",
+        "Harumi"
+      ],
+      "summary": "中央区晴海エリアに立つ2024年竣工のタワーマンション（地上50階・高さ約179m）。",
+      "summary_en": "A residential tower in the Harumi area of Chuo City, completed in 2024 (50 floors, approx. 179 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "osaki-west-city-towers",
+      "title": "大崎ウエストシティタワーズ",
+      "title_en": "Osaki West City Towers",
+      "buildingType": "residence",
+      "area": "品川区",
+      "area_en": "Shinagawa City",
+      "address": "東京都品川区",
+      "completedYear": 2009,
+      "floorsAbove": 40,
+      "tags": [
+        "品川区",
+        "タワーマンション",
+        "大崎"
+      ],
+      "tags_en": [
+        "Shinagawa",
+        "Residential tower",
+        "Osaki"
+      ],
+      "summary": "品川区大崎エリアに立つ2009年竣工のタワーマンション（地上40階）。",
+      "summary_en": "A residential tower in the Osaki area of Shinagawa City, completed in 2009 (40 floors).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "tokyo-midtown-hibiya",
+      "title": "東京ミッドタウン日比谷",
+      "title_en": "Tokyo Midtown Hibiya",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2018,
+      "floorsAbove": 35,
+      "heightM": 192,
+      "developer": "三井不動産",
+      "developer_en": "Mitsui Fudosan",
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "三井不動産",
+        "日比谷"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Mitsui Fudosan",
+        "Hibiya"
+      ],
+      "summary": "千代田区日比谷エリアに立つ2018年竣工のオフィスビル（地上35階・高さ約192m）。",
+      "summary_en": "An office building in the Hibiya area of Chiyoda City, completed in 2018 (35 floors, approx. 192 m).",
+      "verified": false,
+      "sources": [
+        "出典間で階数(35/37)・竣工年(2017/2018)に差異。要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "nihonbashi-muromachi-higashi-mitsui-building",
+      "title": "日本橋室町東三井ビルディング",
+      "title_en": "Nihonbashi Muromachi Higashi Mitsui Building",
+      "buildingType": "office",
+      "area": "中央区",
+      "area_en": "Chuo City",
+      "address": "東京都中央区",
+      "completedYear": 2010,
+      "floorsAbove": 22,
+      "developer": "三井不動産",
+      "developer_en": "Mitsui Fudosan",
+      "tags": [
+        "中央区",
+        "高層ビル",
+        "オフィスビル",
+        "三井不動産",
+        "日本橋"
+      ],
+      "tags_en": [
+        "Chuo",
+        "High-rise",
+        "Office building",
+        "Mitsui Fudosan",
+        "Nihonbashi"
+      ],
+      "summary": "中央区日本橋エリアに立つ2010年竣工のオフィスビル（地上22階）。",
+      "summary_en": "An office building in the Nihonbashi area of Chuo City, completed in 2010 (22 floors).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "city-tower-azabu-juban",
+      "title": "シティタワー麻布十番",
+      "title_en": "City Tower Azabu-Juban",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2009,
+      "floorsAbove": 32,
+      "developer": "住友不動産",
+      "developer_en": "Sumitomo Realty",
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "住友不動産",
+        "麻布十番"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Sumitomo Realty",
+        "Azabu-Juban"
+      ],
+      "summary": "港区麻布十番エリアに立つ2009年竣工のタワーマンション（地上32階）。",
+      "summary_en": "A residential tower in the Azabu-Juban area of Minato City, completed in 2009 (32 floors).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "toranomon-hills-residential-tower",
+      "title": "虎ノ門ヒルズ レジデンシャルタワー",
+      "title_en": "Toranomon Hills Residential Tower",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2022,
+      "floorsAbove": 54,
+      "heightM": 220,
+      "developer": "森ビル",
+      "developer_en": "Mori Building",
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "森ビル",
+        "虎ノ門"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Mori Building",
+        "Toranomon"
+      ],
+      "summary": "港区虎ノ門エリアに立つ2022年竣工のタワーマンション（地上54階・高さ約220m）。",
+      "summary_en": "A residential tower in the Toranomon area of Minato City, completed in 2022 (54 floors, approx. 220 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "roppongi-hills-residence",
+      "title": "六本木ヒルズレジデンス",
+      "title_en": "Roppongi Hills Residence",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2003,
+      "floorsAbove": 43,
+      "developer": "森ビル",
+      "developer_en": "Mori Building",
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "森ビル",
+        "六本木"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Mori Building",
+        "Roppongi"
+      ],
+      "summary": "港区六本木エリアに立つ2003年竣工のタワーマンション（地上43階）。",
+      "summary_en": "A residential tower in the Roppongi area of Minato City, completed in 2003 (43 floors).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "shirokane-the-sky",
+      "title": "白金ザ・スカイ",
+      "title_en": "Shirokane The Sky",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2022,
+      "floorsAbove": 45,
+      "heightM": 145,
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "白金"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Shirokane"
+      ],
+      "summary": "港区白金エリアに立つ2022年竣工のタワーマンション（地上45階・高さ約145m）。",
+      "summary_en": "A residential tower in the Shirokane area of Minato City, completed in 2022 (45 floors, approx. 145 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "nippon-television-tower",
+      "title": "日本テレビタワー",
+      "title_en": "Nippon Television Tower",
+      "buildingType": "office",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2003,
+      "floorsAbove": 32,
+      "heightM": 193,
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "オフィスビル",
+        "汐留"
+      ],
+      "tags_en": [
+        "Minato",
+        "Skyscraper",
+        "Office building",
+        "Shiodome"
+      ],
+      "summary": "港区汐留エリアに立つ2003年竣工のオフィスビル（地上32階・高さ約193m）。",
+      "summary_en": "An office building in the Shiodome area of Minato City, completed in 2003 (32 floors, approx. 193 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "marunouchi-eiraku-building",
+      "title": "丸の内永楽ビルディング",
+      "title_en": "Marunouchi Eiraku Building",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2012,
+      "floorsAbove": 27,
+      "heightM": 143,
+      "tags": [
+        "千代田区",
+        "高層ビル",
+        "オフィスビル",
+        "丸の内"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "High-rise",
+        "Office building",
+        "Marunouchi"
+      ],
+      "summary": "千代田区丸の内エリアに立つ2012年竣工のオフィスビル（地上27階・高さ約143m）。",
+      "summary_en": "An office building in the Marunouchi area of Chiyoda City, completed in 2012 (27 floors, approx. 143 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "park-court-hamarikyu-the-tower",
+      "title": "パークコート浜離宮ザ タワー",
+      "title_en": "Park Court Hamarikyu The Tower",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2020,
+      "floorsAbove": 37,
+      "developer": "三井不動産レジデンシャル",
+      "developer_en": "Mitsui Fudosan Residential",
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "三井不動産レジデンシャル",
+        "汐留"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Mitsui Fudosan Residential",
+        "Shiodome"
+      ],
+      "summary": "港区汐留エリアに立つ2020年竣工のタワーマンション（地上37階）。",
+      "summary_en": "A residential tower in the Shiodome area of Minato City, completed in 2020 (37 floors).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "park-tower-toyosu",
+      "title": "パークタワー豊洲",
+      "title_en": "Park Tower Toyosu",
+      "buildingType": "residence",
+      "area": "江東区",
+      "area_en": "Koto City",
+      "address": "東京都江東区",
+      "completedYear": 2022,
+      "floorsAbove": 44,
+      "heightM": 156,
+      "developer": "三井不動産レジデンシャル",
+      "developer_en": "Mitsui Fudosan Residential",
+      "tags": [
+        "江東区",
+        "タワーマンション",
+        "三井不動産レジデンシャル",
+        "豊洲"
+      ],
+      "tags_en": [
+        "Koto",
+        "Residential tower",
+        "Mitsui Fudosan Residential",
+        "Toyosu"
+      ],
+      "summary": "江東区豊洲エリアに立つ2022年竣工のタワーマンション（地上44階・高さ約156m）。",
+      "summary_en": "A residential tower in the Toyosu area of Koto City, completed in 2022 (44 floors, approx. 156 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "shiodome-media-tower",
+      "title": "汐留メディアタワー",
+      "title_en": "Shiodome Media Tower",
+      "buildingType": "office",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2003,
+      "floorsAbove": 34,
+      "heightM": 172,
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "オフィスビル",
+        "汐留"
+      ],
+      "tags_en": [
+        "Minato",
+        "Skyscraper",
+        "Office building",
+        "Shiodome"
+      ],
+      "summary": "港区汐留エリアに立つ2003年竣工のオフィスビル（地上34階・高さ約172m）。",
+      "summary_en": "An office building in the Shiodome area of Minato City, completed in 2003 (34 floors, approx. 172 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "pacific-century-place-marunouchi",
+      "title": "パシフィックセンチュリープレイス丸の内",
+      "title_en": "Pacific Century Place Marunouchi",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2001,
+      "floorsAbove": 31,
+      "heightM": 150,
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "丸の内"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Marunouchi"
+      ],
+      "summary": "千代田区丸の内エリアに立つ2001年竣工のオフィスビル（地上31階・高さ約150m）。",
+      "summary_en": "An office building in the Marunouchi area of Chiyoda City, completed in 2001 (31 floors, approx. 150 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "cerulean-tower",
+      "title": "セルリアンタワー",
+      "title_en": "Cerulean Tower",
+      "buildingType": "office",
+      "area": "渋谷区",
+      "area_en": "Shibuya City",
+      "address": "東京都渋谷区",
+      "completedYear": 2001,
+      "floorsAbove": 41,
+      "heightM": 184,
+      "developer": "東急",
+      "developer_en": "Tokyu",
+      "tags": [
+        "渋谷区",
+        "超高層ビル",
+        "オフィスビル",
+        "東急",
+        "渋谷"
+      ],
+      "tags_en": [
+        "Shibuya",
+        "Skyscraper",
+        "Office building",
+        "Tokyu",
+        "Shibuya"
+      ],
+      "summary": "渋谷区渋谷エリアに立つ2001年竣工のオフィスビル（地上41階・高さ約184m）。",
+      "summary_en": "An office building in the Shibuya area of Shibuya City, completed in 2001 (41 floors, approx. 184 m).",
+      "verified": true,
+      "sources": [
+        "公開情報で竣工年・高さ・階数を確認済み（Wikipedia『東京都の超高層建築物・構築物の一覧』／公式）。"
+      ]
+    },
+    {
+      "slug": "marunouchi-park-building",
+      "title": "丸の内パークビルディング",
+      "title_en": "Marunouchi Park Building",
+      "buildingType": "office",
+      "area": "千代田区",
+      "area_en": "Chiyoda City",
+      "address": "東京都千代田区",
+      "completedYear": 2009,
+      "floorsAbove": 34,
+      "heightM": 170,
+      "developer": "三菱地所",
+      "developer_en": "Mitsubishi Estate",
+      "tags": [
+        "千代田区",
+        "超高層ビル",
+        "オフィスビル",
+        "三菱地所",
+        "丸の内"
+      ],
+      "tags_en": [
+        "Chiyoda",
+        "Skyscraper",
+        "Office building",
+        "Mitsubishi Estate",
+        "Marunouchi"
+      ],
+      "summary": "千代田区丸の内エリアに立つ2009年竣工のオフィスビル（地上34階・高さ約170m）。",
+      "summary_en": "An office building in the Marunouchi area of Chiyoda City, completed in 2009 (34 floors, approx. 170 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "shibaura-island-grove-tower",
+      "title": "芝浦アイランド グローヴタワー",
+      "title_en": "Shibaura Island Grove Tower",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2006,
+      "floorsAbove": 49,
+      "heightM": 163,
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "芝浦"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Shibaura"
+      ],
+      "summary": "港区芝浦エリアに立つ2006年竣工のタワーマンション（地上49階・高さ約163m）。",
+      "summary_en": "A residential tower in the Shibaura area of Minato City, completed in 2006 (49 floors, approx. 163 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "shinagawa-v-tower",
+      "title": "品川Vタワー",
+      "title_en": "Shinagawa V Tower",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2003,
+      "floorsAbove": 43,
+      "heightM": 152,
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "品川"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Shinagawa"
+      ],
+      "summary": "港区品川エリアに立つ2003年竣工のタワーマンション（地上43階・高さ約152m）。",
+      "summary_en": "A residential tower in the Shinagawa area of Minato City, completed in 2003 (43 floors, approx. 152 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "the-parkhouse-gran-minami-aoyama",
+      "title": "ザ・パークハウス グラン 南青山",
+      "title_en": "The Parkhouse Gran Minami-Aoyama",
+      "buildingType": "residence",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2015,
+      "developer": "三菱地所レジデンス",
+      "developer_en": "Mitsubishi Jisho Residence",
+      "tags": [
+        "港区",
+        "タワーマンション",
+        "三菱地所レジデンス",
+        "南青山"
+      ],
+      "tags_en": [
+        "Minato",
+        "Residential tower",
+        "Mitsubishi Jisho Residence",
+        "Minami-Aoyama"
+      ],
+      "summary": "港区南青山エリアに立つ2015年竣工のタワーマンション。",
+      "summary_en": "A residential tower in the Minami-Aoyama area of Minato City, completed in 2015.",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "akasaka-biz-tower",
+      "title": "赤坂Bizタワー",
+      "title_en": "Akasaka Biz Tower",
+      "buildingType": "office",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2008,
+      "floorsAbove": 39,
+      "heightM": 179,
+      "developer": "三井不動産",
+      "developer_en": "Mitsui Fudosan",
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "オフィスビル",
+        "三井不動産",
+        "赤坂"
+      ],
+      "tags_en": [
+        "Minato",
+        "Skyscraper",
+        "Office building",
+        "Mitsui Fudosan",
+        "Akasaka"
+      ],
+      "summary": "港区赤坂エリアに立つ2008年竣工のオフィスビル（地上39階・高さ約179m）。",
+      "summary_en": "An office building in the Akasaka area of Minato City, completed in 2008 (39 floors, approx. 179 m).",
+      "verified": false,
+      "sources": [
+        "主要公開情報ベースの暫定データ。公開前に要最終確認（未検証）。"
+      ]
+    },
+    {
+      "slug": "akasaka-intercity-air",
+      "title": "赤坂インターシティAIR",
+      "title_en": "Akasaka Intercity AIR",
+      "buildingType": "office",
+      "area": "港区",
+      "area_en": "Minato City",
+      "address": "東京都港区",
+      "completedYear": 2017,
+      "floorsAbove": 37,
+      "heightM": 206,
+      "tags": [
+        "港区",
+        "超高層ビル",
+        "オフィスビル",
+        "赤坂"
+      ],
+      "tags_en": [
+        "Minato",
+        "Skyscraper",
+        "Office building",
+        "Akasaka"
+      ],
+      "summary": "港区赤坂エリアに立つ2017年竣工のオフィスビル（地上38階・高さ約205m）。",
+      "summary_en": "An office building in the Akasaka area of Minato City, completed in 2017 (38 floors, approx. 205 m).",
+      "verified": true,
+      "sources": [
+        "公開情報で竣工年・高さ・階数を確認済み（Wikipedia『東京都の超高層建築物・構築物の一覧』／公式）。"
+      ]
     }
   ]
 }

@@ -304,36 +304,8 @@ def trigger_build():
     print(f"CodeBuild起動: {cfg['build_project']}")
 
 
-def handler(event=None, context=None):
-    resolve_secrets()
-    seed = load_seed()
-
-    if LOCAL:
-        # ローカルでも content ディレクトリの既存slugを見て、次の未生成を選ぶ
-        d = os.path.join(BASE_DIR, "..", "site", "src", "content", "buildings")
-        existing = (
-            {f[:-3] for f in os.listdir(d) if f.endswith(".md")}
-            if os.path.isdir(d) else set()
-        )
-    else:
-        existing = get_existing_slugs()
-
-    # 自動公開は verified:true(事実が裏取り済み)の建物だけ。未検証は人の確認待ちで公開しない。
-    # ローカル検証時は ALLOW_UNVERIFIED=1 で未検証も対象にできる。
-    allow_unverified = LOCAL and os.environ.get("ALLOW_UNVERIFIED") == "1"
-    next_b = next(
-        (b for b in seed if b["slug"] not in existing and (b.get("verified") or allow_unverified)),
-        None,
-    )
-    if not next_b:
-        print("公開できる未処理の建物がありません（verified:true のストック切れか全件公開済み）。検証済みの建物をseedに追記してください。")
-        return {"status": "no-op"}
-
-    # デプロイ確認用のスモークテスト: 選定までで止め、API課金・公開はしない。
-    if os.environ.get("DRY_RUN") == "1":
-        print(f"DRY_RUN: 生成対象 {next_b['title']} ({next_b['slug']})")
-        return {"status": "dry-run", "slug": next_b["slug"], "title": next_b["title"]}
-
+def _process_building(next_b, used_titles):
+    """1棟を生成してコミット/ローカル出力する。build発火はここでは行わない。戻り値は結果dict。"""
     print(f"生成対象: {next_b['title']} ({next_b['slug']})")
     result = generate_verified_body(next_b)
     if not result["body"]:
@@ -344,13 +316,13 @@ def handler(event=None, context=None):
 
     # 建物画像(Wikimedia Commons, CCライセンス)を取得。出典・作者・ライセンスを必ず付与。
     # 既出画像との重複を避けるため、ローカルでは既存記事のheroImageを集めて渡す。
-    used_titles = collect_used_image_titles() if LOCAL else set()
     try:
         img = fetch_commons_image(next_b, used_titles=used_titles)
         if img and img.get("url"):
             next_b["heroImage"] = img["url"]
             next_b["heroImageCredit"] = " / ".join(x for x in (img.get("author"), img.get("license")) if x)
             next_b["heroImageLink"] = img.get("source")
+            used_titles.add(img.get("source") or img["url"])  # 同一実行内の重複回避
             print(f"画像取得: {next_b['heroImageCredit']}")
         else:
             print("画像が見つからず（画像なしで公開）")
@@ -388,8 +360,54 @@ def handler(event=None, context=None):
     if en_content:
         path_en = commit_to_github(cfg["content_dir_en"], next_b["slug"], en_content)
         print(f"コミット完了(EN): {path_en}")
-    trigger_build()
     return {"status": "committed", "slug": next_b["slug"], "path": path, "en": bool(en_content)}
+
+
+def handler(event=None, context=None):
+    resolve_secrets()
+    seed = load_seed()
+
+    if LOCAL:
+        # ローカルでも content ディレクトリの既存slugを見て、次の未生成を選ぶ
+        d = os.path.join(BASE_DIR, "..", "site", "src", "content", "buildings")
+        existing = (
+            {f[:-3] for f in os.listdir(d) if f.endswith(".md")}
+            if os.path.isdir(d) else set()
+        )
+    else:
+        existing = get_existing_slugs()
+
+    # 自動公開は verified:true(事実が裏取り済み)の建物だけ。未検証は人の確認待ちで公開しない。
+    # ローカル検証時は ALLOW_UNVERIFIED=1 で未検証も対象にできる。
+    allow_unverified = LOCAL and os.environ.get("ALLOW_UNVERIFIED") == "1"
+
+    # 1回の実行で公開する棟数(既定2件/日)。BUILDINGS_PER_RUN で変更可能。
+    per_run = max(1, int(os.environ.get("BUILDINGS_PER_RUN", "2")))
+    targets = [
+        b for b in seed
+        if b["slug"] not in existing and (b.get("verified") or allow_unverified)
+    ][:per_run]
+    if not targets:
+        print("公開できる未処理の建物がありません（verified:true のストック切れか全件公開済み）。検証済みの建物をseedに追記してください。")
+        return {"status": "no-op"}
+
+    # デプロイ確認用のスモークテスト: 選定までで止め、API課金・公開はしない。
+    if os.environ.get("DRY_RUN") == "1":
+        for b in targets:
+            print(f"DRY_RUN: 生成対象 {b['title']} ({b['slug']})")
+        return {"status": "dry-run", "slugs": [b["slug"] for b in targets]}
+
+    used_titles = collect_used_image_titles() if LOCAL else set()
+    results = []
+    for next_b in targets:
+        results.append(_process_building(next_b, used_titles))
+
+    published = [r for r in results if r["status"] in ("committed", "local")]
+    # コミットが1件でもあれば最後にまとめて1回だけビルドを発火(棟ごとの多重ビルドを避ける)。
+    if published and not LOCAL:
+        trigger_build()
+
+    return {"status": "done", "count": len(published), "results": results}
 
 
 # ローカル実行 / Lambda外実行のエントリ
