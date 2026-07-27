@@ -5,6 +5,9 @@ summary: "A stone double-arch bridge completed in 1911, carrying the Nihon Kokud
 developer: "City of Tokyo"
 architect: "Shinichi Yonemoto (City of Tokyo Bridge Division) · Yorinaka Tsumaki (architectural design)"
 tags: ["Chuo City", "Important Cultural Property", "Stone Arch Bridge", "Road Origin", "Meiji Architecture"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Nihonbashi_12.jpg/1280px-Nihonbashi_12.jpg"
+heroImageCredit: "Aimaimyi / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Nihonbashi_12.jpg"
 ---
 
 ## The Centre of All Roads
