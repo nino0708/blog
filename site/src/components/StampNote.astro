@@ -1,0 +1,79 @@
+---
+// スタンプの備考（メモ）＋現地写真のエディタ。記事ページとスタンプ帳で共用する。
+// 中身の読み書き・サムネイル描画は /stamp.js が data-stamp-* を見て担当。
+// slug を渡すとその建物に固定、渡さない場合は開いた側が data-slug を差し替えて使う（スタンプ帳のダイアログ）。
+import { useT, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  slug?: string;
+}
+const { lang, slug } = Astro.props;
+const t = useT(lang);
+---
+<div
+  class="bj-editor"
+  hidden
+  data-stamp-editor
+  data-slug={slug}
+  data-label-remove-photo={t('stamp.photo.remove')}
+  data-label-saving={t('stamp.photo.saving')}
+>
+  <label class="bj-field">
+    <span class="bj-field-label">{t('stamp.note.label')}</span>
+    <textarea data-stamp-note rows="3" placeholder={t('stamp.note.placeholder')}></textarea>
+  </label>
+  <p class="bj-note-meta"><span data-stamp-note-left>500</span> {t('stamp.note.left')}</p>
+
+  <div class="bj-photo-head">
+    <span class="bj-field-label">{t('stamp.photo.label')}</span>
+    <span class="bj-photo-count" data-stamp-photo-count>0 / 6</span>
+  </div>
+  <ul class="bj-photos" data-stamp-photos></ul>
+  <div class="bj-photo-actions">
+    <button type="button" class="bj-photo-add" data-stamp-add-photo>{t('stamp.photo.add')}</button>
+    <span class="bj-photo-status" data-stamp-photo-status role="status"></span>
+  </div>
+  <input type="file" accept="image/*" multiple hidden data-stamp-file />
+
+  <p class="bj-hint">{t('stamp.photo.hint')}</p>
+</div>
+
+<style>
+  .bj-editor { margin-top: 14px; text-align: left; }
+  .bj-field { display: block; }
+  .bj-field-label { display: block; font-size: 0.78rem; font-weight: 800; color: var(--text-muted); margin-bottom: 5px; }
+  .bj-editor textarea {
+    width: 100%; padding: 10px 12px; font-size: 0.88rem; font-family: inherit;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: var(--surface); color: var(--text); resize: vertical;
+  }
+  .bj-editor textarea:focus { outline: none; border-color: var(--brand); }
+  .bj-note-meta { margin: 4px 0 14px; font-size: 0.72rem; color: var(--text-muted); text-align: right; }
+
+  .bj-photo-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .bj-photo-count { font-size: 0.72rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .bj-photos { list-style: none; padding: 0; margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+  /* サムネイルはJSで生成するためAstroのスコープ属性が付かない。:global で当てる */
+  .bj-photos :global(.bj-photo) { position: relative; width: 84px; height: 84px; }
+  .bj-photos :global(.bj-photo img) {
+    width: 100%; height: 100%; object-fit: cover;
+    border-radius: 10px; border: 1px solid var(--line); background: var(--bg);
+  }
+  .bj-photos :global(.bj-photo-del) {
+    position: absolute; top: -6px; right: -6px; width: 22px; height: 22px;
+    border-radius: 50%; cursor: pointer; line-height: 1; font-weight: 800;
+    border: 1px solid var(--line); background: var(--surface); color: var(--text-muted);
+  }
+  .bj-photos :global(.bj-photo-del:hover) { background: #a2373a; border-color: #a2373a; color: #fff; }
+
+  .bj-photo-actions { display: flex; align-items: center; gap: 10px; }
+  .bj-photo-add {
+    padding: 7px 16px; border-radius: 999px; cursor: pointer; font-weight: 700; font-size: 0.8rem;
+    border: 1.5px solid var(--line); background: var(--surface); color: var(--text);
+  }
+  .bj-photo-add:hover:not(:disabled) { border-color: var(--brand); color: var(--brand); }
+  .bj-photo-add:disabled { opacity: 0.45; cursor: not-allowed; }
+  .bj-photo-status { font-size: 0.76rem; color: var(--text-muted); }
+  .bj-hint { margin: 12px 0 0; font-size: 0.72rem; color: var(--text-muted); }
+</style>

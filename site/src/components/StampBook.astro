@@ -4,6 +4,7 @@
 // 記録は /stamp.js が localStorage に持ち、サーバーへは送らない。
 import { useT, localizePath, type Lang } from '../i18n/ui';
 import { getBuildingRows } from '../lib/buildings';
+import StampNote from './StampNote.astro';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -104,6 +105,9 @@ const noscriptMsg =
             )}
             <span class="sb-card-meta">{fmtMeta(r)}</span>
             <span class="sb-card-date" data-stamp-date data-prefix={t('stamp.visitedOn')}></span>
+            <button type="button" class="sb-card-edit" data-edit-slug={r.slug} data-title={r.title}>
+              <span class="sb-card-marks"></span>{t('stamp.edit')}
+            </button>
           </div>
           <button
             type="button"
@@ -119,9 +123,23 @@ const noscriptMsg =
     </ul>
   </section>
 
+  <dialog class="sb-dialog" id="sb-dialog">
+    <form method="dialog" class="sb-dialog-head">
+      <h2 id="sb-dialog-title">{t('stamp.editor.title')}</h2>
+      <button class="sb-dialog-close" aria-label={t('stamp.close')}>×</button>
+    </form>
+    <StampNote lang={lang} />
+  </dialog>
+
   <section class="sb-backup">
     <h2>{t('stamp.backup.title')}</h2>
     <p>{t('stamp.backup.desc')}</p>
+    <div class="sb-backup-row">
+      <button type="button" class="sb-btn" id="sb-file-export">{t('stamp.backup.file')}</button>
+      <button type="button" class="sb-btn" id="sb-file-import">{t('stamp.backup.fileImport')}</button>
+      <input type="file" accept="application/json,.json" hidden id="sb-file-input" />
+    </div>
+    <p class="sb-file-note">{t('stamp.backup.fileNote')}</p>
     <div class="sb-backup-row">
       <textarea id="sb-code" readonly rows="2" aria-label={t('stamp.backup.title')}></textarea>
       <button type="button" class="sb-btn" id="sb-copy">{t('stamp.backup.copy')}</button>
@@ -146,8 +164,10 @@ const noscriptMsg =
     labels: {
       copied: t('stamp.backup.copied'),
       imported: t('stamp.backup.imported'),
+      fileImported: t('stamp.backup.fileImported'),
       failed: t('stamp.backup.failed'),
       resetConfirm: t('stamp.reset.confirm'),
+      editorTitle: t('stamp.editor.title'),
     },
     lang,
   }}
@@ -201,11 +221,20 @@ const noscriptMsg =
       var byArea = {}, byType = {};
 
       cards.forEach(function (card) {
+        var rec = stamps[card.dataset.slug];
         var on = Object.prototype.hasOwnProperty.call(stamps, card.dataset.slug);
         card.hidden = !on;
         if (!on) return;
         byArea[card.dataset.area] = (byArea[card.dataset.area] || 0) + 1;
         byType[card.dataset.type] = (byType[card.dataset.type] || 0) + 1;
+        // カードに「メモあり／写真n枚」の印を出す
+        var marks = card.querySelector('.sb-card-marks');
+        if (marks) {
+          var bits = [];
+          if (rec.n) bits.push('📝');
+          if (rec.p && rec.p.length) bits.push('📷' + rec.p.length);
+          marks.textContent = bits.length ? bits.join(' ') + ' ' : '';
+        }
       });
 
       document.getElementById('sb-empty').hidden = n !== 0;
@@ -254,6 +283,47 @@ const noscriptMsg =
       } catch (e) {
         msg(labels.failed);
       }
+    });
+
+    // カードの「メモ・写真」→ 共有エディタを開く（エディタは data-slug の付け替えで使い回す）
+    var dialog = document.getElementById('sb-dialog');
+    var editor = dialog ? dialog.querySelector('[data-stamp-editor]') : null;
+    root.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('.sb-card-edit') : null;
+      if (!btn || !dialog || !editor) return;
+      editor.dataset.slug = btn.dataset.editSlug;
+      document.getElementById('sb-dialog-title').textContent = btn.dataset.title + ' — ' + labels.editorTitle;
+      document.dispatchEvent(new CustomEvent('bj:stamp-change'));
+      if (dialog.showModal) dialog.showModal();
+      else dialog.setAttribute('open', '');
+    });
+
+    document.getElementById('sb-file-export').addEventListener('click', function () {
+      window.BJStamp.exportFile().then(function (blob) {
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'builtjapan-stamps-' + new Date().toISOString().slice(0, 10) + '.json';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+      });
+    });
+
+    var fileInput = document.getElementById('sb-file-input');
+    document.getElementById('sb-file-import').addEventListener('click', function () { fileInput.click(); });
+    fileInput.addEventListener('change', function () {
+      var f = fileInput.files && fileInput.files[0];
+      fileInput.value = '';
+      if (!f) return;
+      window.BJStamp.importFile(f).then(
+        function (r) {
+          var text = labels.fileImported.replace('{p}', r.photos);
+          msg(lang === 'ja' ? r.added + text : r.added + ' ' + text);
+        },
+        function () { msg(labels.failed); }
+      );
     });
 
     document.getElementById('sb-reset').addEventListener('click', function () {
@@ -353,6 +423,31 @@ const noscriptMsg =
     color: var(--text-muted); font-weight: 800; line-height: 1;
   }
   .sb-card-toggle:hover { border-color: #a2373a; color: #a2373a; }
+
+  .sb-card-edit {
+    align-self: flex-start; margin-top: 5px; padding: 0; cursor: pointer;
+    background: none; border: none; font-weight: 700; font-size: 0.72rem; color: var(--brand);
+  }
+  .sb-card-edit:hover { text-decoration: underline; }
+
+  .sb-dialog {
+    width: min(520px, calc(100vw - 32px)); padding: 20px 22px 22px;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--surface); color: var(--text); box-shadow: var(--shadow-lg);
+  }
+  .sb-dialog::backdrop { background: rgba(13, 17, 23, 0.45); }
+  .sb-dialog-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .sb-dialog-head h2 { margin: 0 0 4px; font-size: 1rem; }
+  .sb-dialog-close {
+    flex: none; width: 30px; height: 30px; border-radius: 50%; cursor: pointer;
+    border: 1px solid var(--line); background: var(--bg); color: var(--text-muted);
+    font-size: 1.1rem; line-height: 1;
+  }
+  .sb-dialog-close:hover { border-color: var(--brand); color: var(--brand); }
+  /* ダイアログ内のエディタは常に開いた状態で見せる（hidden解除はJSが記録の有無で行う） */
+  .sb-dialog :global(.bj-editor) { margin-top: 4px; }
+
+  .sb-file-note { font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 14px; max-width: 70ch; }
 
   .sb-backup { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--line); }
   .sb-backup h2 { font-size: 1.05rem; margin: 0 0 6px; }

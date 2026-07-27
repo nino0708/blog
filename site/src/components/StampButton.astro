@@ -2,6 +2,7 @@
 // 記事ページの「スタンプを押す」ブロック（自己申告制）。
 // 状態の読み書きと表示の切り替えは /stamp.js が data-stamp-* を見て担当する。
 import { useT, localizePath, type Lang } from '../i18n/ui';
+import StampNote from './StampNote.astro';
 
 interface Props {
   lang: Lang;
@@ -30,6 +31,7 @@ const t = useT(lang);
     <span class="stamp-date" data-stamp-date data-prefix={t('stamp.visitedOn')}></span>
     <a class="stamp-book-link" href={localizePath(lang, '/stamps/')}>{t('stamp.goBook')}</a>
   </div>
+  <StampNote lang={lang} slug={slug} />
 </section>
 
 <style>
@@ -46,6 +48,12 @@ const t = useT(lang);
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background: var(--brand-soft);
+  }
+  /* 備考欄は別コンポーネント(スコープが違う)なので :global で幅だけ整える */
+  .stamp-cta > :global(.bj-editor) {
+    flex: 1 1 100%;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
   }
   .stamp-copy h2 { margin: 0 0 4px; font-size: 1.05rem; }
   .stamp-copy p { margin: 0; font-size: 0.82rem; color: var(--text-muted); max-width: 46ch; }
