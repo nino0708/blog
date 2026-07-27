@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import StampBook from '../../components/StampBook.astro';
+
+const title = 'Stamp Book | Tokyo High-rise Stamp Rally';
+const description =
+  'A self-reported stamp rally for Tokyo’s high-rises: stamp the buildings you have actually visited and track your completion rate. No sign-in — your record stays on your own device.';
+---
+<BaseLayout title={title} description={description} lang="en" altPath="/stamps/" appendSiteName={false}>
+  <p class="breadcrumb"><a href="/en/">Articles</a> / Stamp Book</p>
+  <StampBook lang="en" />
+</BaseLayout>

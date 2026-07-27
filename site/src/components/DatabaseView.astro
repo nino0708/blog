@@ -2,91 +2,14 @@
 // 建物図鑑（百科事典）の一覧表示。
 // 全既知の高層建築を「レジストリ(数値の無いスタブ含む)」＋「公開記事のライブデータ(数値あり)」でマージし、
 // 検索・種別フィルタ・並べ替えできる引きやすい一覧にする。数値は既存データの転記のみ（創作しない）。
-import { getCollection } from 'astro:content';
-import registryData from '../data/buildings-registry.json';
 import { useT, localizePath, type Lang } from '../i18n/ui';
+import { getBuildingRows, type BType } from '../lib/buildings';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const t = useT(lang);
 
-type BType = 'office' | 'residence' | 'tower' | 'bridge';
-interface Row {
-  slug: string;
-  title: string;
-  area: string;
-  buildingType: BType;
-  completedYear?: number;
-  heightM?: number;
-  floorsAbove?: number;
-  verified: boolean;
-  hasArticle: boolean;
-}
-
-const articles = await getCollection('buildings');
-const enArticles = await getCollection('buildings-en');
-const artMap = new Map(articles.map((p) => [p.slug, p.data]));
-const enMap = new Map(enArticles.map((p) => [p.slug, p.data]));
-
-// slug でユニーク化。まずレジストリ、次に記事front matterで上書き（数値は記事優先）。
-const merged = new Map<string, any>();
-for (const r of (registryData as any).buildings) {
-  merged.set(r.slug, { ...r, hasArticle: false });
-}
-for (const a of articles) {
-  const base = merged.get(a.slug) ?? {};
-  merged.set(a.slug, {
-    ...base,
-    slug: a.slug,
-    title: a.data.title,
-    title_en: base.title_en,
-    area: a.data.area ?? base.area,
-    area_en: base.area_en,
-    buildingType: a.data.buildingType ?? base.buildingType ?? 'office',
-    completedYear: a.data.completedYear ?? base.completedYear,
-    heightM: a.data.heightM ?? base.heightM,
-    floorsAbove: a.data.floorsAbove ?? base.floorsAbove,
-    verified: a.data.verified ?? base.verified ?? false,
-    hasArticle: true,
-  });
-}
-
-// 表示用に言語へ寄せる（英語が無ければ日本語名にフォールバック＝正直に）。
-function localized(b: any): { title: string; area: string } {
-  if (lang === 'en') {
-    const en = b.hasArticle ? enMap.get(b.slug) : null;
-    return {
-      title: en?.title ?? b.title_en ?? b.title,
-      area: en?.area ?? b.area_en ?? b.area,
-    };
-  }
-  return { title: b.title, area: b.area };
-}
-
-const rows: Row[] = [...merged.values()].map((b) => {
-  const l = localized(b);
-  return {
-    slug: b.slug,
-    title: l.title,
-    area: l.area ?? '',
-    buildingType: (b.buildingType ?? 'office') as BType,
-    completedYear: b.completedYear,
-    heightM: b.heightM,
-    floorsAbove: b.floorsAbove,
-    verified: Boolean(b.verified),
-    hasArticle: Boolean(b.hasArticle),
-  };
-});
-
-// 初期表示順: 高さ降順（無い建物は末尾）→竣工年降順→名前。
-rows.sort((a, b) => {
-  const ha = a.heightM ?? -1, hb = b.heightM ?? -1;
-  if (hb !== ha) return hb - ha;
-  const ya = a.completedYear ?? -1, yb = b.completedYear ?? -1;
-  if (yb !== ya) return yb - ya;
-  return a.title.localeCompare(b.title, lang === 'ja' ? 'ja' : 'en');
-});
-
+const rows = await getBuildingRows(lang);
 const total = rows.length;
 const withArticle = rows.filter((r) => r.hasArticle).length;
 
@@ -112,6 +35,11 @@ const buildingsBase = localizePath(lang, '/buildings/');
     <h1>{t('db.title')}</h1>
     <p class="lead">{t('db.lead')}</p>
     <p class="db-count" id="db-count" data-total={total}>{countLine}</p>
+    <p class="db-progress">
+      {t('stamp.rate')} <b><span data-stamp-pct={total}>0</span>%</b>
+      <span class="db-progress-sub">（<span data-stamp-count>0</span> / {total} {t('stamp.unit')}）</span>
+      <a href={localizePath(lang, '/stamps/')}>{t('stamp.goBook')}</a>
+    </p>
   </header>
 
   <div class="db-controls">
@@ -128,7 +56,8 @@ const buildingsBase = localizePath(lang, '/buildings/');
       <button class="db-chip" data-type="office">{typeLabel('office', true)}</button>
       <button class="db-chip" data-type="residence">{typeLabel('residence', true)}</button>
       <button class="db-chip" data-type="tower">{typeLabel('tower', true)}</button>
-    <button class="db-chip" data-type="bridge">{typeLabel('bridge', true)}</button>
+      <button class="db-chip" data-type="bridge">{typeLabel('bridge', true)}</button>
+      <button class="db-chip db-chip-visited" id="db-visited" aria-pressed="false">{t('stamp.filter.visited')}</button>
     </div>
     <label class="db-sort">
       <span>{t('db.sort.label')}</span>
@@ -150,12 +79,14 @@ const buildingsBase = localizePath(lang, '/buildings/');
           <th class="c-year">{t('db.col.year')}</th>
           <th class="c-height">{t('db.col.height')}</th>
           <th class="c-status">{t('db.col.status')}</th>
+          <th class="c-stamp">{t('stamp.col')}</th>
         </tr>
       </thead>
       <tbody id="db-rows">
         {rows.map((r) => (
           <tr
             class="db-row"
+            data-slug={r.slug}
             data-name={r.title.toLowerCase()}
             data-area={r.area.toLowerCase()}
             data-type={r.buildingType}
@@ -183,6 +114,17 @@ const buildingsBase = localizePath(lang, '/buildings/');
                 <span class="db-stub">{t('db.stub')}</span>
               )}
             </td>
+            <td class="c-stamp" data-label={t('stamp.col')}>
+              <button
+                type="button"
+                class="db-stamp-btn"
+                aria-pressed="false"
+                aria-label={`${t('stamp.push')}: ${r.title}`}
+                data-stamp-slug={r.slug}
+                data-label-on={t('stamp.pushed.short')}
+                data-label-off={t('stamp.push.short')}
+              ><span data-stamp-label>{t('stamp.push.short')}</span></button>
+            </td>
           </tr>
         ))}
       </tbody>
@@ -198,7 +140,8 @@ const buildingsBase = localizePath(lang, '/buildings/');
     const root = document.getElementById('db');
     if (!root) return;
     const search = root.querySelector('#db-search');
-    const chips = [...root.querySelectorAll('.db-chip')];
+    const chips = [...root.querySelectorAll('.db-chip[data-type]')];
+    const visitedChip = root.querySelector('#db-visited');
     const sortSel = root.querySelector('#db-sort');
     const tbody = root.querySelector('#db-rows');
     const empty = root.querySelector('#db-empty');
@@ -207,6 +150,7 @@ const buildingsBase = localizePath(lang, '/buildings/');
     const rows = [...tbody.querySelectorAll('.db-row')];
 
     let activeType = 'all';
+    let visitedOnly = false;
 
     function num(v) {
       const n = parseFloat(v);
@@ -219,7 +163,9 @@ const buildingsBase = localizePath(lang, '/buildings/');
       for (const tr of rows) {
         const matchType = activeType === 'all' || tr.dataset.type === activeType;
         const matchText = !q || tr.dataset.name.includes(q) || tr.dataset.area.includes(q);
-        const show = matchType && matchText;
+        const matchVisited =
+          !visitedOnly || (window.BJStamp ? window.BJStamp.has(tr.dataset.slug) : false);
+        const show = matchType && matchText && matchVisited;
         tr.hidden = !show;
         if (show) shown++;
       }
@@ -253,6 +199,19 @@ const buildingsBase = localizePath(lang, '/buildings/');
       })
     );
     sortSel.addEventListener('change', () => sortRows(sortSel.value));
+
+    if (visitedChip) {
+      visitedChip.addEventListener('click', () => {
+        visitedOnly = !visitedOnly;
+        visitedChip.classList.toggle('is-active', visitedOnly);
+        visitedChip.setAttribute('aria-pressed', visitedOnly ? 'true' : 'false');
+        apply();
+      });
+    }
+    // スタンプを押したら「訪問済みのみ」表示中の絞り込みも追従させる
+    document.addEventListener('bj:stamp-change', () => {
+      if (visitedOnly) apply();
+    });
   })();
 </script>
 
@@ -321,6 +280,30 @@ const buildingsBase = localizePath(lang, '/buildings/');
     padding: 3px 10px; border-radius: 999px;
   }
   .db-empty { text-align: center; color: var(--text-muted); padding: 32px 16px; margin: 0; }
+
+  /* スタンプラリー（自己申告制）。JS無効では押せないので出さない */
+  .db-progress, .c-stamp, th.c-stamp, .db-chip-visited { display: none; }
+  :global(html.js) .db-progress { display: block; }
+  :global(html.js) .c-stamp, :global(html.js) th.c-stamp { display: table-cell; }
+  :global(html.js) .db-chip-visited { display: inline-block; }
+  .db-progress {
+    margin: 8px 0 0; font-size: 0.88rem; color: var(--text-muted);
+  }
+  .db-progress b { color: var(--brand); font-size: 1.05rem; }
+  .db-progress-sub { margin-right: 10px; }
+  .db-progress a { font-weight: 700; font-size: 0.82rem; white-space: nowrap; }
+  th.c-stamp { text-align: center; }
+  .c-stamp { text-align: center; white-space: nowrap; }
+  .db-stamp-btn {
+    min-width: 46px; padding: 5px 12px; cursor: pointer;
+    border: 1.5px solid var(--line); border-radius: 999px;
+    background: var(--surface); color: var(--text-muted);
+    font-weight: 800; font-size: 0.78rem; transition: all 0.15s ease;
+  }
+  .db-stamp-btn:hover { border-color: var(--brand); color: var(--brand); }
+  .db-stamp-btn.is-stamped {
+    background: var(--brand); border-color: var(--brand); color: #fff;
+  }
   .rank-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 16px; }
 
   /* モバイル: テーブルをカード様に縦積み */
@@ -340,6 +323,7 @@ const buildingsBase = localizePath(lang, '/buildings/');
       font-size: 0.74rem; font-weight: 700; flex: none;
     }
     .db-table tbody td.c-name::before { display: none; }
+    :global(html.js) .db-table tbody td.c-stamp { display: flex; }
     .c-name a, .c-name span { font-size: 1.02rem; }
   }
 </style>

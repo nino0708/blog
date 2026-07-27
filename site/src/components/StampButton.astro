@@ -1,0 +1,82 @@
+---
+// 記事ページの「スタンプを押す」ブロック（自己申告制）。
+// 状態の読み書きと表示の切り替えは /stamp.js が data-stamp-* を見て担当する。
+import { useT, localizePath, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  slug: string;
+}
+const { lang, slug } = Astro.props;
+const t = useT(lang);
+---
+<section class="stamp-cta" aria-label={t('stamp.article.title')}>
+  <div class="stamp-copy">
+    <h2>{t('stamp.article.title')}</h2>
+    <p>{t('stamp.article.hint')}</p>
+  </div>
+  <div class="stamp-actions">
+    <button
+      type="button"
+      class="stamp-btn"
+      aria-pressed="false"
+      data-stamp-slug={slug}
+      data-label-on={t('stamp.pushed')}
+      data-label-off={t('stamp.push')}
+    >
+      <span class="stamp-seal" aria-hidden="true"></span>
+      <span data-stamp-label>{t('stamp.push')}</span>
+    </button>
+    <span class="stamp-date" data-stamp-date data-prefix={t('stamp.visitedOn')}></span>
+    <a class="stamp-book-link" href={localizePath(lang, '/stamps/')}>{t('stamp.goBook')}</a>
+  </div>
+</section>
+
+<style>
+  /* JS無効だと押しても記録できないので、その場合は出さない */
+  .stamp-cta { display: none; }
+  :global(html.js) .stamp-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 32px;
+    padding: 20px 22px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--brand-soft);
+  }
+  .stamp-copy h2 { margin: 0 0 4px; font-size: 1.05rem; }
+  .stamp-copy p { margin: 0; font-size: 0.82rem; color: var(--text-muted); max-width: 46ch; }
+  .stamp-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .stamp-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 11px 20px; border-radius: 999px; cursor: pointer;
+    border: 1.5px solid var(--brand); background: var(--surface);
+    color: var(--brand); font-weight: 800; font-size: 0.95rem;
+    transition: all 0.15s ease;
+  }
+  .stamp-btn:hover { background: var(--brand); color: #fff; }
+  .stamp-btn:hover .stamp-seal { border-color: #fff; }
+  .stamp-seal {
+    width: 18px; height: 18px; border-radius: 50%;
+    border: 2px dashed var(--brand); flex: none;
+    transition: all 0.15s ease;
+  }
+  .stamp-btn.is-stamped {
+    background: var(--brand); border-color: var(--brand); color: #fff;
+    box-shadow: var(--shadow);
+  }
+  .stamp-btn.is-stamped .stamp-seal {
+    border-style: solid; border-color: var(--gold-bright); background: var(--gold);
+  }
+  .stamp-date { font-size: 0.76rem; color: var(--text-muted); min-height: 1em; }
+  .stamp-book-link { font-size: 0.8rem; font-weight: 700; }
+
+  @media (max-width: 560px) {
+    .stamp-actions { align-items: stretch; width: 100%; }
+    .stamp-btn { justify-content: center; }
+    .stamp-date, .stamp-book-link { text-align: center; }
+  }
+</style>

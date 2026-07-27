@@ -3,6 +3,7 @@
 // 本文(レンダリング済みMarkdown)はデフォルトスロットで受け取る。
 import AffiliateLinks from './AffiliateLinks.astro';
 import AffiliateRail from './AffiliateRail.astro';
+import StampButton from './StampButton.astro';
 import { useT, buildingTypeLabel, type Lang } from '../i18n/ui';
 
 interface Props {
@@ -31,13 +32,15 @@ interface Props {
   lat?: number;
   lng?: number;
   mapLabel?: string;
+  /** スタンプラリーの識別子（記事slug）。渡すと本文下にスタンプボタンを出す */
+  slug?: string;
 }
 const {
   lang, title, summary, area, buildingType, verified,
   heroImage, heroImageCredit, heroImageLink,
   specs, tags, tagBase, sources, listPath, searchTitle, searchArea,
   related = [],
-  lat, lng, mapLabel,
+  lat, lng, mapLabel, slug,
 } = Astro.props;
 const t = useT(lang);
 const typeLabel = buildingTypeLabel(lang, buildingType);
@@ -80,6 +83,8 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
   </dl>
 
   <slot />
+
+  {slug && <StampButton lang={lang} slug={slug} />}
 
   {related.length > 0 && (
     <nav class="related" aria-label={t('related.title')}>

@@ -30,6 +30,8 @@ export const GET: APIRoute = async ({ site }) => {
     { loc: `${base}/en/about/`, alternates: pair('/about/', '/en/about/') },
     { loc: `${base}/database/`, alternates: pair('/database/', '/en/database/') },
     { loc: `${base}/en/database/`, alternates: pair('/database/', '/en/database/') },
+    { loc: `${base}/stamps/`, alternates: pair('/stamps/', '/en/stamps/') },
+    { loc: `${base}/en/stamps/`, alternates: pair('/stamps/', '/en/stamps/') },
     { loc: `${base}/rankings/` },
     { loc: `${base}/expressways/`, alternates: pair('/expressways/', '/en/expressways/') },
     { loc: `${base}/en/expressways/`, alternates: pair('/expressways/', '/en/expressways/') },

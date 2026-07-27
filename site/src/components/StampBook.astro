@@ -1,0 +1,375 @@
+---
+// スタンプ帳（自己申告制スタンプラリーの本体ページ）。日本語/英語で共用。
+// 母数は建物図鑑と同じマージ済みリストなので、記事が増えれば対象も自動で増える。
+// 記録は /stamp.js が localStorage に持ち、サーバーへは送らない。
+import { useT, localizePath, type Lang } from '../i18n/ui';
+import { getBuildingRows } from '../lib/buildings';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useT(lang);
+
+const rows = await getBuildingRows(lang);
+const total = rows.length;
+const buildingsBase = localizePath(lang, '/buildings/');
+const dash = '—';
+const fmtMeta = (r: (typeof rows)[number]) =>
+  [r.area, r.completedYear ? (lang === 'ja' ? `${r.completedYear}年` : `${r.completedYear}`) : null,
+   r.heightM ? `${r.heightM}m` : null]
+    .filter(Boolean).join(lang === 'ja' ? ' ・ ' : ' · ') || dash;
+
+// 称号（獲得数のしきい値）。表示はクライアント側で切り替える。
+const ranks = [
+  { min: 0, label: t('stamp.rank.none') },
+  { min: 1, label: t('stamp.rank.novice') },
+  { min: 5, label: t('stamp.rank.explorer') },
+  { min: 15, label: t('stamp.rank.hunter') },
+  { min: 30, label: t('stamp.rank.master') },
+  { min: 50, label: t('stamp.rank.legend') },
+];
+const completeLabel = t('stamp.rank.complete');
+
+const shareUrl = `https://builtjapan.com${localizePath(lang, '/stamps/')}`;
+const shareTemplate =
+  lang === 'ja'
+    ? 'Built Japanのスタンプラリー：東京の高層建築を {n}/{total} 棟（{pct}%）踏破。称号「{rank}」 #BuiltJapan'
+    : 'My Built Japan stamp rally: {n}/{total} Tokyo high-rises ({pct}%) — rank “{rank}”. #BuiltJapan';
+const noscriptMsg =
+  lang === 'ja'
+    ? 'このページはJavaScriptで動作します。ブラウザのJavaScriptを有効にしてください。'
+    : 'This page needs JavaScript. Please enable it in your browser.';
+---
+<section class="sb" id="stamp-book">
+  <header class="sb-head">
+    <h1>{t('stamp.book.title')}</h1>
+    <p class="lead">{t('stamp.book.lead')}</p>
+  </header>
+
+  <noscript><p class="sb-noscript">{noscriptMsg}</p></noscript>
+
+  <div class="sb-panel">
+    <div class="sb-ring">
+      <svg viewBox="0 0 120 120" role="img" aria-labelledby="sb-ring-title">
+        <title id="sb-ring-title">{t('stamp.rate')}</title>
+        <circle class="sb-ring-bg" cx="60" cy="60" r="52" />
+        <circle class="sb-ring-fg" id="sb-ring-fg" cx="60" cy="60" r="52" />
+      </svg>
+      <div class="sb-ring-label">
+        <b><span data-stamp-pct={total}>0</span><span class="sb-pct">%</span></b>
+        <span>{t('stamp.rate')}</span>
+      </div>
+    </div>
+    <div class="sb-stats">
+      <p class="sb-rank" id="sb-rank">{ranks[0].label}</p>
+      <p class="sb-count">
+        <b><span data-stamp-count>0</span></b> / {total} {t('stamp.unit')}
+      </p>
+      <p class="sb-remaining">{t('stamp.remaining')}: <b id="sb-remaining">{total}</b> {t('stamp.unit')}</p>
+      <div class="sb-actions">
+        <a class="sb-btn-primary" href={localizePath(lang, '/database/')}>{t('stamp.goDatabase')}</a>
+        <button type="button" class="sb-btn" id="sb-share">{t('stamp.share')}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="sb-breakdown">
+    <section>
+      <h2>{t('stamp.byArea')}</h2>
+      <ul class="sb-bars" id="sb-by-area"></ul>
+    </section>
+    <section>
+      <h2>{t('stamp.byType')}</h2>
+      <ul class="sb-bars" id="sb-by-type"></ul>
+    </section>
+  </div>
+
+  <section class="sb-list-section">
+    <h2>{t('stamp.list.title')}</h2>
+    <p class="sb-empty" id="sb-empty">{t('stamp.empty')}</p>
+    <ul class="sb-grid" id="sb-grid">
+      {rows.map((r) => (
+        <li
+          class="sb-card"
+          hidden
+          data-slug={r.slug}
+          data-area={r.area || dash}
+          data-type={t(`type.${r.buildingType}.short`)}
+        >
+          <span class="sb-seal" aria-hidden="true">✓</span>
+          <div class="sb-card-body">
+            {r.hasArticle ? (
+              <a class="sb-card-title" href={`${buildingsBase}${r.slug}/`}>{r.title}</a>
+            ) : (
+              <span class="sb-card-title">{r.title}</span>
+            )}
+            <span class="sb-card-meta">{fmtMeta(r)}</span>
+            <span class="sb-card-date" data-stamp-date data-prefix={t('stamp.visitedOn')}></span>
+          </div>
+          <button
+            type="button"
+            class="sb-card-toggle"
+            aria-pressed="true"
+            aria-label={`${t('stamp.pushed')}: ${r.title}`}
+            data-stamp-slug={r.slug}
+            data-label-on="×"
+            data-label-off="+"
+          ><span data-stamp-label>×</span></button>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="sb-backup">
+    <h2>{t('stamp.backup.title')}</h2>
+    <p>{t('stamp.backup.desc')}</p>
+    <div class="sb-backup-row">
+      <textarea id="sb-code" readonly rows="2" aria-label={t('stamp.backup.title')}></textarea>
+      <button type="button" class="sb-btn" id="sb-copy">{t('stamp.backup.copy')}</button>
+    </div>
+    <div class="sb-backup-row">
+      <input type="text" id="sb-import" placeholder={t('stamp.backup.placeholder')} aria-label={t('stamp.backup.placeholder')} />
+      <button type="button" class="sb-btn" id="sb-import-btn">{t('stamp.backup.import')}</button>
+    </div>
+    <p class="sb-msg" id="sb-msg" role="status"></p>
+    <button type="button" class="sb-btn-danger" id="sb-reset">{t('stamp.reset')}</button>
+  </section>
+</section>
+
+<script
+  is:inline
+  define:vars={{
+    total,
+    ranks,
+    completeLabel,
+    shareUrl,
+    shareTemplate,
+    labels: {
+      copied: t('stamp.backup.copied'),
+      imported: t('stamp.backup.imported'),
+      failed: t('stamp.backup.failed'),
+      resetConfirm: t('stamp.reset.confirm'),
+    },
+    lang,
+  }}
+>
+  (function () {
+    var root = document.getElementById('stamp-book');
+    if (!root) return;
+    var cards = [].slice.call(root.querySelectorAll('.sb-card'));
+    var ring = document.getElementById('sb-ring-fg');
+    var CIRC = 2 * Math.PI * 52;
+    if (ring) {
+      ring.style.strokeDasharray = CIRC;
+      ring.style.strokeDashoffset = CIRC;
+    }
+
+    function rankLabel(n) {
+      if (total > 0 && n >= total) return completeLabel;
+      var label = ranks[0].label;
+      for (var i = 0; i < ranks.length; i++) if (n >= ranks[i].min) label = ranks[i].label;
+      return label;
+    }
+
+    function bars(el, counts) {
+      var keys = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; });
+      var max = keys.length ? counts[keys[0]] : 0;
+      el.textContent = '';
+      keys.forEach(function (k) {
+        var li = document.createElement('li');
+        var name = document.createElement('span');
+        name.className = 'sb-bar-name';
+        name.textContent = k;
+        var track = document.createElement('span');
+        track.className = 'sb-bar-track';
+        var fill = document.createElement('span');
+        fill.className = 'sb-bar-fill';
+        fill.style.width = (max ? (counts[k] / max) * 100 : 0) + '%';
+        track.appendChild(fill);
+        var num = document.createElement('b');
+        num.textContent = counts[k];
+        li.appendChild(name);
+        li.appendChild(track);
+        li.appendChild(num);
+        el.appendChild(li);
+      });
+    }
+
+    function render() {
+      if (!window.BJStamp) return;
+      var stamps = window.BJStamp.all();
+      var n = Object.keys(stamps).length;
+      var byArea = {}, byType = {};
+
+      cards.forEach(function (card) {
+        var on = Object.prototype.hasOwnProperty.call(stamps, card.dataset.slug);
+        card.hidden = !on;
+        if (!on) return;
+        byArea[card.dataset.area] = (byArea[card.dataset.area] || 0) + 1;
+        byType[card.dataset.type] = (byType[card.dataset.type] || 0) + 1;
+      });
+
+      document.getElementById('sb-empty').hidden = n !== 0;
+      document.getElementById('sb-rank').textContent = rankLabel(n);
+      document.getElementById('sb-remaining').textContent = String(Math.max(total - n, 0));
+      if (ring) ring.style.strokeDashoffset = String(CIRC * (1 - (total ? n / total : 0)));
+      bars(document.getElementById('sb-by-area'), byArea);
+      bars(document.getElementById('sb-by-type'), byType);
+      var code = document.getElementById('sb-code');
+      if (code) code.value = n ? window.BJStamp.exportCode() : '';
+    }
+
+    function msg(text) {
+      var el = document.getElementById('sb-msg');
+      el.textContent = text;
+      window.setTimeout(function () { if (el.textContent === text) el.textContent = ''; }, 4000);
+    }
+
+    document.getElementById('sb-share').addEventListener('click', function () {
+      var n = window.BJStamp ? window.BJStamp.count() : 0;
+      var pct = total ? Math.round((n / total) * 1000) / 10 : 0;
+      var text = shareTemplate
+        .replace('{n}', n).replace('{total}', total)
+        .replace('{pct}', pct).replace('{rank}', rankLabel(n));
+      window.open(
+        'https://x.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(shareUrl),
+        '_blank',
+        'noopener'
+      );
+    });
+
+    document.getElementById('sb-copy').addEventListener('click', function () {
+      var code = document.getElementById('sb-code');
+      if (!code.value) return;
+      code.select();
+      if (navigator.clipboard) navigator.clipboard.writeText(code.value).then(function () { msg(labels.copied); });
+      else { document.execCommand('copy'); msg(labels.copied); }
+    });
+
+    document.getElementById('sb-import-btn').addEventListener('click', function () {
+      var input = document.getElementById('sb-import');
+      try {
+        var added = window.BJStamp.importCode(input.value);
+        input.value = '';
+        msg(lang === 'ja' ? added + labels.imported : added + ' ' + labels.imported);
+      } catch (e) {
+        msg(labels.failed);
+      }
+    });
+
+    document.getElementById('sb-reset').addEventListener('click', function () {
+      if (window.confirm(labels.resetConfirm)) window.BJStamp.clear();
+    });
+
+    document.addEventListener('bj:stamp-change', render);
+    if (window.BJStamp) render();
+    else window.addEventListener('load', render);
+  })();
+</script>
+
+<style>
+  .sb { margin: 28px 0 48px; }
+  .sb-head h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); margin: 8px 0 8px; }
+  .sb-head .lead { color: var(--text-muted); margin: 0; max-width: 70ch; }
+  .sb-noscript {
+    margin: 18px 0; padding: 14px 16px; border-radius: 12px;
+    background: var(--brand-soft); color: var(--text);
+  }
+
+  .sb-panel {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 28px;
+    margin: 24px 0 32px; padding: 24px;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow);
+  }
+  .sb-ring { position: relative; width: 148px; height: 148px; flex: none; }
+  .sb-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .sb-ring circle { fill: none; stroke-width: 11; stroke-linecap: round; }
+  .sb-ring-bg { stroke: var(--line); }
+  .sb-ring-fg { stroke: var(--brand); transition: stroke-dashoffset 0.6s ease; }
+  .sb-ring-label {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 2px;
+  }
+  .sb-ring-label b { font-size: 1.9rem; line-height: 1; color: var(--brand); }
+  .sb-ring-label .sb-pct { font-size: 1rem; }
+  .sb-ring-label span:last-child { font-size: 0.74rem; color: var(--text-muted); }
+
+  .sb-stats { flex: 1 1 260px; }
+  .sb-rank {
+    display: inline-block; margin: 0 0 10px; padding: 5px 14px; border-radius: 999px;
+    background: var(--gold-grad); color: #3a2c07; font-weight: 800; font-size: 0.85rem;
+  }
+  .sb-count { margin: 0 0 4px; font-size: 1rem; color: var(--text-muted); }
+  .sb-count b { font-size: 1.7rem; color: var(--text); }
+  .sb-remaining { margin: 0 0 16px; font-size: 0.85rem; color: var(--text-muted); }
+  .sb-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .sb-btn, .sb-btn-primary, .sb-btn-danger {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 9px 18px; border-radius: 999px; cursor: pointer;
+    font-weight: 700; font-size: 0.85rem; transition: all 0.15s ease;
+    border: 1.5px solid var(--line); background: var(--surface); color: var(--text);
+  }
+  .sb-btn:hover { border-color: var(--brand); color: var(--brand); }
+  .sb-btn-primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+  .sb-btn-primary:hover { color: #fff; opacity: 0.9; text-decoration: none; }
+  .sb-btn-danger { margin-top: 14px; color: #a2373a; border-color: #e7c9ca; }
+  .sb-btn-danger:hover { background: #a2373a; color: #fff; border-color: #a2373a; }
+
+  .sb-breakdown { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .sb-breakdown h2 { font-size: 0.95rem; margin: 0 0 10px; }
+  .sb-bars { list-style: none; padding: 0; margin: 0; display: grid; gap: 7px; }
+  /* 中身はJSで生成するためAstroのスコープ属性が付かない。:global で当てる */
+  .sb-bars :global(li) { display: grid; grid-template-columns: 6.5em 1fr 2.2em; align-items: center; gap: 10px; font-size: 0.82rem; }
+  .sb-bars :global(.sb-bar-name) { color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sb-bars :global(.sb-bar-track) { height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; }
+  .sb-bars :global(.sb-bar-fill) { display: block; height: 100%; border-radius: 999px; background: var(--brand); }
+  .sb-bars :global(b) { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .sb-list-section { margin-top: 34px; }
+  .sb-list-section h2 { font-size: 1.05rem; margin: 0 0 12px; }
+  .sb-empty { color: var(--text-muted); font-size: 0.88rem; margin: 0 0 8px; }
+  .sb-grid {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px;
+  }
+  .sb-card[hidden] { display: none; } /* display:flex が [hidden] のUA指定に勝ってしまうため明示 */
+  .sb-card {
+    display: flex; align-items: center; gap: 12px; padding: 13px 14px;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 14px; box-shadow: var(--shadow);
+  }
+  .sb-seal {
+    flex: none; width: 34px; height: 34px; border-radius: 50%;
+    display: grid; place-items: center; font-weight: 900; color: #fff;
+    background: var(--brand); border: 2px solid var(--gold-bright);
+  }
+  .sb-card-body { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+  .sb-card-title { font-weight: 700; font-size: 0.9rem; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  a.sb-card-title:hover { color: var(--brand); }
+  .sb-card-meta, .sb-card-date { font-size: 0.72rem; color: var(--text-muted); }
+  .sb-card-toggle {
+    flex: none; width: 26px; height: 26px; border-radius: 50%; cursor: pointer;
+    border: 1px solid var(--line); background: var(--bg);
+    color: var(--text-muted); font-weight: 800; line-height: 1;
+  }
+  .sb-card-toggle:hover { border-color: #a2373a; color: #a2373a; }
+
+  .sb-backup { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--line); }
+  .sb-backup h2 { font-size: 1.05rem; margin: 0 0 6px; }
+  .sb-backup > p { font-size: 0.83rem; color: var(--text-muted); margin: 0 0 14px; max-width: 70ch; }
+  .sb-backup-row { display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start; }
+  .sb-backup textarea, .sb-backup input {
+    flex: 1; min-width: 0; padding: 9px 12px; font-size: 0.8rem; font-family: monospace;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: var(--bg); color: var(--text); resize: vertical;
+  }
+  .sb-backup textarea:focus, .sb-backup input:focus { outline: none; border-color: var(--brand); }
+  .sb-msg { font-size: 0.82rem; color: var(--brand); min-height: 1.2em; margin: 4px 0 0; font-weight: 700; }
+
+  @media (max-width: 560px) {
+    .sb-panel { gap: 18px; padding: 18px; justify-content: center; }
+    .sb-stats { text-align: center; }
+    .sb-actions { justify-content: center; }
+    .sb-actions a, .sb-actions button { flex: 1 1 auto; }
+  }
+</style>
