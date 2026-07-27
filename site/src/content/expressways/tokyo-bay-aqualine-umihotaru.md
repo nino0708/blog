@@ -3,6 +3,9 @@ title: "東京湾アクアライン／海ほたる"
 area: "神奈川県川崎市〜千葉県木更津市"
 summary: "東京湾を横断する全長15.1kmの海上道路。川崎側の約9.5kmが海底トンネル（アクアトンネル）、木更津側の約4.4kmが橋梁（アクアブリッジ）で構成される。接続部の人工島・海ほたるは360度の東京湾を見渡せる展望地として知られる。1997年12月開通。"
 tags: ["東京湾", "高速道路", "アクアライン", "海ほたる", "川崎市", "木更津市", "トンネル", "橋梁"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tokyobay-aqualine-umihotaru-jan7-2015.jpg/1280px-Tokyobay-aqualine-umihotaru-jan7-2015.jpg"
+heroImageCredit: "Nesnad / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyobay-aqualine-umihotaru-jan7-2015.jpg"
 publishedAt: 2026-07-15
 verified: true
 sources:

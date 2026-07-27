@@ -3,6 +3,9 @@ title: "相鉄・東急新横浜線"
 area: "横浜市"
 summary: "2023年3月18日、東急新横浜線（日吉〜新横浜 5.8km・3駅）と相鉄新横浜線（西谷〜新横浜 6.3km・3駅）が同時開業。新横浜駅を結節点として7社局14路線・約250kmの広域直通ネットワークが完成した。"
 tags: ["横浜", "神奈川", "鉄道", "直通運転", "新横浜", "相鉄", "東急"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Shin-Yokohama-Line_Shin-Yokohama-STA_North-Gate.jpg/1280px-Shin-Yokohama-Line_Shin-Yokohama-STA_North-Gate.jpg"
+heroImageCredit: "MaedaAkihiko / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shin-Yokohama-Line_Shin-Yokohama-STA_North-Gate.jpg"
 publishedAt: 2026-07-22
 verified: true
 sources:

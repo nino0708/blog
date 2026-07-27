@@ -3,6 +3,9 @@ title: "首都高速中央環状線（C2）"
 area: "品川区・目黒区・新宿区・板橋区・江戸川区ほか"
 summary: "山手通りの地下に全長18.2kmの山手トンネルを擁する、東京の第二環状高速路線。2015年3月7日に全線開通し、首都圏3環状のうち最初に完成した路線となった。道路トンネルとして日本最長・高速道路トンネルとして世界最長の記録を持つ。"
 tags: ["首都高", "高速道路", "山手トンネル", "中央環状線", "品川区", "目黒区", "新宿区", "都市インフラ"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Hatsudai_minami_yamate_tunnel.jpg/1280px-Hatsudai_minami_yamate_tunnel.jpg"
+heroImageCredit: "鋸香具師 / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Hatsudai_minami_yamate_tunnel.jpg"
 publishedAt: 2026-07-12
 verified: true
 sources:

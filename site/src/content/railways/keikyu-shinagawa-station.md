@@ -3,6 +3,9 @@ title: "京急品川駅地平化・再整備"
 area: "港区"
 summary: "現在2階の高架上にある京急品川駅のホームを地平レベルへ移設する連続立体交差事業。東京都が事業主体となり、泉岳寺駅から新馬場駅まで約1.7kmを対象に2029年度末の完成を目指して工事が進む。"
 tags: ["港区", "品川", "京浜急行", "鉄道", "連続立体交差", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Keikyu_Corporation_Shinagawa_Station_%2829493%29.jpg/1280px-Keikyu_Corporation_Shinagawa_Station_%2829493%29.jpg"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Keikyu_Corporation_Shinagawa_Station_%2829493%29.jpg"
 publishedAt: 2026-07-23
 verified: true
 sources:

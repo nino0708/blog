@@ -5,6 +5,9 @@ summary: "A 60-story residential skyscraper completed in 2017 through an urban r
 developer: "Mitsubishi Jisho Residence, Sotetsu Real Estate, Marubeni"
 architect: "Fujita Corporation"
 tags: ["Shinjuku City", "Nishi-Shinjuku", "Skyscraper", "Residential Tower", "Redevelopment"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Nishishinjuku_60F_south.jpg/1280px-Nishishinjuku_60F_south.jpg"
+heroImageCredit: "鋸香具師 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Nishishinjuku_60F_south.jpg"
 ---
 
 ## A Residential Tower at the Edge of an Office District

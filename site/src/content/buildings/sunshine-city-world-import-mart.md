@@ -11,6 +11,9 @@ totalFloorAreaM2: 93356
 developer: "新都市開発センター（現・株式会社サンシャインシティ）"
 architect: "三菱地所設計"
 tags: ["豊島区", "池袋", "複合開発", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sunshine_City_2012.JPG/1280px-Sunshine_City_2012.JPG"
+heroImageCredit: "Kakidai / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Sunshine_City_2012.JPG"
 publishedAt: 2026-06-23
 summary: "1978年竣工、東京都豊島区東池袋のサンシャインシティを構成する娯楽・展示棟。延床面積93,356㎡。屋上に水族館とプラネタリウムを、2階に屋内テーマパークを擁し、半世紀近く池袋東口の賑わいを支える。巣鴨プリズン跡地に立つという、重い歴史を背負った街区の一棟でもある。"
 verified: true

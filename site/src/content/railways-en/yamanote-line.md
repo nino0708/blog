@@ -3,6 +3,9 @@ title: "Yamanote Line"
 area: "Central Tokyo loop"
 summary: "A 34.5-kilometre loop connecting 30 of Tokyo's core stations — Shibuya, Shinjuku, Ikebukuro, Ueno, Tokyo, Shinagawa — with a full circuit taking around 64 minutes. The loop service opened in 1925 and has defined the spatial structure of central Tokyo ever since."
 tags: ["Yamanote Line", "Railway", "JR East", "Loop line", "Shibuya", "Shinjuku", "Minato City"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Yamanote-Line-E235.jpg/1280px-Yamanote-Line-E235.jpg"
+heroImageCredit: "MaedaAkihiko / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Yamanote-Line-E235.jpg"
 ---
 
 ## The Ring That Closed in 1925

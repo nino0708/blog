@@ -3,6 +3,9 @@ title: "Sotetsu/Tokyu Shin-Yokohama Line"
 area: "Yokohama"
 summary: "Two underground railway lines opened simultaneously on 18 March 2023 — the Tokyu Shin-Yokohama Line (Hiyoshi–Shin-Yokohama, 5.8 km) and the Sotetsu Shin-Yokohama Line (Nishiya–Shin-Yokohama, 6.3 km) — completing a through-running network spanning seven operators and fourteen lines across some 250 kilometres."
 tags: ["Yokohama", "Kanagawa", "Railway", "Through service", "Shin-Yokohama", "Sotetsu", "Tokyu"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Shin-Yokohama-Line_Shin-Yokohama-STA_North-Gate.jpg/1280px-Shin-Yokohama-Line_Shin-Yokohama-STA_North-Gate.jpg"
+heroImageCredit: "MaedaAkihiko / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shin-Yokohama-Line_Shin-Yokohama-STA_North-Gate.jpg"
 ---
 
 ## A Thirty-Eight-Year Plan Completed Underground

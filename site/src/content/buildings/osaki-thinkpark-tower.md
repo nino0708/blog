@@ -11,6 +11,9 @@ totalFloorAreaM2: 151937
 developer: "明電舎・世界貿易センタービルディング"
 architect: "日本設計"
 tags: ["品川区", "オフィスビル", "大崎", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Osaki_Think_Park_Tower_-_panoramio.jpg/1280px-Osaki_Think_Park_Tower_-_panoramio.jpg"
+heroImageCredit: "kcomiida / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Osaki_Think_Park_Tower_-_panoramio.jpg"
 publishedAt: 2026-06-27
 summary: "明電舎大崎工場跡地に立つ地上30階・高さ140.5メートルのオフィスビル。2007年竣工、東京都の都市再生特別地区第1号として大崎駅西口の再開発を牽引した。"
 verified: true

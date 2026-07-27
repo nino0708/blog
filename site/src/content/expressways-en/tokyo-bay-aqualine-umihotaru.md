@@ -3,6 +3,9 @@ title: "Tokyo Bay Aqua-Line / Umihotaru"
 area: "Kawasaki City, Kanagawa – Kisarazu City, Chiba"
 summary: "A 15.1 km sea-crossing expressway linking Kawasaki and Kisarazu across Tokyo Bay, with a 9.5 km undersea tunnel (Aqua-Tunnel) and a 4.4 km overwater bridge (Aqua-Bridge). The midpoint artificial island, Umihotaru, offers 360-degree views of the bay. Opened December 1997."
 tags: ["Tokyo Bay", "Expressway", "Aqua-Line", "Umihotaru", "Kawasaki", "Kisarazu", "Tunnel", "Bridge"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tokyobay-aqualine-umihotaru-jan7-2015.jpg/1280px-Tokyobay-aqualine-umihotaru-jan7-2015.jpg"
+heroImageCredit: "Nesnad / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyobay-aqualine-umihotaru-jan7-2015.jpg"
 ---
 
 ## A Highway Under the Sea and Over the Water

@@ -3,6 +3,9 @@ title: "首都高 日本橋区間地下化事業"
 area: "中央区・千代田区"
 summary: "日本橋川上空の首都高速高架橋を撤去し、地下に移設する大規模工事。神田橋JCT〜江戸橋JCT間の約1.8km、事業費約3,200億円。2035年度の地下開通、2040年度の高架撤去完了を目指す。"
 tags: ["首都高", "高速道路", "日本橋", "中央区", "地下化", "都市インフラ", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Nihonbashi-4.jpg/1280px-Nihonbashi-4.jpg"
+heroImageCredit: "江戸村のとくぞう / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Nihonbashi-4.jpg"
 publishedAt: 2026-07-14
 verified: true
 sources:

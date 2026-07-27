@@ -3,6 +3,9 @@ title: "御茶ノ水駅・聖橋"
 area: "千代田区・文京区"
 summary: "1904年に甲武鉄道の駅として開業した御茶ノ水駅と、1927年竣工の鉄筋コンクリートアーチ橋・聖橋が重なる神田川の谷。震災復興橋梁として生まれた橋と、2023年に新駅舎が完成した駅の改良工事を通じて、東京の都市形成史の一断面を読む。"
 tags: ["千代田区", "文京区", "神田川", "聖橋", "御茶ノ水", "JR東日本", "土木遺産", "鉄道"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/JRE-Chuo-Line-Ochanomizu-Sta-Hijiribashi_2025.jpg/1280px-JRE-Chuo-Line-Ochanomizu-Sta-Hijiribashi_2025.jpg"
+heroImageCredit: "Kaze315 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:JRE-Chuo-Line-Ochanomizu-Sta-Hijiribashi_2025.jpg"
 publishedAt: 2026-07-23
 verified: true
 sources:

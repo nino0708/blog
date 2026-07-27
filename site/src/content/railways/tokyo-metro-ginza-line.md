@@ -3,6 +3,9 @@ title: "東京メトロ銀座線"
 area: "浅草〜渋谷"
 summary: "1927年に東洋初の地下鉄として浅草〜上野間で開業した路線。現在は浅草から渋谷まで19駅・14.2kmを結び、第三軌条・標準軌という開業時の仕様を今も維持する。"
 tags: ["銀座線", "地下鉄", "東京メトロ", "台東区", "渋谷区", "近代化産業遺産"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Ginza-Line-Series1031.jpg/1280px-Ginza-Line-Series1031.jpg"
+heroImageCredit: "MaedaAkihiko / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Ginza-Line-Series1031.jpg"
 publishedAt: 2026-07-19
 verified: true
 sources:

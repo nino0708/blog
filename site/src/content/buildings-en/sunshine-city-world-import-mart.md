@@ -5,6 +5,9 @@ summary: "Completed in 1978 as part of Sunshine City in Higashi-Ikebukuro, Toshi
 developer: "New Urban Development Centre (now Sunshine City Corporation)"
 architect: "Mitsubishi Jisho Sekkei"
 tags: ["Toshima City", "Ikebukuro", "Mixed-use", "Redevelopment"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sunshine_City_2012.JPG/1280px-Sunshine_City_2012.JPG"
+heroImageCredit: "Kakidai / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Sunshine_City_2012.JPG"
 ---
 
 ## The Entertainment and Exhibition Core of Sunshine City

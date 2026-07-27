@@ -3,6 +3,9 @@ title: "Ochanomizu Station and Hijiri Bridge"
 area: "Chiyoda City / Bunkyo City"
 summary: "JR Ochanomizu Station, opened in 1904, and Hijiri Bridge — a 1927 post-earthquake reinforced-concrete arch spanning the Kandagawa gorge. The renovated Hijiribashi-guchi concourse opened in December 2023, completing a multi-year accessibility upgrade alongside a near-century-old civic landmark."
 tags: ["Chiyoda City", "Bunkyo City", "Kandagawa", "Hijiri Bridge", "Ochanomizu", "JR East", "Civil Engineering Heritage", "Railway"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/JRE-Chuo-Line-Ochanomizu-Sta-Hijiribashi_2025.jpg/1280px-JRE-Chuo-Line-Ochanomizu-Sta-Hijiribashi_2025.jpg"
+heroImageCredit: "Kaze315 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:JRE-Chuo-Line-Ochanomizu-Sta-Hijiribashi_2025.jpg"
 ---
 
 ## Three Layers Over the Kandagawa Gorge

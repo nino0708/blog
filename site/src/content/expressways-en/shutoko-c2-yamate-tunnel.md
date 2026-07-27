@@ -3,6 +3,9 @@ title: "Central Circular Route (C2)"
 area: "Shinagawa / Meguro / Shinjuku / Itabashi / Edogawa and more"
 summary: "Tokyo's second ring expressway, completed on 7 March 2015 as the first of the Greater Tokyo three-ring network to open in full. At its core is the Yamate Tunnel — 18.2 kilometres long, Japan's longest road tunnel and the world's longest expressway tunnel."
 tags: ["Shuto Expressway", "Urban infrastructure", "Yamate Tunnel", "Ring road", "Shinagawa", "Meguro", "Shinjuku"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Hatsudai_minami_yamate_tunnel.jpg/1280px-Hatsudai_minami_yamate_tunnel.jpg"
+heroImageCredit: "鋸香具師 / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Hatsudai_minami_yamate_tunnel.jpg"
 ---
 
 ## A Loop Buried Eighteen Kilometres Underground

@@ -3,6 +3,9 @@ title: "山手線"
 area: "都心環状"
 summary: "東京の中心部を環状に結ぶ30駅・34.5kmの鉄道路線。1925年の環状運転開始以来、渋谷・新宿・池袋・上野・東京・品川を一つの輪につなぐ都市の大動脈として機能し続ける。"
 tags: ["山手線", "鉄道", "JR東日本", "環状線", "渋谷区", "新宿区", "港区"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Yamanote-Line-E235.jpg/1280px-Yamanote-Line-E235.jpg"
+heroImageCredit: "MaedaAkihiko / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Yamanote-Line-E235.jpg"
 publishedAt: 2026-07-19
 verified: true
 sources:

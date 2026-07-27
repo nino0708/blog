@@ -3,6 +3,9 @@ title: "Tokyo Metro Ginza Line"
 area: "Asakusa to Shibuya"
 summary: "Asia's first subway, opened on 30 December 1927 between Asakusa and Ueno, now running 14.2 km across 19 stations from Asakusa to Shibuya. The Ginza Line retains its original engineering — third-rail power at 600 V DC and standard-gauge track — largely unchanged since opening."
 tags: ["Ginza Line", "Subway", "Tokyo Metro", "Taito City", "Shibuya City", "Industrial Heritage"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Ginza-Line-Series1031.jpg/1280px-Ginza-Line-Series1031.jpg"
+heroImageCredit: "MaedaAkihiko / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Ginza-Line-Series1031.jpg"
 ---
 
 ## Asia's First Underground Railway, 1927

@@ -5,6 +5,9 @@ summary: "A 30-storey, 140.5-metre office tower completed in 2007 on the former 
 developer: "Meidensha / World Trade Center Building Company"
 architect: "Nikken Sekkei"
 tags: ["Shinagawa City", "Office tower", "Osaki", "Redevelopment"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Osaki_Think_Park_Tower_-_panoramio.jpg/1280px-Osaki_Think_Park_Tower_-_panoramio.jpg"
+heroImageCredit: "kcomiida / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Osaki_Think_Park_Tower_-_panoramio.jpg"
 ---
 
 ## Osaki, Remade

@@ -3,6 +3,9 @@ title: "Keikyu Shinagawa Station Lowering Project"
 area: "Minato City"
 summary: "An unusual railway restructuring that will lower Keikyu's Shinagawa Station platforms from the second floor to ground level as part of a continuous grade-separation project along 1.7 km between Sengakuji and Shimbamba stations. Led by Tokyo Metropolitan Government, targeting completion in fiscal year 2029."
 tags: ["Minato City", "Shinagawa", "Keikyu", "Railway", "Grade Separation", "Redevelopment"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Keikyu_Corporation_Shinagawa_Station_%2829493%29.jpg/1280px-Keikyu_Corporation_Shinagawa_Station_%2829493%29.jpg"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Keikyu_Corporation_Shinagawa_Station_%2829493%29.jpg"
 ---
 
 ## A Rare Reversal: Bringing the Tracks Down

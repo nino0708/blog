@@ -3,6 +3,9 @@ title: "Takanawa Gateway Station / Takanawa Gateway City"
 area: "Minato City"
 summary: "Opened in March 2020 as a new stop on the Yamanote and Keihin-Tohoku lines, Takanawa Gateway Station features a dramatic origami-inspired roof designed by Kengo Kuma. It anchors the Takanawa Gateway City redevelopment — a 9.5-hectare project on a former JR depot site transforming the gap between Shinagawa and Tamachi."
 tags: ["Minato City", "Takanawa", "Railway", "Redevelopment", "Kengo Kuma", "JR East", "Yamanote Line"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Takanawa_Gateway_Station_200316a1.jpg/1280px-Takanawa_Gateway_Station_200316a1.jpg"
+heroImageCredit: "江戸村のとくぞう / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Takanawa_Gateway_Station_200316a1.jpg"
 ---
 
 ## A New Station Between Shinagawa and Tamachi

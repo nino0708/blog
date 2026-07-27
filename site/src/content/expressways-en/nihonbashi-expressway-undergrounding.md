@@ -3,6 +3,9 @@ title: "Nihonbashi Expressway Undergrounding"
 area: "Chuo City / Chiyoda City"
 summary: "A ¥320 billion project to move 1.8 km of the Shuto Expressway's Inner Circular Route underground between Kandabashi and Edobashi junctions, dismantling the elevated structure that has shadowed Nihonbashi Bridge since 1963 and restoring open sky above the river by 2040."
 tags: ["Shuto Expressway", "Nihonbashi", "Urban infrastructure", "Chuo City", "Undergrounding", "Redevelopment"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Nihonbashi-4.jpg/1280px-Nihonbashi-4.jpg"
+heroImageCredit: "江戸村のとくぞう / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Nihonbashi-4.jpg"
 ---
 
 ## Returning the Sky to Nihonbashi

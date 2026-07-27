@@ -3,6 +3,9 @@ title: "高輪ゲートウェイ駅／高輪ゲートウェイシティ"
 area: "港区"
 summary: "2020年3月に山手線・京浜東北線の新駅として開業した高輪ゲートウェイ駅。隈研吾がデザインした折り紙モチーフの大屋根を持ち、旧JR車両基地跡地9.5haに広がる「高輪ゲートウェイシティ」の核として、品川と田町のあいだに新しい街のかたちを刻みつつある。"
 tags: ["港区", "高輪", "鉄道", "再開発", "隈研吾", "JR東日本", "山手線"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Takanawa_Gateway_Station_200316a1.jpg/1280px-Takanawa_Gateway_Station_200316a1.jpg"
+heroImageCredit: "江戸村のとくぞう / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Takanawa_Gateway_Station_200316a1.jpg"
 publishedAt: 2026-07-18
 verified: true
 sources:

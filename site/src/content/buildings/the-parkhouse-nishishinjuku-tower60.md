@@ -10,6 +10,9 @@ heightM: 199.16
 developer: "三菱地所レジデンス・相鉄不動産・丸紅"
 architect: "フジタ"
 tags: ["新宿区", "タワーマンション", "西新宿", "超高層マンション", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Nishishinjuku_60F_south.jpg/1280px-Nishishinjuku_60F_south.jpg"
+heroImageCredit: "鋸香具師 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Nishishinjuku_60F_south.jpg"
 publishedAt: 2026-07-07
 summary: "西新宿五丁目の市街地再開発から生まれた、地上60階・高さ約199メートルの超高層マンション。2017年竣工。"
 verified: true
