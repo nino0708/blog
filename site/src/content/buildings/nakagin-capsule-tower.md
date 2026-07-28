@@ -3,6 +3,8 @@ title: "中銀カプセルタワービル"
 buildingType: office
 area: "中央区"
 address: "東京都中央区銀座8丁目16-10"
+lat: 35.66564
+lng: 139.76345
 completedYear: 1972
 floorsAbove: 13
 floorsBelow: 1

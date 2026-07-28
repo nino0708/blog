@@ -3,6 +3,8 @@ title: "品川インターシティ"
 buildingType: office
 area: "港区"
 address: "東京都港区港南二丁目"
+lat: 35.626889
+lng: 139.741972
 completedYear: 1998
 floorsAbove: 32
 floorsBelow: 2

@@ -3,6 +3,8 @@ title: "大手町タワー"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区大手町一丁目"
+lat: 35.685606
+lng: 139.765275
 completedYear: 2014
 floorsAbove: 38
 floorsBelow: 6

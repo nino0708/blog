@@ -2,6 +2,8 @@
 title: "泉ガーデンタワー"
 buildingType: office
 area: "港区"
+lat: 35.66467
+lng: 139.73938
 completedYear: 2002
 floorsAbove: 45
 floorsBelow: 2

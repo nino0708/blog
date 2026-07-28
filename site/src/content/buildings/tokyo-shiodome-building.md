@@ -3,8 +3,8 @@ title: "東京汐留ビルディング"
 buildingType: office
 area: "港区"
 address: "東京都港区東新橋1-9-1"
-lat: 35.663639
-lng: 139.760972
+lat: 35.663
+lng: 139.761222
 completedYear: 2005
 floorsAbove: 37
 floorsBelow: 4

@@ -3,6 +3,8 @@ title: "東京ミッドタウン八重洲"
 buildingType: office
 area: "中央区"
 address: "東京都中央区八重洲二丁目2番1号"
+lat: 35.679695
+lng: 139.769165
 completedYear: 2022
 floorsAbove: 45
 floorsBelow: 4

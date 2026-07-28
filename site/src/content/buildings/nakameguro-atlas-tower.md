@@ -3,6 +3,8 @@ title: "中目黒アトラスタワー"
 buildingType: residence
 area: "目黒区"
 address: "東京都目黒区上目黒1-26-1"
+lat: 35.6438
+lng: 139.7002
 completedYear: 2009
 floorsAbove: 45
 floorsBelow: 2

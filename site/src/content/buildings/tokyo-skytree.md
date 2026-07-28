@@ -3,6 +3,8 @@ title: "東京スカイツリー"
 buildingType: office
 area: "墨田区"
 address: "東京都墨田区押上一丁目1番2号"
+lat: 35.710056
+lng: 139.810722
 completedYear: 2012
 floorsAbove: 29
 floorsBelow: 1

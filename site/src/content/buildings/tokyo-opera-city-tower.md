@@ -3,6 +3,8 @@ title: "東京オペラシティタワー"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区西新宿三丁目"
+lat: 35.68309
+lng: 139.68707
 completedYear: 1996
 floorsAbove: 54
 floorsBelow: 4

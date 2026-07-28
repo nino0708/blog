@@ -3,6 +3,8 @@ title: "丸の内ビルディング"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区丸の内二丁目"
+lat: 35.681028
+lng: 139.763778
 completedYear: 2002
 floorsAbove: 37
 floorsBelow: 4

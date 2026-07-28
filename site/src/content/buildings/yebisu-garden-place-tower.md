@@ -3,8 +3,8 @@ title: "恵比寿ガーデンプレイスタワー"
 buildingType: office
 area: "渋谷区"
 address: "東京都渋谷区恵比寿四丁目20番3号"
-lat: 35.642089
-lng: 139.713449
+lat: 35.643627
+lng: 139.712708
 completedYear: 1994
 floorsAbove: 40
 floorsBelow: 5

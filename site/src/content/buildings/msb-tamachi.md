@@ -6,6 +6,8 @@ heroImageLink: "https://commons.wikimedia.org/wiki/File:Tamachi_Station_Tower_N_
 buildingType: office
 area: "港区"
 address: "東京都港区芝浦"
+lat: 35.644856
+lng: 139.749165
 completedYear: 2020
 floorsAbove: 36
 floorsBelow: 2

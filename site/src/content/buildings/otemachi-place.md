@@ -3,6 +3,8 @@ title: "大手町プレイス"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区大手町二丁目"
+lat: 35.687096
+lng: 139.768067
 completedYear: 2018
 floorsAbove: 35
 floorsBelow: 3

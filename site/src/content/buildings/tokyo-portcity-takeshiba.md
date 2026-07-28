@@ -6,6 +6,8 @@ heroImageLink: "https://commons.wikimedia.org/wiki/File:Portcity_Takeshiba_(crop
 buildingType: office
 area: "港区"
 address: "東京都港区海岸1丁目7-1"
+lat: 35.655111
+lng: 139.760611
 completedYear: 2020
 floorsAbove: 40
 floorsBelow: 2

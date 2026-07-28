@@ -3,6 +3,8 @@ title: "パークタワー晴海"
 buildingType: residence
 area: "中央区"
 address: "東京都中央区晴海2丁目2番42号"
+lat: 35.656675
+lng: 139.787227
 completedYear: 2019
 floorsAbove: 48
 floorsBelow: 1

@@ -3,6 +3,8 @@ title: "渋谷ストリーム"
 buildingType: office
 area: "渋谷区"
 address: "東京都渋谷区渋谷三丁目21番3号"
+lat: 35.657167
+lng: 139.703167
 completedYear: 2018
 floorsAbove: 35
 floorsBelow: 4

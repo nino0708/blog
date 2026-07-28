@@ -3,6 +3,8 @@ title: "スカイズ タワー＆ガーデン"
 buildingType: residence
 area: "江東区"
 address: "東京都江東区豊洲六丁目2番31号"
+lat: 35.647618
+lng: 139.792152
 completedYear: 2014
 floorsAbove: 44
 floorsBelow: 2

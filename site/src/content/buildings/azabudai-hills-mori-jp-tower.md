@@ -3,6 +3,8 @@ title: 麻布台ヒルズ 森JPタワー
 buildingType: office
 area: 港区
 address: 東京都港区虎ノ門・麻布台
+lat: 35.660992
+lng: 139.740386
 completedYear: 2023
 floorsAbove: 64
 floorsBelow: 5

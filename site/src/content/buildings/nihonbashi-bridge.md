@@ -3,8 +3,8 @@ title: "日本橋"
 buildingType: bridge
 area: "中央区"
 address: "東京都中央区日本橋1丁目〜日本橋室町1丁目（日本橋川）"
-lat: 35.683100
-lng: 139.774400
+lat: 35.684068
+lng: 139.774503
 completedYear: 1911
 developer: "東京市"
 architect: "米元晋一（東京市橋梁課）・妻木頼黄（意匠）"

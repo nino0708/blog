@@ -3,6 +3,8 @@ title: ザ・東京タワーズ
 buildingType: residence
 area: 中央区
 address: 東京都中央区勝どき
+lat: 35.655497
+lng: 139.774556
 completedYear: 2008
 floorsAbove: 58
 floorsBelow: 2

@@ -3,6 +3,8 @@ title: "虎ノ門ヒルズ 森タワー"
 buildingType: office
 area: "港区"
 address: "東京都港区虎ノ門"
+lat: 35.667003
+lng: 139.749485
 completedYear: 2014
 floorsAbove: 52
 heightM: 247

@@ -3,6 +3,8 @@ title: "東京ミッドタウン日比谷"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区有楽町1-1-2"
+lat: 35.673722
+lng: 139.75925
 completedYear: 2018
 floorsAbove: 35
 floorsBelow: 4

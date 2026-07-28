@@ -3,6 +3,8 @@ title: "東京都庁第一本庁舎"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区西新宿二丁目"
+lat: 35.68951
+lng: 139.69171
 completedYear: 1990
 floorsAbove: 48
 floorsBelow: 3

@@ -3,6 +3,8 @@ title: "ドゥ・トゥール（DEUX TOURS）"
 buildingType: residence
 area: "中央区"
 address: "東京都中央区晴海3丁目"
+lat: 35.65458
+lng: 139.77723
 completedYear: 2015
 floorsAbove: 52
 floorsBelow: 1

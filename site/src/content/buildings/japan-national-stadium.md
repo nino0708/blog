@@ -3,6 +3,8 @@ title: "国立競技場"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区霞ヶ丘町10番1号"
+lat: 35.6778
+lng: 139.7145
 completedYear: 2019
 floorsAbove: 5
 floorsBelow: 2

@@ -3,8 +3,8 @@ title: "東急歌舞伎町タワー"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区歌舞伎町一丁目"
-lat: 35.694500
-lng: 139.702800
+lat: 35.695897
+lng: 139.700376
 completedYear: 2023
 floorsAbove: 48
 floorsBelow: 5

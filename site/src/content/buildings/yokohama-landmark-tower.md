@@ -3,6 +3,8 @@ title: "横浜ランドマークタワー"
 buildingType: office
 area: "横浜市西区"
 address: "神奈川県横浜市西区みなとみらい二丁目2番1号"
+lat: 35.454722
+lng: 139.631667
 completedYear: 1993
 floorsAbove: 70
 floorsBelow: 3

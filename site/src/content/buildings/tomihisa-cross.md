@@ -3,6 +3,8 @@ title: "富久クロス コンフォートタワー"
 buildingType: residence
 area: "新宿区"
 address: "東京都新宿区富久町"
+lat: 35.691927
+lng: 139.713879
 completedYear: 2015
 floorsAbove: 55
 floorsBelow: 2

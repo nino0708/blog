@@ -3,6 +3,8 @@ title: "アーバンドック パークシティ豊洲 タワーA"
 buildingType: residence
 area: "江東区"
 address: "東京都江東区豊洲二丁目"
+lat: 35.657238
+lng: 139.791062
 completedYear: 2008
 floorsAbove: 52
 floorsBelow: 1

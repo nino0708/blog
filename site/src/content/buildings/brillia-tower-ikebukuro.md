@@ -3,6 +3,8 @@ title: "ブリリアタワー池袋"
 buildingType: residence
 area: "豊島区"
 address: "東京都豊島区南池袋二丁目"
+lat: 35.72625
+lng: 139.716667
 completedYear: 2015
 floorsAbove: 49
 floorsBelow: 3

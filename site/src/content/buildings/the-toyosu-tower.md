@@ -3,8 +3,8 @@ title: "ザ・トヨスタワー"
 buildingType: residence
 area: "江東区"
 address: "東京都江東区豊洲三丁目6番5号"
-lat: 35.651
-lng: 139.797
+lat: 35.658707
+lng: 139.796692
 completedYear: 2009
 floorsAbove: 43
 floorsBelow: 1

@@ -3,6 +3,8 @@ title: "トーチタワー（TOKYO TORCH）"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区大手町二丁目"
+lat: 35.684717
+lng: 139.769364
 floorsAbove: 63
 floorsBelow: 4
 heightM: 390

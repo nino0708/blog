@@ -3,6 +3,8 @@ title: "二子玉川ライズ"
 buildingType: office
 area: "世田谷区"
 address: "東京都世田谷区玉川二丁目"
+lat: 35.6122
+lng: 139.628
 completedYear: 2015
 floorsAbove: 42
 floorsBelow: 1

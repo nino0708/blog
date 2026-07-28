@@ -3,6 +3,8 @@ title: "新宿野村ビルディング"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区西新宿一丁目"
+lat: 35.692778
+lng: 139.695278
 completedYear: 1978
 floorsAbove: 50
 floorsBelow: 5

@@ -3,6 +3,8 @@ title: "東京タワー"
 buildingType: office
 area: "港区"
 address: "東京都港区芝公園4丁目2番8号"
+lat: 35.658611
+lng: 139.745556
 completedYear: 1958
 floorsAbove: 16
 floorsBelow: 2

@@ -3,6 +3,8 @@ title: "ザ・パークハウス西新宿タワー60"
 buildingType: residence
 area: "新宿区"
 address: "東京都新宿区西新宿五丁目"
+lat: 35.693811
+lng: 139.686617
 completedYear: 2017
 floorsAbove: 60
 floorsBelow: 2

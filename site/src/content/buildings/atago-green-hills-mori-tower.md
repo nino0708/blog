@@ -3,6 +3,8 @@ title: "愛宕グリーンヒルズ MORIタワー"
 buildingType: office
 area: "港区"
 address: "東京都港区愛宕"
+lat: 35.662147
+lng: 139.748899
 completedYear: 2001
 floorsAbove: 42
 heightM: 187

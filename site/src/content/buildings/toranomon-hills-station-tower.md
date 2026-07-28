@@ -3,6 +3,8 @@ title: "虎ノ門ヒルズ ステーションタワー"
 buildingType: office
 area: "港区"
 address: "東京都港区虎ノ門"
+lat: 35.66747
+lng: 139.746879
 completedYear: 2023
 floorsAbove: 49
 heightM: 266

@@ -3,6 +3,8 @@ title: "品川シーズンテラス"
 buildingType: office
 area: "港区"
 address: "東京都港区港南一丁目2番70号"
+lat: 35.632639
+lng: 139.743261
 completedYear: 2015
 floorsAbove: 32
 floorsBelow: 1

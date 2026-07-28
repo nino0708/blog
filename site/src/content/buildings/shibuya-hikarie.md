@@ -3,6 +3,8 @@ title: "渋谷ヒカリエ"
 buildingType: office
 area: "渋谷区"
 address: "東京都渋谷区渋谷二丁目21番1号"
+lat: 35.6589
+lng: 139.703
 completedYear: 2012
 floorsAbove: 34
 floorsBelow: 4

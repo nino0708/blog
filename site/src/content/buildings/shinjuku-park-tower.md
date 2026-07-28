@@ -3,8 +3,8 @@ title: "新宿パークタワー"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区西新宿三丁目7番1号"
-lat: 35.685600
-lng: 139.691000
+lat: 35.685639
+lng: 139.69095
 completedYear: 1994
 floorsAbove: 52
 floorsBelow: 5

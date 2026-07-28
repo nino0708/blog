@@ -3,6 +3,8 @@ title: "レインボーブリッジ"
 buildingType: office
 area: "港区"
 address: "東京都港区芝浦〜台場（東京港連絡橋）"
+lat: 35.636389
+lng: 139.763611
 completedYear: 1993
 heightM: 126
 tags: ["港区", "吊橋", "東京港", "首都高速", "お台場", "土木遺産"]

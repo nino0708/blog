@@ -3,6 +3,8 @@ title: "世界貿易センタービルディング南館"
 buildingType: office
 area: "港区"
 address: "東京都港区浜松町二丁目"
+lat: 35.6563
+lng: 139.757
 completedYear: 2021
 floorsAbove: 39
 floorsBelow: 3

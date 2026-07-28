@@ -3,6 +3,8 @@ title: "新宿住友ビルディング"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区西新宿二丁目"
+lat: 35.691265
+lng: 139.692605
 completedYear: 1974
 floorsAbove: 52
 floorsBelow: 4

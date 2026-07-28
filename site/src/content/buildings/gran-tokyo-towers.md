@@ -3,6 +3,8 @@ title: "グラントウキョウ ノースタワー／サウスタワー"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区丸の内一丁目9番1号"
+lat: 35.681694
+lng: 139.768972
 completedYear: 2007
 floorsAbove: 43
 floorsBelow: 4

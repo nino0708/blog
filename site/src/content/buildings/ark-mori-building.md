@@ -3,6 +3,8 @@ title: "アーク森ビル"
 buildingType: office
 area: "港区"
 address: "東京都港区赤坂1-12-32"
+lat: 35.667114
+lng: 139.740167
 completedYear: 1986
 floorsAbove: 37
 floorsBelow: 4

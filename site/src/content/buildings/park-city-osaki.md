@@ -3,6 +3,8 @@ title: "パークシティ大崎"
 buildingType: residence
 area: "品川区"
 address: "東京都品川区北品川五丁目3番1号"
+lat: 35.622492
+lng: 139.731749
 completedYear: 2015
 floorsAbove: 40
 floorsBelow: 2

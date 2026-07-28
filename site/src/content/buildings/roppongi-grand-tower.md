@@ -2,6 +2,8 @@
 title: "住友不動産六本木グランドタワー"
 buildingType: office
 area: "港区"
+lat: 35.6646
+lng: 139.737661
 completedYear: 2016
 floorsAbove: 43
 floorsBelow: 2

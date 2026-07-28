@@ -3,6 +3,8 @@ title: "アークヒルズ仙石山森タワー"
 buildingType: office
 area: "港区"
 address: "東京都港区六本木一丁目9番10号"
+lat: 35.663525
+lng: 139.741791
 completedYear: 2012
 floorsAbove: 48
 floorsBelow: 4

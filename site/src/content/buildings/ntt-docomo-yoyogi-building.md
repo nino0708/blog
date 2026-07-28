@@ -3,6 +3,8 @@ title: "NTTドコモ代々木ビル（ドコモタワー）"
 buildingType: office
 area: "渋谷区"
 address: "東京都渋谷区千駄ヶ谷"
+lat: 35.684451
+lng: 139.702884
 completedYear: 2000
 floorsAbove: 27
 heightM: 240

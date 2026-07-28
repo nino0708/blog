@@ -3,6 +3,8 @@ title: "日本橋三井タワー"
 buildingType: office
 area: "中央区"
 address: "東京都中央区日本橋室町二丁目1番1号"
+lat: 35.686944
+lng: 139.773056
 completedYear: 2005
 floorsAbove: 39
 floorsBelow: 4

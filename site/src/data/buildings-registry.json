@@ -1,840 +1,1462 @@
 {
-  "_comment": "建物図鑑(百科事典)の正規化レジストリ。全既知の高層建築(office/residence/tower)を1棟1エントリで集約。数値(heightM/completedYear/floorsAbove等)は既存の seed buildings.json / 公開記事 front matter からの転記のみで、創作・推測はしない。記事がある建物はビルド時に getCollection(buildings) のfront matterが優先され、ここは記事が無い建物(スタブ)の受け皿＋seed確定値の保持を担う。lat/lngは出典付き確認が取れたら追記(現状は未設定=地図フェーズ#2で対応)。",
-  "_source": "generator/data/buildings.json (seed, 数値あり) ∪ templates/article-ideas.json (ネタ帳, 名前/エリア/種別のみ)",
-  "buildings": [
-    {
-      "slug": "ark-hills-sengokuyama-mori-tower",
-      "title": "アークヒルズ仙石山森タワー",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "ark-mori-building",
-      "title": "アーク森ビル（アークヒルズ）",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "asakusa-culture-tourist-center",
-      "title": "浅草文化観光センター",
-      "area": "台東区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "atago-green-hills-mori-tower",
-      "title": "愛宕グリーンヒルズ MORIタワー",
-      "title_en": "Atago Green Hills Mori Tower",
-      "area": "港区",
-      "area_en": "Minato City",
-      "buildingType": "office",
-      "completedYear": 2001,
-      "heightM": 187,
-      "floorsAbove": 42,
-      "developer": "森ビル",
-      "developer_en": "Mori Building",
-      "verified": true,
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "bayz-tower-and-garden",
-      "title": "ベイズ タワー&ガーデン（BAYZ）",
-      "area": "江東区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "brillia-tower-ikebukuro",
-      "title": "ブリリアタワー池袋",
-      "area": "豊島区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "century-park-tower",
-      "title": "センチュリーパークタワー",
-      "title_en": "Century Park Tower",
-      "area": "中央区",
-      "area_en": "Chuo City",
-      "buildingType": "residence",
-      "completedYear": 1999,
-      "heightM": 180,
-      "floorsAbove": 54,
-      "developer": "三井不動産",
-      "developer_en": "Mitsui Fudosan",
-      "verified": true,
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "city-tower-shinagawa",
-      "title": "シティタワー品川",
-      "area": "港区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "city-towers-toyosu-the-twin",
-      "title": "シティタワーズ豊洲 ザ・ツイン",
-      "area": "江東区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "dentsu-headquarters",
-      "title": "電通本社ビル（カレッタ汐留）",
-      "title_en": "Dentsu Headquarters (Caretta Shiodome)",
-      "area": "港区",
-      "area_en": "Minato City",
-      "buildingType": "office",
-      "completedYear": 2002,
-      "heightM": 213,
-      "floorsAbove": 48,
-      "verified": true,
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "deux-tours-kachidoki",
-      "title": "ドゥ・トゥール（DEUX TOURS）",
-      "area": "中央区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "futakotamagawa-rise",
-      "title": "二子玉川ライズ",
-      "area": "世田谷区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "gran-tokyo-towers",
-      "title": "グラントウキョウ ノースタワー／サウスタワー",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "grantokyo-north-tower",
-      "title": "グラントウキョウ ノースタワー",
-      "title_en": "GranTokyo North Tower",
-      "area": "千代田区",
-      "area_en": "Chiyoda City",
-      "buildingType": "office",
-      "completedYear": 2007,
-      "heightM": 205,
-      "floorsAbove": 43,
-      "verified": false,
-      "sources": [
-        "（要確認）高さ・階数を公式資料で裏取りすること"
-      ]
-    },
-    {
-      "slug": "harumi-flag",
-      "title": "HARUMI FLAG（晴海フラッグ）",
-      "area": "中央区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "izumi-garden-tower",
-      "title": "泉ガーデンタワー",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "japan-national-stadium",
-      "title": "国立競技場",
-      "area": "新宿区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "jp-tower-kitte",
-      "title": "JPタワー（KITTE）",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": false,
-      "title_en": "JP Tower (KITTE)",
-      "area_en": "Chiyoda City",
-      "completedYear": 2012,
-      "heightM": 200,
-      "floorsAbove": 38,
-      "developer": "日本郵便",
-      "developer_en": "Japan Post",
-      "sources": [
-        "（要確認）竣工年は資料により2011/2012と差異あり"
-      ]
-    },
-    {
-      "slug": "kachidoki-bridge",
-      "title": "勝鬨橋",
-      "area": "中央区",
-      "buildingType": "tower",
-      "verified": false
-    },
-    {
-      "slug": "kachidoki-view-tower",
-      "title": "勝どきビュータワー",
-      "area": "中央区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "kamiyacho-trust-tower",
-      "title": "東京ワールドゲート（神谷町トラストタワー）",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "kasumigaseki-building",
-      "title": "霞が関ビルディング",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "marunouchi-building",
-      "title": "丸の内ビルディング（丸ビル）",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": true,
-      "title_en": "Marunouchi Building (Marubiru)",
-      "area_en": "Chiyoda City",
-      "completedYear": 2002,
-      "heightM": 179,
-      "floorsAbove": 37,
-      "developer": "三菱地所",
-      "developer_en": "Mitsubishi Estate",
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "mita-garden-hills",
-      "title": "三田ガーデンヒルズ",
-      "title_en": "Mita Garden Hills",
-      "area": "港区",
-      "area_en": "Minato City",
-      "buildingType": "residence",
-      "completedYear": 2025,
-      "developer": "三井不動産レジデンシャルほか",
-      "developer_en": "Mitsui Fudosan Residential and others",
-      "verified": false,
-      "sources": [
-        "（要確認）公式資料で竣工年・規模を裏取りすること"
-      ]
-    },
-    {
-      "slug": "mode-gakuen-cocoon-tower",
-      "title": "コクーンタワー（モード学園）",
-      "area": "新宿区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "msb-tamachi",
-      "title": "msb Tamachi（田町ステーションタワー）",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "nakagin-capsule-tower",
-      "title": "中銀カプセルタワービル（解体済の記録）",
-      "area": "中央区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "nakameguro-atlas-tower",
-      "title": "中目黒アトラスタワー",
-      "area": "目黒区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "nakano-central-park",
-      "title": "中野セントラルパーク",
-      "area": "中野区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "nec-headquarters",
-      "title": "NEC本社ビル（スーパータワー）",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "nihonbashi-bridge",
-      "title": "日本橋",
-      "area": "中央区",
-      "buildingType": "tower",
-      "verified": false
-    },
-    {
-      "slug": "nihonbashi-mitsui-tower",
-      "title": "日本橋三井タワー",
-      "area": "中央区",
-      "buildingType": "office",
-      "verified": true,
-      "title_en": "Nihonbashi Mitsui Tower",
-      "area_en": "Chuo City",
-      "completedYear": 2005,
-      "heightM": 195,
-      "floorsAbove": 39,
-      "developer": "三井不動産",
-      "developer_en": "Mitsui Fudosan",
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "nihonbashi-takashimaya-mitsui-building",
-      "title": "日本橋髙島屋三井ビルディング",
-      "title_en": "Nihonbashi Takashimaya Mitsui Building",
-      "area": "中央区",
-      "area_en": "Chuo City",
-      "buildingType": "office",
-      "completedYear": 2018,
-      "developer": "三井不動産",
-      "developer_en": "Mitsui Fudosan",
-      "verified": false,
-      "sources": [
-        "（要確認）高さ・階数を公式資料で裏取りすること"
-      ]
-    },
-    {
-      "slug": "nittele-tower",
-      "title": "汐留 日本テレビタワー",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "ntt-docomo-yoyogi-building",
-      "title": "NTTドコモ代々木ビル（ドコモタワー）",
-      "title_en": "NTT DoCoMo Yoyogi Building (Docomo Tower)",
-      "area": "渋谷区",
-      "area_en": "Shibuya City",
-      "buildingType": "office",
-      "completedYear": 2000,
-      "heightM": 240,
-      "floorsAbove": 27,
-      "developer": "NTTドコモ",
-      "developer_en": "NTT DoCoMo",
-      "verified": true,
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』等の公開情報（高さ240m・地上27階・2000年竣工。要最終確認）"
-      ]
-    },
-    {
-      "slug": "osaki-thinkpark-tower",
-      "title": "大崎 ThinkPark Tower",
-      "area": "品川区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "otemachi-place",
-      "title": "大手町プレイス",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "otemachi-tower",
-      "title": "大手町タワー",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": true,
-      "title_en": "Otemachi Tower",
-      "area_en": "Chiyoda City",
-      "completedYear": 2014,
-      "heightM": 200,
-      "floorsAbove": 38,
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "park-city-osaki",
-      "title": "パークシティ大崎",
-      "area": "品川区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "park-court-akasaka-hinokicho-the-tower",
-      "title": "パークコート赤坂檜町ザ タワー",
-      "area": "港区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "park-court-akasaka-hinokicho-tower",
-      "title": "パークコート赤坂檜町ザ タワー",
-      "title_en": "Park Court Akasaka Hinokicho The Tower",
-      "area": "港区",
-      "area_en": "Minato City",
-      "buildingType": "residence",
-      "completedYear": 2018,
-      "heightM": 170,
-      "floorsAbove": 44,
-      "developer": "三井不動産レジデンシャル",
-      "developer_en": "Mitsui Fudosan Residential",
-      "verified": true,
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "park-tower-harumi",
-      "title": "パークタワー晴海",
-      "area": "中央区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "rainbow-bridge",
-      "title": "レインボーブリッジ",
-      "area": "港区〜江東区",
-      "buildingType": "tower",
-      "verified": false
-    },
-    {
-      "slug": "river-city-21",
-      "title": "リバーシティ21（大川端）",
-      "area": "中央区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "roppongi-grand-tower",
-      "title": "住友不動産六本木グランドタワー",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "roppongi-hills-mori-tower",
-      "title": "六本木ヒルズ 森タワー",
-      "title_en": "Roppongi Hills Mori Tower",
-      "area": "港区",
-      "area_en": "Minato City",
-      "buildingType": "office",
-      "completedYear": 2003,
-      "heightM": 238,
-      "floorsAbove": 54,
-      "developer": "森ビル",
-      "developer_en": "Mori Building",
-      "verified": true,
-      "sources": [
-        "森ビル 公開情報（要最終確認）"
-      ]
-    },
-    {
-      "slug": "shibuya-hikarie",
-      "title": "渋谷ヒカリエ",
-      "area": "渋谷区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shibuya-sakura-stage",
-      "title": "渋谷サクラステージ",
-      "area": "渋谷区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shibuya-scramble-square",
-      "title": "渋谷スクランブルスクエア",
-      "area": "渋谷区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shibuya-scramble-square-east",
-      "title": "渋谷スクランブルスクエア（東棟）",
-      "title_en": "Shibuya Scramble Square (East Tower)",
-      "area": "渋谷区",
-      "area_en": "Shibuya City",
-      "buildingType": "office",
-      "completedYear": 2019,
-      "heightM": 230,
-      "floorsAbove": 47,
-      "verified": true,
-      "sources": [
-        "公開情報（要最終確認）"
-      ]
-    },
-    {
-      "slug": "shibuya-stream",
-      "title": "渋谷ストリーム",
-      "area": "渋谷区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shin-marunouchi-building",
-      "title": "新丸の内ビルディング（新丸ビル）",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": true,
-      "title_en": "Shin-Marunouchi Building (Shin-Marubiru)",
-      "area_en": "Chiyoda City",
-      "completedYear": 2007,
-      "heightM": 198,
-      "floorsAbove": 38,
-      "developer": "三菱地所",
-      "developer_en": "Mitsubishi Estate",
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "shinagawa-grand-commons",
-      "title": "品川グランドコモンズ",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shinagawa-intercity",
-      "title": "品川インターシティ",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shinagawa-season-terrace",
-      "title": "品川シーズンテラス",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shinjuku-center-building",
-      "title": "新宿センタービル",
-      "area": "新宿区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shinjuku-mitsui-building",
-      "title": "新宿三井ビルディング",
-      "area": "新宿区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shinjuku-nomura-building",
-      "title": "新宿野村ビル",
-      "area": "新宿区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shinjuku-park-tower",
-      "title": "新宿パークタワー",
-      "area": "新宿区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shinjuku-sumitomo-building",
-      "title": "新宿住友ビル（三角ビル）",
-      "area": "新宿区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "shinonome-canal-court-codan",
-      "title": "東雲キャナルコート CODAN",
-      "area": "江東区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "shiodome-city-center",
-      "title": "汐留シティセンター",
-      "title_en": "Shiodome City Center",
-      "area": "港区",
-      "area_en": "Minato City",
-      "buildingType": "office",
-      "completedYear": 2003,
-      "heightM": 216,
-      "floorsAbove": 43,
-      "verified": true,
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "skyz-tower-and-garden",
-      "title": "スカイズ タワー&ガーデン（SKYZ）",
-      "area": "江東区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "sunshine-60",
-      "title": "サンシャイン60",
-      "area": "豊島区",
-      "buildingType": "office",
-      "verified": true,
-      "title_en": "Sunshine 60",
-      "area_en": "Toshima City",
-      "completedYear": 1978,
-      "heightM": 240,
-      "floorsAbove": 60,
-      "sources": [
-        "公開情報（要最終確認）"
-      ]
-    },
-    {
-      "slug": "sunshine-city-world-import-mart",
-      "title": "サンシャインシティ ワールドインポートマートビル",
-      "area": "豊島区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "the-parkhouse-harumi-towers",
-      "title": "ザ・パークハウス晴海タワーズ",
-      "area": "中央区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "the-parkhouse-nishishinjuku-tower60",
-      "title": "ザ・パークハウス西新宿タワー60",
-      "area": "新宿区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "the-tokyo-towers-district",
-      "title": "THE TOKYO TOWERS（再訪・街区視点）",
-      "area": "中央区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "the-toyosu-tower",
-      "title": "ザ・トヨスタワー（THE TOYOSU TOWER）",
-      "area": "江東区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "tokiwabashi-tower",
-      "title": "常盤橋タワー（TOKYO TORCH）",
-      "title_en": "Tokiwabashi Tower (TOKYO TORCH)",
-      "area": "千代田区",
-      "area_en": "Chiyoda City",
-      "buildingType": "office",
-      "completedYear": 2021,
-      "heightM": 212,
-      "floorsAbove": 38,
-      "developer": "三菱地所",
-      "developer_en": "Mitsubishi Estate",
-      "verified": true,
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "tokyo-building-tokia",
-      "title": "東京ビルディング（TOKIA）",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "tokyo-international-forum",
-      "title": "東京国際フォーラム",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "tokyo-metropolitan-government-no1",
-      "title": "東京都庁第一本庁舎",
-      "area": "新宿区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "tokyo-midtown-tower",
-      "title": "東京ミッドタウン・タワー",
-      "title_en": "Tokyo Midtown Tower",
-      "area": "港区",
-      "area_en": "Minato City",
-      "buildingType": "office",
-      "completedYear": 2007,
-      "heightM": 248,
-      "floorsAbove": 54,
-      "developer": "三井不動産",
-      "developer_en": "Mitsui Fudosan",
-      "verified": true,
-      "sources": [
-        "三井不動産 公開情報（要最終確認）"
-      ]
-    },
-    {
-      "slug": "tokyo-midtown-yaesu",
-      "title": "東京ミッドタウン八重洲（八重洲セントラルタワー）",
-      "area": "中央区",
-      "buildingType": "office",
-      "verified": true,
-      "title_en": "Tokyo Midtown Yaesu (Yaesu Central Tower)",
-      "area_en": "Chuo City",
-      "completedYear": 2022,
-      "heightM": 240,
-      "floorsAbove": 45,
-      "developer": "三井不動産",
-      "developer_en": "Mitsui Fudosan",
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "tokyo-opera-city-tower",
-      "title": "東京オペラシティタワー",
-      "area": "新宿区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "tokyo-portcity-takeshiba",
-      "title": "東京ポートシティ竹芝",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "tokyo-shiodome-building",
-      "title": "東京汐留ビルディング",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "tokyo-skytree",
-      "title": "東京スカイツリー",
-      "area": "墨田区",
-      "buildingType": "tower",
-      "verified": false
-    },
-    {
-      "slug": "tokyo-square-garden",
-      "title": "東京スクエアガーデン",
-      "area": "中央区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "tokyo-torch-tower",
-      "title": "常盤橋 TOKYO TORCH（トーチタワー）",
-      "area": "千代田区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "tokyo-tower",
-      "title": "東京タワー",
-      "area": "港区",
-      "buildingType": "tower",
-      "verified": false
-    },
-    {
-      "slug": "tomihisa-cross",
-      "title": "富久クロス（Tomihisa Cross）",
-      "area": "新宿区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "toranomon-hills-business-tower",
-      "title": "虎ノ門ヒルズ ビジネスタワー",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "toranomon-hills-mori-tower",
-      "title": "虎ノ門ヒルズ 森タワー",
-      "title_en": "Toranomon Hills Mori Tower",
-      "area": "港区",
-      "area_en": "Minato City",
-      "buildingType": "office",
-      "completedYear": 2014,
-      "heightM": 247,
-      "floorsAbove": 52,
-      "developer": "森ビル",
-      "developer_en": "Mori Building",
-      "verified": true,
-      "sources": [
-        "森ビル 公開情報（高さは資料により247m/255mと差異あり・要最終確認）"
-      ]
-    },
-    {
-      "slug": "toranomon-hills-station-tower",
-      "title": "虎ノ門ヒルズ ステーションタワー",
-      "title_en": "Toranomon Hills Station Tower",
-      "area": "港区",
-      "area_en": "Minato City",
-      "buildingType": "office",
-      "completedYear": 2023,
-      "heightM": 266,
-      "floorsAbove": 49,
-      "developer": "森ビル",
-      "developer_en": "Mori Building",
-      "verified": true,
-      "sources": [
-        "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
-      ]
-    },
-    {
-      "slug": "w-comfort-towers",
-      "title": "Wコンフォートタワーズ",
-      "area": "江東区",
-      "buildingType": "residence",
-      "verified": false
-    },
-    {
-      "slug": "wtc-tokyo-south-tower",
-      "title": "世界貿易センタービルディング南館",
-      "area": "港区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "yebisu-garden-place-tower",
-      "title": "恵比寿ガーデンプレイスタワー",
-      "area": "渋谷区",
-      "buildingType": "office",
-      "verified": false
-    },
-    {
-      "slug": "yoyogi-national-gymnasium",
-      "title": "国立代々木競技場 第一体育館",
-      "area": "渋谷区",
-      "buildingType": "office",
-      "verified": false
-    }
-  ]
+ "_comment": "全建物マスター。数値は記事front matter/seedからの転記のみ（創作しない）。lat/lng は Wikidata(P625)・OpenStreetMap・国土地理院の住所検索から取得し、coordSource/coordRef に出典を残す。pref/city は座標を国土地理院で逆ジオコーディングした結果。",
+ "_source": "generator/data/buildings.json (seed, 数値あり) ∪ templates/article-ideas.json (ネタ帳, 名前/エリア/種別のみ)",
+ "buildings": [
+  {
+   "slug": "ark-hills-sengokuyama-mori-tower",
+   "title": "アークヒルズ仙石山森タワー",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.663525,
+   "lng": 139.741791,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q24036205",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "ark-mori-building",
+   "title": "アーク森ビル（アークヒルズ）",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.667114,
+   "lng": 139.740167,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1770571",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "asakusa-culture-tourist-center",
+   "title": "浅草文化観光センター",
+   "area": "台東区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.710694,
+   "lng": 139.7965,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q24877101",
+   "pref": "東京都",
+   "city": "台東区"
+  },
+  {
+   "slug": "atago-green-hills-mori-tower",
+   "title": "愛宕グリーンヒルズ MORIタワー",
+   "title_en": "Atago Green Hills Mori Tower",
+   "area": "港区",
+   "area_en": "Minato City",
+   "buildingType": "office",
+   "completedYear": 2001,
+   "heightM": 187,
+   "floorsAbove": 42,
+   "developer": "森ビル",
+   "developer_en": "Mori Building",
+   "verified": true,
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.662147,
+   "lng": 139.748899,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1770577",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "azabudai-hills-mori-jp-tower",
+   "title": "麻布台ヒルズ 森JPタワー",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.660992,
+   "lng": 139.740386,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q109703244",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "azabudai-hills-residence-b",
+   "title": "麻布台ヒルズ レジデンスB",
+   "area": "港区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.662586,
+   "lng": 139.739009,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/1158739445",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "bayz-tower-and-garden",
+   "title": "ベイズ タワー&ガーデン（BAYZ）",
+   "area": "江東区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.648288,
+   "lng": 139.794093,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/509109979",
+   "pref": "東京都",
+   "city": "江東区"
+  },
+  {
+   "slug": "brillia-tower-ikebukuro",
+   "title": "ブリリアタワー池袋",
+   "area": "豊島区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.72625,
+   "lng": 139.716667,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11273170",
+   "pref": "東京都",
+   "city": "豊島区"
+  },
+  {
+   "slug": "century-park-tower",
+   "title": "センチュリーパークタワー",
+   "title_en": "Century Park Tower",
+   "area": "中央区",
+   "area_en": "Chuo City",
+   "buildingType": "residence",
+   "completedYear": 1999,
+   "heightM": 180,
+   "floorsAbove": 54,
+   "developer": "三井不動産",
+   "developer_en": "Mitsui Fudosan",
+   "verified": true,
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ]
+  },
+  {
+   "slug": "city-tower-shinagawa",
+   "title": "シティタワー品川",
+   "area": "港区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.629105,
+   "lng": 139.747742,
+   "coordSource": "gsi",
+   "coordRef": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E6%B8%AF%E5%8D%974-2-7",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "city-towers-toyosu-the-twin",
+   "title": "シティタワーズ豊洲 ザ・ツイン",
+   "area": "江東区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.657199,
+   "lng": 139.799456,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/187753908",
+   "pref": "東京都",
+   "city": "江東区"
+  },
+  {
+   "slug": "dentsu-headquarters",
+   "title": "電通本社ビル（カレッタ汐留）",
+   "title_en": "Dentsu Headquarters (Caretta Shiodome)",
+   "area": "港区",
+   "area_en": "Minato City",
+   "buildingType": "office",
+   "completedYear": 2002,
+   "heightM": 213,
+   "floorsAbove": 48,
+   "verified": true,
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.66439,
+   "lng": 139.762217,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/151481755",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "deux-tours-kachidoki",
+   "title": "ドゥ・トゥール（DEUX TOURS）",
+   "area": "中央区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.65458,
+   "lng": 139.77723,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/454866513",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "eitaibashi",
+   "title": "永代橋",
+   "area": "中央区",
+   "buildingType": "bridge",
+   "verified": false,
+   "lat": 35.676389,
+   "lng": 139.7875,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11549876",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "futakotamagawa-rise",
+   "title": "二子玉川ライズ",
+   "area": "世田谷区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.6122,
+   "lng": 139.628,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11371457",
+   "pref": "東京都",
+   "city": "世田谷区"
+  },
+  {
+   "slug": "gran-tokyo-towers",
+   "title": "グラントウキョウ ノースタワー／サウスタワー",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.681694,
+   "lng": 139.768972,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q2913602",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "grantokyo-north-tower",
+   "title": "グラントウキョウ ノースタワー",
+   "title_en": "GranTokyo North Tower",
+   "area": "千代田区",
+   "area_en": "Chiyoda City",
+   "buildingType": "office",
+   "completedYear": 2007,
+   "heightM": 205,
+   "floorsAbove": 43,
+   "verified": false,
+   "sources": [
+    "（要確認）高さ・階数を公式資料で裏取りすること"
+   ]
+  },
+  {
+   "slug": "harumi-flag",
+   "title": "HARUMI FLAG（晴海フラッグ）",
+   "area": "中央区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.650361,
+   "lng": 139.774519,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q107621963",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "izumi-garden-tower",
+   "title": "泉ガーデンタワー",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.66467,
+   "lng": 139.73938,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q3275660",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "japan-national-stadium",
+   "title": "国立競技場",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.6778,
+   "lng": 139.7145,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q14862239",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "jp-tower-kitte",
+   "title": "JPタワー（KITTE）",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": false,
+   "title_en": "JP Tower (KITTE)",
+   "area_en": "Chiyoda City",
+   "completedYear": 2012,
+   "heightM": 200,
+   "floorsAbove": 38,
+   "developer": "日本郵便",
+   "developer_en": "Japan Post",
+   "sources": [
+    "（要確認）竣工年は資料により2011/2012と差異あり"
+   ],
+   "lat": 35.67975,
+   "lng": 139.764583,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11226072",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "kachidoki-bridge",
+   "title": "勝鬨橋",
+   "area": "中央区",
+   "buildingType": "bridge",
+   "verified": false,
+   "lat": 35.661944,
+   "lng": 139.775,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q4844361",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "kachidoki-view-tower",
+   "title": "勝どきビュータワー",
+   "area": "中央区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.659786,
+   "lng": 139.776625,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11400126",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "kamiyacho-trust-tower",
+   "title": "東京ワールドゲート（神谷町トラストタワー）",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.66508,
+   "lng": 139.745342,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/762814227",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "kasumigaseki-building",
+   "title": "霞が関ビルディング",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.671282,
+   "lng": 139.747212,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q844780",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "kiyosubashi",
+   "title": "清洲橋",
+   "area": "中央区",
+   "buildingType": "bridge",
+   "verified": false,
+   "lat": 35.6825,
+   "lng": 139.79194,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11561268",
+   "pref": "東京都",
+   "city": "江東区"
+  },
+  {
+   "slug": "marunouchi-building",
+   "title": "丸の内ビルディング（丸ビル）",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": true,
+   "title_en": "Marunouchi Building (Marubiru)",
+   "area_en": "Chiyoda City",
+   "completedYear": 2002,
+   "heightM": 179,
+   "floorsAbove": 37,
+   "developer": "三菱地所",
+   "developer_en": "Mitsubishi Estate",
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.681028,
+   "lng": 139.763778,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1049122",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "mita-garden-hills",
+   "title": "三田ガーデンヒルズ",
+   "title_en": "Mita Garden Hills",
+   "area": "港区",
+   "area_en": "Minato City",
+   "buildingType": "residence",
+   "completedYear": 2025,
+   "developer": "三井不動産レジデンシャルほか",
+   "developer_en": "Mitsui Fudosan Residential and others",
+   "verified": false,
+   "sources": [
+    "（要確認）公式資料で竣工年・規模を裏取りすること"
+   ]
+  },
+  {
+   "slug": "mode-gakuen-cocoon-tower",
+   "title": "コクーンタワー（モード学園）",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.691667,
+   "lng": 139.696944,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1030463",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "msb-tamachi",
+   "title": "msb Tamachi（田町ステーションタワー）",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.644856,
+   "lng": 139.749165,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/631442240",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "nakagin-capsule-tower",
+   "title": "中銀カプセルタワービル（解体済の記録）",
+   "area": "中央区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.66564,
+   "lng": 139.76345,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1633586",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "nakameguro-atlas-tower",
+   "title": "中目黒アトラスタワー",
+   "area": "目黒区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.6438,
+   "lng": 139.7002,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q3335322",
+   "pref": "東京都",
+   "city": "目黒区"
+  },
+  {
+   "slug": "nakano-central-park",
+   "title": "中野セントラルパーク",
+   "area": "中野区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.706922,
+   "lng": 139.661692,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/240751512",
+   "pref": "東京都",
+   "city": "中野区"
+  },
+  {
+   "slug": "nec-headquarters",
+   "title": "NEC本社ビル（スーパータワー）",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.649406,
+   "lng": 139.748093,
+   "coordSource": "gsi",
+   "coordRef": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E4%BA%94%E4%B8%81%E7%9B%AE7%E7%95%AA1%E5%8F%B7",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "nihonbashi-bridge",
+   "title": "日本橋",
+   "area": "中央区",
+   "buildingType": "bridge",
+   "verified": false,
+   "lat": 35.684068,
+   "lng": 139.774503,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/550689172",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "nihonbashi-mitsui-tower",
+   "title": "日本橋三井タワー",
+   "area": "中央区",
+   "buildingType": "office",
+   "verified": true,
+   "title_en": "Nihonbashi Mitsui Tower",
+   "area_en": "Chuo City",
+   "completedYear": 2005,
+   "heightM": 195,
+   "floorsAbove": 39,
+   "developer": "三井不動産",
+   "developer_en": "Mitsui Fudosan",
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.686944,
+   "lng": 139.773056,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q3125027",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "nihonbashi-takashimaya-mitsui-building",
+   "title": "日本橋髙島屋三井ビルディング",
+   "title_en": "Nihonbashi Takashimaya Mitsui Building",
+   "area": "中央区",
+   "area_en": "Chuo City",
+   "buildingType": "office",
+   "completedYear": 2018,
+   "developer": "三井不動産",
+   "developer_en": "Mitsui Fudosan",
+   "verified": false,
+   "sources": [
+    "（要確認）高さ・階数を公式資料で裏取りすること"
+   ]
+  },
+  {
+   "slug": "nittele-tower",
+   "title": "汐留 日本テレビタワー",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.664419,
+   "lng": 139.759911,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q2913644",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "ntt-docomo-yoyogi-building",
+   "title": "NTTドコモ代々木ビル（ドコモタワー）",
+   "title_en": "NTT DoCoMo Yoyogi Building (Docomo Tower)",
+   "area": "渋谷区",
+   "area_en": "Shibuya City",
+   "buildingType": "office",
+   "completedYear": 2000,
+   "heightM": 240,
+   "floorsAbove": 27,
+   "developer": "NTTドコモ",
+   "developer_en": "NTT DoCoMo",
+   "verified": true,
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』等の公開情報（高さ240m・地上27階・2000年竣工。要最終確認）"
+   ],
+   "lat": 35.684451,
+   "lng": 139.702884,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/node/11436157417",
+   "pref": "東京都",
+   "city": "渋谷区"
+  },
+  {
+   "slug": "osaki-thinkpark-tower",
+   "title": "大崎 ThinkPark Tower",
+   "area": "品川区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.618434,
+   "lng": 139.727748,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11251035",
+   "pref": "東京都",
+   "city": "品川区"
+  },
+  {
+   "slug": "otemachi-place",
+   "title": "大手町プレイス",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.687096,
+   "lng": 139.768067,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/145397155",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "otemachi-tower",
+   "title": "大手町タワー",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": true,
+   "title_en": "Otemachi Tower",
+   "area_en": "Chiyoda City",
+   "completedYear": 2014,
+   "heightM": 200,
+   "floorsAbove": 38,
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.685606,
+   "lng": 139.765275,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11524377",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "park-city-osaki",
+   "title": "パークシティ大崎",
+   "area": "品川区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.622492,
+   "lng": 139.731749,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/382838698",
+   "pref": "東京都",
+   "city": "品川区"
+  },
+  {
+   "slug": "park-city-toyosu-tower-a",
+   "title": "アーバンドック パークシティ豊洲 タワーA",
+   "area": "江東区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.657238,
+   "lng": 139.791062,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/103614209",
+   "pref": "東京都",
+   "city": "江東区"
+  },
+  {
+   "slug": "park-court-akasaka-hinokicho-the-tower",
+   "title": "パークコート赤坂檜町ザ タワー",
+   "area": "港区",
+   "buildingType": "residence",
+   "verified": false
+  },
+  {
+   "slug": "park-court-akasaka-hinokicho-tower",
+   "title": "パークコート赤坂檜町ザ タワー",
+   "title_en": "Park Court Akasaka Hinokicho The Tower",
+   "area": "港区",
+   "area_en": "Minato City",
+   "buildingType": "residence",
+   "completedYear": 2018,
+   "heightM": 170,
+   "floorsAbove": 44,
+   "developer": "三井不動産レジデンシャル",
+   "developer_en": "Mitsui Fudosan Residential",
+   "verified": true,
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.668001,
+   "lng": 139.729857,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/865014551",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "park-tower-harumi",
+   "title": "パークタワー晴海",
+   "area": "中央区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.656675,
+   "lng": 139.787227,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/1448346307",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "rainbow-bridge",
+   "title": "レインボーブリッジ",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.636389,
+   "lng": 139.763611,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1046736",
+   "pref": "?",
+   "city": "?"
+  },
+  {
+   "slug": "river-city-21",
+   "title": "リバーシティ21（大川端）",
+   "area": "中央区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.66903,
+   "lng": 139.785015,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/node/2285608679",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "roppongi-grand-tower",
+   "title": "住友不動産六本木グランドタワー",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.6646,
+   "lng": 139.737661,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q23666199",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "roppongi-hills-mori-tower",
+   "title": "六本木ヒルズ 森タワー",
+   "title_en": "Roppongi Hills Mori Tower",
+   "area": "港区",
+   "area_en": "Minato City",
+   "buildingType": "office",
+   "completedYear": 2003,
+   "heightM": 238,
+   "floorsAbove": 54,
+   "developer": "森ビル",
+   "developer_en": "Mori Building",
+   "verified": true,
+   "sources": [
+    "森ビル 公開情報（要最終確認）"
+   ],
+   "lat": 35.660452,
+   "lng": 139.729282,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/153924771",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "shibuya-hikarie",
+   "title": "渋谷ヒカリエ",
+   "area": "渋谷区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.6589,
+   "lng": 139.703,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11561670",
+   "pref": "東京都",
+   "city": "渋谷区"
+  },
+  {
+   "slug": "shibuya-sakura-stage",
+   "title": "渋谷サクラステージ",
+   "area": "渋谷区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.6567,
+   "lng": 139.702,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q110144078",
+   "pref": "東京都",
+   "city": "渋谷区"
+  },
+  {
+   "slug": "shibuya-scramble-square",
+   "title": "渋谷スクランブルスクエア",
+   "area": "渋谷区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.658278,
+   "lng": 139.701611,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q64026922",
+   "pref": "東京都",
+   "city": "渋谷区"
+  },
+  {
+   "slug": "shibuya-scramble-square-east",
+   "title": "渋谷スクランブルスクエア（東棟）",
+   "title_en": "Shibuya Scramble Square (East Tower)",
+   "area": "渋谷区",
+   "area_en": "Shibuya City",
+   "buildingType": "office",
+   "completedYear": 2019,
+   "heightM": 230,
+   "floorsAbove": 47,
+   "verified": true,
+   "sources": [
+    "公開情報（要最終確認）"
+   ]
+  },
+  {
+   "slug": "shibuya-stream",
+   "title": "渋谷ストリーム",
+   "area": "渋谷区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.657167,
+   "lng": 139.703167,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q30922481",
+   "pref": "東京都",
+   "city": "渋谷区"
+  },
+  {
+   "slug": "shin-marunouchi-building",
+   "title": "新丸の内ビルディング（新丸ビル）",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": true,
+   "title_en": "Shin-Marunouchi Building (Shin-Marubiru)",
+   "area_en": "Chiyoda City",
+   "completedYear": 2007,
+   "heightM": 198,
+   "floorsAbove": 38,
+   "developer": "三菱地所",
+   "developer_en": "Mitsubishi Estate",
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.68255,
+   "lng": 139.764373,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1134387",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "shinagawa-grand-commons",
+   "title": "品川グランドコモンズ",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.626,
+   "lng": 139.740222,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11418361",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "shinagawa-intercity",
+   "title": "品川インターシティ",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.626889,
+   "lng": 139.741972,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q11418357",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "shinagawa-season-terrace",
+   "title": "品川シーズンテラス",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.632639,
+   "lng": 139.743261,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q20044792",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "shinjuku-center-building",
+   "title": "新宿センタービル",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.691667,
+   "lng": 139.695556,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1134395",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "shinjuku-mitsui-building",
+   "title": "新宿三井ビルディング",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.691898,
+   "lng": 139.693903,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q2413330",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "shinjuku-nomura-building",
+   "title": "新宿野村ビル",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.692778,
+   "lng": 139.695278,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1048673",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "shinjuku-park-tower",
+   "title": "新宿パークタワー",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.685639,
+   "lng": 139.69095,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1348023",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "shinjuku-sumitomo-building",
+   "title": "新宿住友ビル（三角ビル）",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.691265,
+   "lng": 139.692605,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q863588",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "shinonome-canal-court-codan",
+   "title": "東雲キャナルコート CODAN",
+   "area": "江東区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.648244,
+   "lng": 139.802988,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/relation/2324439",
+   "pref": "東京都",
+   "city": "江東区"
+  },
+  {
+   "slug": "shiodome-city-center",
+   "title": "汐留シティセンター",
+   "title_en": "Shiodome City Center",
+   "area": "港区",
+   "area_en": "Minato City",
+   "buildingType": "office",
+   "completedYear": 2003,
+   "heightM": 216,
+   "floorsAbove": 43,
+   "verified": true,
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.665351,
+   "lng": 139.76098,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1134566",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "skyz-tower-and-garden",
+   "title": "スカイズ タワー&ガーデン（SKYZ）",
+   "area": "江東区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.647618,
+   "lng": 139.792152,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/node/11436145857",
+   "pref": "東京都",
+   "city": "江東区"
+  },
+  {
+   "slug": "sunshine-60",
+   "title": "サンシャイン60",
+   "area": "豊島区",
+   "buildingType": "office",
+   "verified": true,
+   "title_en": "Sunshine 60",
+   "area_en": "Toshima City",
+   "completedYear": 1978,
+   "heightM": 240,
+   "floorsAbove": 60,
+   "sources": [
+    "公開情報（要最終確認）"
+   ],
+   "lat": 35.729583,
+   "lng": 139.717778,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q602942",
+   "pref": "東京都",
+   "city": "豊島区"
+  },
+  {
+   "slug": "sunshine-city-world-import-mart",
+   "title": "サンシャインシティ ワールドインポートマートビル",
+   "area": "豊島区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.729167,
+   "lng": 139.718056,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1186018",
+   "pref": "東京都",
+   "city": "豊島区"
+  },
+  {
+   "slug": "the-parkhouse-harumi-towers",
+   "title": "ザ・パークハウス晴海タワーズ",
+   "area": "中央区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.655745,
+   "lng": 139.786096,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/381147498",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "the-parkhouse-nishishinjuku-tower60",
+   "title": "ザ・パークハウス西新宿タワー60",
+   "area": "新宿区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.693811,
+   "lng": 139.686617,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/568802787",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "the-tokyo-towers",
+   "title": "ザ・東京タワーズ",
+   "area": "中央区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.655497,
+   "lng": 139.774556,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/node/11436145796",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "the-tokyo-towers-district",
+   "title": "THE TOKYO TOWERS（再訪・街区視点）",
+   "area": "中央区",
+   "buildingType": "residence",
+   "verified": false
+  },
+  {
+   "slug": "the-toyosu-tower",
+   "title": "ザ・トヨスタワー（THE TOYOSU TOWER）",
+   "area": "江東区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.658707,
+   "lng": 139.796692,
+   "coordSource": "gsi",
+   "coordRef": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%9D%B1%E5%8C%BA%E8%B1%8A%E6%B4%B2%E4%B8%89%E4%B8%81%E7%9B%AE6%E7%95%AA5%E5%8F%B7",
+   "pref": "東京都",
+   "city": "江東区"
+  },
+  {
+   "slug": "tokiwabashi-tower",
+   "title": "常盤橋タワー（TOKYO TORCH）",
+   "title_en": "Tokiwabashi Tower (TOKYO TORCH)",
+   "area": "千代田区",
+   "area_en": "Chiyoda City",
+   "buildingType": "office",
+   "completedYear": 2021,
+   "heightM": 212,
+   "floorsAbove": 38,
+   "developer": "三菱地所",
+   "developer_en": "Mitsubishi Estate",
+   "verified": true,
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ]
+  },
+  {
+   "slug": "tokyo-building-tokia",
+   "title": "東京ビルディング（TOKIA）",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.68255,
+   "lng": 139.764372,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q5364354",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "tokyo-garden-terrace-kioicho",
+   "title": "東京ガーデンテラス紀尾井町",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.679592,
+   "lng": 139.737006,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q20025054",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "tokyo-international-forum",
+   "title": "東京国際フォーラム",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.676944,
+   "lng": 139.764167,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1359892",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "tokyo-metropolitan-government-no1",
+   "title": "東京都庁第一本庁舎",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.68951,
+   "lng": 139.69171,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q111973",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "tokyo-midtown-hibiya",
+   "title": "東京ミッドタウン日比谷",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.673722,
+   "lng": 139.75925,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q48752023",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "tokyo-midtown-tower",
+   "title": "東京ミッドタウン・タワー",
+   "title_en": "Tokyo Midtown Tower",
+   "area": "港区",
+   "area_en": "Minato City",
+   "buildingType": "office",
+   "completedYear": 2007,
+   "heightM": 248,
+   "floorsAbove": 54,
+   "developer": "三井不動産",
+   "developer_en": "Mitsui Fudosan",
+   "verified": true,
+   "sources": [
+    "三井不動産 公開情報（要最終確認）"
+   ],
+   "lat": 35.665833,
+   "lng": 139.731111,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1364393",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "tokyo-midtown-yaesu",
+   "title": "東京ミッドタウン八重洲（八重洲セントラルタワー）",
+   "area": "中央区",
+   "buildingType": "office",
+   "verified": true,
+   "title_en": "Tokyo Midtown Yaesu (Yaesu Central Tower)",
+   "area_en": "Chuo City",
+   "completedYear": 2022,
+   "heightM": 240,
+   "floorsAbove": 45,
+   "developer": "三井不動産",
+   "developer_en": "Mitsui Fudosan",
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.679695,
+   "lng": 139.769165,
+   "coordSource": "gsi",
+   "coordRef": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都中央区八重洲二丁目2番1号",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "tokyo-opera-city-tower",
+   "title": "東京オペラシティタワー",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.68309,
+   "lng": 139.68707,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1201889",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "tokyo-portcity-takeshiba",
+   "title": "東京ポートシティ竹芝",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.655111,
+   "lng": 139.760611,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q109360038",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "tokyo-shiodome-building",
+   "title": "東京汐留ビルディング",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.663,
+   "lng": 139.761222,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q7883397",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "tokyo-skytree",
+   "title": "東京スカイツリー",
+   "area": "墨田区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.710056,
+   "lng": 139.810722,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q57965",
+   "pref": "東京都",
+   "city": "墨田区"
+  },
+  {
+   "slug": "tokyo-square-garden",
+   "title": "東京スクエアガーデン",
+   "area": "中央区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.676111,
+   "lng": 139.768889,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q17229282",
+   "pref": "東京都",
+   "city": "中央区"
+  },
+  {
+   "slug": "tokyo-torch-tower",
+   "title": "常盤橋 TOKYO TORCH（トーチタワー）",
+   "area": "千代田区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.684717,
+   "lng": 139.769364,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q103987208",
+   "pref": "東京都",
+   "city": "千代田区"
+  },
+  {
+   "slug": "tokyo-tower",
+   "title": "東京タワー",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.658611,
+   "lng": 139.745556,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q183536",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "tokyu-kabukicho-tower",
+   "title": "東急歌舞伎町タワー",
+   "area": "新宿区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.695897,
+   "lng": 139.700376,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q109595002",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "tomihisa-cross",
+   "title": "富久クロス（Tomihisa Cross）",
+   "area": "新宿区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.691927,
+   "lng": 139.713879,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/386132594",
+   "pref": "東京都",
+   "city": "新宿区"
+  },
+  {
+   "slug": "toranomon-hills-business-tower",
+   "title": "虎ノ門ヒルズ ビジネスタワー",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.667797,
+   "lng": 139.749927,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/819117399",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "toranomon-hills-mori-tower",
+   "title": "虎ノ門ヒルズ 森タワー",
+   "title_en": "Toranomon Hills Mori Tower",
+   "area": "港区",
+   "area_en": "Minato City",
+   "buildingType": "office",
+   "completedYear": 2014,
+   "heightM": 247,
+   "floorsAbove": 52,
+   "developer": "森ビル",
+   "developer_en": "Mori Building",
+   "verified": true,
+   "sources": [
+    "森ビル 公開情報（高さは資料により247m/255mと差異あり・要最終確認）"
+   ],
+   "lat": 35.667003,
+   "lng": 139.749485,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/node/8129339620",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "toranomon-hills-station-tower",
+   "title": "虎ノ門ヒルズ ステーションタワー",
+   "title_en": "Toranomon Hills Station Tower",
+   "area": "港区",
+   "area_en": "Minato City",
+   "buildingType": "office",
+   "completedYear": 2023,
+   "heightM": 266,
+   "floorsAbove": 49,
+   "developer": "森ビル",
+   "developer_en": "Mori Building",
+   "verified": true,
+   "sources": [
+    "Wikipedia『東京都の超高層建築物・構築物の一覧』（要最終確認）"
+   ],
+   "lat": 35.66747,
+   "lng": 139.746879,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/way/1158726591",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "w-comfort-towers",
+   "title": "Wコンフォートタワーズ",
+   "area": "江東区",
+   "buildingType": "residence",
+   "verified": false,
+   "lat": 35.645589,
+   "lng": 139.80516,
+   "coordSource": "osm",
+   "coordRef": "https://www.openstreetmap.org/relation/2324436",
+   "pref": "東京都",
+   "city": "江東区"
+  },
+  {
+   "slug": "wtc-tokyo-south-tower",
+   "title": "世界貿易センタービルディング南館",
+   "area": "港区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.6563,
+   "lng": 139.757,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q2948463",
+   "pref": "東京都",
+   "city": "港区"
+  },
+  {
+   "slug": "yebisu-garden-place-tower",
+   "title": "恵比寿ガーデンプレイスタワー",
+   "area": "渋谷区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.643627,
+   "lng": 139.712708,
+   "coordSource": "gsi",
+   "coordRef": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都渋谷区恵比寿四丁目20番3号",
+   "pref": "東京都",
+   "city": "目黒区"
+  },
+  {
+   "slug": "yokohama-landmark-tower",
+   "title": "横浜ランドマークタワー",
+   "area": "横浜市西区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.454722,
+   "lng": 139.631667,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q587108",
+   "pref": "神奈川県",
+   "city": "横浜市西区"
+  },
+  {
+   "slug": "yoyogi-national-gymnasium",
+   "title": "国立代々木競技場 第一体育館",
+   "area": "渋谷区",
+   "buildingType": "office",
+   "verified": false,
+   "lat": 35.6675,
+   "lng": 139.700278,
+   "coordSource": "wikidata",
+   "coordRef": "https://www.wikidata.org/wiki/Q1069457",
+   "pref": "東京都",
+   "city": "渋谷区"
+  }
+ ]
 }

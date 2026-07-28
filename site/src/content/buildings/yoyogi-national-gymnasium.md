@@ -3,8 +3,8 @@ title: "国立代々木競技場 第一体育館"
 buildingType: office
 area: "渋谷区"
 address: "東京都渋谷区神南2-1-1"
-lat: 35.667710
-lng: 139.700154
+lat: 35.6675
+lng: 139.700278
 completedYear: 1964
 totalFloorAreaM2: 28705
 architect: "丹下健三（意匠）、坪井善勝（構造）"

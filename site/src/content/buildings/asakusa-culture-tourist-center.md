@@ -3,8 +3,8 @@ title: "浅草文化観光センター"
 buildingType: office
 area: "台東区"
 address: "東京都台東区雷門二丁目18番9号"
-lat: 35.7107
-lng: 139.7966
+lat: 35.710694
+lng: 139.7965
 completedYear: 2012
 floorsAbove: 8
 floorsBelow: 1

@@ -6,6 +6,8 @@ heroImageLink: "https://commons.wikimedia.org/wiki/File:Architecture_in_Toranomo
 buildingType: office
 area: "港区"
 address: "東京都港区虎ノ門1-17-1"
+lat: 35.667797
+lng: 139.749927
 completedYear: 2020
 floorsAbove: 36
 floorsBelow: 3

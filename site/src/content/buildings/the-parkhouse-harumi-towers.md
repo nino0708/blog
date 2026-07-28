@@ -3,6 +3,8 @@ title: "ザ・パークハウス晴海タワーズ"
 buildingType: residence
 area: "中央区"
 address: "東京都中央区晴海2丁目"
+lat: 35.655745
+lng: 139.786096
 completedYear: 2016
 floorsAbove: 49
 floorsBelow: 2

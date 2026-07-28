@@ -3,8 +3,8 @@ title: "勝鬨橋"
 buildingType: bridge
 area: "中央区"
 address: "東京都中央区勝どき1丁目〜築地6丁目（晴海通り・隅田川）"
-lat: 35.661700
-lng: 139.772800
+lat: 35.661944
+lng: 139.775
 completedYear: 1940
 developer: "東京市"
 architect: "安宅勝（東京市技師）"

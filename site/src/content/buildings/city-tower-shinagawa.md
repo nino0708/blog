@@ -3,6 +3,8 @@ title: "シティタワー品川"
 buildingType: residence
 area: "港区"
 address: "東京都港区港南4-2-7"
+lat: 35.629105
+lng: 139.747742
 completedYear: 2008
 floorsAbove: 43
 developer: "住友不動産"

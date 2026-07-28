@@ -3,6 +3,8 @@ title: "中野セントラルパーク"
 buildingType: office
 area: "中野区"
 address: "東京都中野区中野四丁目"
+lat: 35.706922
+lng: 139.661692
 completedYear: 2012
 floorsAbove: 22
 floorsBelow: 1

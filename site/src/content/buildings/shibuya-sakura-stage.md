@@ -3,6 +3,8 @@ title: "渋谷サクラステージ"
 buildingType: office
 area: "渋谷区"
 address: "東京都渋谷区桜丘町1-1"
+lat: 35.6567
+lng: 139.702
 completedYear: 2023
 floorsAbove: 39
 floorsBelow: 4

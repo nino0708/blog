@@ -3,8 +3,8 @@ title: "品川グランドコモンズ"
 buildingType: office
 area: "港区"
 address: "東京都港区港南二丁目"
-lat: 35.659600
-lng: 139.741600
+lat: 35.626
+lng: 139.740222
 completedYear: 2003
 floorsAbove: 32
 floorsBelow: 3

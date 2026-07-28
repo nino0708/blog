@@ -3,6 +3,8 @@ title: "Wコンフォートタワーズ"
 buildingType: residence
 area: "江東区"
 address: "東京都江東区東雲一丁目9番"
+lat: 35.645589
+lng: 139.80516
 completedYear: 2004
 floorsAbove: 54
 floorsBelow: 2

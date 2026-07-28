@@ -3,6 +3,8 @@ title: "NEC本社ビル（NECスーパータワー）"
 buildingType: office
 area: "港区"
 address: "東京都港区芝五丁目7番1号"
+lat: 35.649406
+lng: 139.748093
 completedYear: 1990
 floorsAbove: 43
 floorsBelow: 4

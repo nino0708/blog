@@ -3,6 +3,8 @@ title: "ThinkPark Tower"
 buildingType: office
 area: "品川区"
 address: "東京都品川区大崎二丁目1番1号"
+lat: 35.618434
+lng: 139.727748
 completedYear: 2007
 floorsAbove: 30
 floorsBelow: 2

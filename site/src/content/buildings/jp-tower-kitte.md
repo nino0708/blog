@@ -3,6 +3,8 @@ title: "JPタワー（KITTE）"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区丸の内二丁目7番2号"
+lat: 35.67975
+lng: 139.764583
 completedYear: 2012
 floorsAbove: 38
 floorsBelow: 4

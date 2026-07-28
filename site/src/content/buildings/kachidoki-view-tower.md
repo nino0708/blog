@@ -3,6 +3,8 @@ title: "勝どきビュータワー"
 buildingType: residence
 area: "中央区"
 address: "東京都中央区勝どき一丁目"
+lat: 35.659786
+lng: 139.776625
 completedYear: 2010
 floorsAbove: 55
 floorsBelow: 1

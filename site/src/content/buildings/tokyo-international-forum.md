@@ -3,6 +3,8 @@ title: "東京国際フォーラム"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区丸の内三丁目"
+lat: 35.676944
+lng: 139.764167
 completedYear: 1996
 floorsAbove: 11
 floorsBelow: 3

@@ -3,6 +3,8 @@ title: "東京ミッドタウン・タワー"
 buildingType: office
 area: "港区"
 address: "東京都港区赤坂"
+lat: 35.665833
+lng: 139.731111
 completedYear: 2007
 floorsAbove: 54
 heightM: 248

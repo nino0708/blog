@@ -3,6 +3,8 @@ title: "電通本社ビル（カレッタ汐留）"
 buildingType: office
 area: "港区"
 address: "東京都港区東新橋"
+lat: 35.66439
+lng: 139.762217
 completedYear: 2002
 floorsAbove: 48
 heightM: 213

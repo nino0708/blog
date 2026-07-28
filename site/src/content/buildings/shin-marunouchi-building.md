@@ -3,6 +3,8 @@ title: "新丸の内ビルディング"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区丸の内一丁目5番1号"
+lat: 35.68255
+lng: 139.764373
 completedYear: 2007
 floorsAbove: 38
 floorsBelow: 4

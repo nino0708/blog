@@ -3,6 +3,8 @@ title: "渋谷スクランブルスクエア"
 buildingType: office
 area: "渋谷区"
 address: "東京都渋谷区渋谷二丁目24番12号"
+lat: 35.658278
+lng: 139.701611
 completedYear: 2019
 floorsAbove: 47
 floorsBelow: 7

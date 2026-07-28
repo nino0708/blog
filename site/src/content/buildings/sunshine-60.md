@@ -3,6 +3,8 @@ title: "サンシャイン60"
 buildingType: office
 area: "豊島区"
 address: "東京都豊島区東池袋"
+lat: 35.729583
+lng: 139.717778
 completedYear: 1978
 floorsAbove: 60
 floorsBelow: 4

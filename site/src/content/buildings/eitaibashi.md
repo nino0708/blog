@@ -3,8 +3,8 @@ title: "永代橋"
 buildingType: bridge
 area: "中央区"
 address: "東京都中央区新川〜江東区佐賀（隅田川・永代通り）"
-lat: 35.678600
-lng: 139.788300
+lat: 35.676389
+lng: 139.7875
 completedYear: 1926
 developer: "内務省復興局"
 architect: "田中豊（内務省復興局）"

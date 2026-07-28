@@ -3,6 +3,8 @@ title: "東京ワールドゲート（神谷町トラストタワー）"
 buildingType: office
 area: "港区"
 address: "東京都港区虎ノ門4丁目1-1"
+lat: 35.66508
+lng: 139.745342
 completedYear: 2020
 floorsAbove: 38
 floorsBelow: 3

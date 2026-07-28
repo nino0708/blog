@@ -3,6 +3,8 @@ title: "麻布台ヒルズ レジデンスB"
 buildingType: residence
 area: "港区"
 address: "東京都港区麻布台一丁目"
+lat: 35.662586
+lng: 139.739009
 completedYear: 2025
 floorsAbove: 64
 floorsBelow: 5

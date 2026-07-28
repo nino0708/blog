@@ -3,6 +3,8 @@ title: "東京スクエアガーデン"
 buildingType: office
 area: "中央区"
 address: "東京都中央区京橋三丁目"
+lat: 35.676111
+lng: 139.768889
 completedYear: 2013
 floorsAbove: 24
 floorsBelow: 4

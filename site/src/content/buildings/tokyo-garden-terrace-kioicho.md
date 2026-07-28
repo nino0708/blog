@@ -3,6 +3,8 @@ title: "東京ガーデンテラス紀尾井町"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区紀尾井町1-2"
+lat: 35.679592
+lng: 139.737006
 completedYear: 2016
 floorsAbove: 36
 floorsBelow: 2

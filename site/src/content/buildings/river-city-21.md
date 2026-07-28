@@ -3,6 +3,8 @@ title: "大川端リバーシティ21"
 buildingType: residence
 area: "中央区"
 address: "東京都中央区佃"
+lat: 35.66903
+lng: 139.785015
 developer: "三井不動産・住宅都市整備公団・東京都・東京都住宅供給公社"
 tags: ["中央区", "タワーマンション", "再開発", "ウォーターフロント", "佃・月島"]
 publishedAt: 2026-07-06

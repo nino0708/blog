@@ -3,8 +3,8 @@ title: "清洲橋"
 buildingType: bridge
 area: "中央区"
 address: "東京都中央区日本橋中洲〜江東区清澄（隅田川）"
-lat: 35.682900
-lng: 139.792800
+lat: 35.6825
+lng: 139.79194
 completedYear: 1928
 developer: "内務省復興局"
 architect: "太田圓三・鈴木清一ほか（内務省復興局）"

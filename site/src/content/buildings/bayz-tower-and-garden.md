@@ -3,6 +3,8 @@ title: "ベイズ タワー＆ガーデン"
 buildingType: residence
 area: "江東区"
 address: "東京都江東区豊洲6丁目2番29号"
+lat: 35.648288
+lng: 139.794093
 completedYear: 2016
 floorsAbove: 31
 floorsBelow: 1

@@ -3,6 +3,8 @@ title: "汐留シティセンター"
 buildingType: office
 area: "港区"
 address: "東京都港区東新橋"
+lat: 35.665351
+lng: 139.76098
 completedYear: 2003
 floorsAbove: 43
 heightM: 216

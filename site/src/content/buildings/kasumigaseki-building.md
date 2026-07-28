@@ -3,6 +3,8 @@ title: "霞が関ビルディング"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区霞が関三丁目"
+lat: 35.671282
+lng: 139.747212
 completedYear: 1968
 floorsAbove: 36
 floorsBelow: 3

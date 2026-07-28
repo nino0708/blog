@@ -3,8 +3,8 @@ title: "サンシャインシティ ワールドインポートマートビル"
 buildingType: office
 area: "豊島区"
 address: "東京都豊島区東池袋三丁目1番3号"
-lat: 35.728816
-lng: 139.719948
+lat: 35.729167
+lng: 139.718056
 completedYear: 1978
 floorsBelow: 5
 totalFloorAreaM2: 93356

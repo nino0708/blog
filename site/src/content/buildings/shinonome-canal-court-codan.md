@@ -3,6 +3,8 @@ title: "東雲キャナルコートCODAN"
 buildingType: residence
 area: "江東区"
 address: "東京都江東区東雲一丁目"
+lat: 35.648244
+lng: 139.802988
 completedYear: 2005
 floorsAbove: 14
 developer: "都市再生機構（UR）"

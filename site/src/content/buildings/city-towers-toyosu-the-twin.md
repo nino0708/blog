@@ -3,6 +3,8 @@ title: "シティタワーズ豊洲 ザ・ツイン"
 buildingType: residence
 area: "江東区"
 address: "東京都江東区豊洲三丁目"
+lat: 35.657199
+lng: 139.799456
 completedYear: 2009
 floorsAbove: 48
 floorsBelow: 1

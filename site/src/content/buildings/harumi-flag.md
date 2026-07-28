@@ -3,6 +3,8 @@ title: "晴海フラッグ"
 buildingType: residence
 area: "中央区"
 address: "東京都中央区晴海5丁目"
+lat: 35.650361
+lng: 139.774519
 completedYear: 2025
 floorsAbove: 50
 floorsBelow: 1

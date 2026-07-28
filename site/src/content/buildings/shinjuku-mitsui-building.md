@@ -3,6 +3,8 @@ title: "新宿三井ビルディング"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区西新宿二丁目"
+lat: 35.691898
+lng: 139.693903
 completedYear: 1974
 floorsAbove: 55
 floorsBelow: 3

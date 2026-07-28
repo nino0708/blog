@@ -3,6 +3,8 @@ title: "新宿センタービル"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区西新宿一丁目"
+lat: 35.691667
+lng: 139.695556
 completedYear: 1979
 floorsAbove: 54
 floorsBelow: 4

@@ -3,6 +3,8 @@ title: "モード学園コクーンタワー"
 buildingType: office
 area: "新宿区"
 address: "東京都新宿区西新宿1-7-3"
+lat: 35.691667
+lng: 139.696944
 completedYear: 2008
 floorsAbove: 50
 floorsBelow: 4

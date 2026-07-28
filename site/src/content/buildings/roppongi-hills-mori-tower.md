@@ -3,6 +3,8 @@ title: "六本木ヒルズ 森タワー"
 buildingType: office
 area: "港区"
 address: "東京都港区六本木"
+lat: 35.660452
+lng: 139.729282
 completedYear: 2003
 floorsAbove: 54
 heightM: 238

@@ -3,6 +3,8 @@ title: "パークコート赤坂檜町ザ タワー"
 buildingType: residence
 area: "港区"
 address: "東京都港区赤坂"
+lat: 35.668001
+lng: 139.729857
 completedYear: 2018
 floorsAbove: 44
 heightM: 170

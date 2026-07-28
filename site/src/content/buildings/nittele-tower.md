@@ -3,8 +3,8 @@ title: "日本テレビタワー"
 buildingType: office
 area: "港区"
 address: "東京都港区東新橋1-6-1"
-lat: 35.665557
-lng: 139.762289
+lat: 35.664419
+lng: 139.759911
 completedYear: 2003
 floorsAbove: 32
 floorsBelow: 4

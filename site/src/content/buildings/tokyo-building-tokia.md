@@ -3,6 +3,8 @@ title: "東京ビルディング（TOKIA）"
 buildingType: office
 area: "千代田区"
 address: "東京都千代田区丸の内二丁目7番3号"
+lat: 35.68255
+lng: 139.764372
 completedYear: 2005
 floorsAbove: 33
 floorsBelow: 4
