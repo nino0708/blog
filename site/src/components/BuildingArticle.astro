@@ -34,6 +34,10 @@ interface Props {
   mapLabel?: string;
   /** スタンプラリーの識別子（記事slug）。渡すと本文下にスタンプボタンを出す */
   slug?: string;
+  /** 直線距離で近い建物。呼び出し側が座標から算出して渡す */
+  nearby?: { title: string; href: string | null; area: string; distanceM: number }[];
+  /** 「地図でこの周辺を見る」リンク先（/near/ に起点座標を載せたもの） */
+  nearHref?: string;
 }
 const {
   lang, title, summary, area, buildingType, verified,
@@ -41,6 +45,7 @@ const {
   specs, tags, tagBase, sources, listPath, searchTitle, searchArea,
   related = [],
   lat, lng, mapLabel, slug,
+  nearby = [], nearHref,
 } = Astro.props;
 const t = useT(lang);
 const typeLabel = buildingTypeLabel(lang, buildingType);
@@ -52,6 +57,11 @@ const mapQuery = hasCoords ? `${lat},${lng}` : (mapLabel ?? title);
 const q = encodeURIComponent(mapQuery);
 // APIキー不要の埋め込み（課金なし）。hl で地図ラベルの言語を切り替える。
 const mapEmbedSrc = `https://maps.google.com/maps?q=${q}&z=16&hl=${lang}&output=embed`;
+
+// 距離の表示: 1km未満はm、以上はkm。徒歩は分速80mで概算（実経路ではないと注記する）。
+const fmtDistance = (m: number) =>
+  m < 1000 ? `${Math.round(m / 10) * 10}m` : `${(m / 1000).toFixed(1)}km`;
+const walkMin = (m: number) => Math.max(1, Math.round(m / 80));
 const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
 ---
 <p class="breadcrumb"><a href={listPath}>{t('breadcrumb.list')}</a> ／ {area}</p>
@@ -127,6 +137,29 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
       <a href={mapsHref} target="_blank" rel="noopener nofollow">{t('map.open')} ↗</a>
     </p>
   </section>
+
+  {nearby.length > 0 && (
+    <section class="nearby" aria-label={t('nearby.title')}>
+      <h2>{t('nearby.title')}</h2>
+      <p class="nearby-lead">{t('nearby.lead')}</p>
+      <ul class="nearby-list">
+        {nearby.map((n) => (
+          <li class="nearby-item">
+            <span class="nearby-dist">{fmtDistance(n.distanceM)}</span>
+            <span class="nearby-body">
+              {n.href
+                ? <a class="nearby-name" href={n.href}>{n.title}</a>
+                : <span class="nearby-name is-stub">{n.title}<span class="nearby-badge">{t('nearby.stub')}</span></span>}
+              <span class="nearby-meta">
+                {n.area} ・ {t('nearby.walkAbout')}{walkMin(n.distanceM)}{t('nearby.min')}
+              </span>
+            </span>
+          </li>
+        ))}
+      </ul>
+      {nearHref && <p class="map-link"><a href={nearHref}>{t('nearby.more')}</a></p>}
+    </section>
+  )}
 </article>
 
 <AffiliateRail lang={lang} area={area} buildingType={buildingType} searchArea={searchArea} />
@@ -152,5 +185,55 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
   .map-link {
     margin-top: 10px;
     font-size: 0.9rem;
+  }
+
+  .nearby { margin-top: 32px; }
+  .nearby-lead {
+    margin: 4px 0 14px;
+    font-size: 0.9rem;
+    opacity: 0.75;
+  }
+  .nearby-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+  .nearby-item {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 10px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.015);
+  }
+  .nearby-dist {
+    flex: none;
+    min-width: 4.2em;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--brand);
+  }
+  .nearby-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .nearby-name { font-weight: 600; }
+  .nearby-name.is-stub { opacity: 0.6; }
+  .nearby-badge {
+    margin-left: 8px;
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.07);
+  }
+  .nearby-meta {
+    font-size: 0.82rem;
+    opacity: 0.7;
   }
 </style>

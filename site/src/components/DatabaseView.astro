@@ -29,6 +29,14 @@ const note =
     : '* Figures (height, year, floors) are approximate, based on public sources. Buildings marked “Coming soon” will gain articles and detailed data over time.';
 
 const buildingsBase = localizePath(lang, '/buildings/');
+
+// 市区での絞り込み。座標を逆ジオコーディングして得た city を使う（記事のareaは表記ゆれがあるため）。
+// 収録数の多い順に並べ、未設定の建物は選択肢に出さない。
+const cityCounts = new Map<string, number>();
+for (const r of rows) {
+  if (r.city) cityCounts.set(r.city, (cityCounts.get(r.city) ?? 0) + 1);
+}
+const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'ja'));
 ---
 <section class="db" id="db">
   <header class="db-head">
@@ -60,6 +68,13 @@ const buildingsBase = localizePath(lang, '/buildings/');
       <button class="db-chip db-chip-visited" id="db-visited" aria-pressed="false">{t('stamp.filter.visited')}</button>
     </div>
     <label class="db-sort">
+      <span>{t('db.col.city')}</span>
+      <select id="db-city">
+        <option value="all">{t('db.filter.cityAll')}</option>
+        {cities.map(([c, n]) => <option value={c}>{c}（{n}）</option>)}
+      </select>
+    </label>
+    <label class="db-sort">
       <span>{t('db.sort.label')}</span>
       <select id="db-sort">
         <option value="height">{t('db.sort.height')}</option>
@@ -90,6 +105,7 @@ const buildingsBase = localizePath(lang, '/buildings/');
             data-name={r.title.toLowerCase()}
             data-area={r.area.toLowerCase()}
             data-type={r.buildingType}
+            data-city={r.city ?? ''}
             data-height={r.heightM ?? ''}
             data-year={r.completedYear ?? ''}
             data-article={r.hasArticle ? '1' : '0'}
@@ -143,6 +159,7 @@ const buildingsBase = localizePath(lang, '/buildings/');
     const chips = [...root.querySelectorAll('.db-chip[data-type]')];
     const visitedChip = root.querySelector('#db-visited');
     const sortSel = root.querySelector('#db-sort');
+    const citySel = root.querySelector('#db-city');
     const tbody = root.querySelector('#db-rows');
     const empty = root.querySelector('#db-empty');
     const countEl = root.querySelector('#db-count');
@@ -150,6 +167,7 @@ const buildingsBase = localizePath(lang, '/buildings/');
     const rows = [...tbody.querySelectorAll('.db-row')];
 
     let activeType = 'all';
+    let activeCity = 'all';
     let visitedOnly = false;
 
     function num(v) {
@@ -163,9 +181,10 @@ const buildingsBase = localizePath(lang, '/buildings/');
       for (const tr of rows) {
         const matchType = activeType === 'all' || tr.dataset.type === activeType;
         const matchText = !q || tr.dataset.name.includes(q) || tr.dataset.area.includes(q);
+        const matchCity = activeCity === 'all' || tr.dataset.city === activeCity;
         const matchVisited =
           !visitedOnly || (window.BJStamp ? window.BJStamp.has(tr.dataset.slug) : false);
-        const show = matchType && matchText && matchVisited;
+        const show = matchType && matchText && matchCity && matchVisited;
         tr.hidden = !show;
         if (show) shown++;
       }
@@ -190,6 +209,12 @@ const buildingsBase = localizePath(lang, '/buildings/');
     }
 
     search.addEventListener('input', apply);
+    if (citySel) {
+      citySel.addEventListener('change', () => {
+        activeCity = citySel.value;
+        apply();
+      });
+    }
     chips.forEach((c) =>
       c.addEventListener('click', () => {
         chips.forEach((x) => x.classList.remove('is-active'));

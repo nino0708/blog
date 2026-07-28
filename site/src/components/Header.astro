@@ -50,6 +50,7 @@ const isCurrent = (href: string) => (href === home ? path === href : path.starts
       {lang === 'ja' && <a href="/rankings/" aria-current={isCurrent('/rankings/') ? 'page' : undefined}>ランキング</a>}
       {[
         ['/database/', t('nav.database')],
+        ['/near/', t('nav.near')],
         ['/stamps/', t('nav.stamps')],
       ].map(([p, label]) => {
         const href = localizePath(lang, p);

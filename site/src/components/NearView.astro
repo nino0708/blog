@@ -1,0 +1,219 @@
+---
+// 「周辺の建物をさがす」。好きな地点を起点に、収録済みの建物を近い順に並べて地図に出す。
+// 地点検索は国土地理院の住所検索API（キー不要・CORS許可済み）、地図はLeaflet＋国土地理院タイル。
+// 建物データはビルド時に埋め込むので、実行時の外部依存は地点検索とタイル配信だけ。
+import { useT, localizePath, type Lang } from '../i18n/ui';
+import { getBuildingRows } from '../lib/buildings';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useT(lang);
+
+const rows = await getBuildingRows(lang);
+// 座標のある建物だけが対象（座標を推測して並べることはしない）
+const points = rows
+  .filter((r) => typeof r.lat === 'number' && typeof r.lng === 'number')
+  .map((r) => ({
+    s: r.slug,
+    n: r.title,
+    a: r.area,
+    t: r.buildingType,
+    y: r.completedYear ?? null,
+    h: r.heightM ?? null,
+    lat: r.lat,
+    lng: r.lng,
+    u: r.hasArticle ? localizePath(lang, `/buildings/${r.slug}/`) : null,
+  }));
+
+const labels = {
+  stub: t('nearby.stub'),
+  walkAbout: t('nearby.walkAbout'),
+  min: t('nearby.min'),
+  result: t('near.result'),
+  empty: t('near.empty'),
+  searching: t('near.searching'),
+  notFound: t('near.notFound'),
+  geoDenied: t('near.geoDenied'),
+  geoUnsupported: t('near.geoUnsupported'),
+  origin: t('near.origin'),
+  directions: t('near.openInMaps'),
+};
+---
+<link rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
+
+<section class="near">
+  <header class="near-head">
+    <h1>{t('near.title')}</h1>
+    <p class="lead">{t('near.lead')}</p>
+  </header>
+
+  <form class="near-form" id="near-form" role="search">
+    <input
+      type="search"
+      id="near-q"
+      class="near-q"
+      placeholder={t('near.placeholder')}
+      autocomplete="off"
+      aria-label={t('near.placeholder')}
+    />
+    <button type="submit" class="near-btn is-primary">{t('near.search')}</button>
+    <button type="button" class="near-btn" id="near-geo">{t('near.useGeo')}</button>
+    <label class="near-radius">
+      <span>{t('near.radius')}</span>
+      <select id="near-radius">
+        <option value="500">500m</option>
+        <option value="1000" selected>1km</option>
+        <option value="2000">2km</option>
+        <option value="5000">5km</option>
+        <option value="0">{t('near.radius.all')}</option>
+      </select>
+    </label>
+  </form>
+
+  <p class="near-status" id="near-status" role="status" aria-live="polite"></p>
+
+  <div class="near-map-wrap">
+    <div id="near-map" class="near-map"></div>
+    <p class="near-attr">{t('near.mapAttribution')}</p>
+  </div>
+
+  <ul class="near-list" id="near-list"></ul>
+
+  <details class="near-hint">
+    <summary>{t('near.hintTitle')}</summary>
+    <p>{t('near.hint')}</p>
+    <p>{t('near.walkTime')}</p>
+  </details>
+</section>
+
+<script is:inline define:vars={{ points, labels, lang }}>
+  window.__NEAR__ = { points, labels, lang };
+</script>
+<script is:inline src="/vendor/leaflet/leaflet.js"></script>
+<script is:inline src="/near.js"></script>
+
+{/* 一覧はクライアントJSが生成するため、Astroのスコープ付きCSSでは当たらない。
+    セレクタはすべて .near* 前置きなので is:global でも他へ漏れない。 */}
+<style is:global>
+  .near { max-width: 900px; margin: 0 auto; }
+  .near-head h1 { margin-bottom: 6px; }
+  .near-head .lead { opacity: 0.8; margin-bottom: 18px; }
+
+  .near-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .near-q {
+    flex: 1 1 260px;
+    min-width: 0;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    background: var(--card, #fff);
+    color: inherit;
+  }
+  .near-btn {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+  }
+  .near-btn.is-primary {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+  }
+  .near-btn:hover { opacity: 0.85; }
+  .near-radius {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+  }
+  .near-radius select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    background: var(--card, #fff);
+    color: inherit;
+  }
+
+  .near-status {
+    min-height: 1.4em;
+    margin: 0 0 12px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  .near-map-wrap { margin-bottom: 18px; }
+  .near-map {
+    width: 100%;
+    height: 380px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+  }
+  .near-attr {
+    margin: 6px 0 0;
+    font-size: 0.75rem;
+    opacity: 0.6;
+  }
+
+  .near-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+  .near-item {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.015);
+  }
+  .near-rank {
+    flex: none;
+    min-width: 4.6em;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--brand);
+  }
+  .near-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .near-name { font-weight: 600; }
+  .near-name.is-stub { opacity: 0.6; }
+  .near-badge {
+    margin-left: 8px;
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.07);
+  }
+  .near-meta { font-size: 0.82rem; opacity: 0.7; }
+  .near-meta a { margin-left: 10px; }
+
+  .near-hint {
+    margin-top: 22px;
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+  .near-hint summary { cursor: pointer; font-weight: 600; }
+  .near-hint p { margin: 8px 0 0; }
+
+  @media (max-width: 640px) {
+    .near-map { height: 300px; }
+    .near-radius { flex: 1 1 100%; }
+  }
+</style>

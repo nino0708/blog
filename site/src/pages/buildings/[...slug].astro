@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BuildingArticle from '../../components/BuildingArticle.astro';
 import { buildSpecs } from '../../i18n/ui';
+import { getBuildingRows, nearestTo } from '../../lib/buildings';
 
 export async function getStaticPaths() {
   const posts = await getCollection('buildings');
@@ -85,6 +86,22 @@ const related = (await getCollection('buildings'))
   .sort((a, b) => b.score - a.score)
   .slice(0, 4)
   .map(({ p }) => ({ title: p.data.title, area: p.data.area, href: `/buildings/${p.slug}/` }));
+
+// 近くの建物: 図鑑と同じ全建物（記事未執筆のスタブ含む）から直線距離順に。座標が無ければ何も出さない。
+const rows = await getBuildingRows(lang);
+const nearby =
+  typeof d.lat === 'number' && typeof d.lng === 'number'
+    ? nearestTo(rows, d.lat, d.lng, { limit: 6, radiusM: 3000, excludeSlug: post.slug }).map((r) => ({
+        title: r.title,
+        area: r.area,
+        distanceM: r.distanceM,
+        href: r.hasArticle ? `/buildings/${r.slug}/` : null,
+      }))
+    : [];
+const nearHref =
+  typeof d.lat === 'number' && typeof d.lng === 'number'
+    ? `/near/?lat=${d.lat}&lng=${d.lng}&name=${encodeURIComponent(d.title)}`
+    : undefined;
 ---
 <BaseLayout title={seoTitle} description={metaDescription} lang={lang} ogType="article" altPath={altPath} jsonLd={jsonLd} appendSiteName={false} ogImage={d.heroImage}>
   <BuildingArticle
@@ -106,6 +123,8 @@ const related = (await getCollection('buildings'))
     lat={d.lat}
     lng={d.lng}
     slug={post.slug}
+    nearby={nearby}
+    nearHref={nearHref}
     mapLabel={d.title}
   >
     <Content />

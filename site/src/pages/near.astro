@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NearView from '../components/NearView.astro';
+
+const title = '周辺の建物をさがす｜好きな場所から建物巡り';
+const description =
+  '自宅・駅・好きな場所を入れると、その周りにある東京の高層建築を近い順に並べて地図に表示します。徒歩の目安つきで、そのまま建物巡りのルートを組み立てられます。';
+---
+<BaseLayout title={title} description={description} lang="ja" altPath="/en/near/" appendSiteName={false}>
+  <p class="breadcrumb"><a href="/">記事一覧</a> ／ 周辺さがし</p>
+  <NearView lang="ja" />
+</BaseLayout>
