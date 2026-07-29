@@ -33,5 +33,13 @@
     "attempts": 3,
     "reason": "確信できる外観画像が見つからない",
     "gaveUp": true
+  },
+  "eitaibashi": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "hareza-ikebukuro": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
   }
 }

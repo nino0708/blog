@@ -1,26 +1,24 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-07-26 08:11 JST
-- 対象: 公開済み記事 172 ページ（https://builtjapan.com）
-- 正常表示: 160 / 172（93.0%）
-- **要対応: 12 件**（画像なし 12 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-07-30 08:12 JST
+- 対象: 公開済み記事 192 ページ（https://builtjapan.com）
+- 正常表示: 182 / 192（94.8%）
+- **要対応: 10 件**（画像なし 10 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
 | 記事 | 詳細 |
 |---|---|
 | [bayz-tower-and-garden（JA）](https://builtjapan.com/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
-| [osaki-thinkpark-tower（JA）](https://builtjapan.com/buildings/osaki-thinkpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [eitaibashi（JA）](https://builtjapan.com/buildings/eitaibashi/) | ヒーロー画像なし（プレースホルダ表示） |
+| [hareza-ikebukuro（JA）](https://builtjapan.com/buildings/hareza-ikebukuro/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
-| [sunshine-city-world-import-mart（JA）](https://builtjapan.com/buildings/sunshine-city-world-import-mart/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-harumi-towers（JA）](https://builtjapan.com/buildings/the-parkhouse-harumi-towers/) | ヒーロー画像なし（プレースホルダ表示） |
-| [the-parkhouse-nishishinjuku-tower60（JA）](https://builtjapan.com/buildings/the-parkhouse-nishishinjuku-tower60/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
-| [osaki-thinkpark-tower（EN）](https://builtjapan.com/en/buildings/osaki-thinkpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [eitaibashi（EN）](https://builtjapan.com/en/buildings/eitaibashi/) | ヒーロー画像なし（プレースホルダ表示） |
+| [hareza-ikebukuro（EN）](https://builtjapan.com/en/buildings/hareza-ikebukuro/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
-| [sunshine-city-world-import-mart（EN）](https://builtjapan.com/en/buildings/sunshine-city-world-import-mart/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-harumi-towers（EN）](https://builtjapan.com/en/buildings/the-parkhouse-harumi-towers/) | ヒーロー画像なし（プレースホルダ表示） |
-| [the-parkhouse-nishishinjuku-tower60（EN）](https://builtjapan.com/en/buildings/the-parkhouse-nishishinjuku-tower60/) | ヒーロー画像なし（プレースホルダ表示） |
 
 ## 直し方
 
