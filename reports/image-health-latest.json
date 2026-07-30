@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-30T08:12:32.072852+09:00",
+  "checkedAt": "2026-07-31T08:13:02.310606+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/abeno-harukas/",
@@ -212,6 +212,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Futakotamagawa_rise-20150807.jpg/1280px-Futakotamagawa_rise-20150807.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/ginza-six/",
+      "slug": "ginza-six",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Ginza_Six_02.jpg/1280px-Ginza_Six_02.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/ginza-six/",
+      "slug": "ginza-six",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Ginza_Six_02.jpg/1280px-Ginza_Six_02.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/gran-tokyo-towers/",
       "slug": "gran-tokyo-towers",
       "lang": "ja",
@@ -238,6 +252,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Grand_Front_Osaka_in_201409.JPG/1280px-Grand_Front_Osaka_in_201409.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/grand-green-osaka/",
+      "slug": "grand-green-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Grand_Green_Osaka_2026-07.jpg/1280px-Grand_Green_Osaka_2026-07.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/grand-green-osaka/",
+      "slug": "grand-green-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Grand_Green_Osaka_2026-07.jpg/1280px-Grand_Green_Osaka_2026-07.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/hareza-ikebukuro/",
