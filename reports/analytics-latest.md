@@ -1,47 +1,44 @@
-# Built Japan アクセス分析（2026-07-19〜2026-07-26）
+# Built Japan アクセス分析（2026-07-26〜2026-08-02）
 
 > 分析部(Lambda)がCloudFrontアクセスログを自動集計。事業計画部はこれを基に方針を決定する。
 
 ## サマリ
-- ✅ 確実な人間PV（外部リファラ付き）: **103**（うち訪問者 93）
+- ✅ 確実な人間PV（外部リファラ付き）: **201**（うち訪問者 151）
   - ← 検索/SNS/被リンク等から来た本物の読者。事業判断はこの数字を基準に。
-- ⚠️ HTML200・非ボットUA: 3002（訪問IP 897）
+- ⚠️ HTML200・非ボットUA: 2304（訪問IP 1100）
   - ← UAを偽装したスクレイパー/AIクローラが混入する**上限値**。実読者数ではない。
-- ボット/クローラのページ取得: 5218（Google等のクロール量の目安）
-- 総リクエスト（画像等含む）: 13506
-- 日本語 1692 / 英語 1310 ページビュー
+- ボット/クローラのページ取得: 7171（Google等のクロール量の目安）
+- 総リクエスト（画像等含む）: 12697
+- 日本語 1453 / 英語 851 ページビュー
 
 ## 人気ページ Top10
-- 368　/
-- 208　/en/buildings/sunshine-city-world-import-mart/
-- 35　/en/buildings/otemachi-tower/
-- 26　/expressways/shutoko-c2-yamate-tunnel/
-- 20　/buildings/deux-tours-kachidoki/
-- 19　/buildings/the-parkhouse-nishishinjuku-tower60/
-- 19　/buildings/w-comfort-towers/
-- 18　/buildings/park-city-osaki/
-- 18　/buildings/shinonome-canal-court-codan/
-- 18　/railways/
+- 390　/
+- 99　/en/buildings/sunshine-city-world-import-mart/
+- 44　/en/buildings/shinjuku-mitsui-building
+- 39　/en/railways/yurikamome/
+- 25　/en/buildings/shinjuku-mitsui-building/
+- 22　/rankings/
+- 15　/database/
+- 13　/en/railways/keikyu-shinagawa-station/
+- 12　/buildings/nihonbashi-bridge/
+- 12　/expressways/
 
 ## 参照元 Top（外部のみ）
-- 71　www.google.com
-- 11　www.bing.com
+- 171　www.google.com
+- 17　www.bing.com
 - 5　search.yahoo.co.jp
-- 4　bing.com
-- 3　duckduckgo.com
-- 2　chatgpt.com
-- 2　twitter.com
-- 2　www.reddit.com
-- 1　google.com
-- 1　news.ycombinator.com
+- 5　bing.com
+- 1　www.google.co.jp
+- 1　dataindex.pro
+- 1　duckduckgo.com
 
 ## 日別ページビュー
-- 2026-07-19: 969
-- 2026-07-20: 523
-- 2026-07-21: 331
-- 2026-07-22: 70
-- 2026-07-23: 198
-- 2026-07-24: 282
-- 2026-07-25: 432
-- 2026-07-26: 197
+- 2026-07-26: 310
+- 2026-07-27: 269
+- 2026-07-28: 243
+- 2026-07-29: 419
+- 2026-07-30: 511
+- 2026-07-31: 178
+- 2026-08-01: 251
+- 2026-08-02: 123
 
