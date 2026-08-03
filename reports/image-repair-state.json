@@ -43,5 +43,17 @@
     "attempts": 3,
     "reason": "確信できる外観画像が見つからない",
     "gaveUp": true
+  },
+  "brillia-hamarikyu": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "park-city-musashikosugi-midsky": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "park-tower-grand-sky": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
   }
 }
