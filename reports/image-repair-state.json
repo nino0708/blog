@@ -45,15 +45,30 @@
     "gaveUp": true
   },
   "brillia-hamarikyu": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "park-city-musashikosugi-midsky": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "park-tower-grand-sky": {
-    "attempts": 2,
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "city-tower-osaka-honmachi": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "la-tour-shinjuku": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "the-parkhouse-gran-chidorigafuchi": {
+    "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }
 }

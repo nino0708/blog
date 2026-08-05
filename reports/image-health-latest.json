@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-04T08:18:06.764216+09:00",
+  "checkedAt": "2026-08-06T08:15:42.865064+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/abeno-harukas/",
@@ -140,6 +140,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Toshima_Ecomusee_Town_01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/city-tower-osaka-honmachi/",
+      "slug": "city-tower-osaka-honmachi",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/city-tower-osaka-honmachi/",
+      "slug": "city-tower-osaka-honmachi",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/city-tower-shinagawa/",
@@ -448,6 +462,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Kiyosu_Bridge-1.jpg/1280px-Kiyosu_Bridge-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/la-tour-shinjuku/",
+      "slug": "la-tour-shinjuku",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/la-tour-shinjuku/",
+      "slug": "la-tour-shinjuku",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/marunouchi-building/",
@@ -1078,6 +1106,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sunshine_City_2012.JPG/1280px-Sunshine_City_2012.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/the-parkhouse-gran-chidorigafuchi/",
+      "slug": "the-parkhouse-gran-chidorigafuchi",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/the-parkhouse-gran-chidorigafuchi/",
+      "slug": "the-parkhouse-gran-chidorigafuchi",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/the-parkhouse-harumi-towers/",
