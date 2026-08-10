@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-08-10 08:17 JST
+- 実行: 2026-08-11 08:15 JST
 - 対象: 公開済み記事 218 ページ（https://builtjapan.com）
-- 正常表示: 196 / 218（89.9%）
-- **要対応: 22 件**（画像なし 22 / 壊れ 0 / ページ異常 0）
+- 正常表示: 194 / 218（89.0%）
+- **要対応: 24 件**（画像なし 22 / 壊れ 2 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -31,6 +31,13 @@
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（EN）](https://builtjapan.com/en/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-harumi-towers（EN）](https://builtjapan.com/en/buildings/the-parkhouse-harumi-towers/) | ヒーロー画像なし（プレースホルダ表示） |
+
+## 画像が壊れている（srcはあるが取得できない）
+
+| 記事 | 詳細 |
+|---|---|
+| [tokyo-midtown-hibiya（JA）](https://builtjapan.com/buildings/tokyo-midtown-hibiya/) | 取得失敗 TimeoutError<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tokyo_Midtown_Hibiya.jpg/1280px-Tokyo_Midtown_Hibiya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail` |
+| [tokyo-midtown-hibiya（EN）](https://builtjapan.com/en/buildings/tokyo-midtown-hibiya/) | 取得失敗 TimeoutError<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tokyo_Midtown_Hibiya.jpg/1280px-Tokyo_Midtown_Hibiya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail` |
 
 ## 直し方
 
