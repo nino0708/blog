@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-11T08:15:41.089130+09:00",
+  "checkedAt": "2026-08-14T08:16:34.651755+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/abeno-harukas/",
@@ -14,6 +14,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Abeno_Harukas_2021-03.jpg/1280px-Abeno_Harukas_2021-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/akashi-kaikyo-bridge/",
+      "slug": "akashi-kaikyo-bridge",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Akashi_Kaiky%C5%8D_Bridge%2C_2004-08-27.jpg/1280px-Akashi_Kaiky%C5%8D_Bridge%2C_2004-08-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/akashi-kaikyo-bridge/",
+      "slug": "akashi-kaikyo-bridge",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Akashi_Kaiky%C5%8D_Bridge%2C_2004-08-27.jpg/1280px-Akashi_Kaiky%C5%8D_Bridge%2C_2004-08-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/ark-hills-sengokuyama-mori-tower/",
@@ -229,15 +243,15 @@
       "url": "https://builtjapan.com/buildings/eitaibashi/",
       "slug": "eitaibashi",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Eitai_Bridge_and_the_Reclaimed_Land_at_Fukagawa_LACMA_M.2000.105.133a-c_%281_of_3%29.jpg/1280px-Eitai_Bridge_and_the_Reclaimed_Land_at_Fukagawa_LACMA_M.2000.105.133a-c_%281_of_3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/eitaibashi/",
       "slug": "eitaibashi",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Eitai_Bridge_and_the_Reclaimed_Land_at_Fukagawa_LACMA_M.2000.105.133a-c_%281_of_3%29.jpg/1280px-Eitai_Bridge_and_the_Reclaimed_Land_at_Fukagawa_LACMA_M.2000.105.133a-c_%281_of_3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/futakotamagawa-rise/",
@@ -308,6 +322,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Grand_Green_Osaka_2026-07.jpg/1280px-Grand_Green_Osaka_2026-07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/haneda-airport-d-runway/",
+      "slug": "haneda-airport-d-runway",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Haneda_Airport_D-Runway_01.jpg/1280px-Haneda_Airport_D-Runway_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/haneda-airport-d-runway/",
+      "slug": "haneda-airport-d-runway",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Haneda_Airport_D-Runway_01.jpg/1280px-Haneda_Airport_D-Runway_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/hareza-ikebukuro/",
@@ -1220,6 +1248,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tokyo_Garden_Terrace_Kioicho.jpg/1280px-Tokyo_Garden_Terrace_Kioicho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
+      "url": "https://builtjapan.com/buildings/tokyo-gate-bridge/",
+      "slug": "tokyo-gate-bridge",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Tokyo_Gate_Bridge_2018.jpg/1280px-Tokyo_Gate_Bridge_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-gate-bridge/",
+      "slug": "tokyo-gate-bridge",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Tokyo_Gate_Bridge_2018.jpg/1280px-Tokyo_Gate_Bridge_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/tokyo-international-forum/",
       "slug": "tokyo-international-forum",
       "lang": "ja",
@@ -1251,17 +1293,15 @@
       "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",
       "slug": "tokyo-midtown-hibiya",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tokyo_Midtown_Hibiya.jpg/1280px-Tokyo_Midtown_Hibiya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "detail": "取得失敗 TimeoutError"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tokyo_Midtown_Hibiya.jpg/1280px-Tokyo_Midtown_Hibiya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-midtown-hibiya/",
       "slug": "tokyo-midtown-hibiya",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tokyo_Midtown_Hibiya.jpg/1280px-Tokyo_Midtown_Hibiya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "detail": "取得失敗 TimeoutError"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tokyo_Midtown_Hibiya.jpg/1280px-Tokyo_Midtown_Hibiya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-tower/",
