@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-08-14 08:16 JST
-- 対象: 公開済み記事 224 ページ（https://builtjapan.com）
-- 正常表示: 204 / 224（91.1%）
-- **要対応: 20 件**（画像なし 20 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-08-15 08:14 JST
+- 対象: 公開済み記事 228 ページ（https://builtjapan.com）
+- 正常表示: 206 / 228（90.4%）
+- **要対応: 22 件**（画像なし 22 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -12,6 +12,7 @@
 | [bayz-tower-and-garden（JA）](https://builtjapan.com/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（JA）](https://builtjapan.com/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
 | [city-tower-osaka-honmachi（JA）](https://builtjapan.com/buildings/city-tower-osaka-honmachi/) | ヒーロー画像なし（プレースホルダ表示） |
+| [eitaibashi（JA）](https://builtjapan.com/buildings/eitaibashi/) | ヒーロー画像なし（プレースホルダ表示） |
 | [hareza-ikebukuro（JA）](https://builtjapan.com/buildings/hareza-ikebukuro/) | ヒーロー画像なし（プレースホルダ表示） |
 | [la-tour-shinjuku（JA）](https://builtjapan.com/buildings/la-tour-shinjuku/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-city-musashikosugi-midsky（JA）](https://builtjapan.com/buildings/park-city-musashikosugi-midsky/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -22,6 +23,7 @@
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（EN）](https://builtjapan.com/en/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
 | [city-tower-osaka-honmachi（EN）](https://builtjapan.com/en/buildings/city-tower-osaka-honmachi/) | ヒーロー画像なし（プレースホルダ表示） |
+| [eitaibashi（EN）](https://builtjapan.com/en/buildings/eitaibashi/) | ヒーロー画像なし（プレースホルダ表示） |
 | [hareza-ikebukuro（EN）](https://builtjapan.com/en/buildings/hareza-ikebukuro/) | ヒーロー画像なし（プレースホルダ表示） |
 | [la-tour-shinjuku（EN）](https://builtjapan.com/en/buildings/la-tour-shinjuku/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-city-musashikosugi-midsky（EN）](https://builtjapan.com/en/buildings/park-city-musashikosugi-midsky/) | ヒーロー画像なし（プレースホルダ表示） |

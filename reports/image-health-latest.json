@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-14T08:16:34.651755+09:00",
+  "checkedAt": "2026-08-15T08:14:50.056750+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/abeno-harukas/",
@@ -243,15 +243,15 @@
       "url": "https://builtjapan.com/buildings/eitaibashi/",
       "slug": "eitaibashi",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Eitai_Bridge_and_the_Reclaimed_Land_at_Fukagawa_LACMA_M.2000.105.133a-c_%281_of_3%29.jpg/1280px-Eitai_Bridge_and_the_Reclaimed_Land_at_Fukagawa_LACMA_M.2000.105.133a-c_%281_of_3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/eitaibashi/",
       "slug": "eitaibashi",
       "lang": "en",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Eitai_Bridge_and_the_Reclaimed_Land_at_Fukagawa_LACMA_M.2000.105.133a-c_%281_of_3%29.jpg/1280px-Eitai_Bridge_and_the_Reclaimed_Land_at_Fukagawa_LACMA_M.2000.105.133a-c_%281_of_3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/futakotamagawa-rise/",
@@ -378,6 +378,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/HARUMI_FLAG_-_51878789983.jpg/1280px-HARUMI_FLAG_-_51878789983.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/hijiri-bashi/",
+      "slug": "hijiri-bashi",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Hijiri_Bridge-2.jpg/1280px-Hijiri_Bridge-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/hijiri-bashi/",
+      "slug": "hijiri-bashi",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Hijiri_Bridge-2.jpg/1280px-Hijiri_Bridge-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/izumi-garden-tower/",
@@ -700,6 +714,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Osaki_Think_Park_Tower_-_panoramio.jpg/1280px-Osaki_Think_Park_Tower_-_panoramio.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/osanbashi-cruise-terminal/",
+      "slug": "osanbashi-cruise-terminal",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/20250103_Osanbashi_Yokohama_International_Passenger_Terminal_105840.jpg/1280px-20250103_Osanbashi_Yokohama_International_Passenger_Terminal_105840.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/osanbashi-cruise-terminal/",
+      "slug": "osanbashi-cruise-terminal",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/20250103_Osanbashi_Yokohama_International_Passenger_Terminal_105840.jpg/1280px-20250103_Osanbashi_Yokohama_International_Passenger_Terminal_105840.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/otemachi-place/",
