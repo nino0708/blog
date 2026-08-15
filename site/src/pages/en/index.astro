@@ -1,28 +1,21 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import BuildingCard from '../../components/BuildingCard.astro';
-import Pager from '../../components/Pager.astro';
+import PostCard from '../../components/PostCard.astro';
 import registryData from '../../data/buildings-registry.json';
 import { useT } from '../../i18n/ui';
+import { getAllPosts } from '../../lib/latest';
+import { CATEGORIES } from '../../lib/category';
 
 const lang = 'en';
 const t = useT(lang);
 
-// 英語版は翻訳済み(buildingsEn)の建物のみ掲載。数値はJP版から補う。
-const jp = await getCollection('buildings');
-const jpBySlug = new Map(jp.map((p) => [p.slug, p]));
-const allPosts = (await getCollection('buildings-en'))
-  .map((en) => ({ en, jp: jpBySlug.get(en.slug) }))
-  .filter((x) => x.jp)
-  .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
-
-// 1ページ10件・新着順。11件目以降は /en/page/2/ … へ。
-const PER_PAGE = 10;
-const totalPages = Math.max(1, Math.ceil(allPosts.length / PER_PAGE));
-const posts = allPosts.slice(0, PER_PAGE);
+// 英語トップも「新着」。英語版が存在する記事だけをカテゴリ横断で新しい順に出す。
+const allPosts = await getAllPosts(lang);
+const latest = allPosts.slice(0, 10);
 
 // 建物の収録数は言語共通の母数(レジストリ ∪ 記事)。記事数は英語化済みの本数。
+const jp = await getCollection('buildings');
 const slugs = new Set<string>((registryData as any).buildings.map((b: any) => b.slug));
 for (const p of jp) slugs.add(p.slug);
 const buildingCount = slugs.size;
@@ -48,26 +41,17 @@ const articleCount = allPosts.length;
   </section>
 
   <div class="section-head" data-reveal>
-    <h2>{t('home.section.latest')}</h2>
-    <p>{t('home.section.latest.desc')}</p>
+    <h2>{t('home.section.feed')}</h2>
+    <p>{t('home.section.feed.desc')}</p>
   </div>
 
   <section class="grid grid-2">
-    {posts.map(({ en, jp }) => (
-      <BuildingCard
-        lang={lang}
-        url={`/en/buildings/${en.slug}/`}
-        title={en.data.title}
-        buildingType={jp!.data.buildingType}
-        area={en.data.area}
-        completedYear={jp!.data.completedYear}
-        heightM={jp!.data.heightM}
-        summary={en.data.summary}
-        verified={jp!.data.verified}
-        heroImage={jp!.data.heroImage}
-      />
-    ))}
+    {latest.map((post) => <PostCard lang={lang} post={post} />)}
   </section>
 
-  <Pager current={1} total={totalPages} basePath="/en/" lang={lang} />
+  <nav class="feed-more" aria-label={t('footer.categories')}>
+    <a href="/en/buildings/">{t('nav.home')}</a>
+    <a href="/en/expressways/">{CATEGORIES.expressways.label.en}</a>
+    <a href="/en/railways/">{CATEGORIES.railways.label.en}</a>
+  </nav>
 </BaseLayout>

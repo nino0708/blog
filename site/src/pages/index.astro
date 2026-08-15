@@ -1,26 +1,24 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import BuildingCard from '../components/BuildingCard.astro';
-import Pager from '../components/Pager.astro';
+import PostCard from '../components/PostCard.astro';
 import registryData from '../data/buildings-registry.json';
 import { useT } from '../i18n/ui';
+import { getAllPosts } from '../lib/latest';
+import { CATEGORIES } from '../lib/category';
 
 const lang = 'ja';
 const t = useT(lang);
-const allPosts = (await getCollection('buildings')).sort(
-  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
-);
 
-// 1ページ10件・新着順。11件目以降は /page/2/ … へ（別ページ表示）。
-// 少なめ＋縦長サムネで1枠を大きく取り、ビルの高さが伝わるようにする。
-const PER_PAGE = 10;
-const totalPages = Math.max(1, Math.ceil(allPosts.length / PER_PAGE));
-const posts = allPosts.slice(0, PER_PAGE);
+// トップは「新着」。ビル・マンションに限らず全カテゴリから直近10本を新しい順に出す。
+// カテゴリごとの一覧・ページ送りは各カテゴリページ(/buildings/ など)が担う。
+const allPosts = await getAllPosts(lang);
+const latest = allPosts.slice(0, 10);
 
-// ヒーローのスタッツ用カウント（図鑑と同じ母数: レジストリ ∪ 記事）。
+// ヒーローのスタッツ用カウント（図鑑と同じ母数: レジストリ ∪ 建物記事）。
+const buildingPosts = await getCollection('buildings');
 const slugs = new Set<string>((registryData as any).buildings.map((b: any) => b.slug));
-for (const p of allPosts) slugs.add(p.slug);
+for (const p of buildingPosts) slugs.add(p.slug);
 const buildingCount = slugs.size;
 const articleCount = allPosts.length;
 ---
@@ -44,26 +42,18 @@ const articleCount = allPosts.length;
   </section>
 
   <div class="section-head" data-reveal>
-    <h2>{t('home.section.latest')}</h2>
-    <p>{t('home.section.latest.desc')}</p>
+    <h2>{t('home.section.feed')}</h2>
+    <p>{t('home.section.feed.desc')}</p>
   </div>
 
   <section class="grid grid-2">
-    {posts.map((post) => (
-      <BuildingCard
-        lang={lang}
-        url={`/buildings/${post.slug}/`}
-        title={post.data.title}
-        buildingType={post.data.buildingType}
-        area={post.data.area}
-        completedYear={post.data.completedYear}
-        heightM={post.data.heightM}
-        summary={post.data.summary}
-        verified={post.data.verified}
-        heroImage={post.data.heroImage}
-      />
-    ))}
+    {latest.map((post) => <PostCard lang={lang} post={post} />)}
   </section>
 
-  <Pager current={1} total={totalPages} basePath="/" lang={lang} />
+  <nav class="feed-more" aria-label={t('footer.categories')}>
+    <a href="/buildings/">{t('nav.home')}</a>
+    <a href="/expressways/">{CATEGORIES.expressways.label.ja}</a>
+    <a href="/railways/">{CATEGORIES.railways.label.ja}</a>
+    <a href="/tourism/">{CATEGORIES.tourism.label.ja}</a>
+  </nav>
 </BaseLayout>

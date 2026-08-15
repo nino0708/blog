@@ -1,10 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import BuildingCard from '../../../components/BuildingCard.astro';
-import Pager from '../../../components/Pager.astro';
-import { useT } from '../../../i18n/ui';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import BuildingCard from '../../../../components/BuildingCard.astro';
+import Pager from '../../../../components/Pager.astro';
+import { useT } from '../../../../i18n/ui';
 
 export async function getStaticPaths() {
   const PER_PAGE = 10;
@@ -16,6 +16,7 @@ export async function getStaticPaths() {
     .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
   const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
   const paths = [];
+  // 1ページ目は /en/buildings/ が担うので 2ページ目以降だけを生成する。
   for (let p = 2; p <= totalPages; p++) {
     paths.push({
       params: { page: String(p) },
@@ -42,11 +43,11 @@ const { pagePosts, current, totalPages } = Astro.props as Props;
 
 const lang = 'en';
 const t = useT(lang);
-const heading = t('home.section.latest');
+const heading = t('nav.home');
 ---
 <BaseLayout title={`${heading} (Page ${current})`} lang={lang}>
   <div class="section-head section-head-sub" data-reveal>
-    <p class="crumb"><a href="/en/">{t('nav.home')}</a></p>
+    <p class="crumb"><a href="/en/buildings/">{heading}</a></p>
     <h1>{heading}</h1>
     <p>Page {current} / {totalPages}</p>
   </div>
@@ -68,5 +69,5 @@ const heading = t('home.section.latest');
     ))}
   </section>
 
-  <Pager current={current} total={totalPages} basePath="/en/" lang={lang} />
+  <Pager current={current} total={totalPages} basePath="/en/buildings/" lang={lang} />
 </BaseLayout>

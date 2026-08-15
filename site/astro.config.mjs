@@ -7,6 +7,11 @@ import remarkRakutenAffiliate from './src/plugins/remark-rakuten-affiliate.mjs';
 export default defineConfig({
   site: process.env.SITE_URL || 'https://example.com',
   trailingSlash: 'always',
+  // トップを「新着」にした際に、旧・建物一覧のページ送り(/page/N/)を新URLへ逃がす。
+  redirects: {
+    '/page/[page]': '/buildings/page/[page]',
+    '/en/page/[page]': '/en/buildings/page/[page]',
+  },
   build: {
     format: 'directory',
   },

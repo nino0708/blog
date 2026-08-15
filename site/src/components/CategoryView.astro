@@ -25,7 +25,7 @@ const {
   title, description, posts, basePath, lang = 'ja',
   current = 1, totalPages = 1,
 } = Astro.props;
-const listLabel = lang === 'ja' ? '記事一覧' : 'Articles';
+const listLabel = lang === 'ja' ? 'ホーム' : 'Home';
 const comingSoon = lang === 'ja'
   ? 'このカテゴリの記事は準備中です。順次公開していきます。'
   : 'Articles in this category are on the way.';

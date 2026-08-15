@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BuildingCard from '../../../components/BuildingCard.astro';
+import Pager from '../../../components/Pager.astro';
+import { useT } from '../../../i18n/ui';
+
+const lang = 'en';
+const t = useT(lang);
+
+// 英語版は翻訳済み(buildings-en)の建物のみ掲載。数値はJP版から補う。
+const jp = await getCollection('buildings');
+const jpBySlug = new Map(jp.map((p) => [p.slug, p]));
+const allPosts = (await getCollection('buildings-en'))
+  .map((en) => ({ en, jp: jpBySlug.get(en.slug) }))
+  .filter((x) => x.jp)
+  .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
+
+// 1ページ10件・新着順。11件目以降は /en/buildings/page/2/ … へ。
+const PER_PAGE = 10;
+const totalPages = Math.max(1, Math.ceil(allPosts.length / PER_PAGE));
+const posts = allPosts.slice(0, PER_PAGE);
+---
+<BaseLayout title={t('nav.home')} description={t('buildings.lead')} lang={lang} altPath="/buildings/">
+  <div class="section-head section-head-sub" data-reveal>
+    <p class="crumb"><a href="/en/">{t('breadcrumb.home')}</a></p>
+    <h1>{t('nav.home')}</h1>
+    <p>{t('buildings.lead')}</p>
+  </div>
+
+  <section class="grid grid-2">
+    {posts.map(({ en, jp }) => (
+      <BuildingCard
+        lang={lang}
+        url={`/en/buildings/${en.slug}/`}
+        title={en.data.title}
+        buildingType={jp!.data.buildingType}
+        area={en.data.area}
+        completedYear={jp!.data.completedYear}
+        heightM={jp!.data.heightM}
+        summary={en.data.summary}
+        verified={jp!.data.verified}
+        heroImage={jp!.data.heroImage}
+      />
+    ))}
+  </section>
+
+  <Pager current={1} total={totalPages} basePath="/en/buildings/" lang={lang} />
+</BaseLayout>

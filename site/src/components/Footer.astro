@@ -19,7 +19,8 @@ const year = new Date().getFullYear();
       <nav class="footer-col" aria-label={t('footer.explore')}>
         <h2>{t('footer.explore')}</h2>
         <ul>
-          <li><a href={localizePath(lang, '/')}>{t('nav.home')}</a></li>
+          <li><a href={localizePath(lang, '/')}>{t('nav.latest')}</a></li>
+          <li><a href={localizePath(lang, '/buildings/')}>{t('nav.home')}</a></li>
           <li><a href={localizePath(lang, '/database/')}>{t('nav.database')}</a></li>
           <li><a href={localizePath(lang, '/stamps/')}>{t('nav.stamps')}</a></li>
           {lang === 'ja' && <li><a href="/rankings/">ランキング</a></li>}
@@ -31,7 +32,7 @@ const year = new Date().getFullYear();
         <nav class="footer-col" aria-label={t('footer.categories')}>
           <h2>{t('footer.categories')}</h2>
           <ul>
-            <li><a href="/">ビル・マンション</a></li>
+            <li><a href="/buildings/">ビル・マンション</a></li>
             <li><a href="/expressways/">高速道路</a></li>
             <li><a href="/railways/">鉄道</a></li>
             <li><a href="/tourism/">観光</a></li>

@@ -1,0 +1,42 @@
+---
+// カテゴリ横断の「新着」カード。建物カード(BuildingCard)と同じ .card の見た目のまま、
+// バッジをカテゴリ名にできる・建物固有の数値(竣工年/高さ)が無くても成立する点だけが違う。
+import { useT, buildCardMeta, type Lang } from '../i18n/ui';
+import type { LatestPost } from '../lib/latest';
+
+interface Props {
+  lang: Lang;
+  post: LatestPost;
+}
+const { lang, post } = Astro.props;
+const t = useT(lang);
+const meta = post.buildingType
+  ? buildCardMeta(lang, {
+      area: post.area ?? '',
+      completedYear: post.completedYear,
+      heightM: post.heightM,
+    })
+  : (post.area ?? '');
+---
+<article class="card" data-reveal>
+  <a href={post.href}>
+    {post.heroImage
+      ? <div class="thumb thumb-img"><img src={post.heroImage} alt={post.title} loading="lazy" /></div>
+      : (
+        <div class="thumb thumb-fallback">
+          <span class="thumb-type">{post.badge}</span>
+          {post.area && <span class="thumb-area">{post.area}</span>}
+          {post.heightM && <span class="thumb-height">{post.heightM}m</span>}
+        </div>
+      )}
+    <div class="body">
+      <div class="taglist">
+        <span class={`badge ${post.badgeClass}`}>{post.badge}</span>
+        {!post.verified && <span class="badge unverified">{t('badge.unverified.short')}</span>}
+      </div>
+      <h3>{post.title}</h3>
+      {meta && <div class="meta">{meta}</div>}
+      {post.summary && <p class="summary">{post.summary}</p>}
+    </div>
+  </a>
+</article>

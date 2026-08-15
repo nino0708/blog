@@ -248,6 +248,20 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   .grid.grid-2 .card .thumb { aspect-ratio: 4 / 4.5; }
 }
 
+/* ---- 新着の下に置くカテゴリ別一覧への導線 ---- */
+.feed-more {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;
+  margin: 4px 0 56px;
+}
+.feed-more a {
+  display: inline-flex; align-items: center; height: 40px; padding: 0 16px;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--surface); color: var(--text);
+  font-size: 0.9rem; font-weight: 600; text-decoration: none;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+.feed-more a:hover { border-color: var(--brand); color: var(--brand); }
+
 /* ---- pager (ページ送り) ---- */
 .pager {
   display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
