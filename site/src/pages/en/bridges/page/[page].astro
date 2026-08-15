@@ -4,20 +4,19 @@ import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import BuildingCard from '../../../../components/BuildingCard.astro';
 import Pager from '../../../../components/Pager.astro';
-import { useT } from '../../../../i18n/ui';
-import { getBuildingEntries } from '../../../../lib/category';
+import { BRIDGES, getBridgeEntries } from '../../../../lib/category';
 
 export async function getStaticPaths() {
   const PER_PAGE = 10;
-  const jp = await getBuildingEntries();
+  const jp = await getBridgeEntries();
   const jpBySlug = new Map(jp.map((p) => [p.slug, p]));
   const all = (await getCollection('buildings-en'))
-    .map((en) => ({ en, jp: jpBySlug.get(en.slug) }))
-    .filter((x) => x.jp)
-    .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
+    .filter((en) => jpBySlug.has(en.slug))
+    .map((en) => ({ en, jp: jpBySlug.get(en.slug)! }))
+    .sort((a, b) => b.jp.data.publishedAt.valueOf() - a.jp.data.publishedAt.valueOf());
   const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
   const paths = [];
-  // 1ページ目は /en/buildings/ が担うので 2ページ目以降だけを生成する。
+  // 1ページ目は /en/bridges/ が担うので 2ページ目以降だけを生成する。
   for (let p = 2; p <= totalPages; p++) {
     paths.push({
       params: { page: String(p) },
@@ -41,15 +40,12 @@ interface Props {
   totalPages: number;
 }
 const { pagePosts, current, totalPages } = Astro.props as Props;
-
 const lang = 'en';
-const t = useT(lang);
-const heading = t('nav.home');
 ---
-<BaseLayout title={`${heading} (Page ${current})`} lang={lang}>
+<BaseLayout title={`${BRIDGES.label.en} (Page ${current})`} lang={lang}>
   <div class="section-head section-head-sub" data-reveal>
-    <p class="crumb"><a href="/en/buildings/">{heading}</a></p>
-    <h1>{heading}</h1>
+    <p class="crumb"><a href="/en/bridges/">{BRIDGES.label.en}</a></p>
+    <h1>{BRIDGES.label.en}</h1>
     <p>Page {current} / {totalPages}</p>
   </div>
 
@@ -70,5 +66,5 @@ const heading = t('nav.home');
     ))}
   </section>
 
-  <Pager current={current} total={totalPages} basePath="/en/buildings/" lang={lang} />
+  <Pager current={current} total={totalPages} basePath="/en/bridges/" lang={lang} />
 </BaseLayout>

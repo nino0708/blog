@@ -1,6 +1,6 @@
 ---
 import { useT, localizePath, type Lang } from '../i18n/ui';
-import { CATEGORIES } from '../lib/category';
+import { BRIDGES, CATEGORIES } from '../lib/category';
 
 interface Props {
   lang: Lang;
@@ -47,6 +47,10 @@ const isCurrent = (href: string) => (href === home ? path === href : path.starts
         const href = localizePath(lang, `/${key}/`);
         return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{CATEGORIES[key].label[lang]}</a>;
       })}
+      {(() => {
+        const href = localizePath(lang, '/bridges/');
+        return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{BRIDGES.label[lang]}</a>;
+      })()}
       {/* 観光は日本語版のみ（英語コレクション未整備） */}
       {lang === 'ja' && (
         <a href="/tourism/" aria-current={isCurrent('/tourism/') ? 'page' : undefined}>{CATEGORIES.tourism.label.ja}</a>

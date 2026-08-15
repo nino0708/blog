@@ -1,5 +1,6 @@
 ---
 import { useT, localizePath, type Lang } from '../i18n/ui';
+import { BRIDGES, CATEGORIES } from '../lib/category';
 
 interface Props {
   lang: Lang;
@@ -32,10 +33,11 @@ const year = new Date().getFullYear();
         <nav class="footer-col" aria-label={t('footer.categories')}>
           <h2>{t('footer.categories')}</h2>
           <ul>
-            <li><a href="/buildings/">ビル・マンション</a></li>
-            <li><a href="/expressways/">高速道路</a></li>
-            <li><a href="/railways/">鉄道</a></li>
-            <li><a href="/tourism/">観光</a></li>
+            <li><a href="/buildings/">{t('nav.home')}</a></li>
+            <li><a href="/expressways/">{CATEGORIES.expressways.label.ja}</a></li>
+            <li><a href="/railways/">{CATEGORIES.railways.label.ja}</a></li>
+            <li><a href="/bridges/">{BRIDGES.label.ja}</a></li>
+            <li><a href="/tourism/">{CATEGORIES.tourism.label.ja}</a></li>
           </ul>
         </nav>
       )}

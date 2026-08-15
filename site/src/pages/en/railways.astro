@@ -1,20 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CategoryView from '../../components/CategoryView.astro';
-import { getCollection } from 'astro:content';
-import { CATEGORIES, PER_PAGE } from '../../lib/category';
+import { CATEGORIES, PER_PAGE, getCategoryPostsEn } from '../../lib/category';
 
 const meta = CATEGORIES.railways;
 // 英語版コレクションは画像も公開日も持たないため、同じ slug の日本語版から借りる。
-const jaBySlug = new Map((await getCollection('railways')).map((p) => [p.slug, p]));
-const all = (await getCollection('railways-en'))
-  .filter((p) => jaBySlug.has(p.slug))
-  .map((p) => ({ ...p, heroImage: jaBySlug.get(p.slug)!.data.heroImage }))
-  .sort(
-    (a, b) =>
-      jaBySlug.get(b.slug)!.data.publishedAt.valueOf() -
-      jaBySlug.get(a.slug)!.data.publishedAt.valueOf()
-  );
+// 「交通」タグ付きの建物記事(羽田空港D滑走路など)も英語版がある分だけ合流する。
+const all = await getCategoryPostsEn('railways');
 const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
 const posts = all.slice(0, PER_PAGE);
 ---

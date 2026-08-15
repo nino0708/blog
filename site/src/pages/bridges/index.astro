@@ -3,23 +3,27 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BuildingCard from '../../components/BuildingCard.astro';
 import Pager from '../../components/Pager.astro';
 import { useT } from '../../i18n/ui';
-import { getBuildingEntries } from '../../lib/category';
+import { BRIDGES, getBridgeEntries } from '../../lib/category';
 
 const lang = 'ja';
 const t = useT(lang);
-// 橋は /bridges/ に分けたのでここには出さない。
-const allPosts = await getBuildingEntries();
+// 橋の記事は buildings コレクションのまま(URLは /buildings/<slug>/)。ここは一覧だけを担う。
+const allPosts = await getBridgeEntries();
 
-// 1ページ10件・新着順。11件目以降は /buildings/page/2/ … へ。
 const PER_PAGE = 10;
 const totalPages = Math.max(1, Math.ceil(allPosts.length / PER_PAGE));
 const posts = allPosts.slice(0, PER_PAGE);
 ---
-<BaseLayout title={t('nav.home')} description={t('buildings.lead')} lang={lang} altPath="/en/buildings/">
+<BaseLayout
+  title={BRIDGES.label.ja}
+  description={BRIDGES.description.ja}
+  lang={lang}
+  altPath="/en/bridges/"
+>
   <div class="section-head section-head-sub" data-reveal>
     <p class="crumb"><a href="/">{t('breadcrumb.home')}</a></p>
-    <h1>{t('nav.home')}</h1>
-    <p>{t('buildings.lead')}</p>
+    <h1>{BRIDGES.label.ja}</h1>
+    <p>{BRIDGES.description.ja}</p>
   </div>
 
   <section class="grid grid-2">
@@ -39,5 +43,5 @@ const posts = allPosts.slice(0, PER_PAGE);
     ))}
   </section>
 
-  <Pager current={1} total={totalPages} basePath="/buildings/" lang={lang} />
+  <Pager current={1} total={totalPages} basePath="/bridges/" lang={lang} />
 </BaseLayout>

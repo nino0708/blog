@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { CATEGORIES, PER_PAGE as CAT_PER_PAGE } from '../lib/category';
+import { CATEGORIES, PER_PAGE as CAT_PER_PAGE, TRANSPORT_TAG } from '../lib/category';
 
 // 自前のsitemap生成。日本語(タグ)URLも encodeURI で安全に出力する。
 // 日本語/英語の対訳ページは xhtml:link(hreflang) で相互に結ぶ。
@@ -28,6 +28,8 @@ export const GET: APIRoute = async ({ site }) => {
     { loc: `${base}/en/`, alternates: pair('/', '/en/') },
     { loc: `${base}/buildings/`, alternates: pair('/buildings/', '/en/buildings/') },
     { loc: `${base}/en/buildings/`, alternates: pair('/buildings/', '/en/buildings/') },
+    { loc: `${base}/bridges/`, alternates: pair('/bridges/', '/en/bridges/') },
+    { loc: `${base}/en/bridges/`, alternates: pair('/bridges/', '/en/bridges/') },
     { loc: `${base}/about/`, alternates: pair('/about/', '/en/about/') },
     { loc: `${base}/en/about/`, alternates: pair('/about/', '/en/about/') },
     { loc: `${base}/database/`, alternates: pair('/database/', '/en/database/') },
@@ -76,12 +78,22 @@ export const GET: APIRoute = async ({ site }) => {
   for (const t of tags) urls.push({ loc: `${base}/tags/${encodeURI(t)}/` });
   for (const t of enTags) urls.push({ loc: `${base}/en/tags/${encodeURI(t)}/` });
 
-  // ビル・マンション一覧のページング(2ページ目以降)。1ページ目は /buildings/ , /en/buildings/ で既出。
+  // ビル・マンション/橋の一覧のページング(2ページ目以降)。1ページ目は上の一覧URLで既出。
   const PER_PAGE = 10;
-  const jaPages = Math.ceil(posts.length / PER_PAGE);
-  const enPages = Math.ceil(enPosts.filter((p) => jpSlugs.has(p.slug)).length / PER_PAGE);
-  for (let p = 2; p <= jaPages; p++) urls.push({ loc: `${base}/buildings/page/${p}/` });
-  for (let p = 2; p <= enPages; p++) urls.push({ loc: `${base}/en/buildings/page/${p}/` });
+  const isBridge = (p: (typeof posts)[number]) =>
+    p.data.buildingType === 'bridge' && !p.data.tags.includes(TRANSPORT_TAG);
+  const jaBuildings = posts.filter((p) => p.data.buildingType !== 'bridge');
+  const jaBridges = posts.filter(isBridge);
+  const enOf = (list: typeof posts) => {
+    const slugs = new Set(list.map((p) => p.slug));
+    return enPosts.filter((p) => slugs.has(p.slug));
+  };
+  const paging = (jaLen: number, enLen: number, jaPath: string, enPath: string) => {
+    for (let p = 2; p <= Math.ceil(jaLen / PER_PAGE); p++) urls.push({ loc: `${base}${jaPath}page/${p}/` });
+    for (let p = 2; p <= Math.ceil(enLen / PER_PAGE); p++) urls.push({ loc: `${base}${enPath}page/${p}/` });
+  };
+  paging(jaBuildings.length, enOf(jaBuildings).length, '/buildings/', '/en/buildings/');
+  paging(jaBridges.length, enOf(jaBridges).length, '/bridges/', '/en/bridges/');
 
   const xmlns =
     `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" ` +

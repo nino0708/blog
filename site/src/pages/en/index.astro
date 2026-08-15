@@ -5,7 +5,7 @@ import PostCard from '../../components/PostCard.astro';
 import registryData from '../../data/buildings-registry.json';
 import { useT } from '../../i18n/ui';
 import { getAllPosts } from '../../lib/latest';
-import { CATEGORIES } from '../../lib/category';
+import { BRIDGES, CATEGORIES } from '../../lib/category';
 
 const lang = 'en';
 const t = useT(lang);
@@ -53,5 +53,6 @@ const articleCount = allPosts.length;
     <a href="/en/buildings/">{t('nav.home')}</a>
     <a href="/en/expressways/">{CATEGORIES.expressways.label.en}</a>
     <a href="/en/railways/">{CATEGORIES.railways.label.en}</a>
+    <a href="/en/bridges/">{BRIDGES.label.en}</a>
   </nav>
 </BaseLayout>

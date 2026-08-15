@@ -3,15 +3,14 @@ import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import BuildingCard from '../../../components/BuildingCard.astro';
 import Pager from '../../../components/Pager.astro';
-import { useT } from '../../../i18n/ui';
-import { getBuildingEntries } from '../../../lib/category';
+import { BRIDGES, getBridgeEntries } from '../../../lib/category';
 
 export async function getStaticPaths() {
   const PER_PAGE = 10;
-  const all = await getBuildingEntries();
+  const all = await getBridgeEntries();
   const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
   const paths = [];
-  // 1ページ目は /buildings/ が担うので 2ページ目以降だけを生成する。
+  // 1ページ目は /bridges/ が担うので 2ページ目以降だけを生成する。
   for (let p = 2; p <= totalPages; p++) {
     paths.push({
       params: { page: String(p) },
@@ -31,15 +30,12 @@ interface Props {
   totalPages: number;
 }
 const { pagePosts, current, totalPages } = Astro.props as Props;
-
 const lang = 'ja';
-const t = useT(lang);
-const heading = t('nav.home');
 ---
-<BaseLayout title={`${heading}（${current}ページ目）`} lang={lang}>
+<BaseLayout title={`${BRIDGES.label.ja}（${current}ページ目）`} lang={lang}>
   <div class="section-head section-head-sub" data-reveal>
-    <p class="crumb"><a href="/buildings/">{heading}</a></p>
-    <h1>{heading}</h1>
+    <p class="crumb"><a href="/bridges/">{BRIDGES.label.ja}</a></p>
+    <h1>{BRIDGES.label.ja}</h1>
     <p>{current} / {totalPages} ページ</p>
   </div>
 
@@ -60,5 +56,5 @@ const heading = t('nav.home');
     ))}
   </section>
 
-  <Pager current={current} total={totalPages} basePath="/buildings/" lang={lang} />
+  <Pager current={current} total={totalPages} basePath="/bridges/" lang={lang} />
 </BaseLayout>

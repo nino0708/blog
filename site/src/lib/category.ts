@@ -1,6 +1,7 @@
-// 拡張カテゴリ(高速道路・鉄道・観光)の表示設定。
+// 拡張カテゴリ(高速道路・交通網・観光)と、建物コレクションの出し分け(橋 / ビル・マンション)の設定。
 // ページ側(一覧・記事詳細・sitemap)がここを唯一の出典として参照する。
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import type { Lang } from '../i18n/ui';
 
 export type CategoryKey = 'expressways' | 'railways' | 'tourism';
@@ -30,10 +31,10 @@ export const CATEGORIES: Record<CategoryKey, CategoryMeta> = {
     hasEn: true,
   },
   railways: {
-    label: { ja: '鉄道', en: 'Railways' },
+    label: { ja: '交通網', en: 'Transport' },
     description: {
-      ja: '山手線や地下鉄、ターミナル駅など、東京・関東の鉄道の路線と駅を紹介していきます。',
-      en: 'Lines and stations across Tokyo and the Kanto region — from the Yamanote loop to the subways and the great terminals.',
+      ja: '山手線や地下鉄、ターミナル駅、空港まで。東京・関東の人とモノを動かす交通インフラを紹介していきます。',
+      en: 'Lines, stations, terminals and airports — the transport infrastructure that moves people and goods across Tokyo and the Kanto region.',
     },
     booksKeyword: '東京 鉄道 建築',
     hasEn: true,
@@ -60,6 +61,9 @@ export function categoryPath(lang: Lang, key: CategoryKey, slug = ''): string {
 // このタグを付けると観光の一覧にも顔を出す。リンク先は /buildings/<slug>/ のまま。
 const BUILDING_TAG_BY_CATEGORY: Partial<Record<CategoryKey, string>> = {
   tourism: '観光',
+  // 羽田空港D滑走路のような交通インフラは buildings コレクションに置いたまま
+  // (高さ・座標・図鑑・英語版を保つ)、このタグで交通網の一覧にも出す。
+  railways: '交通',
 };
 
 /** カテゴリ一覧に出す1件分。href は詳細ページへの実リンク（合流した建物は /buildings/ を指す）。 */
@@ -68,6 +72,51 @@ export interface CategoryPost {
   data: { title: string; summary?: string; area?: string; publishedAt: Date };
   heroImage?: string;
   href: string;
+}
+
+/**
+ * カテゴリ一覧に並べる記事を返す（英語版・新着順）。
+ * 英語コレクションは公開日・画像を持たないため、同じ slug の日本語版から借りる。
+ * タグで合流する建物記事も、英語版(buildings-en)がある分だけ合流させる。
+ */
+export async function getCategoryPostsEn(key: CategoryKey): Promise<CategoryPost[]> {
+  const meta = CATEGORIES[key];
+  const own: CategoryPost[] = [];
+  if (meta.hasEn) {
+    const jaBySlug = new Map((await getCollection(key)).map((p) => [p.slug, p]));
+    for (const en of await getCollection(`${key}-en` as 'railways-en')) {
+      const ja = jaBySlug.get(en.slug);
+      if (!ja) continue;
+      own.push({
+        slug: en.slug,
+        data: { ...en.data, publishedAt: ja.data.publishedAt },
+        heroImage: ja.data.heroImage,
+        href: `/en/${key}/${en.slug}/`,
+      });
+    }
+  }
+
+  const tag = BUILDING_TAG_BY_CATEGORY[key];
+  const tagged: CategoryPost[] = [];
+  if (tag) {
+    const jaBySlug = new Map(
+      (await getCollection('buildings')).filter((b) => b.data.tags.includes(tag)).map((b) => [b.slug, b])
+    );
+    for (const en of await getCollection('buildings-en')) {
+      const ja = jaBySlug.get(en.slug);
+      if (!ja) continue;
+      tagged.push({
+        slug: en.slug,
+        data: { ...en.data, publishedAt: ja.data.publishedAt },
+        heroImage: ja.data.heroImage,
+        href: `/en/buildings/${en.slug}/`,
+      });
+    }
+  }
+
+  return [...own, ...tagged].sort(
+    (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
+  );
 }
 
 /**
@@ -97,4 +146,39 @@ export async function getCategoryPosts(key: CategoryKey): Promise<CategoryPost[]
   return [...own, ...tagged].sort(
     (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
   );
+}
+
+// ---- 橋 / ビル・マンションの振り分け ----
+// 橋は buildings コレクションに置いたまま(高さ・座標・図鑑・スタンプ・英語版を保つ)、
+// 一覧の出し分けだけをここで行う。記事URLは /buildings/<slug>/ のまま変わらない。
+
+/** 橋の一覧ページの見出し・リード文。CATEGORIES と同じ形にして呼び出し側を揃える。 */
+export const BRIDGES = {
+  label: { ja: '橋', en: 'Bridges' } as Record<Lang, string>,
+  description: {
+    ja: '隅田川の震災復興橋梁から東京ゲートブリッジ、明石海峡大橋まで。街をつなぐ橋を一橋ずつ記録します。',
+    en: 'From the reconstruction bridges of the Sumida River to the Tokyo Gate Bridge and the Akashi Kaikyo Bridge — the crossings that stitch the city together.',
+  } as Record<Lang, string>,
+};
+
+/** 交通網の一覧へ合流させる建物記事のタグ(橋の一覧からは外して重複を避ける)。 */
+export const TRANSPORT_TAG = BUILDING_TAG_BY_CATEGORY.railways as string;
+
+type BuildingEntry = CollectionEntry<'buildings'>;
+
+const byNewest = (a: BuildingEntry, b: BuildingEntry) =>
+  b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf();
+
+/** 橋の記事(新着順)。交通網へ回した構造物(羽田空港D滑走路など)は除く。 */
+export async function getBridgeEntries(): Promise<BuildingEntry[]> {
+  return (await getCollection('buildings'))
+    .filter((p) => p.data.buildingType === 'bridge' && !p.data.tags.includes(TRANSPORT_TAG))
+    .sort(byNewest);
+}
+
+/** ビル・マンションの記事(新着順)。橋は専用ページへ分けたのでここには出さない。 */
+export async function getBuildingEntries(): Promise<BuildingEntry[]> {
+  return (await getCollection('buildings'))
+    .filter((p) => p.data.buildingType !== 'bridge')
+    .sort(byNewest);
 }

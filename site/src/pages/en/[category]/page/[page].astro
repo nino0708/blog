@@ -1,24 +1,16 @@
 ---
 // 拡張カテゴリ一覧の2ページ目以降(英語)。1ページ目は /en/<category>/ が担う。
 // 並び順・サムネイルは日本語版を出典にする(英語コレクションは publishedAt/heroImage を持たない)。
-import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import CategoryView from '../../../../components/CategoryView.astro';
-import { CATEGORIES, PER_PAGE, type CategoryKey } from '../../../../lib/category';
+import { CATEGORIES, PER_PAGE, getCategoryPostsEn, type CategoryKey } from '../../../../lib/category';
 
 export async function getStaticPaths() {
   const keys = (Object.keys(CATEGORIES) as CategoryKey[]).filter((k) => CATEGORIES[k].hasEn);
   const paths = [];
   for (const key of keys) {
-    const jaBySlug = new Map((await getCollection(key)).map((p) => [p.slug, p]));
-    const all = (await getCollection(`${key}-en` as 'railways-en'))
-      .filter((p) => jaBySlug.has(p.slug))
-      .map((p) => ({ ...p, heroImage: jaBySlug.get(p.slug)!.data.heroImage }))
-      .sort(
-        (a, b) =>
-          jaBySlug.get(b.slug)!.data.publishedAt.valueOf() -
-          jaBySlug.get(a.slug)!.data.publishedAt.valueOf()
-      );
+    // 1ページ目(/en/<category>/)と同じ並び・同じ合流ルールで切り分ける。
+    const all = await getCategoryPostsEn(key);
     const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
     for (let p = 2; p <= totalPages; p++) {
       paths.push({

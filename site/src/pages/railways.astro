@@ -1,14 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryView from '../components/CategoryView.astro';
-import { getCollection } from 'astro:content';
-import { CATEGORIES, PER_PAGE } from '../lib/category';
+import { CATEGORIES, PER_PAGE, getCategoryPosts } from '../lib/category';
 
 const meta = CATEGORIES.railways;
-// 新着順。2ページ目以降は /railways/page/N/ が担う(トップの新着一覧と同じ1ページ10件)。
-const all = (await getCollection('railways')).sort(
-  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
-);
+// 新着順。鉄道コレクションに加え「交通」タグ付きの建物(羽田空港D滑走路など)も合流する。
+// 2ページ目以降は /railways/page/N/ が担う(トップの新着一覧と同じ1ページ10件)。
+const all = await getCategoryPosts('railways');
 const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
 const posts = all.slice(0, PER_PAGE);
 ---

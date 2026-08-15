@@ -4,29 +4,33 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import BuildingCard from '../../../components/BuildingCard.astro';
 import Pager from '../../../components/Pager.astro';
 import { useT } from '../../../i18n/ui';
-import { getBuildingEntries } from '../../../lib/category';
+import { BRIDGES, getBridgeEntries } from '../../../lib/category';
 
 const lang = 'en';
 const t = useT(lang);
 
-// 英語版は翻訳済み(buildings-en)の建物のみ掲載。数値はJP版から補う。橋は /en/bridges/ へ。
-const jp = await getBuildingEntries();
+// 英語版は翻訳済み(buildings-en)の橋のみ掲載。数値・公開日・写真はJP版から補う。
+const jp = await getBridgeEntries();
 const jpBySlug = new Map(jp.map((p) => [p.slug, p]));
 const allPosts = (await getCollection('buildings-en'))
-  .map((en) => ({ en, jp: jpBySlug.get(en.slug) }))
-  .filter((x) => x.jp)
-  .sort((a, b) => b.jp!.data.publishedAt.valueOf() - a.jp!.data.publishedAt.valueOf());
+  .filter((en) => jpBySlug.has(en.slug))
+  .map((en) => ({ en, jp: jpBySlug.get(en.slug)! }))
+  .sort((a, b) => b.jp.data.publishedAt.valueOf() - a.jp.data.publishedAt.valueOf());
 
-// 1ページ10件・新着順。11件目以降は /en/buildings/page/2/ … へ。
 const PER_PAGE = 10;
 const totalPages = Math.max(1, Math.ceil(allPosts.length / PER_PAGE));
 const posts = allPosts.slice(0, PER_PAGE);
 ---
-<BaseLayout title={t('nav.home')} description={t('buildings.lead')} lang={lang} altPath="/buildings/">
+<BaseLayout
+  title={BRIDGES.label.en}
+  description={BRIDGES.description.en}
+  lang={lang}
+  altPath="/bridges/"
+>
   <div class="section-head section-head-sub" data-reveal>
     <p class="crumb"><a href="/en/">{t('breadcrumb.home')}</a></p>
-    <h1>{t('nav.home')}</h1>
-    <p>{t('buildings.lead')}</p>
+    <h1>{BRIDGES.label.en}</h1>
+    <p>{BRIDGES.description.en}</p>
   </div>
 
   <section class="grid grid-2">
@@ -35,16 +39,16 @@ const posts = allPosts.slice(0, PER_PAGE);
         lang={lang}
         url={`/en/buildings/${en.slug}/`}
         title={en.data.title}
-        buildingType={jp!.data.buildingType}
+        buildingType={jp.data.buildingType}
         area={en.data.area}
-        completedYear={jp!.data.completedYear}
-        heightM={jp!.data.heightM}
+        completedYear={jp.data.completedYear}
+        heightM={jp.data.heightM}
         summary={en.data.summary}
-        verified={jp!.data.verified}
-        heroImage={jp!.data.heroImage}
+        verified={jp.data.verified}
+        heroImage={jp.data.heroImage}
       />
     ))}
   </section>
 
-  <Pager current={1} total={totalPages} basePath="/en/buildings/" lang={lang} />
+  <Pager current={1} total={totalPages} basePath="/en/bridges/" lang={lang} />
 </BaseLayout>
