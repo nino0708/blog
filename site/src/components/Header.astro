@@ -28,33 +28,33 @@ const isCurrent = (href: string) => (href === home ? path === href : path.starts
       <span class="brand-text">Built <span>Japan</span></span>
     </a>
     <nav class="nav">
-      {/* 読む・使う */}
+      {/* 読むもの: 新着とカテゴリ別の記事一覧 */}
       <a href={home} aria-current={isCurrent(home) ? 'page' : undefined}>{t('nav.latest')}</a>
       {[
         ['/buildings/', t('nav.home')],
+        ['/expressways/', CATEGORIES.expressways.label[lang]],
+        ['/railways/', CATEGORIES.railways.label[lang]],
+        ['/bridges/', BRIDGES.label[lang]],
+      ].map(([p, label]) => {
+        const href = localizePath(lang, p);
+        return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{label}</a>;
+      })}
+      {/* 観光は日本語版のみ（英語コレクション未整備） */}
+      {lang === 'ja' && (
+        <a href="/tourism/" aria-current={isCurrent('/tourism/') ? 'page' : undefined}>{CATEGORIES.tourism.label.ja}</a>
+      )}
+
+      <span class="nav-sep" aria-hidden="true"></span>
+
+      {/* 引く・使うもの */}
+      {lang === 'ja' && <a href="/rankings/" aria-current={isCurrent('/rankings/') ? 'page' : undefined}>ランキング</a>}
+      {[
         ['/database/', t('nav.database')],
         ['/stamps/', t('nav.stamps')],
       ].map(([p, label]) => {
         const href = localizePath(lang, p);
         return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{label}</a>;
       })}
-      {lang === 'ja' && <a href="/rankings/" aria-current={isCurrent('/rankings/') ? 'page' : undefined}>ランキング</a>}
-
-      <span class="nav-sep" aria-hidden="true"></span>
-
-      {/* カテゴリ */}
-      {(['expressways', 'railways'] as const).map((key) => {
-        const href = localizePath(lang, `/${key}/`);
-        return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{CATEGORIES[key].label[lang]}</a>;
-      })}
-      {(() => {
-        const href = localizePath(lang, '/bridges/');
-        return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{BRIDGES.label[lang]}</a>;
-      })()}
-      {/* 観光は日本語版のみ（英語コレクション未整備） */}
-      {lang === 'ja' && (
-        <a href="/tourism/" aria-current={isCurrent('/tourism/') ? 'page' : undefined}>{CATEGORIES.tourism.label.ja}</a>
-      )}
 
       <span class="nav-sep" aria-hidden="true"></span>
 
