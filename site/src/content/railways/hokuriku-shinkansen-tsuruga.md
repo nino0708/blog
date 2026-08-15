@@ -3,6 +3,9 @@ title: "北陸新幹線（金沢・敦賀間）"
 area: "石川県・福井県（金沢〜敦賀）"
 summary: "2024年3月16日に開業した、金沢〜敦賀間約125キロメートルの新幹線延伸区間。小松・加賀温泉・芦原温泉・福井・越前たけふ・敦賀の6駅が新設され、東京〜福井は最速2時間51分で結ばれた。同日、在来線特急の敦賀以東乗り入れが廃止され、乗換の構図が変わった。"
 tags: ["北陸新幹線", "新幹線", "鉄道", "北陸", "石川県", "福井県", "JR西日本", "JR東日本"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Tsuruga_Station_20240501_01.jpg/1280px-Tsuruga_Station_20240501_01.jpg"
+heroImageCredit: "Suikotei / CC BY 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tsuruga_Station_20240501_01.jpg"
 publishedAt: 2026-08-09
 verified: true
 sources:

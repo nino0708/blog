@@ -9,6 +9,9 @@ floorsBelow: 2
 heightM: 152
 developer: "三井不動産レジデンシャル"
 tags: ["品川区", "タワーマンション", "大崎", "五反田", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Park_tower_gran_sky_higashigotanda_2009.JPG/1280px-Park_tower_gran_sky_higashigotanda_2009.JPG"
+heroImageCredit: "Kamemaru2000 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Park_tower_gran_sky_higashigotanda_2009.JPG"
 publishedAt: 2026-08-03
 summary: "2010年竣工の地上44階・高さ約152mの超高層マンション。三井不動産レジデンシャルが手がけ、JR大崎駅と五反田駅の中間、目黒川近くの東五反田に立つ。"
 verified: true

@@ -10,6 +10,9 @@ heightM: 203.5
 developer: "三井不動産レジデンシャル"
 architect: "竹中工務店"
 tags: ["川崎市", "武蔵小杉", "タワーマンション", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/%E3%83%91%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%86%E3%82%A3%E6%AD%A6%E8%94%B5%E5%B0%8F%E6%9D%89%E3%83%9F%E3%83%83%E3%83%89%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%BF%E3%83%AF%E3%83%BC.JPG/1280px-%E3%83%91%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%86%E3%82%A3%E6%AD%A6%E8%94%B5%E5%B0%8F%E6%9D%89%E3%83%9F%E3%83%83%E3%83%89%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%BF%E3%83%AF%E3%83%BC.JPG"
+heroImageCredit: "ペン太 at Japanese Wikipedia / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:%E3%83%91%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%86%E3%82%A3%E6%AD%A6%E8%94%B5%E5%B0%8F%E6%9D%89%E3%83%9F%E3%83%83%E3%83%89%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%BF%E3%83%AF%E3%83%BC.JPG"
 publishedAt: 2026-08-01
 summary: "竣工当時、国内のタワーマンションとして最高層を誇った59階建て超高層住宅棟。2009年4月に竣工し、川崎市中原区の武蔵小杉に立つ高さ203.5メートルのランドマーク。竹中工務店が設計・施工した。"
 verified: true

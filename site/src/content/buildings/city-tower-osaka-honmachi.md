@@ -10,6 +10,9 @@ heightM: 165
 developer: "住友不動産"
 architect: "清水建設"
 tags: ["大阪市", "大阪市中央区", "タワーマンション", "超高層住宅", "船場", "本町", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/CITYTOWER_OSAKA-HONMACHI.jpg/1280px-CITYTOWER_OSAKA-HONMACHI.jpg"
+heroImageCredit: "Yama0904 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:CITYTOWER_OSAKA-HONMACHI.jpg"
 publishedAt: 2026-08-05
 summary: "大阪市中央区安土町に立つ地上48階・地下1階・高さ約165mの免震超高層住宅。住友不動産が開発し、清水建設が設計・施工を担い、2021年12月に竣工。船場の問屋街が高層住宅地へと変容する大阪都心の景観変化を体現する一棟。"
 verified: true

@@ -3,6 +3,9 @@ title: "中央線快速"
 area: "東京〜高尾"
 summary: "東京駅と高尾駅を53.1キロで結ぶ、朱色（オレンジバーミリオン）の通勤路線。1889年開業の甲武鉄道を起源とし、都心のオフィス街から多摩の郊外までを一直線に貫く。東京の鉄道でも屈指の長い直線区間を持つことで知られる。"
 tags: ["中央線", "鉄道", "JR東日本", "通勤路線", "千代田区", "新宿区", "多摩"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/JRE_Chuo-Rapid-Line_Series-E233-0.jpg/1280px-JRE_Chuo-Rapid-Line_Series-E233-0.jpg"
+heroImageCredit: "MaedaAkihiko / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:JRE_Chuo-Rapid-Line_Series-E233-0.jpg"
 publishedAt: 2026-07-20
 verified: true
 sources:

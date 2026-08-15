@@ -4,6 +4,9 @@ area: "渋谷区・横浜市"
 summary: "2004年2月1日、横浜高速鉄道みなとみらい線（横浜〜元町・中華街 4.1km・6駅）が開業し、東急東横線との直通運転が始まった。渋谷から元町・中華街まで乗り換えなしでつながり、2013年3月には渋谷駅地下化と東京メトロ副都心線直通が加わって広域ネットワークの一軸となった。"
 developer: "東急電鉄・横浜高速鉄道"
 tags: ["渋谷", "横浜", "東急", "みなとみらい", "直通運転", "鉄道"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Yokohama_Minatomirai_Railway_Y500.JPG/1280px-Yokohama_Minatomirai_Railway_Y500.JPG"
+heroImageCredit: "JobanLineE531 (TC411-507) / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Yokohama_Minatomirai_Railway_Y500.JPG"
 publishedAt: 2026-08-10
 verified: true
 sources:

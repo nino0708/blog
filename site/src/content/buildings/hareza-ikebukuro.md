@@ -10,6 +10,9 @@ heightM: 158
 developer: "東京建物・サンケイビル"
 architect: "鹿島建設"
 tags: ["豊島区", "池袋", "オフィス", "文化施設", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Hareza_Tower.jpg/1280px-Hareza_Tower.jpg"
+heroImageCredit: "Beryllium Transistor / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Hareza_Tower.jpg"
 publishedAt: 2026-07-28
 summary: "旧豊島公会堂・区施設跡地の定期借地権開発として2020年7月グランドオープン。Hareza Tower（地上33階・高さ約158m）を核に8つの劇場空間が中池袋公園を囲み、豊島区の「国際アート・カルチャー都市構想」を体現する文化複合施設。"
 verified: true

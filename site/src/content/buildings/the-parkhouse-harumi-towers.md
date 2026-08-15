@@ -9,6 +9,9 @@ floorsBelow: 2
 developer: "三菱地所レジデンス"
 architect: "三菱地所設計"
 tags: ["中央区", "タワーマンション", "晴海", "ウォーターフロント"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/%E3%82%B6%E3%83%BB%E3%83%91%E3%83%BC%E3%82%AF%E3%83%8F%E3%82%A6%E3%82%B9%E6%99%B4%E6%B5%B7%E3%82%BF%E3%83%AF%E3%83%BC%E3%82%BA.jpg/1280px-%E3%82%B6%E3%83%BB%E3%83%91%E3%83%BC%E3%82%AF%E3%83%8F%E3%82%A6%E3%82%B9%E6%99%B4%E6%B5%B7%E3%82%BF%E3%83%AF%E3%83%BC%E3%82%BA.jpg"
+heroImageCredit: "ブツチチ / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:%E3%82%B6%E3%83%BB%E3%83%91%E3%83%BC%E3%82%AF%E3%83%8F%E3%82%A6%E3%82%B9%E6%99%B4%E6%B5%B7%E3%82%BF%E3%83%AF%E3%83%BC%E3%82%BA.jpg"
 publishedAt: 2026-07-05
 summary: "晴海の埋立地に2013年・2016年と相次いで竣工した49階建て2棟の超高層住宅街区。クロノレジデンス（883戸）とティアロレジデンス（861戸）が広大な敷地を共有し、計1,744戸を供給している。"
 verified: true

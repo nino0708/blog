@@ -12,9 +12,9 @@ architect: "ラファエル・ヴィニオリ"
 tags: ["千代田区", "丸の内", "ホール", "名建築"]
 publishedAt: 2026-06-10
 summary: "ガラスの大空間で知られる、丸の内に立つラファエル・ヴィニオリ設計の複合文化施設。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Interior_of_the_Tokyo_International_Forum_Glass_Building%2C_Japan.jpg/1280px-Interior_of_the_Tokyo_International_Forum_Glass_Building%2C_Japan.jpg"
-heroImageCredit: "Basile Morin / CC BY-SA 4.0"
-heroImageLink: "https://commons.wikimedia.org/wiki/File:Interior_of_the_Tokyo_International_Forum_Glass_Building,_Japan.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tokyo-International-Forum_Glass-Building_Outside.jpg/1280px-Tokyo-International-Forum_Glass-Building_Outside.jpg"
+heroImageCredit: "MaedaAkihiko / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo-International-Forum_Glass-Building_Outside.jpg"
 verified: true
 sources: ["東京国際フォーラム - Wikipedia（1996年竣工・1997年開館）"]
 ---

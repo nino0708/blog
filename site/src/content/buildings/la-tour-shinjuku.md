@@ -9,6 +9,9 @@ heightM: 167
 developer: "西新宿六丁目西第6地区市街地再開発組合（住友不動産参加）"
 architect: "日本設計"
 tags: ["新宿区", "西新宿", "超高層", "高級賃貸", "再開発"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/13/%E3%83%A9%E3%83%88%E3%82%A5%E3%83%BC%E3%83%AB%EF%BC%92.jpg"
+heroImageCredit: "Ooozooone / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:%E3%83%A9%E3%83%88%E3%82%A5%E3%83%BC%E3%83%AB%EF%BC%92.jpg"
 publishedAt: 2026-08-04
 summary: "新宿セントラルパークシティ内に建つ地上44階・高さ167mの超高層複合棟。2010年2月竣工。1〜7階がオフィス、8〜44階が住居フロアで総戸数842戸。住友不動産の高級賃貸ブランド「ラ・トゥール」を代表する物件のひとつ。"
 verified: true

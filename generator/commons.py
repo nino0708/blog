@@ -35,6 +35,38 @@ _REJECT_ALWAYS = [
     re.compile(r"\bexit\b", re.I),        # 〜出口(路線そのものではない)
 ]
 
+# 人が主役・人が必ず写り込む場所。プライバシー配慮のため、どの被写体でも採用しない。
+# (2026-08-15: 成田空港第3ターミナルの記事に京成のきっぷ売場=通行人の顔入りが採用されたため追加)
+_REJECT_PEOPLE = [
+    re.compile(r"ticket (counter|office|gate|vending|machine)", re.I),
+    re.compile(r"\bcounter\b", re.I),
+    re.compile(r"check-?in", re.I),
+    re.compile(r"waiting (area|room|hall)", re.I),
+    re.compile(r"\b(crowd|crowds|crowded)\b", re.I),
+    re.compile(r"\bpassengers?\b", re.I),
+    re.compile(r"\b(people|persons?)\b", re.I),
+    re.compile(r"\b(tourists|visitors)\b", re.I),
+    re.compile(r"\bqueue\b", re.I),
+    re.compile(r"きっぷ"),
+    re.compile(r"切符"),
+    re.compile(r"券売機"),
+    re.compile(r"みどりの窓口"),
+    re.compile(r"改札"),
+    re.compile(r"待合"),
+    re.compile(r"乗客"),
+    re.compile(r"行列"),
+    re.compile(r"混雑"),
+]
+
+# Commonsのカテゴリに人が主題であることが出ているものも弾く(ファイル名だけでは拾えないため)。
+_REJECT_CATEGORY = [
+    re.compile(r"\b(people|persons)\b", re.I),
+    re.compile(r"unidentified", re.I),
+    re.compile(r"\bcrowds?\b", re.I),
+    re.compile(r"\bportraits?\b", re.I),
+    re.compile(r"\bfaces\b", re.I),
+]
+
 # ファイル名の先頭に付いてよい説明語。これ以外の語で始まるファイルは、
 # 主題が「ついで」に写っているだけ(例: "Ebisu Garden Place near the Yamanote line")と見なす。
 _ALLOWED_LEADING = {
@@ -93,10 +125,10 @@ _REJECT_INDOOR = [
 # expressway: ジャンクションやトンネルは空撮・俯瞰が本命なので aerial を許す。
 # railway  : 路線は空撮、駅はホーム・改札も主題になるため aerial と屋内を許す。
 _REJECT_BY_SUBJECT = {
-    "building": _REJECT_ALWAYS + _REJECT_VIEW_FROM + _REJECT_AERIAL + _REJECT_INDOOR,
-    "expressway": _REJECT_ALWAYS + _REJECT_VIEW_FROM + _REJECT_INDOOR,
-    "railway": _REJECT_ALWAYS + _REJECT_VIEW_FROM,
-    "tourism": _REJECT_ALWAYS + _REJECT_VIEW_FROM + _REJECT_AERIAL + _REJECT_INDOOR,
+    "building": _REJECT_ALWAYS + _REJECT_PEOPLE + _REJECT_VIEW_FROM + _REJECT_AERIAL + _REJECT_INDOOR,
+    "expressway": _REJECT_ALWAYS + _REJECT_PEOPLE + _REJECT_VIEW_FROM + _REJECT_INDOOR,
+    "railway": _REJECT_ALWAYS + _REJECT_PEOPLE + _REJECT_VIEW_FROM,
+    "tourism": _REJECT_ALWAYS + _REJECT_PEOPLE + _REJECT_VIEW_FROM + _REJECT_AERIAL + _REJECT_INDOOR,
 }
 _REJECT_PATTERNS = _REJECT_BY_SUBJECT["building"]  # 後方互換(既存の参照用)
 
@@ -143,9 +175,10 @@ def _search_files(query):
         "gsrnamespace": "6",  # File:
         "gsrsearch": query,
         "gsrlimit": "10",
-        "prop": "imageinfo",
+        "prop": "imageinfo|categories",
         "iiprop": "url|extmetadata|mime|size",  # size=縦横比の判定に使う
         "iiurlwidth": "1200",
+        "cllimit": "max",  # 人が主題のカテゴリを弾くのに使う
     }
     url = f"{api}?{urllib.parse.urlencode(params)}"
     req = urllib.request.Request(url, headers={"User-Agent": _UA})
@@ -247,6 +280,10 @@ def fetch_commons_image(building, used_titles=None, subject="building"):
                 continue
             if any(p.search(title) for p in reject):  # 主題でない写真を除外
                 continue
+            # カテゴリに人が主題であることが出ているものも弾く(ファイル名では拾えない)。
+            cats = " ".join(c.get("title", "") for c in (page.get("categories") or []))
+            if cats and any(p.search(cats) for p in _REJECT_CATEGORY):
+                continue
 
             low_title = title.lower()
             if required:
@@ -266,7 +303,14 @@ def fetch_commons_image(building, used_titles=None, subject="building"):
                 r"aerial|from the air|航空写真|空撮", norm, re.I
             ):
                 aerial_bonus = -5
-            candidates.append((_extra_word_count(norm, required) + aerial_bonus, rank, page, ii))
+            # 鉄道は屋内(ホーム・コンコース)も主題になり得るので弾かないが、
+            # 外観・俯瞰が取れるならそちらを先に出す。人の写り込みも屋内の方が多い。
+            indoor_penalty = 0
+            if subject == "railway" and any(p.search(title) for p in _REJECT_INDOOR):
+                indoor_penalty = 4
+            candidates.append(
+                (_extra_word_count(norm, required) + aerial_bonus + indoor_penalty, rank, page, ii)
+            )
 
     if not candidates:
         return None

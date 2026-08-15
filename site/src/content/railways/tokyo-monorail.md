@@ -4,9 +4,9 @@ area: "浜松町〜羽田空港"
 summary: "1964年9月17日、東京オリンピック開幕の23日前に開業した日本初の空港連絡鉄道。モノレール浜松町から羽田空港第2ターミナルまで17.8km・11駅を結ぶ跨座式モノレールで、現在はJR東日本の完全子会社として運営されている。"
 tags: ["東京モノレール", "鉄道", "羽田空港", "港区", "大田区", "空港連絡鉄道", "モノレール"]
 publishedAt: 2026-07-20
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Tokyo-monorail-MO02-Tennozu-isle-station-platform-20191103-161523.jpg/1280px-Tokyo-monorail-MO02-Tennozu-isle-station-platform-20191103-161523.jpg"
-heroImageCredit: "LERK / CC BY-SA 4.0"
-heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo-monorail-MO02-Tennozu-isle-station-platform-20191103-161523.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/2020-03-16_Tokyo_Monorail_2000_series_at_Tamachi%2C_Tokyo%2C_Japan.jpg/1280px-2020-03-16_Tokyo_Monorail_2000_series_at_Tamachi%2C_Tokyo%2C_Japan.jpg"
+heroImageCredit: "Foulger Railway Photography / CC BY-SA 2.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:2020-03-16_Tokyo_Monorail_2000_series_at_Tamachi,_Tokyo,_Japan.jpg"
 verified: true
 sources:
   - "東京モノレール羽田空港線 - Wikipedia https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E3%83%A2%E3%83%8E%E3%83%AC%E3%83%BC%E3%83%AB%E7%BE%BD%E7%94%B0%E7%A9%BA%E6%B8%AF%E7%B7%9A"

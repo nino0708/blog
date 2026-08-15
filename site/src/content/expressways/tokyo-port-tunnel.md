@@ -3,6 +3,9 @@ title: "東京港トンネル"
 area: "品川区・江東区（東京港）"
 summary: "東京港の水底に潜る海底道路トンネル。首都高速湾岸線（1976年開通・沈埋工法）と国道357号（西行き2016年・東行き2019年全通・シールド工法）の2本が並走し、大井ふ頭とお台場を有料・無料の両ルートで結ぶ港湾物流の大動脈。"
 tags: ["品川区", "江東区", "海底トンネル", "国道357号", "首都高速", "東京港", "物流"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Tokyo-ko_tunnel%2CShinagawa-ward%2CTokyo%2CJapan.jpg/1280px-Tokyo-ko_tunnel%2CShinagawa-ward%2CTokyo%2CJapan.jpg"
+heroImageCredit: "katorisi / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo-ko_tunnel,Shinagawa-ward,Tokyo,Japan.jpg"
 publishedAt: 2026-08-08
 verified: true
 sources:

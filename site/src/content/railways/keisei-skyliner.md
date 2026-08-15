@@ -3,6 +3,9 @@ title: "京成スカイライナー"
 area: "京成上野・日暮里〜成田空港"
 summary: "京成上野・日暮里と成田空港を結ぶ空港アクセス特急。2010年開業の成田スカイアクセス線を、在来線最速となる時速160キロで走り、日暮里から空港第2ビルまで最速36分で結ぶ。それまで51分かかっていた所要時間を大幅に短縮した。"
 tags: ["スカイライナー", "鉄道", "京成電鉄", "空港アクセス", "成田スカイアクセス", "台東区", "荒川区"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Keisei_AE_Skyliner_Keisei_Main_Line_over_the_Horikiri_Bridge_2020-06-27.jpg/1280px-Keisei_AE_Skyliner_Keisei_Main_Line_over_the_Horikiri_Bridge_2020-06-27.jpg"
+heroImageCredit: "Real Estate Japan / CC BY 2.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Keisei_AE_Skyliner_Keisei_Main_Line_over_the_Horikiri_Bridge_2020-06-27.jpg"
 publishedAt: 2026-07-23
 verified: true
 sources:

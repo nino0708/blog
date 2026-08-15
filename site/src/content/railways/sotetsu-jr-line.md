@@ -3,6 +3,9 @@ title: "相鉄・JR直通線"
 area: "横浜市"
 summary: "2019年11月30日開業。西谷〜羽沢横浜国大間の約2.7kmの地下連絡線を新設し、相鉄本線と新宿・渋谷方面のJR線が初めて直結した。設計最高速度120km/h、二俣川〜新宿を乗り換えなし約44分で結ぶ。"
 tags: ["横浜市", "神奈川", "鉄道", "直通運転", "相鉄", "JR東日本", "地下トンネル"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Sotetsu_12001F.jpg/1280px-Sotetsu_12001F.jpg"
+heroImageCredit: "さとみんくる / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Sotetsu_12001F.jpg"
 publishedAt: 2026-08-12
 verified: true
 sources:

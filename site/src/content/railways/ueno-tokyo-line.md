@@ -3,6 +3,9 @@ title: "上野東京ライン"
 area: "上野〜品川"
 summary: "2015年3月14日に開業したJR東日本の路線愛称。上野駅と東京駅の間に約3.8キロメートルの新設線路を通し、宇都宮線・高崎線・常磐線から東海道線まで直通運転を可能にした。約43年ぶりとなった北と南の結節で、首都圏の鉄道ネットワークを大きく塗り替えた。"
 tags: ["鉄道", "JR東日本", "東海道線", "常磐線", "上野", "東京", "インフラ"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ueno_tokyo_line_E231.JPG/1280px-Ueno_tokyo_line_E231.JPG"
+heroImageCredit: "Toshinori baba / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Ueno_tokyo_line_E231.JPG"
 publishedAt: 2026-08-11
 verified: true
 sources:

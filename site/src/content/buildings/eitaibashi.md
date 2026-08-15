@@ -9,6 +9,9 @@ completedYear: 1926
 developer: "内務省復興局"
 architect: "田中豊（内務省復興局）"
 tags: ["中央区", "重要文化財", "隅田川", "タイドアーチ橋", "震災復興", "土木遺産", "観光"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eitaibashi2.JPG/1280px-Eitaibashi2.JPG"
+heroImageCredit: "jmho / Public domain"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Eitaibashi2.JPG"
 publishedAt: 2026-07-24
 summary: "1926年竣工、全長184.7mの鋼タイドアーチ橋。関東大震災の復興事業で架け替えられ、ドイツ・ライン川のルーデンドルフ橋をモデルとした。現存最古のタイドアーチ橋で、日本で初めて径間100mを超えた橋。2007年に国の重要文化財に指定。"
 verified: true
