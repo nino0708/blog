@@ -1,36 +1,48 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-08-15 08:14 JST
-- 対象: 公開済み記事 228 ページ（https://builtjapan.com）
-- 正常表示: 206 / 228（90.4%）
-- **要対応: 22 件**（画像なし 22 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-08-16 08:15 JST
+- 対象: 公開済み記事 254 ページ（https://builtjapan.com）
+- 正常表示: 220 / 254（86.6%）
+- **要対応: 34 件**（画像なし 34 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
 | 記事 | 詳細 |
 |---|---|
+| [buildings（JA）](https://builtjapan.com/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（JA）](https://builtjapan.com/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（JA）](https://builtjapan.com/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
-| [city-tower-osaka-honmachi（JA）](https://builtjapan.com/buildings/city-tower-osaka-honmachi/) | ヒーロー画像なし（プレースホルダ表示） |
-| [eitaibashi（JA）](https://builtjapan.com/buildings/eitaibashi/) | ヒーロー画像なし（プレースホルダ表示） |
-| [hareza-ikebukuro（JA）](https://builtjapan.com/buildings/hareza-ikebukuro/) | ヒーロー画像なし（プレースホルダ表示） |
-| [la-tour-shinjuku（JA）](https://builtjapan.com/buildings/la-tour-shinjuku/) | ヒーロー画像なし（プレースホルダ表示） |
-| [park-city-musashikosugi-midsky（JA）](https://builtjapan.com/buildings/park-city-musashikosugi-midsky/) | ヒーロー画像なし（プレースホルダ表示） |
-| [park-tower-grand-sky（JA）](https://builtjapan.com/buildings/park-tower-grand-sky/) | ヒーロー画像なし（プレースホルダ表示） |
+| [harumi-ohashi（JA）](https://builtjapan.com/buildings/harumi-ohashi/) | ヒーロー画像なし（プレースホルダ表示） |
+| [10（JA）](https://builtjapan.com/buildings/page/10/) | ヒーロー画像なし（プレースホルダ表示） |
+| [11（JA）](https://builtjapan.com/buildings/page/11/) | ヒーロー画像なし（プレースホルダ表示） |
+| [2（JA）](https://builtjapan.com/buildings/page/2/) | ヒーロー画像なし（プレースホルダ表示） |
+| [3（JA）](https://builtjapan.com/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
+| [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
+| [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
+| [6（JA）](https://builtjapan.com/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
+| [7（JA）](https://builtjapan.com/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
+| [8（JA）](https://builtjapan.com/buildings/page/8/) | ヒーロー画像なし（プレースホルダ表示） |
+| [9（JA）](https://builtjapan.com/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
+| [seto-ohashi-bridge（JA）](https://builtjapan.com/buildings/seto-ohashi-bridge/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（JA）](https://builtjapan.com/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
-| [the-parkhouse-harumi-towers（JA）](https://builtjapan.com/buildings/the-parkhouse-harumi-towers/) | ヒーロー画像なし（プレースホルダ表示） |
+| [buildings（EN）](https://builtjapan.com/en/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（EN）](https://builtjapan.com/en/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
-| [city-tower-osaka-honmachi（EN）](https://builtjapan.com/en/buildings/city-tower-osaka-honmachi/) | ヒーロー画像なし（プレースホルダ表示） |
-| [eitaibashi（EN）](https://builtjapan.com/en/buildings/eitaibashi/) | ヒーロー画像なし（プレースホルダ表示） |
-| [hareza-ikebukuro（EN）](https://builtjapan.com/en/buildings/hareza-ikebukuro/) | ヒーロー画像なし（プレースホルダ表示） |
-| [la-tour-shinjuku（EN）](https://builtjapan.com/en/buildings/la-tour-shinjuku/) | ヒーロー画像なし（プレースホルダ表示） |
-| [park-city-musashikosugi-midsky（EN）](https://builtjapan.com/en/buildings/park-city-musashikosugi-midsky/) | ヒーロー画像なし（プレースホルダ表示） |
-| [park-tower-grand-sky（EN）](https://builtjapan.com/en/buildings/park-tower-grand-sky/) | ヒーロー画像なし（プレースホルダ表示） |
+| [harumi-ohashi（EN）](https://builtjapan.com/en/buildings/harumi-ohashi/) | ヒーロー画像なし（プレースホルダ表示） |
+| [10（EN）](https://builtjapan.com/en/buildings/page/10/) | ヒーロー画像なし（プレースホルダ表示） |
+| [11（EN）](https://builtjapan.com/en/buildings/page/11/) | ヒーロー画像なし（プレースホルダ表示） |
+| [2（EN）](https://builtjapan.com/en/buildings/page/2/) | ヒーロー画像なし（プレースホルダ表示） |
+| [3（EN）](https://builtjapan.com/en/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
+| [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
+| [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
+| [6（EN）](https://builtjapan.com/en/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
+| [7（EN）](https://builtjapan.com/en/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
+| [8（EN）](https://builtjapan.com/en/buildings/page/8/) | ヒーロー画像なし（プレースホルダ表示） |
+| [9（EN）](https://builtjapan.com/en/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
+| [seto-ohashi-bridge（EN）](https://builtjapan.com/en/buildings/seto-ohashi-bridge/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（EN）](https://builtjapan.com/en/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
-| [the-parkhouse-harumi-towers（EN）](https://builtjapan.com/en/buildings/the-parkhouse-harumi-towers/) | ヒーロー画像なし（プレースホルダ表示） |
 
 ## 直し方
 
