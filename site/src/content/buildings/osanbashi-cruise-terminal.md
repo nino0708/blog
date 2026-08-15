@@ -11,6 +11,9 @@ totalFloorAreaM2: 34732
 developer: "横浜市港湾局"
 architect: "FOA（Foreign Office Architects）"
 tags: ["横浜市", "客船ターミナル", "港湾施設", "みなとみらい", "FOA", "国際建築"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Osanbashi_Pier_from_Sea.jpg/1280px-Osanbashi_Pier_from_Sea.jpg"
+heroImageCredit: "Captain76 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Osanbashi_Pier_from_Sea.jpg"
 publishedAt: 2026-08-14
 summary: "2002年竣工。横浜港大さん橋の先端に立つ国際客船ターミナル。世界41か国660作品から選ばれたFOA（Foreign Office Architects）の設計で、波打つウッドデッキの屋上は24時間開放の公共空間になっている。"
 verified: true

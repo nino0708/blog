@@ -11,10 +11,15 @@ const { lang, altPath = null } = Astro.props;
 const t = useT(lang);
 const other: Lang = lang === 'ja' ? 'en' : 'ja';
 const switchHref = altPath ?? localizePath(other, '/');
+
+// 現在地の判定。トップ(/ , /en/)は完全一致、それ以外は配下のページ(記事詳細など)も親を選択中にする。
+const home = localizePath(lang, '/');
+const path = Astro.url.pathname;
+const isCurrent = (href: string) => (href === home ? path === href : path.startsWith(href));
 ---
 <header class="site-header">
   <div class="container inner">
-    <a href={localizePath(lang, '/')} class="brand">
+    <a href={home} class="brand">
       <svg class="brand-mark" width="22" height="24" viewBox="0 0 22 24" aria-hidden="true">
         <rect x="2" y="9" width="6" height="14" rx="1" fill="var(--brand)" opacity="0.55" />
         <rect x="14" y="6" width="6" height="17" rx="1" fill="var(--brand)" opacity="0.75" />
@@ -23,16 +28,33 @@ const switchHref = altPath ?? localizePath(other, '/');
       <span class="brand-text">Built <span>Japan</span></span>
     </a>
     <nav class="nav">
-      <a href={localizePath(lang, '/')}>{t('nav.latest')}</a>
-      <a href={localizePath(lang, '/buildings/')}>{t('nav.home')}</a>
-      <a href={localizePath(lang, '/database/')}>{t('nav.database')}</a>
-      <a href={localizePath(lang, '/stamps/')}>{t('nav.stamps')}</a>
-      <a href={localizePath(lang, '/expressways/')}>{CATEGORIES.expressways.label[lang]}</a>
-      <a href={localizePath(lang, '/railways/')}>{CATEGORIES.railways.label[lang]}</a>
+      {/* 読む・使う */}
+      <a href={home} aria-current={isCurrent(home) ? 'page' : undefined}>{t('nav.latest')}</a>
+      {[
+        ['/buildings/', t('nav.home')],
+        ['/database/', t('nav.database')],
+        ['/stamps/', t('nav.stamps')],
+      ].map(([p, label]) => {
+        const href = localizePath(lang, p);
+        return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{label}</a>;
+      })}
+      {lang === 'ja' && <a href="/rankings/" aria-current={isCurrent('/rankings/') ? 'page' : undefined}>ランキング</a>}
+
+      <span class="nav-sep" aria-hidden="true"></span>
+
+      {/* カテゴリ */}
+      {(['expressways', 'railways'] as const).map((key) => {
+        const href = localizePath(lang, `/${key}/`);
+        return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{CATEGORIES[key].label[lang]}</a>;
+      })}
       {/* 観光は日本語版のみ（英語コレクション未整備） */}
-      {lang === 'ja' && <a href="/tourism/">{CATEGORIES.tourism.label.ja}</a>}
-      {lang === 'ja' && <a href="/rankings/">ランキング</a>}
-      <a href={localizePath(lang, '/about/')}>{t('nav.about')}</a>
+      {lang === 'ja' && (
+        <a href="/tourism/" aria-current={isCurrent('/tourism/') ? 'page' : undefined}>{CATEGORIES.tourism.label.ja}</a>
+      )}
+
+      <span class="nav-sep" aria-hidden="true"></span>
+
+      <a href={localizePath(lang, '/about/')} aria-current={isCurrent(localizePath(lang, '/about/')) ? 'page' : undefined}>{t('nav.about')}</a>
       <a class="lang-switch" href={switchHref} hreflang={other} lang={other}>{t('lang.other')}</a>
     </nav>
   </div>
