@@ -3,6 +3,9 @@ title: "成田空港 第3旅客ターミナル"
 area: "成田市"
 summary: "2015年4月8日に開業したLCC専用ターミナル。日建設計・PARTY・無印良品の三者が手がけた延床面積約6万6千平方メートルの4階建てで、床に描かれた青と赤のランニングトラックが動線をシンプルに導く設計で知られる。"
 tags: ["成田市", "空港", "LCC", "インフラ", "日建設計", "交通"]
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/An_aerial_view_of_Narita_International_Airport.jpg/1280px-An_aerial_view_of_Narita_International_Airport.jpg"
+heroImageCredit: "Marufish / CC BY-SA 2.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Narita_International_Airport.jpg"
 publishedAt: 2026-08-11
 verified: true
 sources:
