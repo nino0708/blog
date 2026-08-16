@@ -134,11 +134,11 @@
     "reason": "記事mdが見つからない"
   },
   "harumi-ohashi": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "seto-ohashi-bridge": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   }
 }
