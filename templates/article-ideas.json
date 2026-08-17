@@ -151,7 +151,7 @@
     {"id":146,"category":"tower","title":"聖橋","slug":"hijiri-bashi","area":"千代田区","angle":"ニコライ堂と湯島聖堂を視野に収めるRCアーチ橋の命名由来と神田川の都市景観","status":"done"},
     {"id":147,"category":"tower","title":"瀬戸大橋","slug":"seto-ohashi-bridge","area":"岡山〜香川","angle":"本州四国を道路・鉄道の二重構造で結ぶ6橋の連絡橋群と海峡建設への長年の悲願","status":"done"},
     {"id":148,"category":"tower","title":"晴海大橋","slug":"harumi-ohashi","area":"中央区","angle":"晴海と有明を結ぶアーチ橋。五輪と選手村の動線として整備された背景と湾岸の眺望","status":"done"},
-    {"id":149,"category":"tower","title":"豊洲大橋","slug":"toyosu-ohashi","area":"江東区","angle":"晴海〜豊洲を結ぶ斜張橋と湾岸エリアの歩行者・自転車ネットワーク形成","status":"todo"},
-    {"id":150,"category":"tower","title":"東京国際クルーズターミナル","slug":"tokyo-international-cruise-terminal","area":"江東区","angle":"有明に建つ大型客船対応ターミナルと東京港臨海部の観光インフラ整備","status":"todo"}
+    {"id":149,"category":"tower","title":"豊洲大橋","slug":"toyosu-ohashi","area":"江東区","angle":"晴海〜豊洲を結ぶ斜張橋と湾岸エリアの歩行者・自転車ネットワーク形成","status":"done"},
+    {"id":150,"category":"tower","title":"東京国際クルーズターミナル","slug":"tokyo-international-cruise-terminal","area":"江東区","angle":"有明に建つ大型客船対応ターミナルと東京港臨海部の観光インフラ整備","status":"done"}
   ]
 }
