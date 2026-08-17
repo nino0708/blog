@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-08-16 08:15 JST
-- 対象: 公開済み記事 254 ページ（https://builtjapan.com）
-- 正常表示: 220 / 254（86.6%）
-- **要対応: 34 件**（画像なし 34 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-08-18 08:13 JST
+- 対象: 公開済み記事 258 ページ（https://builtjapan.com）
+- 正常表示: 222 / 258（86.0%）
+- **要対応: 36 件**（画像なし 36 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -26,6 +26,7 @@
 | [seto-ohashi-bridge（JA）](https://builtjapan.com/buildings/seto-ohashi-bridge/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（JA）](https://builtjapan.com/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
+| [toyosu-ohashi（JA）](https://builtjapan.com/buildings/toyosu-ohashi/) | ヒーロー画像なし（プレースホルダ表示） |
 | [buildings（EN）](https://builtjapan.com/en/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（EN）](https://builtjapan.com/en/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -43,6 +44,7 @@
 | [seto-ohashi-bridge（EN）](https://builtjapan.com/en/buildings/seto-ohashi-bridge/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（EN）](https://builtjapan.com/en/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
+| [toyosu-ohashi（EN）](https://builtjapan.com/en/buildings/toyosu-ohashi/) | ヒーロー画像なし（プレースホルダ表示） |
 
 ## 直し方
 

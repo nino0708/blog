@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-16T08:15:26.553087+09:00",
+  "checkedAt": "2026-08-18T08:13:14.201836+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -1332,6 +1332,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Tokyo_Gate_Bridge_2018.jpg/1280px-Tokyo_Gate_Bridge_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
+      "url": "https://builtjapan.com/buildings/tokyo-international-cruise-terminal/",
+      "slug": "tokyo-international-cruise-terminal",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Tokyo_International_Cruise_Terminal.jpg/1280px-Tokyo_International_Cruise_Terminal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-international-cruise-terminal/",
+      "slug": "tokyo-international-cruise-terminal",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Tokyo_International_Cruise_Terminal.jpg/1280px-Tokyo_International_Cruise_Terminal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/tokyo-international-forum/",
       "slug": "tokyo-international-forum",
       "lang": "ja",
@@ -1568,6 +1582,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Toranomon_Hills_Station_Tower_1.jpg/1280px-Toranomon_Hills_Station_Tower_1.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/toyosu-ohashi/",
+      "slug": "toyosu-ohashi",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/toyosu-ohashi/",
+      "slug": "toyosu-ohashi",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/w-comfort-towers/",
