@@ -23,6 +23,6 @@ Walking from Tatsumi Station through Shinonome, low-rise slab blocks and the two
 
 W Comfort Towers consists of two supertall condominium towers completed in 2004 and 2005—EAST at 54 floors and approximately 178 meters, WEST at 45 floors and roughly 153 meters—housing a combined 1,149 units on the former grounds of Mitsubishi Steel's Tokyo plant. As pioneers of Shinonome's high-rise era, these twin towers reward a closer look from the water's edge of the Shinonome Canal.
 
-Related: [Shinonome Canal Court CODAN](/buildings-en/shinonome-canal-court-codan/) / [SKYZ Tower & Garden](/buildings-en/skyz-tower-and-garden/) / [BAYZ Tower & Garden](/buildings-en/bayz-tower-and-garden/)
+Related: [Shinonome Canal Court CODAN](/en/buildings/shinonome-canal-court-codan/) / [SKYZ Tower & Garden](/en/buildings/skyz-tower-and-garden/) / [BAYZ Tower & Garden](/en/buildings/bayz-tower-and-garden/)
 
 Looking for a hotel near Shinonome or Tatsumi? [Rakuten Travel](https://travel.rakuten.co.jp/en/) has options in the area.

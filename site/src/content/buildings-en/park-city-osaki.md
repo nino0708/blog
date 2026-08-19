@@ -23,6 +23,6 @@ The residential tower and the adjacent office tower are connected by a second-fl
 
 Park City Osaki is a 40-story, approximately 141-meter residential tower completed in May 2015 as part of the Kitashinagawa 5-chome urban redevelopment. Designed by Nihon Sekkei and built by Nishimatsu Construction, it stands alongside Osaki Bright Tower and Osaki Bright Core to form a transit-oriented mixed-use precinct a short walk from Osaki Station. The transformation of this former warehouse district into a high-rise neighborhood is best understood on foot.
 
-Related: [Osaki ThinkPark Tower](/buildings-en/osaki-thinkpark-tower/) / [Shinagawa Intercity](/buildings-en/shinagawa-intercity/) / [Shinagawa Season Terrace](/buildings-en/shinagawa-season-terrace/)
+Related: [Osaki ThinkPark Tower](/en/buildings/osaki-thinkpark-tower/) / [Shinagawa Intercity](/en/buildings/shinagawa-intercity/) / [Shinagawa Season Terrace](/en/buildings/shinagawa-season-terrace/)
 
 Looking for a hotel near Osaki or Shinagawa? [Rakuten Travel](https://travel.rakuten.co.jp/en/) has options in the area.
