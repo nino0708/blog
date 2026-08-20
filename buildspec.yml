@@ -23,7 +23,12 @@ phases:
       - cd "$CODEBUILD_SRC_DIR/$SITE_SUBDIR"
   build:
     commands:
+      - cd "$CODEBUILD_SRC_DIR/$SITE_SUBDIR"
       - npm run build
+      # 記事の内部リンクは執筆時に手書きされるため、綴り違いがそのまま404になりGSCに出る。
+      # dist の内部リンクが実ファイルに解決できるか総当たりで検証し、壊れていれば公開を止める。
+      # 壊れたまま先に出したい時だけ、環境変数 SKIP_LINK_CHECK=1 で回避する。
+      - if [ "$SKIP_LINK_CHECK" = "1" ]; then echo "リンクチェックをスキップ (SKIP_LINK_CHECK=1)"; else npm run check:links; fi
   post_build:
     commands:
       # HTML 以外（ハッシュ付きアセット）は長期キャッシュ
