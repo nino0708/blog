@@ -147,5 +147,9 @@
     "attempts": 3,
     "reason": "確信できる外観画像が見つからない",
     "gaveUp": true
+  },
+  "nihonbashi-nomura-mitsui-tower": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
   }
 }

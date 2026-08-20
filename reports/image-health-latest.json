@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-19T08:14:22.156356+09:00",
+  "checkedAt": "2026-08-21T08:17:08.798100+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -688,6 +688,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Nihonbashi_mitsui_tower01s3872.jpg/1280px-Nihonbashi_mitsui_tower01s3872.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/",
+      "slug": "nihonbashi-nomura-mitsui-tower",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nihonbashi-nomura-mitsui-tower/",
+      "slug": "nihonbashi-nomura-mitsui-tower",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/buildings/nihonbashi-takashimaya-mitsui-tower/",
       "slug": "nihonbashi-takashimaya-mitsui-tower",
       "lang": "ja",
@@ -728,6 +742,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/NTT_DoCoMo_Yoyogi_Building_2009_cropped.jpg/1280px-NTT_DoCoMo_Yoyogi_Building_2009_cropped.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/osaka-sakishima-cosmo-tower/",
+      "slug": "osaka-sakishima-cosmo-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Osaka_Prefectural_Government_Sakishima_Building.jpg/1280px-Osaka_Prefectural_Government_Sakishima_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/osaka-sakishima-cosmo-tower/",
+      "slug": "osaka-sakishima-cosmo-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Osaka_Prefectural_Government_Sakishima_Building.jpg/1280px-Osaka_Prefectural_Government_Sakishima_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/osaki-thinkpark-tower/",
