@@ -3,6 +3,8 @@ title: "Brillia Tower 浜離宮"
 buildingType: residence
 area: "港区"
 address: "東京都港区海岸一丁目"
+lat: 35.654068
+lng: 139.760674
 completedYear: 2023
 floorsAbove: 32
 floorsBelow: 1
@@ -17,6 +19,7 @@ sources:
   - "walk.tokyo.jp「Brillia Tower浜離宮：ゆりかもめ竹芝駅直結 超高層タワーマンション2023年9月竣工」（竣工2023年9月・地上32階・高さ117.22m・開発: 東京建物）"
   - "prtimes.jp 東京建物プレスリリース「都心大規模マンション建替事業の先行事例 Brillia Tower浜離宮 モデルルームオープン」（旧イトーピア浜離宮1979年竣工14階建てを建て替え・松田平田設計）"
   - "skyscrapercity.com「TOKYO Brillia Tower Hamarikyu 117m」スレッド（高さ117m・港区海岸一丁目）"
+  - "座標: OpenStreetMap（ブリリアタワー浜離宮）"
 ---
 
 ## 竹芝の水辺に立つ32階建て

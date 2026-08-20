@@ -3,6 +3,8 @@ title: "GINZA SIX"
 buildingType: office
 area: "中央区"
 address: "東京都中央区銀座6丁目10-1"
+lat: 35.669625
+lng: 139.764061
 completedYear: 2017
 floorsAbove: 13
 floorsBelow: 6
@@ -18,6 +20,7 @@ sources:
   - "森ビル プレスリリース「GINZA SIX ファクトシート（2017.2.1時点）」- 地上13階・地下6階・延床面積約148,700m²（mori.co.jp/_mori_assets/files/assets/...170201_1.pdf）"
   - "GINZA SIX 開業発表（2017年4月20日）- 谷口建築設計研究所・鹿島建設設計部が設計（kajima.co.jp/tech/kd/works/259/index.html）"
   - "流通ニュース「GINZA SIX/延床14.8万m2の複合施設が竣工」高さ約56m（ryutsuu.biz/store/j020102.html）"
+  - "座標: Wikidata Q28685888"
 ---
 
 ## 松坂屋の跡に現れた、静謐な白い複合体

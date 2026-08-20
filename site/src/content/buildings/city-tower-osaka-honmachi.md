@@ -3,6 +3,8 @@ title: "シティタワー大阪本町"
 buildingType: residence
 area: "大阪市中央区"
 address: "大阪府大阪市中央区安土町2丁目"
+lat: 34.684722
+lng: 135.505
 completedYear: 2021
 floorsAbove: 48
 floorsBelow: 1
@@ -19,6 +21,7 @@ verified: true
 sources:
   - "SUUMO シティタワー大阪本町 物件情報（suumo.jp/ms/shinchiku/osaka/sc_osakashichuo/nc_67717463/）地上48階・地下1階・総戸数855戸を確認"
   - "関西散歩ブログ（kansai-sanpo.com/citytower-honmachi2022/）地上48階・高さ約165m・2021年12月竣工・住友不動産開発・清水建設設計施工を確認"
+  - "座標: Wikidata Q132044373"
 ---
 
 ## 船場に立ち上がる165メートルの塔

@@ -3,6 +3,8 @@ title: "大さん橋国際客船ターミナル"
 buildingType: office
 area: "横浜市中区"
 address: "神奈川県横浜市中区海岸通1-1"
+lat: 35.451667
+lng: 139.647778
 completedYear: 2002
 floorsAbove: 2
 floorsBelow: 1
@@ -22,6 +24,7 @@ sources:
   - "清水建設 施工実績 横浜港大さん橋国際客船ターミナル第1工区（延床面積34,732m²・建築面積27,270m²・最高高さ約15m・地上2階地下1階・鋼管杭485本）https://www.shimz.co.jp/works/jp_har_200211_yokohamakou.html"
   - "建設通信新聞Digital 横浜市公共建築シリーズ第37回 https://www.kensetsunews.com/web-kan/743888"
   - "建物全長は430mと450mの双方の記述あり。本文は控えめな値として約430mを採用"
+  - "座標: Wikidata Q3518430（大さん橋）"
 ---
 
 ## 港先端の波形、地形になった屋上

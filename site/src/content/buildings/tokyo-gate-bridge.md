@@ -3,6 +3,8 @@ title: "東京ゲートブリッジ"
 buildingType: bridge
 area: "江東区"
 address: "東京都江東区若洲〜中央防波堤外側埋立地（東京港臨海道路）"
+lat: 35.611389
+lng: 139.827222
 completedYear: 2012
 heightM: 87.8
 architect: "セントラルコンサルタント・パシフィックコンサルタンツ（基本設計・細部設計）"
@@ -15,6 +17,7 @@ sources:
   - "東京ゲートブリッジ基本設計・主橋梁部細部設計 セントラルコンサルタント https://www.central-con.co.jp/projects/東京ゲートブリッジ基本設計・主橋梁部細部設計/"
   - "東京ゲートブリッジ（東京港臨海道路） 国土交通省関東地方整備局 PDF https://www.ktr.mlit.go.jp/ktr_content/content/000617625.pdf"
   - "東京ゲートブリッジ（プロジェクト） 五洋建設 https://www.penta-ocean.co.jp/business/project/work/facility/bridge/016.html"
+  - "座標: Wikidata Q1644970"
 ---
 
 ## 羽田の空域制限が刻んだトラスの骨格

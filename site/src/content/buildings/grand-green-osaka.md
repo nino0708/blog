@@ -3,6 +3,8 @@ title: "グラングリーン大阪"
 buildingType: office
 area: "大阪市北区"
 address: "大阪府大阪市北区大深町"
+lat: 34.703
+lng: 135.493
 completedYear: 2024
 floorsAbove: 39
 floorsBelow: 3
@@ -20,6 +22,7 @@ sources:
   - "グラングリーン大阪 北館 | skyskysky.net - 地上26階・地下3階・高さ124.30m・延床65,421m²"
   - "グラングリーン大阪（うめきた2期）開発事業者一覧 | umekita2.com - 三菱地所（代表）ほか8社、敷地面積約9.1ha、うめきた公園約45,000m²"
   - "竹中工務店「グラングリーン大阪 南館」- 設計：三菱地所設計・日建設計・大林組・竹中工務店JV（news.build-app.jp）"
+  - "座標: Wikidata Q123951190"
 ---
 
 ## 梅田の北、都市の中心に生まれた公園と街区

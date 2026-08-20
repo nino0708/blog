@@ -3,6 +3,8 @@ title: "セントラルパークタワー・ラ・トゥール新宿"
 buildingType: residence
 area: "新宿区"
 address: "東京都新宿区西新宿六丁目15番1"
+lat: 35.692472
+lng: 139.688611
 completedYear: 2010
 floorsAbove: 44
 heightM: 167
@@ -18,6 +20,7 @@ verified: true
 sources:
   - "Wikipedia「セントラルパークタワー・ラ・トゥール新宿」https://ja.wikipedia.org/wiki/セントラルパークタワー・ラ・トゥール新宿（竣工2010年2月、地上44階、高さ167m、設計：日本設計、施工：鹿島・大成建設JV、建築主：西新宿六丁目西第6地区市街地再開発組合、総戸数842戸）"
   - "住友不動産公式ラ・トゥールサイト https://www.sumitomo-latour.jp/buildlist/shinjuku_area/latour-shinjuku/（西新宿六丁目15番1）"
+  - "座標: Wikidata Q24898354"
 ---
 
 ## 西新宿の空に、高さ167メートルの賃貸棟

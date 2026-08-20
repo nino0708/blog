@@ -3,6 +3,8 @@ title: "日本橋髙島屋三井ビルディング"
 buildingType: office
 area: "中央区"
 address: "東京都中央区日本橋二丁目"
+lat: 35.681317
+lng: 139.773826
 completedYear: 2018
 floorsAbove: 32
 floorsBelow: 5
@@ -19,6 +21,7 @@ sources:
   - "日本橋髙島屋三井ビルディング - Wikipedia（地上32階・地下5階・高さ176.66m・延床面積148,064.05㎡・設計:日本設計・プランテック設計JV）"
   - "日本橋髙島屋三井ビルディング | 日本設計プロジェクト https://www.nihonsekkei.co.jp/projects/9924/"
   - "重要文化財 日本橋高島屋（1933年竣工・2009年重要文化財指定）https://www.takashimaya.co.jp/nihombashi/departmentstore/cultural_propertie/"
+  - "座標: OpenStreetMap（日本橋高島屋三井ビルディング）"
 ---
 
 ## 重要文化財の隣に立つ超高層

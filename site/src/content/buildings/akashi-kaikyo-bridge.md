@@ -3,6 +3,8 @@ title: "明石海峡大橋"
 buildingType: bridge
 area: "兵庫県神戸市・淡路市"
 address: "兵庫県神戸市垂水区東舞子〜淡路市岩屋（神戸淡路鳴門自動車道）"
+lat: 34.616389
+lng: 135.020278
 completedYear: 1998
 heightM: 298.3
 developer: "本州四国連絡高速道路株式会社（JB本四高速）"
@@ -14,6 +16,7 @@ sources:
   - "JB本四高速「明石海峡大橋 技術情報」https://www.jb-honshi.co.jp/corp_index/technology/introduction/introduction_akashi.html"
   - "日本経済新聞「1998年4月5日 明石海峡大橋が開通 震災乗り越え完成」https://www.nikkei.com/article/DGKDZO26087780T00C11A4KB2000/"
   - "note.com 複数記事（全長3,911m・主径間1,991m・主塔高298.3m・1988年5月着工・1998年4月5日開通・阪神大震災で橋長1m延長・元計画3,910m）"
+  - "座標: Wikipedia/Wikidata Q184213"
 ---
 
 ## 主径間1,991メートル──瀬戸内に立つ世界最長の吊橋

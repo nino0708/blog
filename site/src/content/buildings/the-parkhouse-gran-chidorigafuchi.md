@@ -3,6 +3,8 @@ title: "ザ・パークハウス グラン 千鳥ヶ淵"
 buildingType: residence
 area: "千代田区"
 address: "東京都千代田区三番町2-1"
+lat: 35.690395
+lng: 139.746216
 completedYear: 2015
 floorsAbove: 14
 floorsBelow: 2
@@ -16,6 +18,7 @@ sources:
   - "三菱地所設計 公式プロジェクトページ https://www.mj-sekkei.com/project/617（設計：三菱地所設計・竹中工務店、施工：竹中工務店、2015年3月竣工、地上14階地下2階、免震構造）"
   - "ノムコム https://www.nomu.com/mansion/library/id/P0027670/（千代田区三番町2-1、総戸数73戸）"
   - "三菱地所住まいリレー https://www.mec-h.com/mansion/detail/D38X30723（分譲：三菱地所レジデンス）"
+  - "座標: 国土地理院 住所検索（東京都千代田区三番町2）"
 ---
 
 ## 千鳥ヶ淵の水際に建つ、14階の静けさ

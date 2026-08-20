@@ -3,6 +3,8 @@ title: "あべのハルカス"
 buildingType: office
 area: "大阪市阿倍野区"
 address: "大阪府大阪市阿倍野区阿倍野筋一丁目1番1号"
+lat: 34.645947
+lng: 135.514267
 completedYear: 2014
 floorsAbove: 60
 floorsBelow: 5
@@ -18,6 +20,7 @@ sources:
   - "あべのハルカス - Wikipedia（地上60階・地下5階・高さ300m・延床面積約306,000㎡・2014年3月7日全面開業）https://ja.wikipedia.org/wiki/あべのハルカス"
   - "竹中工務店 主要作品「あべのハルカス」https://www.takenaka.co.jp/majorworks/41920012014.html"
   - "ハルカス300公式サイト 施設概要 https://www.abenoharukas-300.jp/about/outline.html"
+  - "座標: Wikidata Q16318627"
 ---
 
 ## 阿倍野の空に立つ300メートル

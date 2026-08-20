@@ -3,6 +3,8 @@ title: "シティタワーズ東京ベイ"
 buildingType: residence
 area: "江東区"
 address: "東京都江東区有明2丁目"
+lat: 35.637433
+lng: 139.793809
 completedYear: 2019
 floorsAbove: 33
 heightM: 113
@@ -15,6 +17,7 @@ sources:
   - "住友不動産プレスリリース「総戸数1,539戸のトリプルタワー超高層免震マンション」（2020年3月、sumitomo-rd.co.jp）"
   - "住友不動産ステップ 物件概要（stepon.co.jp/premier/cttws-tokyo-bay/）"
   - "建物高さ：ウエストタワー113.87m・最高118.97m。複数サイト間に差異があり本誌は控えめな値を採用"
+  - "座標: OpenStreetMap（シティタワーズ東京ベイ セントラルタワー）"
 ---
 
 ## 有明の空に並ぶ三つの塔

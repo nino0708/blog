@@ -3,6 +3,8 @@ title: "東京国際クルーズターミナル"
 buildingType: office
 area: "江東区"
 address: "東京都江東区青海二丁目地先"
+lat: 35.617694
+lng: 139.770694
 completedYear: 2020
 floorsAbove: 4
 totalFloorAreaM2: 19000
@@ -16,6 +18,7 @@ sources:
   - "安井建築設計事務所 実績（設計）https://www.yasui-archi.co.jp/works/detail/662005/index.html"
   - "五洋建設 プロジェクトストーリー（施工）https://www.penta-ocean.co.jp/business/project/pj_story/2023/40.html"
   - "Travel Watch 取材記事（2020年9月10日開業）https://travel.watch.impress.co.jp/docs/news/1158665.html"
+  - "座標: Wikidata Q65271262"
 ---
 
 ## 東京港に誕生した大型客船の拠点

@@ -3,6 +3,8 @@ title: "Hareza池袋"
 buildingType: office
 area: "豊島区"
 address: "東京都豊島区東池袋一丁目18番1号"
+lat: 35.732417
+lng: 139.715528
 completedYear: 2020
 floorsAbove: 33
 floorsBelow: 2
@@ -22,6 +24,7 @@ sources:
   - "豊島区役所 - Wikipedia https://ja.wikipedia.org/wiki/%E8%B1%8A%E5%B3%B6%E5%8C%BA%E5%BD%B9%E6%89%80"
   - "Hareza池袋 | KAJIMA DESIGN | 鹿島建設 https://www.kajima.co.jp/tech/kd/works/311/index.html"
   - "庁舎跡地の活用（Hareza 池袋）｜豊島区公式ホームページ https://www.city.toshima.lg.jp/kuse/project/hareza/index.html"
+  - "座標: Wikidata Q130530512"
 ---
 
 ## 劇場都市の誕生

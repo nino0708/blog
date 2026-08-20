@@ -3,6 +3,8 @@ title: "羽田空港 D滑走路"
 buildingType: bridge
 area: "大田区"
 address: "東京都大田区羽田空港（東京国際空港）"
+lat: 35.532424
+lng: 139.812999
 completedYear: 2010
 developer: "国土交通省（航空局）"
 tags: ["大田区", "羽田空港", "海上構造物", "ハイブリッド工法", "航空インフラ", "交通"]
@@ -14,6 +16,7 @@ sources:
   - "五洋建設 D滑走路工事概要PDF https://www.penta-ocean.co.jp/125/pdf/01/HanedaD_A3.pdf（工期2005年3月〜2010年8月）"
   - "JSTAGE「羽田空港D滑走路の設計」https://www.jstage.jst.go.jp/article/jscejge/68/1/68_1_150/_pdf（ハイブリッド構造・鋼管ジャケット198基・杭1,165本・桟橋部面積約52万m²）"
   - "JSTAGE「2010年10月21日 供用開始・10月31日 国際定期便就航」https://www.jstage.jst.go.jp/article/jjca/48/4/48_4_4_7/_pdf"
+  - "座標: OpenStreetMap（東京国際空港 D滑走路島 埋立部）"
 ---
 
 ## 多摩川河口に生まれた4本目の滑走路

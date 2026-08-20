@@ -3,6 +3,8 @@ title: "三田ガーデンヒルズ"
 buildingType: residence
 area: "港区"
 address: "東京都港区三田1丁目"
+lat: 35.652694
+lng: 139.74125
 completedYear: 2025
 floorsAbove: 14
 developer: "三井不動産レジデンシャル・三菱地所レジデンス"
@@ -16,6 +18,7 @@ sources:
   - "Hoshino Architects 公式サイト https://hoshinoarchitects.com/project/mita-garden-hills-residential-completed/（設計：星野建築事務所）"
   - "REthink Tokyo 2022年5月記事（Hopkins Architects初の日本進出プロジェクト・7棟構成・2025年竣工）"
   - "日経xTECH 2023年2月「港区最大敷地面積の分譲マンション、三田ガーデンヒルズ、23年2月に販売開始」（地上14階・2025年3月竣工）"
+  - "座標: Wikidata Q115008621"
 ---
 
 ## 旧逓信省の跡地に生まれた7棟の街区

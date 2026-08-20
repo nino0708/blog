@@ -3,6 +3,8 @@ title: "豊洲大橋"
 buildingType: bridge
 area: "中央区・江東区"
 address: "東京都中央区晴海5丁目〜江東区豊洲6丁目"
+lat: 35.649032
+lng: 139.781327
 completedYear: 2008
 tags: ["中央区", "江東区", "橋梁", "湾岸", "豊洲", "晴海", "臨海部", "環状第2号線"]
 publishedAt: 2026-08-17
@@ -11,6 +13,7 @@ verified: true
 sources:
   - "豊洲大橋 Wikipedia（橋長550.0m・形式5径間連続鋼床版V脚箱桁・最大支間130m・幅員32.3m・竣工2008年11月）https://ja.wikipedia.org/wiki/豊洲大橋"
   - "Web検索複数サイト（日本橋梁・日本ファブテック施工実績、環状第2号線2018年11月暫定開通）"
+  - "座標: Wikidata Q11633917"
 ---
 
 ## 晴海運河に架かるV脚の橋

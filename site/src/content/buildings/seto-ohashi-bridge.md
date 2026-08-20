@@ -3,6 +3,8 @@ title: "瀬戸大橋"
 buildingType: bridge
 area: "岡山県倉敷市・香川県坂出市"
 address: "岡山県倉敷市児島〜香川県坂出市（瀬戸中央自動車道・JR本四備讃線）"
+lat: 34.398333
+lng: 133.81
 completedYear: 1988
 developer: "本州四国連絡橋公団（現：本州四国連絡高速道路株式会社）"
 tags: ["岡山県", "香川県", "吊橋", "斜張橋", "本州四国連絡橋", "道路鉄道併用橋", "土木インフラ"]
@@ -14,6 +16,7 @@ sources:
   - "国土交通省インフラツーリズム「瀬戸大橋」https://www.mlit.go.jp/sogoseisaku/region/infratourism/infralist/kagawa/index01.html"
   - "JB本四高速「南備讃瀬戸大橋」https://www.jb-honshi.co.jp/seto-ohashi/shoukai/6kyou6.html（全長1,723m・中央支間長1,100m・主塔高194m）"
   - "JB本四高速「瀬戸大橋の歴史」https://www.jb-honshi.co.jp/seto-ohashi/shoukai/rekishi4.html（着工1978年10月・橋梁部総延長9,368m）"
+  - "座標: Wikidata Q976648"
 ---
 
 ## 道路と鉄道が重なる、世界最長の海峡橋

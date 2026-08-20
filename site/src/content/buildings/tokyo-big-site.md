@@ -3,6 +3,8 @@ title: "東京ビッグサイト（東京国際展示場）"
 buildingType: office
 area: "江東区"
 address: "東京都江東区有明3-11-1"
+lat: 35.630158
+lng: 139.793742
 completedYear: 1996
 floorsAbove: 8
 heightM: 58
@@ -21,6 +23,7 @@ sources:
   - "AXS SATOW INC. 実績ページ https://www.axscom.jp/en/project/no01500/（設計：AXS SATOW）"
   - "東京ビッグサイト公式サイト「施設紹介」（南展示棟2019年7月開業・青海展示棟2019年4月開業）"
   - "有明るサイト「東京ビッグサイト南展示棟・青海展示棟情報」（延床面積約31万6990m²）"
+  - "座標: Wikidata Q1359125（東京国際展示場）"
 ---
 
 ## 有明に立ち上がった逆三角錐の異形

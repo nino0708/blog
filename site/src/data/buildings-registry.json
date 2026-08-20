@@ -410,7 +410,13 @@
    "verified": false,
    "sources": [
     "（要確認）公式資料で竣工年・規模を裏取りすること"
-   ]
+   ],
+   "lat": 35.652694,
+   "lng": 139.74125,
+   "coordSource": "wikidata",
+   "coordRef": "Wikidata Q115008621",
+   "pref": "東京都",
+   "city": "港区"
   },
   {
    "slug": "mode-gakuen-cocoon-tower",

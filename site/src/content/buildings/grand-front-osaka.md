@@ -3,6 +3,8 @@ title: "グランフロント大阪"
 buildingType: office
 area: "大阪市北区"
 address: "大阪府大阪市北区大深町"
+lat: 34.705778
+lng: 135.494361
 completedYear: 2013
 floorsAbove: 38
 floorsBelow: 3
@@ -22,6 +24,7 @@ sources:
   - "グランフロント大阪 北館タワーB | blue-style.com（地上38階・高さ175.211m）"
   - "グランフロント大阪 北館タワーC | blue-style.com（地上33階・高さ154m）"
   - "グランフロント大阪 | 日建設計 プロジェクト https://www.nikken.co.jp/ja/projects/mixed_use/grand_front_osaka.html"
+  - "座標: Wikidata Q24899387"
 ---
 
 ## 梅田の北に開いた「知の複合体」

@@ -3,6 +3,8 @@ title: "聖橋"
 buildingType: bridge
 area: "千代田区"
 address: "東京都千代田区神田駿河台4丁目〜文京区湯島1丁目（神田川上）"
+lat: 35.699722
+lng: 139.765556
 completedYear: 1927
 developer: "内務省復興局"
 architect: "山田守（意匠）・成瀬勝武（構造）"
@@ -15,6 +17,7 @@ sources:
   - "土木学会 選奨土木遺産 聖橋（2017年認定）https://committees.jsce.or.jp/heritage/node/944"
   - "ミツカン水の文化センター「帝都復興における橋とデザインの思想」https://www.mizu.gr.jp/kikanshi/no47/02.html"
   - "橋長は79.3mと92.0m（計測範囲の違いによる差異）の双方の記述あり。本文は79.3mを採用"
+  - "座標: Wikidata Q11611065"
 ---
 
 ## 二つの聖堂をつなぐアーチ橋

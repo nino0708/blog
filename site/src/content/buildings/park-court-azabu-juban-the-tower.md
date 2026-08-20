@@ -3,6 +3,8 @@ title: "パークコート麻布十番 ザ タワー"
 buildingType: residence
 area: "港区"
 address: "東京都港区三田1丁目7番1号"
+lat: 35.654453
+lng: 139.73953
 completedYear: 2010
 floorsAbove: 36
 heightM: 129
@@ -17,6 +19,7 @@ sources:
   - "三井不動産グループ 31mansion.com（開発：三井不動産レジデンシャル・日鉄都市開発・東和不動産）"
   - "JMA.co.jp 設計実績（設計：Jun Mitsui & Associates Inc. Architects / Pelli Clarke & Partners Japan）"
   - "blue-style.com 超高層ビル情報（高さ129.08m・地上36階）"
+  - "座標: OpenStreetMap（パークコート麻布十番）"
 ---
 
 ## 丘の街に現れた36階のシルエット

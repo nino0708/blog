@@ -3,6 +3,8 @@ title: "晴海フラッグ SKY DUO"
 buildingType: residence
 area: "中央区"
 address: "東京都中央区晴海5丁目"
+lat: 35.650361
+lng: 139.774519
 completedYear: 2025
 floorsAbove: 50
 floorsBelow: 1
@@ -19,6 +21,7 @@ sources:
   - "日鉄興和不動産 竣工ニュース（nskre.co.jp/company/news/2025/2025919.html）"
   - "SKY DUO高さ：171.95m（最高179.60m）は東急不動産ニュースリリースより。本文・front matterでは約172mと表記"
   - "設計者（SUN VILLAGE: 三菱地所設計、PARK VILLAGE: 日建ハウジングシステム）は複数報道に差異あり"
+  - "座標: Wikidata Q107621963（HARUMI FLAG）"
 ---
 
 ## 晴海の岬に伸びる二本の塔
