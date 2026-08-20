@@ -121,6 +121,8 @@ const ja: Dict = {
   'home.desc':
     '港区・千代田区・中央区を中心に、東京の大型オフィスビルとタワーマンションを一棟ずつ巡って紹介する趣味のブログです。竣工年・高さ・開発の背景を、公開情報をもとに記録しています。',
   'home.eyebrow': 'TOKYO HIGH-RISE ARCHITECTURE',
+  'home.hero.credit': '写真',
+  'home.hero.credit.suffix': '（パブリックドメイン）',
   'home.cta.database': '建物図鑑を見る',
   'home.cta.rankings': '高さランキング',
   'home.stat.buildings': '棟を収録',
@@ -265,6 +267,8 @@ const en: Dict = {
   'home.desc':
     "A hobby blog touring Tokyo's major office towers and high-rise residences one by one — mostly in Minato, Chiyoda and Chuo wards. Completion years, heights and the background of each development, recorded from public sources.",
   'home.eyebrow': 'TOKYO HIGH-RISE ARCHITECTURE',
+  'home.hero.credit': 'Photo',
+  'home.hero.credit.suffix': ' (public domain)',
   'home.cta.database': 'Browse the database',
   'home.cta.rankings': 'Height rankings',
   'home.stat.buildings': 'buildings',
