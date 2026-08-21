@@ -149,6 +149,15 @@
     "gaveUp": true
   },
   "nihonbashi-nomura-mitsui-tower": {
+    "attempts": 2,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "12": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "sis-rinku-tower": {
     "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }

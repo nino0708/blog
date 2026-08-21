@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-21T08:17:08.798100+09:00",
+  "checkedAt": "2026-08-22T08:14:09.128189+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -1192,6 +1192,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Shiodome_City_Center_2018.jpg/1280px-Shiodome_City_Center_2018.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/sis-rinku-tower/",
+      "slug": "sis-rinku-tower",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/sis-rinku-tower/",
+      "slug": "sis-rinku-tower",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/buildings/skyz-tower-and-garden/",
       "slug": "skyz-tower-and-garden",
       "lang": "ja",
@@ -1204,6 +1218,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/SKYZ_TOWER_1.JPG/1280px-SKYZ_TOWER_1.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/st-lukes-garden/",
+      "slug": "st-lukes-garden",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
+      "slug": "st-lukes-garden",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/sunshine-60/",
@@ -1766,6 +1794,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/12/",
+      "slug": "12",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -1831,6 +1866,13 @@
     {
       "url": "https://builtjapan.com/en/buildings/page/11/",
       "slug": "11",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/12/",
+      "slug": "12",
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
