@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CategoryView from '../../components/CategoryView.astro';
+import { buildAreaFacets } from '../../lib/area';
 import { CATEGORIES, PER_PAGE, getCategoryPostsEn } from '../../lib/category';
 
 const meta = CATEGORIES.railways;
@@ -8,7 +9,8 @@ const meta = CATEGORIES.railways;
 // 「交通」タグ付きの建物記事(羽田空港D滑走路など)も英語版がある分だけ合流する。
 const all = await getCategoryPostsEn('railways');
 const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
-const posts = all.slice(0, PER_PAGE);
+// エリア絞り込みは全記事から選ぶので一覧は全件出力し、先頭 PER_PAGE 件だけを見せる。
+const areaFacets = buildAreaFacets(all.map((p) => p.areas), 'en');
 ---
 <BaseLayout
   title={`${meta.label.en} | Infrastructure in Kanto`}
@@ -21,7 +23,9 @@ const posts = all.slice(0, PER_PAGE);
     lang="en"
     title={meta.label.en}
     description={meta.description.en}
-    posts={posts}
+    posts={all}
+    areaFacets={areaFacets}
+    perPage={PER_PAGE}
     basePath="/en/railways/"
     current={1}
     totalPages={totalPages}

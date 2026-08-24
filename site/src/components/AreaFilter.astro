@@ -1,0 +1,133 @@
+---
+// 一覧ページ冒頭のエリア絞り込み。都道府県チップ → 選ぶとその中の市区チップが出る2段構え。
+// 絞り込みはページを読み込み直さずJSで表示を切り替えるだけなので、
+// 一覧ページ側は「全記事のカード」を出力しておき、JS無しでは先頭ページ分だけが見える状態にしておく。
+import { useT, type Lang } from '../i18n/ui';
+import type { PrefFacet } from '../lib/area';
+
+interface Props {
+  lang: Lang;
+  facets: PrefFacet[];
+  /** 絞り込み前の総件数 */
+  total: number;
+  /** 絞り込み無しのときに見せる件数（＝1ページの件数） */
+  perPage: number;
+}
+const { lang, facets, total, perPage } = Astro.props;
+const t = useT(lang);
+const cityRows = facets.filter((p) => p.cities.length > 0);
+---
+{facets.length > 1 && (
+  <div
+    class="area-filter"
+    data-area-filter
+    data-per-page={perPage}
+    data-result-tpl={t('area.result')}
+  >
+    <p class="area-filter-label">{t('area.filter.label')}</p>
+    <div class="area-chips" role="group" aria-label={t('area.filter.label')}>
+      <button type="button" class="area-chip is-active" data-area="all">
+        {t('area.filter.all')}<span class="area-n">{total}</span>
+      </button>
+      {facets.map((p) => (
+        <button type="button" class="area-chip" data-area={p.key}>
+          {p.label}<span class="area-n">{p.count}</span>
+        </button>
+      ))}
+    </div>
+    {cityRows.map((p) => (
+      <div class="area-chips area-cities" data-parent={p.key} hidden>
+        {p.cities.map((c) => (
+          <button type="button" class="area-chip area-chip-city" data-area={c.key}>
+            {c.label}<span class="area-n">{c.count}</span>
+          </button>
+        ))}
+      </div>
+    ))}
+    <p class="area-result" data-area-result hidden></p>
+  </div>
+)}
+
+<script>
+  const filter = document.querySelector<HTMLElement>('[data-area-filter]');
+  if (filter) {
+    const cards = [...document.querySelectorAll<HTMLElement>('[data-areas]')];
+    const chips = [...filter.querySelectorAll<HTMLElement>('.area-chip')];
+    const cityRows = [...filter.querySelectorAll<HTMLElement>('.area-cities')];
+    const pagers = [...document.querySelectorAll<HTMLElement>('[data-area-pager]')];
+    const result = filter.querySelector<HTMLElement>('[data-area-result]');
+    const perPage = Number(filter.dataset.perPage || 10);
+    const resultTpl = filter.dataset.resultTpl || '%n';
+
+    // 初期状態(絞り込み無し)の隠し方をJS側に一本化する。
+    // サーバー側は先頭ページ分より後ろに .area-extra を付けて出しているので、それを外して同じ規則で隠し直す。
+    cards.forEach((c) => c.classList.remove('area-extra'));
+
+    let current = 'all';
+
+    const apply = (key: string) => {
+      current = key;
+      const pref = key.split('/')[0];
+      chips.forEach((c) => c.classList.toggle('is-active', c.dataset.area === key));
+      cityRows.forEach((row) => {
+        row.hidden = key === 'all' || row.dataset.parent !== pref;
+      });
+
+      let hits = 0;
+      cards.forEach((card, i) => {
+        const areas = (card.dataset.areas || '').split(' ');
+        const hit = key === 'all' || areas.includes(key);
+        if (hit) hits++;
+        // 絞り込み中はページ送りを止めて該当を全件出す。
+        card.classList.toggle('area-hidden', key === 'all' ? i >= perPage : !hit);
+        // スクロール演出で隠れたままにならないよう、絞り込みで出したカードは即座に見える状態にする。
+        if (key !== 'all' && hit) card.classList.add('is-in');
+      });
+
+      pagers.forEach((p) => { p.hidden = key !== 'all'; });
+      if (result) {
+        result.hidden = key === 'all';
+        result.textContent = resultTpl.replace('%n', String(hits));
+      }
+    };
+
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const key = chip.dataset.area || 'all';
+        // 選択中のチップをもう一度押したら解除。市区を押していたら都道府県まで戻す。
+        apply(key === current ? (key.includes('/') ? key.split('/')[0] : 'all') : key);
+      });
+    });
+
+    apply('all');
+  }
+</script>
+
+<style>
+  /* JSでしか動かない絞り込みなので、JS無効時は出さない（その場合は今まで通りページ送りで読む） */
+  .area-filter { display: none; margin: 18px 0 22px; }
+  :global(html.js) .area-filter { display: block; }
+
+  .area-filter-label {
+    margin: 0 0 8px; font-size: 0.78rem; font-weight: 700;
+    letter-spacing: 0.02em; color: var(--text-muted);
+  }
+  .area-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  /* display:flex が hidden 属性のUAスタイルに勝ってしまうので、明示的に打ち消す */
+  .area-chips[hidden] { display: none; }
+  .area-cities {
+    margin-top: 8px; padding-top: 10px; border-top: 1px dashed var(--line);
+  }
+  .area-chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    border: 1px solid var(--line); background: var(--surface);
+    color: var(--text-muted); font-weight: 700; font-size: 0.82rem;
+    padding: 7px 14px; border-radius: 999px; cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .area-chip:hover { border-color: var(--brand); color: var(--brand); }
+  .area-chip.is-active { background: var(--brand); border-color: var(--brand); color: #fff; }
+  .area-chip-city { font-size: 0.78rem; padding: 6px 12px; }
+  .area-n { font-size: 0.72rem; opacity: 0.75; font-weight: 800; }
+  .area-result { margin: 12px 0 0; font-size: 0.82rem; color: var(--text-muted); }
+</style>

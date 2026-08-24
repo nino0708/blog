@@ -1,16 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryView from '../components/CategoryView.astro';
-import { getCollection } from 'astro:content';
-import { CATEGORIES, PER_PAGE } from '../lib/category';
+import { buildAreaFacets } from '../lib/area';
+import { CATEGORIES, PER_PAGE, getCategoryPosts } from '../lib/category';
 
 const meta = CATEGORIES.expressways;
 // 新着順。2ページ目以降は /expressways/page/N/ が担う(トップの新着一覧と同じ1ページ10件)。
-const all = (await getCollection('expressways')).sort(
-  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
-);
+const all = await getCategoryPosts('expressways');
 const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
-const posts = all.slice(0, PER_PAGE);
+// エリア絞り込みは全記事から選ぶので一覧は全件出力し、先頭 PER_PAGE 件だけを見せる。
+const areaFacets = buildAreaFacets(all.map((p) => p.areas), 'ja');
 ---
 <BaseLayout
   title={`${meta.label.ja}｜関東のインフラ`}
@@ -23,7 +22,9 @@ const posts = all.slice(0, PER_PAGE);
     lang="ja"
     title={meta.label.ja}
     description={meta.description.ja}
-    posts={posts}
+    posts={all}
+    areaFacets={areaFacets}
+    perPage={PER_PAGE}
     basePath="/expressways/"
     current={1}
     totalPages={totalPages}

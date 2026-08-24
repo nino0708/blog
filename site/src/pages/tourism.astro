@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryView from '../components/CategoryView.astro';
+import { buildAreaFacets } from '../lib/area';
 import { CATEGORIES, PER_PAGE, getCategoryPosts } from '../lib/category';
 
 const meta = CATEGORIES.tourism;
@@ -8,7 +9,8 @@ const meta = CATEGORIES.tourism;
 // 2ページ目以降は /tourism/page/N/ が担う(トップの新着一覧と同じ1ページ10件)。
 const all = await getCategoryPosts('tourism');
 const totalPages = Math.max(1, Math.ceil(all.length / PER_PAGE));
-const posts = all.slice(0, PER_PAGE);
+// エリア絞り込みは全記事から選ぶので一覧は全件出力し、先頭 PER_PAGE 件だけを見せる。
+const areaFacets = buildAreaFacets(all.map((p) => p.areas), 'ja');
 ---
 <BaseLayout
   title={`${meta.label.ja}｜関東のインフラ`}
@@ -20,7 +22,9 @@ const posts = all.slice(0, PER_PAGE);
     lang="ja"
     title={meta.label.ja}
     description={meta.description.ja}
-    posts={posts}
+    posts={all}
+    areaFacets={areaFacets}
+    perPage={PER_PAGE}
     basePath="/tourism/"
     current={1}
     totalPages={totalPages}

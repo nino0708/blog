@@ -61,6 +61,18 @@ export function nearestTo(
     .slice(0, limit);
 }
 
+/**
+ * 図鑑レジストリが持つ、座標を逆ジオコーディングして得た行政区画（slug→都道府県・市区）。
+ * 記事の area は表記ゆれがあるので、エリア絞り込みではこちらを併せて使う。
+ */
+export function registryGeoBySlug(): Map<string, { pref?: string; city?: string }> {
+  return new Map(
+    (registryData as { buildings: { slug: string; pref?: string; city?: string }[] }).buildings.map(
+      (b) => [b.slug, { pref: b.pref, city: b.city }]
+    )
+  );
+}
+
 export async function getBuildingRows(lang: Lang): Promise<BuildingRow[]> {
   const articles = await getCollection('buildings');
   const enArticles = await getCollection('buildings-en');

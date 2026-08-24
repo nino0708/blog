@@ -3,8 +3,10 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import BuildingCard from '../../../components/BuildingCard.astro';
 import Pager from '../../../components/Pager.astro';
+import AreaFilter from '../../../components/AreaFilter.astro';
+import { buildAreaFacets } from '../../../lib/area';
 import { useT } from '../../../i18n/ui';
-import { getBuildingEntries } from '../../../lib/category';
+import { getBuildingEntries, areaKeysForBuildings } from '../../../lib/category';
 
 const lang = 'en';
 const t = useT(lang);
@@ -20,7 +22,9 @@ const allPosts = (await getCollection('buildings-en'))
 // 1ページ10件・新着順。11件目以降は /en/buildings/page/2/ … へ。
 const PER_PAGE = 10;
 const totalPages = Math.max(1, Math.ceil(allPosts.length / PER_PAGE));
-const posts = allPosts.slice(0, PER_PAGE);
+// エリアは英語版の area 表記ではなく日本語版から割り出し、チップの表示名だけ英語にする。
+const areaKeys = areaKeysForBuildings(jp);
+const areaFacets = buildAreaFacets(allPosts.map((x) => areaKeys.get(x.en.slug) ?? []), lang);
 ---
 <BaseLayout title={t('nav.home')} description={t('buildings.lead')} lang={lang} altPath="/buildings/">
   <div class="section-head section-head-sub" data-reveal>
@@ -29,8 +33,10 @@ const posts = allPosts.slice(0, PER_PAGE);
     <p>{t('buildings.lead')}</p>
   </div>
 
+  <AreaFilter lang={lang} facets={areaFacets} total={allPosts.length} perPage={PER_PAGE} />
+
   <section class="grid grid-2">
-    {posts.map(({ en, jp }) => (
+    {allPosts.map(({ en, jp }, i) => (
       <BuildingCard
         lang={lang}
         url={`/en/buildings/${en.slug}/`}
@@ -42,9 +48,13 @@ const posts = allPosts.slice(0, PER_PAGE);
         summary={en.data.summary}
         verified={jp!.data.verified}
         heroImage={jp!.data.heroImage}
+        areas={areaKeys.get(en.slug)}
+        areaExtra={i >= PER_PAGE}
       />
     ))}
   </section>
 
-  <Pager current={1} total={totalPages} basePath="/en/buildings/" lang={lang} />
+  <div data-area-pager>
+    <Pager current={1} total={totalPages} basePath="/en/buildings/" lang={lang} />
+  </div>
 </BaseLayout>

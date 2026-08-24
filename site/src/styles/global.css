@@ -609,3 +609,8 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   .btn:hover, .card:hover { transform: none; }
   html { scroll-behavior: auto; }
 }
+
+/* エリア絞り込み（一覧ページ）。カードはページ側で全件出力し、
+   絞り込み無しのときは先頭ページ分より後ろをここで隠す。 */
+.area-extra,
+.area-hidden { display: none !important; }

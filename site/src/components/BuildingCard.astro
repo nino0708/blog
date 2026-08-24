@@ -12,15 +12,23 @@ interface Props {
   summary?: string;
   verified: boolean;
   heroImage?: string;
+  /** エリア絞り込み用のキー(例: ['東京都', '東京都/港区'])。一覧ページだけが渡す。 */
+  areas?: string[];
+  /** 絞り込み無しのときは隠しておくカード(1ページ目より後ろの分) */
+  areaExtra?: boolean;
 }
-const { lang, url, title, buildingType, area, completedYear, heightM, summary, verified, heroImage } = Astro.props;
+const {
+  lang, url, title, buildingType, area, completedYear, heightM, summary, verified, heroImage,
+  areas, areaExtra = false,
+} = Astro.props;
 const t = useT(lang);
 const typeLabel = buildingTypeLabel(lang, buildingType, true);
 const meta = buildCardMeta(lang, { area, completedYear, heightM });
 ---
 <article
-  class="card"
+  class:list={['card', { 'area-extra': areaExtra }]}
   data-reveal
+  data-areas={areas?.join(' ')}
   data-name={title.toLowerCase()}
   data-year={completedYear ?? ''}
   data-height={heightM ?? ''}

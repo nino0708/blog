@@ -3,6 +3,8 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import type { Lang } from '../i18n/ui';
+import { areasFor, type AreaKey } from './area';
+import { registryGeoBySlug } from './buildings';
 
 export type CategoryKey = 'expressways' | 'railways' | 'tourism';
 
@@ -72,6 +74,14 @@ export interface CategoryPost {
   data: { title: string; summary?: string; area?: string; publishedAt: Date };
   heroImage?: string;
   href: string;
+  /** エリア絞り込み用のキー。英語版も日本語版の area から割り出す(表示名だけを英語にする)。 */
+  areas: AreaKey[];
+}
+
+/** 建物記事のエリアキー(slug→キー)。図鑑レジストリの逆ジオコーディング結果も突き合わせる。 */
+export function areaKeysForBuildings(entries: { slug: string; data: { area: string } }[]): Map<string, AreaKey[]> {
+  const geo = registryGeoBySlug();
+  return new Map(entries.map((p) => [p.slug, areasFor(p.data.area, geo.get(p.slug))]));
 }
 
 /**
@@ -92,6 +102,7 @@ export async function getCategoryPostsEn(key: CategoryKey): Promise<CategoryPost
         data: { ...en.data, publishedAt: ja.data.publishedAt },
         heroImage: ja.data.heroImage,
         href: `/en/${key}/${en.slug}/`,
+        areas: areasFor(ja.data.area),
       });
     }
   }
@@ -102,6 +113,7 @@ export async function getCategoryPostsEn(key: CategoryKey): Promise<CategoryPost
     const jaBySlug = new Map(
       (await getCollection('buildings')).filter((b) => b.data.tags.includes(tag)).map((b) => [b.slug, b])
     );
+    const areaKeys = areaKeysForBuildings([...jaBySlug.values()]);
     for (const en of await getCollection('buildings-en')) {
       const ja = jaBySlug.get(en.slug);
       if (!ja) continue;
@@ -110,6 +122,7 @@ export async function getCategoryPostsEn(key: CategoryKey): Promise<CategoryPost
         data: { ...en.data, publishedAt: ja.data.publishedAt },
         heroImage: ja.data.heroImage,
         href: `/en/buildings/${en.slug}/`,
+        areas: areaKeys.get(ja.slug) ?? [],
       });
     }
   }
@@ -129,19 +142,21 @@ export async function getCategoryPosts(key: CategoryKey): Promise<CategoryPost[]
     data: p.data,
     heroImage: p.data.heroImage,
     href: `/${key}/${p.slug}/`,
+    areas: areasFor(p.data.area),
   }));
 
   const tag = BUILDING_TAG_BY_CATEGORY[key];
-  const tagged: CategoryPost[] = tag
-    ? (await getCollection('buildings'))
-        .filter((b) => (b.data.tags ?? []).includes(tag))
-        .map((b) => ({
-          slug: b.slug,
-          data: b.data,
-          heroImage: b.data.heroImage,
-          href: `/buildings/${b.slug}/`,
-        }))
+  const taggedEntries = tag
+    ? (await getCollection('buildings')).filter((b) => (b.data.tags ?? []).includes(tag))
     : [];
+  const taggedAreas = areaKeysForBuildings(taggedEntries);
+  const tagged: CategoryPost[] = taggedEntries.map((b) => ({
+    slug: b.slug,
+    data: b.data,
+    heroImage: b.data.heroImage,
+    href: `/buildings/${b.slug}/`,
+    areas: taggedAreas.get(b.slug) ?? [],
+  }));
 
   return [...own, ...tagged].sort(
     (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()

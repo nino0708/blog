@@ -2,6 +2,8 @@
 // カテゴリ(高速道路・鉄道・観光)のランディング表示。
 // 記事が0件なら「Coming soon...」、1件以上あれば自動で一覧化する(将来の拡張用)。
 import Pager from './Pager.astro';
+import AreaFilter from './AreaFilter.astro';
+import type { PrefFacet } from '../lib/area';
 interface Item {
   slug: string;
   data: { title: string; summary?: string; area?: string };
@@ -9,6 +11,8 @@ interface Item {
   heroImage?: string;
   /** 詳細ページへの実リンク。省略時は basePath+slug。タグで合流した建物は /buildings/<slug>/ を渡す。 */
   href?: string;
+  /** エリア絞り込み用のキー(例: ['東京都', '東京都/港区']) */
+  areas?: string[];
 }
 interface Props {
   title: string;
@@ -20,10 +24,16 @@ interface Props {
   /** ページ送り。省略時は1ページのみとして扱う */
   current?: number;
   totalPages?: number;
+  /**
+   * エリア絞り込みのチップ。渡すと posts は「全記事」とみなし、
+   * 先頭 perPage 件だけを見せた状態で描画する（残りはJSの絞り込みで出す）。
+   */
+  areaFacets?: PrefFacet[];
+  perPage?: number;
 }
 const {
   title, description, posts, basePath, lang = 'ja',
-  current = 1, totalPages = 1,
+  current = 1, totalPages = 1, areaFacets, perPage = 10,
 } = Astro.props;
 const listLabel = lang === 'ja' ? 'ホーム' : 'Home';
 const comingSoon = lang === 'ja'
@@ -35,6 +45,10 @@ const comingSoon = lang === 'ja'
   <h1>{title}</h1>
   <p class="lead">{description}</p>
 
+  {areaFacets && (
+    <AreaFilter lang={lang} facets={areaFacets} total={posts.length} perPage={perPage} />
+  )}
+
   {posts.length === 0 ? (
     <div class="coming-soon">
       <span class="coming-soon-badge">Coming soon...</span>
@@ -42,8 +56,12 @@ const comingSoon = lang === 'ja'
     </div>
   ) : (
     <div class="cat-list">
-      {posts.map((p) => (
-        <a class="cat-card" href={p.href ?? `${basePath}${p.slug}/`}>
+      {posts.map((p, i) => (
+        <a
+          class:list={['cat-card', { 'area-extra': areaFacets && i >= perPage }]}
+          href={p.href ?? `${basePath}${p.slug}/`}
+          data-areas={areaFacets ? p.areas?.join(' ') : undefined}
+        >
           {(p.heroImage ?? (p.data as { heroImage?: string }).heroImage) && (
             <div class="cat-card-thumb">
               <img
@@ -64,8 +82,12 @@ const comingSoon = lang === 'ja'
   )}
 
   {posts.length > 0 && (
-    <p class="cat-count">{lang === 'ja' ? `${current} / ${totalPages} ページ` : `Page ${current} of ${totalPages}`}</p>
+    <p class="cat-count" data-area-pager>
+      {lang === 'ja' ? `${current} / ${totalPages} ページ` : `Page ${current} of ${totalPages}`}
+    </p>
   )}
 </article>
 
-<Pager current={current} total={totalPages} basePath={basePath} lang={lang} />
+<div data-area-pager>
+  <Pager current={current} total={totalPages} basePath={basePath} lang={lang} />
+</div>
