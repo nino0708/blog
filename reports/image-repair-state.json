@@ -169,11 +169,11 @@
     "reason": "記事mdが見つからない"
   },
   "act-city-hamamatsu": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "x-tower-osaka-bay": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   }
 }
