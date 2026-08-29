@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-27T08:15:33.284497+09:00",
+  "checkedAt": "2026-08-30T08:14:34.698604+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -33,15 +33,29 @@
       "url": "https://builtjapan.com/buildings/act-city-hamamatsu/",
       "slug": "act-city-hamamatsu",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/ActCityHamamatsu.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/act-city-hamamatsu/",
       "slug": "act-city-hamamatsu",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/ActCityHamamatsu.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/akasaka-intercity-air/",
+      "slug": "akasaka-intercity-air",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/2024_Akasaka_Intercity_AIR.jpg/1280px-2024_Akasaka_Intercity_AIR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/akasaka-intercity-air/",
+      "slug": "akasaka-intercity-air",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/2024_Akasaka_Intercity_AIR.jpg/1280px-2024_Akasaka_Intercity_AIR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/akashi-kaikyo-bridge/",
@@ -182,6 +196,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Toshima_Ecomusee_Town_01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/central-government-building-7/",
+      "slug": "central-government-building-7",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Kasumigaseki-Common-Gate-02.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/central-government-building-7/",
+      "slug": "central-government-building-7",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Kasumigaseki-Common-Gate-02.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/city-tower-osaka-honmachi/",
@@ -425,15 +453,15 @@
       "url": "https://builtjapan.com/buildings/harumi-ohashi/",
       "slug": "harumi-ohashi",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Great_Harumi_Bridge.jpg/1280px-Great_Harumi_Bridge.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/harumi-ohashi/",
       "slug": "harumi-ohashi",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Great_Harumi_Bridge.jpg/1280px-Great_Harumi_Bridge.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/hijiri-bashi/",
@@ -462,6 +490,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Izumi_Garden_Tower_from_Tokyo_Tower.jpg/1280px-Izumi_Garden_Tower_from_Tokyo_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/ja-building-otemachi/",
+      "slug": "ja-building-otemachi",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Otemachi_JA_Building_20100618-001.jpg/1280px-Otemachi_JA_Building_20100618-001.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/ja-building-otemachi/",
+      "slug": "ja-building-otemachi",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Otemachi_JA_Building_20100618-001.jpg/1280px-Otemachi_JA_Building_20100618-001.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/japan-national-stadium/",
@@ -616,6 +658,48 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marunouchi_Building.JPG/1280px-Marunouchi_Building.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/marunouchi-oazo/",
+      "slug": "marunouchi-oazo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Marunouchi_OAZO_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg/1280px-Marunouchi_OAZO_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/marunouchi-oazo/",
+      "slug": "marunouchi-oazo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Marunouchi_OAZO_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg/1280px-Marunouchi_OAZO_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/marunouchi-park-building/",
+      "slug": "marunouchi-park-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Marunouchi_Park_Building_2016.jpg/1280px-Marunouchi_Park_Building_2016.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/marunouchi-park-building/",
+      "slug": "marunouchi-park-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Marunouchi_Park_Building_2016.jpg/1280px-Marunouchi_Park_Building_2016.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/marunouchi-trust-city/",
+      "slug": "marunouchi-trust-city",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/marunouchi-trust-city/",
+      "slug": "marunouchi-trust-city",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/midland-square/",
@@ -856,6 +940,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Osanbashi_Pier_from_Sea.jpg/1280px-Osanbashi_Pier_from_Sea.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/otemachi-one/",
+      "slug": "otemachi-one",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Otemachi_One.jpg/1280px-Otemachi_One.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/otemachi-one/",
+      "slug": "otemachi-one",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Otemachi_One.jpg/1280px-Otemachi_One.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/otemachi-place/",
       "slug": "otemachi-place",
       "lang": "ja",
@@ -982,6 +1080,34 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Park_Tower_Harumi.jpg/1280px-Park_Tower_Harumi.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/prince-gallery-tokyo-kioicho/",
+      "slug": "prince-gallery-tokyo-kioicho",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tokyo_Garden_Terrace_Kioicho.jpg/1280px-Tokyo_Garden_Terrace_Kioicho.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/prince-gallery-tokyo-kioicho/",
+      "slug": "prince-gallery-tokyo-kioicho",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tokyo_Garden_Terrace_Kioicho.jpg/1280px-Tokyo_Garden_Terrace_Kioicho.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/prudential-tower/",
+      "slug": "prudential-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prudential_Tower_%282007.09.16%29.jpg/1280px-Prudential_Tower_%282007.09.16%29.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/prudential-tower/",
+      "slug": "prudential-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prudential_Tower_%282007.09.16%29.jpg/1280px-Prudential_Tower_%282007.09.16%29.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/rainbow-bridge/",
       "slug": "rainbow-bridge",
       "lang": "ja",
@@ -1038,18 +1164,32 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio.jpg/1280px-%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/sapia-tower/",
+      "slug": "sapia-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sapia_Tower.jpg/1280px-Sapia_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/sapia-tower/",
+      "slug": "sapia-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sapia_Tower.jpg/1280px-Sapia_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/seto-ohashi-bridge/",
       "slug": "seto-ohashi-bridge",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Seto-Ohashi_Bridge.jpg/1280px-Seto-Ohashi_Bridge.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/seto-ohashi-bridge/",
       "slug": "seto-ohashi-bridge",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Seto-Ohashi_Bridge.jpg/1280px-Seto-Ohashi_Bridge.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/shibuya-hikarie/",
@@ -1265,15 +1405,15 @@
       "url": "https://builtjapan.com/buildings/sis-rinku-tower/",
       "slug": "sis-rinku-tower",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Rinku_Gate_Tower_Building02s3200.jpg/1280px-Rinku_Gate_Tower_Building02s3200.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/sis-rinku-tower/",
       "slug": "sis-rinku-tower",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Rinku_Gate_Tower_Building02s3200.jpg/1280px-Rinku_Gate_Tower_Building02s3200.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/skyz-tower-and-garden/",
@@ -1476,14 +1616,14 @@
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "ja",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tokyo_Garden_Terrace_Kioicho.jpg/1280px-Tokyo_Garden_Terrace_Kioicho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioicho/",
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "en",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tokyo_Garden_Terrace_Kioicho.jpg/1280px-Tokyo_Garden_Terrace_Kioicho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-gate-bridge/",
@@ -1755,15 +1895,15 @@
       "url": "https://builtjapan.com/buildings/toyosu-ohashi/",
       "slug": "toyosu-ohashi",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Toyosu-ohashi_-01.jpg/1280px-Toyosu-ohashi_-01.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/toyosu-ohashi/",
       "slug": "toyosu-ohashi",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Toyosu-ohashi_-01.jpg/1280px-Toyosu-ohashi_-01.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/w-comfort-towers/",
@@ -1778,6 +1918,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Shinonome_-01_%28cropped%29_-_W-Comfort_Towers_East_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/waterras/",
+      "slug": "waterras",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Waterras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/waterras/",
+      "slug": "waterras",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Waterras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/wtc-tokyo-south-tower/",
@@ -1797,15 +1951,15 @@
       "url": "https://builtjapan.com/buildings/x-tower-osaka-bay/",
       "slug": "x-tower-osaka-bay",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/X-TOWER_OSAKA_BAY.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/x-tower-osaka-bay/",
       "slug": "x-tower-osaka-bay",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/X-TOWER_OSAKA_BAY.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/yebisu-garden-place-tower/",
@@ -1948,6 +2102,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/14/",
+      "slug": "14",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -2027,6 +2188,13 @@
     {
       "url": "https://builtjapan.com/en/buildings/page/13/",
       "slug": "13",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/14/",
+      "slug": "14",
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
