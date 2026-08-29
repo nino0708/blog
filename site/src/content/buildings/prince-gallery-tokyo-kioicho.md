@@ -14,6 +14,9 @@ architect: "KPF・日建設計"
 tags: ["千代田区", "紀尾井町", "超高層ビル", "ホテル", "再開発"]
 publishedAt: 2026-08-29
 summary: "千代田区紀尾井町に2016年5月竣工した紀尾井タワー（地上36階・高さ約177m）の上層部に入居するラグジュアリーホテル。旧グランドプリンスホテル赤坂（赤プリ）跡地に建ち、1930年築の旧李王家東京邸を継承した「赤坂プリンス クラシックハウス」と共存する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tokyo_Garden_Terrace_Kioicho.jpg/1280px-Tokyo_Garden_Terrace_Kioicho.jpg"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Garden_Terrace_Kioicho.jpg"
 verified: true
 sources:
   - "東京ガーデンテラス紀尾井町 Wikipedia・鹿島建設実績集より竣工2016年5月・地上36階・地下2階・高さ177.65m・設計KPF(デザイン)/日建設計(実施設計)・施工鹿島建設等JV・開発西武プロパティーズを確認"

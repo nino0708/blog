@@ -12,6 +12,9 @@ architect: "大成建設"
 tags: ["千代田区", "永田町", "超高層ビル", "複合ビル", "オフィス"]
 publishedAt: 2026-08-29
 summary: "千代田区永田町に2002年竣工した地上38階・高さ約158mの複合高層ビル。森ビルが開発し大成建設が設計施工を担い、第46回BCS賞（2005年）を受賞。下層にオフィス、上層に賃貸住宅を組み合わせ、国会議事堂に程近い官庁街の一角に民間超高層として立つ。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prudential_Tower_%282007.09.16%29.jpg/1280px-Prudential_Tower_%282007.09.16%29.jpg"
+heroImageCredit: "Lombroso / Public domain"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Prudential_Tower_(2007.09.16).jpg"
 verified: true
 sources:
   - "プルデンシャルタワー Wikipedia・超高層ビル部(skyscraperclub.com)より竣工2002年・地上38階・地下3階・高さ158.35m・東京都千代田区永田町2-13-10を確認"
