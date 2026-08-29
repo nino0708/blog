@@ -10,6 +10,9 @@ developer: "本州四国連絡橋公団（現：本州四国連絡高速道路�
 tags: ["岡山県", "香川県", "吊橋", "斜張橋", "本州四国連絡橋", "道路鉄道併用橋", "土木インフラ"]
 publishedAt: 2026-08-15
 summary: "1988年4月10日開通。岡山県倉敷市と香川県坂出市を結ぶ6橋の連絡橋群で、橋梁部の総延長は9,368m。道路（瀬戸中央自動車道）と鉄道（JR本四備讃線）を2段で通す構造は世界最長の道路鉄道併用橋として知られる。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Seto-Ohashi_Bridge.jpg/1280px-Seto-Ohashi_Bridge.jpg"
+heroImageCredit: "Hideyuki KAMON / CC BY-SA 2.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Seto-Ohashi_Bridge.jpg"
 verified: true
 sources:
   - "坂出市ホームページ「瀬戸大橋（本州四国連絡橋）」https://www.city.sakaide.lg.jp/soshiki/seisaku/setoohashibridge.html"

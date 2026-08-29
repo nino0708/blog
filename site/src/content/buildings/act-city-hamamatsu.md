@@ -13,6 +13,9 @@ architect: "日本設計・三菱地所"
 tags: ["浜松市", "超高層ビル", "複合施設", "東海"]
 publishedAt: 2026-08-26
 summary: "1994年竣工、地上45階・高さ約213m（最高部）で静岡県最高層。楽器産業で知られる浜松市のランドマークとして駅前に立つ複合タワーは、ハーモニカを想起させる外観で地方都市の超高層がいかに街の個性と向き合うかを示す。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d2/ActCityHamamatsu.jpg"
+heroImageCredit: "Ichitaro / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:ActCityHamamatsu.jpg"
 verified: true
 sources:
   - "blue-style.com「浜松アクトタワー」（地上45階・地下2階・塔屋1階・最高部高さ212.77m・延床面積150,978㎡・竣工1994年7月31日・着工1991年8月19日・設計日本設計・三菱地所・建築主第一生命保険・三菱地所） https://www.blue-style.com/building/%E6%B5%9C%E6%9D%BE%E3%82%A2%E3%82%AF%E3%83%88%E3%82%BF%E3%83%AF%E3%83%BC"

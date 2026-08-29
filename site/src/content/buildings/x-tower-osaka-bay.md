@@ -11,6 +11,9 @@ developer: "オリックス・リアルエステート株式会社、三井不�
 tags: ["大阪市港区", "大阪", "超高層マンション", "弁天町", "ベイエリア"]
 publishedAt: 2026-08-25
 summary: "大阪市港区弁天町に立つ地上54階・高さ約200mの超高層マンション。2006年竣工時、日本で初めて高さ200メートルを超えた分譲超高層マンションとして注目を集めた。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0b/X-TOWER_OSAKA_BAY.jpg"
+heroImageCredit: "W236 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:X-TOWER_OSAKA_BAY.jpg"
 verified: true
 sources:
   - "超高層ビル・都市開発研究所「クロスタワー大阪ベイ」https://skyscrapers-and-urbandevelopment.com/page-258/page-1156/page-1158/page-11643/"

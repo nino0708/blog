@@ -12,6 +12,9 @@ architect: "日建設計・安井建築設計事務所"
 tags: ["泉佐野市", "大阪", "超高層ビル", "りんくうタウン", "関西国際空港"]
 publishedAt: 2026-08-21
 summary: "大阪府泉佐野市のりんくうタウンに立つ地上56階・高さ256mの超高層複合ビル。1996年8月竣工、旧名称はりんくうゲートタワービル。関西国際空港の対岸に立つランドマーク。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Rinku_Gate_Tower_Building02s3200.jpg/1280px-Rinku_Gate_Tower_Building02s3200.jpg"
+heroImageCredit: "663highland / CC BY 2.5"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Rinku_Gate_Tower_Building02s3200.jpg"
 verified: true
 sources:
   - "SiSりんくうタワー（旧りんくうゲートタワービル）各種ビル情報サイト・オフィス情報サイト（e-miki、officil等）複数で56階・256m・1996年竣工・延床102,900m²を確認"

@@ -9,6 +9,9 @@ completedYear: 2008
 tags: ["中央区", "江東区", "橋梁", "湾岸", "豊洲", "晴海", "臨海部", "環状第2号線"]
 publishedAt: 2026-08-17
 summary: "2008年11月竣工。晴海運河を渡る橋長550mの道路橋で、5径間連続鋼床版V脚箱桁という独特の構造を持つ。2018年11月に環状第2号線として車道が開通。歩行者・自転車道も整備されており、晴海と豊洲を結ぶ湾岸の散歩ルートとしても知られる。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Toyosu-ohashi_-01.jpg/1280px-Toyosu-ohashi_-01.jpg"
+heroImageCredit: "Aimaimyi / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Toyosu-ohashi_-01.jpg"
 verified: true
 sources:
   - "豊洲大橋 Wikipedia（橋長550.0m・形式5径間連続鋼床版V脚箱桁・最大支間130m・幅員32.3m・竣工2008年11月）https://ja.wikipedia.org/wiki/豊洲大橋"

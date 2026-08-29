@@ -10,6 +10,9 @@ heightM: 24.2
 tags: ["中央区", "江東区", "橋梁", "湾岸", "豊洲", "晴海", "首都高速", "臨海部"]
 publishedAt: 2026-08-15
 summary: "2006年3月25日開通。中央区晴海3丁目と江東区豊洲6丁目を結ぶ全長580mの道路橋。中央部に首都高速10号晴海線（2018年3月開通）を収め、海面からの最高点は24.2m。東京2020五輪の選手村エリアと豊洲をつなぐ湾岸の幹線として機能する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Great_Harumi_Bridge.jpg/1280px-Great_Harumi_Bridge.jpg"
+heroImageCredit: "Ryoma35988 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Great_Harumi_Bridge.jpg"
 verified: true
 sources:
   - "4travel.jp「晴海大橋」（全長580m・2006年3月25日開通・海面高24.2m・都道304号支線）https://4travel.jp/dm_shisetsu/11602236"
