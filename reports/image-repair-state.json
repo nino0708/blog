@@ -184,7 +184,7 @@
     "reason": "記事mdが見つからない"
   },
   "marunouchi-trust-city": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   }
 }

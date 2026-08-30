@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-30T08:14:34.698604+09:00",
+  "checkedAt": "2026-08-31T08:17:38.193460+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -660,6 +660,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marunouchi_Building.JPG/1280px-Marunouchi_Building.JPG"
     },
     {
+      "url": "https://builtjapan.com/buildings/marunouchi-eiraku-building/",
+      "slug": "marunouchi-eiraku-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%E4%B8%B8%E3%81%AE%E5%86%85%E6%B0%B8%E6%A5%BD%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0.jpg/1280px-%E4%B8%B8%E3%81%AE%E5%86%85%E6%B0%B8%E6%A5%BD%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/marunouchi-eiraku-building/",
+      "slug": "marunouchi-eiraku-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%E4%B8%B8%E3%81%AE%E5%86%85%E6%B0%B8%E6%A5%BD%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0.jpg/1280px-%E4%B8%B8%E3%81%AE%E5%86%85%E6%B0%B8%E6%A5%BD%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/marunouchi-oazo/",
       "slug": "marunouchi-oazo",
       "lang": "ja",
@@ -870,6 +884,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Nihonbashi_Takashimaya_Mitsui_Building.jpg/1280px-Nihonbashi_Takashimaya_Mitsui_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
+      "url": "https://builtjapan.com/buildings/nikkei-tokyo-headquarters/",
+      "slug": "nikkei-tokyo-headquarters",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Nikkei_Inc._headquarters_%282014.05.03%29_1.jpg/1280px-Nikkei_Inc._headquarters_%282014.05.03%29_1.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nikkei-tokyo-headquarters/",
+      "slug": "nikkei-tokyo-headquarters",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Nikkei_Inc._headquarters_%282014.05.03%29_1.jpg/1280px-Nikkei_Inc._headquarters_%282014.05.03%29_1.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/nittele-tower/",
       "slug": "nittele-tower",
       "lang": "ja",
@@ -938,6 +966,34 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Osanbashi_Pier_from_Sea.jpg/1280px-Osanbashi_Pier_from_Sea.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/otemachi-financial-city-grand-cube/",
+      "slug": "otemachi-financial-city-grand-cube",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Otemachi_Financial_City_Grand_Cube1.jpg/1280px-Otemachi_Financial_City_Grand_Cube1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/otemachi-financial-city-grand-cube/",
+      "slug": "otemachi-financial-city-grand-cube",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Otemachi_Financial_City_Grand_Cube1.jpg/1280px-Otemachi_Financial_City_Grand_Cube1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/otemachi-financial-city/",
+      "slug": "otemachi-financial-city",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Otemachi_Financial_City_North_Tower_2.jpg/1280px-Otemachi_Financial_City_North_Tower_2.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/otemachi-financial-city/",
+      "slug": "otemachi-financial-city",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Otemachi_Financial_City_North_Tower_2.jpg/1280px-Otemachi_Financial_City_North_Tower_2.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/otemachi-one/",
@@ -1162,6 +1218,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio.jpg/1280px-%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/sanno-park-tower/",
+      "slug": "sanno-park-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Sanno-Park-Tower-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/sanno-park-tower/",
+      "slug": "sanno-park-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Sanno-Park-Tower-01.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/sapia-tower/",
