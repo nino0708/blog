@@ -193,14 +193,36 @@
     "reason": "候補は見つかったがURLが死んでいる"
   },
   "park-tower-kachidoki": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "toda-building": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "tornare-nihonbashi-hamacho": {
+    "attempts": 2,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "15": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "16": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "granpark-tower": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "sumitomo-mita-twin-building": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "sumitomo-toranomon-tower": {
     "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }
