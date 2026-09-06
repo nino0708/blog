@@ -231,5 +231,23 @@
     "attempts": 3,
     "reason": "確信できる外観画像が見つからない",
     "gaveUp": true
+  },
+  "17": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "18": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "jr-east-headquarters": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "nissay-hamamatsucho-crea-tower": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
   }
 }

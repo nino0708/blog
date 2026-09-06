@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-09-03 08:16 JST
-- 対象: 公開済み記事 358 ページ（https://builtjapan.com）
-- 正常表示: 302 / 358（84.4%）
-- **要対応: 56 件**（画像なし 56 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-09-07 08:15 JST
+- 対象: 公開済み記事 402 ページ（https://builtjapan.com）
+- 正常表示: 338 / 402（84.1%）
+- **要対応: 64 件**（画像なし 64 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -13,8 +13,10 @@
 | [bayz-tower-and-garden（JA）](https://builtjapan.com/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（JA）](https://builtjapan.com/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
 | [granpark-tower（JA）](https://builtjapan.com/buildings/granpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [jr-east-headquarters（JA）](https://builtjapan.com/buildings/jr-east-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
 | [marunouchi-trust-city（JA）](https://builtjapan.com/buildings/marunouchi-trust-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nihonbashi-nomura-mitsui-tower（JA）](https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [nissay-hamamatsucho-crea-tower（JA）](https://builtjapan.com/buildings/nissay-hamamatsucho-crea-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [10（JA）](https://builtjapan.com/buildings/page/10/) | ヒーロー画像なし（プレースホルダ表示） |
 | [11（JA）](https://builtjapan.com/buildings/page/11/) | ヒーロー画像なし（プレースホルダ表示） |
 | [12（JA）](https://builtjapan.com/buildings/page/12/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -22,6 +24,8 @@
 | [14（JA）](https://builtjapan.com/buildings/page/14/) | ヒーロー画像なし（プレースホルダ表示） |
 | [15（JA）](https://builtjapan.com/buildings/page/15/) | ヒーロー画像なし（プレースホルダ表示） |
 | [16（JA）](https://builtjapan.com/buildings/page/16/) | ヒーロー画像なし（プレースホルダ表示） |
+| [17（JA）](https://builtjapan.com/buildings/page/17/) | ヒーロー画像なし（プレースホルダ表示） |
+| [18（JA）](https://builtjapan.com/buildings/page/18/) | ヒーロー画像なし（プレースホルダ表示） |
 | [2（JA）](https://builtjapan.com/buildings/page/2/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（JA）](https://builtjapan.com/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -41,8 +45,10 @@
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（EN）](https://builtjapan.com/en/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
 | [granpark-tower（EN）](https://builtjapan.com/en/buildings/granpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [jr-east-headquarters（EN）](https://builtjapan.com/en/buildings/jr-east-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
 | [marunouchi-trust-city（EN）](https://builtjapan.com/en/buildings/marunouchi-trust-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nihonbashi-nomura-mitsui-tower（EN）](https://builtjapan.com/en/buildings/nihonbashi-nomura-mitsui-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [nissay-hamamatsucho-crea-tower（EN）](https://builtjapan.com/en/buildings/nissay-hamamatsucho-crea-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [10（EN）](https://builtjapan.com/en/buildings/page/10/) | ヒーロー画像なし（プレースホルダ表示） |
 | [11（EN）](https://builtjapan.com/en/buildings/page/11/) | ヒーロー画像なし（プレースホルダ表示） |
 | [12（EN）](https://builtjapan.com/en/buildings/page/12/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -50,6 +56,8 @@
 | [14（EN）](https://builtjapan.com/en/buildings/page/14/) | ヒーロー画像なし（プレースホルダ表示） |
 | [15（EN）](https://builtjapan.com/en/buildings/page/15/) | ヒーロー画像なし（プレースホルダ表示） |
 | [16（EN）](https://builtjapan.com/en/buildings/page/16/) | ヒーロー画像なし（プレースホルダ表示） |
+| [17（EN）](https://builtjapan.com/en/buildings/page/17/) | ヒーロー画像なし（プレースホルダ表示） |
+| [18（EN）](https://builtjapan.com/en/buildings/page/18/) | ヒーロー画像なし（プレースホルダ表示） |
 | [2（EN）](https://builtjapan.com/en/buildings/page/2/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（EN）](https://builtjapan.com/en/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
