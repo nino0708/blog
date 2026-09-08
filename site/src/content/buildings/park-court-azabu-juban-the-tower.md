@@ -13,6 +13,9 @@ architect: "光井純＆アソシエーツ建築設計事務所"
 tags: ["港区", "麻布十番", "タワーマンション", "再開発"]
 publishedAt: 2026-08-01
 summary: "麻布十番駅から徒歩3分、三田の丘に立つ地上36階・高さ約129メートルの超高層住宅棟。三田1丁目地区の第二種市街地再開発事業として2010年に竣工した。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Park_Court_Azabujuban_the_Tower_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "Panoramic_view_of_Tokyo_from_Roppongi_Hills_Mori_Tower.jpg: Laitr Keiows derivative work: Harani0403 (talk) / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Park_Court_Azabujuban_the_Tower_Tokyo.jpg"
 verified: true
 sources:
   - "東急リバブル 物件ライブラリー（竣工2010年5月・地上36階・三田1丁目7番地）"
