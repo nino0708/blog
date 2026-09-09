@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-09-09 08:14 JST
-- 対象: 公開済み記事 424 ページ（https://builtjapan.com）
-- 正常表示: 356 / 424（84.0%）
-- **要対応: 68 件**（画像なし 68 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-09-10 08:15 JST
+- 対象: 公開済み記事 434 ページ（https://builtjapan.com）
+- 正常表示: 368 / 434（84.8%）
+- **要対応: 66 件**（画像なし 66 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -35,7 +35,6 @@
 | [7（JA）](https://builtjapan.com/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
 | [8（JA）](https://builtjapan.com/buildings/page/8/) | ヒーロー画像なし（プレースホルダ表示） |
 | [9（JA）](https://builtjapan.com/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
-| [park-court-azabu-juban-the-tower（JA）](https://builtjapan.com/buildings/park-court-azabu-juban-the-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-tower-kachidoki（JA）](https://builtjapan.com/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（JA）](https://builtjapan.com/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -69,7 +68,6 @@
 | [7（EN）](https://builtjapan.com/en/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
 | [8（EN）](https://builtjapan.com/en/buildings/page/8/) | ヒーロー画像なし（プレースホルダ表示） |
 | [9（EN）](https://builtjapan.com/en/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
-| [park-court-azabu-juban-the-tower（EN）](https://builtjapan.com/en/buildings/park-court-azabu-juban-the-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-tower-kachidoki（EN）](https://builtjapan.com/en/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（EN）](https://builtjapan.com/en/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |

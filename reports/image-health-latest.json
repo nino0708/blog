@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-09T08:14:57.101694+09:00",
+  "checkedAt": "2026-09-10T08:15:35.918508+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -226,6 +226,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/%E9%BA%BB%E5%B8%83%E5%8F%B0%E3%83%92%E3%83%AB%E3%82%BA.jpg/1280px-%E9%BA%BB%E5%B8%83%E5%8F%B0%E3%83%92%E3%83%AB%E3%82%BA.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/bank-of-yokohama-headquarters/",
+      "slug": "bank-of-yokohama-headquarters",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Bank_of_Yokohama_Headquarters_-01.jpg/1280px-Bank_of_Yokohama_Headquarters_-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/bank-of-yokohama-headquarters/",
+      "slug": "bank-of-yokohama-headquarters",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Bank_of_Yokohama_Headquarters_-01.jpg/1280px-Bank_of_Yokohama_Headquarters_-01.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/bayz-tower-and-garden/",
       "slug": "bayz-tower-and-garden",
       "lang": "ja",
@@ -308,6 +322,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Cerulean_Tower.jpg/1280px-Cerulean_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/city-tower-musashi-kosugi/",
+      "slug": "city-tower-musashi-kosugi",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/CityTower_MusashiKosugi_202203.jpg/1280px-CityTower_MusashiKosugi_202203.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/city-tower-musashi-kosugi/",
+      "slug": "city-tower-musashi-kosugi",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/CityTower_MusashiKosugi_202203.jpg/1280px-CityTower_MusashiKosugi_202203.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/city-tower-osaka-honmachi/",
@@ -1433,15 +1461,15 @@
       "url": "https://builtjapan.com/buildings/park-court-azabu-juban-the-tower/",
       "slug": "park-court-azabu-juban-the-tower",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Park_Court_Azabujuban_the_Tower_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/en/buildings/park-court-azabu-juban-the-tower/",
       "slug": "park-court-azabu-juban-the-tower",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Park_Court_Azabujuban_the_Tower_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/park-tower-grand-sky/",
@@ -1966,14 +1994,14 @@
       "slug": "st-lukes-garden",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/sumitomo-mita-twin-building/",
@@ -2058,6 +2086,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Takanawa_Residence.jpg/1280px-Takanawa_Residence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/the-kosugi-tower/",
+      "slug": "the-kosugi-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Kosugi_Tower.jpg/1280px-The_Kosugi_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/the-kosugi-tower/",
+      "slug": "the-kosugi-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Kosugi_Tower.jpg/1280px-The_Kosugi_Tower.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/the-landmark-nagoya-sakae/",
@@ -2648,6 +2690,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Yebisu_Garden_Place_Tower_2012.jpg/1280px-Yebisu_Garden_Place_Tower_2012.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/yokohama-dia-building/",
+      "slug": "yokohama-dia-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Yokohama_dia_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yokohama-dia-building/",
+      "slug": "yokohama-dia-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Yokohama_dia_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
       "url": "https://builtjapan.com/buildings/yokohama-kitanaka-knot/",
       "slug": "yokohama-kitanaka-knot",
       "lang": "ja",
@@ -2674,6 +2730,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Yokohama_Landmark_Tower_purple.jpg/1280px-Yokohama_Landmark_Tower_purple.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yokohama-mitsui-building/",
+      "slug": "yokohama-mitsui-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Yokohama_Mitsui_Building_2014.jpg/1280px-Yokohama_Mitsui_Building_2014.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yokohama-mitsui-building/",
+      "slug": "yokohama-mitsui-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Yokohama_Mitsui_Building_2014.jpg/1280px-Yokohama_Mitsui_Building_2014.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/yokohama-symphostage/",
