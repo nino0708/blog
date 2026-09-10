@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-10T08:15:35.918508+09:00",
+  "checkedAt": "2026-09-11T08:15:13.551907+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -448,6 +448,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eitaibashi2.JPG/1280px-Eitaibashi2.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/elsa-tower-55/",
+      "slug": "elsa-tower-55",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/elsa-tower-55/",
+      "slug": "elsa-tower-55",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/fukuoka-tower/",
@@ -926,6 +940,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/%E3%83%A9%E3%83%88%E3%82%A5%E3%83%BC%E3%83%AB%EF%BC%92.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/land-axis-tower-saitama/",
+      "slug": "land-axis-tower-saitama",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg/1280px-Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/land-axis-tower-saitama/",
+      "slug": "land-axis-tower-saitama",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg/1280px-Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/marunouchi-building/",
       "slug": "marunouchi-building",
       "lang": "ja",
@@ -1386,6 +1414,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/PARK_AXIS_AOYAMA_1_Chome_Tower.jpg/1280px-PARK_AXIS_AOYAMA_1_Chome_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/park-city-musashi-kosugi-station-forest-tower/",
+      "slug": "park-city-musashi-kosugi-station-forest-tower",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/park-city-musashi-kosugi-station-forest-tower/",
+      "slug": "park-city-musashi-kosugi-station-forest-tower",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/park-city-musashikosugi-midsky/",
@@ -2620,6 +2662,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Toyosu-ohashi_-01.jpg/1280px-Toyosu-ohashi_-01.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/twin21-osaka/",
+      "slug": "twin21-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/OBP_TWIN21_Bld.jpg/1280px-OBP_TWIN21_Bld.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/twin21-osaka/",
+      "slug": "twin21-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/OBP_TWIN21_Bld.jpg/1280px-OBP_TWIN21_Bld.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/w-comfort-towers/",
       "slug": "w-comfort-towers",
       "lang": "ja",
@@ -2646,6 +2702,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Waterras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/world-business-garden/",
+      "slug": "world-business-garden",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/World_Business_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/world-business-garden/",
+      "slug": "world-business-garden",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/World_Business_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/wtc-tokyo-south-tower/",
@@ -2914,6 +2984,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/20/",
+      "slug": "20",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -3035,6 +3112,13 @@
     {
       "url": "https://builtjapan.com/en/buildings/page/19/",
       "slug": "19",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/20/",
+      "slug": "20",
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
