@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-11T08:15:13.551907+09:00",
+  "checkedAt": "2026-09-12T08:13:39.807045+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -268,6 +268,20 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/BRANZ_Tower_Toyosu.jpg/1280px-BRANZ_Tower_Toyosu.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/breeze-tower/",
+      "slug": "breeze-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Breeze_Tower%2C_Kitashinchi%2C_Osaka_2021.12.18.jpg/1280px-Breeze_Tower%2C_Kitashinchi%2C_Osaka_2021.12.18.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/breeze-tower/",
+      "slug": "breeze-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Breeze_Tower%2C_Kitashinchi%2C_Osaka_2021.12.18.jpg/1280px-Breeze_Tower%2C_Kitashinchi%2C_Osaka_2021.12.18.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/brillia-hamarikyu/",
       "slug": "brillia-hamarikyu",
       "lang": "ja",
@@ -406,6 +420,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Cross_Air_Tower%2C_Meguro%2C_Tokyo.jpg/1280px-Cross_Air_Tower%2C_Meguro%2C_Tokyo.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/crystal-tower-osaka/",
+      "slug": "crystal-tower-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Crystal_Tower_Osaka_20060321-001.jpg/1280px-Crystal_Tower_Osaka_20060321-001.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/crystal-tower-osaka/",
+      "slug": "crystal-tower-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Crystal_Tower_Osaka_20060321-001.jpg/1280px-Crystal_Tower_Osaka_20060321-001.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/dentsu-headquarters/",
@@ -1120,6 +1148,48 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Nakano_Central_Park_S.jpg/1280px-Nakano_Central_Park_S.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nakanoshima-daibiru/",
+      "slug": "nakanoshima-daibiru",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Nakanoshima-Daibiru-20090419-01.jpg/1280px-Nakanoshima-Daibiru-20090419-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nakanoshima-daibiru/",
+      "slug": "nakanoshima-daibiru",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Nakanoshima-Daibiru-20090419-01.jpg/1280px-Nakanoshima-Daibiru-20090419-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nakanoshima-festival-tower/",
+      "slug": "nakanoshima-festival-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Nakanoshima_Festival_Tower_2020-09_%283%29.jpg/1280px-Nakanoshima_Festival_Tower_2020-09_%283%29.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nakanoshima-festival-tower/",
+      "slug": "nakanoshima-festival-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Nakanoshima_Festival_Tower_2020-09_%283%29.jpg/1280px-Nakanoshima_Festival_Tower_2020-09_%283%29.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/namba-skyo/",
+      "slug": "namba-skyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Namba_SkyO_on_26th_April_2019.jpg/1280px-Namba_SkyO_on_26th_April_2019.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/namba-skyo/",
+      "slug": "namba-skyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Namba_SkyO_on_26th_April_2019.jpg/1280px-Namba_SkyO_on_26th_April_2019.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/nec-headquarters/",

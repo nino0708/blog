@@ -263,11 +263,11 @@
     "reason": "記事mdが見つからない"
   },
   "elsa-tower-55": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "park-city-musashi-kosugi-station-forest-tower": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   }
 }
