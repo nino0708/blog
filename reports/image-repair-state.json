@@ -263,11 +263,22 @@
     "reason": "記事mdが見つからない"
   },
   "elsa-tower-55": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "park-city-musashi-kosugi-station-forest-tower": {
-    "attempts": 2,
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "21": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "kanden-building": {
+    "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }
 }

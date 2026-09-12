@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T08:13:39.807045+09:00",
+  "checkedAt": "2026-09-13T08:13:37.018472+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -758,6 +758,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/JP_Tower_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg/1280px-JP_Tower_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/jp-tower-nagoya/",
+      "slug": "jp-tower-nagoya",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/JP_Tower_Nagoya_201509.JPG/1280px-JP_Tower_Nagoya_201509.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/jp-tower-nagoya/",
+      "slug": "jp-tower-nagoya",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/JP_Tower_Nagoya_201509.JPG/1280px-JP_Tower_Nagoya_201509.JPG"
+    },
+    {
       "url": "https://builtjapan.com/buildings/jr-central-towers/",
       "slug": "jr-central-towers",
       "lang": "ja",
@@ -868,6 +882,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2024_Tokyo_World_Gate.jpg/1280px-2024_Tokyo_World_Gate.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kanden-building/",
+      "slug": "kanden-building",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kanden-building/",
+      "slug": "kanden-building",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/kasumigaseki-building/",
@@ -1092,6 +1120,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mode_Gakuen_Cocoon_Tower.jpg/1280px-Mode_Gakuen_Cocoon_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/mode-gakuen-spiral-towers/",
+      "slug": "mode-gakuen-spiral-towers",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Mode_Gakuen_Spiral_Towers_Nagoya.jpg/1280px-Mode_Gakuen_Spiral_Towers_Nagoya.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/mode-gakuen-spiral-towers/",
+      "slug": "mode-gakuen-spiral-towers",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Mode_Gakuen_Spiral_Towers_Nagoya.jpg/1280px-Mode_Gakuen_Spiral_Towers_Nagoya.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/msb-tamachi/",
@@ -1358,6 +1400,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Osaka_Prefectural_Government_Sakishima_Building.jpg/1280px-Osaka_Prefectural_Government_Sakishima_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/osaka-umeda-twin-towers-north/",
+      "slug": "osaka-umeda-twin-towers-north",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Osaka_Umeda_Twin_Towers_North.jpg/1280px-Osaka_Umeda_Twin_Towers_North.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/osaka-umeda-twin-towers-north/",
+      "slug": "osaka-umeda-twin-towers-north",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Osaka_Umeda_Twin_Towers_North.jpg/1280px-Osaka_Umeda_Twin_Towers_North.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/osaki-thinkpark-tower/",
@@ -2746,6 +2802,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/OBP_TWIN21_Bld.jpg/1280px-OBP_TWIN21_Bld.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/umeda-sky-building/",
+      "slug": "umeda-sky-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Vista_exterior_del_Umeda_Sky_Building.jpg/1280px-Vista_exterior_del_Umeda_Sky_Building.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/umeda-sky-building/",
+      "slug": "umeda-sky-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Vista_exterior_del_Umeda_Sky_Building.jpg/1280px-Vista_exterior_del_Umeda_Sky_Building.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/w-comfort-towers/",
       "slug": "w-comfort-towers",
       "lang": "ja",
@@ -3061,6 +3131,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/21/",
+      "slug": "21",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -3189,6 +3266,13 @@
     {
       "url": "https://builtjapan.com/en/buildings/page/20/",
       "slug": "20",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/21/",
+      "slug": "21",
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
