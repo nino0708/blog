@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-13T08:13:37.018472+09:00",
+  "checkedAt": "2026-09-14T08:14:20.731958+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -436,6 +436,20 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Crystal_Tower_Osaka_20060321-001.jpg/1280px-Crystal_Tower_Osaka_20060321-001.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/dainagoya-building/",
+      "slug": "dainagoya-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Dainagoya_Building%2C_Meieki_Nakamura_Ward_Nagoya_2022.jpg/1280px-Dainagoya_Building%2C_Meieki_Nakamura_Ward_Nagoya_2022.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/dainagoya-building/",
+      "slug": "dainagoya-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Dainagoya_Building%2C_Meieki_Nakamura_Ward_Nagoya_2022.jpg/1280px-Dainagoya_Building%2C_Meieki_Nakamura_Ward_Nagoya_2022.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/dentsu-headquarters/",
       "slug": "dentsu-headquarters",
       "lang": "ja",
@@ -826,6 +840,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/JR_Shinjuku_Miraina_Tower.jpg/1280px-JR_Shinjuku_Miraina_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/jr-tower-sapporo/",
+      "slug": "jr-tower-sapporo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/JR_Tower%2C_Sapporo.jpg/1280px-JR_Tower%2C_Sapporo.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/jr-tower-sapporo/",
+      "slug": "jr-tower-sapporo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/JR_Tower%2C_Sapporo.jpg/1280px-JR_Tower%2C_Sapporo.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/kachidoki-bridge/",
@@ -2156,6 +2184,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Southern_Sky_Tower_Hachioji_1.jpg/1280px-Southern_Sky_Tower_Hachioji_1.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/ss30-sendai/",
+      "slug": "ss30-sendai",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/SS30_seen_from_southwest.jpg/1280px-SS30_seen_from_southwest.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/ss30-sendai/",
+      "slug": "ss30-sendai",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/SS30_seen_from_southwest.jpg/1280px-SS30_seen_from_southwest.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/st-lukes-garden/",
