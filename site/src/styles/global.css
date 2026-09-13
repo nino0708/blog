@@ -203,6 +203,10 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   font-size: clamp(1.8rem, 4.6vw, 3rem); line-height: 1.28; margin: 0 0 14px;
   font-weight: 900; letter-spacing: 0.01em;
 }
+.home-hero-hook {
+  margin: 0 0 12px; color: var(--gold-bright);
+  font-size: clamp(1rem, 1.8vw, 1.15rem); font-weight: 700; line-height: 1.5;
+}
 .home-hero-desc {
   margin: 0; color: rgba(255, 255, 255, 0.86);
   font-size: clamp(0.92rem, 1.4vw, 1.02rem); line-height: 1.85; max-width: 42rem;
