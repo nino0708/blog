@@ -119,6 +119,8 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
   margin: 0 7px;
   background: var(--line);
 }
+/* 検索: アイコンのみのリンク */
+.nav .nav-search { display: inline-flex; align-items: center; justify-content: center; padding: 7px 9px; }
 /* 言語切替: ナビ内で少し目立たせる枠付きリンク */
 .nav .lang-switch {
   margin-left: 8px;

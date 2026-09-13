@@ -60,6 +60,17 @@ const isCurrent = (href: string) => (href === home ? path === href : path.starts
       <span class="nav-sep" aria-hidden="true"></span>
 
       <a href={localizePath(lang, '/about/')} aria-current={isCurrent(localizePath(lang, '/about/')) ? 'page' : undefined}>{t('nav.about')}</a>
+      <a
+        class="nav-search"
+        href={localizePath(lang, '/search/')}
+        aria-current={isCurrent(localizePath(lang, '/search/')) ? 'page' : undefined}
+        aria-label={lang === 'ja' ? '検索' : 'Search'}
+      >
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6" />
+          <path d="M11 11L14.5 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </a>
       <a class="lang-switch" href={switchHref} hreflang={other} lang={other}>{t('lang.other')}</a>
     </nav>
   </div>
