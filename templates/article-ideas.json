@@ -2233,7 +2233,7 @@
       "slug": "dainagoya-building",
       "area": "名古屋市",
       "angle": "初代の名を継いだ2015年の2代目。あえて旧字を残した名前",
-      "status": "todo"
+      "status": "done"
     },
     {
       "id": 249,
@@ -2242,7 +2242,7 @@
       "slug": "ss30-sendai",
       "area": "仙台市",
       "angle": "仙台の高層化の象徴。旧住友生命仙台中央ビルから複合施設へ",
-      "status": "todo"
+      "status": "done"
     },
     {
       "id": 250,
@@ -2251,7 +2251,7 @@
       "slug": "jr-tower-sapporo",
       "area": "札幌市",
       "angle": "札幌駅の駅ビル型超高層。北海道の玄関口の高さ",
-      "status": "todo"
+      "status": "done"
     }
   ]
 }
