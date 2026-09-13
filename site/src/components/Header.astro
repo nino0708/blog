@@ -51,6 +51,7 @@ const isCurrent = (href: string) => (href === home ? path === href : path.starts
       {[
         ['/database/', t('nav.database')],
         ['/near/', t('nav.near')],
+        ['/quiz/', t('nav.quiz')],
         ['/stamps/', t('nav.stamps')],
       ].map(([p, label]) => {
         const href = localizePath(lang, p);

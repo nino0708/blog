@@ -226,6 +226,19 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
 .btn-primary:hover { box-shadow: 0 12px 30px rgba(156, 123, 44, 0.55); }
 .btn-ghost { background: rgba(255, 255, 255, 0.06); color: #fff; border: 1px solid rgba(231, 207, 142, 0.5); }
 .btn-ghost:hover { background: rgba(231, 207, 142, 0.14); border-color: var(--gold-bright); }
+
+.quiz-promo {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  margin: 28px 0; padding: 18px 22px; border-radius: 16px;
+  background: var(--brand-soft); border: 1px solid var(--line);
+  text-decoration: none; color: var(--text); transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.quiz-promo:hover { text-decoration: none; transform: translateY(-2px); box-shadow: var(--shadow); }
+.quiz-promo-emoji { font-size: 1.8rem; flex: none; }
+.quiz-promo-body { display: flex; flex-direction: column; gap: 2px; flex: 1 1 240px; min-width: 0; }
+.quiz-promo-title { font-weight: 800; font-size: 1.02rem; }
+.quiz-promo-desc { font-size: 0.85rem; color: var(--text-muted); }
+.quiz-promo-cta { flex: none; font-weight: 700; color: var(--brand); white-space: nowrap; }
 .hero-stats {
   display: flex; flex-wrap: wrap; gap: 12px; list-style: none; margin: 28px 0 0; padding: 0;
 }
