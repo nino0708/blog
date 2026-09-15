@@ -20,6 +20,15 @@ const { lang, area, buildingType, searchArea } = Astro.props;
 const kwArea = searchArea ?? area;
 const ja = lang === 'ja';
 
+// 協賛: friday商事（X公式アカウントへの誘導リンク）。
+const fridayShoji = {
+  eyebrow: ja ? '協賛' : 'Sponsored',
+  title: ja ? 'friday商事' : 'friday Shoji',
+  note: ja ? 'X（旧Twitter）' : 'X (Twitter)',
+  cta: ja ? '公式Xを見る' : 'View on X',
+  url: 'https://x.com/friday_sedori',
+};
+
 // 左: 関連書籍（写真集・資料）。用途に応じてキーワードを寄せる。
 const booksKeyword = `東京 建築 ${buildingType === 'residence' ? 'マンション' : '超高層ビル'} 写真集`;
 const cards = [
@@ -39,19 +48,28 @@ const cards = [
     cta: rakutenTravelLabel(kwArea, ja ? 'ja' : 'en'),
     url: rakutenTravelArea(kwArea),
   },
+  {
+    side: 'right' as const,
+    ...fridayShoji,
+  },
 ];
+const sides = ['left', 'right'] as const;
 ---
 <aside class="aff-rail" aria-label={ja ? 'おすすめ（PR）' : 'Sponsored recommendations'} data-aff-rail hidden>
-  {cards.map((c) => (
-    <div class={`aff-rail-card aff-rail-${c.side}`}>
-      <button class="aff-rail-close" type="button" aria-label={ja ? '閉じる' : 'Dismiss'} data-aff-close>×</button>
-      <span class="aff-rail-pr">PR</span>
-      <p class="aff-rail-eyebrow">{c.eyebrow}</p>
-      <p class="aff-rail-title">{c.title}</p>
-      <a class="aff-rail-cta" href={c.url} target="_blank" rel="nofollow sponsored noopener">
-        {c.cta} <span aria-hidden="true">↗</span>
-      </a>
-      <span class="aff-rail-note">{c.note}</span>
+  {sides.map((side) => (
+    <div class={`aff-rail-group aff-rail-${side}`}>
+      {cards.filter((c) => c.side === side).map((c) => (
+        <div class="aff-rail-card">
+          <button class="aff-rail-close" type="button" aria-label={ja ? '閉じる' : 'Dismiss'} data-aff-close>×</button>
+          <span class="aff-rail-pr">PR</span>
+          <p class="aff-rail-eyebrow">{c.eyebrow}</p>
+          <p class="aff-rail-title">{c.title}</p>
+          <a class="aff-rail-cta" href={c.url} target="_blank" rel="nofollow sponsored noopener">
+            {c.cta} <span aria-hidden="true">↗</span>
+          </a>
+          <span class="aff-rail-note">{c.note}</span>
+        </div>
+      ))}
     </div>
   ))}
 </aside>
@@ -64,12 +82,19 @@ const cards = [
     /* JS有効時のみ表示（[hidden] を JS が外す）。no-JSでも記事本文には影響しない。 */
     :global(.js) .aff-rail:not([hidden]) { display: block; }
 
-    .aff-rail-card {
+    .aff-rail-group {
       position: fixed;
       top: 50%;
       transform: translateY(-50%);
-      width: 190px;
       z-index: 5;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .aff-rail-card {
+      position: relative;
+      width: 190px;
       padding: 16px 16px 14px;
       border-radius: 16px;
       background: rgba(255, 255, 255, 0.72);
@@ -88,8 +113,8 @@ const cards = [
     }
     /* コンテナ(=--maxw)の外側、左右余白の中央寄りに配置。
        左カードの右端 = 画面中央 - maxw/2 - gap。右カードは左右反転。 */
-    .aff-rail-left  { right: calc(50vw + 490px + 24px); }
-    .aff-rail-right { left:  calc(50vw + 490px + 24px); }
+    .aff-rail-group.aff-rail-left  { right: calc(50vw + 490px + 24px); }
+    .aff-rail-group.aff-rail-right { left:  calc(50vw + 490px + 24px); }
 
     .aff-rail-close {
       position: absolute; top: 8px; right: 8px;

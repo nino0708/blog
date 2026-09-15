@@ -1,0 +1,72 @@
+---
+// 今日の建物クイズ。記事のある建物の高さ・竣工年・階数(いずれも既存の事実)だけから、
+// 日替わり(閲覧日のローカル日付基準)で1問を虫食い形式にする。数値は創作しない。
+import { useT, localizePath, type Lang } from '../i18n/ui';
+import { getBuildingRows } from '../lib/buildings';
+import { quizCandidates } from '../lib/quiz';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useT(lang);
+const ja = lang === 'ja';
+
+const rows = await getBuildingRows(lang);
+const candidates = quizCandidates(rows.filter((r) => r.hasArticle));
+
+const items = candidates.map((r) => ({
+  s: r.slug,
+  n: r.title,
+  a: r.area,
+  y: r.completedYear,
+  h: r.heightM,
+  f: r.floorsAbove ?? null,
+  u: localizePath(lang, `/buildings/${r.slug}/`),
+}));
+
+const title = ja ? '今日の建物クイズ' : "Today's Building Quiz";
+const lead = ja
+  ? '記事に載っている事実から出す、日替わりの虫食いクイズです。答えはリンク先の記事で確認できます。'
+  : 'A daily fill-in-the-blank quiz built from facts already in our articles. Confirm the answer in the linked article.';
+---
+<section class="quiz-view" id="quiz-view" data-lang={lang} aria-label={title}>
+  <h1>{title}</h1>
+  <p class="quiz-lead">{lead}</p>
+  <div class="quiz-card" id="quiz-card" hidden>
+    <p class="quiz-name" id="quiz-name"></p>
+    <p class="quiz-hints" id="quiz-hints"></p>
+    <p class="quiz-question" id="quiz-question"></p>
+    <button type="button" class="quiz-reveal" id="quiz-reveal">{ja ? '答えを見る' : 'Show answer'}</button>
+    <p class="quiz-answer" id="quiz-answer" hidden></p>
+    <a class="quiz-link" id="quiz-link" href="#">{ja ? 'この記事で確認する →' : 'Check the article →'}</a>
+  </div>
+  <p class="quiz-empty" id="quiz-empty" hidden>{ja ? 'まだクイズにできる記事がありません。' : 'No articles are quiz-ready yet.'}</p>
+</section>
+
+<script is:inline define:vars={{ items, lang }}>
+  window.__QUIZ__ = { items, lang };
+</script>
+<script is:inline src="/quiz.js"></script>
+
+<style>
+  .quiz-view { max-width: 560px; margin: 28px auto 48px; }
+  .quiz-view h1 { font-size: clamp(1.5rem, 4vw, 2.1rem); margin: 0 0 8px; }
+  .quiz-lead { color: var(--text-muted); margin: 0 0 20px; }
+  .quiz-card {
+    padding: 22px 24px; border-radius: 16px;
+    background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow);
+  }
+  .quiz-name { margin: 0 0 4px; font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; }
+  .quiz-hints { margin: 0 0 14px; font-size: 0.85rem; color: var(--text-muted); }
+  .quiz-question { margin: 0 0 16px; font-size: 1.05rem; font-weight: 700; color: var(--brand); }
+  .quiz-reveal {
+    border: 1px solid var(--brand); background: transparent; color: var(--brand);
+    font-weight: 700; padding: 9px 18px; border-radius: 999px; cursor: pointer; font-size: 0.9rem;
+  }
+  .quiz-reveal:hover { background: var(--brand-soft); }
+  .quiz-answer {
+    margin: 14px 0 0; padding: 12px 14px; border-radius: 10px;
+    background: var(--brand-soft); font-weight: 700; color: var(--text);
+  }
+  .quiz-link { display: inline-block; margin-top: 14px; font-weight: 700; font-size: 0.9rem; }
+  .quiz-empty { color: var(--text-muted); }
+</style>

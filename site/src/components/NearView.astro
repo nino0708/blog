@@ -38,6 +38,7 @@ const labels = {
   geoUnsupported: t('near.geoUnsupported'),
   origin: t('near.origin'),
   directions: t('near.openInMaps'),
+  googleMaps: t('near.openGoogleMaps'),
 };
 ---
 <link rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
@@ -75,7 +76,10 @@ const labels = {
 
   <div class="near-map-wrap">
     <div id="near-map" class="near-map"></div>
-    <p class="near-attr">{t('near.mapAttribution')}</p>
+    <p class="near-attr">
+      {t('near.mapAttribution')}
+      <a id="near-gmaps" class="near-gmaps" href="https://www.google.com/maps/search/?api=1&query=35.681,139.767" target="_blank" rel="noopener nofollow">{t('near.openGoogleMaps')} ↗</a>
+    </p>
   </div>
 
   <ul class="near-list" id="near-list"></ul>
@@ -166,6 +170,11 @@ const labels = {
     margin: 6px 0 0;
     font-size: 0.75rem;
     opacity: 0.6;
+  }
+  .near-gmaps {
+    margin-left: 10px;
+    font-weight: 600;
+    opacity: 1;
   }
 
   .near-list {
