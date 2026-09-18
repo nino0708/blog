@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "check:links": "node scripts/check-links.mjs dist"
+    "check:links": "node scripts/check-links.mjs dist",
+    "quiz:today": "node scripts/daily-quiz.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

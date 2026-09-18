@@ -1,0 +1,142 @@
+---
+// サイト内検索。全カテゴリ(ビル・マンション・橋・高速道路・鉄道・観光)の記事をまとめて検索する。
+// ビルド時に索引をJSONとして埋め込み、クライアント側で絞り込むだけのシンプルな全文検索。
+import { getCollection } from 'astro:content';
+import { useT, localizePath, type Lang } from '../i18n/ui';
+import { CATEGORIES, type CategoryKey } from '../lib/category';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useT(lang);
+
+interface SearchItem {
+  title: string;
+  area: string;
+  category: string;
+  href: string;
+}
+
+const items: SearchItem[] = [];
+
+if (lang === 'ja') {
+  for (const p of await getCollection('buildings')) {
+    const category = p.data.buildingType === 'bridge' ? t('type.bridge') : t(`type.${p.data.buildingType}`);
+    items.push({ title: p.data.title, area: p.data.area, category, href: `/buildings/${p.slug}/` });
+  }
+  for (const key of Object.keys(CATEGORIES) as CategoryKey[]) {
+    for (const p of await getCollection(key)) {
+      items.push({
+        title: p.data.title,
+        area: p.data.area ?? '',
+        category: CATEGORIES[key].label.ja,
+        href: `/${key}/${p.slug}/`,
+      });
+    }
+  }
+} else {
+  const jaBuildingsBySlug = new Map((await getCollection('buildings')).map((p) => [p.slug, p.data]));
+  for (const p of await getCollection('buildings-en')) {
+    const ja = jaBuildingsBySlug.get(p.slug);
+    const category = ja?.buildingType === 'bridge' ? t('type.bridge') : t(`type.${ja?.buildingType ?? 'office'}`);
+    items.push({ title: p.data.title, area: p.data.area, category, href: `/en/buildings/${p.slug}/` });
+  }
+  for (const key of Object.keys(CATEGORIES) as CategoryKey[]) {
+    if (!CATEGORIES[key].hasEn) continue;
+    for (const p of await getCollection(`${key}-en` as 'railways-en')) {
+      items.push({
+        title: p.data.title,
+        area: p.data.area ?? '',
+        category: CATEGORIES[key].label.en,
+        href: `/en/${key}/${p.slug}/`,
+      });
+    }
+  }
+}
+
+items.sort((a, b) => a.title.localeCompare(b.title, lang === 'ja' ? 'ja' : 'en'));
+
+const total = items.length;
+const title = lang === 'ja' ? 'サイト内検索' : 'Search';
+const placeholder = lang === 'ja' ? '建物名・エリア・カテゴリで検索' : 'Search by name, area or category';
+const emptyMsg = lang === 'ja' ? '該当する記事が見つかりませんでした。' : 'No articles matched your search.';
+const countLabel = (n: number) =>
+  lang === 'ja' ? `${n} / ${total} 件` : `${n} / ${total} results`;
+---
+<section class="search-view" id="search-view" data-total={total} data-empty={emptyMsg} data-count-tpl={lang === 'ja' ? '%n / %t 件' : '%n / %t results'}>
+  <h1>{title}</h1>
+  <input
+    type="search"
+    id="search-input"
+    class="search-input"
+    placeholder={placeholder}
+    autocomplete="off"
+    autofocus
+    aria-label={placeholder}
+  />
+  <p class="search-count" id="search-count"></p>
+  <ul class="search-results" id="search-results">
+    {items.map((it) => (
+      <li class="search-row" data-name={it.title.toLowerCase()} data-area={it.area.toLowerCase()} data-cat={it.category.toLowerCase()}>
+        <a href={it.href}>
+          <span class="search-row-title">{it.title}</span>
+          <span class="search-row-meta">{it.category}{it.area ? ` ・ ${it.area}` : ''}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <p class="search-empty" id="search-empty" hidden>{emptyMsg}</p>
+</section>
+
+<script is:inline>
+  (function () {
+    const root = document.getElementById('search-view');
+    if (!root) return;
+    const input = document.getElementById('search-input');
+    const list = document.getElementById('search-results');
+    const empty = document.getElementById('search-empty');
+    const countEl = document.getElementById('search-count');
+    const total = Number(root.dataset.total || '0');
+    const rows = [...list.querySelectorAll('.search-row')];
+    const countTpl = root.dataset.countTpl || '%n / %t';
+
+    function apply() {
+      const q = (input.value || '').trim().toLowerCase();
+      const terms = q.split(/\s+/).filter(Boolean);
+      let shown = 0;
+      for (const row of rows) {
+        const hay = `${row.dataset.name} ${row.dataset.area} ${row.dataset.cat}`;
+        const match = terms.every((term) => hay.includes(term));
+        row.hidden = !match;
+        if (match) shown++;
+      }
+      empty.hidden = shown !== 0 || !q;
+      countEl.textContent = q ? countTpl.replace('%n', String(shown)).replace('%t', String(total)) : '';
+    }
+
+    input.addEventListener('input', apply);
+    apply();
+  })();
+</script>
+
+<style>
+  .search-view { margin: 28px 0 48px; max-width: 640px; }
+  .search-view h1 { font-size: clamp(1.5rem, 4vw, 2.1rem); margin: 0 0 16px; }
+  .search-input {
+    width: 100%; padding: 12px 16px; font-size: 1rem;
+    border: 1px solid var(--line); border-radius: 12px;
+    background: var(--surface); color: var(--text);
+  }
+  .search-input:focus { outline: none; border-color: var(--brand); }
+  .search-count { margin: 10px 2px 0; font-size: 0.82rem; color: var(--text-muted); min-height: 1.2em; }
+  .search-results { list-style: none; margin: 12px 0 0; padding: 0; }
+  .search-row a {
+    display: flex; flex-direction: column; gap: 2px;
+    padding: 12px 14px; border-radius: 10px;
+    text-decoration: none; color: var(--text);
+    border-bottom: 1px solid var(--line);
+  }
+  .search-row a:hover { background: var(--brand-soft); }
+  .search-row-title { font-weight: 700; }
+  .search-row-meta { font-size: 0.8rem; color: var(--text-muted); }
+  .search-empty { text-align: center; color: var(--text-muted); padding: 32px 16px; }
+</style>
