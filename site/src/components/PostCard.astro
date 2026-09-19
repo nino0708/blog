@@ -7,8 +7,9 @@ import type { LatestPost } from '../lib/latest';
 interface Props {
   lang: Lang;
   post: LatestPost;
+  priority?: boolean;
 }
-const { lang, post } = Astro.props;
+const { lang, post, priority = false } = Astro.props;
 const t = useT(lang);
 const meta = post.buildingType
   ? buildCardMeta(lang, {
@@ -21,7 +22,7 @@ const meta = post.buildingType
 <article class="card" data-reveal>
   <a href={post.href}>
     {post.heroImage
-      ? <div class="thumb thumb-img"><img src={post.heroImage} alt={post.title} loading="lazy" /></div>
+      ? <div class="thumb thumb-img"><img src={post.heroImage} alt={post.title} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} /></div>
       : (
         <div class="thumb thumb-fallback">
           <span class="thumb-type">{post.badge}</span>

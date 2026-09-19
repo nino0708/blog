@@ -47,7 +47,7 @@ const articleCount = allPosts.length;
   </div>
 
   <section class="grid grid-2">
-    {latest.map((post) => <PostCard lang={lang} post={post} />)}
+    {latest.map((post, i) => <PostCard lang={lang} post={post} priority={i === 0} />)}
   </section>
 
   <nav class="feed-more" aria-label={t('footer.categories')}>

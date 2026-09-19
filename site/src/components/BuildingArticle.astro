@@ -75,7 +75,7 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
 
   {heroImage && (
     <figure class="hero-figure">
-      <img src={heroImage} alt={title} loading="lazy" />
+      <img src={heroImage} alt={title} loading="eager" fetchpriority="high" />
       {heroImageCredit && (
         <figcaption>
           {t('photo.by')}: {heroImageLink
