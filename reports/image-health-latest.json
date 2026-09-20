@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-20T08:22:24.648551+09:00",
+  "checkedAt": "2026-09-21T08:21:33.499720+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -504,6 +504,20 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/fuji-tv-headquarters/",
+      "slug": "fuji-tv-headquarters",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/20190322_Odaiba_Fuji_Television_Network_building.jpg/1280px-20190322_Odaiba_Fuji_Television_Network_building.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/fuji-tv-headquarters/",
+      "slug": "fuji-tv-headquarters",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/20190322_Odaiba_Fuji_Television_Network_building.jpg/1280px-20190322_Odaiba_Fuji_Television_Network_building.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/fukuoka-tower/",
@@ -1304,6 +1318,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Nihonbashi_mitsui_tower01s3872.jpg/1280px-Nihonbashi_mitsui_tower01s3872.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/nihonbashi-muromachi-mitsui-tower/",
+      "slug": "nihonbashi-muromachi-mitsui-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mitsui_Fudosan%2C_inside_Nihonbashi_Muromachi_Mitsui_Tower.jpg/1280px-Mitsui_Fudosan%2C_inside_Nihonbashi_Muromachi_Mitsui_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nihonbashi-muromachi-mitsui-tower/",
+      "slug": "nihonbashi-muromachi-mitsui-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mitsui_Fudosan%2C_inside_Nihonbashi_Muromachi_Mitsui_Tower.jpg/1280px-Mitsui_Fudosan%2C_inside_Nihonbashi_Muromachi_Mitsui_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/",
       "slug": "nihonbashi-nomura-mitsui-tower",
       "lang": "ja",
@@ -1848,6 +1876,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Shibaura_island_overview_minato_tokyo_2009.JPG/1280px-Shibaura_island_overview_minato_tokyo_2009.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shibuya-cross-tower/",
+      "slug": "shibuya-cross-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Shibuya_Cross_Tower_2.jpg/1280px-Shibuya_Cross_Tower_2.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shibuya-cross-tower/",
+      "slug": "shibuya-cross-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Shibuya_Cross_Tower_2.jpg/1280px-Shibuya_Cross_Tower_2.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/shibuya-hikarie/",
@@ -2466,6 +2508,20 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Tokyo_Dome_Hotel_2.jpg/1280px-Tokyo_Dome_Hotel_2.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/tokyo-dome/",
+      "slug": "tokyo-dome",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/TokyoDomeExteriorNight.JPG/1280px-TokyoDomeExteriorNight.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-dome/",
+      "slug": "tokyo-dome",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/TokyoDomeExteriorNight.JPG/1280px-TokyoDomeExteriorNight.JPG"
+    },
+    {
       "url": "https://builtjapan.com/buildings/tokyo-garden-terrace-kioicho/",
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "ja",
@@ -2772,6 +2828,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%E8%99%8E%E3%83%8E%E9%96%80%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC.jpg/1280px-%E8%99%8E%E3%83%8E%E9%96%80%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/toranomon-hills-residential-tower/",
+      "slug": "toranomon-hills-residential-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Toranomon_Hills_Residential_Tower.jpg/1280px-Toranomon_Hills_Residential_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/toranomon-hills-residential-tower/",
+      "slug": "toranomon-hills-residential-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Toranomon_Hills_Residential_Tower.jpg/1280px-Toranomon_Hills_Residential_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/toranomon-hills-station-tower/",
