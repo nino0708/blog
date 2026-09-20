@@ -3,5 +3,10 @@
   {"slug": "tokyo-skytree", "postedAt": "2026-09-20", "type": "intro"},
   {"slug": "shibuya-scramble-square", "postedAt": "2026-09-20", "type": "intro"},
   {"slug": "roppongi-hills-mori-tower", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "kasumigaseki-building", "postedAt": "2026-09-20", "type": "quiz"}
+  {"slug": "kasumigaseki-building", "postedAt": "2026-09-20", "type": "quiz"},
+  {"slug": "abeno-harukas", "postedAt": "2026-09-20", "type": "intro"},
+  {"slug": "akashi-kaikyo-bridge", "postedAt": "2026-09-20", "type": "intro"},
+  {"slug": "ark-mori-building", "postedAt": "2026-09-20", "type": "intro"},
+  {"slug": "cerulean-tower", "postedAt": "2026-09-20", "type": "intro"},
+  {"slug": "air-rise-tower", "postedAt": "2026-09-20", "type": "quiz"}
 ]
