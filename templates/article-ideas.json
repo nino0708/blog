@@ -2252,6 +2252,51 @@
       "area": "札幌市",
       "angle": "札幌駅の駅ビル型超高層。北海道の玄関口の高さ",
       "status": "done"
+    },
+    {
+      "id": 251,
+      "category": "office",
+      "title": "渋谷クロスタワー",
+      "slug": "shibuya-cross-tower",
+      "area": "渋谷区",
+      "angle": "渋谷初の100m超。東邦生命ビルとして1975年竣工、渋谷の高層化の先駆け",
+      "status": "done"
+    },
+    {
+      "id": 252,
+      "category": "stadium",
+      "title": "東京ドーム",
+      "slug": "tokyo-dome",
+      "area": "文京区",
+      "angle": "日本初の全天候型ドーム球場。空気圧支持式膜屋根で1988年開業、屋外スポーツ施設のあり方を変えた",
+      "status": "done"
+    },
+    {
+      "id": 253,
+      "category": "office",
+      "title": "フジテレビ本社ビル",
+      "slug": "fuji-tv-headquarters",
+      "area": "港区",
+      "angle": "丹下健三設計のお台場シンボル。球体展望室と双塔が湾岸の顔になった1996年竣工のメディア施設",
+      "status": "done"
+    },
+    {
+      "id": 254,
+      "category": "office",
+      "title": "日本橋室町三井タワー",
+      "slug": "nihonbashi-muromachi-mitsui-tower",
+      "area": "中央区",
+      "angle": "三井不動産による日本橋再生の新章。COREDO室町テラス・エスリール出店で文化複合施設に",
+      "status": "done"
+    },
+    {
+      "id": 255,
+      "category": "residence",
+      "title": "虎ノ門ヒルズ レジデンシャルタワー",
+      "slug": "toranomon-hills-residential-tower",
+      "area": "港区",
+      "angle": "2022年完成、高さ221m・54階の日本一高いマンション。虎ノ門ヒルズ第3期棟",
+      "status": "done"
     }
   ]
 }
