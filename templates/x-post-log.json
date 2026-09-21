@@ -8,5 +8,10 @@
   {"slug": "akashi-kaikyo-bridge", "postedAt": "2026-09-20", "type": "intro"},
   {"slug": "ark-mori-building", "postedAt": "2026-09-20", "type": "intro"},
   {"slug": "cerulean-tower", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "air-rise-tower", "postedAt": "2026-09-20", "type": "quiz"}
+  {"slug": "air-rise-tower", "postedAt": "2026-09-20", "type": "quiz"},
+  {"slug": "marunouchi-nijubashi-building", "postedAt": "2026-09-21", "type": "intro"},
+  {"slug": "pacific-century-place-marunouchi", "postedAt": "2026-09-21", "type": "intro"},
+  {"slug": "bunkyo-civic-center", "postedAt": "2026-09-21", "type": "intro"},
+  {"slug": "shirokane-the-sky", "postedAt": "2026-09-21", "type": "intro"},
+  {"slug": "shibuya-solasta", "postedAt": "2026-09-21", "type": "quiz"}
 ]
