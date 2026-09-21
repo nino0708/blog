@@ -2297,6 +2297,51 @@
       "area": "港区",
       "angle": "2022年完成、高さ221m・54階の日本一高いマンション。虎ノ門ヒルズ第3期棟",
       "status": "done"
+    },
+    {
+      "id": 256,
+      "category": "office",
+      "title": "丸の内二重橋ビルディング",
+      "slug": "marunouchi-nijubashi-building",
+      "area": "千代田区",
+      "angle": "2018年竣工・30階・140m。東京會舘の歴史的機能を受け継ぎ、低層部「二重橋スクエア」で皇居外苑への人流を受け止める",
+      "status": "done"
+    },
+    {
+      "id": 257,
+      "category": "office",
+      "title": "パシフィックセンチュリープレイス丸の内",
+      "slug": "pacific-century-place-marunouchi",
+      "area": "千代田区",
+      "angle": "2001年竣工・32階・約150m。丸の内再開発黎明期を飾る複合棟。3〜7階に客室数57室のフォーシーズンズホテル丸の内東京が入居",
+      "status": "done"
+    },
+    {
+      "id": 258,
+      "category": "office",
+      "title": "文京シビックセンター",
+      "slug": "bunkyo-civic-center",
+      "area": "文京区",
+      "angle": "1994年竣工・28階・142m。日建設計設計の区役所超高層。25階に無料公開の展望ラウンジを持つ東京の穴場展望スポット",
+      "status": "done"
+    },
+    {
+      "id": 259,
+      "category": "residence",
+      "title": "白金ザ・スカイ",
+      "slug": "shirokane-the-sky",
+      "area": "港区",
+      "angle": "2022年竣工・東棟45階・156m。5社合同・285名権利者との16年合意形成を経た1247戸の大規模タワーマンション",
+      "status": "done"
+    },
+    {
+      "id": 260,
+      "category": "office",
+      "title": "渋谷ソラスタ",
+      "slug": "shibuya-solasta",
+      "area": "渋谷区",
+      "angle": "2019年竣工・21階・高さ約107m。渋谷駅大規模再開発とは一線を画した道玄坂旧市街地ブロックの更新。ガラスファサードが坂道の景観に新たなアクセント",
+      "status": "done"
     }
   ]
 }
