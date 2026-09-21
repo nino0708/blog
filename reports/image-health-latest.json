@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-21T08:21:33.499720+09:00",
+  "checkedAt": "2026-09-22T08:22:27.475911+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -308,6 +308,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Toshima_Ecomusee_Town_01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/bunkyo-civic-center/",
+      "slug": "bunkyo-civic-center",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Bunkyo_Civic_Center_2009.jpg/1280px-Bunkyo_Civic_Center_2009.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/bunkyo-civic-center/",
+      "slug": "bunkyo-civic-center",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Bunkyo_Civic_Center_2009.jpg/1280px-Bunkyo_Civic_Center_2009.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/central-government-building-7/",
@@ -1080,6 +1094,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%E4%B8%B8%E3%81%AE%E5%86%85%E6%B0%B8%E6%A5%BD%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0.jpg/1280px-%E4%B8%B8%E3%81%AE%E5%86%85%E6%B0%B8%E6%A5%BD%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/marunouchi-nijubashi-building/",
+      "slug": "marunouchi-nijubashi-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Marunouchi_Nijubashi_Building.jpg/1280px-Marunouchi_Nijubashi_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/marunouchi-nijubashi-building/",
+      "slug": "marunouchi-nijubashi-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Marunouchi_Nijubashi_Building.jpg/1280px-Marunouchi_Nijubashi_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/marunouchi-oazo/",
       "slug": "marunouchi-oazo",
       "lang": "ja",
@@ -1584,6 +1612,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Owl-Tower-Ikebukuro-01.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/pacific-century-place-marunouchi/",
+      "slug": "pacific-century-place-marunouchi",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Pacific_Century_Place_Marunouchi.jpg/1280px-Pacific_Century_Place_Marunouchi.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/pacific-century-place-marunouchi/",
+      "slug": "pacific-century-place-marunouchi",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Pacific_Century_Place_Marunouchi.jpg/1280px-Pacific_Century_Place_Marunouchi.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/park-axis-aoyama-1chome-tower/",
       "slug": "park-axis-aoyama-1chome-tower",
       "lang": "ja",
@@ -1934,6 +1976,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Shibuya_Scramble_Square_building.jpg/1280px-Shibuya_Scramble_Square_building.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/shibuya-solasta/",
+      "slug": "shibuya-solasta",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/%E6%B8%8B%E8%B0%B7%E3%82%BD%E3%83%A9%E3%82%B9%E3%82%BF.jpg/1280px-%E6%B8%8B%E8%B0%B7%E3%82%BD%E3%83%A9%E3%82%B9%E3%82%BF.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shibuya-solasta/",
+      "slug": "shibuya-solasta",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/%E6%B8%8B%E8%B0%B7%E3%82%BD%E3%83%A9%E3%82%B9%E3%82%BF.jpg/1280px-%E6%B8%8B%E8%B0%B7%E3%82%BD%E3%83%A9%E3%82%B9%E3%82%BF.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/shibuya-stream/",
       "slug": "shibuya-stream",
       "lang": "ja",
@@ -2172,6 +2228,20 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Shiodome_Tower_2024.jpg/1280px-Shiodome_Tower_2024.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/shirokane-the-sky/",
+      "slug": "shirokane-the-sky",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shirokane-the-sky/",
+      "slug": "shirokane-the-sky",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/sis-rinku-tower/",
       "slug": "sis-rinku-tower",
       "lang": "ja",
@@ -2246,14 +2316,14 @@
       "slug": "st-lukes-garden",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/sumitomo-mita-twin-building/",
@@ -3250,6 +3320,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/22/",
+      "slug": "22",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -3385,6 +3462,13 @@
     {
       "url": "https://builtjapan.com/en/buildings/page/21/",
       "slug": "21",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/22/",
+      "slug": "22",
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
