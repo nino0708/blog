@@ -1,17 +1,102 @@
 [
-  {"slug": "azabudai-hills-mori-jp-tower", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "tokyo-skytree", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "shibuya-scramble-square", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "roppongi-hills-mori-tower", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "kasumigaseki-building", "postedAt": "2026-09-20", "type": "quiz"},
-  {"slug": "abeno-harukas", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "akashi-kaikyo-bridge", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "ark-mori-building", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "cerulean-tower", "postedAt": "2026-09-20", "type": "intro"},
-  {"slug": "air-rise-tower", "postedAt": "2026-09-20", "type": "quiz"},
-  {"slug": "marunouchi-nijubashi-building", "postedAt": "2026-09-21", "type": "intro"},
-  {"slug": "pacific-century-place-marunouchi", "postedAt": "2026-09-21", "type": "intro"},
-  {"slug": "bunkyo-civic-center", "postedAt": "2026-09-21", "type": "intro"},
-  {"slug": "shirokane-the-sky", "postedAt": "2026-09-21", "type": "intro"},
-  {"slug": "shibuya-solasta", "postedAt": "2026-09-21", "type": "quiz"}
+    {
+        "slug": "azabudai-hills-mori-jp-tower",
+        "postedAt": "2026-09-20",
+        "type": "intro"
+    },
+    {
+        "slug": "tokyo-skytree",
+        "postedAt": "2026-09-20",
+        "type": "intro"
+    },
+    {
+        "slug": "shibuya-scramble-square",
+        "postedAt": "2026-09-20",
+        "type": "intro"
+    },
+    {
+        "slug": "roppongi-hills-mori-tower",
+        "postedAt": "2026-09-20",
+        "type": "intro"
+    },
+    {
+        "slug": "kasumigaseki-building",
+        "postedAt": "2026-09-20",
+        "type": "quiz"
+    },
+    {
+        "slug": "abeno-harukas",
+        "postedAt": "2026-09-20",
+        "type": "intro"
+    },
+    {
+        "slug": "akashi-kaikyo-bridge",
+        "postedAt": "2026-09-20",
+        "type": "intro"
+    },
+    {
+        "slug": "ark-mori-building",
+        "postedAt": "2026-09-20",
+        "type": "intro"
+    },
+    {
+        "slug": "cerulean-tower",
+        "postedAt": "2026-09-20",
+        "type": "intro"
+    },
+    {
+        "slug": "air-rise-tower",
+        "postedAt": "2026-09-20",
+        "type": "quiz"
+    },
+    {
+        "slug": "marunouchi-nijubashi-building",
+        "postedAt": "2026-09-21",
+        "type": "intro"
+    },
+    {
+        "slug": "pacific-century-place-marunouchi",
+        "postedAt": "2026-09-21",
+        "type": "intro"
+    },
+    {
+        "slug": "bunkyo-civic-center",
+        "postedAt": "2026-09-21",
+        "type": "intro"
+    },
+    {
+        "slug": "shirokane-the-sky",
+        "postedAt": "2026-09-21",
+        "type": "intro"
+    },
+    {
+        "slug": "shibuya-solasta",
+        "postedAt": "2026-09-21",
+        "type": "quiz"
+    },
+    {
+        "slug": "act-city-hamamatsu",
+        "postedAt": "2026-09-22",
+        "type": "intro"
+    },
+    {
+        "slug": "acty-shiodome",
+        "postedAt": "2026-09-22",
+        "type": "intro"
+    },
+    {
+        "slug": "akasaka-biz-tower",
+        "postedAt": "2026-09-22",
+        "type": "intro"
+    },
+    {
+        "slug": "akasaka-intercity-air",
+        "postedAt": "2026-09-22",
+        "type": "intro"
+    },
+    {
+        "slug": "akasaka-k-tower",
+        "postedAt": "2026-09-22",
+        "type": "quiz"
+    }
 ]
