@@ -2342,6 +2342,51 @@
       "area": "渋谷区",
       "angle": "2019年竣工・21階・高さ約107m。渋谷駅大規模再開発とは一線を画した道玄坂旧市街地ブロックの更新。ガラスファサードが坂道の景観に新たなアクセント",
       "status": "done"
+    },
+    {
+      "id": 261,
+      "category": "office",
+      "title": "渋谷フクラス",
+      "slug": "shibuya-fukuras",
+      "area": "渋谷区",
+      "angle": "旧東急プラザ渋谷の建替え。道玄坂と宮益坂が交差する渋谷駅西口の玄関ビル",
+      "status": "done"
+    },
+    {
+      "id": 262,
+      "category": "office",
+      "title": "ゲートシティ大崎",
+      "slug": "gate-city-osaki",
+      "area": "品川区",
+      "angle": "バブル崩壊を越えて15年で完成したツインタワー。大崎駅前の市街地再開発の核",
+      "status": "done"
+    },
+    {
+      "id": 263,
+      "category": "residence",
+      "title": "グローバルフロントタワー",
+      "slug": "global-front-tower",
+      "area": "港区",
+      "angle": "五角形平面という珍しい外形を持つ芝浦の超高層マンション。田町の湾岸側の変化",
+      "status": "done"
+    },
+    {
+      "id": 264,
+      "category": "office",
+      "title": "中之島フェスティバルタワー・ウエスト",
+      "slug": "nakanoshima-festival-tower-west",
+      "area": "大阪市北区",
+      "angle": "コンラッド大阪が入る2017年開業41階の超高層。フェスティバルタワーと対をなす中之島再開発",
+      "status": "done"
+    },
+    {
+      "id": 265,
+      "category": "office",
+      "title": "横浜アイランドタワー",
+      "slug": "yokohama-island-tower",
+      "area": "横浜市中区",
+      "angle": "旧第一銀行横浜支店の近代建築を保存しながら超高層を建て増した、都市再生機構本部の所在ビル。槇文彦設計",
+      "status": "done"
     }
   ]
 }
