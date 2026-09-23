@@ -286,5 +286,9 @@
     "attempts": 3,
     "gaveUp": true,
     "reason": "記事mdが見つからない"
+  },
+  "shibuya-fukuras": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
   }
 }

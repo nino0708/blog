@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-09-23 08:24 JST
-- 対象: 公開済み記事 496 ページ（https://builtjapan.com）
-- 正常表示: 418 / 496（84.3%）
-- **要対応: 78 件**（画像なし 78 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-09-24 08:23 JST
+- 対象: 公開済み記事 506 ページ（https://builtjapan.com）
+- 正常表示: 426 / 506（84.2%）
+- **要対応: 80 件**（画像なし 80 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -42,6 +42,7 @@
 | [9（JA）](https://builtjapan.com/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-city-musashi-kosugi-station-forest-tower（JA）](https://builtjapan.com/buildings/park-city-musashi-kosugi-station-forest-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-tower-kachidoki（JA）](https://builtjapan.com/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shibuya-fukuras（JA）](https://builtjapan.com/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（JA）](https://builtjapan.com/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-toranomon-tower（JA）](https://builtjapan.com/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -81,6 +82,7 @@
 | [9（EN）](https://builtjapan.com/en/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-city-musashi-kosugi-station-forest-tower（EN）](https://builtjapan.com/en/buildings/park-city-musashi-kosugi-station-forest-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-tower-kachidoki（EN）](https://builtjapan.com/en/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shibuya-fukuras（EN）](https://builtjapan.com/en/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（EN）](https://builtjapan.com/en/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-toranomon-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-23T08:24:00.251329+09:00",
+  "checkedAt": "2026-09-24T08:23:35.103788+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -562,6 +562,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Futakotamagawa_rise-20150807.jpg/1280px-Futakotamagawa_rise-20150807.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/gate-city-osaki/",
+      "slug": "gate-city-osaki",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Gate_City_Osaki_East_Tower.jpg/1280px-Gate_City_Osaki_East_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/gate-city-osaki/",
+      "slug": "gate-city-osaki",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Gate_City_Osaki_East_Tower.jpg/1280px-Gate_City_Osaki_East_Tower.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/ginza-six/",
       "slug": "ginza-six",
       "lang": "ja",
@@ -574,6 +588,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Ginza_Six_02.jpg/1280px-Ginza_Six_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/global-front-tower/",
+      "slug": "global-front-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Global_front_tower_202207.jpg/1280px-Global_front_tower_202207.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/global-front-tower/",
+      "slug": "global-front-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Global_front_tower_202207.jpg/1280px-Global_front_tower_202207.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/gran-tokyo-towers/",
@@ -1276,6 +1304,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Nakanoshima-Daibiru-20090419-01.jpg/1280px-Nakanoshima-Daibiru-20090419-01.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/nakanoshima-festival-tower-west/",
+      "slug": "nakanoshima-festival-tower-west",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Nakanoshima_Festival_Tower_West.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nakanoshima-festival-tower-west/",
+      "slug": "nakanoshima-festival-tower-west",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Nakanoshima_Festival_Tower_West.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
       "url": "https://builtjapan.com/buildings/nakanoshima-festival-tower/",
       "slug": "nakanoshima-festival-tower",
       "lang": "ja",
@@ -1934,6 +1976,20 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Shibuya_Cross_Tower_2.jpg/1280px-Shibuya_Cross_Tower_2.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/shibuya-fukuras/",
+      "slug": "shibuya-fukuras",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shibuya-fukuras/",
+      "slug": "shibuya-fukuras",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/buildings/shibuya-hikarie/",
       "slug": "shibuya-hikarie",
       "lang": "ja",
@@ -2316,14 +2372,14 @@
       "slug": "st-lukes-garden",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/sumitomo-mita-twin-building/",
@@ -3094,6 +3150,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Yokohama_dia_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yokohama-island-tower/",
+      "slug": "yokohama-island-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Yokohama_Island_Tower.jpg/1280px-Yokohama_Island_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yokohama-island-tower/",
+      "slug": "yokohama-island-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Yokohama_Island_Tower.jpg/1280px-Yokohama_Island_Tower.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/yokohama-kitanaka-knot/",
