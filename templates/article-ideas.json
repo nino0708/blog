@@ -2387,6 +2387,51 @@
       "area": "横浜市中区",
       "angle": "旧第一銀行横浜支店の近代建築を保存しながら超高層を建て増した、都市再生機構本部の所在ビル。槇文彦設計",
       "status": "done"
+    },
+    {
+      "id": 266,
+      "category": "office",
+      "title": "秋葉原UDX",
+      "slug": "akihabara-udx",
+      "area": "千代田区",
+      "angle": "秋葉原クロスフィールド再開発の核。IT・サブカル集積地の顔として誕生したNTT都市開発の複合オフィスビル",
+      "status": "done"
+    },
+    {
+      "id": 267,
+      "category": "office",
+      "title": "東京都庁第二本庁舎",
+      "slug": "tokyo-metropolitan-government-no2",
+      "area": "新宿区",
+      "angle": "丹下健三設計の都庁コンプレックスを構成する地上34階・約163mの南棟。第一本庁舎との関係から都市的意味を読む",
+      "status": "done"
+    },
+    {
+      "id": 268,
+      "category": "office",
+      "title": "住友不動産新宿オークタワー",
+      "slug": "shinjuku-oak-tower",
+      "area": "新宿区",
+      "angle": "西新宿六丁目の地区再開発で誕生した38階・184mの高層オフィスビル。副都心のさらなる高層化を担った一棟",
+      "status": "done"
+    },
+    {
+      "id": 269,
+      "category": "office",
+      "title": "テレコムセンタービル",
+      "slug": "telecom-center",
+      "area": "江東区",
+      "angle": "お台場・青海に立つ双塔アーチ型の情報通信産業ビル。臨海副都心開発の先導施設として1996年開業",
+      "status": "done"
+    },
+    {
+      "id": 270,
+      "category": "office",
+      "title": "渋谷キャスト",
+      "slug": "shibuya-cast",
+      "area": "渋谷区",
+      "angle": "東急が手がけたクリエイター向け複合施設。住宅・シェアオフィス・商業を縦積みし、渋谷大開発とは別の文脈で進んだ街更新",
+      "status": "done"
     }
   ]
 }
