@@ -98,5 +98,30 @@
     "slug": "yokohama-island-tower",
     "postedAt": "2026-09-23",
     "type": "quiz"
+  },
+  {
+    "slug": "act-city-hamamatsu",
+    "postedAt": "2026-09-25",
+    "type": "intro"
+  },
+  {
+    "slug": "acty-shiodome",
+    "postedAt": "2026-09-25",
+    "type": "intro"
+  },
+  {
+    "slug": "akasaka-biz-tower",
+    "postedAt": "2026-09-25",
+    "type": "intro"
+  },
+  {
+    "slug": "akasaka-intercity-air",
+    "postedAt": "2026-09-25",
+    "type": "intro"
+  },
+  {
+    "slug": "akasaka-k-tower",
+    "postedAt": "2026-09-25",
+    "type": "quiz"
   }
 ]
