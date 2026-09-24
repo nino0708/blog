@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-24T08:23:35.103788+09:00",
+  "checkedAt": "2026-09-25T08:22:01.199330+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -140,6 +140,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Akashi_Kaiky%C5%8D_Bridge%2C_2004-08-27.jpg/1280px-Akashi_Kaiky%C5%8D_Bridge%2C_2004-08-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/akihabara-udx/",
+      "slug": "akihabara-udx",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/AkihabaraUDX_201311.JPG/1280px-AkihabaraUDX_201311.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/akihabara-udx/",
+      "slug": "akihabara-udx",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/AkihabaraUDX_201311.JPG/1280px-AkihabaraUDX_201311.JPG"
     },
     {
       "url": "https://builtjapan.com/buildings/ark-hills-sengokuyama-mori-tower/",
@@ -1962,6 +1976,20 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Shibaura_island_overview_minato_tokyo_2009.JPG/1280px-Shibaura_island_overview_minato_tokyo_2009.JPG"
     },
     {
+      "url": "https://builtjapan.com/buildings/shibuya-cast/",
+      "slug": "shibuya-cast",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/SHIBUYA_CAST.jpg/1280px-SHIBUYA_CAST.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shibuya-cast/",
+      "slug": "shibuya-cast",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/SHIBUYA_CAST.jpg/1280px-SHIBUYA_CAST.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/shibuya-cross-tower/",
       "slug": "shibuya-cross-tower",
       "lang": "ja",
@@ -2198,6 +2226,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Shinjuku-Nomura-Building-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shinjuku-oak-tower/",
+      "slug": "shinjuku-oak-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG/1280px-Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinjuku-oak-tower/",
+      "slug": "shinjuku-oak-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG/1280px-Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/shinjuku-park-tower/",
@@ -2466,6 +2508,20 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Takanawa_Residence.jpg/1280px-Takanawa_Residence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
+      "url": "https://builtjapan.com/buildings/telecom-center/",
+      "slug": "telecom-center",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Telecom_Center_%40_Odaiba_%289733415904%29.jpg/1280px-Telecom_Center_%40_Odaiba_%289733415904%29.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/telecom-center/",
+      "slug": "telecom-center",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Telecom_Center_%40_Odaiba_%289733415904%29.jpg/1280px-Telecom_Center_%40_Odaiba_%289733415904%29.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/the-kosugi-tower/",
       "slug": "the-kosugi-tower",
       "lang": "ja",
@@ -2716,6 +2772,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tokyo_Metropolitan_Government_Building_No.1_-_Shinjuku%2C_Tokyo_-_DSC05442.jpg/1280px-Tokyo_Metropolitan_Government_Building_No.1_-_Shinjuku%2C_Tokyo_-_DSC05442.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tokyo-metropolitan-government-no2/",
+      "slug": "tokyo-metropolitan-government-no2",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Tokyo_Metropolitan_Government_Building_2022-03-02.jpg/1280px-Tokyo_Metropolitan_Government_Building_2022-03-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-metropolitan-government-no2/",
+      "slug": "tokyo-metropolitan-government-no2",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Tokyo_Metropolitan_Government_Building_2022-03-02.jpg/1280px-Tokyo_Metropolitan_Government_Building_2022-03-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",
@@ -3397,6 +3467,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/23/",
+      "slug": "23",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -3539,6 +3616,13 @@
     {
       "url": "https://builtjapan.com/en/buildings/page/22/",
       "slug": "22",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/23/",
+      "slug": "23",
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
