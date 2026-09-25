@@ -1,0 +1,1215 @@
+{
+ "at": "2026-09-26 08:53",
+ "checked": 271,
+ "flagged": [
+  {
+   "kind": "buildings",
+   "slug": "osaki-thinkpark-tower",
+   "url": "https://builtjapan.com/buildings/osaki-thinkpark-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Osaki_Think_Park_Tower_-_panoramio.jpg/1280px-Osaki_Think_Park_Tower_-_panoramio.jpg",
+   "faces": 7,
+   "people": 11
+  },
+  {
+   "kind": "buildings",
+   "slug": "iidabashi-grand-bloom",
+   "url": "https://builtjapan.com/buildings/iidabashi-grand-bloom/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Iidabashi_Grand_Bloom_2019a.jpg/1280px-Iidabashi_Grand_Bloom_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 7,
+   "people": 3
+  },
+  {
+   "kind": "railways",
+   "slug": "tokyo-metro-marunouchi-line",
+   "url": "https://builtjapan.com/railways/tokyo-metro-marunouchi-line/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Metro_Marunouchi_Line_02_and_2000_series_in_Yotsuya_20190223.jpg/1280px-Tokyo_Metro_Marunouchi_Line_02_and_2000_series_in_Yotsuya_20190223.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 5,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "land-axis-tower-saitama",
+   "url": "https://builtjapan.com/buildings/land-axis-tower-saitama/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg/1280px-Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg",
+   "faces": 5,
+   "people": 0
+  },
+  {
+   "kind": "railways",
+   "slug": "ueno-station",
+   "url": "https://builtjapan.com/railways/ueno-station/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ueno_Station_20150410_132749.jpg/1280px-Ueno_Station_20150410_132749.jpg",
+   "faces": 4,
+   "people": 9
+  },
+  {
+   "kind": "buildings",
+   "slug": "marunouchi-oazo",
+   "url": "https://builtjapan.com/buildings/marunouchi-oazo/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Marunouchi_OAZO_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg/1280px-Marunouchi_OAZO_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg",
+   "faces": 4,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "shibuya-sakura-stage",
+   "url": "https://builtjapan.com/buildings/shibuya-sakura-stage/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shibuya_Sakura_Stage_2.jpg/1280px-Shibuya_Sakura_Stage_2.jpg",
+   "faces": 4,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "toranomon-hills-station-tower",
+   "url": "https://builtjapan.com/buildings/toranomon-hills-station-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Toranomon_Hills_Station_Tower_1.jpg/1280px-Toranomon_Hills_Station_Tower_1.jpg",
+   "faces": 3,
+   "people": 5
+  },
+  {
+   "kind": "buildings",
+   "slug": "ginza-six",
+   "url": "https://builtjapan.com/buildings/ginza-six/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Ginza_Six_02.jpg/1280px-Ginza_Six_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 3,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-dome-hotel",
+   "url": "https://builtjapan.com/buildings/tokyo-dome-hotel/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Tokyo_Dome_Hotel_2.jpg/1280px-Tokyo_Dome_Hotel_2.jpg",
+   "faces": 2,
+   "people": 5
+  },
+  {
+   "kind": "expressways",
+   "slug": "tokyo-gate-bridge",
+   "url": "https://builtjapan.com/expressways/tokyo-gate-bridge/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Tokyo_Gate_Bridge_20161203.jpg/1280px-Tokyo_Gate_Bridge_20161203.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 2,
+   "people": 2
+  },
+  {
+   "kind": "railways",
+   "slug": "tokyo-metro-ginza-line",
+   "url": "https://builtjapan.com/railways/tokyo-metro-ginza-line/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Ginza-Line-Series1031.jpg/1280px-Ginza-Line-Series1031.jpg",
+   "faces": 2,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "asakusa-culture-tourist-center",
+   "url": "https://builtjapan.com/buildings/asakusa-culture-tourist-center/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Asakusa_Culture_Tourist_Information_Center_dllu.jpg/1280px-Asakusa_Culture_Tourist_Information_Center_dllu.jpg",
+   "faces": 2,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "mita-garden-hills",
+   "url": "https://builtjapan.com/buildings/mita-garden-hills/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Mita_Garden_Hills_construction.jpg/1280px-Mita_Garden_Hills_construction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 2,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "japan-national-stadium",
+   "url": "https://builtjapan.com/buildings/japan-national-stadium/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Japan_National_Stadium_2024_1.jpg/1280px-Japan_National_Stadium_2024_1.jpg",
+   "faces": 2,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "gran-tokyo-towers",
+   "url": "https://builtjapan.com/buildings/gran-tokyo-towers/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/GranTokyo_North_Tower_3_(cropped).jpg/1280px-GranTokyo_North_Tower_3_(cropped).jpg",
+   "faces": 1,
+   "people": 22
+  },
+  {
+   "kind": "buildings",
+   "slug": "x-tower-osaka-bay",
+   "url": "https://builtjapan.com/buildings/x-tower-osaka-bay/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/X-TOWER_OSAKA_BAY.jpg",
+   "faces": 1,
+   "people": 11
+  },
+  {
+   "kind": "railways",
+   "slug": "sotetsu-tokyu-shin-yokohama-line",
+   "url": "https://builtjapan.com/railways/sotetsu-tokyu-shin-yokohama-line/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Shin-Yokohama-Line_Shin-Yokohama-STA_North-Gate.jpg/1280px-Shin-Yokohama-Line_Shin-Yokohama-STA_North-Gate.jpg",
+   "faces": 1,
+   "people": 10
+  },
+  {
+   "kind": "railways",
+   "slug": "ochanomizu-hijiribashi",
+   "url": "https://builtjapan.com/railways/ochanomizu-hijiribashi/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/JRE-Chuo-Line-Ochanomizu-Sta-Hijiribashi_2025.jpg/1280px-JRE-Chuo-Line-Ochanomizu-Sta-Hijiribashi_2025.jpg",
+   "faces": 1,
+   "people": 8
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-dome",
+   "url": "https://builtjapan.com/buildings/tokyo-dome/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/TokyoDomeExteriorNight.JPG/1280px-TokyoDomeExteriorNight.JPG",
+   "faces": 1,
+   "people": 7
+  },
+  {
+   "kind": "railways",
+   "slug": "takanawa-gateway",
+   "url": "https://builtjapan.com/railways/takanawa-gateway/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Takanawa_Gateway_Station_200316a1.jpg/1280px-Takanawa_Gateway_Station_200316a1.jpg",
+   "faces": 1,
+   "people": 5
+  },
+  {
+   "kind": "railways",
+   "slug": "linear-chuo-shinkansen",
+   "url": "https://builtjapan.com/railways/linear-chuo-shinkansen/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Chuo_Shinkansen_construction_at_Shinagawa_Station%2C_August_2024.jpg/1280px-Chuo_Shinkansen_construction_at_Shinagawa_Station%2C_August_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 1,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "shinjuku-park-tower",
+   "url": "https://builtjapan.com/buildings/shinjuku-park-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Shinjuku_Park_Tower_9.jpg/1280px-Shinjuku_Park_Tower_9.jpg",
+   "faces": 1,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "shibuya-stream",
+   "url": "https://builtjapan.com/buildings/shibuya-stream/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Shibuya_Stream-1b.jpg/1280px-Shibuya_Stream-1b.jpg",
+   "faces": 1,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "jr-tower-sapporo",
+   "url": "https://builtjapan.com/buildings/jr-tower-sapporo/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/JR_Tower%2C_Sapporo.jpg/1280px-JR_Tower%2C_Sapporo.jpg",
+   "faces": 1,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-skytree-east-tower",
+   "url": "https://builtjapan.com/buildings/tokyo-skytree-east-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Tokyo_Skytree_East_Tower_2012.JPG/1280px-Tokyo_Skytree_East_Tower_2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 1,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "shinjuku-front-square",
+   "url": "https://builtjapan.com/buildings/shinjuku-front-square/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Shinjuku_front_tower_2012.JPG/1280px-Shinjuku_front_tower_2012.JPG",
+   "faces": 1,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "otemachi-one",
+   "url": "https://builtjapan.com/buildings/otemachi-one/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Otemachi_One.jpg/1280px-Otemachi_One.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 1,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-midtown-hibiya",
+   "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Tokyo_Midtown_Hibiya.jpg/1280px-Tokyo_Midtown_Hibiya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 1,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "sunshine-city-world-import-mart",
+   "url": "https://builtjapan.com/buildings/sunshine-city-world-import-mart/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sunshine_City_2012.JPG/1280px-Sunshine_City_2012.JPG",
+   "faces": 1,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "roppongi-grand-tower",
+   "url": "https://builtjapan.com/buildings/roppongi-grand-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Sumitomo_Fudosan_Roppongi_Grand_Tower.jpg/1280px-Sumitomo_Fudosan_Roppongi_Grand_Tower.jpg",
+   "faces": 1,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "azabudai-hills-residence-b",
+   "url": "https://builtjapan.com/buildings/azabudai-hills-residence-b/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/%E9%BA%BB%E5%B8%83%E5%8F%B0%E3%83%92%E3%83%AB%E3%82%BA.jpg/1280px-%E9%BA%BB%E5%B8%83%E5%8F%B0%E3%83%92%E3%83%AB%E3%82%BA.jpg",
+   "faces": 1,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "jp-tower-kitte",
+   "url": "https://builtjapan.com/buildings/jp-tower-kitte/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/JP_Tower_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg/1280px-JP_Tower_in_front_of_Marunouchi_Entrance_of_Tokyo_Station.jpg",
+   "faces": 1,
+   "people": 2
+  },
+  {
+   "kind": "railways",
+   "slug": "sotetsu-jr-line",
+   "url": "https://builtjapan.com/railways/sotetsu-jr-line/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Sotetsu_12001F.jpg/1280px-Sotetsu_12001F.jpg",
+   "faces": 1,
+   "people": 1
+  },
+  {
+   "kind": "railways",
+   "slug": "shinjuku-station",
+   "url": "https://builtjapan.com/railways/shinjuku-station/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Shinjuku_Station_2023-07-22.jpg/1280px-Shinjuku_Station_2023-07-22.jpg",
+   "faces": 1,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "bunkyo-civic-center",
+   "url": "https://builtjapan.com/buildings/bunkyo-civic-center/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Bunkyo_Civic_Center_2009.jpg/1280px-Bunkyo_Civic_Center_2009.jpg",
+   "faces": 1,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "marunouchi-nijubashi-building",
+   "url": "https://builtjapan.com/buildings/marunouchi-nijubashi-building/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Marunouchi_Nijubashi_Building.jpg/1280px-Marunouchi_Nijubashi_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 1,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "jp-tower-nagoya",
+   "url": "https://builtjapan.com/buildings/jp-tower-nagoya/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/JP_Tower_Nagoya_201509.JPG/1280px-JP_Tower_Nagoya_201509.JPG",
+   "faces": 1,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "namba-skyo",
+   "url": "https://builtjapan.com/buildings/namba-skyo/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Namba_SkyO_on_26th_April_2019.jpg/1280px-Namba_SkyO_on_26th_April_2019.jpg",
+   "faces": 1,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "osaka-umeda-twin-towers-north",
+   "url": "https://builtjapan.com/buildings/osaka-umeda-twin-towers-north/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Osaka_Umeda_Twin_Towers_North.jpg/1280px-Osaka_Umeda_Twin_Towers_North.jpg",
+   "faces": 1,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "yokohama-landmark-tower",
+   "url": "https://builtjapan.com/buildings/yokohama-landmark-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Yokohama_Landmark_Tower_purple.jpg/1280px-Yokohama_Landmark_Tower_purple.jpg",
+   "faces": 1,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "marunouchi-building",
+   "url": "https://builtjapan.com/buildings/marunouchi-building/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marunouchi_Building.JPG/1280px-Marunouchi_Building.JPG",
+   "faces": 1,
+   "people": 1
+  },
+  {
+   "kind": "railways",
+   "slug": "haneda-airport-access-line",
+   "url": "https://builtjapan.com/railways/haneda-airport-access-line/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Haneda_Airport_Access_Line_construction_site_near_Tamachi_Station_20240311.jpg/1280px-Haneda_Airport_Access_Line_construction_site_near_Tamachi_Station_20240311.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "railways",
+   "slug": "shibuya-station-redevelopment",
+   "url": "https://builtjapan.com/railways/shibuya-station-redevelopment/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Shibuya_station_redevelopment_2024.jpg/1280px-Shibuya_station_redevelopment_2024.jpg",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "nagoya-lucent-tower",
+   "url": "https://builtjapan.com/buildings/nagoya-lucent-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Nagoya_Lucent_Tower_110222.jpg/1280px-Nagoya_Lucent_Tower_110222.jpg",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "mode-gakuen-spiral-towers",
+   "url": "https://builtjapan.com/buildings/mode-gakuen-spiral-towers/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Mode_Gakuen_Spiral_Towers_Nagoya.jpg/1280px-Mode_Gakuen_Spiral_Towers_Nagoya.jpg",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "bank-of-yokohama-headquarters",
+   "url": "https://builtjapan.com/buildings/bank-of-yokohama-headquarters/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Bank_of_Yokohama_Headquarters_-01.jpg/1280px-Bank_of_Yokohama_Headquarters_-01.jpg",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "yokohama-kitanaka-knot",
+   "url": "https://builtjapan.com/buildings/yokohama-kitanaka-knot/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/The_Tower_Yokohama_Kitanaka_20221127-1.jpg/1280px-The_Tower_Yokohama_Kitanaka_20221127-1.jpg",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "jr-shinjuku-miraina-tower",
+   "url": "https://builtjapan.com/buildings/jr-shinjuku-miraina-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/JR_Shinjuku_Miraina_Tower.jpg/1280px-JR_Shinjuku_Miraina_Tower.jpg",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-nihonbashi-tower",
+   "url": "https://builtjapan.com/buildings/tokyo-nihonbashi-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Tokyo_Nihonbashi_tower_20151025.JPG/1280px-Tokyo_Nihonbashi_tower_20151025.JPG",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "otemachi-financial-city-grand-cube",
+   "url": "https://builtjapan.com/buildings/otemachi-financial-city-grand-cube/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Otemachi_Financial_City_Grand_Cube1.jpg/1280px-Otemachi_Financial_City_Grand_Cube1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "park-city-osaki",
+   "url": "https://builtjapan.com/buildings/park-city-osaki/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Park_City_Osaki%28Osaki_Bright_Core%29.jpg/1280px-Park_City_Osaki%28Osaki_Bright_Core%29.jpg",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "nakameguro-atlas-tower",
+   "url": "https://builtjapan.com/buildings/nakameguro-atlas-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nakameguro_Atlas_Tower_2012_Tokyo.JPG/1280px-Nakameguro_Atlas_Tower_2012_Tokyo.JPG",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "azabudai-hills-mori-jp-tower",
+   "url": "https://builtjapan.com/buildings/azabudai-hills-mori-jp-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/%E9%BA%BB%E5%B8%83%E5%8F%B0%E8%99%8E%E3%83%8E%E9%96%80%E5%86%8D%E9%96%8B%E7%99%BA%E3%80%81%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E3%81%8B%E3%82%89%E6%92%AE%E5%BD%B1.jpg/1280px-%E9%BA%BB%E5%B8%83%E5%8F%B0%E8%99%8E%E3%83%8E%E9%96%80%E5%86%8D%E9%96%8B%E7%99%BA%E3%80%81%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E3%81%8B%E3%82%89%E6%92%AE%E5%BD%B1.jpg",
+   "faces": 1,
+   "people": 0
+  },
+  {
+   "kind": "buildings",
+   "slug": "ark-mori-building",
+   "url": "https://builtjapan.com/buildings/ark-mori-building/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ARK_Mori_Building_2018.jpg/1280px-ARK_Mori_Building_2018.jpg",
+   "faces": 0,
+   "people": 8
+  },
+  {
+   "kind": "buildings",
+   "slug": "breeze-tower",
+   "url": "https://builtjapan.com/buildings/breeze-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Breeze_Tower%2C_Kitashinchi%2C_Osaka_2021.12.18.jpg/1280px-Breeze_Tower%2C_Kitashinchi%2C_Osaka_2021.12.18.jpg",
+   "faces": 0,
+   "people": 7
+  },
+  {
+   "kind": "railways",
+   "slug": "rinkai-line",
+   "url": "https://builtjapan.com/railways/rinkai-line/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Rinkai-line_Series70-000_70-030.jpg/1280px-Rinkai-line_Series70-000_70-030.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 5
+  },
+  {
+   "kind": "buildings",
+   "slug": "sompo-japan-headquarters",
+   "url": "https://builtjapan.com/buildings/sompo-japan-headquarters/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sompo-Japan_Nagoya_Building.jpg/1280px-Sompo-Japan_Nagoya_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 5
+  },
+  {
+   "kind": "buildings",
+   "slug": "abeno-harukas",
+   "url": "https://builtjapan.com/buildings/abeno-harukas/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Abeno_Harukas_2021-03.jpg/1280px-Abeno_Harukas_2021-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 5
+  },
+  {
+   "kind": "buildings",
+   "slug": "ark-hills-sengokuyama-mori-tower",
+   "url": "https://builtjapan.com/buildings/ark-hills-sengokuyama-mori-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ark_Hills_Sengokuyama_Mori_Tower.jpg/1280px-Ark_Hills_Sengokuyama_Mori_Tower.jpg",
+   "faces": 0,
+   "people": 5
+  },
+  {
+   "kind": "buildings",
+   "slug": "shibuya-scramble-square",
+   "url": "https://builtjapan.com/buildings/shibuya-scramble-square/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Shibuya_Scramble_Square_building.jpg/1280px-Shibuya_Scramble_Square_building.jpg",
+   "faces": 0,
+   "people": 5
+  },
+  {
+   "kind": "railways",
+   "slug": "tokyo-monorail",
+   "url": "https://builtjapan.com/railways/tokyo-monorail/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/2020-03-16_Tokyo_Monorail_2000_series_at_Tamachi%2C_Tokyo%2C_Japan.jpg/1280px-2020-03-16_Tokyo_Monorail_2000_series_at_Tamachi%2C_Tokyo%2C_Japan.jpg",
+   "faces": 0,
+   "people": 4
+  },
+  {
+   "kind": "buildings",
+   "slug": "sapia-tower",
+   "url": "https://builtjapan.com/buildings/sapia-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Sapia_Tower.jpg/1280px-Sapia_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 4
+  },
+  {
+   "kind": "buildings",
+   "slug": "fukuoka-tower",
+   "url": "https://builtjapan.com/buildings/fukuoka-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Fukuoka_Tower_October_2011_01.jpg/1280px-Fukuoka_Tower_October_2011_01.jpg",
+   "faces": 0,
+   "people": 4
+  },
+  {
+   "kind": "buildings",
+   "slug": "jr-central-towers",
+   "url": "https://builtjapan.com/buildings/jr-central-towers/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/JR_Central_Towers.jpg/1280px-JR_Central_Towers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 4
+  },
+  {
+   "kind": "railways",
+   "slug": "hokuriku-shinkansen-tsuruga",
+   "url": "https://builtjapan.com/railways/hokuriku-shinkansen-tsuruga/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Tsuruga_Station_20240501_01.jpg/1280px-Tsuruga_Station_20240501_01.jpg",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "railways",
+   "slug": "mansei-bridge-station-remains",
+   "url": "https://builtjapan.com/railways/mansei-bridge-station-remains/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/MAAch_ecute_Kanda_Manseibashi.jpg/1280px-MAAch_ecute_Kanda_Manseibashi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "railways",
+   "slug": "toei-oedo-line",
+   "url": "https://builtjapan.com/railways/toei-oedo-line/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Toei-Oedo-line_Shinjuku-STA_Platform.jpg/1280px-Toei-Oedo-line_Shinjuku-STA_Platform.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "railways",
+   "slug": "tokyo-station-marunouchi",
+   "url": "https://builtjapan.com/railways/tokyo-station-marunouchi/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "nihonbashi-muromachi-mitsui-tower",
+   "url": "https://builtjapan.com/buildings/nihonbashi-muromachi-mitsui-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mitsui_Fudosan%2C_inside_Nihonbashi_Muromachi_Mitsui_Tower.jpg/1280px-Mitsui_Fudosan%2C_inside_Nihonbashi_Muromachi_Mitsui_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "ss30-sendai",
+   "url": "https://builtjapan.com/buildings/ss30-sendai/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/SS30_seen_from_southwest.jpg/1280px-SS30_seen_from_southwest.jpg",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "air-rise-tower",
+   "url": "https://builtjapan.com/buildings/air-rise-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Rise-City-Ikebukuro-01.jpg",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "kyobashi-edogrand",
+   "url": "https://builtjapan.com/buildings/kyobashi-edogrand/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Kyobashi_Edogrand1.JPG/1280px-Kyobashi_Edogrand1.JPG",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "marunouchi-eiraku-building",
+   "url": "https://builtjapan.com/buildings/marunouchi-eiraku-building/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%E4%B8%B8%E3%81%AE%E5%86%85%E6%B0%B8%E6%A5%BD%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0.jpg/1280px-%E4%B8%B8%E3%81%AE%E5%86%85%E6%B0%B8%E6%A5%BD%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0.jpg",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "harumi-flag-sky-duo",
+   "url": "https://builtjapan.com/buildings/harumi-flag-sky-duo/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/HARUMI_FLAG_SKY_DUO.jpg/1280px-HARUMI_FLAG_SKY_DUO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-garden-terrace-kioicho",
+   "url": "https://builtjapan.com/buildings/tokyo-garden-terrace-kioicho/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "nihonbashi-bridge",
+   "url": "https://builtjapan.com/buildings/nihonbashi-bridge/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Nihonbashi_12.jpg/1280px-Nihonbashi_12.jpg",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "the-parkhouse-nishishinjuku-tower60",
+   "url": "https://builtjapan.com/buildings/the-parkhouse-nishishinjuku-tower60/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Nishishinjuku_60F_south.jpg/1280px-Nishishinjuku_60F_south.jpg",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "buildings",
+   "slug": "toranomon-hills-business-tower",
+   "url": "https://builtjapan.com/buildings/toranomon-hills-business-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Architecture_in_Toranomon_%28cropped%29_-_Toranomon_Hills_Business_Tower.jpg/1280px-Architecture_in_Toranomon_%28cropped%29_-_Toranomon_Hills_Business_Tower.jpg",
+   "faces": 0,
+   "people": 3
+  },
+  {
+   "kind": "railways",
+   "slug": "keikyu-shinagawa-station",
+   "url": "https://builtjapan.com/railways/keikyu-shinagawa-station/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Keikyu_Corporation_Shinagawa_Station_%2829493%29.jpg/1280px-Keikyu_Corporation_Shinagawa_Station_%2829493%29.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "railways",
+   "slug": "keisei-skyliner",
+   "url": "https://builtjapan.com/railways/keisei-skyliner/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Keisei_AE_Skyliner_Keisei_Main_Line_over_the_Horikiri_Bridge_2020-06-27.jpg/1280px-Keisei_AE_Skyliner_Keisei_Main_Line_over_the_Horikiri_Bridge_2020-06-27.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "railways",
+   "slug": "yamanote-line",
+   "url": "https://builtjapan.com/railways/yamanote-line/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Yamanote-Line-E235.jpg/1280px-Yamanote-Line-E235.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "akihabara-udx",
+   "url": "https://builtjapan.com/buildings/akihabara-udx/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/AkihabaraUDX_201311.JPG/1280px-AkihabaraUDX_201311.JPG",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "yokohama-island-tower",
+   "url": "https://builtjapan.com/buildings/yokohama-island-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Yokohama_Island_Tower.jpg/1280px-Yokohama_Island_Tower.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "kddi-building-shinjuku",
+   "url": "https://builtjapan.com/buildings/kddi-building-shinjuku/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/KDDI_Osaka_No.2_Building.JPG/1280px-KDDI_Osaka_No.2_Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "nikkei-tokyo-headquarters",
+   "url": "https://builtjapan.com/buildings/nikkei-tokyo-headquarters/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Nikkei_Inc._headquarters_%282014.05.03%29_1.jpg/1280px-Nikkei_Inc._headquarters_%282014.05.03%29_1.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "sanno-park-tower",
+   "url": "https://builtjapan.com/buildings/sanno-park-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Sanno-Park-Tower-01.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "prince-gallery-tokyo-kioicho",
+   "url": "https://builtjapan.com/buildings/prince-gallery-tokyo-kioicho/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tokyo_Garden_Terrace_Kioicho.jpg/1280px-Tokyo_Garden_Terrace_Kioicho.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "act-city-hamamatsu",
+   "url": "https://builtjapan.com/buildings/act-city-hamamatsu/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/ActCityHamamatsu.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "sis-rinku-tower",
+   "url": "https://builtjapan.com/buildings/sis-rinku-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Rinku_Gate_Tower_Building02s3200.jpg/1280px-Rinku_Gate_Tower_Building02s3200.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "osaka-sakishima-cosmo-tower",
+   "url": "https://builtjapan.com/buildings/osaka-sakishima-cosmo-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Osaka_Prefectural_Government_Sakishima_Building.jpg/1280px-Osaka_Prefectural_Government_Sakishima_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "la-tour-shinjuku",
+   "url": "https://builtjapan.com/buildings/la-tour-shinjuku/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/%E3%83%A9%E3%83%88%E3%82%A5%E3%83%BC%E3%83%AB%EF%BC%92.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-big-site",
+   "url": "https://builtjapan.com/buildings/tokyo-big-site/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Tokyo_Big_Sight_Conference_Tower.jpg/1280px-Tokyo_Big_Sight_Conference_Tower.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyu-kabukicho-tower",
+   "url": "https://builtjapan.com/buildings/tokyu-kabukicho-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Tokyu_Kabukicho_Tower_1.jpg/1280px-Tokyu_Kabukicho_Tower_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "kachidoki-bridge",
+   "url": "https://builtjapan.com/buildings/kachidoki-bridge/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kachidoki_bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "kiyosubashi",
+   "url": "https://builtjapan.com/buildings/kiyosubashi/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Kiyosu_Bridge-1.jpg/1280px-Kiyosu_Bridge-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "w-comfort-towers",
+   "url": "https://builtjapan.com/buildings/w-comfort-towers/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Shinonome_-01_%28cropped%29_-_W-Comfort_Towers_East_Tower.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "skyz-tower-and-garden",
+   "url": "https://builtjapan.com/buildings/skyz-tower-and-garden/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/SKYZ_TOWER_1.JPG/1280px-SKYZ_TOWER_1.JPG",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "futakotamagawa-rise",
+   "url": "https://builtjapan.com/buildings/futakotamagawa-rise/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Futakotamagawa_rise-20150807.jpg/1280px-Futakotamagawa_rise-20150807.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "otemachi-tower",
+   "url": "https://builtjapan.com/buildings/otemachi-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%C5%8Ctemachi_Tower.jpg/1280px-%C5%8Ctemachi_Tower.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "buildings",
+   "slug": "toranomon-hills-mori-tower",
+   "url": "https://builtjapan.com/buildings/toranomon-hills-mori-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%E8%99%8E%E3%83%8E%E9%96%80%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC.jpg/1280px-%E8%99%8E%E3%83%8E%E9%96%80%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC.jpg",
+   "faces": 0,
+   "people": 2
+  },
+  {
+   "kind": "expressways",
+   "slug": "ken-o-do",
+   "url": "https://builtjapan.com/expressways/ken-o-do/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Ken-O_expressway_Ome_tunnel_20100425.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "expressways",
+   "slug": "tomei-expressway",
+   "url": "https://builtjapan.com/expressways/tomei-expressway/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/E1_Tomei_Expressway_Bridge_20211003B.jpg/1280px-E1_Tomei_Expressway_Bridge_20211003B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "expressways",
+   "slug": "nihonbashi-expressway-undergrounding",
+   "url": "https://builtjapan.com/expressways/nihonbashi-expressway-undergrounding/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Nihonbashi-4.jpg/1280px-Nihonbashi-4.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "expressways",
+   "slug": "ohashi-junction",
+   "url": "https://builtjapan.com/expressways/ohashi-junction/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ohashi_Junction_20130506_004.jpg/1280px-Ohashi_Junction_20130506_004.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "expressways",
+   "slug": "shutoko-c2-yamate-tunnel",
+   "url": "https://builtjapan.com/expressways/shutoko-c2-yamate-tunnel/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Hatsudai_minami_yamate_tunnel.jpg/1280px-Hatsudai_minami_yamate_tunnel.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "railways",
+   "slug": "narita-airport-terminal-3",
+   "url": "https://builtjapan.com/railways/narita-airport-terminal-3/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/An_aerial_view_of_Narita_International_Airport.jpg/1280px-An_aerial_view_of_Narita_International_Airport.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "railways",
+   "slug": "tokyu-toyoko-minatomirai",
+   "url": "https://builtjapan.com/railways/tokyu-toyoko-minatomirai/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Yokohama_Minatomirai_Railway_Y500.JPG/1280px-Yokohama_Minatomirai_Railway_Y500.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "railways",
+   "slug": "tokaido-shinkansen",
+   "url": "https://builtjapan.com/railways/tokaido-shinkansen/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Tokaido_Shinkansen_in_Kyoto.jpg/1280px-Tokaido_Shinkansen_in_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "railways",
+   "slug": "yurikamome",
+   "url": "https://builtjapan.com/railways/yurikamome/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Yurikamome-7150.jpg/1280px-Yurikamome-7150.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "namba-parks",
+   "url": "https://builtjapan.com/buildings/namba-parks/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Parks_Tower_%28Namba_Parks%29_20100418-001.jpg/1280px-Parks_Tower_%28Namba_Parks%29_20100418-001.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "telecom-center",
+   "url": "https://builtjapan.com/buildings/telecom-center/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Telecom_Center_%40_Odaiba_%289733415904%29.jpg/1280px-Telecom_Center_%40_Odaiba_%289733415904%29.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "shirokane-the-sky",
+   "url": "https://builtjapan.com/buildings/shirokane-the-sky/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "the-kosugi-tower",
+   "url": "https://builtjapan.com/buildings/the-kosugi-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Kosugi_Tower.jpg/1280px-The_Kosugi_Tower.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "cross-air-tower",
+   "url": "https://builtjapan.com/buildings/cross-air-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Cross_Air_Tower%2C_Meguro%2C_Tokyo.jpg/1280px-Cross_Air_Tower%2C_Meguro%2C_Tokyo.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "kdx-yokohama-minatomirai-tower",
+   "url": "https://builtjapan.com/buildings/kdx-yokohama-minatomirai-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Mitsubishi_Heavy_Industries_Yokohama_Building_-01.jpg/1280px-Mitsubishi_Heavy_Industries_Yokohama_Building_-01.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "yokohama-symphostage",
+   "url": "https://builtjapan.com/buildings/yokohama-symphostage/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/YOKOHAMA_SYMPHOSTAGE_%28exterior%29_01.jpg/1280px-YOKOHAMA_SYMPHOSTAGE_%28exterior%29_01.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "ntt-docomo-sumida-building",
+   "url": "https://builtjapan.com/buildings/ntt-docomo-sumida-building/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Docomo_sumida_2012.JPG/1280px-Docomo_sumida_2012.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "owl-tower",
+   "url": "https://builtjapan.com/buildings/owl-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Owl-Tower-Ikebukuro-01.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "odakyu-southern-tower",
+   "url": "https://builtjapan.com/buildings/odakyu-southern-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Odakyu_Southern_Tower.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "shinjuku-maynds-tower",
+   "url": "https://builtjapan.com/buildings/shinjuku-maynds-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Maynds_tower_shinjuku_240116.jpg/1280px-Maynds_tower_shinjuku_240116.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "toyosu-center-building",
+   "url": "https://builtjapan.com/buildings/toyosu-center-building/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Toyosu_Center_Building_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "akasaka-tower-residence-top-of-the-hill",
+   "url": "https://builtjapan.com/buildings/akasaka-tower-residence-top-of-the-hill/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Akasaka_Tower_Residence_2012_Tokyo.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "sumitomo-shinjuku-grand-tower",
+   "url": "https://builtjapan.com/buildings/sumitomo-shinjuku-grand-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Shinjuku_Grand_Tower_from_north-east2012.3.12.JPG/1280px-Shinjuku_Grand_Tower_from_north-east2012.3.12.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "shiodome-tower",
+   "url": "https://builtjapan.com/buildings/shiodome-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Shiodome_Tower_2024.jpg/1280px-Shiodome_Tower_2024.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-twin-parks",
+   "url": "https://builtjapan.com/buildings/tokyo-twin-parks/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Tokyo_Twin_Parks_2.JPG/1280px-Tokyo_Twin_Parks_2.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "park-court-akasaka-the-tower",
+   "url": "https://builtjapan.com/buildings/park-court-akasaka-the-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Park_Court_Akasaka_The_Tower_2012_Tokyo.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "harumi-island-triton-square",
+   "url": "https://builtjapan.com/buildings/harumi-island-triton-square/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Harumi_Island_Triton_Square_02.JPG/1280px-Harumi_Island_Triton_Square_02.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "i-garden-air",
+   "url": "https://builtjapan.com/buildings/i-garden-air/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Garden_air_tower_iidabashi_2009.JPG/1280px-Garden_air_tower_iidabashi_2009.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "kachidoki-the-tower",
+   "url": "https://builtjapan.com/buildings/kachidoki-the-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/KACHIDOKI_THE_TOWER_2.jpg/1280px-KACHIDOKI_THE_TOWER_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "otemachi-financial-city",
+   "url": "https://builtjapan.com/buildings/otemachi-financial-city/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Otemachi_Financial_City_North_Tower_2.jpg/1280px-Otemachi_Financial_City_North_Tower_2.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "the-landmark-nagoya-sakae",
+   "url": "https://builtjapan.com/buildings/the-landmark-nagoya-sakae/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/The_Landmark_Nagoya_Sakae_2026-04_ac.jpg/1280px-The_Landmark_Nagoya_Sakae_2026-04_ac.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "jr-gate-tower",
+   "url": "https://builtjapan.com/buildings/jr-gate-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/JR_Gate_Tower_201701.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokiwabashi-tower",
+   "url": "https://builtjapan.com/buildings/tokiwabashi-tower/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tokiwabashi_Tower_3.jpg/1280px-Tokiwabashi_Tower_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "city-tower-osaka-honmachi",
+   "url": "https://builtjapan.com/buildings/city-tower-osaka-honmachi/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/CITYTOWER_OSAKA-HONMACHI.jpg/1280px-CITYTOWER_OSAKA-HONMACHI.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "park-city-musashikosugi-midsky",
+   "url": "https://builtjapan.com/buildings/park-city-musashikosugi-midsky/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/%E3%83%91%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%86%E3%82%A3%E6%AD%A6%E8%94%B5%E5%B0%8F%E6%9D%89%E3%83%9F%E3%83%83%E3%83%89%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%BF%E3%83%AF%E3%83%BC.JPG/1280px-%E3%83%91%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%86%E3%82%A3%E6%AD%A6%E8%94%B5%E5%B0%8F%E6%9D%89%E3%83%9F%E3%83%83%E3%83%89%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%BF%E3%83%AF%E3%83%BC.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "rainbow-bridge",
+   "url": "https://builtjapan.com/buildings/rainbow-bridge/",
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Rainbow_Bridge%2C_Tokyo%2C_Japan%2C_2004.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_Japan%2C_2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "eitaibashi",
+   "url": "https://builtjapan.com/buildings/eitaibashi/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eitaibashi2.JPG/1280px-Eitaibashi2.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "shinagawa-season-terrace",
+   "url": "https://builtjapan.com/buildings/shinagawa-season-terrace/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shinagawa_Season_Terrace_2015.jpg/1280px-Shinagawa_Season_Terrace_2015.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "nittele-tower",
+   "url": "https://builtjapan.com/buildings/nittele-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nittele_Tower_2013.jpg/1280px-Nittele_Tower_2013.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "msb-tamachi",
+   "url": "https://builtjapan.com/buildings/msb-tamachi/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Tamachi_Station_Tower_N_and_S.jpg/1280px-Tamachi_Station_Tower_N_and_S.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "shinagawa-intercity",
+   "url": "https://builtjapan.com/buildings/shinagawa-intercity/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinagawa_intercity_B%2CC.JPG/1280px-Shinagawa_intercity_B%2CC.JPG",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "kamiyacho-trust-tower",
+   "url": "https://builtjapan.com/buildings/kamiyacho-trust-tower/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2024_Tokyo_World_Gate.jpg/1280px-2024_Tokyo_World_Gate.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-portcity-takeshiba",
+   "url": "https://builtjapan.com/buildings/tokyo-portcity-takeshiba/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Portcity_Takeshiba_%28cropped%29.jpg/1280px-Portcity_Takeshiba_%28cropped%29.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "shibuya-hikarie",
+   "url": "https://builtjapan.com/buildings/shibuya-hikarie/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Shibuya_Hikarie_2.jpg/1280px-Shibuya_Hikarie_2.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-building-tokia",
+   "url": "https://builtjapan.com/buildings/tokyo-building-tokia/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tokyo_Building%2C_Marunouchi.jpg/1280px-Tokyo_Building%2C_Marunouchi.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "tokyo-square-garden",
+   "url": "https://builtjapan.com/buildings/tokyo-square-garden/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tokyo_Square_Garden.jpg/1280px-Tokyo_Square_Garden.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "kasumigaseki-building",
+   "url": "https://builtjapan.com/buildings/kasumigaseki-building/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kasumigaseki_Building.jpg/1280px-Kasumigaseki_Building.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "shinjuku-mitsui-building",
+   "url": "https://builtjapan.com/buildings/shinjuku-mitsui-building/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Shinjuku_Mitsui_Building_2009_02.jpg/1280px-Shinjuku_Mitsui_Building_2009_02.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "sunshine-60",
+   "url": "https://builtjapan.com/buildings/sunshine-60/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg",
+   "faces": 0,
+   "people": 1
+  },
+  {
+   "kind": "buildings",
+   "slug": "the-tokyo-towers",
+   "url": "https://builtjapan.com/buildings/the-tokyo-towers/",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/THE_TOKYO_TOWERS_JPN_0249.jpg",
+   "faces": 0,
+   "people": 1
+  }
+ ],
+ "errors": []
+}
