@@ -13,9 +13,6 @@ architect: "丹下健三"
 tags: ["文京区", "超高層ビル", "ホテル", "後楽園", "丹下健三"]
 publishedAt: 2026-09-07
 summary: "2000年竣工の地上43階・高さ155mの超高層ホテル。丹下健三が設計し、東京ドームシティの中心に立つ。遊園地・球場と隣り合う複合都市の頂点として、後楽園の空に白い塔が聳える。"
-heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Tokyo_Dome_Hotel_2.jpg/1280px-Tokyo_Dome_Hotel_2.jpg"
-heroImageCredit: "Syced / CC0"
-heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Dome_Hotel_2.jpg"
 verified: true
 sources:
   - "東京ドームホテル - Wikipedia（竣工2000年・地上43階・高さ155m・設計：丹下健三・全1006室）"

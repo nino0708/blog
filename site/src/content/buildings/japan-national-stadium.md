@@ -15,9 +15,6 @@ architect: "大成建設・梓設計・隈研吾建築都市設計事務所共�
 tags: ["新宿区", "スタジアム", "東京2020", "隈研吾"]
 publishedAt: 2026-06-29
 summary: "隈研吾設計チームが手がけた2020年東京オリンピックのメインスタジアム。全国47都道府県の木材をまとった軒庇が「杜のスタジアム」のコンセプトを体現する。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Japan_National_Stadium_2024_1.jpg/1280px-Japan_National_Stadium_2024_1.jpg"
-heroImageCredit: "Akonnchiroll / CC BY 4.0"
-heroImageLink: "https://commons.wikimedia.org/wiki/File:Japan_National_Stadium_2024_1.jpg"
 verified: true
 sources: ["日本建築家協会建築年鑑2022 https://jia-award.jia.or.jp/kenchikusen/2022/best-architecture/1057/", "大成建設 国立競技場ヒストリー https://www.taisei.co.jp/kokuritsu/history.html", "nippon.com 国立競技場お披露目 https://www.nippon.com/ja/japan-topics/g00795/"]
 ---

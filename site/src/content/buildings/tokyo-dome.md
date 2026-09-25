@@ -1,8 +1,5 @@
 ---
 title: "東京ドーム"
-heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/TokyoDomeExteriorNight.JPG/1280px-TokyoDomeExteriorNight.JPG"
-heroImageCredit: "ClarkSui / CC BY-SA 3.0"
-heroImageLink: "https://commons.wikimedia.org/wiki/File:TokyoDomeExteriorNight.JPG"
 buildingType: office
 area: "文京区"
 address: "東京都文京区後楽1-3-61"
