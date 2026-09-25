@@ -6,6 +6,7 @@
 (Node版 commons.mjs からの移植)
 """
 import json
+import os
 import re
 import urllib.parse
 import urllib.request
@@ -233,6 +234,28 @@ def _leads_with_subject(norm_title, name_tokens):
     return True
 
 
+# 手動の除外リスト(人の顔が写り込んだ写真など)。backfill_images.py / repair_images.py が共通で使う。
+_BLOCK_JSON = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "hero-image-block.json")
+
+
+def _load_block():
+    try:
+        with open(_BLOCK_JSON, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def is_blocked_slug(slug):
+    """自動で写真を付けてはいけない記事か。"""
+    return slug in (_load_block().get("slugs") or {})
+
+
+def blocked_file_titles():
+    """どの記事にも使わない Commons ファイル名(正規化済み: 小文字・拡張子なし・空白区切り)。"""
+    return {k.replace("_", " ").lower() for k in (_load_block().get("files") or {})}
+
+
 def fetch_commons_image(building, used_titles=None, subject="building"):
     """building: dict({title, title_en}) または建物名の文字列(後方互換)。
     used_titles: すでに使用済みの正規化ファイルタイトルの set(重複回避)。
@@ -242,7 +265,7 @@ def fetch_commons_image(building, used_titles=None, subject="building"):
     候補を集め、(1)主題でない写真を除外し、(2)説明語の少ない=全景らしい順に並べて
     最良の1枚を返す。確信できる候補が無ければ None(誤画像より「画像なし」が安全)。
     """
-    used = used_titles if isinstance(used_titles, set) else set()
+    used = (used_titles if isinstance(used_titles, set) else set()) | blocked_file_titles()
     reject = _REJECT_BY_SUBJECT.get(subject, _REJECT_BY_SUBJECT["building"])
     is_str = isinstance(building, str)
     en_name = building if is_str else building.get("title_en")
