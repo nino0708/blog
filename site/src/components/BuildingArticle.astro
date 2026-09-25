@@ -38,6 +38,11 @@ interface Props {
   nearby?: { title: string; href: string | null; area: string; distanceM: number }[];
   /** 「地図でこの周辺を見る」リンク先（/near/ に起点座標を載せたもの） */
   nearHref?: string;
+  /** パンくず(ホーム › 一覧 › エリア)。最後の要素は href 無しでもよい */
+  crumbs?: { label: string; href?: string }[];
+  /** 同じ一覧の前後の記事(新しい記事 / 古い記事) */
+  newer?: { title: string; href: string };
+  older?: { title: string; href: string };
 }
 const {
   lang, title, summary, area, buildingType, verified,
@@ -45,7 +50,7 @@ const {
   specs, tags, tagBase, sources, listPath, searchTitle, searchArea,
   related = [],
   lat, lng, mapLabel, slug,
-  nearby = [], nearHref,
+  nearby = [], nearHref, crumbs, newer, older,
 } = Astro.props;
 const t = useT(lang);
 const typeLabel = buildingTypeLabel(lang, buildingType);
@@ -64,7 +69,13 @@ const fmtDistance = (m: number) =>
 const walkMin = (m: number) => Math.max(1, Math.round(m / 80));
 const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
 ---
-<p class="breadcrumb"><a href={listPath}>{t('breadcrumb.list')}</a> ／ {area}</p>
+{crumbs
+  ? (
+    <nav class="breadcrumb" aria-label={t('breadcrumb.label')}>
+      <ol>{crumbs.map((c) => <li>{c.href ? <a href={c.href}>{c.label}</a> : <span>{c.label}</span>}</li>)}</ol>
+    </nav>
+  )
+  : <p class="breadcrumb"><a href={listPath}>{t('breadcrumb.list')}</a> ／ {area}</p>}
 <article class="article">
   <div class="taglist">
     <span class={`badge ${buildingType}`}>{typeLabel}</span>
@@ -95,6 +106,13 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
   <slot />
 
   {slug && <StampButton lang={lang} slug={slug} />}
+
+  {(newer || older) && (
+    <nav class="post-pager" aria-label={t('pager.label')}>
+      {older ? <a class="post-pager-older" href={older.href}><span>{t('pager.older')}</span><b>{older.title}</b></a> : <span></span>}
+      {newer ? <a class="post-pager-newer" href={newer.href}><span>{t('pager.newer')}</span><b>{newer.title}</b></a> : <span></span>}
+    </nav>
+  )}
 
   {related.length > 0 && (
     <nav class="related" aria-label={t('related.title')}>

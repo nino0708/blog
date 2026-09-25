@@ -24,8 +24,7 @@ export function readItems(lang: Lang): NavItem[] {
     item(lang, '/bridges/', BRIDGES.label[lang], t('nav.desc.bridges')),
     item(lang, '/expressways/', CATEGORIES.expressways.label[lang], t('nav.desc.expressways')),
     item(lang, '/railways/', CATEGORIES.railways.label[lang], t('nav.desc.railways')),
-    // 観光は日本語のみ(英語版コレクション未整備)
-    ...(lang === 'ja' ? [item(lang, '/tourism/', CATEGORIES.tourism.label.ja, t('nav.desc.tourism'))] : []),
+    item(lang, '/tourism/', CATEGORIES.tourism.label[lang], t('nav.desc.tourism')),
   ];
 }
 
@@ -35,8 +34,7 @@ export function toolItems(lang: Lang): NavItem[] {
   return [
     item(lang, '/near/', t('nav.near'), t('nav.desc.near')),
     item(lang, '/database/', t('nav.database'), t('nav.desc.database')),
-    // ランキングは日本語のみ
-    ...(lang === 'ja' ? [item(lang, '/rankings/', t('nav.rankings'), t('nav.desc.rankings'))] : []),
+    item(lang, '/rankings/', t('nav.rankings'), t('nav.desc.rankings')),
     item(lang, '/stamps/', t('nav.stamps'), t('nav.desc.stamps')),
   ];
 }

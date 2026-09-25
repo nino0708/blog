@@ -1,80 +1,123 @@
 ---
+// 関東の高層ビル ランキング(高さ・延床面積 Top5)。
+// 数値は各種公開情報に基づく値を下の表に固定で持ち、建物名・エリアは記事データ(日英)から引く。
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { langPaths } from '../../i18n/ui';
+import { langPaths, localizePath, type Lang } from '../../i18n/ui';
+import { getBuildingPosts } from '../../lib/content';
 
-// 英語版は未作成(日本語のみ生成)。
 export function getStaticPaths() {
-  return langPaths(['ja']);
+  return langPaths();
 }
 
+const { lang } = Astro.props as { lang: Lang };
+const ja = lang === 'ja';
 
-const title = '関東の高層ビル ランキング｜高さ・延床面積 Top5';
-const description =
-  '関東（東京・神奈川）の高層ビルを「高さ」と「延床面積（規模）」の2軸でランキング。麻布台ヒルズ森JPタワー、横浜ランドマークタワー、大手町プレイスなど、関東を代表する超高層建築をまとめました。';
-
-// 高さは各種公開情報(Wikipedia「日本の超高層建築物・構築物の一覧」等)に基づく。塔(東京タワー等)は除く。
-const heightRanking = [
-  { rank: 1, name: '麻布台ヒルズ 森JPタワー', meta: '高さ 325.4m', year: 2023, area: '港区', slug: 'azabudai-hills-mori-jp-tower' },
-  { rank: 2, name: '横浜ランドマークタワー', meta: '高さ 296.33m', year: 1993, area: '横浜市西区', slug: 'yokohama-landmark-tower' },
-  { rank: 3, name: '虎ノ門ヒルズ ステーションタワー', meta: '高さ 265.75m', year: 2023, area: '港区', slug: 'toranomon-hills-station-tower' },
-  { rank: 4, name: '麻布台ヒルズ レジデンスB', meta: '高さ 262.82m', year: 2025, area: '港区', slug: 'azabudai-hills-residence-b' },
-  { rank: 5, name: '東京ミッドタウン・タワー', meta: '高さ 248.1m', year: 2007, area: '港区', slug: 'tokyo-midtown-tower' },
+// 高さは Wikipedia「日本の超高層建築物・構築物の一覧」等に基づく。塔(東京タワー等)は除く。
+const HEIGHT = [
+  { slug: 'azabudai-hills-mori-jp-tower', m: 325.4, year: 2023 },
+  { slug: 'yokohama-landmark-tower', m: 296.33, year: 1993 },
+  { slug: 'toranomon-hills-station-tower', m: 265.75, year: 2023 },
+  { slug: 'azabudai-hills-residence-b', m: 262.82, year: 2025 },
+  { slug: 'tokyo-midtown-tower', m: 248.1, year: 2007 },
 ];
-
 // 延床面積は単体の超高層ビル(複合施設群=サンシャインシティ等は除く)。各種公開情報に基づく。
-const floorRanking = [
-  { rank: 1, name: '横浜ランドマークタワー', meta: '延床 392,885㎡', year: 1993, area: '横浜市西区', slug: 'yokohama-landmark-tower' },
-  { rank: 2, name: 'ザ・東京タワーズ', meta: '延床 383,340㎡', year: 2008, area: '中央区', slug: 'the-tokyo-towers' },
-  { rank: 3, name: '東京都庁第一本庁舎', meta: '延床 381,692㎡', year: 1990, area: '新宿区', slug: 'tokyo-metropolitan-government-no1' },
-  { rank: 4, name: '六本木ヒルズ 森タワー', meta: '延床 379,409㎡', year: 2003, area: '港区', slug: 'roppongi-hills-mori-tower' },
-  { rank: 5, name: '大手町プレイス', meta: '延床 354,000㎡', year: 2018, area: '千代田区', slug: 'otemachi-place' },
+const FLOOR = [
+  { slug: 'yokohama-landmark-tower', m2: 392885, year: 1993 },
+  { slug: 'the-tokyo-towers', m2: 383340, year: 2008 },
+  { slug: 'tokyo-metropolitan-government-no1', m2: 381692, year: 1990 },
+  { slug: 'roppongi-hills-mori-tower', m2: 379409, year: 2003 },
+  { slug: 'otemachi-place', m2: 354000, year: 2018 },
 ];
+
+const posts = new Map((await getBuildingPosts(lang)).map((p) => [p.slug, p]));
+const num = (n: number) => n.toLocaleString(ja ? 'ja-JP' : 'en-US');
+const row = (slug: string, meta: string, year: number) => {
+  const p = posts.get(slug);
+  return {
+    name: p?.title ?? slug,
+    area: p?.area ?? '',
+    href: p?.href ?? localizePath(lang, '/database/'),
+    line: ja ? `${meta} ・ ${year}年竣工 ・ ${p?.area ?? ''}` : `${meta} · completed ${year} · ${p?.area ?? ''}`,
+  };
+};
+const heightRanking = HEIGHT.map((r, i) => ({ rank: i + 1, ...row(r.slug, ja ? `高さ ${r.m}m` : `${r.m} m tall`, r.year) }));
+const floorRanking = FLOOR.map((r, i) => ({ rank: i + 1, ...row(r.slug, ja ? `延床 ${num(r.m2)}㎡` : `${num(r.m2)} m² floor area`, r.year) }));
+
+const copy = ja
+  ? {
+      title: '関東の高層ビル ランキング｜高さ・延床面積 Top5',
+      description:
+        '関東（東京・神奈川）の高層ビルを「高さ」と「延床面積（規模）」の2軸でランキング。麻布台ヒルズ森JPタワー、横浜ランドマークタワー、大手町プレイスなど、関東を代表する超高層建築をまとめました。',
+      h1: '関東の高層ビル ランキング',
+      crumb: 'ホーム',
+      here: 'ランキング',
+      h2Height: '高さランキング Top5',
+      h2Floor: '延床面積（規模）ランキング Top5',
+      floorLead: '建物の「大きさ」を延床面積で見たランキング。高さでは上位でなくても、規模では関東屈指の存在です。',
+      noteHeight: '※ 完成済みのビル（建築物）が対象。東京スカイツリーや東京タワー等の塔（構造物）は除く。2028年竣工予定のTorch Tower（約390m）など建設中の建物は含みません。',
+      noteFloor: '※ 単体の超高層ビルが対象（サンシャインシティ・東京ミッドタウン等の複合施設街区は除く）。延床面積は各種公開情報（不動産メディアのランキング、Wikipedia等）に基づく目安です。',
+      listName: '関東の高層ビル 高さランキング Top5',
+    }
+  : {
+      title: 'Tallest and Largest Buildings in Kanto | Top 5 Rankings',
+      description:
+        'The high-rises of Kanto (Tokyo and Kanagawa) ranked two ways: by height and by total floor area. Azabudai Hills Mori JP Tower, Yokohama Landmark Tower, Otemachi Place and more.',
+      h1: 'Kanto high-rise rankings',
+      crumb: 'Home',
+      here: 'Rankings',
+      h2Height: 'Top 5 by height',
+      h2Floor: 'Top 5 by total floor area',
+      floorLead: 'Ranked by size rather than height — some of these are not the tallest, but they are among the largest buildings in Kanto.',
+      noteHeight: '* Completed buildings only. Towers and structures such as Tokyo Skytree and Tokyo Tower are excluded, as are buildings under construction such as Torch Tower (approx. 390 m, due 2028).',
+      noteFloor: '* Single high-rise buildings only (multi-building complexes such as Sunshine City and Tokyo Midtown are excluded). Floor areas are approximate, based on public sources such as real-estate media rankings and Wikipedia.',
+      listName: 'Top 5 tallest buildings in Kanto',
+    };
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: '関東の高層ビル 高さランキング Top5',
+  name: copy.listName,
   itemListElement: heightRanking.map((r) => ({
     '@type': 'ListItem',
     position: r.rank,
     name: r.name,
-    url: `https://builtjapan.com/buildings/${r.slug}/`,
+    url: `https://builtjapan.com${r.href}`,
   })),
 };
 ---
-<BaseLayout title={title} description={description} lang="ja" appendSiteName={false} jsonLd={jsonLd}>
-  <p class="breadcrumb"><a href="/">ホーム</a> ／ ランキング</p>
+<BaseLayout title={copy.title} description={copy.description} lang={lang} altPath={localizePath(ja ? 'en' : 'ja', '/rankings/')} appendSiteName={false} jsonLd={jsonLd}>
+  <p class="breadcrumb"><a href={localizePath(lang, '/')}>{copy.crumb}</a> ／ {copy.here}</p>
   <article class="article">
-    <h1>関東の高層ビル ランキング</h1>
-    <p class="lead">{description}</p>
+    <h1>{copy.h1}</h1>
+    <p class="lead">{copy.description}</p>
 
-    <h2>高さランキング Top5</h2>
+    <h2>{copy.h2Height}</h2>
     <ol class="ranking-list">
       {heightRanking.map((r) => (
         <li>
           <span class="rank-no">{r.rank}</span>
           <div class="rank-body">
-            <a class="rank-name" href={`/buildings/${r.slug}/`}>{r.name}</a>
-            <span class="rank-meta">{r.meta} ・ {r.year}年竣工 ・ {r.area}</span>
+            <a class="rank-name" href={r.href}>{r.name}</a>
+            <span class="rank-meta">{r.line}</span>
           </div>
         </li>
       ))}
     </ol>
-    <p class="rank-note">※ 完成済みのビル（建築物）が対象。東京スカイツリーや東京タワー等の塔（構造物）は除く。2028年竣工予定のTorch Tower（約390m）など建設中の建物は含みません。</p>
+    <p class="rank-note">{copy.noteHeight}</p>
 
-    <h2 style="margin-top:40px">延床面積（規模）ランキング Top5</h2>
-    <p class="lead">建物の「大きさ」を延床面積で見たランキング。高さでは上位でなくても、規模では関東屈指の存在です。</p>
+    <h2 style="margin-top:40px">{copy.h2Floor}</h2>
+    <p class="lead">{copy.floorLead}</p>
     <ol class="ranking-list">
       {floorRanking.map((r) => (
         <li>
           <span class="rank-no">{r.rank}</span>
           <div class="rank-body">
-            <a class="rank-name" href={`/buildings/${r.slug}/`}>{r.name}</a>
-            <span class="rank-meta">{r.meta} ・ {r.year}年竣工 ・ {r.area}</span>
+            <a class="rank-name" href={r.href}>{r.name}</a>
+            <span class="rank-meta">{r.line}</span>
           </div>
         </li>
       ))}
     </ol>
-    <p class="rank-note">※ 単体の超高層ビルが対象（サンシャインシティ・東京ミッドタウン等の複合施設街区は除く）。延床面積は各種公開情報（不動産メディアのランキング、Wikipedia等）に基づく目安です。</p>
+    <p class="rank-note">{copy.noteFloor}</p>
   </article>
 </BaseLayout>

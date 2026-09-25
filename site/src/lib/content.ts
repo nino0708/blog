@@ -202,9 +202,8 @@ export async function getCategoryListing(key: CategoryKey, lang: Lang): Promise<
   const own = await getCategoryPosts(key, lang);
   const tag = BUILDING_TAG_BY_CATEGORY[key];
   // 合流の判定は日本語版のタグ(= facts.tags)で行う。英語版のタグは翻訳なので一致しない。
-  const tagged = tag && (lang === 'ja' || CATEGORY_HAS_EN[key])
-    ? (await getBuildingPosts(lang)).filter((p) => p.facts.tags.includes(tag))
-    : [];
+  // 本体のコレクションに英語版が無いカテゴリ(観光)でも、英語版のある建物は英語の一覧に出す。
+  const tagged = tag ? (await getBuildingPosts(lang)).filter((p) => p.facts.tags.includes(tag)) : [];
   return [...own, ...tagged].sort(newestFirst);
 }
 

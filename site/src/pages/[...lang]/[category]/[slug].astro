@@ -24,7 +24,12 @@ export async function getStaticPaths() {
           .sort((a, b) => b.score - a.score)
           .slice(0, 4)
           .map(({ p }) => ({ title: p.title, area: p.area ?? '', href: p.href }));
-        paths.push({ params: { lang: langParam(lang), category: key, slug: post.slug }, props: { lang, post, related } });
+        // 前後の記事(posts は新着順)
+        const i = posts.indexOf(post);
+        const pick = (p?: CategoryPost) => (p ? { title: p.title, href: p.href } : undefined);
+        const newer = pick(posts[i - 1]);
+        const older = pick(posts[i + 1]);
+        paths.push({ params: { lang: langParam(lang), category: key, slug: post.slug }, props: { lang, post, related, newer, older } });
       }
     }
   }
@@ -35,8 +40,10 @@ interface Props {
   lang: Lang;
   post: CategoryPost;
   related: { title: string; area: string; href: string }[];
+  newer?: { title: string; href: string };
+  older?: { title: string; href: string };
 }
-const { lang, post, related } = Astro.props;
+const { lang, post, related, newer, older } = Astro.props;
 const key = post.kind;
 const meta = CATEGORIES[key];
 const label = meta.label[lang];
@@ -111,6 +118,8 @@ const seoTitle = ja ? `${post.title}｜${post.area ? `${post.area}の` : ''}${la
     related={related}
     booksKeyword={meta.booksKeyword}
     mapLabel={ja ? undefined : f.title}
+    newer={newer}
+    older={older}
   >
     <Content />
   </CategoryArticle>

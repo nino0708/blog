@@ -483,9 +483,32 @@ html.drawer-open { overflow: hidden; }
   border-radius: 12px;
 }
 .spec dt { font-size: 0.8rem; color: var(--text-muted); }
+@media (max-width: 560px) {
+  /* スマホは2列に詰めて、本文が早く始まるようにする */
+  .spec { grid-template-columns: 1fr 1fr; gap: 10px 14px; padding: 14px; margin: 18px 0; }
+  .spec dd { font-size: 0.92rem; }
+}
 .spec dd { margin: 2px 0 0; font-weight: 700; }
 
 .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin: 24px 0 0; }
+.breadcrumb ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+.breadcrumb li + li::before { content: "›"; margin: 0 6px 0 2px; color: var(--text-muted); }
+
+/* 記事末の前後の記事 */
+.post-pager { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 32px 0 8px; }
+.post-pager a {
+  display: grid; gap: 4px; padding: 14px 16px; border-radius: 12px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--text); text-decoration: none;
+}
+.post-pager a:hover { border-color: var(--text); text-decoration: none; }
+.post-pager span { font-size: 0.78rem; font-weight: 700; color: var(--text-muted); }
+.post-pager b { font-size: 0.95rem; line-height: 1.5; }
+.post-pager-newer { text-align: right; }
+@media (max-width: 560px) {
+  .post-pager { grid-template-columns: 1fr; }
+  .post-pager-newer { text-align: left; }
+  .post-pager > span:empty { display: none; }
+}
 
 /* ---- affiliate ---- */
 .affiliate {
