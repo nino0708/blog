@@ -1,7 +1,31 @@
 {
   "_comment": "自動の写真補完(backfill_images.py / repair_images.py)で使わない記事と写真。人の顔が写り込んだ写真などを止めるための手動リスト。slugs に入れた記事は自動で写真を付けない(写真なしの表示になる)。files に入れた Commons のファイル名(File: の後ろ、拡張子なし、空白区切り)はどの記事にも使わない。",
   "slugs": {
-    "iidabashi-grand-bloom": "2026-09-26: 自動で選ばれた写真に通行人の顔が写っていたため。人の写らない外観写真を手動で選ぶまで写真なし"
+    "iidabashi-grand-bloom": "2026-09-26: 自動で選ばれた写真に通行人の顔が写っていたため。人の写らない外観写真を手動で選ぶまで写真なし",
+    "osaki-thinkpark-tower": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "land-axis-tower-saitama": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "ueno-station": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "tokyo-dome-hotel": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "japan-national-stadium": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "tokyo-dome": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "shibuya-sakura-stage": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "takanawa-gateway": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "ochanomizu-hijiribashi": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "haneda-airport-access-line": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし",
+    "harumi-flag-sky-duo": "2026-09-26: 通行人・利用者の顔や姿がはっきり写っていたため(写り込みチェック reports/people-check-latest.md で確認)。人の写らない外観写真を手動で選ぶまで写真なし"
   },
-  "files": {}
+  "files": {
+    "Osaki Think Park Tower - panoramio": "2026-09-26: 人の顔・姿が写っている",
+    "Meiji Yasuda LA-Saitama Shintoshin-2005-9-11": "2026-09-26: 人の顔・姿が写っている",
+    "Ueno Station 20150410 132749": "2026-09-26: 人の顔・姿が写っている",
+    "Tokyo Dome Hotel 2": "2026-09-26: 人の顔・姿が写っている",
+    "Japan National Stadium 2024 1": "2026-09-26: 人の顔・姿が写っている",
+    "TokyoDomeExteriorNight": "2026-09-26: 人の顔・姿が写っている",
+    "Shibuya Sakura Stage 2": "2026-09-26: 人の顔・姿が写っている",
+    "Takanawa Gateway Station 200316a1": "2026-09-26: 人の顔・姿が写っている",
+    "JRE-Chuo-Line-Ochanomizu-Sta-Hijiribashi 2025": "2026-09-26: 人の顔・姿が写っている",
+    "Haneda Airport Access Line construction site near Tamachi Station 20240311": "2026-09-26: 人の顔・姿が写っている",
+    "HARUMI FLAG SKY DUO": "2026-09-26: 人の顔・姿が写っている",
+    "Iidabashi Grand Bloom 2019a": "2026-09-26: 人の顔・姿が写っている"
+  }
 }

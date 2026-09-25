@@ -15,9 +15,6 @@ summary: "愛称「ランド・アクシス・タワー」。2002年3月竣工�
 verified: true
 sources:
   - "Wikipedia「明治安田生命さいたま新都心ビル」（竣工2002年3月・地上35階塔屋2階地下3階・168.3m・さいたま市中央区新都心11-2・設計：日建設計・事業者：明治安田生命保険）"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg/1280px-Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg"
-heroImageCredit: "Syohei Arai (Araisyohei) / CC BY-SA 3.0"
-heroImageLink: "https://commons.wikimedia.org/wiki/File:Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg"
 ---
 
 ## さいたま新都心に立つランドマーク
