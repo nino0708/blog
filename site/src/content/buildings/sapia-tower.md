@@ -37,6 +37,6 @@ sources:
 
 サピアタワーは2007年竣工の地上35階・高さ約166m・延床約81,700㎡のビルで、JR東日本が主導した「東京ステーションシティ」計画の先陣を切って東京駅日本橋口に誕生した。オフィス・コンファレンス・ホテルを一棟に積む設計は、鉄道会社が駅まちづくりを自ら手がける先行例として今も参照される。東京駅丸の内口の赤レンガ駅舎まではわずか数百mの距離にあり、新旧が交差する東京の玄関口をゆっくり歩くと、この街の重層的な時間の流れに改めて気づかされる。
 
-関連記事：[東京駅丸の内駅舎](/buildings/tokyo-station-marunouchi/) ／ [東京ビルディング（TOKIA）](/buildings/tokyo-building-tokia/) ／ [グラントウキョウ ノースタワー／サウスタワー](/buildings/gran-tokyo-towers/)
+関連記事：[東京駅丸の内駅舎](/railways/tokyo-station-marunouchi/) ／ [東京ビルディング（TOKIA）](/buildings/tokyo-building-tokia/) ／ [グラントウキョウ ノースタワー／サウスタワー](/buildings/gran-tokyo-towers/)
 
 東京駅周辺のホテルをお探しなら[楽天トラベル](https://travel.rakuten.co.jp/)もどうぞ。

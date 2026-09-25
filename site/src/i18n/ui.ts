@@ -449,3 +449,18 @@ export function buildCardMeta(lang: Lang, d: { area: string; completedYear?: num
   ].filter(Boolean);
   return bits.join(lang === 'ja' ? ' ・ ' : ' · ');
 }
+
+// ---- 日英を1ファイルで生成するページ用のルーティング補助 ----
+// ページは src/pages/[...lang]/ 配下に置き、getStaticPaths で lang ごとにパスを作る。
+// 日本語は lang パラメータ無し(= ルート)、英語は 'en'(= /en/ 配下)。
+
+/** getStaticPaths の lang パラメータ値。日本語は undefined(ルート)。 */
+export const langParam = (lang: Lang): string | undefined => (lang === 'en' ? 'en' : undefined);
+
+/** Astro.params.lang から言語を得る。 */
+export const langFromParam = (p: string | undefined): Lang => (p === 'en' ? 'en' : 'ja');
+
+/** 追加パラメータの無いページの getStaticPaths。only で片方の言語だけにできる。 */
+export function langPaths(only: readonly Lang[] = languages) {
+  return only.map((lang) => ({ params: { lang: langParam(lang) }, props: { lang } }));
+}

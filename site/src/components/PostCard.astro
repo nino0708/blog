@@ -1,21 +1,29 @@
 ---
 // カテゴリ横断の「新着」カード。建物カード(BuildingCard)と同じ .card の見た目のまま、
 // バッジをカテゴリ名にできる・建物固有の数値(竣工年/高さ)が無くても成立する点だけが違う。
-import { useT, buildCardMeta, type Lang } from '../i18n/ui';
-import type { LatestPost } from '../lib/latest';
+import { useT, buildCardMeta, buildingTypeLabel, type Lang } from '../i18n/ui';
+import { CATEGORIES } from '../lib/category';
+import type { AnyPost } from '../lib/content';
 
 interface Props {
   lang: Lang;
-  post: LatestPost;
+  post: AnyPost;
   priority?: boolean;
 }
 const { lang, post, priority = false } = Astro.props;
 const t = useT(lang);
-const meta = post.buildingType
+// バッジ: 建物は用途(オフィス/マンション)、それ以外はカテゴリ名。
+const isBuilding = post.kind === 'building';
+const badge = isBuilding
+  ? buildingTypeLabel(lang, post.facts.buildingType, true)
+  : CATEGORIES[post.kind].label[lang];
+const badgeClass = isBuilding ? post.facts.buildingType : 'category';
+const heightM = isBuilding ? post.facts.heightM : undefined;
+const meta = isBuilding
   ? buildCardMeta(lang, {
       area: post.area ?? '',
-      completedYear: post.completedYear,
-      heightM: post.heightM,
+      completedYear: post.facts.completedYear,
+      heightM,
     })
   : (post.area ?? '');
 ---
@@ -25,14 +33,14 @@ const meta = post.buildingType
       ? <div class="thumb thumb-img"><img src={post.heroImage} alt={post.title} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} /></div>
       : (
         <div class="thumb thumb-fallback">
-          <span class="thumb-type">{post.badge}</span>
+          <span class="thumb-type">{badge}</span>
           {post.area && <span class="thumb-area">{post.area}</span>}
-          {post.heightM && <span class="thumb-height">{post.heightM}m</span>}
+          {heightM && <span class="thumb-height">{heightM}m</span>}
         </div>
       )}
     <div class="body">
       <div class="taglist">
-        <span class={`badge ${post.badgeClass}`}>{post.badge}</span>
+        <span class={`badge ${badgeClass}`}>{badge}</span>
         {!post.verified && <span class="badge unverified">{t('badge.unverified.short')}</span>}
       </div>
       <h3>{post.title}</h3>

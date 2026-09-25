@@ -1,0 +1,95 @@
+---
+// 記事一覧ページ(1ページ目・2ページ目以降)の本体。どの一覧も src/lib/lists.ts の定義から描く。
+// 1ページ目: 全件を出力し、エリア絞り込み(JS)用に先頭 PER_PAGE 件以降は隠しておく。
+// 2ページ目以降: そのページの分だけを出力する。
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BuildingCard from './BuildingCard.astro';
+import CategoryView from './CategoryView.astro';
+import Pager from './Pager.astro';
+import AreaFilter from './AreaFilter.astro';
+import { useT, localizePath, type Lang } from '../i18n/ui';
+import { buildAreaFacets } from '../lib/area';
+import { PER_PAGE, type AnyPost } from '../lib/content';
+import { listPath, type ListDef } from '../lib/lists';
+
+interface Props {
+  list: ListDef;
+  lang: Lang;
+  page: number;
+  totalPages: number;
+  /** この一覧の全記事(新着順) */
+  posts: AnyPost[];
+}
+const { list, lang, page, totalPages, posts: all } = Astro.props;
+const t = useT(lang);
+const label = list.label(lang);
+const description = list.description(lang);
+const basePath = listPath(lang, list.key);
+const other: Lang = lang === 'ja' ? 'en' : 'ja';
+const altPath = page === 1 && list.langs.includes(other) ? listPath(other, list.key) : null;
+
+const first = page === 1;
+const posts = first ? all : all.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+const areaFacets = first ? buildAreaFacets(all.map((p) => p.areas), lang) : undefined;
+
+const pageSuffix = lang === 'ja' ? `（${page}ページ目）` : list.view === 'building' ? ` (Page ${page})` : ` (page ${page})`;
+const title = first
+  ? list.view === 'building' ? label : `${label}${lang === 'ja' ? '｜関東のインフラ' : ' | Infrastructure in Kanto'}`
+  : `${label}${pageSuffix}`;
+---
+<BaseLayout
+  title={title}
+  description={list.view === 'building' && !first ? undefined : description}
+  lang={lang}
+  altPath={altPath}
+  appendSiteName={list.view === 'building'}
+>
+  {list.view === 'category' ? (
+    <CategoryView
+      lang={lang}
+      title={label}
+      description={description}
+      posts={posts.map((p) => ({ slug: p.slug, data: { title: p.title, summary: p.summary, area: p.area }, heroImage: p.heroImage, href: p.href, areas: p.areas }))}
+      areaFacets={areaFacets}
+      perPage={PER_PAGE}
+      basePath={basePath}
+      current={page}
+      totalPages={totalPages}
+    />
+  ) : (
+    <>
+      <div class="section-head section-head-sub" data-reveal>
+        {first
+          ? <p class="crumb"><a href={localizePath(lang, '/')}>{t('breadcrumb.home')}</a></p>
+          : <p class="crumb"><a href={basePath}>{label}</a></p>}
+        <h1>{label}</h1>
+        <p>{first ? description : lang === 'ja' ? `${page} / ${totalPages} ページ` : `Page ${page} / ${totalPages}`}</p>
+      </div>
+
+      {first && <AreaFilter lang={lang} facets={areaFacets!} total={all.length} perPage={PER_PAGE} />}
+
+      <section class="grid grid-2">
+        {posts.map((p, i) => p.kind === 'building' && (
+          <BuildingCard
+            lang={lang}
+            url={p.href}
+            title={p.title}
+            buildingType={p.facts.buildingType}
+            area={p.area}
+            completedYear={p.facts.completedYear}
+            heightM={p.facts.heightM}
+            summary={p.summary}
+            verified={p.verified}
+            heroImage={p.heroImage}
+            areas={first ? p.areas : undefined}
+            areaExtra={first && i >= PER_PAGE}
+          />
+        ))}
+      </section>
+
+      {first
+        ? <div data-area-pager><Pager current={1} total={totalPages} basePath={basePath} lang={lang} /></div>
+        : <Pager current={page} total={totalPages} basePath={basePath} lang={lang} />}
+    </>
+  )}
+</BaseLayout>

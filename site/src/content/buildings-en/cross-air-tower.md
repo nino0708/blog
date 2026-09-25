@@ -25,6 +25,6 @@ Cross Air Tower was completed in 2013, with 42 floors above ground and 2 below, 
 
 From Ikejiri-Ohashi Station, a short uphill walk brings you to one of the most unusual urban landscapes in the city.
 
-Related: [Ohashi Junction](/buildings/ohashi-junction/) / [Nakameguro Atlas Tower](/buildings/nakameguro-atlas-tower/)
+Related: [Ohashi Junction](/expressways/ohashi-junction/) / [Nakameguro Atlas Tower](/buildings/nakameguro-atlas-tower/)
 
 Looking for a hotel in Meguro or Daikanyama? Browse options on [Rakuten Travel](https://travel.rakuten.co.jp/).

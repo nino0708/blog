@@ -1,0 +1,117 @@
+---
+// 拡張カテゴリ(高速道路・交通網・観光)の記事詳細。3カテゴリ×日英を1ファイルで賄う。
+// パスは getStaticPaths が返した組み合わせのみ生成されるため、/tags/ など他の動的ルートを食うことはない。
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CategoryArticle from '../../../components/CategoryArticle.astro';
+import { langParam, languages, localizePath, type Lang } from '../../../i18n/ui';
+import { CATEGORIES } from '../../../lib/category';
+import { CATEGORY_HAS_EN, getBuildingPosts, getCategoryPosts, type CategoryKey, type CategoryPost } from '../../../lib/content';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of languages) {
+    for (const key of Object.keys(CATEGORY_HAS_EN) as CategoryKey[]) {
+      const posts = await getCategoryPosts(key, lang);
+      for (const post of posts) {
+        // 同カテゴリの関連記事: 同エリア優先、次に公開日が近い順。最大4件。
+        const related = posts
+          .filter((p) => p.slug !== post.slug)
+          .map((p) => {
+            const sameArea = p.facts.area && p.facts.area === post.facts.area ? 1000 : 0;
+            const gap = Math.abs(p.publishedAt.valueOf() - post.publishedAt.valueOf()) / 86400000;
+            return { p, score: sameArea - gap };
+          })
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 4)
+          .map(({ p }) => ({ title: p.title, area: p.area ?? '', href: p.href }));
+        paths.push({ params: { lang: langParam(lang), category: key, slug: post.slug }, props: { lang, post, related } });
+      }
+    }
+  }
+  return paths;
+}
+
+interface Props {
+  lang: Lang;
+  post: CategoryPost;
+  related: { title: string; area: string; href: string }[];
+}
+const { lang, post, related } = Astro.props;
+const key = post.kind;
+const meta = CATEGORIES[key];
+const label = meta.label[lang];
+const { Content } = await post.entry.render();
+const f = post.facts; // 事実フィールド(日本語版が出典)
+const ja = lang === 'ja';
+
+const pageUrl = new URL(post.href, Astro.site ?? 'https://example.com').toString();
+const base = (Astro.site ?? new URL('https://example.com')).toString().replace(/\/$/, '');
+const metaDescription = post.summary ?? (ja ? `${post.title}（${label}）の記録。` : `${post.title} — ${label} in Tokyo.`);
+const iso = f.publishedAt.toISOString();
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: post.title,
+      description: metaDescription,
+      inLanguage: lang,
+      datePublished: iso,
+      dateModified: iso,
+      mainEntityOfPage: pageUrl,
+      ...(f.heroImage ? { image: [f.heroImage] } : {}),
+      author: { '@type': 'Organization', name: 'Built Japan', url: `${base}/` },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Built Japan',
+        logo: { '@type': 'ImageObject', url: `${base}/ogp.png` },
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: ja ? 'ホーム' : 'Home', item: `${base}${localizePath(lang, '/')}` },
+        { '@type': 'ListItem', position: 2, name: label, item: `${base}${localizePath(lang, `/${key}/`)}` },
+        { '@type': 'ListItem', position: 3, name: post.title, item: pageUrl },
+      ],
+    },
+  ],
+};
+
+// タグページは建物記事のタグからのみ生成されるため、存在するものだけリンクする。
+const linkableTags = [...new Set((await getBuildingPosts(lang)).flatMap((p) => p.tags))];
+const seoTitle = ja ? `${post.title}｜${post.area ? `${post.area}の` : ''}${label}` : `${post.title} | ${label} in Tokyo`;
+---
+<BaseLayout
+  title={seoTitle}
+  description={metaDescription}
+  lang={lang}
+  ogType="article"
+  altPath={post.altHref}
+  jsonLd={jsonLd}
+  appendSiteName={false}
+  ogImage={f.heroImage}
+>
+  <CategoryArticle
+    lang={lang}
+    title={post.title}
+    summary={post.summary}
+    area={post.area}
+    categoryLabel={label}
+    verified={f.verified}
+    heroImage={f.heroImage}
+    heroImageCredit={f.heroImageCredit}
+    heroImageLink={f.heroImageLink}
+    tags={post.tags}
+    tagBase={localizePath(lang, '/tags/')}
+    linkableTags={linkableTags}
+    sources={f.sources}
+    listPath={localizePath(lang, `/${key}/`)}
+    related={related}
+    booksKeyword={meta.booksKeyword}
+    mapLabel={ja ? undefined : f.title}
+  >
+    <Content />
+  </CategoryArticle>
+</BaseLayout>

@@ -1,0 +1,14 @@
+---
+// 記事一覧の1ページ目(/buildings/ /bridges/ /expressways/ /railways/ /tourism/ と英語版)。
+// 一覧の定義は src/lib/lists.ts。
+import ListView from '../../../components/ListView.astro';
+import { langParam } from '../../../i18n/ui';
+import { listPages } from '../../../lib/lists';
+
+export async function getStaticPaths() {
+  return (await listPages())
+    .filter((p) => p.page === 1)
+    .map((p) => ({ params: { lang: langParam(p.lang), list: p.list.key }, props: p }));
+}
+---
+<ListView {...Astro.props} />

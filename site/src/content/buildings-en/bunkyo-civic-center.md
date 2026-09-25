@@ -23,6 +23,6 @@ That a city hall would include an open, free viewing floor reflects a particular
 
 The Bunkyo Civic Center was completed in 1994 with 28 floors above ground and a height of 142 meters. Designed by Nikken Sekkei as a concentrated public-works tower for Bunkyo City, it remains one of the most visitor-friendly high-rises in Tokyo: the 25th-floor observation lounge is free, open to anyone, and delivers a panorama of the city that many paid observatories cannot match. Walk from Kasuga or Korakuen station along the wide avenue, look up at the clean grid of the facade, then ride the elevator to 25 and take in the view that thousands of Tokyoites use every week.
 
-Related: [Tokyo Dome City](/buildings/tokyo-dome-city/) / [JA Building Otemachi](/buildings/ja-building-otemachi/)
+Related: [JA Building Otemachi](/buildings/ja-building-otemachi/)
 
 Visiting Bunkyo? [Rakuten Travel](https://travel.rakuten.co.jp/) has hotels near Korakuen and the Civic Center.

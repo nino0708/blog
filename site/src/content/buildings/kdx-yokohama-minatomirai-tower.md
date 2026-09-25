@@ -39,6 +39,6 @@ KDX横浜みなとみらいタワーは1994年竣工、地上33階・地下2階�
 
 みなとみらいを歩く際には、ランドマークタワーの隣に立つこのタワーが製造業の記憶を宿す一棟であることを思い出してほしい。
 
-関連記事：[横浜ランドマークタワー](/buildings/yokohama-landmark-tower/) ／ [横浜ベイブリッジ](/buildings/yokohama-bay-bridge/)
+関連記事：[横浜ランドマークタワー](/buildings/yokohama-landmark-tower/) ／ [横浜ベイブリッジ](/expressways/yokohama-bay-bridge/)
 
 みなとみらい・横浜周辺のホテルをお探しなら[楽天トラベル](https://travel.rakuten.co.jp/)もどうぞ。

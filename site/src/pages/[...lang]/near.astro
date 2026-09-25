@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NearView from '../../components/NearView.astro';
+import { langPaths, localizePath, type Lang } from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const { lang } = Astro.props as { lang: Lang };
+
+const copy = {
+  ja: {
+    title: '周辺の建物をさがす｜好きな場所から建物巡り',
+    description:
+      '自宅・駅・好きな場所を入れると、その周りにある東京の高層建築を近い順に並べて地図に表示します。徒歩の目安つきで、そのまま建物巡りのルートを組み立てられます。',
+    crumb: ['記事一覧', '建物マップ'],
+  },
+  en: {
+    title: 'Find buildings near a place | Built Japan',
+    description:
+      'Enter your home, a station or any place in Tokyo and see the high-rise buildings around it, sorted by distance and plotted on a map — with walking estimates, so you can plan a day of building-spotting.',
+    crumb: ['Articles', 'Building map'],
+  },
+}[lang];
+---
+<BaseLayout title={copy.title} description={copy.description} lang={lang} altPath={localizePath(lang === 'ja' ? 'en' : 'ja', '/near/')} appendSiteName={false}>
+  <p class="breadcrumb"><a href={localizePath(lang, '/')}>{copy.crumb[0]}</a> ／ {copy.crumb[1]}</p>
+  <NearView lang={lang} />
+</BaseLayout>
