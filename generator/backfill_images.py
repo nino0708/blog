@@ -24,7 +24,7 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
-from commons import fetch_commons_image  # noqa: E402
+from commons import fetch_commons_image, is_blocked_slug  # noqa: E402
 
 CONTENT_ROOT = os.path.join(BASE_DIR, "..", "site", "src", "content")
 CONTENT_JA = os.path.join(CONTENT_ROOT, "buildings")
@@ -106,6 +106,10 @@ def _backfill_collection(ja_dir, en_dir, subject, used):
         if re.search(r"^heroImage:", fm, re.M):
             continue  # 既に画像あり(手動含む)→ 触らない
         slug = fn[:-3]
+        if is_blocked_slug(slug):
+            print(f"backfill[{ja_dir}]: 除外リスト(data/hero-image-block.json)の記事のため見送り: {slug}")
+            skipped += 1
+            continue
         ja = _field(fm, "title")
         en = _en_title(en_dir, slug)
         if not en:

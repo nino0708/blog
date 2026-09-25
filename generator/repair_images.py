@@ -25,7 +25,7 @@ import urllib.request
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
-from commons import fetch_commons_image  # noqa: E402
+from commons import fetch_commons_image, is_blocked_slug  # noqa: E402
 
 ROOT = os.path.join(BASE_DIR, "..")
 CONTENT_JA = os.path.join(ROOT, "site", "src", "content", "buildings")
@@ -199,6 +199,10 @@ def main():
     fixed, gave_up, skipped = [], [], []
     for slug, t in sorted(targets.items()):
         rec = state.get(slug, {"attempts": 0})
+        # 除外リストの記事は、人が写真を選ぶまで自動では直さない(写真なしが正しい状態)
+        if is_blocked_slug(slug):
+            skipped.append(slug)
+            continue
         if rec.get("gaveUp"):
             skipped.append(slug)
             continue
