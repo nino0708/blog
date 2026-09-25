@@ -123,5 +123,30 @@
     "slug": "akasaka-k-tower",
     "postedAt": "2026-09-25",
     "type": "quiz"
+  },
+  {
+    "slug": "akihabara-udx",
+    "postedAt": "2026-09-25",
+    "type": "intro"
+  },
+  {
+    "slug": "ark-hills-sengokuyama-mori-tower",
+    "postedAt": "2026-09-25",
+    "type": "intro"
+  },
+  {
+    "slug": "atago-green-hills-mori-tower",
+    "postedAt": "2026-09-25",
+    "type": "intro"
+  },
+  {
+    "slug": "breeze-tower",
+    "postedAt": "2026-09-25",
+    "type": "intro"
+  },
+  {
+    "slug": "crystal-tower-osaka",
+    "postedAt": "2026-09-25",
+    "type": "quiz"
   }
 ]
