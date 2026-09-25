@@ -209,6 +209,12 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
     }
 
     search.addEventListener('input', apply);
+    // サイト内検索から ?q=建物名 で来たら、その語で絞り込んだ状態で開く
+    const initialQ = new URLSearchParams(location.search).get('q');
+    if (initialQ) {
+      search.value = initialQ;
+      apply();
+    }
     if (citySel) {
       citySel.addEventListener('change', () => {
         activeCity = citySel.value;

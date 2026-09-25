@@ -32,9 +32,9 @@ phases:
   post_build:
     commands:
       # HTML 以外（ハッシュ付きアセット）は長期キャッシュ
-      - aws s3 sync ./dist "s3://$SITE_BUCKET" --delete --exclude "*.html" --exclude "*.xml" --cache-control "public,max-age=31536000,immutable"
-      # HTML / XML は短めのキャッシュ
-      - aws s3 sync ./dist "s3://$SITE_BUCKET" --delete --exclude "*" --include "*.html" --include "*.xml" --include "*.txt" --cache-control "public,max-age=300"
+      - aws s3 sync ./dist "s3://$SITE_BUCKET" --delete --exclude "*.html" --exclude "*.xml" --exclude "*.json" --cache-control "public,max-age=31536000,immutable"
+      # HTML / XML / JSON(検索インデックス。記事が増えるたびに中身が変わる) は短めのキャッシュ
+      - aws s3 sync ./dist "s3://$SITE_BUCKET" --delete --exclude "*" --include "*.html" --include "*.xml" --include "*.txt" --include "*.json" --cache-control "public,max-age=300"
       - aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --paths "/*"
 
 artifacts:

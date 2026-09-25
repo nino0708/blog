@@ -1,6 +1,7 @@
 ---
 import { useT, localizePath, type Lang } from '../i18n/ui';
 import { BRIDGES, CATEGORIES } from '../lib/category';
+import SearchBox from './SearchBox.astro';
 
 interface Props {
   lang: Lang;
@@ -27,6 +28,7 @@ const isCurrent = (href: string) => (href === home ? path === href : path.starts
       </svg>
       <span class="brand-text">Built <span>Japan</span></span>
     </a>
+    <SearchBox lang={lang} class="header-search" />
     <nav class="nav">
       {/* 読むもの: 新着とカテゴリ別の記事一覧 */}
       <a href={home} aria-current={isCurrent(home) ? 'page' : undefined}>{t('nav.latest')}</a>
