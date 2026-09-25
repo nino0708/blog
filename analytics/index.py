@@ -34,9 +34,57 @@ cfg = {
 _BOT_RE = re.compile(
     r"bot|crawl|spider|slurp|bing|google|yandex|baidu|duckduck|facebookexternal|"
     r"headless|curl|wget|python-|libwww|httpclient|monitor|uptime|ahrefs|semrush|"
-    r"pingdom|datadog|lighthouse|preview|fetch",
+    r"pingdom|datadog|lighthouse|preview|fetch|"
+    r"gptbot|chatgpt-user|oai-search|perplexity|claude|anthropic|ccbot|amazonbot|meta-external",
     re.I,
 )
+# ボットの内訳。上から順に最初に一致したものを採用する(具体的なものを先に)。
+# 区分: 検索=検索順位・流入に直結 / AI検索=ChatGPT等の回答から送客しうる /
+#       AI学習=学習データ収集で送客なし / SEO=他社SEOツール / SNS=リンクプレビュー / その他
+# ※UAは偽装できる。Googlebotを名乗る偽物も混じるため、厳密には逆引きDNS確認が必要。
+_BOT_TABLE = [
+    ("OAI-SearchBot", "AI検索", r"OAI-SearchBot"),
+    ("ChatGPT-User", "AI検索", r"ChatGPT-User"),
+    ("PerplexityBot", "AI検索", r"Perplexity"),
+    ("Claude-SearchBot", "AI検索", r"Claude-SearchBot|Claude-User"),
+    ("GPTBot", "AI学習", r"GPTBot"),
+    ("ClaudeBot", "AI学習", r"ClaudeBot|anthropic-ai"),
+    ("Bytespider", "AI学習", r"Bytespider"),
+    ("CCBot", "AI学習", r"CCBot"),
+    ("Amazonbot", "AI学習", r"Amazonbot"),
+    ("Meta-ExternalAgent", "AI学習", r"meta-external"),
+    ("Applebot", "検索", r"Applebot"),
+    ("Google-Other", "AI学習", r"GoogleOther|Google-Extended|Google-CloudVertexBot"),
+    ("Googlebot", "検索", r"Googlebot|Google-InspectionTool|AdsBot-Google|Mediapartners-Google"),
+    ("Bingbot", "検索", r"bingbot|BingPreview|adidxbot|msnbot"),
+    ("YandexBot", "検索", r"Yandex"),
+    ("Baiduspider", "検索", r"Baiduspider"),
+    ("DuckDuckBot", "検索", r"DuckDuck"),
+    ("Yahoo", "検索", r"Slurp|Y!J"),
+    ("Naver", "検索", r"Yeti|Naver"),
+    ("PetalBot", "検索", r"PetalBot"),
+    ("AhrefsBot", "SEO", r"Ahrefs"),
+    ("SemrushBot", "SEO", r"Semrush"),
+    ("MJ12bot", "SEO", r"MJ12bot"),
+    ("DotBot", "SEO", r"DotBot"),
+    ("DataForSeoBot", "SEO", r"DataForSeo"),
+    ("BLEXBot", "SEO", r"BLEXBot"),
+    ("SNSプレビュー", "SNS", r"facebookexternal|Twitterbot|Slackbot|Discordbot|LinkedInBot|line-poker|Line/"),
+]
+_BOT_TABLE = [(n, c, re.compile(p, re.I)) for n, c, p in _BOT_TABLE]
+_BOT_CATEGORIES = ["検索", "AI検索", "AI学習", "SEO", "SNS", "その他"]
+
+
+def _classify_bot(ua):
+    """ボットUAを (名前, 区分) に分類する。表に無いものは (その他, その他)。"""
+    if ua in ("-", ""):
+        return "UAなし", "その他"
+    for name, cat, pat in _BOT_TABLE:
+        if pat.search(ua):
+            return name, cat
+    return "その他", "その他"
+
+
 # 集計から外す静的アセット。
 _ASSET_RE = re.compile(r"\.(css|js|svg|png|jpe?g|webp|gif|ico|woff2?|ttf|map|xml|txt|json)$", re.I)
 
@@ -79,6 +127,11 @@ def _aggregate(s3, keys):
     page_hits = 0          # HTMLページの200だけ(人間)
     bot_hits = 0
     ips = set()
+    ref_hits = 0           # 外部リファラ付きの人間PV(確実な読者)
+    ref_ips = set()
+    bot_names = Counter()  # ボット名別のページ取得数
+    bot_cats = Counter()   # 区分別のページ取得数
+    bot_bytes = Counter()  # 区分別の転送量(画像等も含む全リクエスト)
     pages = Counter()
     referrers = Counter()
     lang = Counter()       # ja / en
@@ -112,12 +165,20 @@ def _aggregate(s3, keys):
             date = row.get("date", "")
 
             is_bot = bool(_BOT_RE.search(ua)) or ua in ("-", "")
+            if is_bot:
+                bot_name, bot_cat = _classify_bot(ua)
+                try:
+                    bot_bytes[bot_cat] += int(row.get("sc-bytes", "0"))
+                except ValueError:
+                    pass
             # ページ判定: 静的アセットを除外し、ディレクトリ的URL(末尾/ または拡張子なし)
             is_page = not _ASSET_RE.search(uri) and (uri.endswith("/") or "." not in uri.rsplit("/", 1)[-1])
 
             if is_page and status == "200":
                 if is_bot:
                     bot_hits += 1
+                    bot_names[bot_name] += 1
+                    bot_cats[bot_cat] += 1
                 else:
                     page_hits += 1
                     if ip:
@@ -129,12 +190,20 @@ def _aggregate(s3, keys):
                         host = re.sub(r"^https?://", "", ref).split("/")[0]
                         if cfg["site_host"] not in host:  # 自サイト内遷移は除外
                             referrers[host] += 1
+                            ref_hits += 1
+                            if ip:
+                                ref_ips.add(ip)
 
     return {
         "requests_total": requests_total,
         "page_hits": page_hits,
         "bot_hits": bot_hits,
         "unique_ips": len(ips),
+        "ref_hits": ref_hits,
+        "ref_visitors": len(ref_ips),
+        "bot_names": bot_names.most_common(15),
+        "bot_cats": dict(bot_cats),
+        "bot_bytes": dict(bot_bytes),
         "pages": pages.most_common(10),
         "referrers": referrers.most_common(10),
         "lang": dict(lang),
@@ -152,13 +221,33 @@ def _render(a, start, end):
         L.append("ログが蓄積される翌週以降に数値が出ます。")
         return "\n".join(L) + "\n"
     L.append("## サマリ")
-    L.append(f"- 推定訪問（ユニークIP・人間UA）: **{a['unique_ips']}**")
-    L.append(f"- ページビュー（人間・HTML 200）: **{a['page_hits']}**")
+    L.append(f"- ✅ 確実な人間PV（外部リファラ付き）: **{a['ref_hits']}**（うち訪問者 {a['ref_visitors']}）")
+    L.append("  - ← 検索/SNS/被リンク等から来た本物の読者。事業判断はこの数字を基準に。")
+    L.append(f"- ⚠️ HTML200・非ボットUA: {a['page_hits']}（訪問IP {a['unique_ips']}）")
+    L.append("  - ← UAを偽装したスクレイパー/AIクローラが混入する**上限値**。実読者数ではない。")
     L.append(f"- ボット/クローラのページ取得: {a['bot_hits']}（Google等のクロール量の目安）")
     L.append(f"- 総リクエスト（画像等含む）: {a['requests_total']}")
     jp = a["lang"].get("ja", 0)
     en = a["lang"].get("en", 0)
     L.append(f"- 日本語 {jp} / 英語 {en} ページビュー")
+    L.append("")
+    L.append("## ボット内訳")
+    L.append("> 検索=検索流入に直結 / AI検索=AI回答から送客しうる / AI学習=送客なし・転送量だけ消費 / SEO=他社ツール")
+    L.append("")
+    L.append("| 区分 | ページ取得 | 割合 | 転送量(全リクエスト) |")
+    L.append("|---|---|---|---|")
+    total = a["bot_hits"] or 1
+    for cat in _BOT_CATEGORIES:
+        n = a["bot_cats"].get(cat, 0)
+        mb = a["bot_bytes"].get(cat, 0) / 1_000_000
+        L.append(f"| {cat} | {n} | {n * 100 // total}% | {mb:.1f} MB |")
+    L.append("")
+    L.append("### ボット別 Top15（ページ取得）")
+    if a["bot_names"]:
+        for name, c in a["bot_names"]:
+            L.append(f"- {c}　{name}")
+    else:
+        L.append("- （データなし）")
     L.append("")
     L.append("## 人気ページ Top10")
     if a["pages"]:
@@ -232,12 +321,12 @@ def handler(event=None, context=None):
     iso = now.isocalendar()
     dated = f"{cfg['report_dir']}/analytics-{iso.year}-W{iso.week:02d}.md"
     latest = f"{cfg['report_dir']}/analytics-latest.md"
-    msg = f"分析部: アクセスレポート {start}〜{end}（訪問{agg['unique_ips']}/PV{agg['page_hits']}）"
+    msg = f"分析部: アクセスレポート {start}〜{end}（確実PV{agg['ref_hits']}/上限PV{agg['page_hits']}）"
     _commit(dated, report, msg)
     _commit(latest, report, msg)
 
     return {"status": "ok", "start": start, "end": end,
-            "unique_ips": agg["unique_ips"], "page_hits": agg["page_hits"],
+            "ref_hits": agg["ref_hits"], "unique_ips": agg["unique_ips"], "page_hits": agg["page_hits"],
             "bot_hits": agg["bot_hits"], "log_files": agg["files"]}
 
 
