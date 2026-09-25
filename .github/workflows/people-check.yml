@@ -1,0 +1,38 @@
+name: 写真の写り込みチェック
+
+# 公開中の記事写真に人(顔)が写っていないかを調べ、疑わしい写真を reports/ に残す。
+# Wikimedia は Claude Code のセッションからは取得できないため GitHub Actions で動かす。
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 依存を入れる
+        # OpenCV 5 は人物検出(HOG)が無いので 4 系に固定する
+        run: pip install "opencv-python-headless>=4.9,<5" numpy
+      - name: 顔検出モデルを取得
+        run: curl -sSLf -o face_detection_yunet.onnx https://media.githubusercontent.com/media/opencv/opencv_zoo/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
+      - name: チェック (analytics/people_check.py)
+        run: python3 analytics/people_check.py
+      - name: 結果をコミット & プッシュ
+        run: |
+          git config user.email "bot@builtjapan.com"
+          git config user.name "builtjapan-bot"
+          git add reports/people-check-latest.md reports/people-check-latest.json reports/people-check/
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "画像監視部: 写真の写り込みチェック"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
