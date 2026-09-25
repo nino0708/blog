@@ -1,7 +1,11 @@
 ---
+// サイトヘッダー。PC(1024px以上): ロゴ・メニュー・検索欄・言語切替を1行に。
+// スマホ: ロゴ・検索・メニューボタンだけにし、メニューは下に開く引き出し(drawer)に入れる。
+// メニューの中身は src/lib/nav.ts が唯一の出典。
 import { useT, localizePath, type Lang } from '../i18n/ui';
-import { BRIDGES, CATEGORIES } from '../lib/category';
+import { readItems, toolItems, aboutItems } from '../lib/nav';
 import SearchBox from './SearchBox.astro';
+import Logo from './Logo.astro';
 
 interface Props {
   lang: Lang;
@@ -12,57 +16,73 @@ const { lang, altPath = null } = Astro.props;
 const t = useT(lang);
 const other: Lang = lang === 'ja' ? 'en' : 'ja';
 const switchHref = altPath ?? localizePath(other, '/');
-
-// 現在地の判定。トップ(/ , /en/)は完全一致、それ以外は配下のページ(記事詳細など)も親を選択中にする。
 const home = localizePath(lang, '/');
+const read = readItems(lang);
+const tools = toolItems(lang);
+const about = aboutItems(lang);
+
+// 現在地: そのページ自身か配下のページ(記事詳細など)なら選択中にする。
 const path = Astro.url.pathname;
 const isCurrent = (href: string) => (href === home ? path === href : path.startsWith(href));
+const readCurrent = read.some((i) => isCurrent(i.href));
 ---
 <header class="site-header">
   <div class="container inner">
-    <a href={home} class="brand">
-      <svg class="brand-mark" width="22" height="24" viewBox="0 0 22 24" aria-hidden="true">
-        <rect x="2" y="9" width="6" height="14" rx="1" fill="var(--brand)" opacity="0.55" />
-        <rect x="14" y="6" width="6" height="17" rx="1" fill="var(--brand)" opacity="0.75" />
-        <rect x="8.5" y="1" width="5" height="22" rx="1" fill="var(--gold)" />
-      </svg>
+    <a href={home} class="brand" aria-label="Built Japan">
+      <Logo />
       <span class="brand-text">Built <span>Japan</span></span>
     </a>
-    <SearchBox lang={lang} class="header-search" />
-    <nav class="nav">
-      {/* 読むもの: 新着とカテゴリ別の記事一覧 */}
-      <a href={home} aria-current={isCurrent(home) ? 'page' : undefined}>{t('nav.latest')}</a>
-      {[
-        ['/buildings/', t('nav.home')],
-        ['/expressways/', CATEGORIES.expressways.label[lang]],
-        ['/railways/', CATEGORIES.railways.label[lang]],
-        ['/bridges/', BRIDGES.label[lang]],
-      ].map(([p, label]) => {
-        const href = localizePath(lang, p);
-        return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{label}</a>;
-      })}
-      {/* 観光は日本語版のみ（英語コレクション未整備） */}
-      {lang === 'ja' && (
-        <a href="/tourism/" aria-current={isCurrent('/tourism/') ? 'page' : undefined}>{CATEGORIES.tourism.label.ja}</a>
-      )}
 
-      <span class="nav-sep" aria-hidden="true"></span>
-
-      {/* 引く・使うもの */}
-      {lang === 'ja' && <a href="/rankings/" aria-current={isCurrent('/rankings/') ? 'page' : undefined}>ランキング</a>}
-      {[
-        ['/database/', t('nav.database')],
-        ['/near/', t('nav.near')],
-        ['/stamps/', t('nav.stamps')],
-      ].map(([p, label]) => {
-        const href = localizePath(lang, p);
-        return <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{label}</a>;
-      })}
-
-      <span class="nav-sep" aria-hidden="true"></span>
-
-      <a href={localizePath(lang, '/about/')} aria-current={isCurrent(localizePath(lang, '/about/')) ? 'page' : undefined}>{t('nav.about')}</a>
-      <a class="lang-switch" href={switchHref} hreflang={other} lang={other}>{t('lang.other')}</a>
+    <nav class="nav-desktop" aria-label={t('nav.menu')}>
+      <div class="nav-menu" data-menu>
+        <button type="button" class="nav-link" aria-expanded="false" aria-controls="menu-read" aria-current={readCurrent ? 'page' : undefined}>
+          {t('nav.read')}<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5L5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" /></svg>
+        </button>
+        <div class="menu-panel" id="menu-read" hidden>
+          {read.map((i) => (
+            <a href={i.href} aria-current={isCurrent(i.href) ? 'page' : undefined}>
+              <b>{i.label}</b><span>{i.desc}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+      {tools.map((i) => (
+        <a class="nav-link" href={i.href} aria-current={isCurrent(i.href) ? 'page' : undefined}>{i.label}</a>
+      ))}
     </nav>
+
+    <SearchBox lang={lang} class="header-search" />
+
+    <a class="lang-switch" href={switchHref} hreflang={other} lang={other}>{t('lang.other')}</a>
+
+    <a class="icon-btn only-mobile" href={localizePath(lang, '/search/')} aria-label={t('nav.search')}>
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2" /><path d="M20 20l-3.6-3.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" /></svg>
+    </a>
+    <button type="button" class="icon-btn only-mobile" data-drawer-toggle aria-expanded="false" aria-controls="site-drawer" aria-label={t('nav.menu')}>
+      <svg class="i-open" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" /></svg>
+      <svg class="i-close" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" /></svg>
+    </button>
+  </div>
+
+  <div class="drawer" id="site-drawer" hidden>
+    <div class="container">
+      <SearchBox lang={lang} id="drawer-search" class="drawer-search" />
+      <div class="drawer-groups">
+        <section>
+          <h2>{t('nav.read')}</h2>
+          {read.map((i) => <a href={i.href} aria-current={isCurrent(i.href) ? 'page' : undefined}><b>{i.label}</b><span>{i.desc}</span></a>)}
+        </section>
+        <section>
+          <h2>{t('nav.tools')}</h2>
+          {tools.map((i) => <a href={i.href} aria-current={isCurrent(i.href) ? 'page' : undefined}><b>{i.label}</b><span>{i.desc}</span></a>)}
+          {about.map((i) => <a href={i.href} aria-current={isCurrent(i.href) ? 'page' : undefined}><b>{i.label}</b></a>)}
+        </section>
+      </div>
+      <a class="drawer-lang" href={switchHref} hreflang={other} lang={other}>{t('lang.other')}</a>
+    </div>
   </div>
 </header>
+
+<script>
+  import '../scripts/header';
+</script>

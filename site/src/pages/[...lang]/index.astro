@@ -1,37 +1,87 @@
 ---
-// トップ(新着)。全カテゴリから直近10本を新しい順に出す。
+// トップ。検索と「目的から探す」を最初に置き、カテゴリ・高さトップ5・エリア・新着へつなぐ入口ページ。
+// アクセス解析(reports/analytics-*.md)で入口になっているのはトップと建物マップなので、
+// 1画面目で「検索する」「地図で近くを探す」ができることを優先している。
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
+import SearchBox from '../../components/SearchBox.astro';
 import { useT, langPaths, localizePath, type Lang } from '../../i18n/ui';
-import { getAllPosts } from '../../lib/content';
+import { getAllPosts, getBuildingPosts } from '../../lib/content';
 import { getBuildingRows } from '../../lib/buildings';
-import { BRIDGES, CATEGORIES } from '../../lib/category';
+import { areaLabel, cityKey } from '../../lib/area';
+import { LISTS } from '../../lib/lists';
+import { readItems, toolItems } from '../../lib/nav';
+import popular from '../../data/popular.json';
 
 export function getStaticPaths() {
   return langPaths();
 }
 
-
 const { lang } = Astro.props as { lang: Lang };
 const t = useT(lang);
 const L = (p: string) => localizePath(lang, p);
+const ja = lang === 'ja';
 
 const allPosts = await getAllPosts(lang);
-const latest = allPosts.slice(0, 10);
-// 建物の収録数は言語共通の母数(図鑑と同じ: レジストリ ∪ 記事)。記事数はこの言語の本数。
-const buildingCount = (await getBuildingRows(lang)).length;
+const latest = allPosts.slice(0, 8);
+const rows = await getBuildingRows(lang);
+const buildingPosts = await getBuildingPosts(lang);
+const postBySlug = new Map(buildingPosts.map((p) => [p.slug, p]));
+
+// よく見られている記事(src/data/popular.json)。この言語に無い記事は飛ばす。
+const popularPosts = popular.buildings.map((s) => postBySlug.get(s)).filter((p) => p !== undefined).slice(0, 5);
+
+// 目的から探す(道具)
+const toolIcons: Record<string, string> = {
+  near: 'M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21zm0-9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z',
+  database: 'M4 5h16M4 10h16M4 15h10M4 20h7',
+  rankings: 'M5 20V11M12 20V4M19 20v-6',
+  stamps: 'M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z',
+};
+const tools = toolItems(lang).map((i) => ({ ...i, icon: toolIcons[i.href.split('/').filter(Boolean).pop() ?? ''] }));
+
+// カテゴリ: 記事数と、いちばん新しい写真つき記事の写真
+const cats = await Promise.all(
+  readItems(lang).map(async (i) => {
+    const key = i.href.split('/').filter(Boolean).pop() as keyof typeof LISTS;
+    const posts = await LISTS[key].posts(lang);
+    return { ...i, count: posts.length, image: posts.find((p) => p.heroImage)?.heroImage };
+  }),
+);
+
+// 高さトップ5(この言語の記事がある建物のみ)
+const tallest = rows
+  .filter((r) => r.heightM && postBySlug.has(r.slug))
+  .slice(0, 5)
+  .map((r) => ({ ...r, href: postBySlug.get(r.slug)!.href }));
+const maxHeight = tallest[0]?.heightM ?? 1;
+
+// エリア: 収録数の多い市区(図鑑を ?city= で絞り込んで開く)
+const cityCounts = new Map<string, { n: number; label: string }>();
+for (const r of rows) {
+  if (!r.city) continue;
+  const c = cityCounts.get(r.city) ?? { n: 0, label: areaLabel(cityKey(r.pref ?? '', r.city), lang) };
+  c.n++;
+  cityCounts.set(r.city, c);
+}
+const cities = [...cityCounts].sort((a, b) => b[1].n - a[1].n).slice(0, 10);
+
+const buildingCount = rows.length;
 const articleCount = allPosts.length;
+const [titleA, titleB] = t('home.title2').split('\n');
 ---
-<BaseLayout title="Built Japan" lang={lang} altPath={localizePath(lang === 'ja' ? 'en' : 'ja', '/')}>
+<BaseLayout title="Built Japan" lang={lang} altPath={localizePath(ja ? 'en' : 'ja', '/')}>
   <section class="home-hero">
-    <div class="home-hero-inner" data-reveal>
-      <p class="eyebrow">{t('home.eyebrow')}</p>
-      <h1>{t('home.title')}</h1>
-      <p class="home-hero-desc">{t('home.desc')}</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href={L('/database/')}>{t('home.cta.database')}</a>
-        <a class="btn btn-ghost" href="/rankings/">{t('home.cta.rankings')}</a>
-      </div>
+    <div class="home-hero-inner">
+      <h1>{titleA}<br />{titleB}</h1>
+      <p class="home-hero-desc">{t('home.desc2')}</p>
+      <SearchBox lang={lang} id="hero-search" class="hero-search" />
+      {popularPosts.length > 0 && (
+        <div class="hero-popular">
+          <span>{t('home.popular')}</span>
+          {popularPosts.map((p) => <a href={p.href}>{p.title}</a>)}
+        </div>
+      )}
       <ul class="hero-stats">
         <li><b>{buildingCount}</b><span>{t('home.stat.buildings')}</span></li>
         <li><b>{articleCount}</b><span>{t('home.stat.articles')}</span></li>
@@ -41,20 +91,78 @@ const articleCount = allPosts.length;
     <p class="hero-credit">{t('home.hero.credit')}: <a href="https://commons.wikimedia.org/wiki/File:Tokyo,_Japan_is_seen_from_a_U.S._Nighthawk_helicopter_(54883848249).jpg" target="_blank" rel="noopener">The White House</a>{t('home.hero.credit.suffix')}</p>
   </section>
 
-  <div class="section-head" data-reveal>
-    <h2>{t('home.section.feed')}</h2>
-    <p>{t('home.section.feed.desc')}</p>
-  </div>
-
-  <section class="grid grid-2">
-    {latest.map((post, i) => <PostCard lang={lang} post={post} priority={i === 0} />)}
+  <section class="home-section">
+    <div class="section-head">
+      <h2>{t('home.tools.title')}</h2>
+      <p>{t('home.tools.desc')}</p>
+    </div>
+    <div class="tool-grid">
+      {tools.map((i, n) => (
+        <a class:list={['tool-tile', { 'is-primary': n === 0 }]} href={i.href}>
+          <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d={i.icon} fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          <b>{i.label}</b>
+          <span>{i.desc}</span>
+        </a>
+      ))}
+    </div>
   </section>
 
-  <nav class="feed-more" aria-label={t('footer.categories')}>
-    <a href={L('/buildings/')}>{t('nav.home')}</a>
-    <a href={L('/expressways/')}>{CATEGORIES.expressways.label[lang]}</a>
-    <a href={L('/railways/')}>{CATEGORIES.railways.label[lang]}</a>
-    <a href={L('/bridges/')}>{BRIDGES.label[lang]}</a>
-    {lang === 'ja' && <a href="/tourism/">{CATEGORIES.tourism.label.ja}</a>}
-  </nav>
+  <section class="home-section">
+    <div class="section-head">
+      <h2>{t('home.section.feed')}</h2>
+    </div>
+    <div class="grid grid-feed">
+      {latest.map((post, i) => <PostCard lang={lang} post={post} priority={i === 0} />)}
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="section-head">
+      <h2>{t('home.cats.title')}</h2>
+    </div>
+    <div class="cat-grid">
+      {cats.map((c) => (
+        <a class="cat-tile" href={c.href}>
+          {c.image ? <img src={c.image} alt="" loading="lazy" /> : <span class="cat-tile-ph" aria-hidden="true"></span>}
+          <span class="cat-tile-body">
+            <b>{c.label}</b>
+            <span>{c.desc}</span>
+            <em>{t('home.cats.count').replace('%n', String(c.count))}</em>
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <div class="home-split">
+    <section class="home-section">
+      <div class="section-head">
+        <h2>{t('home.tall.title')}</h2>
+        <p>{t('home.tall.desc')}</p>
+      </div>
+      <ol class="tall-list">
+        {tallest.map((r, i) => (
+          <li>
+            <span class="tall-rank">{i + 1}</span>
+            <a href={r.href}>{r.title}</a>
+            <span class="tall-bar" style={`--w:${Math.round((r.heightM! / maxHeight) * 100)}%`}><span></span></span>
+            <span class="tall-m">{r.heightM}m</span>
+          </li>
+        ))}
+      </ol>
+      <a class="more-link" href={ja ? '/rankings/' : L('/database/')}>{ja ? `${t('nav.rankings')} →` : t('home.tall.more')}</a>
+    </section>
+
+    <section class="home-section">
+      <div class="section-head">
+        <h2>{t('home.areas.title')}</h2>
+        <p>{t('home.areas.desc')}</p>
+      </div>
+      <div class="area-links">
+        {cities.map(([city, c]) => (
+          <a href={`${L('/database/')}?city=${encodeURIComponent(city)}`}>{c.label}<span>{c.n}</span></a>
+        ))}
+      </div>
+    </section>
+  </div>
 </BaseLayout>

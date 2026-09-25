@@ -29,6 +29,8 @@ const note =
     : '* Figures (height, year, floors) are approximate, based on public sources. Buildings marked “Coming soon” will gain articles and detailed data over time.';
 
 const buildingsBase = localizePath(lang, '/buildings/');
+// 高さの棒グラフの基準(収録中でいちばん高い建物)
+const maxHeight = Math.max(1, ...rows.map((r) => r.heightM ?? 0));
 
 // 市区での絞り込み。座標を逆ジオコーディングして得た city を使う（記事のareaは表記ゆれがあるため）。
 // 収録数の多い順に並べ、未設定の建物は選択肢に出さない。
@@ -122,7 +124,10 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
               <span class={`badge ${r.buildingType}`}>{typeLabel(r.buildingType, true)}</span>
             </td>
             <td class="c-year" data-label={t('db.col.year')}>{fmtYear(r.completedYear)}</td>
-            <td class="c-height" data-label={t('db.col.height')}>{fmtHeight(r.heightM)}</td>
+            <td class="c-height" data-label={t('db.col.height')}>
+              <span class="h-val">{fmtHeight(r.heightM)}</span>
+              {r.heightM && <span class="h-bar" aria-hidden="true"><span style={`width:${Math.round((r.heightM / maxHeight) * 100)}%`}></span></span>}
+            </td>
             <td class="c-status" data-label={t('db.col.status')}>
               {r.hasArticle ? (
                 <a class="db-read" href={`${buildingsBase}${r.slug}/`}>{t('db.readArticle')}</a>
@@ -175,6 +180,18 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
       return Number.isFinite(n) ? n : -1;
     }
 
+    // 絞り込み・並べ替えを URL(?q=&type=&city=&sort=) に残し、共有・戻るで同じ表示にする。
+    function saveUrl() {
+      const p = new URLSearchParams();
+      const q = (search.value || '').trim();
+      if (q) p.set('q', q);
+      if (activeType !== 'all') p.set('type', activeType);
+      if (activeCity !== 'all') p.set('city', activeCity);
+      if (sortSel.value !== 'height') p.set('sort', sortSel.value);
+      const qs = p.toString();
+      history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
+    }
+
     function apply() {
       const q = (search.value || '').trim().toLowerCase();
       let shown = 0;
@@ -189,6 +206,7 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
         if (show) shown++;
       }
       empty.hidden = shown !== 0;
+      saveUrl();
       if (countEl) {
         countEl.textContent =
           lang === 'ja'
@@ -209,12 +227,7 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
     }
 
     search.addEventListener('input', apply);
-    // サイト内検索から ?q=建物名 で来たら、その語で絞り込んだ状態で開く
-    const initialQ = new URLSearchParams(location.search).get('q');
-    if (initialQ) {
-      search.value = initialQ;
-      apply();
-    }
+
     if (citySel) {
       citySel.addEventListener('change', () => {
         activeCity = citySel.value;
@@ -229,7 +242,32 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
         apply();
       })
     );
-    sortSel.addEventListener('change', () => sortRows(sortSel.value));
+    sortSel.addEventListener('change', () => {
+      sortRows(sortSel.value);
+      saveUrl();
+    });
+
+    // URL の状態を復元(トップの「エリアから探す」やサイト内検索からのリンク)
+    const params = new URLSearchParams(location.search);
+    const initType = params.get('type');
+    const initChip = initType && chips.find((c) => c.dataset.type === initType);
+    if (initChip) {
+      chips.forEach((x) => x.classList.remove('is-active'));
+      initChip.classList.add('is-active');
+      activeType = initType;
+    }
+    const initCity = params.get('city');
+    if (initCity && citySel && [...citySel.options].some((o) => o.value === initCity)) {
+      citySel.value = initCity;
+      activeCity = initCity;
+    }
+    const initSort = params.get('sort');
+    if (initSort && [...sortSel.options].some((o) => o.value === initSort)) {
+      sortSel.value = initSort;
+      sortRows(initSort);
+    }
+    if (params.get('q')) search.value = params.get('q');
+    if ([...params.keys()].length) apply();
 
     if (visitedChip) {
       visitedChip.addEventListener('click', () => {
@@ -255,7 +293,7 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
   .db-controls {
     display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
     margin: 22px 0 14px;
-    position: sticky; top: 62px; z-index: 5;
+    position: sticky; top: calc(var(--header-h) + 8px); z-index: 5;
     padding: 12px; border-radius: 14px;
     background: var(--surface-glass);
     backdrop-filter: saturate(1.4) blur(10px);
@@ -303,6 +341,10 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
   .c-area { color: var(--text-muted); white-space: nowrap; }
   .c-year, .c-height { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--text-muted); }
   .c-status { white-space: nowrap; }
+  .c-height { min-width: 120px; }
+  .h-val { display: block; }
+  .h-bar { display: block; height: 4px; margin-top: 4px; border-radius: 2px; background: var(--brand-soft); overflow: hidden; }
+  .h-bar span { display: block; height: 100%; background: var(--brand); border-radius: 2px; }
   .badge.tower { background: #e7f0ea; color: #2e7d52; }
   .db-read { font-weight: 700; font-size: 0.85rem; color: var(--brand); }
   .db-stub {
@@ -337,24 +379,31 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
   }
   .rank-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 16px; }
 
-  /* モバイル: テーブルをカード様に縦積み */
+  /* モバイル: 1棟を1枚のカードに。名前を大きく、数値は2列に詰めて縦に長くならないようにする */
   @media (max-width: 640px) {
-    .db-controls { position: static; top: auto; }
+    .db-controls { position: static; top: auto; padding: 10px; }
+    .db-search { flex-basis: 100%; }
+    .db-table-wrap { background: none; border: 0; box-shadow: none; }
     .db-table thead { display: none; }
-    .db-table, .db-table tbody, .db-table tr, .db-table td { display: block; width: 100%; }
+    .db-table, .db-table tbody { display: block; width: 100%; }
+    .db-table tbody { display: grid; gap: 10px; }
     .db-table tbody tr {
-      border-bottom: 8px solid var(--bg); padding: 6px 4px 10px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px;
+      padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
     }
-    .db-table tbody td {
-      border: none; padding: 4px 16px; display: flex; justify-content: space-between; gap: 12px;
-    }
-    .db-table tbody td.c-name { padding-top: 12px; }
+    .db-table tbody tr[hidden] { display: none; }
+    .db-table tbody tr:hover { background: var(--surface); }
+    .db-table tbody td { display: block; border: none; padding: 0; font-size: 0.85rem; }
     .db-table tbody td::before {
-      content: attr(data-label); color: var(--text-muted);
-      font-size: 0.74rem; font-weight: 700; flex: none;
+      content: attr(data-label); display: block; color: var(--text-muted);
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.02em;
     }
-    .db-table tbody td.c-name::before { display: none; }
-    :global(html.js) .db-table tbody td.c-stamp { display: flex; }
-    .c-name a, .c-name span { font-size: 1.02rem; }
+    .db-table tbody td.c-name { grid-column: 1 / -1; }
+    .db-table tbody td.c-name::before, .db-table tbody td.c-status::before, .db-table tbody td.c-stamp::before { display: none; }
+    .db-table tbody td.c-status { align-self: center; }
+    :global(html.js) .db-table tbody td.c-stamp { display: block; text-align: right; }
+    .c-name a, .c-name span { font-size: 1.05rem; }
+    .c-area { white-space: normal; }
+    .h-bar { width: 100%; max-width: 140px; }
   }
 </style>
