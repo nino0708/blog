@@ -23,6 +23,6 @@ JR East's direct role as both developer and designer gave the project an interna
 
 Sapia Tower, completed in 2007 as a 35-story tower approximately 166 meters tall with a gross floor area of around 81,700 m², was the opening move in JR East's Tokyo Station City project. By stacking offices, conference facilities, and a hotel in a single building with a direct station connection, it showed how a railway company could shape a mixed-use destination from the inside out. From here, it is only a few hundred metres to the red-brick Marunouchi Station building — a walk that holds nearly a century of Tokyo's layered reinvention in a single glance.
 
-Related articles: [Tokyo Station Marunouchi Building](/buildings/tokyo-station-marunouchi/) / [Tokyo Building (TOKIA)](/buildings/tokyo-building-tokia/) / [Gran Tokyo Towers](/buildings/gran-tokyo-towers/)
+Related articles: [Tokyo Station Marunouchi Building](/railways/tokyo-station-marunouchi/) / [Tokyo Building (TOKIA)](/buildings/tokyo-building-tokia/) / [Gran Tokyo Towers](/buildings/gran-tokyo-towers/)
 
 For hotels near Tokyo Station, [Rakuten Travel](https://travel.rakuten.co.jp/) has plenty of options.

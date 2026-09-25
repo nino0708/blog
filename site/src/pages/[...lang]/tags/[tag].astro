@@ -1,0 +1,42 @@
+---
+// タグ別の建物記事一覧(/tags/<tag>/ と /en/tags/<tag>/)。タグはその言語の記事に付いたもの。
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BuildingCard from '../../../components/BuildingCard.astro';
+import { langParam, languages, type Lang } from '../../../i18n/ui';
+import { getTagIndex, type BuildingPost } from '../../../lib/content';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of languages) {
+    for (const [tag, posts] of await getTagIndex(lang)) {
+      paths.push({ params: { lang: langParam(lang), tag }, props: { lang, tag, posts } });
+    }
+  }
+  return paths;
+}
+
+const { lang, tag, posts } = Astro.props as { lang: Lang; tag: string; posts: BuildingPost[] };
+const ja = lang === 'ja';
+---
+<BaseLayout title={ja ? `#${tag} の記事` : `#${tag}`} lang={lang}>
+  <section class="hero">
+    <h1>#{tag}</h1>
+    <p>{ja ? `「${tag}」に関する建築記事 ${posts.length} 件` : `${posts.length} article${posts.length === 1 ? '' : 's'} tagged “${tag}”`}</p>
+  </section>
+  <section class="grid">
+    {posts.map((p) => (
+      <BuildingCard
+        lang={lang}
+        url={p.href}
+        title={p.title}
+        buildingType={p.facts.buildingType}
+        area={p.area}
+        completedYear={p.facts.completedYear}
+        heightM={p.facts.heightM}
+        summary={p.summary}
+        verified={p.verified}
+        heroImage={p.heroImage}
+      />
+    ))}
+  </section>
+</BaseLayout>

@@ -1,0 +1,141 @@
+---
+// 建物記事の詳細(/buildings/<slug>/ と /en/buildings/<slug>/)。
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BuildingArticle from '../../../components/BuildingArticle.astro';
+import { buildSpecs, langParam, languages, localizePath, type Lang } from '../../../i18n/ui';
+import { getBuildingPosts, type BuildingPost } from '../../../lib/content';
+import { getBuildingRows, nearestTo } from '../../../lib/buildings';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of languages) {
+    for (const post of await getBuildingPosts(lang)) {
+      paths.push({ params: { lang: langParam(lang), slug: post.slug }, props: { lang, post } });
+    }
+  }
+  return paths;
+}
+
+const { lang, post } = Astro.props as { lang: Lang; post: BuildingPost };
+const { Content } = await post.entry.render();
+const f = post.facts; // 数値の事実(日本語版が出典)
+const ja = lang === 'ja';
+
+const base = (Astro.site ?? new URL('https://example.com')).toString().replace(/\/$/, '');
+const pageUrl = new URL(post.href, Astro.site ?? 'https://example.com').toString();
+const metaDescription = post.summary ?? (ja
+  ? `${post.title}（${post.area}${f.completedYear ? `・${f.completedYear}年竣工` : ''}）の建築・再開発の記録。`
+  : `${post.title}${f.completedYear ? ` (completed ${f.completedYear})` : ''} — a record of architecture and redevelopment in ${post.area}, Tokyo.`);
+
+// 構造化データ: 記事(Article) + 主題の建物(該当する建築タイプ) + パンくず
+const buildingLd: Record<string, unknown> = {
+  '@type': f.buildingType === 'residence' ? 'ApartmentComplex' : 'LandmarksOrHistoricalBuildings',
+  name: post.title,
+  address: { '@type': 'PostalAddress', addressLocality: post.area, addressRegion: ja ? '東京都' : 'Tokyo', addressCountry: 'JP' },
+};
+if (f.address) (buildingLd.address as Record<string, unknown>).streetAddress = f.address;
+const iso = f.publishedAt.toISOString();
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: post.title,
+      description: metaDescription,
+      inLanguage: lang,
+      datePublished: iso,
+      dateModified: iso,
+      mainEntityOfPage: pageUrl,
+      ...(f.heroImage ? { image: [f.heroImage] } : {}),
+      author: { '@type': 'Organization', name: 'Built Japan', url: `${base}/` },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Built Japan',
+        logo: { '@type': 'ImageObject', url: `${base}/ogp.png` },
+      },
+      about: buildingLd,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: ja ? 'ホーム' : 'Home', item: `${base}${localizePath(lang, '/')}` },
+        { '@type': 'ListItem', position: 2, name: ja ? 'ビル・マンション' : 'Buildings', item: `${base}${localizePath(lang, '/buildings/')}` },
+        { '@type': 'ListItem', position: 3, name: post.title, item: pageUrl },
+      ],
+    },
+  ],
+};
+
+const specs = buildSpecs(lang, { ...f, area: post.area, developer: post.developer, architect: post.architect });
+
+// 検索意図に寄せたSEOタイトル(建物名｜竣工年・高さ｜エリア+用途)。H1は記事タイトルのまま。
+const seoTitle = ja
+  ? (() => {
+      const type = f.buildingType === 'residence' ? 'マンション' : f.buildingType === 'bridge' ? '橋' : 'オフィスビル';
+      const bits = [f.completedYear ? `${f.completedYear}年竣工` : null, f.heightM ? `高さ${f.heightM}m` : null].filter(Boolean).join(' ');
+      return `${post.title}｜${bits ? `${bits}｜` : ''}${post.area}の${type}`;
+    })()
+  : (() => {
+      const type = f.buildingType === 'residence' ? 'residential tower' : f.buildingType === 'bridge' ? 'bridge' : 'office tower';
+      const bits = [f.completedYear ? `Completed ${f.completedYear}` : null, f.heightM ? `${f.heightM}m` : null].filter(Boolean).join(', ');
+      return `${post.title}${bits ? ` | ${bits}` : ''} | ${post.area} ${type}`;
+    })();
+
+// 内部リンク用の関連記事(この言語の記事がある建物のみ): 同エリア優先、次に竣工年が近い順。最大4件。
+const all = await getBuildingPosts(lang);
+const related = all
+  .filter((p) => p.slug !== post.slug)
+  .map((p) => {
+    const sameArea = p.facts.area === f.area ? 1000 : 0;
+    const gap = f.completedYear && p.facts.completedYear ? Math.abs(p.facts.completedYear - f.completedYear) : 999;
+    return { p, score: sameArea - gap };
+  })
+  .sort((a, b) => b.score - a.score) // 同点は新しい記事が先(入力が新着順・安定ソート)
+  .slice(0, 4)
+  .map(({ p }) => ({ title: p.title, area: p.area, href: p.href }));
+
+// 近くの建物: 図鑑と同じ全建物(記事未執筆のスタブ含む)から直線距離順に。座標が無ければ何も出さない。
+// この言語の記事が無い建物はリンクを張らず「準備中」扱いにする。
+const hrefBySlug = new Map(all.map((p) => [p.slug, p.href]));
+const hasCoords = typeof f.lat === 'number' && typeof f.lng === 'number';
+const nearby = hasCoords
+  ? nearestTo(await getBuildingRows(lang), f.lat!, f.lng!, { limit: 6, radiusM: 3000, excludeSlug: post.slug }).map((r) => ({
+      title: r.title,
+      area: r.area,
+      distanceM: r.distanceM,
+      href: hrefBySlug.get(r.slug) ?? null,
+    }))
+  : [];
+const nearHref = hasCoords
+  ? `${localizePath(lang, '/near/')}?lat=${f.lat}&lng=${f.lng}&name=${encodeURIComponent(post.title)}`
+  : undefined;
+---
+<BaseLayout title={seoTitle} description={metaDescription} lang={lang} ogType="article" altPath={post.altHref} jsonLd={jsonLd} appendSiteName={false} ogImage={f.heroImage}>
+  <BuildingArticle
+    lang={lang}
+    title={post.title}
+    summary={post.summary}
+    related={related}
+    area={post.area}
+    buildingType={f.buildingType}
+    verified={f.verified}
+    heroImage={f.heroImage}
+    heroImageCredit={f.heroImageCredit}
+    heroImageLink={f.heroImageLink}
+    specs={specs}
+    tags={post.tags}
+    tagBase={localizePath(lang, '/tags/')}
+    sources={f.sources}
+    listPath={localizePath(lang, '/buildings/')}
+    searchTitle={ja ? undefined : f.title}
+    searchArea={ja ? undefined : f.area}
+    lat={f.lat}
+    lng={f.lng}
+    slug={post.slug}
+    nearby={nearby}
+    nearHref={nearHref}
+    mapLabel={f.title}
+  >
+    <Content />
+  </BuildingArticle>
+</BaseLayout>

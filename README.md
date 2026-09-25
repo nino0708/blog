@@ -39,7 +39,8 @@ tokyo-building-blog/
 │   ├── src/content/buildings/      # 日本語記事Markdown（Lambdaがここに追記）
 │   ├── src/content/buildings-en/   # 英語記事Markdown（同上・slugはJPと一致）
 │   ├── src/i18n/ui.ts    # UI文言辞書・パス変換・spec整形（多言語の中核）
-│   ├── src/pages/        # JP: 一覧/記事/タグ/about/404、EN: src/pages/en/配下
+│   ├── src/lib/content.ts # 記事データの入口（日英を同じ形で返す）
+│   ├── src/pages/[...lang]/ # 全ページ。日英を1ファイルで生成（/xxx/ と /en/xxx/）
 │   └── src/components, layouts, styles
 ├── generator/            # 記事生成Lambda
 │   ├── data/buildings.json   # 建物seed（事実の出典）★ここを育てる。*_en に英語の固有名詞
@@ -50,6 +51,8 @@ tokyo-building-blog/
 │   └── 02-pipeline.yaml  # CodeBuild + Lambda + EventBridge
 └── buildspec.yml         # CodeBuildのビルド定義
 ```
+
+> Claude などで変更するときの約束ごと（日英の同期ルールなど）は [CLAUDE.md](CLAUDE.md) にまとめています。
 
 ## ローカル開発
 

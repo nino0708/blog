@@ -1,0 +1,13 @@
+---
+// 記事一覧の2ページ目以降(/buildings/page/2/ など)。1ページ目は ../index.astro。
+import ListView from '../../../../components/ListView.astro';
+import { langParam } from '../../../../i18n/ui';
+import { listPages } from '../../../../lib/lists';
+
+export async function getStaticPaths() {
+  return (await listPages())
+    .filter((p) => p.page > 1)
+    .map((p) => ({ params: { lang: langParam(p.lang), list: p.list.key, page: String(p.page) }, props: p }));
+}
+---
+<ListView {...Astro.props} />

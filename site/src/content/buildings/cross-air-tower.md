@@ -39,6 +39,6 @@ sources:
 
 池尻大橋駅から坂を上がるだけで、道路と住居が垂直に重なる東京ならではの風景に出会える。
 
-関連記事：[大橋ジャンクション](/buildings/ohashi-junction/) ／ [中目黒アトラスタワー](/buildings/nakameguro-atlas-tower/)
+関連記事：[大橋ジャンクション](/expressways/ohashi-junction/) ／ [中目黒アトラスタワー](/buildings/nakameguro-atlas-tower/)
 
 目黒・代官山周辺のホテルをお探しなら[楽天トラベル](https://travel.rakuten.co.jp/)もどうぞ。

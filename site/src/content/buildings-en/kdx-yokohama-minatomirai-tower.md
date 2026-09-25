@@ -25,6 +25,6 @@ KDX Yokohama Minatomirai Tower was completed in 1994, with 33 floors above groun
 
 Walking through Minato Mirai, it is worth pausing beside this tower to consider that the gleaming waterfront was once a working shipyard, and that this building was the first act of its transformation.
 
-Related: [Yokohama Landmark Tower](/buildings/yokohama-landmark-tower/) / [Yokohama Bay Bridge](/buildings/yokohama-bay-bridge/)
+Related: [Yokohama Landmark Tower](/buildings/yokohama-landmark-tower/) / [Yokohama Bay Bridge](/expressways/yokohama-bay-bridge/)
 
 Looking for a hotel in Minato Mirai or Yokohama? Browse options on [Rakuten Travel](https://travel.rakuten.co.jp/).
