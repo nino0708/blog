@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SearchView from '../../components/SearchView.astro';
+
+const title = 'Search';
+const description = 'Search every Built Japan article across buildings, bridges, expressways, railways and tourism.';
+---
+<BaseLayout title={title} description={description} lang="en" altPath="/search/" noindex>
+  <p class="breadcrumb"><a href="/">Home</a> / Search</p>
+  <SearchView lang="en" />
+</BaseLayout>

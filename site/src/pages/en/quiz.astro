@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import QuizView from '../../components/QuizView.astro';
+
+const title = "Today's Building Quiz";
+const description = 'A daily fill-in-the-blank quiz built from our Tokyo high-rise articles. Confirm the answer in the linked article.';
+---
+<BaseLayout title={title} description={description} lang="en" altPath="/quiz/">
+  <p class="breadcrumb"><a href="/">Home</a> / Today's Building Quiz</p>
+  <QuizView lang="en" />
+</BaseLayout>

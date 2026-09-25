@@ -27,6 +27,7 @@ const articleCount = allPosts.length;
     <div class="home-hero-inner" data-reveal>
       <p class="eyebrow">{t('home.eyebrow')}</p>
       <h1>{t('home.title')}</h1>
+      <p class="home-hero-hook">{t('home.hook')}</p>
       <p class="home-hero-desc">{t('home.desc')}</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="/database/">{t('home.cta.database')}</a>
@@ -40,6 +41,15 @@ const articleCount = allPosts.length;
     </div>
     <p class="hero-credit">{t('home.hero.credit')}: <a href="https://commons.wikimedia.org/wiki/File:Tokyo,_Japan_is_seen_from_a_U.S._Nighthawk_helicopter_(54883848249).jpg" target="_blank" rel="noopener">The White House</a>{t('home.hero.credit.suffix')}</p>
   </section>
+
+  <a class="quiz-promo" href="/quiz/" data-reveal>
+    <span class="quiz-promo-emoji" aria-hidden="true">🧩</span>
+    <span class="quiz-promo-body">
+      <span class="quiz-promo-title">{t('home.quiz.title')}</span>
+      <span class="quiz-promo-desc">{t('home.quiz.desc')}</span>
+    </span>
+    <span class="quiz-promo-cta">{t('home.quiz.cta')}</span>
+  </a>
 
   <div class="section-head" data-reveal>
     <h2>{t('home.section.feed')}</h2>

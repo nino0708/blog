@@ -14,6 +14,11 @@
   var $radius = document.getElementById('near-radius');
   var $status = document.getElementById('near-status');
   var $list = document.getElementById('near-list');
+  var $gmaps = document.getElementById('near-gmaps');
+
+  function gmapsSearchUrl(lat, lng) {
+    return 'https://www.google.com/maps/search/?api=1&query=' + lat + ',' + lng;
+  }
 
   var map = L.map('near-map', { scrollWheelZoom: false }).setView([35.681, 139.767], 12);
   L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
@@ -122,6 +127,7 @@
     originMarker = L.circleMarker([lat, lng], {
       radius: 9, color: '#c0392b', weight: 3, fillColor: '#c0392b', fillOpacity: 0.5,
     }).addTo(map).bindPopup((originName ? originName : L10N.origin));
+    if ($gmaps) $gmaps.href = gmapsSearchUrl(lat, lng);
 
     var bounds = [[lat, lng]];
     found.forEach(function (x) {
@@ -129,6 +135,7 @@
       var m = L.marker([p.lat, p.lng]);
       var html = '<b>' + escapeHtml(p.n) + '</b><br>' + escapeHtml(p.a) + ' ・ ' + fmtDist(x.d);
       if (p.u) html += '<br><a href="' + p.u + '">' + (IS_JA ? '記事を読む →' : 'Read article →') + '</a>';
+      html += '<br><a href="' + gmapsSearchUrl(p.lat, p.lng) + '" target="_blank" rel="noopener nofollow">' + L10N.googleMaps + ' ↗</a>';
       m.bindPopup(html);
       markers.addLayer(m);
       bounds.push([p.lat, p.lng]);
@@ -155,6 +162,7 @@
     lastOrigin = null;
     markers.clearLayers();
     if (originMarker) { map.removeLayer(originMarker); originMarker = null; }
+    if ($gmaps) $gmaps.href = gmapsSearchUrl(35.681, 139.767);
 
     var bounds = [];
     POINTS.forEach(function (p) {
@@ -166,6 +174,7 @@
       if (p.h) html += ' ・ ' + p.h + 'm';
       if (p.y) html += ' ・ ' + p.y + (IS_JA ? '年' : '');
       if (p.u) html += '<br><a href="' + p.u + '">' + (IS_JA ? '記事を読む →' : 'Read article →') + '</a>';
+      html += '<br><a href="' + gmapsSearchUrl(p.lat, p.lng) + '" target="_blank" rel="noopener nofollow">' + L10N.googleMaps + ' ↗</a>';
       m.bindPopup(html);
       markers.addLayer(m);
       bounds.push([p.lat, p.lng]);
