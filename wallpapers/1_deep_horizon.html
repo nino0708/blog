@@ -1,0 +1,17 @@
+<html><head><link rel="stylesheet" href="common.css"></head><body>
+<svg width="1206" height="2622" viewBox="0 0 1206 2622">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#05070f"/><stop offset=".55" stop-color="#0c1430"/><stop offset=".78" stop-color="#1b2552"/><stop offset="1" stop-color="#070a18"/></linearGradient>
+<radialGradient id="glow" cx=".5" cy=".7" r=".5"><stop offset="0" stop-color="#6f7fd8" stop-opacity=".35"/><stop offset="1" stop-color="#6f7fd8" stop-opacity="0"/></radialGradient>
+<linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#9fb0ff" stop-opacity="0"/><stop offset=".5" stop-color="#d9e0ff" stop-opacity=".9"/><stop offset="1" stop-color="#9fb0ff" stop-opacity="0"/></linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .05 0"/></filter>
+<filter id="blur"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="1206" height="2622" fill="url(#bg)"/>
+<ellipse cx="603" cy="1830" rx="1100" ry="1100" fill="url(#glow)"/>
+<rect x="0" y="1829" width="1206" height="6" fill="url(#line)" filter="url(#blur)"/>
+<rect x="0" y="1831" width="1206" height="2" fill="url(#line)"/>
+<rect x="0" y="1833" width="1206" height="789" fill="#04060d" opacity=".55"/>
+<rect width="1206" height="2622" filter="url(#grain)"/>
+</svg></body></html>

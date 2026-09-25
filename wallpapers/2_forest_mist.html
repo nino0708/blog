@@ -1,0 +1,17 @@
+<html><head><link rel="stylesheet" href="common.css"></head><body>
+<svg width="1206" height="2622" viewBox="0 0 1206 2622">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f1a17"/><stop offset=".5" stop-color="#2c3d36"/><stop offset=".62" stop-color="#8a9a8c"/><stop offset="1" stop-color="#1a2420"/></linearGradient>
+<linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9d3c6" stop-opacity="0"/><stop offset=".5" stop-color="#c9d3c6" stop-opacity=".35"/><stop offset="1" stop-color="#c9d3c6" stop-opacity="0"/></linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .06 0"/></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+<rect width="1206" height="2622" fill="url(#sky)"/>
+<path d="M-50 1419 C100 1419 100 1519 201 1519 C302 1519 302 1507 402 1507 C502 1507 502 1436 603 1436 C704 1436 704 1469 804 1469 C904 1469 904 1463 1005 1463 C1106 1463 1106 1491 1206 1491 L1256 2622 L-50 2622Z" fill="#6f8274" opacity=".55" filter="url(#soft)"/>
+<rect y="1450" width="1206" height="260" fill="url(#fog)"/>
+<path d="M-50 1705 C100 1705 100 1704 201 1704 C302 1704 302 1597 402 1597 C502 1597 502 1600 603 1600 C704 1600 704 1690 804 1690 C904 1690 904 1678 1005 1678 C1106 1678 1106 1670 1206 1670 L1256 2622 L-50 2622Z" fill="#4a5d51" opacity=".85" filter="url(#soft)"/>
+<rect y="1640" width="1206" height="240" fill="url(#fog)"/>
+<path d="M-50 1799 C100 1799 100 1835 201 1835 C302 1835 302 1814 402 1814 C502 1814 502 1842 603 1842 C704 1842 704 1845 804 1845 C904 1845 904 1778 1005 1778 C1106 1778 1106 1772 1206 1772 L1256 2622 L-50 2622Z" fill="#2c3b33"/>
+<path d="M-50 1994 C100 1994 100 1980 201 1980 C302 1980 302 2010 402 2010 C502 2010 502 1985 603 1985 C704 1985 704 1977 804 1977 C904 1977 904 2010 1005 2010 C1106 2010 1106 2062 1206 2062 L1256 2622 L-50 2622Z" fill="#17211d"/>
+<rect width="1206" height="2622" filter="url(#grain)"/>
+</svg></body></html>
