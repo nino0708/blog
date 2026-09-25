@@ -1,0 +1,52 @@
+---
+// サイト内検索の入力欄。入力すると候補を出し(src/scripts/search.ts)、Enter で検索ページへ。
+// JS が無くても form の GET で /search/?q= に移動できる。
+import { useT, localizePath, type Lang } from '../i18n/ui';
+import { BUILD_ID } from '../lib/build';
+
+interface Props {
+  lang: Lang;
+  /** 同じページに複数置くときに id が重ならないよう付ける */
+  id?: string;
+  class?: string;
+}
+const { lang, id = 'site-search', class: className } = Astro.props;
+const t = useT(lang);
+const labels = {
+  empty: t('search.empty'),
+  more: t('search.more'),
+  stub: t('search.stub'),
+  count: t('search.count'),
+  all: t('search.all'),
+};
+---
+<form
+  id={id}
+  class:list={['search-box', className]}
+  role="search"
+  action={localizePath(lang, '/search/')}
+  method="get"
+  data-search-box
+  data-index={`${localizePath(lang, '/search-index.json')}?v=${BUILD_ID}`}
+  data-lang={lang}
+  data-labels={JSON.stringify(labels)}
+>
+  <label class="visually-hidden" for={`${id}-q`}>{t('search.label')}</label>
+  <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.4" /><path d="M20 20l-3.6-3.6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>
+  <input
+    id={`${id}-q`}
+    type="search"
+    name="q"
+    placeholder={t('search.placeholder')}
+    autocomplete="off"
+    role="combobox"
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-controls={`${id}-list`}
+  />
+  <div id={`${id}-list`} class="search-suggest" role="listbox" hidden></div>
+</form>
+
+<script>
+  import '../scripts/search';
+</script>
