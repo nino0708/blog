@@ -1,6 +1,8 @@
 ---
+// フッター。メニュー構成は src/lib/nav.ts(ヘッダーと共通)。
 import { useT, localizePath, type Lang } from '../i18n/ui';
-import { BRIDGES, CATEGORIES } from '../lib/category';
+import { readItems, toolItems, aboutItems } from '../lib/nav';
+import Logo from './Logo.astro';
 
 interface Props {
   lang: Lang;
@@ -13,39 +15,31 @@ const year = new Date().getFullYear();
   <div class="container">
     <div class="footer-cols">
       <div class="footer-brand">
-        <a href={localizePath(lang, '/')} class="brand">Built <span>Japan</span></a>
+        <a href={localizePath(lang, '/')} class="brand"><Logo size={24} /><span class="brand-text">Built <span>Japan</span></span></a>
         <p class="disclaimer">{t('footer.disclaimer')}</p>
       </div>
 
-      <nav class="footer-col" aria-label={t('footer.explore')}>
-        <h2>{t('footer.explore')}</h2>
+      <nav class="footer-col" aria-label={t('nav.read')}>
+        <h2>{t('nav.read')}</h2>
         <ul>
           <li><a href={localizePath(lang, '/')}>{t('nav.latest')}</a></li>
-          <li><a href={localizePath(lang, '/buildings/')}>{t('nav.home')}</a></li>
-          {lang === 'ja' && <li><a href="/rankings/">ランキング</a></li>}
-          <li><a href={localizePath(lang, '/database/')}>{t('nav.database')}</a></li>
-          <li><a href={localizePath(lang, '/stamps/')}>{t('nav.stamps')}</a></li>
-          <li><a href={localizePath(lang, '/about/')}>{t('nav.about')}</a></li>
+          {readItems(lang).map((i) => <li><a href={i.href}>{i.label}</a></li>)}
         </ul>
       </nav>
 
-      {lang === 'ja' && (
-        <nav class="footer-col" aria-label={t('footer.categories')}>
-          <h2>{t('footer.categories')}</h2>
-          <ul>
-            <li><a href="/buildings/">{t('nav.home')}</a></li>
-            <li><a href="/expressways/">{CATEGORIES.expressways.label.ja}</a></li>
-            <li><a href="/railways/">{CATEGORIES.railways.label.ja}</a></li>
-            <li><a href="/bridges/">{BRIDGES.label.ja}</a></li>
-            <li><a href="/tourism/">{CATEGORIES.tourism.label.ja}</a></li>
-          </ul>
-        </nav>
-      )}
+      <nav class="footer-col" aria-label={t('nav.tools')}>
+        <h2>{t('nav.tools')}</h2>
+        <ul>
+          {toolItems(lang).map((i) => <li><a href={i.href}>{i.label}</a></li>)}
+          <li><a href={localizePath(lang, '/search/')}>{t('nav.search')}</a></li>
+        </ul>
+      </nav>
 
       <nav class="footer-col" aria-label={t('footer.follow')}>
         <h2>{t('footer.follow')}</h2>
         <ul>
           <li><a href="https://x.com/builtjapan" target="_blank" rel="noopener">{t('footer.x')}</a></li>
+          {aboutItems(lang).map((i) => <li><a href={i.href}>{i.label}</a></li>)}
         </ul>
       </nav>
     </div>

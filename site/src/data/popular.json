@@ -1,0 +1,11 @@
+{
+  "_comment": "トップの「よく見られている」に出す記事の slug。reports/analytics-*.md の人気ページを見て更新する。無い slug は自動で飛ばす。",
+  "buildings": [
+    "nihonbashi-nomura-mitsui-tower",
+    "azabudai-hills-mori-jp-tower",
+    "jp-tower-nagoya",
+    "ss30-sendai",
+    "mode-gakuen-spiral-towers",
+    "tokyo-skytree"
+  ]
+}

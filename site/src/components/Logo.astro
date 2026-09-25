@@ -1,0 +1,12 @@
+---
+// ロゴマーク: 墨色の角丸にビル3棟。いちばん高い棟の頂に朱の航空障害灯。
+interface Props { size?: number }
+const { size = 26 } = Astro.props;
+---
+<svg class="brand-mark" width={size} height={size} viewBox="0 0 32 32" aria-hidden="true">
+  <rect width="32" height="32" rx="8" fill="var(--logo-bg, #16181d)" />
+  <rect x="6.5" y="15" width="5" height="11" rx="1" fill="#fff" opacity="0.72" />
+  <rect x="13.5" y="8" width="5" height="18" rx="1" fill="#fff" />
+  <rect x="20.5" y="12" width="5" height="14" rx="1" fill="#fff" opacity="0.86" />
+  <circle cx="16" cy="5" r="1.9" fill="var(--accent, #d9412b)" />
+</svg>

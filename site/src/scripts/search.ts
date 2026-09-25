@@ -109,13 +109,13 @@ function initBox(form: HTMLFormElement) {
     listbox.innerHTML = results.length
       ? results
           .map(
-            (it, i) => `<a role="option" id="${form.id}-opt-${i}" class="sb-opt" href="${esc(it.u)}" aria-selected="false">
-              <span class="sb-title">${esc(it.t)}${it.p ? ` <em class="sb-stub">${esc(labels.stub)}</em>` : ''}</span>
-              <span class="sb-meta">${esc(metaLine(it, kinds, lang))}</span></a>`,
+            (it, i) => `<a role="option" id="${form.id}-opt-${i}" class="ss-opt" href="${esc(it.u)}" aria-selected="false">
+              <span class="ss-title">${esc(it.t)}${it.p ? ` <em class="ss-stub">${esc(labels.stub)}</em>` : ''}</span>
+              <span class="ss-meta">${esc(metaLine(it, kinds, lang))}</span></a>`,
           )
           .join('') +
-        `<a class="sb-more" href="${esc(form.action)}?q=${encodeURIComponent(q)}">${esc(labels.more)}</a>`
-      : `<p class="sb-empty">${esc(labels.empty)}</p>`;
+        `<a class="ss-more" href="${esc(form.action)}?q=${encodeURIComponent(q)}">${esc(labels.more)}</a>`
+      : `<p class="ss-empty">${esc(labels.empty)}</p>`;
     listbox.hidden = false;
     input.setAttribute('aria-expanded', 'true');
     active = -1;
@@ -183,7 +183,7 @@ function initPage(root: HTMLElement) {
             (it) => `<li><a class="search-hit" href="${esc(it.u)}">
               ${it.i ? `<img src="${esc(it.i)}" alt="" loading="lazy" />` : `<span class="search-hit-ph" aria-hidden="true">${esc((kinds[it.k] ?? '').slice(0, 1))}</span>`}
               <span class="search-hit-body">
-                <span class="search-hit-title">${esc(it.t)}${it.p ? ` <em class="sb-stub">${esc(labels.stub)}</em>` : ''}</span>
+                <span class="search-hit-title">${esc(it.t)}${it.p ? ` <em class="ss-stub">${esc(labels.stub)}</em>` : ''}</span>
                 <span class="search-hit-meta">${esc(metaLine(it, kinds, lang))}</span>
                 ${it.s ? `<span class="search-hit-sum">${esc(it.s)}</span>` : ''}
               </span></a></li>`,

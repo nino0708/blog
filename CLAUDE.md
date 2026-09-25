@@ -24,12 +24,15 @@ Astro（`site/`）で静的HTMLを作り、CodeBuild が S3 + CloudFront に公�
 | `lib/lists.ts` | 記事一覧ページ（ビル・橋・高速道路・交通網・観光）の定義。一覧を増やすときはここに1件足す |
 | `lib/buildings.ts` | 図鑑・地図・スタンプ用の「全建物」行（レジストリ ∪ 記事）と距離計算 |
 | `lib/category.ts` | カテゴリの表示名・説明文 |
+| `lib/nav.ts` | メニュー構成（ヘッダー・フッター・トップが共通で使う）。ページを足したらここにも足す |
+| `lib/search.ts` / `scripts/search.ts` | サイト内検索（ビルド時にインデックスJSONを作り、ブラウザで検索） |
+| `data/popular.json` | トップの「よく見られている」記事。`reports/analytics-*.md` の人気ページを見て更新する |
 | `lib/area.ts` | エリア（都道府県・市区）の正規化と絞り込みチップ |
 | `i18n/ui.ts` | UI文言の辞書、`localizePath`、`langPaths` などの日英ヘルパー |
 | `pages/[...lang]/` | 全ページ（日英を1ファイルで生成） |
 | `pages/sitemap.xml.ts` | sitemap。記事・一覧はデータ層から自動で載る。固定ページを足したら `STATIC_PAGES` にも足す |
 | `components/` | 表示部品。`ListView`（一覧）、`BuildingArticle` / `CategoryArticle`（記事詳細）など |
-| `styles/global.css` | サイト全体のスタイル |
+| `styles/global.css` | サイト全体のスタイル。色は冒頭の `:root` のトークンだけで決める（紙の白・墨・朱のアクセント・藍のリンク） |
 
 ### ページの書き方
 
