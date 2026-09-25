@@ -31,11 +31,16 @@ cfg = {
 }
 
 # ボット/クローラを示す User-Agent。人間のアクセス推定から除外する。
+# 注意: ブラウザUAを偽装するスクレイパーはUAだけでは弾けない。確実な人間数は
+# referred_hits（外部リファラ付きPV）で別途出す。
 _BOT_RE = re.compile(
     r"bot|crawl|spider|slurp|bing|google|yandex|baidu|duckduck|facebookexternal|"
     r"headless|curl|wget|python-|libwww|httpclient|monitor|uptime|ahrefs|semrush|"
     r"pingdom|datadog|lighthouse|preview|fetch|"
-    r"gptbot|chatgpt-user|oai-search|perplexity|claude|anthropic|ccbot|amazonbot|meta-external",
+    # UAに bot 等の語を含まないHTTPクライアント/スクレイパ/AIクローラ
+    r"scrapy|go-http|okhttp|java/|node-fetch|axios|aiohttp|http-client|dart:io|"
+    r"ruby|perl|phantomjs|selenium|playwright|puppeteer|gpt|anthropic|perplexity|"
+    r"bytespider|aisearch|empty|claude|meta-external",
     re.I,
 )
 # ボットの内訳。上から順に最初に一致したものを採用する(具体的なものを先に)。
@@ -124,11 +129,11 @@ def _recent_log_keys(s3):
 def _aggregate(s3, keys):
     fields = None
     requests_total = 0
-    page_hits = 0          # HTMLページの200だけ(人間)
+    page_hits = 0          # HTMLページの200(非ボットUA)。UA偽装ボット混入の"上限値"
+    referred_hits = 0      # うち外部リファラ付き=確実な人間PV
     bot_hits = 0
     ips = set()
-    ref_hits = 0           # 外部リファラ付きの人間PV(確実な読者)
-    ref_ips = set()
+    referred_ips = set()
     bot_names = Counter()  # ボット名別のページ取得数
     bot_cats = Counter()   # 区分別のページ取得数
     bot_bytes = Counter()  # 区分別の転送量(画像等も含む全リクエスト)
@@ -190,17 +195,17 @@ def _aggregate(s3, keys):
                         host = re.sub(r"^https?://", "", ref).split("/")[0]
                         if cfg["site_host"] not in host:  # 自サイト内遷移は除外
                             referrers[host] += 1
-                            ref_hits += 1
+                            referred_hits += 1
                             if ip:
-                                ref_ips.add(ip)
+                                referred_ips.add(ip)
 
     return {
         "requests_total": requests_total,
         "page_hits": page_hits,
+        "referred_hits": referred_hits,
+        "referred_ips": len(referred_ips),
         "bot_hits": bot_hits,
         "unique_ips": len(ips),
-        "ref_hits": ref_hits,
-        "ref_visitors": len(ref_ips),
         "bot_names": bot_names.most_common(15),
         "bot_cats": dict(bot_cats),
         "bot_bytes": dict(bot_bytes),
@@ -221,7 +226,7 @@ def _render(a, start, end):
         L.append("ログが蓄積される翌週以降に数値が出ます。")
         return "\n".join(L) + "\n"
     L.append("## サマリ")
-    L.append(f"- ✅ 確実な人間PV（外部リファラ付き）: **{a['ref_hits']}**（うち訪問者 {a['ref_visitors']}）")
+    L.append(f"- ✅ 確実な人間PV（外部リファラ付き）: **{a['referred_hits']}**（うち訪問者 {a['referred_ips']}）")
     L.append("  - ← 検索/SNS/被リンク等から来た本物の読者。事業判断はこの数字を基準に。")
     L.append(f"- ⚠️ HTML200・非ボットUA: {a['page_hits']}（訪問IP {a['unique_ips']}）")
     L.append("  - ← UAを偽装したスクレイパー/AIクローラが混入する**上限値**。実読者数ではない。")
@@ -321,13 +326,15 @@ def handler(event=None, context=None):
     iso = now.isocalendar()
     dated = f"{cfg['report_dir']}/analytics-{iso.year}-W{iso.week:02d}.md"
     latest = f"{cfg['report_dir']}/analytics-latest.md"
-    msg = f"分析部: アクセスレポート {start}〜{end}（確実PV{agg['ref_hits']}/上限PV{agg['page_hits']}）"
+    msg = (f"分析部: アクセスレポート {start}〜{end}"
+           f"（確実PV{agg['referred_hits']}/上限PV{agg['page_hits']}）")
     _commit(dated, report, msg)
     _commit(latest, report, msg)
 
     return {"status": "ok", "start": start, "end": end,
-            "ref_hits": agg["ref_hits"], "unique_ips": agg["unique_ips"], "page_hits": agg["page_hits"],
-            "bot_hits": agg["bot_hits"], "log_files": agg["files"]}
+            "referred_hits": agg["referred_hits"], "unique_ips": agg["unique_ips"],
+            "page_hits": agg["page_hits"], "bot_hits": agg["bot_hits"],
+            "log_files": agg["files"]}
 
 
 if __name__ == "__main__":
