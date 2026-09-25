@@ -8,7 +8,8 @@ Astro（`site/`）で静的HTMLを作り、CodeBuild が S3 + CloudFront に公�
 1. **日本語と英語は常に同期する。** 日本語版のページ・部品・文言・機能を変えたり足したりしたら、同じ変更を英語版にも同じ構成で入れる。
    - ページは `site/src/pages/[...lang]/` に1ファイルだけ置き、日英を同じコードで生成する（`/xxx/` と `/en/xxx/`）。
    - UI文言は `site/src/i18n/ui.ts` の `ja` と `en` の両方に同じキーで足す。片方だけに足さない。
-   - 英語版をまだ作れないページは、`langPaths(['ja'])` のように理由をコメントに書いて日本語だけ生成する（現在: ランキング、観光）。
+   - 英語版をまだ作れないページは、`langPaths(['ja'])` のように理由をコメントに書いて日本語だけ生成する（現在はすべてのページが日英そろっている）。
+   - 英語記事の本文にある内部リンクは `site/src/plugins/remark-localize-links.mjs` が英語ページへ自動で張り替える（英語版が無いページは日本語のまま）。
 2. **数値の事実を創作しない。** 竣工年・高さ・階数・座標などは `generator/data/buildings.json`（seed）と記事の front matter、`site/src/data/buildings-registry.json` にある値だけを使う。
 3. **URLを変えない。** 検索エンジンからの流入を守るため、既存ページのパスは変えない。どうしても変えるときは旧URLに転送ページを置く（例: `site/src/pages/[...lang]/page/[page].astro`）。
 4. **記事ファイルの形を変えない。** `site/src/content/**` の Markdown は generator が毎日書き込む。front matter のスキーマ（`site/src/content/config.ts`）を変えるときは `generator/` 側も合わせる。

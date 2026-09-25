@@ -3,7 +3,7 @@
 import { useT, languages, type Lang } from '../i18n/ui';
 import { BRIDGES, CATEGORIES } from './category';
 import {
-  CATEGORY_HAS_EN, getBridgePosts, getCategoryListing, getTowerPosts,
+  getBridgePosts, getCategoryListing, getTowerPosts,
   pageCount, type AnyPost, type CategoryKey,
 } from './content';
 
@@ -25,7 +25,8 @@ const category = (key: CategoryKey): ListDef => ({
   key,
   label: (lang) => CATEGORIES[key].label[lang],
   description: (lang) => CATEGORIES[key].description[lang],
-  langs: CATEGORY_HAS_EN[key] ? languages : ['ja'],
+  // 観光は本体に英語版が無いが、英語版のある建物が合流するので英語の一覧も作る。
+  langs: languages,
   view: 'category',
   posts: (lang) => getCategoryListing(key, lang),
 });

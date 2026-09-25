@@ -14,7 +14,7 @@ const STATIC_PAGES: { path: string; langs: readonly Lang[] }[] = [
   { path: '/database/', langs: languages },
   { path: '/near/', langs: languages },
   { path: '/stamps/', langs: languages },
-  { path: '/rankings/', langs: ['ja'] },
+  { path: '/rankings/', langs: languages },
 ];
 
 export const GET: APIRoute = async ({ site }) => {

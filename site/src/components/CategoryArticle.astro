@@ -3,7 +3,7 @@
 // ビル記事(BuildingArticle)と違い buildingType や諸元(高さ・階数)を持たないため、
 // 見た目を揃えつつスペック表を省いた構成にしている。本文はデフォルトスロットで受け取る。
 import AffiliateLinks from './AffiliateLinks.astro';
-import { useT, type Lang } from '../i18n/ui';
+import { localizePath, useT, type Lang } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
@@ -31,12 +31,15 @@ interface Props {
   booksKeyword?: string;
   /** 地図の検索語。路線名など広域はピンが曖昧になるため呼び出し側で調整可能にする */
   mapLabel?: string;
+  /** 同じカテゴリの前後の記事(新しい記事 / 古い記事) */
+  newer?: { title: string; href: string };
+  older?: { title: string; href: string };
 }
 const {
   lang, title, summary, area, categoryLabel, verified,
   heroImage, heroImageCredit, heroImageLink,
   tags, tagBase, linkableTags = [], sources, listPath,
-  related = [], booksKeyword, mapLabel,
+  related = [], booksKeyword, mapLabel, newer, older,
 } = Astro.props;
 const t = useT(lang);
 const commonsLabel = lang === 'ja' ? 'Wikimedia Commons' : 'via Wikimedia Commons';
@@ -46,7 +49,13 @@ const q = encodeURIComponent(mapLabel ?? title);
 const mapEmbedSrc = `https://maps.google.com/maps?q=${q}&z=14&hl=${lang}&output=embed`;
 const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
 ---
-<p class="breadcrumb"><a href={listPath}>{t('breadcrumb.list')}</a>{area ? ` ／ ${area}` : ''}</p>
+<nav class="breadcrumb" aria-label={t('breadcrumb.label')}>
+  <ol>
+    <li><a href={localizePath(lang, '/')}>{t('breadcrumb.home')}</a></li>
+    <li><a href={listPath}>{categoryLabel}</a></li>
+    {area && <li><span>{area}</span></li>}
+  </ol>
+</nav>
 <article class="article">
   <div class="taglist">
     <span class="badge category">{categoryLabel}</span>
@@ -69,6 +78,13 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
   )}
 
   <slot />
+
+  {(newer || older) && (
+    <nav class="post-pager" aria-label={t('pager.label')}>
+      {older ? <a class="post-pager-older" href={older.href}><span>{t('pager.older')}</span><b>{older.title}</b></a> : <span></span>}
+      {newer ? <a class="post-pager-newer" href={newer.href}><span>{t('pager.newer')}</span><b>{newer.title}</b></a> : <span></span>}
+    </nav>
+  )}
 
   {related.length > 0 && (
     <nav class="related" aria-label={t('related.title')}>

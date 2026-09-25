@@ -3,8 +3,10 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import BuildingArticle from '../../../components/BuildingArticle.astro';
 import { buildSpecs, langParam, languages, localizePath, type Lang } from '../../../i18n/ui';
-import { getBuildingPosts, type BuildingPost } from '../../../lib/content';
-import { getBuildingRows, nearestTo } from '../../../lib/buildings';
+import { getBuildingPosts, getBridgePosts, getTowerPosts, type BuildingPost } from '../../../lib/content';
+import { getBuildingRows, nearestTo, registryGeoBySlug } from '../../../lib/buildings';
+import { areaLabel, cityKey } from '../../../lib/area';
+import { LISTS, listPath } from '../../../lib/lists';
 
 export async function getStaticPaths() {
   const paths = [];
@@ -20,6 +22,27 @@ const { lang, post } = Astro.props as { lang: Lang; post: BuildingPost };
 const { Content } = await post.entry.render();
 const f = post.facts; // 数値の事実(日本語版が出典)
 const ja = lang === 'ja';
+
+// この記事が載る一覧(橋は /bridges/、それ以外は /buildings/)と、その一覧での前後の記事
+const bridges = await getBridgePosts(lang);
+const inBridges = bridges.some((p) => p.slug === post.slug);
+const listKey = inBridges ? 'bridges' : 'buildings';
+const siblings = inBridges ? bridges : await getTowerPosts(lang);
+const idx = siblings.findIndex((p) => p.slug === post.slug);
+const pick = (p?: BuildingPost) => (p ? { title: p.title, href: p.href } : undefined);
+const newer = idx > 0 ? pick(siblings[idx - 1]) : undefined;
+const older = idx >= 0 ? pick(siblings[idx + 1]) : undefined;
+
+// パンくず: ホーム › 一覧 › 市区(図鑑をその市区で絞り込んで開く)
+const geo = registryGeoBySlug().get(post.slug);
+const crumbs = [
+  { label: ja ? 'ホーム' : 'Home', href: localizePath(lang, '/') },
+  { label: LISTS[listKey].label(lang), href: listPath(lang, listKey) },
+  geo?.city
+    ? { label: areaLabel(cityKey(geo.pref ?? '', geo.city), lang), href: `${localizePath(lang, '/database/')}?city=${encodeURIComponent(geo.city)}` }
+    : { label: post.area },
+];
+
 
 const base = (Astro.site ?? new URL('https://example.com')).toString().replace(/\/$/, '');
 const pageUrl = new URL(post.href, Astro.site ?? 'https://example.com').toString();
@@ -59,7 +82,7 @@ const jsonLd = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: ja ? 'ホーム' : 'Home', item: `${base}${localizePath(lang, '/')}` },
-        { '@type': 'ListItem', position: 2, name: ja ? 'ビル・マンション' : 'Buildings', item: `${base}${localizePath(lang, '/buildings/')}` },
+        { '@type': 'ListItem', position: 2, name: LISTS[listKey].label(lang), item: `${base}${listPath(lang, listKey)}` },
         { '@type': 'ListItem', position: 3, name: post.title, item: pageUrl },
       ],
     },
@@ -135,6 +158,9 @@ const nearHref = hasCoords
     nearby={nearby}
     nearHref={nearHref}
     mapLabel={f.title}
+    crumbs={crumbs}
+    newer={newer}
+    older={older}
   >
     <Content />
   </BuildingArticle>
