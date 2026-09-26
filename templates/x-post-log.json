@@ -148,5 +148,30 @@
     "slug": "crystal-tower-osaka",
     "postedAt": "2026-09-25",
     "type": "quiz"
+  },
+  {
+    "slug": "eitaibashi",
+    "postedAt": "2026-09-26",
+    "type": "intro"
+  },
+  {
+    "slug": "harumi-ohashi",
+    "postedAt": "2026-09-26",
+    "type": "intro"
+  },
+  {
+    "slug": "brillia-tower-ikebukuro",
+    "postedAt": "2026-09-26",
+    "type": "intro"
+  },
+  {
+    "slug": "branz-tower-toyosu",
+    "postedAt": "2026-09-26",
+    "type": "intro"
+  },
+  {
+    "slug": "grand-front-osaka",
+    "postedAt": "2026-09-26",
+    "type": "quiz"
   }
 ]
