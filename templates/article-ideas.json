@@ -2477,6 +2477,51 @@
       "area": "横浜市西区",
       "angle": "1991年開業、パシフィコ横浜に立つ地上31階・高さ140mのホテル棟。「ヨットの帆」をかたどった流線型ファサードがみなとみらいのスカイラインを象徴する",
       "status": "done"
+    },
+    {
+      "id": 276,
+      "category": "office",
+      "title": "仙台トラストタワー",
+      "slug": "sendai-trust-tower",
+      "area": "仙台市青葉区",
+      "angle": "2010年竣工、地上37階・高さ180mで東北・北日本最高層を誇るオフィス・ホテル複合タワー。森トラスト開発、松田平田設計",
+      "status": "done"
+    },
+    {
+      "id": 277,
+      "category": "office",
+      "title": "大阪梅田ツインタワーズ・サウス",
+      "slug": "osaka-umeda-twin-towers-south",
+      "area": "大阪市北区",
+      "angle": "旧大阪神ビルと新阪急ビル跡地に2022年竣工、地上38階・高さ188.9m。阪神百貨店梅田本店を内包する梅田ツインタワーの南棟",
+      "status": "done"
+    },
+    {
+      "id": 278,
+      "category": "residence",
+      "title": "ザ・キタハマ",
+      "slug": "the-kitahama",
+      "area": "大阪市中央区",
+      "angle": "2009年竣工、地上54階・高さ209.35mの超高層タワーマンション。大阪北浜の金融街に立ち、大阪府内有数の高さを誇る住宅建築",
+      "status": "done"
+    },
+    {
+      "id": 279,
+      "category": "office",
+      "title": "大阪ベイタワー",
+      "slug": "osaka-bay-tower",
+      "area": "大阪市港区",
+      "angle": "1993年竣工、地上51階・高さ200.05mの大阪湾岸ウォーターフロント複合ビル。ORC200の核施設でホテル・放送局・温泉テーマパークを内包",
+      "status": "done"
+    },
+    {
+      "id": 280,
+      "category": "residence",
+      "title": "シティタワー広島",
+      "slug": "city-tower-hiroshima",
+      "area": "広島市南区",
+      "angle": "2016年竣工、地上52階・高さ197.5mで中国地方最高層の超高層タワーマンション。BIG FRONTひろしまとして広島駅北口の玄関を担う",
+      "status": "done"
     }
   ]
 }
