@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-26T08:22:00.208859+09:00",
+  "checkedAt": "2026-09-27T08:20:56.037204+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -327,15 +327,15 @@
       "url": "https://builtjapan.com/buildings/iidabashi-grand-bloom/",
       "slug": "iidabashi-grand-bloom",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Iidabashi_Grand_Bloom_2019a.jpg/1280px-Iidabashi_Grand_Bloom_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/iidabashi-grand-bloom/",
       "slug": "iidabashi-grand-bloom",
       "lang": "en",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Iidabashi_Grand_Bloom_2019a.jpg/1280px-Iidabashi_Grand_Bloom_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/kobe-port-tower/",
@@ -594,14 +594,14 @@
       "slug": "shirokane-the-sky",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Shirokane_The_Sky_2.jpg/1280px-Shirokane_The_Sky_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shirokane-the-sky/",
       "slug": "shirokane-the-sky",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Shirokane_The_Sky_2.jpg/1280px-Shirokane_The_Sky_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/fuji-tv-headquarters/",
@@ -649,15 +649,15 @@
       "url": "https://builtjapan.com/buildings/tokyo-dome/",
       "slug": "tokyo-dome",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/TokyoDomeExteriorNight.JPG/1280px-TokyoDomeExteriorNight.JPG"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-dome/",
       "slug": "tokyo-dome",
       "lang": "en",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/TokyoDomeExteriorNight.JPG/1280px-TokyoDomeExteriorNight.JPG"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/toranomon-hills-residential-tower/",
@@ -873,15 +873,15 @@
       "url": "https://builtjapan.com/buildings/land-axis-tower-saitama/",
       "slug": "land-axis-tower-saitama",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg/1280px-Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/land-axis-tower-saitama/",
       "slug": "land-axis-tower-saitama",
       "lang": "en",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg/1280px-Meiji_Yasuda_LA-Saitama_Shintoshin-2005-9-11.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/park-city-musashi-kosugi-station-forest-tower/",
@@ -1111,15 +1111,15 @@
       "url": "https://builtjapan.com/buildings/tokyo-dome-hotel/",
       "slug": "tokyo-dome-hotel",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Tokyo_Dome_Hotel_2.jpg/1280px-Tokyo_Dome_Hotel_2.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-dome-hotel/",
       "slug": "tokyo-dome-hotel",
       "lang": "en",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Tokyo_Dome_Hotel_2.jpg/1280px-Tokyo_Dome_Hotel_2.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-skytree-east-tower/",
@@ -2008,14 +2008,14 @@
       "slug": "st-lukes-garden",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/",
@@ -2259,15 +2259,15 @@
       "url": "https://builtjapan.com/buildings/harumi-flag-sky-duo/",
       "slug": "harumi-flag-sky-duo",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/HARUMI_FLAG_SKY_DUO.jpg/1280px-HARUMI_FLAG_SKY_DUO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/harumi-flag-sky-duo/",
       "slug": "harumi-flag-sky-duo",
       "lang": "en",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/HARUMI_FLAG_SKY_DUO.jpg/1280px-HARUMI_FLAG_SKY_DUO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/park-city-musashikosugi-midsky/",
@@ -2819,15 +2819,15 @@
       "url": "https://builtjapan.com/buildings/japan-national-stadium/",
       "slug": "japan-national-stadium",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Japan_National_Stadium_2024_1.jpg/1280px-Japan_National_Stadium_2024_1.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/japan-national-stadium/",
       "slug": "japan-national-stadium",
       "lang": "en",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Japan_National_Stadium_2024_1.jpg/1280px-Japan_National_Stadium_2024_1.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/yoyogi-national-gymnasium/",
@@ -2875,15 +2875,15 @@
       "url": "https://builtjapan.com/buildings/osaki-thinkpark-tower/",
       "slug": "osaki-thinkpark-tower",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Osaki_Think_Park_Tower_-_panoramio.jpg/1280px-Osaki_Think_Park_Tower_-_panoramio.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/osaki-thinkpark-tower/",
       "slug": "osaki-thinkpark-tower",
       "lang": "en",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Osaki_Think_Park_Tower_-_panoramio.jpg/1280px-Osaki_Think_Park_Tower_-_panoramio.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/shinagawa-season-terrace/",
@@ -3155,15 +3155,15 @@
       "url": "https://builtjapan.com/buildings/shibuya-sakura-stage/",
       "slug": "shibuya-sakura-stage",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shibuya_Sakura_Stage_2.jpg/1280px-Shibuya_Sakura_Stage_2.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shibuya-sakura-stage/",
       "slug": "shibuya-sakura-stage",
       "lang": "en",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shibuya_Sakura_Stage_2.jpg/1280px-Shibuya_Sakura_Stage_2.jpg"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/toranomon-hills-business-tower/",
