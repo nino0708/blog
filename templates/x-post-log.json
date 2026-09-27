@@ -148,5 +148,30 @@
     "slug": "crystal-tower-osaka",
     "postedAt": "2026-09-25",
     "type": "quiz"
+  },
+  {
+    "slug": "azabudai-hills-mori-jp-tower",
+    "postedAt": "2026-09-27",
+    "type": "intro"
+  },
+  {
+    "slug": "tokyo-skytree",
+    "postedAt": "2026-09-27",
+    "type": "intro"
+  },
+  {
+    "slug": "shibuya-scramble-square",
+    "postedAt": "2026-09-27",
+    "type": "intro"
+  },
+  {
+    "slug": "roppongi-hills-mori-tower",
+    "postedAt": "2026-09-27",
+    "type": "intro"
+  },
+  {
+    "slug": "kasumigaseki-building",
+    "postedAt": "2026-09-27",
+    "type": "quiz"
   }
 ]
