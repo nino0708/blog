@@ -148,5 +148,30 @@
     "slug": "crystal-tower-osaka",
     "postedAt": "2026-09-25",
     "type": "quiz"
+  },
+  {
+    "slug": "akasaka-tower-residence-top-of-the-hill",
+    "postedAt": "2026-09-28",
+    "type": "intro"
+  },
+  {
+    "slug": "asakusa-culture-tourist-center",
+    "postedAt": "2026-09-28",
+    "type": "intro"
+  },
+  {
+    "slug": "azabudai-hills-residence-b",
+    "postedAt": "2026-09-28",
+    "type": "intro"
+  },
+  {
+    "slug": "bank-of-yokohama-headquarters",
+    "postedAt": "2026-09-28",
+    "type": "intro"
+  },
+  {
+    "slug": "bayz-tower-and-garden",
+    "postedAt": "2026-09-28",
+    "type": "quiz"
   }
 ]
