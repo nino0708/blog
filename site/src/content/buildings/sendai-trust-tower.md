@@ -12,7 +12,7 @@ architect: "松田平田設計"
 tags: ["仙台市", "東北", "超高層ビル", "再開発"]
 publishedAt: 2026-09-28
 summary: "2010年竣工、地上37階・高さ180mの仙台最高層ビル。東北・北海道で最も高い超高層として仙台一番町の繁華街に立ち、オフィス・ホテル・商業を垂直に統合した複合施設。"
-heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sendai_Trust_Tower_from_east_2010-06-01.JPG/853px-Sendai_Trust_Tower_from_east_2010-06-01.JPG"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Sendai_Trust_Tower.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
 heroImageCredit: "Enirac Sum / パブリックドメイン"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Sendai_Trust_Tower_from_east_2010-06-01.JPG"
 verified: true

@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-09-28 08:21 JST
-- 対象: 公開済み記事 528 ページ（https://builtjapan.com）
-- 正常表示: 430 / 528（81.4%）
-- **要対応: 98 件**（画像なし 98 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-09-29 08:22 JST
+- 対象: 公開済み記事 540 ページ（https://builtjapan.com）
+- 正常表示: 438 / 540（81.1%）
+- **要対応: 102 件**（画像なし 100 / 壊れ 2 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -39,6 +39,7 @@
 | [21（JA）](https://builtjapan.com/buildings/page/21/) | ヒーロー画像なし（プレースホルダ表示） |
 | [22（JA）](https://builtjapan.com/buildings/page/22/) | ヒーロー画像なし（プレースホルダ表示） |
 | [23（JA）](https://builtjapan.com/buildings/page/23/) | ヒーロー画像なし（プレースホルダ表示） |
+| [24（JA）](https://builtjapan.com/buildings/page/24/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（JA）](https://builtjapan.com/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -88,6 +89,7 @@
 | [21（EN）](https://builtjapan.com/en/buildings/page/21/) | ヒーロー画像なし（プレースホルダ表示） |
 | [22（EN）](https://builtjapan.com/en/buildings/page/22/) | ヒーロー画像なし（プレースホルダ表示） |
 | [23（EN）](https://builtjapan.com/en/buildings/page/23/) | ヒーロー画像なし（プレースホルダ表示） |
+| [24（EN）](https://builtjapan.com/en/buildings/page/24/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（EN）](https://builtjapan.com/en/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -107,6 +109,13 @@
 | [tokyo-dome-hotel（EN）](https://builtjapan.com/en/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（EN）](https://builtjapan.com/en/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
+
+## 画像が壊れている（srcはあるが取得できない）
+
+| 記事 | 詳細 |
+|---|---|
+| [sendai-trust-tower（JA）](https://builtjapan.com/buildings/sendai-trust-tower/) | HTTP 400<br>`https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sendai_Trust_Tower_from_east_2010-06-01.JPG/853px-Sendai_Trust_Tower_from_east_2010-06-01.JPG` |
+| [sendai-trust-tower（EN）](https://builtjapan.com/en/buildings/sendai-trust-tower/) | HTTP 400<br>`https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sendai_Trust_Tower_from_east_2010-06-01.JPG/853px-Sendai_Trust_Tower_from_east_2010-06-01.JPG` |
 
 ## 直し方
 

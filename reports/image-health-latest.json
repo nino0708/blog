@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-28T08:21:13.439369+09:00",
+  "checkedAt": "2026-09-29T08:22:00.233598+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -170,6 +170,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/24/",
+      "slug": "24",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -322,6 +329,85 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/24/",
+      "slug": "24",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/hilton-tokyo/",
+      "slug": "hilton-tokyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Shinjuku-International-Building-Hilton-Tokyo-01.jpg/1280px-Shinjuku-International-Building-Hilton-Tokyo-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/hilton-tokyo/",
+      "slug": "hilton-tokyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Shinjuku-International-Building-Hilton-Tokyo-01.jpg/1280px-Shinjuku-International-Building-Hilton-Tokyo-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/sendai-trust-tower/",
+      "slug": "sendai-trust-tower",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sendai_Trust_Tower_from_east_2010-06-01.JPG/853px-Sendai_Trust_Tower_from_east_2010-06-01.JPG",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/sendai-trust-tower/",
+      "slug": "sendai-trust-tower",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sendai_Trust_Tower_from_east_2010-06-01.JPG/853px-Sendai_Trust_Tower_from_east_2010-06-01.JPG",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shibuya-parco/",
+      "slug": "shibuya-parco",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Shibuya_PARCO_4.jpg/1280px-Shibuya_PARCO_4.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shibuya-parco/",
+      "slug": "shibuya-parco",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Shibuya_PARCO_4.jpg/1280px-Shibuya_PARCO_4.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/the-okura-tokyo/",
+      "slug": "the-okura-tokyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Hotel_Okura_Tokyo_190912a1.jpg/1280px-Hotel_Okura_Tokyo_190912a1.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/the-okura-tokyo/",
+      "slug": "the-okura-tokyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Hotel_Okura_Tokyo_190912a1.jpg/1280px-Hotel_Okura_Tokyo_190912a1.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tokyu-plaza-ginza/",
+      "slug": "tokyu-plaza-ginza",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Tokyu_Plaza_Ginza1b.JPG/1280px-Tokyu_Plaza_Ginza1b.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyu-plaza-ginza/",
+      "slug": "tokyu-plaza-ginza",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Tokyu_Plaza_Ginza1b.JPG/1280px-Tokyu_Plaza_Ginza1b.JPG"
     },
     {
       "url": "https://builtjapan.com/buildings/iidabashi-grand-bloom/",
