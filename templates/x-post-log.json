@@ -173,5 +173,30 @@
     "slug": "bayz-tower-and-garden",
     "postedAt": "2026-09-28",
     "type": "quiz"
+  },
+  {
+    "slug": "brillia-tower-ikebukuro",
+    "postedAt": "2026-09-29",
+    "type": "intro"
+  },
+  {
+    "slug": "sompo-japan-headquarters",
+    "postedAt": "2026-09-29",
+    "type": "intro"
+  },
+  {
+    "slug": "izumi-garden-tower",
+    "postedAt": "2026-09-29",
+    "type": "intro"
+  },
+  {
+    "slug": "ginza-six",
+    "postedAt": "2026-09-29",
+    "type": "intro"
+  },
+  {
+    "slug": "marunouchi-park-building",
+    "postedAt": "2026-09-29",
+    "type": "quiz"
   }
 ]
