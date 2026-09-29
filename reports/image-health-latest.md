@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-09-29 08:22 JST
-- 対象: 公開済み記事 540 ページ（https://builtjapan.com）
-- 正常表示: 438 / 540（81.1%）
-- **要対応: 102 件**（画像なし 100 / 壊れ 2 / ページ異常 0）
+- 実行: 2026-09-30 08:23 JST
+- 対象: 公開済み記事 550 ページ（https://builtjapan.com）
+- 正常表示: 448 / 550（81.5%）
+- **要対応: 102 件**（画像なし 102 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -52,6 +52,7 @@
 | [shibuya-fukuras（JA）](https://builtjapan.com/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（JA）](https://builtjapan.com/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
+| [sumitomo-iidabashi-first-tower（JA）](https://builtjapan.com/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（JA）](https://builtjapan.com/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-toranomon-tower（JA）](https://builtjapan.com/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（JA）](https://builtjapan.com/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -102,6 +103,7 @@
 | [shibuya-fukuras（EN）](https://builtjapan.com/en/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（EN）](https://builtjapan.com/en/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
+| [sumitomo-iidabashi-first-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（EN）](https://builtjapan.com/en/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-toranomon-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（EN）](https://builtjapan.com/en/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -109,13 +111,6 @@
 | [tokyo-dome-hotel（EN）](https://builtjapan.com/en/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（EN）](https://builtjapan.com/en/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
-
-## 画像が壊れている（srcはあるが取得できない）
-
-| 記事 | 詳細 |
-|---|---|
-| [sendai-trust-tower（JA）](https://builtjapan.com/buildings/sendai-trust-tower/) | HTTP 400<br>`https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sendai_Trust_Tower_from_east_2010-06-01.JPG/853px-Sendai_Trust_Tower_from_east_2010-06-01.JPG` |
-| [sendai-trust-tower（EN）](https://builtjapan.com/en/buildings/sendai-trust-tower/) | HTTP 400<br>`https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sendai_Trust_Tower_from_east_2010-06-01.JPG/853px-Sendai_Trust_Tower_from_east_2010-06-01.JPG` |
 
 ## 直し方
 
