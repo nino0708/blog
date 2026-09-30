@@ -198,5 +198,30 @@
     "slug": "marunouchi-park-building",
     "postedAt": "2026-09-29",
     "type": "quiz"
+  },
+  {
+    "slug": "ark-hills-front-tower",
+    "postedAt": "2026-09-30",
+    "type": "intro"
+  },
+  {
+    "slug": "branz-tower-toyosu",
+    "postedAt": "2026-09-30",
+    "type": "intro"
+  },
+  {
+    "slug": "brillia-hamarikyu",
+    "postedAt": "2026-09-30",
+    "type": "intro"
+  },
+  {
+    "slug": "central-government-building-7",
+    "postedAt": "2026-09-30",
+    "type": "intro"
+  },
+  {
+    "slug": "city-tower-musashi-kosugi",
+    "postedAt": "2026-09-30",
+    "type": "quiz"
   }
 ]
