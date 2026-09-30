@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-30T08:23:44.246170+09:00",
+  "checkedAt": "2026-10-01T08:21:47.102702+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -177,6 +177,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/25/",
+      "slug": "25",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -336,6 +343,83 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/25/",
+      "slug": "25",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/carrot-tower/",
+      "slug": "carrot-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Carrot_Tower_and_an_alley_in_Sangenjaya%2C_Setagaya%2C_Tokyo.jpg/1280px-Carrot_Tower_and_an_alley_in_Sangenjaya%2C_Setagaya%2C_Tokyo.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/carrot-tower/",
+      "slug": "carrot-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Carrot_Tower_and_an_alley_in_Sangenjaya%2C_Setagaya%2C_Tokyo.jpg/1280px-Carrot_Tower_and_an_alley_in_Sangenjaya%2C_Setagaya%2C_Tokyo.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/jr-hakata-city/",
+      "slug": "jr-hakata-city",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/JR_Hakata_City_2011_Jan.jpg/1280px-JR_Hakata_City_2011_Jan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/jr-hakata-city/",
+      "slug": "jr-hakata-city",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/JR_Hakata_City_2011_Jan.jpg/1280px-JR_Hakata_City_2011_Jan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kansai-international-airport/",
+      "slug": "kansai-international-airport",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/KIX-PTB.JPG/1280px-KIX-PTB.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kansai-international-airport/",
+      "slug": "kansai-international-airport",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/KIX-PTB.JPG/1280px-KIX-PTB.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/national-art-center-tokyo/",
+      "slug": "national-art-center-tokyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/National_Art_Center_Tokyo_2008.jpg/1280px-National_Art_Center_Tokyo_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/national-art-center-tokyo/",
+      "slug": "national-art-center-tokyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/National_Art_Center_Tokyo_2008.jpg/1280px-National_Art_Center_Tokyo_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/palace-hotel-tokyo/",
+      "slug": "palace-hotel-tokyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Palace-Hotel-Tokyo-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/palace-hotel-tokyo/",
+      "slug": "palace-hotel-tokyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Palace-Hotel-Tokyo-01.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/ark-hills-front-tower/",
