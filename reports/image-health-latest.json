@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-01T08:21:47.102702+09:00",
+  "checkedAt": "2026-10-02T08:23:06.048564+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -350,6 +350,76 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/azabudai-hills-residence-a/",
+      "slug": "azabudai-hills-residence-a",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Azabudai_Hills_residence_construction.jpg/1280px-Azabudai_Hills_residence_construction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/azabudai-hills-residence-a/",
+      "slug": "azabudai-hills-residence-a",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Azabudai_Hills_residence_construction.jpg/1280px-Azabudai_Hills_residence_construction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/chubu-electric-mirai-tower/",
+      "slug": "chubu-electric-mirai-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Nagoya_TV_Tower_2024-07-24.jpg/1280px-Nagoya_TV_Tower_2024-07-24.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/chubu-electric-mirai-tower/",
+      "slug": "chubu-electric-mirai-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Nagoya_TV_Tower_2024-07-24.jpg/1280px-Nagoya_TV_Tower_2024-07-24.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/omotesando-hills/",
+      "slug": "omotesando-hills",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Omotesando_Hills_Exterior_Night_view_201306.jpg/1280px-Omotesando_Hills_Exterior_Night_view_201306.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/omotesando-hills/",
+      "slug": "omotesando-hills",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Omotesando_Hills_Exterior_Night_view_201306.jpg/1280px-Omotesando_Hills_Exterior_Night_view_201306.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/sapporo-tv-tower/",
+      "slug": "sapporo-tv-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Sapporo_TV_tower-20091013-RM-162316.jpg/1280px-Sapporo_TV_tower-20091013-RM-162316.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/sapporo-tv-tower/",
+      "slug": "sapporo-tv-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Sapporo_TV_tower-20091013-RM-162316.jpg/1280px-Sapporo_TV_tower-20091013-RM-162316.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shinjuku-ns-building/",
+      "slug": "shinjuku-ns-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Shinjuku_NS_building.jpg/1280px-Shinjuku_NS_building.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinjuku-ns-building/",
+      "slug": "shinjuku-ns-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Shinjuku_NS_building.jpg/1280px-Shinjuku_NS_building.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/carrot-tower/",
@@ -832,14 +902,14 @@
       "slug": "shirokane-the-sky",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Shirokane_The_Sky_2.jpg/1280px-Shirokane_The_Sky_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shirokane-the-sky/",
       "slug": "shirokane-the-sky",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Shirokane_The_Sky_2.jpg/1280px-Shirokane_The_Sky_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/fuji-tv-headquarters/",
@@ -2246,14 +2316,14 @@
       "slug": "st-lukes-garden",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/",
@@ -2652,14 +2722,14 @@
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioicho/",
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",
