@@ -2612,6 +2612,51 @@
       "area": "福岡市博多区",
       "angle": "2011年3月竣工・九州新幹線全線開業前日に開業した博多駅ビルの全面建替え。延床面積約199,085㎡は前身の約7倍。JR九州が主導した九州最大の駅商業施設",
       "status": "done"
+    },
+    {
+      "id": 291,
+      "category": "office",
+      "title": "新宿NSビル",
+      "slug": "shinjuku-ns-building",
+      "area": "新宿区",
+      "angle": "全層アトリウムを持つ西新宿の第二世代超高層ビル。日本生命・住友不動産共同開発、日建設計。",
+      "status": "done"
+    },
+    {
+      "id": 292,
+      "category": "office",
+      "title": "表参道ヒルズ",
+      "slug": "omotesando-hills",
+      "area": "渋谷区",
+      "angle": "安藤忠雄設計。欅並木を守るため地上3階の低層設計。らせんスロープの空間構成。",
+      "status": "done"
+    },
+    {
+      "id": 293,
+      "category": "office",
+      "title": "中部電力MIRAIタワー（旧名古屋テレビ塔）",
+      "slug": "chubu-electric-mirai-tower",
+      "area": "名古屋市中区",
+      "angle": "1954年竣工・日本最古の集約電波塔。内藤多仲設計。2022年重要文化財指定。",
+      "status": "done"
+    },
+    {
+      "id": 294,
+      "category": "office",
+      "title": "さっぽろテレビ塔",
+      "slug": "sapporo-tv-tower",
+      "area": "札幌市中央区",
+      "angle": "1957年竣工・大通公園東端のランドマーク。内藤多仲設計。2025年登録有形文化財。",
+      "status": "done"
+    },
+    {
+      "id": 295,
+      "category": "residence",
+      "title": "麻布台ヒルズ レジデンスA",
+      "slug": "azabudai-hills-residence-a",
+      "area": "港区",
+      "angle": "2023年麻布台ヒルズ開業。54階237m。ジャヌ東京ホテル＋住宅の複合棟。森ビル開発。",
+      "status": "done"
     }
   ]
 }
