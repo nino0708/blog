@@ -223,5 +223,30 @@
     "slug": "city-tower-musashi-kosugi",
     "postedAt": "2026-09-30",
     "type": "quiz"
+  },
+  {
+    "slug": "azabudai-hills-residence-a",
+    "postedAt": "2026-10-01",
+    "type": "intro"
+  },
+  {
+    "slug": "carrot-tower",
+    "postedAt": "2026-10-01",
+    "type": "intro"
+  },
+  {
+    "slug": "chubu-electric-mirai-tower",
+    "postedAt": "2026-10-01",
+    "type": "intro"
+  },
+  {
+    "slug": "city-tower-osaka-honmachi",
+    "postedAt": "2026-10-01",
+    "type": "intro"
+  },
+  {
+    "slug": "city-tower-shinagawa",
+    "postedAt": "2026-10-01",
+    "type": "quiz"
   }
 ]
