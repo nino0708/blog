@@ -248,5 +248,30 @@
     "slug": "city-tower-shinagawa",
     "postedAt": "2026-10-01",
     "type": "quiz"
+  },
+  {
+    "slug": "fuji-tv-headquarters",
+    "postedAt": "2026-10-03",
+    "type": "intro"
+  },
+  {
+    "slug": "gran-tokyo-towers",
+    "postedAt": "2026-10-03",
+    "type": "intro"
+  },
+  {
+    "slug": "deux-tours-kachidoki",
+    "postedAt": "2026-10-03",
+    "type": "intro"
+  },
+  {
+    "slug": "city-towers-tokyo-bay",
+    "postedAt": "2026-10-03",
+    "type": "intro"
+  },
+  {
+    "slug": "dentsu-headquarters",
+    "postedAt": "2026-10-03",
+    "type": "quiz"
   }
 ]
