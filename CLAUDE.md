@@ -79,6 +79,16 @@ X の上限は280カウントで、数え方が言語で違う。英語を「120
 - Tempus に登録する前に、10本すべてを `templates/x_post_len.py` で数える（投稿文を `===` だけの行で区切って標準入力に渡す）。260を超えたものは短く書き直し、全件 OK になるまで繰り返す。1本でも NG のまま登録しない。
 - 最後の報告に、10本それぞれのカウントを書く。
 
+## Tempus への登録（定期実行「編集部」の手順7-8。手で curl を書かない）
+
+Tempus は `tasks[].notes`（詳細欄）と `clips`（X投稿ボタンが付く投稿文）しか読まない。`body`・`lang`・`scheduled_for` などは黙って捨てられ、詳細もXボタンも無いタスクになる（実例: 2026-10-03 分。途中で会話が要約されて送信の形を忘れ、推測で送っていた）。
+
+- 10本を JSON 配列（`{"n": 1〜5, "lang": "ja"|"en", "name": 建物名, "slug": ..., "text": 投稿文の全文}`、5番目がクイズ枠）に書き、`templates/tempus_x_post.py` で送る。
+  - `python3 templates/tempus_x_post.py posts.json --dry-run` で検査（10件そろい・260カウント以下・正しい記事URL）。
+  - `TEMPUS_AGENT_KEY=<指示文のキー> python3 templates/tempus_x_post.py posts.json` で登録。title・notes・clips・dedupeKey はスクリプトが組み立てる。
+- 終了コード0（`OK: tasks 10 件・clips 10 件を登録`）以外は失敗。報告に出力をそのまま書く。
+- `skipped` は同じ日付の dedupeKey で登録済みという意味。成功扱いにしない。
+
 ## 記事の写真（自動補完）
 
 - 写真が無い記事には、本番ビルドのたびに `generator/backfill_images.py` が Wikimedia Commons から外観写真を自動で付ける（毎日の修復は `generator/repair_images.py`）。
