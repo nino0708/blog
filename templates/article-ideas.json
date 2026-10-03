@@ -2657,6 +2657,51 @@
       "area": "港区",
       "angle": "2023年麻布台ヒルズ開業。54階237m。ジャヌ東京ホテル＋住宅の複合棟。森ビル開発。",
       "status": "done"
+    },
+    {
+      "id": 296,
+      "category": "office",
+      "title": "タカシマヤタイムズスクエア",
+      "slug": "takashimaya-times-square",
+      "area": "渋谷区",
+      "angle": "1996年竣工・新宿貨物駅跡地再開発。14階77m。新宿南口エリアの礎。日建設計。",
+      "status": "done"
+    },
+    {
+      "id": 297,
+      "category": "office",
+      "title": "汐留住友ビル",
+      "slug": "shiodome-sumitomo-building",
+      "area": "港区",
+      "angle": "2004年竣工・汐留シオサイト。27階128m。住友不動産＋住友生命開発。日建設計。",
+      "status": "done"
+    },
+    {
+      "id": 298,
+      "category": "office",
+      "title": "大阪ステーションシティ",
+      "slug": "osaka-station-city",
+      "area": "大阪市北区",
+      "angle": "2011年竣工・JR大阪駅上部。ノースゲートビルディング29階150m。大屋根。JR西日本開発。",
+      "status": "done"
+    },
+    {
+      "id": 299,
+      "category": "office",
+      "title": "名古屋プライムセントラルタワー",
+      "slug": "nagoya-prime-central-tower",
+      "area": "名古屋市西区",
+      "angle": "2009年竣工・名駅エリア。23階106m。東京建物＋丸紅開発。清水建設設計施工。",
+      "status": "done"
+    },
+    {
+      "id": 300,
+      "category": "office",
+      "title": "汐留シティセンター",
+      "slug": "shiodome-city-center",
+      "area": "港区",
+      "angle": "2003年竣工・汐留シオサイト。36階171m。住友商事＋NTT都市開発開発。コンラッド東京（28〜37F）。",
+      "status": "done"
     }
   ]
 }

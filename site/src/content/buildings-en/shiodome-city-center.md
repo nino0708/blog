@@ -1,24 +1,26 @@
 ---
 title: "Shiodome City Center"
 area: "Minato City"
-summary: "A high-rise office in Shiodome Sio-Site, with the former Shimbashi Station preserved at its base."
-tags: ["Minato City", "Skyscraper", "Shiodome", "Redevelopment"]
+summary: "A 36-storey mixed-use tower completed in 2003 in the Shiodome Siosaite district. Jointly developed by Sumitomo Corporation and NTT Urban Development, its upper floors house the Conrad Tokyo hotel, making it one of the most visible landmarks of the former freight-yard redevelopment."
+developer: "Sumitomo Corporation / NTT Urban Development"
+architect: "Nikken Sekkei"
+tags: ["Minato City", "Skyscraper", "Shiodome", "Redevelopment", "Hotel"]
 ---
 
-## Shiodome City Center and the transformation of Higashi-Shimbashi, Minato City
+## Shiodome's luxury landmark
 
-Higashi-Shimbashi, Minato City, Tokyo. This area, where a former Japanese National Railways freight yard once spread out, is known as a district where large-scale redevelopment advanced from the 2000s onward. Completed in 2003 on one corner of it, Shiodome City Center is an office building of 43 floors above ground and a height of 216 m — one tower that forms the skyline of the Shiodome area.
+At 1-5-2 Higashi-Shimbashi, a 36-storey tower rises 171 metres over the Shiodome Siosaite district: the Shiodome City Center. Completed in 2003 and designed by Nikken Sekkei, the building was jointly developed by Sumitomo Corporation and NTT Urban Development. In July 2005 the Conrad Tokyo opened on floors 28 through 37, bringing an international luxury hotel brand to one of Tokyo's newest high-rise districts and giving the building a skyline identity that its office floors alone could never have achieved.
 
-Reachable on a short walk from Shimbashi Station, this building conveys an overwhelming verticality when seen from the street. The area, where several office buildings exceeding 200 m are clustered, is one of the districts with the highest density of high-rise architecture in the city center. Shiodome City Center, as a building that carried that formative era, could be called a presence that shapes the framework of the area.
+NTT Urban Development's involvement is worth noting. A subsidiary of the national telecommunications company that manages substantial property holdings across Japan, its co-development of a major Shiodome tower illustrates how diversified infrastructure companies positioned themselves as urban developers during the 2000s redevelopment boom. Alongside Sumitomo Corporation — one of Japan's general trading houses — the project brought together two types of large corporate capital that had historically operated in very different sectors.
 
-## The context of the former freight yard site
+## Conrad Tokyo and the hotel that defined Shiodome
 
-The place name Shiodome derives from the former Shiodome Freight Station that once existed here. This area, long left as a large unused tract in the city center, became a full-fledged target of redevelopment in the 1990s. The year 2003, when Shiodome City Center was completed, falls in the period when that redevelopment began to take shape in reality.
+Before Osaka Station City or Azabudai Hills, Shiodome Siosaite was the redevelopment that showed central Tokyo what large-scale post-industrial land conversion could produce. Each of the district's towers was assigned to a different developer, and the varied outcomes — the Dentsu Building by Jean Nouvel, the Shiodome Tower by Kajima, the media-company tower by Kyodo News — gave the district an architectural variety unusual for a single project phase.
 
-Because it was a former freight yard site, a vast, consolidated plot could be secured, which is said to have made large-scale office development at the block scale possible. Such conditions are said to have, in part, supported the realization of supertall buildings exceeding 200 m. The present streetscape around Higashi-Shimbashi was greatly repainted by the redevelopment carried out in this period.
+Shiodome City Center sits close to the middle of that range in height: shorter than Nouvel's 213-metre Dentsu Building, but taller than several of its neighbours. Its contribution to the skyline is significant primarily because of the Conrad's presence; a building that functions as both an office address and a hotel landmark occupies a different kind of urban attention from a pure office tower. Guests staying on the upper floors look out over Hamarikyu Garden, Tokyo Bay, and the grid of towers that surrounds them.
 
 ## Summary
 
-Shiodome City Center is an office building completed in 2003 in Higashi-Shimbashi, Minato City, with 43 floors above ground and a height of 216 m. Positioned within the larger context of the redevelopment of the former freight yard site, this building continues even now to carry the silhouette of the town as a tower symbolizing the area's rise into high-rise form.
+Shiodome City Center was completed in 2003: 36 floors, 171 metres. Developed by Sumitomo Corporation and NTT Urban Development, designed by Nikken Sekkei, it sits at the centre of one of Tokyo's most dramatic early-2000s redevelopment zones. The Conrad Tokyo on its upper floors has made the building a destination in its own right. Walk from Shimbashi Station toward the waterfront, look up at the cluster of towers, and you'll understand what it meant for a former freight yard to become, in barely a decade, one of the densest concentrations of office and hotel space in the city.
 
-When you walk the Shimbashi and Shiodome area, its height and presence catch the eye even from afar. Before discussing any particular function or tenant, if you become aware of "what kind of land history this 216 m tower stands upon," you are made to feel anew the magnitude of the city's change. To see a high-rise not merely as a single piece of architecture but as one nodal point in the town's transformation — that, I feel, is one of the joys of touring this kind of building.
+Visiting Shiodome or Shimbashi? Find hotels in the area on [Rakuten Travel](https://travel.rakuten.co.jp/en/).
