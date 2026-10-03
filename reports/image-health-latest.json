@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-03T08:21:40.507173+09:00",
+  "checkedAt": "2026-10-04T08:21:26.710341+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -184,6 +184,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/26/",
+      "slug": "26",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -350,6 +357,83 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/26/",
+      "slug": "26",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nagoya-prime-central-tower/",
+      "slug": "nagoya-prime-central-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Nagoya_Prime_Central_Tower_110222.jpg/1280px-Nagoya_Prime_Central_Tower_110222.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nagoya-prime-central-tower/",
+      "slug": "nagoya-prime-central-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Nagoya_Prime_Central_Tower_110222.jpg/1280px-Nagoya_Prime_Central_Tower_110222.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/osaka-station-city/",
+      "slug": "osaka-station-city",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Osaka_Station_City_2024-06.jpg/1280px-Osaka_Station_City_2024-06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/osaka-station-city/",
+      "slug": "osaka-station-city",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Osaka_Station_City_2024-06.jpg/1280px-Osaka_Station_City_2024-06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shiodome-city-center/",
+      "slug": "shiodome-city-center",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Shiodome_City_Center_23.jpg/1280px-Shiodome_City_Center_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shiodome-city-center/",
+      "slug": "shiodome-city-center",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Shiodome_City_Center_23.jpg/1280px-Shiodome_City_Center_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shiodome-sumitomo-building/",
+      "slug": "shiodome-sumitomo-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Shiodome_Sumitomo_Building_2007.JPG/1280px-Shiodome_Sumitomo_Building_2007.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shiodome-sumitomo-building/",
+      "slug": "shiodome-sumitomo-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Shiodome_Sumitomo_Building_2007.JPG/1280px-Shiodome_Sumitomo_Building_2007.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/takashimaya-times-square/",
+      "slug": "takashimaya-times-square",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Takashimaya-Times-Square.jpg/1280px-Takashimaya-Times-Square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/takashimaya-times-square/",
+      "slug": "takashimaya-times-square",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Takashimaya-Times-Square.jpg/1280px-Takashimaya-Times-Square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/azabudai-hills-residence-a/",
@@ -2316,14 +2400,14 @@
       "slug": "st-lukes-garden",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/",
@@ -2722,14 +2806,14 @@
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioicho/",
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",
@@ -3920,20 +4004,6 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio.jpg/1280px-%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E6%A3%AE%E3%82%BF%E3%83%AF%E3%83%BC%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio.jpg"
-    },
-    {
-      "url": "https://builtjapan.com/buildings/shiodome-city-center/",
-      "slug": "shiodome-city-center",
-      "lang": "ja",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Shiodome_City_Center_2018.jpg/1280px-Shiodome_City_Center_2018.jpg"
-    },
-    {
-      "url": "https://builtjapan.com/en/buildings/shiodome-city-center/",
-      "slug": "shiodome-city-center",
-      "lang": "en",
-      "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Shiodome_City_Center_2018.jpg/1280px-Shiodome_City_Center_2018.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-tower/",
