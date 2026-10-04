@@ -2702,6 +2702,51 @@
       "area": "港区",
       "angle": "2003年竣工・汐留シオサイト。36階171m。住友商事＋NTT都市開発開発。コンラッド東京（28〜37F）。",
       "status": "done"
+    },
+    {
+      "id": 301,
+      "category": "office",
+      "title": "ザ・プリンス パークタワー東京",
+      "slug": "prince-park-tower-tokyo",
+      "area": "港区",
+      "angle": "2005年開業・地上33階・高さ104m。芝公園隣接のプリンスホテル。丹下憲孝設計。東京タワー・増上寺を望む。",
+      "status": "done"
+    },
+    {
+      "id": 302,
+      "category": "residence",
+      "title": "パークタワー北浜",
+      "slug": "park-tower-kitahama",
+      "area": "大阪市中央区",
+      "angle": "2014年竣工・地上41階・高さ142m。土佐堀川沿いの分譲タワーマンション。三井不動産レジデンシャル開発・大林組施工。350戸。",
+      "status": "done"
+    },
+    {
+      "id": 303,
+      "category": "office",
+      "title": "OAPタワー（大阪アメニティパーク）",
+      "slug": "oap-tower-osaka",
+      "area": "大阪市北区",
+      "angle": "1996年竣工・地上39階・高さ176m。大川沿いの複合タワー。三菱地所・三菱マテリアル共同開発。",
+      "status": "done"
+    },
+    {
+      "id": 304,
+      "category": "office",
+      "title": "スフィアタワー天王洲",
+      "slug": "sphere-tower-tennoz",
+      "area": "品川区",
+      "angle": "1993年竣工・地上28階・高さ117m。天王洲アイルのウォーターフロント再開発を牽引した三菱商事のオフィスビル。RIA設計。",
+      "status": "done"
+    },
+    {
+      "id": 305,
+      "category": "office",
+      "title": "パシフィコ横浜ノース",
+      "slug": "pacifico-yokohama-north",
+      "area": "横浜市西区",
+      "angle": "2020年竣工・地上6階・延床約46,300㎡。みなとみらいの大型コンベンション新棟。横浜グローバルMICE㈱開発。最大6,000人収容ホール。",
+      "status": "done"
     }
   ]
 }
