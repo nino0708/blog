@@ -273,5 +273,30 @@
     "slug": "harumi-flag",
     "postedAt": "2026-10-03",
     "type": "quiz"
+  },
+  {
+    "slug": "city-towers-tokyo-bay",
+    "postedAt": "2026-10-04",
+    "type": "intro"
+  },
+  {
+    "slug": "city-towers-toyosu-the-twin",
+    "postedAt": "2026-10-04",
+    "type": "intro"
+  },
+  {
+    "slug": "cross-air-tower",
+    "postedAt": "2026-10-04",
+    "type": "intro"
+  },
+  {
+    "slug": "dainagoya-building",
+    "postedAt": "2026-10-04",
+    "type": "intro"
+  },
+  {
+    "slug": "dentsu-headquarters",
+    "postedAt": "2026-10-04",
+    "type": "quiz"
   }
 ]
