@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05T08:24:18.187909+09:00",
+  "checkedAt": "2026-10-06T08:24:23.732471+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -191,6 +191,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/27/",
+      "slug": "27",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -364,6 +371,83 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/27/",
+      "slug": "27",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kurushima-kaikyo-bridge/",
+      "slug": "kurushima-kaikyo-bridge",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg/1280px-Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kurushima-kaikyo-bridge/",
+      "slug": "kurushima-kaikyo-bridge",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg/1280px-Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kyoto-tower/",
+      "slug": "kyoto-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Kyoto_Tower_seen_from_Kyoto_Station%2C_20240821_1036_5227.jpg/1280px-Kyoto_Tower_seen_from_Kyoto_Station%2C_20240821_1036_5227.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kyoto-tower/",
+      "slug": "kyoto-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Kyoto_Tower_seen_from_Kyoto_Station%2C_20240821_1036_5227.jpg/1280px-Kyoto_Tower_seen_from_Kyoto_Station%2C_20240821_1036_5227.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/onaruto-bridge/",
+      "slug": "onaruto-bridge",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Big_Naruto_Bridge05n3872edit.jpg/1280px-Big_Naruto_Bridge05n3872edit.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/onaruto-bridge/",
+      "slug": "onaruto-bridge",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Big_Naruto_Bridge05n3872edit.jpg/1280px-Big_Naruto_Bridge05n3872edit.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shinjuku-eastside-square/",
+      "slug": "shinjuku-eastside-square",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/ShinjukuEastside01.jpg/1280px-ShinjukuEastside01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinjuku-eastside-square/",
+      "slug": "shinjuku-eastside-square",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/ShinjukuEastside01.jpg/1280px-ShinjukuEastside01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/toyosu-bayside-cross-tower/",
+      "slug": "toyosu-bayside-cross-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Toyosu_Bayside_Cross_Tower%2C_Tokyo_-_Jul_31%2C_2025.jpg/1280px-Toyosu_Bayside_Cross_Tower%2C_Tokyo_-_Jul_31%2C_2025.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/toyosu-bayside-cross-tower/",
+      "slug": "toyosu-bayside-cross-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Toyosu_Bayside_Cross_Tower%2C_Tokyo_-_Jul_31%2C_2025.jpg/1280px-Toyosu_Bayside_Cross_Tower%2C_Tokyo_-_Jul_31%2C_2025.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/oap-tower-osaka/",
@@ -2876,14 +2960,14 @@
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioicho/",
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",

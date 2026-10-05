@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-10-05 08:24 JST
-- 対象: 公開済み記事 592 ページ（https://builtjapan.com）
-- 正常表示: 486 / 592（82.1%）
-- **要対応: 106 件**（画像なし 106 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-10-06 08:24 JST
+- 対象: 公開済み記事 604 ページ（https://builtjapan.com）
+- 正常表示: 496 / 604（82.1%）
+- **要対応: 108 件**（画像なし 108 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -42,6 +42,7 @@
 | [24（JA）](https://builtjapan.com/buildings/page/24/) | ヒーロー画像なし（プレースホルダ表示） |
 | [25（JA）](https://builtjapan.com/buildings/page/25/) | ヒーロー画像なし（プレースホルダ表示） |
 | [26（JA）](https://builtjapan.com/buildings/page/26/) | ヒーロー画像なし（プレースホルダ表示） |
+| [27（JA）](https://builtjapan.com/buildings/page/27/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（JA）](https://builtjapan.com/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -95,6 +96,7 @@
 | [24（EN）](https://builtjapan.com/en/buildings/page/24/) | ヒーロー画像なし（プレースホルダ表示） |
 | [25（EN）](https://builtjapan.com/en/buildings/page/25/) | ヒーロー画像なし（プレースホルダ表示） |
 | [26（EN）](https://builtjapan.com/en/buildings/page/26/) | ヒーロー画像なし（プレースホルダ表示） |
+| [27（EN）](https://builtjapan.com/en/buildings/page/27/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（EN）](https://builtjapan.com/en/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
