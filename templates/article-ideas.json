@@ -2747,6 +2747,51 @@
       "area": "横浜市西区",
       "angle": "2020年竣工・地上6階・延床約46,300㎡。みなとみらいの大型コンベンション新棟。横浜グローバルMICE㈱開発。最大6,000人収容ホール。",
       "status": "done"
+    },
+    {
+      "id": 306,
+      "category": "tower",
+      "title": "京都タワー",
+      "slug": "kyoto-tower",
+      "area": "京都市下京区",
+      "angle": "1964年竣工・高さ131m。建築家・山田守設計。和ろうそくをモデルにした白い円筒形展望タワー。地上100mの展望台から古都の街並みと三方の山並みを一望。",
+      "status": "done"
+    },
+    {
+      "id": 307,
+      "category": "office",
+      "title": "新宿イーストサイドスクエア",
+      "slug": "shinjuku-eastside-square",
+      "area": "新宿区",
+      "angle": "2012年竣工・地上20階・高さ96m。東新宿駅直結。三菱地所開発・三菱地所設計+日本設計。1フロア約5,900m²の大型オフィスと環境配慮設計を両立。",
+      "status": "done"
+    },
+    {
+      "id": 308,
+      "category": "bridge",
+      "title": "来島海峡大橋",
+      "slug": "kurushima-kaikyo-bridge",
+      "area": "今治市",
+      "angle": "1999年5月開通。世界初の3連吊橋・全長4,105m。しまなみ海道四国側の結節点。大島〜今治間を結ぶ。最高塔高178m。",
+      "status": "done"
+    },
+    {
+      "id": 309,
+      "category": "bridge",
+      "title": "大鳴門橋",
+      "slug": "onaruto-bridge",
+      "area": "鳴門市・南あわじ市",
+      "angle": "1985年6月開通。全長1,629m・中央径間876.3m。鳴門海峡の吊橋。橋桁内の遊歩道「渦の道」から鳴門の渦潮を真下に眺められる。",
+      "status": "done"
+    },
+    {
+      "id": 310,
+      "category": "office",
+      "title": "豊洲ベイサイドクロスタワー",
+      "slug": "toyosu-bayside-cross-tower",
+      "area": "江東区",
+      "angle": "2020年3月竣工・地上36階・高さ177.51m。三井不動産・IHI共同開発。IHI旧豊洲工場跡地の複合超高層タワー。豊洲駅直結。",
+      "status": "done"
     }
   ]
 }
