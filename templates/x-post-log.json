@@ -298,5 +298,30 @@
     "slug": "dentsu-headquarters",
     "postedAt": "2026-10-04",
     "type": "quiz"
+  },
+  {
+    "slug": "deux-tours-kachidoki",
+    "postedAt": "2026-10-05",
+    "type": "intro"
+  },
+  {
+    "slug": "eitaibashi",
+    "postedAt": "2026-10-05",
+    "type": "intro"
+  },
+  {
+    "slug": "elsa-tower-55",
+    "postedAt": "2026-10-05",
+    "type": "intro"
+  },
+  {
+    "slug": "futakotamagawa-rise",
+    "postedAt": "2026-10-05",
+    "type": "intro"
+  },
+  {
+    "slug": "grand-green-osaka",
+    "postedAt": "2026-10-05",
+    "type": "quiz"
   }
 ]
