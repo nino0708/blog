@@ -323,5 +323,30 @@
     "slug": "grand-green-osaka",
     "postedAt": "2026-10-05",
     "type": "quiz"
+  },
+  {
+    "slug": "granpark-tower",
+    "postedAt": "2026-10-06",
+    "type": "intro"
+  },
+  {
+    "slug": "haneda-airport-d-runway",
+    "postedAt": "2026-10-06",
+    "type": "intro"
+  },
+  {
+    "slug": "hareza-ikebukuro",
+    "postedAt": "2026-10-06",
+    "type": "intro"
+  },
+  {
+    "slug": "harumi-island-triton-square",
+    "postedAt": "2026-10-06",
+    "type": "intro"
+  },
+  {
+    "slug": "harumi-flag-sky-duo",
+    "postedAt": "2026-10-06",
+    "type": "quiz"
   }
 ]
