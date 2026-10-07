@@ -2792,6 +2792,51 @@
       "area": "江東区",
       "angle": "2020年3月竣工・地上36階・高さ177.51m。三井不動産・IHI共同開発。IHI旧豊洲工場跡地の複合超高層タワー。豊洲駅直結。",
       "status": "done"
+    },
+    {
+      "id": 311,
+      "category": "office",
+      "title": "住友不動産新宿グランドタワー",
+      "slug": "sumitomo-fudosan-shinjuku-grand-tower",
+      "area": "新宿区",
+      "angle": "2011年10月竣工・地上40階・高さ195m。西新宿8丁目成子地区市街地再開発事業。成子天神社を敷地内に保存した超高層オフィス。",
+      "status": "done"
+    },
+    {
+      "id": 312,
+      "category": "residence",
+      "title": "ワールドシティタワーズ",
+      "slug": "world-city-towers",
+      "area": "港区",
+      "angle": "2006〜2007年竣工・3棟（41〜43階）・最高高さ139m・総2090戸。住友不動産・日建設計。港南4丁目の旧工業地帯を転換した大規模タワマン群。",
+      "status": "done"
+    },
+    {
+      "id": 313,
+      "category": "office",
+      "title": "大阪ベイタワー（旧ORC200）",
+      "slug": "osaka-bay-tower",
+      "area": "大阪市港区",
+      "angle": "1993年竣工・地上51階・高さ200m。弁天町駅前土地信託事業。2018年3月に旧名ORC200からリブランド。ホテル・温泉・住宅の複合施設。",
+      "status": "done"
+    },
+    {
+      "id": 314,
+      "category": "residence",
+      "title": "ザ・パークハウス中之島タワー",
+      "slug": "the-parkhouse-nakanoshima-tower",
+      "area": "大阪市北区",
+      "angle": "2017年10月竣工・地上55階・高さ192m・894戸。三菱地所レジデンス他4社共同開発・竹中工務店設計施工。中之島西部の超高層マンション。",
+      "status": "done"
+    },
+    {
+      "id": 315,
+      "category": "office",
+      "title": "大阪梅田ツインタワーズ・サウス",
+      "slug": "osaka-umeda-twin-towers-south",
+      "area": "大阪市北区",
+      "angle": "2022年2月竣工・地上38階・高さ188.9m。阪急阪神不動産開発・日本設計+竹中工務店設計。低層部に阪神百貨店梅田本店。ノース棟と「大阪梅田ツインタワーズ」を形成。",
+      "status": "done"
     }
   ]
 }
