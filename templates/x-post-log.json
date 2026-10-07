@@ -323,5 +323,30 @@
     "slug": "grand-green-osaka",
     "postedAt": "2026-10-05",
     "type": "quiz"
+  },
+  {
+    "slug": "the-tokyo-towers",
+    "postedAt": "2026-10-07",
+    "type": "intro"
+  },
+  {
+    "slug": "tokyo-midtown-tower",
+    "postedAt": "2026-10-07",
+    "type": "intro"
+  },
+  {
+    "slug": "toranomon-hills-mori-tower",
+    "postedAt": "2026-10-07",
+    "type": "intro"
+  },
+  {
+    "slug": "toranomon-hills-station-tower",
+    "postedAt": "2026-10-07",
+    "type": "intro"
+  },
+  {
+    "slug": "ntt-docomo-yoyogi-building",
+    "postedAt": "2026-10-07",
+    "type": "quiz"
   }
 ]
