@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-10-07 08:22 JST
-- 対象: 公開済み記事 604 ページ（https://builtjapan.com）
-- 正常表示: 496 / 604（82.1%）
-- **要対応: 108 件**（画像なし 108 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-10-08 08:22 JST
+- 対象: 公開済み記事 614 ページ（https://builtjapan.com）
+- 正常表示: 504 / 614（82.1%）
+- **要対応: 110 件**（画像なし 110 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -55,6 +55,7 @@
 | [shibuya-fukuras（JA）](https://builtjapan.com/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（JA）](https://builtjapan.com/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
+| [sumitomo-fudosan-shinjuku-grand-tower（JA）](https://builtjapan.com/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（JA）](https://builtjapan.com/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（JA）](https://builtjapan.com/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-toranomon-tower（JA）](https://builtjapan.com/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -109,6 +110,7 @@
 | [shibuya-fukuras（EN）](https://builtjapan.com/en/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（EN）](https://builtjapan.com/en/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
+| [sumitomo-fudosan-shinjuku-grand-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（EN）](https://builtjapan.com/en/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-toranomon-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |
