@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-10-10 08:22 JST
-- 対象: 公開済み記事 614 ページ（https://builtjapan.com）
-- 正常表示: 504 / 614（82.1%）
-- **要対応: 110 件**（画像なし 110 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-10-11 08:22 JST
+- 対象: 公開済み記事 626 ページ（https://builtjapan.com）
+- 正常表示: 512 / 626（81.8%）
+- **要対応: 114 件**（画像なし 114 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -23,6 +23,7 @@
 | [marunouchi-trust-city（JA）](https://builtjapan.com/buildings/marunouchi-trust-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nihonbashi-nomura-mitsui-tower（JA）](https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nissay-hamamatsucho-crea-tower（JA）](https://builtjapan.com/buildings/nissay-hamamatsucho-crea-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [osaki-bright-core（JA）](https://builtjapan.com/buildings/osaki-bright-core/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-thinkpark-tower（JA）](https://builtjapan.com/buildings/osaki-thinkpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [10（JA）](https://builtjapan.com/buildings/page/10/) | ヒーロー画像なし（プレースホルダ表示） |
 | [11（JA）](https://builtjapan.com/buildings/page/11/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -43,6 +44,7 @@
 | [25（JA）](https://builtjapan.com/buildings/page/25/) | ヒーロー画像なし（プレースホルダ表示） |
 | [26（JA）](https://builtjapan.com/buildings/page/26/) | ヒーロー画像なし（プレースホルダ表示） |
 | [27（JA）](https://builtjapan.com/buildings/page/27/) | ヒーロー画像なし（プレースホルダ表示） |
+| [28（JA）](https://builtjapan.com/buildings/page/28/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（JA）](https://builtjapan.com/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -78,6 +80,7 @@
 | [marunouchi-trust-city（EN）](https://builtjapan.com/en/buildings/marunouchi-trust-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nihonbashi-nomura-mitsui-tower（EN）](https://builtjapan.com/en/buildings/nihonbashi-nomura-mitsui-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nissay-hamamatsucho-crea-tower（EN）](https://builtjapan.com/en/buildings/nissay-hamamatsucho-crea-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [osaki-bright-core（EN）](https://builtjapan.com/en/buildings/osaki-bright-core/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-thinkpark-tower（EN）](https://builtjapan.com/en/buildings/osaki-thinkpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [10（EN）](https://builtjapan.com/en/buildings/page/10/) | ヒーロー画像なし（プレースホルダ表示） |
 | [11（EN）](https://builtjapan.com/en/buildings/page/11/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -98,6 +101,7 @@
 | [25（EN）](https://builtjapan.com/en/buildings/page/25/) | ヒーロー画像なし（プレースホルダ表示） |
 | [26（EN）](https://builtjapan.com/en/buildings/page/26/) | ヒーロー画像なし（プレースホルダ表示） |
 | [27（EN）](https://builtjapan.com/en/buildings/page/27/) | ヒーロー画像なし（プレースホルダ表示） |
+| [28（EN）](https://builtjapan.com/en/buildings/page/28/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（EN）](https://builtjapan.com/en/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
