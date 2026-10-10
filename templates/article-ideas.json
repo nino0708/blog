@@ -2837,6 +2837,60 @@
       "area": "大阪市北区",
       "angle": "2022年2月竣工・地上38階・高さ188.9m。阪急阪神不動産開発・日本設計+竹中工務店設計。低層部に阪神百貨店梅田本店。ノース棟と「大阪梅田ツインタワーズ」を形成。",
       "status": "done"
+    },
+    {
+      "id": 316,
+      "category": "office",
+      "title": "東急プラザ表参道原宿",
+      "slug": "tokyu-plaza-omotesando-harajuku",
+      "area": "渋谷区",
+      "angle": "2012年竣工・地上7階。中村拓志設計の鏡面エントランスと屋上おもはらの森。表参道×明治通り交差点のランドマーク商業施設。",
+      "status": "done"
+    },
+    {
+      "id": 317,
+      "category": "office",
+      "title": "晴海トリトンスクエア",
+      "slug": "harumi-triton-square",
+      "area": "中央区",
+      "angle": "2001年竣工・X棟地上45階・高さ194.9m。3主塔をダンパーで連結する世界初の制振構造。UR都市機構が整備した晴海の大規模複合開発。",
+      "status": "done"
+    },
+    {
+      "id": 318,
+      "category": "office",
+      "title": "大崎ブライトコア",
+      "slug": "osaki-bright-core",
+      "area": "品川区",
+      "angle": "2015年竣工・地上20階・高さ92.6m。日本設計設計・大成建設施工。品川区産業支援施設SHIPを内包する大崎再開発の一棟。",
+      "status": "done"
+    },
+    {
+      "id": 319,
+      "category": "office",
+      "title": "東京ガーデンテラス紀尾井町",
+      "slug": "tokyo-garden-terrace-kioi-cho",
+      "area": "千代田区",
+      "angle": "2016年竣工・旧グランドプリンスホテル赤坂跡地。西武プロパティーズが開発した複合施設。",
+      "status": "done"
+    },
+    {
+      "id": 320,
+      "category": "office",
+      "title": "目黒マークシティ",
+      "slug": "meguro-mark-city",
+      "area": "目黒区",
+      "angle": "1999〜2000年竣工・東急目黒線目黒駅直結の複合開発。東急不動産開発。【注意】2026-10-10調査で実在確認できず（渋谷マークシティと混同の可能性）。要再確認。",
+      "status": "todo"
+    },
+    {
+      "id": 321,
+      "category": "office",
+      "title": "JRゲートタワー",
+      "slug": "nagoya-jrg-gate-tower",
+      "area": "名古屋市中村区",
+      "angle": "2017年4月竣工・地上46階・高さ245m。JR東海が開発した名古屋駅直結の超高層タワー。日建設計設計。",
+      "status": "done"
     }
   ]
 }
