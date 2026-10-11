@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-11T08:22:18.578778+09:00",
+  "checkedAt": "2026-10-12T08:21:48.720281+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -392,6 +392,76 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/akasaka-green-cross/",
+      "slug": "akasaka-green-cross",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/2025-05-01_Akasaka_Green_Cross%E8%B5%A4%E5%9D%82%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%AF%E3%83%AD%E3%82%B9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/akasaka-green-cross/",
+      "slug": "akasaka-green-cross",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/2025-05-01_Akasaka_Green_Cross%E8%B5%A4%E5%9D%82%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%AF%E3%83%AD%E3%82%B9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/commore-yotsuya/",
+      "slug": "commore-yotsuya",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/commore-yotsuya/",
+      "slug": "commore-yotsuya",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/hibiya-park-front/",
+      "slug": "hibiya-park-front",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Hibiya_Park_Front_201806.jpg/1280px-Hibiya_Park_Front_201806.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/hibiya-park-front/",
+      "slug": "hibiya-park-front",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Hibiya_Park_Front_201806.jpg/1280px-Hibiya_Park_Front_201806.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kasumigaseki-common-gate/",
+      "slug": "kasumigaseki-common-gate",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Kasumigaseki-Common-Gate-02.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kasumigaseki-common-gate/",
+      "slug": "kasumigaseki-common-gate",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Kasumigaseki-Common-Gate-02.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kyoto-station-building/",
+      "slug": "kyoto-station-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Kyoto_Station_C0389.jpg/1280px-Kyoto_Station_C0389.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kyoto-station-building/",
+      "slug": "kyoto-station-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Kyoto_Station_C0389.jpg/1280px-Kyoto_Station_C0389.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/harumi-triton-square/",
@@ -1196,14 +1266,14 @@
       "slug": "nakanoshima-festival-tower-west",
       "lang": "ja",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Nakanoshima_Festival_Tower_West.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg/1280px-Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/nakanoshima-festival-tower-west/",
       "slug": "nakanoshima-festival-tower-west",
       "lang": "en",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Nakanoshima_Festival_Tower_West.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg/1280px-Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/shibuya-fukuras/",
@@ -2708,14 +2778,14 @@
       "slug": "st-lukes-garden",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/",
@@ -3240,14 +3310,14 @@
       "slug": "tokyo-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Tower-20091017-RM-103413.jpg/1280px-Tokyo_Tower-20091017-RM-103413.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Japan-Tokyo-tower-1024.jpg/1280px-Japan-Tokyo-tower-1024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-tower/",
       "slug": "tokyo-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Tower-20091017-RM-103413.jpg/1280px-Tokyo_Tower-20091017-RM-103413.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Japan-Tokyo-tower-1024.jpg/1280px-Japan-Tokyo-tower-1024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/deux-tours-kachidoki/",

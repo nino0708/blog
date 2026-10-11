@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-10-11 08:22 JST
-- 対象: 公開済み記事 626 ページ（https://builtjapan.com）
-- 正常表示: 512 / 626（81.8%）
-- **要対応: 114 件**（画像なし 114 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-10-12 08:21 JST
+- 対象: 公開済み記事 636 ページ（https://builtjapan.com）
+- 正常表示: 520 / 636（81.8%）
+- **要対応: 116 件**（画像なし 116 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -12,6 +12,7 @@
 | [buildings（JA）](https://builtjapan.com/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（JA）](https://builtjapan.com/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（JA）](https://builtjapan.com/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
+| [commore-yotsuya（JA）](https://builtjapan.com/buildings/commore-yotsuya/) | ヒーロー画像なし（プレースホルダ表示） |
 | [elsa-tower-55（JA）](https://builtjapan.com/buildings/elsa-tower-55/) | ヒーロー画像なし（プレースホルダ表示） |
 | [granpark-tower（JA）](https://builtjapan.com/buildings/granpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [harumi-flag-sky-duo（JA）](https://builtjapan.com/buildings/harumi-flag-sky-duo/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -69,6 +70,7 @@
 | [buildings（EN）](https://builtjapan.com/en/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（EN）](https://builtjapan.com/en/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
+| [commore-yotsuya（EN）](https://builtjapan.com/en/buildings/commore-yotsuya/) | ヒーロー画像なし（プレースホルダ表示） |
 | [elsa-tower-55（EN）](https://builtjapan.com/en/buildings/elsa-tower-55/) | ヒーロー画像なし（プレースホルダ表示） |
 | [granpark-tower（EN）](https://builtjapan.com/en/buildings/granpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [harumi-flag-sky-duo（EN）](https://builtjapan.com/en/buildings/harumi-flag-sky-duo/) | ヒーロー画像なし（プレースホルダ表示） |
