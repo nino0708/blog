@@ -2891,6 +2891,51 @@
       "area": "名古屋市中村区",
       "angle": "2017年4月竣工・地上46階・高さ245m。JR東海が開発した名古屋駅直結の超高層タワー。日建設計設計。",
       "status": "done"
+    },
+    {
+      "id": 322,
+      "category": "office",
+      "title": "霞が関コモンゲート",
+      "slug": "kasumigaseki-common-gate",
+      "area": "千代田区",
+      "angle": "2007年9月竣工・西館地上38階・地下3階・高さ176m・延床119,000m²。官庁街の大規模再開発複合施設。",
+      "status": "done"
+    },
+    {
+      "id": 323,
+      "category": "office",
+      "title": "赤坂グリーンクロス",
+      "slug": "akasaka-green-cross",
+      "area": "港区",
+      "angle": "2024年5月竣工・地上28階・ZEB認定。積水ハウス＋日本生命共同開発のグレードAオフィスビル。",
+      "status": "done"
+    },
+    {
+      "id": 324,
+      "category": "office",
+      "title": "日比谷パークフロント",
+      "slug": "hibiya-park-front",
+      "area": "千代田区",
+      "angle": "2017年竣工・地上21階・基準階約630坪。日比谷公園に近接するグレードAオフィスビル。",
+      "status": "done"
+    },
+    {
+      "id": 325,
+      "category": "office",
+      "title": "コモレ四谷",
+      "slug": "commore-yotsuya",
+      "area": "新宿区",
+      "angle": "2020年1月竣工・地上31階・地下3階・高さ145m・延床139,593m²。UR都市機構＋三菱地所による四谷駅前複合再開発。",
+      "status": "done"
+    },
+    {
+      "id": 326,
+      "category": "office",
+      "title": "京都駅ビル",
+      "slug": "kyoto-station-building",
+      "area": "京都市下京区",
+      "angle": "1997年竣工・地上16階・地下3階・高さ60m・延床235,942m²。原広司設計。国際コンペ当選作。",
+      "status": "done"
     }
   ]
 }
