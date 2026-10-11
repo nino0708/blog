@@ -373,5 +373,30 @@
     "slug": "harumi-island-triton-square",
     "postedAt": "2026-10-10",
     "type": "quiz"
+  },
+  {
+    "slug": "japan-national-stadium",
+    "postedAt": "2026-10-11",
+    "type": "intro"
+  },
+  {
+    "slug": "jr-central-towers",
+    "postedAt": "2026-10-11",
+    "type": "intro"
+  },
+  {
+    "slug": "jp-tower-kitte",
+    "postedAt": "2026-10-11",
+    "type": "intro"
+  },
+  {
+    "slug": "kansai-international-airport",
+    "postedAt": "2026-10-11",
+    "type": "intro"
+  },
+  {
+    "slug": "kamiyacho-trust-tower",
+    "postedAt": "2026-10-11",
+    "type": "quiz"
   }
 ]
