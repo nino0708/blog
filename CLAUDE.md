@@ -95,3 +95,7 @@ Tempus は `tasks[].notes`（詳細欄）と `clips`（X投稿ボタンが付く
 - 人の顔が写り込んだ写真など、使ってはいけない写真が選ばれたら `generator/data/hero-image-block.json` に足す。`slugs` に入れた記事には自動で写真を付けない。`files` に入れたファイルはどの記事にも使わない。
 - 人の写らない写真を手で選んだときは、記事の front matter に `heroImage` などを直接書く（書いてある記事は自動補完が触らない）。
 - 公開中の写真に人が写り込んでいないかは、GitHub Actions の「写真の写り込みチェック」（`.github/workflows/people-check.yml`）で調べられる。結果は `reports/people-check-latest.md` と縮小版 `reports/people-check/`。機械の判定は誤検知が多いので、縮小版を目で見てから除外リストに足す。
+
+## 持ち主（私）について
+
+私の性格・やる気の根源・相談の進め方について聞かれたら、`personal/about-me.md` を読んでから答える。新しい気づきがあれば日付を付けて追記する（このファイルは公開リポジトリに入れない）。
