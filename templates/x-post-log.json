@@ -398,5 +398,30 @@
     "slug": "kamiyacho-trust-tower",
     "postedAt": "2026-10-11",
     "type": "quiz"
+  },
+  {
+    "slug": "sendai-aer",
+    "postedAt": "2026-10-12",
+    "type": "intro"
+  },
+  {
+    "slug": "ana-intercontinental-tokyo",
+    "postedAt": "2026-10-12",
+    "type": "intro"
+  },
+  {
+    "slug": "tokyu-capitol-tower",
+    "postedAt": "2026-10-12",
+    "type": "intro"
+  },
+  {
+    "slug": "hotel-new-otani-garden-tower",
+    "postedAt": "2026-10-12",
+    "type": "intro"
+  },
+  {
+    "slug": "grand-prince-hotel-shin-takanawa",
+    "postedAt": "2026-10-12",
+    "type": "quiz"
   }
 ]
