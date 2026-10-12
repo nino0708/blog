@@ -333,10 +333,20 @@
     "reason": "記事mdが見つからない"
   },
   "osaki-bright-core": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "commore-yotsuya": {
     "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
-  "commore-yotsuya": {
+  "29": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "grand-prince-hotel-shin-takanawa": {
     "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }
