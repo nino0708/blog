@@ -423,5 +423,30 @@
     "slug": "grand-prince-hotel-shin-takanawa",
     "postedAt": "2026-10-12",
     "type": "quiz"
+  },
+  {
+    "slug": "akasaka-green-cross",
+    "postedAt": "2026-10-13",
+    "type": "intro"
+  },
+  {
+    "slug": "commore-yotsuya",
+    "postedAt": "2026-10-13",
+    "type": "intro"
+  },
+  {
+    "slug": "harumi-ohashi",
+    "postedAt": "2026-10-13",
+    "type": "intro"
+  },
+  {
+    "slug": "hibiya-park-front",
+    "postedAt": "2026-10-13",
+    "type": "intro"
+  },
+  {
+    "slug": "harumi-triton-square",
+    "postedAt": "2026-10-13",
+    "type": "quiz"
   }
 ]
