@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-14T08:22:00.413156+09:00",
+  "checkedAt": "2026-10-15T08:22:33.366619+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -406,6 +406,76 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/grand-cube-osaka/",
+      "slug": "grand-cube-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Grand_Cube_Osaka_20080106-001.jpg/1280px-Grand_Cube_Osaka_20080106-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/grand-cube-osaka/",
+      "slug": "grand-cube-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Grand_Cube_Osaka_20080106-001.jpg/1280px-Grand_Cube_Osaka_20080106-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/makuhari-messe/",
+      "slug": "makuhari-messe",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Makuhari_Messe%2C_North_hall_2.jpg/1280px-Makuhari_Messe%2C_North_hall_2.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/makuhari-messe/",
+      "slug": "makuhari-messe",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Makuhari_Messe%2C_North_hall_2.jpg/1280px-Makuhari_Messe%2C_North_hall_2.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tower-111/",
+      "slug": "tower-111",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Tower_111.JPG/1280px-Tower_111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tower-111/",
+      "slug": "tower-111",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Tower_111.JPG/1280px-Tower_111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tsutenkaku/",
+      "slug": "tsutenkaku",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Shinsekai_and_Tsutenkaku_Tower.jpg/1280px-Shinsekai_and_Tsutenkaku_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tsutenkaku/",
+      "slug": "tsutenkaku",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Shinsekai_and_Tsutenkaku_Tower.jpg/1280px-Shinsekai_and_Tsutenkaku_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yokohama-bay-bridge/",
+      "slug": "yokohama-bay-bridge",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Yokohama_Bay_Bridge_details.jpg/1280px-Yokohama_Bay_Bridge_details.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yokohama-bay-bridge/",
+      "slug": "yokohama-bay-bridge",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Yokohama_Bay_Bridge_details.jpg/1280px-Yokohama_Bay_Bridge_details.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/ana-intercontinental-tokyo/",
@@ -2120,14 +2190,14 @@
       "slug": "kddi-building-shinjuku",
       "lang": "ja",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/KDDI_Office_Building_Shinjuku_2007-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/KDDI_Osaka_No.2_Building.JPG/1280px-KDDI_Osaka_No.2_Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kddi-building-shinjuku/",
       "slug": "kddi-building-shinjuku",
       "lang": "en",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/KDDI_Office_Building_Shinjuku_2007-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/KDDI_Osaka_No.2_Building.JPG/1280px-KDDI_Osaka_No.2_Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/keio-plaza-hotel/",
