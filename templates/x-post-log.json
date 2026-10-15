@@ -448,5 +448,30 @@
     "slug": "hibiya-park-front",
     "postedAt": "2026-10-15",
     "type": "quiz"
+  },
+  {
+    "slug": "grand-cube-osaka",
+    "postedAt": "2026-10-15",
+    "type": "intro"
+  },
+  {
+    "slug": "hijiri-bashi",
+    "postedAt": "2026-10-15",
+    "type": "intro"
+  },
+  {
+    "slug": "hilton-tokyo",
+    "postedAt": "2026-10-15",
+    "type": "intro"
+  },
+  {
+    "slug": "i-garden-air",
+    "postedAt": "2026-10-15",
+    "type": "intro"
+  },
+  {
+    "slug": "iidabashi-grand-bloom",
+    "postedAt": "2026-10-15",
+    "type": "quiz"
   }
 ]
