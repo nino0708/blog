@@ -2880,8 +2880,8 @@
       "title": "目黒マークシティ",
       "slug": "meguro-mark-city",
       "area": "目黒区",
-      "angle": "1999〜2000年竣工・東急目黒線目黒駅直結の複合開発。東急不動産開発。【注意】2026-10-10調査で実在確認できず（渋谷マークシティと混同の可能性）。要再確認。",
-      "status": "todo"
+      "angle": "1999〜2000年竣工・東急目黒線目黒駅直結の複合開発。東急不動産開発。【注意】2026-10-10調査で実在確認できず（渋谷マークシティと混同の可能性）。要再確認。→2026-10-15確認済：目黒マークシティは実在せず（渋谷マークシティの誤記）。スキップ。",
+      "status": "done"
     },
     {
       "id": 321,
@@ -3021,6 +3021,51 @@
       "category": "buildings",
       "status": "done",
       "angle": "大阪市北区中之島6丁目の複合コンベンション施設。2000年開業、13F/B3F、黒川紀章設計"
+    },
+    {
+      "id": 337,
+      "category": "office",
+      "title": "九段会館テラス",
+      "slug": "kudan-kaikan-terrace",
+      "area": "千代田区",
+      "angle": "1934年旧九段会館（登録有形文化財）ファサードを保存しながら新17階棟を立ち上げたファサードリテンション再開発",
+      "status": "done"
+    },
+    {
+      "id": 338,
+      "category": "residence",
+      "title": "青山パークタワー",
+      "slug": "aoyama-park-tower",
+      "area": "渋谷区",
+      "angle": "旧梨本宮邸跡地に三井不動産主導で開発した34階119.95m複合タワー",
+      "status": "done"
+    },
+    {
+      "id": 339,
+      "category": "office",
+      "title": "飯野ビルディング",
+      "slug": "iino-building",
+      "area": "千代田区",
+      "angle": "飯野海運が内幸町に持つ本社ビル、1960年旧館から2011年に建替え、27階147m",
+      "status": "done"
+    },
+    {
+      "id": 340,
+      "category": "residence",
+      "title": "豊洲シエルタワー",
+      "slug": "shiel-tower-toyosu",
+      "area": "江東区",
+      "angle": "豊洲駅直結40階144.35m、IHI工場跡地の先駆け住宅タワー",
+      "status": "done"
+    },
+    {
+      "id": 341,
+      "category": "office",
+      "title": "横浜市役所（第8代庁舎）",
+      "slug": "yokohama-city-hall",
+      "area": "横浜市中区",
+      "angle": "槇文彦設計監修、2020年竣工、32階155m、横浜港を望む公共建築",
+      "status": "done"
     }
   ]
 }
