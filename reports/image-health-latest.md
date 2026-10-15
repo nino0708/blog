@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-10-15 08:22 JST
-- 対象: 公開済み記事 658 ページ（https://builtjapan.com）
-- 正常表示: 538 / 658（81.8%）
-- **要対応: 120 件**（画像なし 120 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-10-16 08:24 JST
+- 対象: 公開済み記事 670 ページ（https://builtjapan.com）
+- 正常表示: 546 / 670（81.5%）
+- **要対応: 124 件**（画像なし 124 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -49,6 +49,7 @@
 | [28（JA）](https://builtjapan.com/buildings/page/28/) | ヒーロー画像なし（プレースホルダ表示） |
 | [29（JA）](https://builtjapan.com/buildings/page/29/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（JA）](https://builtjapan.com/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
+| [30（JA）](https://builtjapan.com/buildings/page/30/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（JA）](https://builtjapan.com/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -69,6 +70,7 @@
 | [tokyo-dome-hotel（JA）](https://builtjapan.com/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（JA）](https://builtjapan.com/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（JA）](https://builtjapan.com/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
+| [yokohama-city-hall（JA）](https://builtjapan.com/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [buildings（EN）](https://builtjapan.com/en/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（EN）](https://builtjapan.com/en/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -109,6 +111,7 @@
 | [28（EN）](https://builtjapan.com/en/buildings/page/28/) | ヒーロー画像なし（プレースホルダ表示） |
 | [29（EN）](https://builtjapan.com/en/buildings/page/29/) | ヒーロー画像なし（プレースホルダ表示） |
 | [3（EN）](https://builtjapan.com/en/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
+| [30（EN）](https://builtjapan.com/en/buildings/page/30/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（EN）](https://builtjapan.com/en/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -129,6 +132,7 @@
 | [tokyo-dome-hotel（EN）](https://builtjapan.com/en/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（EN）](https://builtjapan.com/en/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
+| [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 
 ## 直し方
 
