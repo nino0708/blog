@@ -473,5 +473,30 @@
     "slug": "iidabashi-grand-bloom",
     "postedAt": "2026-10-15",
     "type": "quiz"
+  },
+  {
+    "slug": "aoyama-park-tower",
+    "postedAt": "2026-10-17",
+    "type": "intro"
+  },
+  {
+    "slug": "gate-tower-building-osaka",
+    "postedAt": "2026-10-17",
+    "type": "intro"
+  },
+  {
+    "slug": "iino-building",
+    "postedAt": "2026-10-17",
+    "type": "intro"
+  },
+  {
+    "slug": "ja-building-otemachi",
+    "postedAt": "2026-10-17",
+    "type": "intro"
+  },
+  {
+    "slug": "jp-tower-nagoya",
+    "postedAt": "2026-10-17",
+    "type": "quiz"
   }
 ]
