@@ -2881,7 +2881,7 @@
       "slug": "meguro-mark-city",
       "area": "目黒区",
       "angle": "1999〜2000年竣工・東急目黒線目黒駅直結の複合開発。東急不動産開発。【注意】2026-10-10調査で実在確認できず（渋谷マークシティと混同の可能性）。要再確認。",
-      "status": "todo"
+      "status": "done"
     },
     {
       "id": 321,
@@ -3021,6 +3021,51 @@
       "category": "buildings",
       "status": "done",
       "angle": "大阪市北区中之島6丁目の複合コンベンション施設。2000年開業、13F/B3F、黒川紀章設計"
+    },
+    {
+      "id": 337,
+      "category": "office",
+      "title": "ウォーターズ竹芝",
+      "slug": "waters-takeshiba",
+      "area": "港区",
+      "angle": "2020年竣工・地上26階・高さ109.86m・延床103,464m²・JR東日本開発・JR東日本建築設計・清水建設施工。竹芝ふ頭の複合施設、劇団四季専用劇場2館を内包。",
+      "status": "done"
+    },
+    {
+      "id": 338,
+      "category": "office",
+      "title": "ゲートタワービル",
+      "slug": "gate-tower-building-osaka",
+      "area": "大阪市福島区",
+      "angle": "1992年竣工・地上16階・高さ約72m。阪神高速道路池田線が5〜7階を貫通する世界的にも稀な構造。末澤産業所有・梓設計・佐藤工業施工。",
+      "status": "done"
+    },
+    {
+      "id": 339,
+      "category": "office",
+      "title": "品川プリンスホテル",
+      "slug": "shinagawa-prince-hotel",
+      "area": "港区",
+      "angle": "1978年本館開業・メインタワー1994年12月竣工39階・総3679室・西武不動産開発・西武プリンスホテルズ運営。品川駅至近の4棟構成大型ホテル。",
+      "status": "done"
+    },
+    {
+      "id": 340,
+      "category": "office",
+      "title": "ヨドバシ梅田タワー（LINKS UMEDA）",
+      "slug": "yodobashi-umeda-tower",
+      "area": "大阪市北区",
+      "angle": "2019年10月竣工・地上35階・高さ149.34m・延床109,805m²・ヨドバシHD開発・五洋建設設計施工。LINKS UMEDA商業＋ホテル阪急レスパイア大阪。",
+      "status": "done"
+    },
+    {
+      "id": 341,
+      "category": "office",
+      "title": "豊洲フォレシア",
+      "slug": "toyosu-foresia",
+      "area": "江東区",
+      "angle": "2014年7月竣工・地上16階B2F・免震構造・緑地率44%・国土交通大臣賞受賞。大林組施工。豊洲3丁目の旧東京ガス工場跡地再開発。",
+      "status": "done"
     }
   ]
 }
