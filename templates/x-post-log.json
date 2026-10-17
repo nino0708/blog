@@ -498,5 +498,30 @@
     "slug": "jp-tower-nagoya",
     "postedAt": "2026-10-17",
     "type": "quiz"
+  },
+  {
+    "slug": "kobe-port-tower",
+    "postedAt": "2026-10-17",
+    "type": "intro"
+  },
+  {
+    "slug": "jr-tower-sapporo",
+    "postedAt": "2026-10-17",
+    "type": "intro"
+  },
+  {
+    "slug": "acros-fukuoka",
+    "postedAt": "2026-10-17",
+    "type": "intro"
+  },
+  {
+    "slug": "kurushima-kaikyo-bridge",
+    "postedAt": "2026-10-17",
+    "type": "intro"
+  },
+  {
+    "slug": "kachidoki-bridge",
+    "postedAt": "2026-10-17",
+    "type": "quiz"
   }
 ]
