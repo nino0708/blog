@@ -3111,6 +3111,51 @@
       "area": "千代田区",
       "angle": "本館1964年開業・ガーデンタワー1974年竣工・地上40階・高さ143m。紀尾井町・井伊家屋敷跡の400年の日本庭園。国際的な宿泊・宴会拠点。",
       "status": "done"
+    },
+    {
+      "id": 347,
+      "category": "office",
+      "title": "横浜マリンタワー",
+      "slug": "yokohama-marine-tower",
+      "area": "横浜市中区",
+      "angle": "1961年開業・高さ106m・世界一高い灯台としてギネス登録・2022年リニューアル。",
+      "status": "done"
+    },
+    {
+      "id": 348,
+      "category": "office",
+      "title": "千葉ポートタワー",
+      "slug": "chiba-port-tower",
+      "area": "千葉市中央区",
+      "angle": "1986年開館・高さ125m・千葉県人口500万人記念・日本初ダイナミックダンパー。",
+      "status": "done"
+    },
+    {
+      "id": 349,
+      "category": "office",
+      "title": "大宮ソニックシティビル",
+      "slug": "omiya-sonic-city",
+      "area": "さいたま市大宮区",
+      "angle": "1988年開設・高さ137m・地上31階地下4階・大宮駅西口前複合施設。",
+      "status": "done"
+    },
+    {
+      "id": 350,
+      "category": "office",
+      "title": "高松シンボルタワー",
+      "slug": "takamatsu-symbol-tower",
+      "area": "高松市",
+      "angle": "2004年開業・高さ151.3m・四国最高層・サンポート高松再開発。",
+      "status": "done"
+    },
+    {
+      "id": 351,
+      "category": "office",
+      "title": "グローバルゲート",
+      "slug": "global-gate-nagoya",
+      "area": "名古屋市中村区",
+      "angle": "2017年竣工・地上37階・ささしまライブ24地区・豊田通商・大和ハウス工業。",
+      "status": "done"
     }
   ]
 }
