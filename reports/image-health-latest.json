@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-17T08:22:56.290117+09:00",
+  "checkedAt": "2026-10-18T08:20:41.161939+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -219,6 +219,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/31/",
+      "slug": "31",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -420,6 +427,223 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/31/",
+      "slug": "31",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/acros-fukuoka/",
+      "slug": "acros-fukuoka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Acros_Fukuoka_from_Tenjin_Central_Park.jpg/1280px-Acros_Fukuoka_from_Tenjin_Central_Park.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/acros-fukuoka/",
+      "slug": "acros-fukuoka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Acros_Fukuoka_from_Tenjin_Central_Park.jpg/1280px-Acros_Fukuoka_from_Tenjin_Central_Park.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/chiba-port-tower/",
+      "slug": "chiba-port-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Chiba_Port_Tower_20111211.jpg/1280px-Chiba_Port_Tower_20111211.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/chiba-port-tower/",
+      "slug": "chiba-port-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Chiba_Port_Tower_20111211.jpg/1280px-Chiba_Port_Tower_20111211.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/global-gate-nagoya/",
+      "slug": "global-gate-nagoya",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Global_Gate_.jpg/1280px-Global_Gate_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/global-gate-nagoya/",
+      "slug": "global-gate-nagoya",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Global_Gate_.jpg/1280px-Global_Gate_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/hotel-new-otani-tokyo/",
+      "slug": "hotel-new-otani-tokyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/2019_Hotel_New_Otani_Tokyo_02.jpg/1280px-2019_Hotel_New_Otani_Tokyo_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/hotel-new-otani-tokyo/",
+      "slug": "hotel-new-otani-tokyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/2019_Hotel_New_Otani_Tokyo_02.jpg/1280px-2019_Hotel_New_Otani_Tokyo_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nagoya-tv-tower/",
+      "slug": "nagoya-tv-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nagoya_TV_Tower_3.JPG/1280px-Nagoya_TV_Tower_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nagoya-tv-tower/",
+      "slug": "nagoya-tv-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nagoya_TV_Tower_3.JPG/1280px-Nagoya_TV_Tower_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/omiya-sonic-city/",
+      "slug": "omiya-sonic-city",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/omiya-sonic-city/",
+      "slug": "omiya-sonic-city",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/sendai-ss30/",
+      "slug": "sendai-ss30",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/SS30_seen_from_southwest.jpg/1280px-SS30_seen_from_southwest.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/sendai-ss30/",
+      "slug": "sendai-ss30",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/SS30_seen_from_southwest.jpg/1280px-SS30_seen_from_southwest.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/takamatsu-symbol-tower/",
+      "slug": "takamatsu-symbol-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Takamatsu_Symbol_Tower_20170121.jpg/1280px-Takamatsu_Symbol_Tower_20170121.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/takamatsu-symbol-tower/",
+      "slug": "takamatsu-symbol-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Takamatsu_Symbol_Tower_20170121.jpg/1280px-Takamatsu_Symbol_Tower_20170121.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/westin-tokyo/",
+      "slug": "westin-tokyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Westin_Hotel_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/westin-tokyo/",
+      "slug": "westin-tokyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Westin_Hotel_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yokohama-marine-tower/",
+      "slug": "yokohama-marine-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Yokohama_Marine_Tower_2022_-_01.jpg/1280px-Yokohama_Marine_Tower_2022_-_01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yokohama-marine-tower/",
+      "slug": "yokohama-marine-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Yokohama_Marine_Tower_2022_-_01.jpg/1280px-Yokohama_Marine_Tower_2022_-_01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/gate-tower-building-osaka/",
+      "slug": "gate-tower-building-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Building_penetrated_by_an_expressway_001_OSAKA_JPN.jpg/1280px-Building_penetrated_by_an_expressway_001_OSAKA_JPN.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/gate-tower-building-osaka/",
+      "slug": "gate-tower-building-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Building_penetrated_by_an_expressway_001_OSAKA_JPN.jpg/1280px-Building_penetrated_by_an_expressway_001_OSAKA_JPN.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shinagawa-prince-hotel/",
+      "slug": "shinagawa-prince-hotel",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Shinagawa_Prince_Hotel_01.JPG/1280px-Shinagawa_Prince_Hotel_01.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinagawa-prince-hotel/",
+      "slug": "shinagawa-prince-hotel",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Shinagawa_Prince_Hotel_01.JPG/1280px-Shinagawa_Prince_Hotel_01.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/toyosu-foresia/",
+      "slug": "toyosu-foresia",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/toyosu-foresia/",
+      "slug": "toyosu-foresia",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/waters-takeshiba/",
+      "slug": "waters-takeshiba",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Waters_takeshiba_tower_building.jpg/1280px-Waters_takeshiba_tower_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/waters-takeshiba/",
+      "slug": "waters-takeshiba",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Waters_takeshiba_tower_building.jpg/1280px-Waters_takeshiba_tower_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yodobashi-umeda-tower/",
+      "slug": "yodobashi-umeda-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Yodobashi_Umeda_Tower_20191104.jpg/1280px-Yodobashi_Umeda_Tower_20191104.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yodobashi-umeda-tower/",
+      "slug": "yodobashi-umeda-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Yodobashi_Umeda_Tower_20191104.jpg/1280px-Yodobashi_Umeda_Tower_20191104.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/aoyama-park-tower/",

@@ -358,7 +358,21 @@
     "reason": "記事mdが見つからない"
   },
   "yokohama-city-hall": {
-    "attempts": 2,
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "31": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "omiya-sonic-city": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "toyosu-foresia": {
+    "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }
 }
