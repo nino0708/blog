@@ -3156,6 +3156,51 @@
       "area": "名古屋市中村区",
       "angle": "2017年竣工・地上37階・ささしまライブ24地区・豊田通商・大和ハウス工業。",
       "status": "done"
+    },
+    {
+      "id": 352,
+      "category": "office",
+      "title": "ザ・ペニンシュラ東京",
+      "slug": "peninsula-tokyo",
+      "area": "千代田区",
+      "angle": "2007年開業・地上24階・日比谷・ペニンシュラホテルズ日本初進出・旧日活ホテル跡地。",
+      "status": "done"
+    },
+    {
+      "id": 353,
+      "category": "office",
+      "title": "クイーンズスクエア横浜",
+      "slug": "queens-square-yokohama",
+      "area": "横浜市西区",
+      "angle": "1997年竣工・タワーA地上36階高さ171.8m・みなとみらい21・延床496,385m²・三菱地所設計・日建設計。",
+      "status": "done"
+    },
+    {
+      "id": 354,
+      "category": "office",
+      "title": "国立西洋美術館",
+      "slug": "national-museum-of-western-art",
+      "area": "台東区",
+      "angle": "1959年開館・ル・コルビュジエ設計・日本唯一のコルビュジエ建築・2016年世界文化遺産登録。",
+      "status": "done"
+    },
+    {
+      "id": 355,
+      "category": "office",
+      "title": "日本武道館",
+      "slug": "nippon-budokan",
+      "area": "千代田区",
+      "angle": "1964年竣工・高さ42m・東京五輪柔道会場・山田守設計・武道とコンサートの聖地。",
+      "status": "done"
+    },
+    {
+      "id": 356,
+      "category": "office",
+      "title": "ラゾーナ川崎プラザ",
+      "slug": "lazona-kawasaki-plaza",
+      "area": "川崎市幸区",
+      "angle": "2006年開業・延床172,303m²・東芝堀川町工場跡地・三井不動産・リカルド・ボフィル外装設計。",
+      "status": "done"
     }
   ]
 }
