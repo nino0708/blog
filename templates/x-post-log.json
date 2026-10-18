@@ -523,5 +523,25 @@
     "slug": "kachidoki-bridge",
     "postedAt": "2026-10-17",
     "type": "quiz"
+  },
+  {
+    "slug": "chiba-port-tower",
+    "postedAt": "2026-10-18"
+  },
+  {
+    "slug": "jr-gate-tower",
+    "postedAt": "2026-10-18"
+  },
+  {
+    "slug": "keio-plaza-hotel",
+    "postedAt": "2026-10-18"
+  },
+  {
+    "slug": "jr-hakata-city",
+    "postedAt": "2026-10-18"
+  },
+  {
+    "slug": "kyoto-tower",
+    "postedAt": "2026-10-18"
   }
 ]
