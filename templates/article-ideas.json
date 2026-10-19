@@ -3156,6 +3156,51 @@
       "area": "名古屋市中村区",
       "angle": "2017年竣工・地上37階・ささしまライブ24地区・豊田通商・大和ハウス工業。",
       "status": "done"
+    },
+    {
+      "id": 352,
+      "category": "residence",
+      "title": "富久クロス コンフォートタワー",
+      "slug": "tomihisa-cross-comfort-tower",
+      "area": "新宿区",
+      "angle": "4社共同開発の地上55階大規模タワーマンション。デュアル制振構造と新宿御苑前の住宅地",
+      "status": "done"
+    },
+    {
+      "id": 353,
+      "category": "residence",
+      "title": "ザ ヨコハマ フロント タワー",
+      "slug": "yokohama-front-tower",
+      "area": "横浜市神奈川区",
+      "angle": "国家戦略住宅整備事業国内第1号。横浜駅きた西口直結の178m超高層複合タワー",
+      "status": "done"
+    },
+    {
+      "id": 354,
+      "category": "office",
+      "title": "上野フロンティアタワー",
+      "slug": "ueno-frontier-tower",
+      "area": "台東区",
+      "angle": "旧松坂屋上野店南館跡地に建つJ.フロントリテイリング開発の商業・オフィス複合ビル",
+      "status": "done"
+    },
+    {
+      "id": 355,
+      "category": "residence",
+      "title": "ザ・北浜",
+      "slug": "the-kitahama-osaka",
+      "area": "大阪市中央区",
+      "angle": "北浜の土佐堀川沿いに建つ54階建て・高さ約209mの超高層タワーマンション。竣工当時国内最高水準",
+      "status": "done"
+    },
+    {
+      "id": 356,
+      "category": "residence",
+      "title": "パークコート渋谷 ザ タワー",
+      "slug": "park-court-shibuya-the-tower",
+      "area": "渋谷区",
+      "angle": "旧渋谷区役所跡地連動の定期借地権タワーマンション。公園通りの丘の上に立つ39階建て",
+      "status": "done"
     }
   ]
 }
