@@ -10,6 +10,9 @@ developer: "野村不動産・三井不動産レジデンシャル・積水ハ�
 tags: ["新宿区", "新宿", "タワーマンション", "超高層マンション", "再開発"]
 publishedAt: 2026-10-19
 summary: "新宿区富久町に2015年に竣工した地上55階建ての大規模タワーマンション。野村不動産・三井不動産レジデンシャル・積水ハウス・阪急不動産の4社が共同開発し、総戸数1,093戸を擁する。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Tomihisa_Cross_Comfort_Tower.jpg/1280px-Tomihisa_Cross_Comfort_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "EXECUTOR / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tomihisa_Cross_Comfort_Tower.jpg"
 verified: true
 sources:
   - "ノムコム・三井のリハウス・野村不動産公式等の物件ライブラリ（所在地: 東京都新宿区富久町15-1、竣工: 2015年4月、地上55階・地下2階、RC造・SRC造、総戸数1,093戸、施工: 戸田建設・五洋建設JV、分譲: 野村不動産・三井不動産レジデンシャル・積水ハウス・阪急不動産）"

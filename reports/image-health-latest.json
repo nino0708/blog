@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-19T08:20:37.951963+09:00",
+  "checkedAt": "2026-10-20T08:20:30.031644+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -226,6 +226,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/32/",
+      "slug": "32",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -434,6 +441,83 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/32/",
+      "slug": "32",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/park-court-shibuya-the-tower/",
+      "slug": "park-court-shibuya-the-tower",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/park-court-shibuya-the-tower/",
+      "slug": "park-court-shibuya-the-tower",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/the-kitahama-osaka/",
+      "slug": "the-kitahama-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/The_Kitahama_in_201406.jpg/1280px-The_Kitahama_in_201406.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/the-kitahama-osaka/",
+      "slug": "the-kitahama-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/The_Kitahama_in_201406.jpg/1280px-The_Kitahama_in_201406.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tomihisa-cross-comfort-tower/",
+      "slug": "tomihisa-cross-comfort-tower",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tomihisa-cross-comfort-tower/",
+      "slug": "tomihisa-cross-comfort-tower",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/ueno-frontier-tower/",
+      "slug": "ueno-frontier-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Ueno_Frontier_Tower.jpg/1280px-Ueno_Frontier_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/ueno-frontier-tower/",
+      "slug": "ueno-frontier-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Ueno_Frontier_Tower.jpg/1280px-Ueno_Frontier_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yokohama-front-tower/",
+      "slug": "yokohama-front-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/The_Yokohama_Front_Tower_20221127.jpg/1280px-The_Yokohama_Front_Tower_20221127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yokohama-front-tower/",
+      "slug": "yokohama-front-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/The_Yokohama_Front_Tower_20221127.jpg/1280px-The_Yokohama_Front_Tower_20221127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/acros-fukuoka/",
@@ -972,14 +1056,14 @@
       "slug": "tokyo-garden-terrace-kioi-cho",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioi-cho/",
       "slug": "tokyo-garden-terrace-kioi-cho",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyu-plaza-omotesando-harajuku/",
@@ -2498,14 +2582,14 @@
       "slug": "kddi-building-shinjuku",
       "lang": "ja",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/KDDI_Office_Building_Shinjuku_2007-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/KDDI_Osaka_No.2_Building.JPG/1280px-KDDI_Osaka_No.2_Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kddi-building-shinjuku/",
       "slug": "kddi-building-shinjuku",
       "lang": "en",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/KDDI_Office_Building_Shinjuku_2007-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/KDDI_Osaka_No.2_Building.JPG/1280px-KDDI_Osaka_No.2_Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/keio-plaza-hotel/",
@@ -3646,14 +3730,14 @@
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioicho/",
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Sprouting_Garden_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",
@@ -3702,14 +3786,14 @@
       "slug": "kachidoki-bridge",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Kachidoki_Bridge.jpg/1280px-Kachidoki_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kachidoki_bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kachidoki-bridge/",
       "slug": "kachidoki-bridge",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Kachidoki_Bridge.jpg/1280px-Kachidoki_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kachidoki_bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/kiyosubashi/",

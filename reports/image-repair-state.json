@@ -368,11 +368,22 @@
     "reason": "記事mdが見つからない"
   },
   "omiya-sonic-city": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "toyosu-foresia": {
-    "attempts": 2,
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "32": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "park-court-shibuya-the-tower": {
+    "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }
 }

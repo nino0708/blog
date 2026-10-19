@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-10-19 08:20 JST
-- 対象: 公開済み記事 702 ページ（https://builtjapan.com）
-- 正常表示: 572 / 702（81.5%）
-- **要対応: 130 件**（画像なし 130 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-10-20 08:20 JST
+- 対象: 公開済み記事 714 ページ（https://builtjapan.com）
+- 正常表示: 578 / 714（81.0%）
+- **要対応: 136 件**（画像なし 136 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -52,6 +52,7 @@
 | [3（JA）](https://builtjapan.com/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [30（JA）](https://builtjapan.com/buildings/page/30/) | ヒーロー画像なし（プレースホルダ表示） |
 | [31（JA）](https://builtjapan.com/buildings/page/31/) | ヒーロー画像なし（プレースホルダ表示） |
+| [32（JA）](https://builtjapan.com/buildings/page/32/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（JA）](https://builtjapan.com/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -59,6 +60,7 @@
 | [8（JA）](https://builtjapan.com/buildings/page/8/) | ヒーロー画像なし（プレースホルダ表示） |
 | [9（JA）](https://builtjapan.com/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-city-musashi-kosugi-station-forest-tower（JA）](https://builtjapan.com/buildings/park-city-musashi-kosugi-station-forest-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [park-court-shibuya-the-tower（JA）](https://builtjapan.com/buildings/park-court-shibuya-the-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-tower-kachidoki（JA）](https://builtjapan.com/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-fukuras（JA）](https://builtjapan.com/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（JA）](https://builtjapan.com/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -71,6 +73,7 @@
 | [toda-building（JA）](https://builtjapan.com/buildings/toda-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome-hotel（JA）](https://builtjapan.com/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（JA）](https://builtjapan.com/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
+| [tomihisa-cross-comfort-tower（JA）](https://builtjapan.com/buildings/tomihisa-cross-comfort-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（JA）](https://builtjapan.com/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（JA）](https://builtjapan.com/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（JA）](https://builtjapan.com/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -117,6 +120,7 @@
 | [3（EN）](https://builtjapan.com/en/buildings/page/3/) | ヒーロー画像なし（プレースホルダ表示） |
 | [30（EN）](https://builtjapan.com/en/buildings/page/30/) | ヒーロー画像なし（プレースホルダ表示） |
 | [31（EN）](https://builtjapan.com/en/buildings/page/31/) | ヒーロー画像なし（プレースホルダ表示） |
+| [32（EN）](https://builtjapan.com/en/buildings/page/32/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（EN）](https://builtjapan.com/en/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -124,6 +128,7 @@
 | [8（EN）](https://builtjapan.com/en/buildings/page/8/) | ヒーロー画像なし（プレースホルダ表示） |
 | [9（EN）](https://builtjapan.com/en/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-city-musashi-kosugi-station-forest-tower（EN）](https://builtjapan.com/en/buildings/park-city-musashi-kosugi-station-forest-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [park-court-shibuya-the-tower（EN）](https://builtjapan.com/en/buildings/park-court-shibuya-the-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-tower-kachidoki（EN）](https://builtjapan.com/en/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-fukuras（EN）](https://builtjapan.com/en/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（EN）](https://builtjapan.com/en/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -136,6 +141,7 @@
 | [toda-building（EN）](https://builtjapan.com/en/buildings/toda-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome-hotel（EN）](https://builtjapan.com/en/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（EN）](https://builtjapan.com/en/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
+| [tomihisa-cross-comfort-tower（EN）](https://builtjapan.com/en/buildings/tomihisa-cross-comfort-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（EN）](https://builtjapan.com/en/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
