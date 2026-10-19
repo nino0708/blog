@@ -523,5 +523,30 @@
     "slug": "kachidoki-bridge",
     "postedAt": "2026-10-17",
     "type": "quiz"
+  },
+  {
+    "slug": "nakagin-capsule-tower",
+    "postedAt": "2026-10-20",
+    "type": "intro"
+  },
+  {
+    "slug": "marunouchi-building",
+    "postedAt": "2026-10-20",
+    "type": "intro"
+  },
+  {
+    "slug": "park-city-musashi-kosugi-station-forest-tower",
+    "postedAt": "2026-10-20",
+    "type": "intro"
+  },
+  {
+    "slug": "toyosu-center-building",
+    "postedAt": "2026-10-20",
+    "type": "intro"
+  },
+  {
+    "slug": "sumitomo-toranomon-tower",
+    "postedAt": "2026-10-20",
+    "type": "quiz"
   }
 ]
