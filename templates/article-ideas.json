@@ -3201,6 +3201,51 @@
       "area": "渋谷区",
       "angle": "旧渋谷区役所跡地連動の定期借地権タワーマンション。公園通りの丘の上に立つ39階建て",
       "status": "done"
+    },
+    {
+      "id": 357,
+      "category": "bridge",
+      "title": "多々羅大橋",
+      "slug": "tatara-bridge",
+      "area": "今治市・尾道市",
+      "angle": "しまなみ海道の中央に架かる斜張橋。1999年開通時に中央径間890mで世界最長を記録。主塔220m、橋長1480m",
+      "status": "done"
+    },
+    {
+      "id": 358,
+      "category": "expressway",
+      "title": "首都高速神奈川7号横浜北線",
+      "slug": "shutoko-yokohama-kita-line",
+      "area": "横浜市",
+      "angle": "2017年3月開通。生麦JCT〜横浜港北JCT間8.2kmのうち約5.9kmが横浜北トンネルとして地下を走る都市型高速",
+      "status": "done"
+    },
+    {
+      "id": 359,
+      "category": "railway",
+      "title": "西九州新幹線",
+      "slug": "nishi-kyushu-shinkansen",
+      "area": "長崎県・佐賀県",
+      "angle": "2022年9月23日開業。武雄温泉〜長崎間69.6kmを結ぶ新幹線。武雄温泉での対面乗り換え方式が特徴",
+      "status": "done"
+    },
+    {
+      "id": 360,
+      "category": "office",
+      "title": "中部国際空港（セントレア）",
+      "slug": "chubu-centrair-airport",
+      "area": "常滑市",
+      "angle": "2005年2月17日開港の愛知県常滑市沖人工島空港。24時間運用の滑走路1本（3500m）。名鉄で名古屋から約28分",
+      "status": "done"
+    },
+    {
+      "id": 361,
+      "category": "railway",
+      "title": "仙台市地下鉄東西線",
+      "slug": "sendai-subway-tozai-line",
+      "area": "仙台市",
+      "angle": "2015年12月6日開業。八木山動物公園〜荒井間13.9km・13駅。リニアモーター方式で仙台の丘陵地と平野部を結ぶ",
+      "status": "done"
     }
   ]
 }
