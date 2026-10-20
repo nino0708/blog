@@ -548,5 +548,30 @@
     "slug": "sumitomo-toranomon-tower",
     "postedAt": "2026-10-20",
     "type": "quiz"
+  },
+  {
+    "slug": "tatara-bridge",
+    "postedAt": "2026-10-21",
+    "type": "intro"
+  },
+  {
+    "slug": "chubu-centrair-airport",
+    "postedAt": "2026-10-21",
+    "type": "intro"
+  },
+  {
+    "slug": "shutoko-yokohama-kita-line",
+    "postedAt": "2026-10-21",
+    "type": "intro"
+  },
+  {
+    "slug": "nishi-kyushu-shinkansen",
+    "postedAt": "2026-10-21",
+    "type": "intro"
+  },
+  {
+    "slug": "sendai-subway-tozai-line",
+    "postedAt": "2026-10-21",
+    "type": "quiz"
   }
 ]

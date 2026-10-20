@@ -37,9 +37,9 @@ AGENT = "編集部"
 LANG_LABEL = {"ja": "JA", "en": "EN"}
 
 
-def canonical(lang: str, slug: str) -> str:
+def canonical(lang: str, slug: str, category: str = "buildings") -> str:
     prefix = "/en" if lang == "en" else ""
-    return f"https://builtjapan.com{prefix}/buildings/{slug}/"
+    return f"https://builtjapan.com{prefix}/{category}/{slug}/"
 
 
 def validate(posts: list) -> list:
@@ -54,10 +54,11 @@ def validate(posts: list) -> list:
             if not str(p.get(field, "")).strip():
                 errors.append(f"{tag}: {field} が空です")
         text, slug, lang = p.get("text", ""), p.get("slug", ""), p.get("lang", "")
+        category = p.get("category", "buildings")
         n = xlen(text)
         if n > LIMIT:
             errors.append(f"{tag}: {n} カウント(上限 {LIMIT})。短く書き直す")
-        url = canonical(lang, slug)
+        url = canonical(lang, slug, category)
         if url not in text:
             errors.append(f"{tag}: 本文に {url} がありません")
     return errors
@@ -79,7 +80,7 @@ def build_payload(posts: list, today: str) -> dict:
         clips.append({
             "label": f"Built Japan 投稿{n}({label})",
             "text": text,
-            "url": canonical(lang, p["slug"]),
+            "url": canonical(lang, p["slug"], p.get("category", "buildings")),
             "taskDedupeKey": task_key,
             "dedupeKey": f"bj-x-clip-{today}-{n}-{lang}",
         })
