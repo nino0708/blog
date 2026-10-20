@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-20T08:20:30.031644+09:00",
+  "checkedAt": "2026-10-21T08:21:06.948804+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -481,15 +481,15 @@
       "url": "https://builtjapan.com/buildings/tomihisa-cross-comfort-tower/",
       "slug": "tomihisa-cross-comfort-tower",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Tomihisa_Cross_Comfort_Tower.jpg/1280px-Tomihisa_Cross_Comfort_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tomihisa-cross-comfort-tower/",
       "slug": "tomihisa-cross-comfort-tower",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Tomihisa_Cross_Comfort_Tower.jpg/1280px-Tomihisa_Cross_Comfort_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/ueno-frontier-tower/",
@@ -580,14 +580,14 @@
       "slug": "nagoya-tv-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Nagoya_TV_Tower_4.JPG/1280px-Nagoya_TV_Tower_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nagoya_TV_Tower_3.JPG/1280px-Nagoya_TV_Tower_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/nagoya-tv-tower/",
       "slug": "nagoya-tv-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Nagoya_TV_Tower_4.JPG/1280px-Nagoya_TV_Tower_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nagoya_TV_Tower_3.JPG/1280px-Nagoya_TV_Tower_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/omiya-sonic-city/",
@@ -1084,14 +1084,14 @@
       "slug": "osaka-bay-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Osaka_Bay_Tower_%282%29.jpg/1280px-Osaka_Bay_Tower_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/OSAKA_BAY_TOWER_%282%29.jpg/1280px-OSAKA_BAY_TOWER_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/osaka-bay-tower/",
       "slug": "osaka-bay-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Osaka_Bay_Tower_%282%29.jpg/1280px-Osaka_Bay_Tower_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/OSAKA_BAY_TOWER_%282%29.jpg/1280px-OSAKA_BAY_TOWER_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/osaka-umeda-twin-towers-south/",
@@ -1812,14 +1812,14 @@
       "slug": "nakanoshima-festival-tower-west",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg/1280px-Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Nakanoshima_Festival_Tower_West.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/en/buildings/nakanoshima-festival-tower-west/",
       "slug": "nakanoshima-festival-tower-west",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg/1280px-Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Nakanoshima_Festival_Tower_West.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/shibuya-fukuras/",
@@ -3730,14 +3730,14 @@
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioicho/",
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",

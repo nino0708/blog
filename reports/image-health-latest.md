@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-10-20 08:20 JST
+- 実行: 2026-10-21 08:21 JST
 - 対象: 公開済み記事 714 ページ（https://builtjapan.com）
-- 正常表示: 578 / 714（81.0%）
-- **要対応: 136 件**（画像なし 136 / 壊れ 0 / ページ異常 0）
+- 正常表示: 580 / 714（81.2%）
+- **要対応: 134 件**（画像なし 134 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -73,7 +73,6 @@
 | [toda-building（JA）](https://builtjapan.com/buildings/toda-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome-hotel（JA）](https://builtjapan.com/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（JA）](https://builtjapan.com/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tomihisa-cross-comfort-tower（JA）](https://builtjapan.com/buildings/tomihisa-cross-comfort-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（JA）](https://builtjapan.com/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（JA）](https://builtjapan.com/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（JA）](https://builtjapan.com/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -141,7 +140,6 @@
 | [toda-building（EN）](https://builtjapan.com/en/buildings/toda-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome-hotel（EN）](https://builtjapan.com/en/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（EN）](https://builtjapan.com/en/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tomihisa-cross-comfort-tower（EN）](https://builtjapan.com/en/buildings/tomihisa-cross-comfort-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（EN）](https://builtjapan.com/en/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
