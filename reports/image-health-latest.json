@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-21T08:21:06.948804+09:00",
+  "checkedAt": "2026-10-22T08:21:18.395974+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -450,6 +450,76 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/canal-city-hakata/",
+      "slug": "canal-city-hakata",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Canal_City_Hakata_at_dusk_20170929.jpg/1280px-Canal_City_Hakata_at_dusk_20170929.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/canal-city-hakata/",
+      "slug": "canal-city-hakata",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Canal_City_Hakata_at_dusk_20170929.jpg/1280px-Canal_City_Hakata_at_dusk_20170929.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/hilton-osaka/",
+      "slug": "hilton-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Hilton_Osaka_Hotel_and_Osaka_Daiichi_Life_Building_at_dusk.jpg/1280px-Hilton_Osaka_Hotel_and_Osaka_Daiichi_Life_Building_at_dusk.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/hilton-osaka/",
+      "slug": "hilton-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Hilton_Osaka_Hotel_and_Osaka_Daiichi_Life_Building_at_dusk.jpg/1280px-Hilton_Osaka_Hotel_and_Osaka_Daiichi_Life_Building_at_dusk.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/keio-plaza-hotel-tokyo/",
+      "slug": "keio-plaza-hotel-tokyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Keio_Plaza_Hotel_-01.jpg/1280px-Keio_Plaza_Hotel_-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/keio-plaza-hotel-tokyo/",
+      "slug": "keio-plaza-hotel-tokyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Keio_Plaza_Hotel_-01.jpg/1280px-Keio_Plaza_Hotel_-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/queens-square-yokohama/",
+      "slug": "queens-square-yokohama",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Queens_Square_Yokohama_2014.jpg/1280px-Queens_Square_Yokohama_2014.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/queens-square-yokohama/",
+      "slug": "queens-square-yokohama",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Queens_Square_Yokohama_2014.jpg/1280px-Queens_Square_Yokohama_2014.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shinjuku-el-tower/",
+      "slug": "shinjuku-el-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinjuku_L_tower.jpg/1280px-Shinjuku_L_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinjuku-el-tower/",
+      "slug": "shinjuku-el-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinjuku_L_tower.jpg/1280px-Shinjuku_L_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/park-court-shibuya-the-tower/",
       "slug": "park-court-shibuya-the-tower",
       "lang": "ja",
@@ -580,14 +650,14 @@
       "slug": "nagoya-tv-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nagoya_TV_Tower_3.JPG/1280px-Nagoya_TV_Tower_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Nagoya_TV_Tower_4.JPG/1280px-Nagoya_TV_Tower_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/nagoya-tv-tower/",
       "slug": "nagoya-tv-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nagoya_TV_Tower_3.JPG/1280px-Nagoya_TV_Tower_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Nagoya_TV_Tower_4.JPG/1280px-Nagoya_TV_Tower_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/omiya-sonic-city/",
@@ -1084,14 +1154,14 @@
       "slug": "osaka-bay-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/OSAKA_BAY_TOWER_%282%29.jpg/1280px-OSAKA_BAY_TOWER_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Osaka_Bay_Tower_%282%29.jpg/1280px-Osaka_Bay_Tower_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/osaka-bay-tower/",
       "slug": "osaka-bay-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/OSAKA_BAY_TOWER_%282%29.jpg/1280px-OSAKA_BAY_TOWER_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Osaka_Bay_Tower_%282%29.jpg/1280px-Osaka_Bay_Tower_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/osaka-umeda-twin-towers-south/",
@@ -2582,14 +2652,14 @@
       "slug": "kddi-building-shinjuku",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/KDDI_Osaka_No.2_Building.JPG/1280px-KDDI_Osaka_No.2_Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/KDDI_Office_Building_Shinjuku_2007-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kddi-building-shinjuku/",
       "slug": "kddi-building-shinjuku",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/KDDI_Osaka_No.2_Building.JPG/1280px-KDDI_Osaka_No.2_Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/KDDI_Office_Building_Shinjuku_2007-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/keio-plaza-hotel/",
@@ -3730,14 +3800,14 @@
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioicho/",
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",
@@ -3786,14 +3856,14 @@
       "slug": "kachidoki-bridge",
       "lang": "ja",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kachidoki_bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Kachidoki_Bridge.jpg/1280px-Kachidoki_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kachidoki-bridge/",
       "slug": "kachidoki-bridge",
       "lang": "en",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kachidoki_bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Kachidoki_Bridge.jpg/1280px-Kachidoki_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/kiyosubashi/",
