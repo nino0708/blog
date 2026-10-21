@@ -40,18 +40,30 @@ def _font(family: str, bold: bool):
     return font.getBestCmap(), font["hmtx"], font["head"].unitsPerEm
 
 
+AUTOSPACE = 0.25  # 和文と英数字の間に PowerPoint / LibreOffice が自動で入れる空き（em）
+
+
+def _is_cjk(ch: str) -> bool:
+    return ord(ch) > 0x2E7F
+
+
 def text_width(text: str, size_pt: float, family: str, bold: bool) -> float:
-    """テキストの幅（インチ）。フォントが無ければ全角=1em・半角=0.55emで概算。"""
+    """テキストの幅（インチ）。和文と英数字の境目の自動の空きも足す。
+    フォントが無ければ全角=1em・半角=0.55emで概算。"""
     f = _font(family, bold)
     em = size_pt / 72.0
     if f is None:
-        return sum(em if ord(ch) > 0x2E7F else em * 0.55 for ch in text)
-    cmap, hmtx, upm = f
-    total = 0
-    for ch in text:
-        glyph = cmap.get(ord(ch))
-        total += hmtx[glyph][0] if glyph else upm
-    return total / upm * em
+        total = sum(1.0 if _is_cjk(ch) else 0.55 for ch in text)
+    else:
+        cmap, hmtx, upm = f
+        total = 0.0
+        for ch in text:
+            glyph = cmap.get(ord(ch))
+            total += (hmtx[glyph][0] if glyph else upm) / upm
+    for a, b in zip(text, text[1:]):
+        if (_is_cjk(a) and b.isascii() and b.isalnum()) or (a.isascii() and a.isalnum() and _is_cjk(b)):
+            total += AUTOSPACE
+    return total * em
 
 
 def _phrases(text: str):
