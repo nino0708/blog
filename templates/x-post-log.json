@@ -548,5 +548,30 @@
     "slug": "sumitomo-toranomon-tower",
     "postedAt": "2026-10-20",
     "type": "quiz"
+  },
+  {
+    "slug": "canal-city-hakata",
+    "postedAt": "2026-10-22",
+    "type": "intro"
+  },
+  {
+    "slug": "chiba-port-tower",
+    "postedAt": "2026-10-22",
+    "type": "intro"
+  },
+  {
+    "slug": "global-gate-nagoya",
+    "postedAt": "2026-10-22",
+    "type": "intro"
+  },
+  {
+    "slug": "hilton-osaka",
+    "postedAt": "2026-10-22",
+    "type": "intro"
+  },
+  {
+    "slug": "hotel-new-otani-tokyo",
+    "postedAt": "2026-10-22",
+    "type": "quiz"
   }
 ]
