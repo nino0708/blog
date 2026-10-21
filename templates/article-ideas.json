@@ -3201,6 +3201,51 @@
       "area": "渋谷区",
       "angle": "旧渋谷区役所跡地連動の定期借地権タワーマンション。公園通りの丘の上に立つ39階建て",
       "status": "done"
+    },
+    {
+      "id": 357,
+      "category": "office",
+      "title": "京王プラザホテル",
+      "slug": "keio-plaza-hotel-tokyo",
+      "area": "新宿区",
+      "angle": "1971年竣工、西新宿最初の超高層・当時世界最高層ホテル。DOCOMOMO JAPAN認定の47階・高さ178m",
+      "status": "done"
+    },
+    {
+      "id": 358,
+      "category": "office",
+      "title": "クイーンズスクエア横浜",
+      "slug": "queens-square-yokohama",
+      "area": "横浜市西区",
+      "angle": "1997年開業のみなとみらい大規模複合施設。3棟構成・タワーA地上36階・高さ172m、延床面積約496,000㎡",
+      "status": "done"
+    },
+    {
+      "id": 359,
+      "category": "office",
+      "title": "新宿エルタワー",
+      "slug": "shinjuku-el-tower",
+      "area": "新宿区",
+      "angle": "1989年（平成元年）竣工、4社共同開発の西新宿オフィスビル。地上31階・高さ121m、清水建設設計",
+      "status": "done"
+    },
+    {
+      "id": 360,
+      "category": "office",
+      "title": "キャナルシティ博多",
+      "slug": "canal-city-hakata",
+      "area": "福岡市博多区",
+      "angle": "1996年4月開業、福岡地所開発・ジョン・ジャーディ設計の人工運河中心の複合施設。延床面積約234,000㎡",
+      "status": "done"
+    },
+    {
+      "id": 361,
+      "category": "office",
+      "title": "ヒルトン大阪",
+      "slug": "hilton-osaka",
+      "area": "大阪市北区",
+      "angle": "1986年竣工、吉本ビルディング所有・梅田一等地のヒルトンブランドホテル。地上34階・地下4階",
+      "status": "done"
     }
   ]
 }
