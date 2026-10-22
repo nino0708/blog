@@ -573,5 +573,30 @@
     "slug": "hotel-new-otani-tokyo",
     "postedAt": "2026-10-22",
     "type": "quiz"
+  },
+  {
+    "slug": "jp-tower-osaka",
+    "postedAt": "2026-10-23",
+    "type": "intro"
+  },
+  {
+    "slug": "osaka-marubiru",
+    "postedAt": "2026-10-23",
+    "type": "intro"
+  },
+  {
+    "slug": "shinagawa-grand-central-tower",
+    "postedAt": "2026-10-23",
+    "type": "intro"
+  },
+  {
+    "slug": "jr-gate-tower",
+    "postedAt": "2026-10-23",
+    "type": "intro"
+  },
+  {
+    "slug": "kyoto-tower",
+    "postedAt": "2026-10-23",
+    "type": "quiz"
   }
 ]
