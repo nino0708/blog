@@ -191,12 +191,13 @@ function createDeck(opts = {}) {
       txt(slide, label, { x: first ? x : last ? x - w : x - w / 2, y: y - 0.38, w, h: 0.3, fontSize: 12, bold: true, color: C.text2, align: first ? "left" : last ? "right" : "center", valign: "middle", objectName: "tick " + i });
     });
   }
-  /** 分類→対応 の行（判断フロー）。rows: [[見出し, 補足, 色, 対応の文], ...] */
-  function flowRows(slide, rows, { x = M, y, w = CW, labelW = 2.8, rowH = 0.72, gap = 0.08, build = false } = {}) {
+  /** 分類→対応 の行（判断フロー）。rows: [[見出し, 補足, 色, 対応の文], ...]
+   *  paren: false で補足を括弧なしの太字にする（例：見出し「STEP 1」＋補足「1問だけ選ぶ」） */
+  function flowRows(slide, rows, { x = M, y, w = CW, labelW = 2.8, rowH = 0.72, gap = 0.08, build = false, paren = true } = {}) {
     rows.forEach(([t, sub, col, act], i) => {
       const yy = y + i * (rowH + gap), b = build ? i + 1 : undefined;
       panel(slide, x, yy, labelW, rowH, col, "kind " + i, undefined, b);
-      txt(slide, [{ text: t, options: { bold: true, fontSize: 14, breakLine: !!sub } }, ...(sub ? [{ text: "（" + sub + "）", options: { fontSize: 12 } }] : [])],
+      txt(slide, [{ text: t, options: { bold: true, fontSize: 14, breakLine: !!sub } }, ...(sub ? [{ text: paren ? "（" + sub + "）" : sub, options: { fontSize: paren ? 12 : 14, bold: !paren } }] : [])],
         { x, y: yy, w: labelW, h: rowH, color: C.background1, align: "center", valign: "middle", objectName: "kind text " + i, build: b });
       arrow(slide, x + labelW + 0.08, yy + rowH / 2, x + labelW + 0.45, C.accent6, "kind arrow " + i, b);
       const ax = x + labelW + 0.52, aw = w - labelW - 0.52;

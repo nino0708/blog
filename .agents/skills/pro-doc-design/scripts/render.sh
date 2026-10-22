@@ -28,6 +28,6 @@ rm -f "$DIR/$BASE"-*.jpg
 pdftoppm -jpeg -r "$DPI" "$DIR/$BASE.pdf" "$DIR/$BASE"
 pdfinfo "$DIR/$BASE.pdf" | grep -E "Pages|Page size"
 echo "埋め込みフォント: $(pdffonts "$DIR/$BASE.pdf" | awk 'NR>2{print $1}' | sed 's/^[A-Z]*+//' | sort -u | tr '\n' ' ')"
-echo "  → 指定した日本語フォント以外（IPA・WenQuanYi・DejaVu など）が出ていたら、改行位置が実物とずれる"
+echo "  → 指定した日本語フォント以外（IPA・WenQuanYi・DejaVu・Unifont など）が出ていたら、改行位置が実物とずれるか、フォントに無い記号を使っている"
 python3 "$HERE/redundancy_check.py" "$DECK" || true
 ls -1 "$DIR/$BASE"-*.jpg
