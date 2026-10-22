@@ -3246,6 +3246,51 @@
       "area": "大阪市北区",
       "angle": "1986年竣工、吉本ビルディング所有・梅田一等地のヒルトンブランドホテル。地上34階・地下4階",
       "status": "done"
+    },
+    {
+      "id": 362,
+      "category": "office",
+      "title": "名古屋JRセントラルタワーズ",
+      "slug": "nagoya-jrg-central-towers",
+      "area": "名古屋市中村区",
+      "angle": "1999年竣工・名古屋駅直上の日本初駅超高層ツインタワー。KPF設計監修・オフィス棟245.1m地上51F、ホテル棟226.0m地上53F",
+      "status": "done"
+    },
+    {
+      "id": 363,
+      "category": "office",
+      "title": "赤坂トラストタワー（東京ワールドゲート赤坂）",
+      "slug": "tokyo-world-gate-akasaka",
+      "area": "港区",
+      "angle": "2024年竣工・森トラスト×NTT都市開発の複合再開発。地上43階・高さ約210m・大成建設設計施工",
+      "status": "done"
+    },
+    {
+      "id": 364,
+      "category": "office",
+      "title": "品川グランドセントラルタワー",
+      "slug": "shinagawa-grand-central-tower",
+      "area": "港区",
+      "angle": "2003年竣工・品川駅港南口の高さ148.1mオフィスタワー。三菱地所設計・竹中工務店施工",
+      "status": "done"
+    },
+    {
+      "id": 365,
+      "category": "office",
+      "title": "大阪マルビル",
+      "slug": "osaka-marubiru",
+      "area": "大阪市北区",
+      "angle": "1976年竣工・日本初の円筒形超高層ビル。地上30階・高さ123.92m・フジタ工業設計施工。2024年解体完了、2030年に新ビル竣工予定",
+      "status": "done"
+    },
+    {
+      "id": 366,
+      "category": "office",
+      "title": "JPタワー大阪（KITTE大阪）",
+      "slug": "jp-tower-osaka",
+      "area": "大阪市北区",
+      "angle": "2024年竣工・大阪駅西側の超高層複合ビル。日建設計・地上39階・高さ188m・KITTE大阪商業施設",
+      "status": "done"
     }
   ]
 }
