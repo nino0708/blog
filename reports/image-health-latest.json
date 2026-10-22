@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-22T08:21:18.395974+09:00",
+  "checkedAt": "2026-10-23T08:21:21.482846+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -233,6 +233,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/33/",
+      "slug": "33",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -450,6 +457,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/en/buildings/page/33/",
+      "slug": "33",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/buildings/canal-city-hakata/",
       "slug": "canal-city-hakata",
       "lang": "ja",
@@ -478,6 +492,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Hilton_Osaka_Hotel_and_Osaka_Daiichi_Life_Building_at_dusk.jpg/1280px-Hilton_Osaka_Hotel_and_Osaka_Daiichi_Life_Building_at_dusk.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/jp-tower-osaka/",
+      "slug": "jp-tower-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/JP_Tower_Osaka.jpg/1280px-JP_Tower_Osaka.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/jp-tower-osaka/",
+      "slug": "jp-tower-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/JP_Tower_Osaka.jpg/1280px-JP_Tower_Osaka.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/keio-plaza-hotel-tokyo/",
       "slug": "keio-plaza-hotel-tokyo",
       "lang": "ja",
@@ -490,6 +518,34 @@
       "lang": "en",
       "state": "ok",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Keio_Plaza_Hotel_-01.jpg/1280px-Keio_Plaza_Hotel_-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nagoya-jrg-central-towers/",
+      "slug": "nagoya-jrg-central-towers",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/JR_Central_Towers.jpg/1280px-JR_Central_Towers.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nagoya-jrg-central-towers/",
+      "slug": "nagoya-jrg-central-towers",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/JR_Central_Towers.jpg/1280px-JR_Central_Towers.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/osaka-marubiru/",
+      "slug": "osaka-marubiru",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Osaka-Marubiru_Building_2023-04.jpg/1280px-Osaka-Marubiru_Building_2023-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/osaka-marubiru/",
+      "slug": "osaka-marubiru",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Osaka-Marubiru_Building_2023-04.jpg/1280px-Osaka-Marubiru_Building_2023-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/queens-square-yokohama/",
@@ -506,6 +562,20 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Queens_Square_Yokohama_2014.jpg/1280px-Queens_Square_Yokohama_2014.jpg"
     },
     {
+      "url": "https://builtjapan.com/buildings/shinagawa-grand-central-tower/",
+      "slug": "shinagawa-grand-central-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinagawa_Grand_Central_Tower_2014.JPG/1280px-Shinagawa_Grand_Central_Tower_2014.JPG"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinagawa-grand-central-tower/",
+      "slug": "shinagawa-grand-central-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinagawa_Grand_Central_Tower_2014.JPG/1280px-Shinagawa_Grand_Central_Tower_2014.JPG"
+    },
+    {
       "url": "https://builtjapan.com/buildings/shinjuku-el-tower/",
       "slug": "shinjuku-el-tower",
       "lang": "ja",
@@ -518,6 +588,20 @@
       "lang": "en",
       "state": "ok",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinjuku_L_tower.jpg/1280px-Shinjuku_L_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tokyo-world-gate-akasaka/",
+      "slug": "tokyo-world-gate-akasaka",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-world-gate-akasaka/",
+      "slug": "tokyo-world-gate-akasaka",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/park-court-shibuya-the-tower/",
@@ -1154,14 +1238,14 @@
       "slug": "osaka-bay-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Osaka_Bay_Tower_%282%29.jpg/1280px-Osaka_Bay_Tower_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Osaka_Bay_Tower_%281%29.jpg/1280px-Osaka_Bay_Tower_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/osaka-bay-tower/",
       "slug": "osaka-bay-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Osaka_Bay_Tower_%282%29.jpg/1280px-Osaka_Bay_Tower_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Osaka_Bay_Tower_%281%29.jpg/1280px-Osaka_Bay_Tower_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/osaka-umeda-twin-towers-south/",
@@ -3324,14 +3408,14 @@
       "slug": "jr-central-towers",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/JR_Central_Towers.jpg/1280px-JR_Central_Towers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/JR-Central-Towers-1.jpg/1280px-JR-Central-Towers-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/jr-central-towers/",
       "slug": "jr-central-towers",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/JR_Central_Towers.jpg/1280px-JR_Central_Towers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/JR-Central-Towers-1.jpg/1280px-JR-Central-Towers-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/jr-gate-tower/",
@@ -3856,14 +3940,14 @@
       "slug": "kachidoki-bridge",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Kachidoki_Bridge.jpg/1280px-Kachidoki_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kachidoki_bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kachidoki-bridge/",
       "slug": "kachidoki-bridge",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Kachidoki_Bridge.jpg/1280px-Kachidoki_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kachidoki_bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/kiyosubashi/",

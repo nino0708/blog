@@ -386,5 +386,14 @@
     "attempts": 3,
     "reason": "確信できる外観画像が見つからない",
     "gaveUp": true
+  },
+  "33": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "tokyo-world-gate-akasaka": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
   }
 }
