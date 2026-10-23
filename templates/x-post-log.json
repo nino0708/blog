@@ -573,5 +573,30 @@
     "slug": "hotel-new-otani-tokyo",
     "postedAt": "2026-10-22",
     "type": "quiz"
+  },
+  {
+    "slug": "mode-gakuen-cocoon-tower",
+    "postedAt": "2026-10-23",
+    "type": "intro"
+  },
+  {
+    "slug": "midland-square",
+    "postedAt": "2026-10-23",
+    "type": "intro"
+  },
+  {
+    "slug": "nihonbashi-mitsui-tower",
+    "postedAt": "2026-10-23",
+    "type": "intro"
+  },
+  {
+    "slug": "namba-parks",
+    "postedAt": "2026-10-23",
+    "type": "intro"
+  },
+  {
+    "slug": "nagoya-tv-tower",
+    "postedAt": "2026-10-23",
+    "type": "quiz"
   }
 ]
