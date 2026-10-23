@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-10-23 08:21 JST
-- 対象: 公開済み記事 736 ページ（https://builtjapan.com）
-- 正常表示: 598 / 736（81.2%）
-- **要対応: 138 件**（画像なし 138 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-10-24 08:21 JST
+- 対象: 公開済み記事 746 ページ（https://builtjapan.com）
+- 正常表示: 598 / 746（80.2%）
+- **要対応: 148 件**（画像なし 138 / 壊れ 10 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -147,6 +147,21 @@
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（EN）](https://builtjapan.com/en/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
+
+## 画像が壊れている（srcはあるが取得できない）
+
+| 記事 | 詳細 |
+|---|---|
+| [ochanomizu-solacity（JA）](https://builtjapan.com/buildings/ochanomizu-solacity/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Solacity.jpg/800px-Solacity.jpg` |
+| [osaka-dojimahama-tower（JA）](https://builtjapan.com/buildings/osaka-dojimahama-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg/800px-%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg` |
+| [park-city-musashikosugi-the-grand-wing-tower（JA）](https://builtjapan.com/buildings/park-city-musashikosugi-the-grand-wing-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg/800px-Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg` |
+| [shibuya-infoss-tower（JA）](https://builtjapan.com/buildings/shibuya-infoss-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Shibuya_Infoss_Tower_2012_Tokyo.JPG/800px-Shibuya_Infoss_Tower_2012_Tokyo.JPG` |
+| [the-tower-osaka（JA）](https://builtjapan.com/buildings/the-tower-osaka/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/TheTowerOsaka.jpg/800px-TheTowerOsaka.jpg` |
+| [ochanomizu-solacity（EN）](https://builtjapan.com/en/buildings/ochanomizu-solacity/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Solacity.jpg/800px-Solacity.jpg` |
+| [osaka-dojimahama-tower（EN）](https://builtjapan.com/en/buildings/osaka-dojimahama-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg/800px-%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg` |
+| [park-city-musashikosugi-the-grand-wing-tower（EN）](https://builtjapan.com/en/buildings/park-city-musashikosugi-the-grand-wing-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg/800px-Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg` |
+| [shibuya-infoss-tower（EN）](https://builtjapan.com/en/buildings/shibuya-infoss-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Shibuya_Infoss_Tower_2012_Tokyo.JPG/800px-Shibuya_Infoss_Tower_2012_Tokyo.JPG` |
+| [the-tower-osaka（EN）](https://builtjapan.com/en/buildings/the-tower-osaka/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/TheTowerOsaka.jpg/800px-TheTowerOsaka.jpg` |
 
 ## 直し方
 

@@ -14,7 +14,7 @@ architect: "竹中工務店"
 tags: ["大阪市福島区", "超高層マンション", "ほたるまち再開発"]
 publishedAt: 2026-10-23
 summary: "大阪市福島区・堂島川沿いのほたるまちエリアに立つ地上50階・高さ177mの超高層マンション。2008年竣工、福島区最高層を誇り、朝日放送テレビの本社棟も隣接する再開発の核。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/TheTowerOsaka.jpg/800px-TheTowerOsaka.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d0/TheTowerOsaka.jpg"
 heroImageCredit: "Inoue-hiro / CC BY-SA 3.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:TheTowerOsaka.jpg"
 verified: true

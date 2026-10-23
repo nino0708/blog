@@ -12,7 +12,7 @@ developer: "花田学園"
 tags: ["渋谷区", "超高層ビル", "渋谷"]
 publishedAt: 2026-10-23
 summary: "渋谷駅南口から徒歩数分、桜丘町に立つ高さ約102mのオフィスタワー。1998年竣工の地上22階建て。花田学園が保有し、HANAZONOスクエアの愛称でも知られる。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Shibuya_Infoss_Tower_2012_Tokyo.JPG/800px-Shibuya_Infoss_Tower_2012_Tokyo.JPG"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/82/Shibuya_Infoss_Tower_2012_Tokyo.JPG"
 heroImageCredit: "Harani0403 / CC BY-SA 3.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Shibuya_Infoss_Tower_2012_Tokyo.JPG"
 verified: true

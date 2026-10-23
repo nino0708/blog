@@ -14,7 +14,7 @@ architect: "大成建設"
 tags: ["千代田区", "超高層ビル", "御茶ノ水再開発"]
 publishedAt: 2026-10-23
 summary: "JR御茶ノ水駅聖橋口に直結する高さ約110mの複合オフィスビル。2013年3月竣工、地上23階建て。江戸期の石垣を保存しながら再開発された文教地区のランドマーク。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Solacity.jpg/800px-Solacity.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Solacity.jpg"
 heroImageCredit: "Koh-etsu / CC0 1.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Solacity.jpg"
 verified: true

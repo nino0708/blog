@@ -14,7 +14,7 @@ architect: "三菱地所設計・竹中工務店JV"
 tags: ["大阪市北区", "超高層ビル", "再開発", "堂島"]
 publishedAt: 2026-10-23
 summary: "大阪・堂島川沿いに2024年4月竣工した高さ143mの複合超高層ビル。地上32階建て、オフィス・ホテル・商業が一体となった大規模再開発の核となる。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg/800px-%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/82/%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg"
 heroImageCredit: "Yama0904 / CC BY-SA 4.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:大阪堂島浜タワー.jpg"
 verified: true

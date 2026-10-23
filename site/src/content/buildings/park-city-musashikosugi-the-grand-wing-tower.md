@@ -14,7 +14,7 @@ architect: "竹中工務店"
 tags: ["川崎市", "超高層マンション", "武蔵小杉再開発"]
 publishedAt: 2026-10-23
 summary: "川崎市中原区・武蔵小杉駅直結の地上38階・高さ141mの超高層マンション。2014年竣工、三井不動産レジデンシャルが開発した506戸の大規模タワー。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg/800px-Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg"
 heroImageCredit: "掬茶 / CC BY-SA 4.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg"
 verified: true
