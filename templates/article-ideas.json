@@ -3291,6 +3291,51 @@
       "area": "大阪市北区",
       "angle": "2024年竣工・大阪駅西側の超高層複合ビル。日建設計・地上39階・高さ188m・KITTE大阪商業施設",
       "status": "done"
+    },
+    {
+      "id": 367,
+      "category": "office",
+      "title": "御茶ノ水ソラシティ",
+      "slug": "ochanomizu-solacity",
+      "area": "千代田区",
+      "angle": "2013年竣工・JR御茶ノ水駅聖橋口直結。地上23階・高さ約110m・大成建設設計施工・江戸期石垣を保存",
+      "status": "done"
+    },
+    {
+      "id": 368,
+      "category": "office",
+      "title": "大阪堂島浜タワー",
+      "slug": "osaka-dojimahama-tower",
+      "area": "大阪市北区",
+      "angle": "2024年竣工・堂島川沿いの高さ143m複合超高層。地上32階・三菱地所ら開発・竹中工務店施工",
+      "status": "done"
+    },
+    {
+      "id": 369,
+      "category": "residence",
+      "title": "パークシティ武蔵小杉ザ・グランドウイングタワー",
+      "slug": "park-city-musashikosugi-the-grand-wing-tower",
+      "area": "川崎市中原区",
+      "angle": "2014年竣工・武蔵小杉駅直結・地上38階・高さ141m・506戸・三井不動産レジデンシャル・竹中工務店",
+      "status": "done"
+    },
+    {
+      "id": 370,
+      "category": "office",
+      "title": "渋谷インフォスタワー",
+      "slug": "shibuya-infoss-tower",
+      "area": "渋谷区",
+      "angle": "1998年竣工・桜丘町の地上22階・高さ約102mオフィスタワー・花田学園所有・HANAZONOスクエア",
+      "status": "done"
+    },
+    {
+      "id": 371,
+      "category": "residence",
+      "title": "ザ・タワー大阪",
+      "slug": "the-tower-osaka",
+      "area": "大阪市福島区",
+      "angle": "2008年竣工・ほたるまち再開発の核・地上50階・高さ177m・福島区最高層・オリックス不動産ら5社",
+      "status": "done"
     }
   ]
 }
