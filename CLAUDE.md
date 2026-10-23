@@ -94,4 +94,4 @@ Tempus は `tasks[].notes`（詳細欄）と `clips`（X投稿ボタンが付く
 - 写真が無い記事には、本番ビルドのたびに `generator/backfill_images.py` が Wikimedia Commons から外観写真を自動で付ける（毎日の修復は `generator/repair_images.py`）。
 - 人の顔が写り込んだ写真など、使ってはいけない写真が選ばれたら `generator/data/hero-image-block.json` に足す。`slugs` に入れた記事には自動で写真を付けない。`files` に入れたファイルはどの記事にも使わない。
 - 人の写らない写真を手で選んだときは、記事の front matter に `heroImage` などを直接書く（書いてある記事は自動補完が触らない）。
-- 公開中の写真に人が写り込んでいないかは、GitHub Actions の「写真の写り込みチェック」（`.github/workflows/people-check.yml`）で調べられる。結果は `reports/people-check-latest.md` と縮小版 `reports/people-check/`。機械の判定は誤検知が多いので、縮小版を目で見てから除外リストに足す。
+- 公開中の写真に人が写り込んでいないかは、GitHub Actions の「写真の写り込みチェック」（`.github/workflows/people-check.yml`、手動実行）で調べられる。結果の一覧は `reports/people-check-latest.md`。縮小版（赤枠つき）は容量が大きいのでリポジトリに入れず、その実行の Artifacts `people-check-thumbs` からダウンロードする（14日で消える）。機械の判定は誤検知が多いので、縮小版を目で見てから除外リストに足す。
