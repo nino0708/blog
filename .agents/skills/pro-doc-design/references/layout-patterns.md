@@ -3,7 +3,7 @@
 ## 始め方
 ```bash
 bash <skill>/scripts/setup.sh "$WORK"                 # 足りない道具を入れる（初回のみ）
-cp <skill>/examples/sample_deck.js "$WORK/build.js"     # 見本を複製して書き換える
+cp <skill>/examples/sample_cloud.js "$WORK/build.js"    # 見本を複製して書き換える（白地なら sample_deck.js）
 cd "$WORK" && node build.js out.pptx && bash <skill>/scripts/render.sh out.pptx
 ```
 `build.js` 内の `require` は `deck_kit.js` の絶対パスに直す。
@@ -15,6 +15,7 @@ cd "$WORK" && node build.js out.pptx && bash <skill>/scripts/render.sh out.pptx
 | `16:9` | 13.33×7.5 | 28pt | 1.15 | 6.78 | 投影・画面共有 |
 
 外周の余白 `d.M`=0.5、本文の幅 `d.CW`。要素の間隔は 0.25〜0.3 でそろえる。
+`style: "cloud"` では本文は `d.TOP`=2.1〜`d.BOTTOM`=7.5（帯＋POINT の下）。部品と色は `style-cloud.md`。
 
 ## 図解の型の選び方
 | 伝えたいこと | 型 | deck_kit |
