@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-10-24 08:21 JST
-- 対象: 公開済み記事 746 ページ（https://builtjapan.com）
-- 正常表示: 598 / 746（80.2%）
-- **要対応: 148 件**（画像なし 138 / 壊れ 10 / ページ異常 0）
+- 実行: 2026-10-25 08:20 JST
+- 対象: 公開済み記事 758 ページ（https://builtjapan.com）
+- 正常表示: 616 / 758（81.3%）
+- **要対応: 142 件**（画像なし 142 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -54,12 +54,14 @@
 | [31（JA）](https://builtjapan.com/buildings/page/31/) | ヒーロー画像なし（プレースホルダ表示） |
 | [32（JA）](https://builtjapan.com/buildings/page/32/) | ヒーロー画像なし（プレースホルダ表示） |
 | [33（JA）](https://builtjapan.com/buildings/page/33/) | ヒーロー画像なし（プレースホルダ表示） |
+| [34（JA）](https://builtjapan.com/buildings/page/34/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（JA）](https://builtjapan.com/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
 | [7（JA）](https://builtjapan.com/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
 | [8（JA）](https://builtjapan.com/buildings/page/8/) | ヒーロー画像なし（プレースホルダ表示） |
 | [9（JA）](https://builtjapan.com/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
+| [palace-side-building（JA）](https://builtjapan.com/buildings/palace-side-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-city-musashi-kosugi-station-forest-tower（JA）](https://builtjapan.com/buildings/park-city-musashi-kosugi-station-forest-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-court-shibuya-the-tower（JA）](https://builtjapan.com/buildings/park-court-shibuya-the-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-tower-kachidoki（JA）](https://builtjapan.com/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -123,12 +125,14 @@
 | [31（EN）](https://builtjapan.com/en/buildings/page/31/) | ヒーロー画像なし（プレースホルダ表示） |
 | [32（EN）](https://builtjapan.com/en/buildings/page/32/) | ヒーロー画像なし（プレースホルダ表示） |
 | [33（EN）](https://builtjapan.com/en/buildings/page/33/) | ヒーロー画像なし（プレースホルダ表示） |
+| [34（EN）](https://builtjapan.com/en/buildings/page/34/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（EN）](https://builtjapan.com/en/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
 | [7（EN）](https://builtjapan.com/en/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
 | [8（EN）](https://builtjapan.com/en/buildings/page/8/) | ヒーロー画像なし（プレースホルダ表示） |
 | [9（EN）](https://builtjapan.com/en/buildings/page/9/) | ヒーロー画像なし（プレースホルダ表示） |
+| [palace-side-building（EN）](https://builtjapan.com/en/buildings/palace-side-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-city-musashi-kosugi-station-forest-tower（EN）](https://builtjapan.com/en/buildings/park-city-musashi-kosugi-station-forest-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-court-shibuya-the-tower（EN）](https://builtjapan.com/en/buildings/park-court-shibuya-the-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [park-tower-kachidoki（EN）](https://builtjapan.com/en/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -147,21 +151,6 @@
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（EN）](https://builtjapan.com/en/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
-
-## 画像が壊れている（srcはあるが取得できない）
-
-| 記事 | 詳細 |
-|---|---|
-| [ochanomizu-solacity（JA）](https://builtjapan.com/buildings/ochanomizu-solacity/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Solacity.jpg/800px-Solacity.jpg` |
-| [osaka-dojimahama-tower（JA）](https://builtjapan.com/buildings/osaka-dojimahama-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg/800px-%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg` |
-| [park-city-musashikosugi-the-grand-wing-tower（JA）](https://builtjapan.com/buildings/park-city-musashikosugi-the-grand-wing-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg/800px-Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg` |
-| [shibuya-infoss-tower（JA）](https://builtjapan.com/buildings/shibuya-infoss-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Shibuya_Infoss_Tower_2012_Tokyo.JPG/800px-Shibuya_Infoss_Tower_2012_Tokyo.JPG` |
-| [the-tower-osaka（JA）](https://builtjapan.com/buildings/the-tower-osaka/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/TheTowerOsaka.jpg/800px-TheTowerOsaka.jpg` |
-| [ochanomizu-solacity（EN）](https://builtjapan.com/en/buildings/ochanomizu-solacity/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Solacity.jpg/800px-Solacity.jpg` |
-| [osaka-dojimahama-tower（EN）](https://builtjapan.com/en/buildings/osaka-dojimahama-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg/800px-%E5%A4%A7%E9%98%AA%E5%A0%82%E5%B3%B6%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC.jpg` |
-| [park-city-musashikosugi-the-grand-wing-tower（EN）](https://builtjapan.com/en/buildings/park-city-musashikosugi-the-grand-wing-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg/800px-Park_CITY_Musashi-Kosugi_The_Grand_Wing_Tower_20150201-1.jpg` |
-| [shibuya-infoss-tower（EN）](https://builtjapan.com/en/buildings/shibuya-infoss-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Shibuya_Infoss_Tower_2012_Tokyo.JPG/800px-Shibuya_Infoss_Tower_2012_Tokyo.JPG` |
-| [the-tower-osaka（EN）](https://builtjapan.com/en/buildings/the-tower-osaka/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/TheTowerOsaka.jpg/800px-TheTowerOsaka.jpg` |
 
 ## 直し方
 
