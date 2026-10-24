@@ -3336,6 +3336,11 @@
       "area": "大阪市福島区",
       "angle": "2008年竣工・ほたるまち再開発の核・地上50階・高さ177m・福島区最高層・オリックス不動産ら5社",
       "status": "done"
-    }
+    },
+    {"id": 372, "slug": "kabukiza-tower", "title": "歌舞伎座タワー", "category": "office", "status": "done"},
+    {"id": 373, "slug": "century-tower-tokyo", "title": "センチュリータワー（東京）", "category": "office", "status": "done"},
+    {"id": 374, "slug": "imperial-hotel-tokyo", "title": "帝国ホテル東京", "category": "office", "status": "done"},
+    {"id": 375, "slug": "palace-side-building", "title": "パレスサイドビル", "category": "office", "status": "done"},
+    {"id": 376, "slug": "tokyo-expressway-kk", "title": "東京高速道路（KK線）", "category": "expressway", "status": "done"}
   ]
 }

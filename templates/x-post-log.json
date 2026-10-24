@@ -598,5 +598,30 @@
     "slug": "nagoya-tv-tower",
     "postedAt": "2026-10-23",
     "type": "quiz"
+  },
+  {
+    "slug": "keio-plaza-hotel",
+    "postedAt": "2026-10-24",
+    "type": "intro"
+  },
+  {
+    "slug": "kasumigaseki-common-gate",
+    "postedAt": "2026-10-24",
+    "type": "intro"
+  },
+  {
+    "slug": "jr-east-headquarters",
+    "postedAt": "2026-10-24",
+    "type": "intro"
+  },
+  {
+    "slug": "kanden-building",
+    "postedAt": "2026-10-24",
+    "type": "intro"
+  },
+  {
+    "slug": "kyobashi-edogrand",
+    "postedAt": "2026-10-24",
+    "type": "quiz"
   }
 ]
