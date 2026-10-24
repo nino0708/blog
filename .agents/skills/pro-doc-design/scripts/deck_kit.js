@@ -42,12 +42,13 @@ function createDeck(opts = {}) {
   const size = SIZES[opts.size || "A4"];
   const paletteName = opts.palette || "navy";
   const colors = { ...PALETTES[paletteName], ...(opts.colors || {}) };
-  const font = opts.font || "BIZ UDPGothic";
+  const font = opts.font || "BIZ UDPGothic";          // 和文（テーマの ea / Jpan）
+  const latinFont = opts.latinFont || font;            // 英数字（テーマの latin）。例：Noto Sans JP ＋ Inter
   const titleSize = opts.titleSize || size.title;
   const pres = new pptxgen();
   pres.defineLayout({ name: "DECK", width: size.w, height: size.h });
   pres.layout = "DECK";
-  pres.theme = { headFontFace: font, bodyFontFace: font };
+  pres.theme = { headFontFace: latinFont, bodyFontFace: latinFont };
   if (opts.title) pres.title = opts.title;
 
   const C = pres.SchemeColor;
@@ -83,6 +84,7 @@ function createDeck(opts = {}) {
     try {
       const args = [path.join(SCRIPTS, "jp_wrap.py"), "--width", String(widthIn), "--size", String(pt), "--font", font];
       if (bold) args.push("--bold");
+      if (latinFont !== font) args.push("--latin", latinFont);
       out = execFileSync("python3", args, { input: text, encoding: "utf8" });
     } catch (e) { /* 失敗時は元のまま */ }
     wrapCache.set(key, out);
@@ -268,7 +270,7 @@ function createDeck(opts = {}) {
   /** 書き出し → テーマに色と日本語フォントを書き込む → （任意）動きを付ける */
   async function save(file, { motion = false, chain = false } = {}) {
     await pres.writeFile({ fileName: file });
-    execFileSync("python3", [path.join(SCRIPTS, "finalize_pptx.py"), file, "--font", font, "--colors", JSON.stringify(colors), "--name", paletteName], { stdio: "inherit" });
+    execFileSync("python3", [path.join(SCRIPTS, "finalize_pptx.py"), file, "--font", font, "--latin", latinFont, "--colors", JSON.stringify(colors), "--name", paletteName], { stdio: "inherit" });
     if (motion) {
       const args = [path.join(SCRIPTS, "add_motion.py"), file, file];
       if (chain) args.push("--chain");
@@ -278,7 +280,7 @@ function createDeck(opts = {}) {
   }
 
   return {
-    pres, C, W, H, M, CW, TOP, BOTTOM, BORDER, LANG, colors, font,
+    pres, C, W, H, M, CW, TOP, BOTTOM, BORDER, LANG, colors, font, latinFont, named,
     txt, panel, rect, arrow, badge, icon, table, head, cat, wrapJa,
     cover, content, closing, chips, timelineBar, flowRows, steps, cards, stat, callout, roadmap, save,
   };

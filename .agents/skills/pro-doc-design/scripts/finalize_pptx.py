@@ -7,6 +7,7 @@ pptxgenjs はテーマの色を Office 既定のまま書き出し、日本語�
 
 使い方:
   python3 finalize_pptx.py deck.pptx --font "BIZ UDPGothic" --colors '{"dk1":"232F3E", ...}' --name "Navy"
+  python3 finalize_pptx.py deck.pptx --font "Noto Sans JP" --latin "Inter"   # 和文と英数字で別の書体
 """
 import argparse
 import json
@@ -18,7 +19,7 @@ KEYS = ["dk1", "lt1", "dk2", "lt2", "accent1", "accent2", "accent3",
         "accent4", "accent5", "accent6", "hlink", "folHlink"]
 
 
-def patch_theme(xml: str, colors: dict, font: str, name: str) -> str:
+def patch_theme(xml: str, colors: dict, font: str, name: str, latin: str = "") -> str:
     for key, val in colors.items():
         if key in KEYS:
             xml = re.sub(rf"<a:{key}>.*?</a:{key}>",
@@ -27,7 +28,7 @@ def patch_theme(xml: str, colors: dict, font: str, name: str) -> str:
         xml = re.sub(r'(<a:(?:theme|clrScheme|fontScheme)\b[^>]*?\bname=")[^"]*"', rf"\g<1>{name}\"", xml)
     if font:
         def fix(block: str) -> str:
-            block = re.sub(r'<a:latin typeface="[^"]*"', f'<a:latin typeface="{font}"', block)
+            block = re.sub(r'<a:latin typeface="[^"]*"', f'<a:latin typeface="{latin or font}"', block)
             block = re.sub(r'<a:ea typeface="[^"]*"', f'<a:ea typeface="{font}"', block)
             return re.sub(r'<a:font script="Jpan" typeface="[^"]*"/>', f'<a:font script="Jpan" typeface="{font}"/>', block)
         xml = re.sub(r"<a:(majorFont|minorFont)>.*?</a:\1>", lambda m: fix(m.group(0)), xml, flags=re.S)
@@ -40,6 +41,7 @@ def main():
     ap.add_argument("--colors", default="{}", help="テーマ色のJSON（dk1, lt1, dk2, lt2, accent1-6, hlink, folHlink）")
     ap.add_argument("--font", default="BIZ UDPGothic")
     ap.add_argument("--name", default="")
+    ap.add_argument("--latin", default="", help="英数字のフォント（省略時は --font と同じ）")
     a = ap.parse_args()
     colors = json.loads(a.colors)
     tmp = a.pptx + ".tmp"
@@ -47,7 +49,7 @@ def main():
         for item in zin.infolist():
             data = zin.read(item.filename)
             if item.filename.startswith("ppt/theme/") and item.filename.endswith(".xml"):
-                data = patch_theme(data.decode("utf-8"), colors, a.font, a.name).encode("utf-8")
+                data = patch_theme(data.decode("utf-8"), colors, a.font, a.name, a.latin).encode("utf-8")
             zout.writestr(item, data)
     shutil.move(tmp, a.pptx)
 

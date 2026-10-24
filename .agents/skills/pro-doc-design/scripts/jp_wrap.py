@@ -30,13 +30,15 @@ def _font(family: str, bold: bool):
         return None
     pattern = family + (":bold" if bold else "")
     try:
-        path = subprocess.run(["fc-match", "-f", "%{file}", pattern],
-                              capture_output=True, text=True, check=True).stdout.strip()
+        out = subprocess.run(["fc-match", "-f", "%{file}|%{index}", pattern],
+                             capture_output=True, text=True, check=True).stdout.strip()
     except (OSError, subprocess.CalledProcessError):
         return None
+    path, _, index = out.partition("|")
     if not path:
         return None
-    font = TTFont(path, lazy=True)
+    # .ttc（Noto Sans CJK など複数フォント入りのファイル）は番号で指定する
+    font = TTFont(path, lazy=True, fontNumber=int(index or 0)) if path.lower().endswith(".ttc") else TTFont(path, lazy=True)
     return font.getBestCmap(), font["hmtx"], font["head"].unitsPerEm
 
 
@@ -47,19 +49,25 @@ def _is_cjk(ch: str) -> bool:
     return ord(ch) > 0x2E7F
 
 
+LATIN = ""  # 英数字だけ別の書体を使うとき（--latin）
+
+
+def _advance(ch: str, family: str, bold: bool) -> float:
+    """1文字の幅（em）。英数字は LATIN の書体で測る。"""
+    fam = LATIN if (LATIN and ch.isascii()) else family
+    f = _font(fam, bold)
+    if f is None:
+        return 1.0 if _is_cjk(ch) else 0.55
+    cmap, hmtx, upm = f
+    glyph = cmap.get(ord(ch))
+    return (hmtx[glyph][0] if glyph else upm) / upm
+
+
 def text_width(text: str, size_pt: float, family: str, bold: bool) -> float:
     """テキストの幅（インチ）。和文と英数字の境目の自動の空きも足す。
     フォントが無ければ全角=1em・半角=0.55emで概算。"""
-    f = _font(family, bold)
     em = size_pt / 72.0
-    if f is None:
-        total = sum(1.0 if _is_cjk(ch) else 0.55 for ch in text)
-    else:
-        cmap, hmtx, upm = f
-        total = 0.0
-        for ch in text:
-            glyph = cmap.get(ord(ch))
-            total += (hmtx[glyph][0] if glyph else upm) / upm
+    total = sum(_advance(ch, family, bold) for ch in text)
     for a, b in zip(text, text[1:]):
         if (_is_cjk(a) and b.isascii() and b.isalnum()) or (a.isascii() and a.isalnum() and _is_cjk(b)):
             total += AUTOSPACE
@@ -111,7 +119,10 @@ def main():
     ap.add_argument("--size", type=float, required=True, help="フォントサイズ（pt）")
     ap.add_argument("--font", default="BIZ UDPGothic")
     ap.add_argument("--bold", action="store_true")
+    ap.add_argument("--latin", default="", help="英数字の書体（和文と別にしているとき）")
     a = ap.parse_args()
+    global LATIN
+    LATIN = a.latin
     sys.stdout.write(wrap(sys.stdin.read().rstrip("\n"), a.width, a.size, a.font, a.bold))
 
 
