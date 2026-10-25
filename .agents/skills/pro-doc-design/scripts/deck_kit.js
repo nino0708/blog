@@ -43,8 +43,9 @@ const PALETTES = {
   wine:  { dk1: "2A1F24", lt1: "FFFFFF", dk2: "5A4A50", lt2: "F6F1F2", accent1: "A3243B", accent2: "2F5D8A", accent3: "2E7D32", accent4: "B4540A", accent5: "7A5195", accent6: "7C6E73", hlink: "2F5D8A", folHlink: "7C6E73" },
   // style: "cloud" の既定。濃紺の帯・淡い青の面・オレンジ1色の強調
   cloud: { dk1: "13233A", lt1: "FFFFFF", dk2: "4A5B70", lt2: "EAF1F9", accent1: "EC7211", accent2: "1E6FD9", accent3: "14A3C7", accent4: "C7361B", accent5: "FDEBDC", accent6: "7B8A9C", hlink: "1E6FD9", folHlink: "7B8A9C" },
-  // style: "plain"：緑1色の濃淡だけ。強調は一番濃い緑と太字、区別は濃淡と文字ラベルで行う
-  plain: { dk1: "12372C", lt1: "FFFFFF", dk2: "52655D", lt2: "EEF4F1", accent1: "1F6B52", accent2: "4C8573", accent3: "A9CBBE", accent4: "0B2B21", accent5: "E3EEE9", accent6: "8A9C95", hlink: "1F6B52", folHlink: "8A9C95" },
+  // style: "plain"：緑1色の濃淡＋無彩色。文字は黒に近い灰、緑は数字・印・主役の面だけに使う
+  //   濃い面 accent4 → 主役 accent1 → 中 accent2 → 淡い面 accent5 → 灰の面 lt2 → 白＋細い枠
+  plain: { dk1: "1F2724", lt1: "FFFFFF", dk2: "5B6862", lt2: "F2F5F3", accent1: "1F6B52", accent2: "5E9483", accent3: "A9CBBE", accent4: "123F31", accent5: "E3EEE9", accent6: "8F9A95", hlink: "1F6B52", folHlink: "8F9A95" },
   mono:  { dk1: "1F1F1F", lt1: "FFFFFF", dk2: "555555", lt2: "F2F2F2", accent1: "D9480F", accent2: "3B5BA5", accent3: "2B8A3E", accent4: "C92A2A", accent5: "6741D9", accent6: "777777", hlink: "3B5BA5", folHlink: "777777" },
 };
 
@@ -53,7 +54,7 @@ function createDeck(opts = {}) {
   const PLAIN = opts.style === "plain";            // 装飾なし・緑1色の濃淡
   const CLOUD = opts.style === "cloud" || PLAIN;   // 帯＋POINT＋カードの骨組みは共通
   const paletteName = opts.palette || (PLAIN ? "plain" : CLOUD ? "cloud" : "navy");
-  const headFont = opts.headFont || (PLAIN ? "BIZ UDPMincho" : null);   // 見出し・大きな数字の書体（明朝）
+  const headFont = opts.headFont || null;   // 見出しだけ別の書体にするとき（既定は本文と同じ）
   const colors = { ...PALETTES[paletteName], ...(opts.colors || {}) };
   const font = opts.font || (CLOUD ? "Noto Sans JP" : "BIZ UDPGothic");   // 和文（テーマの ea / Jpan）
   const latinFont = opts.latinFont || (CLOUD && !opts.font ? "Inter" : font); // 英数字（テーマの latin）
@@ -67,7 +68,7 @@ function createDeck(opts = {}) {
   const C = pres.SchemeColor;
   const W = size.w, H = size.h, M = opts.margin ?? 0.5, CW = W - 2 * M;
   const LANG = "ja-JP";
-  const BORDER = opts.border || "D5DBE3";
+  const BORDER = opts.border || (PLAIN ? "D3DDD8" : "D5DBE3");
   const TOP = CLOUD ? (PLAIN ? 2.05 : 2.1) : 1.15;               // 本文の開始位置（cloud は帯＋POINTの下）
   const BOTTOM = CLOUD ? H - 0.77 : H - 0.72;   // 本文の下端（フッターの上）
   const BAND = 1.31;                             // cloud：上部の濃紺の帯の高さ
@@ -127,7 +128,7 @@ function createDeck(opts = {}) {
     const dark = fill === C.text1;  // 濃い面の影は角に黒い筋が出るので付けない
     if (PLAIN) {  // 影なし。白い面は細い枠線、色付きの面は枠なし
       const white = !fill || fill === C.background1;
-      slide.addShape(pres.shapes.RECTANGLE, { x, y, w, h, fill: { color: fill || C.background1 }, line: o.line || (white ? { color: "C9DDD5", width: 0.75 } : { type: "none" }), objectName: named(name, o.build) });
+      slide.addShape(pres.shapes.RECTANGLE, { x, y, w, h, fill: { color: fill || C.background1 }, line: o.line || (white ? { color: BORDER, width: 0.75 } : { type: "none" }), objectName: named(name, o.build) });
       return;
     }
     slide.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w, h, rectRadius: o.r ?? 0.16, fill: { color: fill || C.background1 }, line: o.line || { type: "none" }, shadow: o.flat || dark ? undefined : shadow(), objectName: named(name, o.build) });
@@ -171,11 +172,13 @@ function createDeck(opts = {}) {
     const { build, objectName, ...rest } = o;
     slide.addTable(rows, { fontSize: 13, color: C.text1, valign: "middle", border: cellBorder, margin: [0.05, 0.1, 0.05, 0.1], lang: LANG, ...(CLOUD ? { fill: { color: colors.lt1 } } : {}), objectName: named(objectName || "table", build), ...rest });
   }
-  const head = (text, extra = {}) => ({ text, options: { bold: true, color: C.background1, fill: { color: C.text1 }, align: "center", ...extra } });
+  // plain は見出し行を淡い面＋濃い文字にする（濃い面を増やさない）
+  const head = (text, extra = {}) => ({ text, options: { bold: true, color: PLAIN ? C.text1 : C.background1, fill: { color: PLAIN ? C.accent5 : C.text1 }, align: "center", ...extra } });
+  const isLight = (c) => [C.accent5, C.background2, C.accent3, C.background1, "F2F5F3", "E3EEE9"].includes(c);
   /** 縦に結合した区分セル（例：定例業務／非定例業務） */
   const cat = (title, sub, color, span) => ({
     text: sub ? [{ text: title, options: { fontSize: 16, bold: true, breakLine: true } }, { text: sub, options: { fontSize: 11 } }] : title,
-    options: { rowspan: span, fill: { color }, color: C.background1, align: "center", bold: !sub, fontSize: 16 },
+    options: { rowspan: span, fill: { color }, color: isLight(color) ? C.accent1 : C.background1, align: "center", bold: !sub, fontSize: 16 },
   });
 
   // ---------- スライド ----------
@@ -216,10 +219,11 @@ function createDeck(opts = {}) {
         title: "BAND",
         background: { data: await cloudArt().pageArt({ wIn: W, hIn: H }) },
         objects: [
-          { rect: { x: 0, y: 0, w: 0.28, h: H, fill: { color: C.text1 } } },
-          { placeholder: { options: { name: "title", type: "title", x: M, y: 0.6, w: CW, h: 0.65, fontSize: titleSize, bold: true, color: C.text1, fontFace: headFont, align: "left", valign: "middle", margin: 0 }, text: "" } },
-          { line: { x: M, y: 1.32, w: CW, h: 0, line: { color: C.text1, width: 1.25 } } },
-          { line: { x: M, y: H - 0.5, w: CW, h: 0, line: { color: "C9DDD5", width: 0.75 } } },
+          { rect: { x: 0, y: 0, w: 0.28, h: H, fill: { color: C.accent4 } } },
+          { placeholder: { options: { name: "title", type: "title", x: M, y: 0.6, w: CW, h: 0.65, fontSize: titleSize, bold: true, color: C.text1, ...(headFont ? { fontFace: headFont } : {}), align: "left", valign: "middle", margin: 0 }, text: "" } },
+          { line: { x: M, y: 1.32, w: CW, h: 0, line: { color: BORDER, width: 0.75 } } },
+          { rect: { x: M, y: 1.295, w: 0.9, h: 0.05, fill: { color: C.accent1 } } },
+          { line: { x: M, y: H - 0.5, w: CW, h: 0, line: { color: BORDER, width: 0.75 } } },
           ...(opts.footer ? [{ text: { text: opts.footer, options: { x: M, y: H - 0.42, w: 6, h: 0.3, fontSize: 9, color: C.accent6, margin: 0, lang: LANG } } }] : []),
         ],
         slideNumber: { x: W - M - 0.6, y: H - 0.42, w: 0.6, h: 0.3, fontSize: 9, color: C.accent6, align: "right", margin: 0 },
@@ -273,7 +277,7 @@ function createDeck(opts = {}) {
       s.background = { data: await cloudArt().coverArt({ wIn: W, hIn: H }) };
       if (eyebrow) txt(s, eyebrow, { x: 0.8, y: 1.6, w: 7, h: 0.4, fontSize: 13, bold: true, color: C.accent3, charSpacing: 4, valign: "middle", objectName: "eyebrow" });
       txt(s, lines.map((t, i) => ({ text: t, options: { fontSize: titleSizes[Math.min(i, titleSizes.length - 1)], breakLine: i < lines.length - 1 } })),
-        { x: 0.8, y: 2.05, w: W - 1.6, h: 2.1, bold: true, fontFace: headFont, color: C.background1, valign: "middle", lineSpacingMultiple: 1.05, objectName: "title" });
+        { x: 0.8, y: 2.05, w: W - 1.6, h: 2.1, bold: true, ...(headFont ? { fontFace: headFont } : {}), color: C.background1, valign: "middle", lineSpacingMultiple: 1.05, objectName: "title" });
       rect(s, 0.8, 4.4, 1.2, 0.04, C.accent3, "cover rule");
       if (subtitle) txt(s, typeof subtitle === "string" ? [{ text: subtitle, options: { fontSize: 20, color: C.background1 } }] : subtitle,
         { x: 0.8, y: 4.7, w: W - 1.6, h: 1.4, valign: "top", lineSpacingMultiple: 1.1, color: C.accent3, objectName: "subtitle" });
@@ -292,6 +296,22 @@ function createDeck(opts = {}) {
   /** 目次（cloud）。groups: [[部の名前, 色, [[番号, 項目名, 説明], ...]], ...] */
   function toc(slide, groups, { y = TOP, rowH = 0.62, gap = 0.1, groupGap = 0.18, titleW = 3.4 } = {}) {
     let yy = y;
+    if (PLAIN) {  // 部の名前は左の文字＋縦線、項目は罫線で区切った行（色の面を使わない）
+      groups.forEach(([g, col, items], gi) => {
+        const gh = items.length * rowH;
+        rect(slide, M, yy + 0.08, 0.05, gh - 0.16, C.accent1, "group bar " + gi);
+        txt(slide, g, { x: M + 0.2, y: yy, w: 1.3, h: rowH, fontSize: 14, bold: true, color: C.accent1, valign: "middle", objectName: "group text " + gi });
+        items.forEach(([n, t, desc], i) => {
+          const ry = yy + i * rowH, x0 = M + 1.6;
+          slide.addShape(pres.shapes.LINE, { x: x0, y: ry + rowH, w: W - M - x0, h: 0, line: { color: BORDER, width: 0.75 }, objectName: `toc line ${gi}-${i}` });
+          txt(slide, n, { x: x0, y: ry, w: 0.75, h: rowH, fontSize: 20, bold: true, color: C.accent1, valign: "middle", objectName: `toc num ${gi}-${i}` });
+          txt(slide, t, { x: x0 + 0.8, y: ry, w: titleW, h: rowH, fontSize: 17, bold: true, valign: "middle", objectName: `toc title ${gi}-${i}` });
+          txt(slide, desc, { x: x0 + 0.8 + titleW, y: ry, w: W - M - x0 - 0.8 - titleW, h: rowH, fontSize: 13, color: C.text2, valign: "middle", objectName: `toc desc ${gi}-${i}` });
+        });
+        yy += gh + groupGap;
+      });
+      return;
+    }
     groups.forEach(([g, col, items], gi) => {
       const gh = items.length * (rowH + gap) - gap;
       card(slide, M, yy, 1.25, gh, col, "group " + gi, { flat: true });
@@ -331,7 +351,7 @@ function createDeck(opts = {}) {
   function chips(slide, items, y = TOP, h = 0.55) {
     let cx = M;
     items.forEach(([k, v, w], i) => {
-      surface(slide, cx, y, w, h, "chip " + i);
+      if (PLAIN) card(slide, cx, y, w, h, C.accent5, "chip " + i); else surface(slide, cx, y, w, h, "chip " + i);
       txt(slide, [{ text: k + "　", options: { color: C.accent1 } }, { text: v, options: {} }],
         { x: cx + 0.25, y, w: w - 0.4, h, fontSize: 15, bold: true, valign: "middle", objectName: "chip text " + i });
       cx += w + 0.25;
@@ -340,7 +360,9 @@ function createDeck(opts = {}) {
   /** 時間の長さに比例した帯（1日の流れ・期間）。blocks: [[開始, 終了, ラベル, "fixed"|"vary"|"rest"], ...] 単位は時 */
   function timelineBar(slide, { start, end, blocks, y = 1.95, h = 1.25 }) {
     const per = CW / (end - start);
-    const style = { fixed: [C.text1, C.background1], vary: [C.accent1, C.background1], rest: [CLOUD ? (PLAIN ? "D5E3DD" : "D5DEE8") : C.background2, C.text2] };
+    const style = PLAIN
+      ? { fixed: [C.accent5, C.text1], vary: [C.accent1, C.background1], rest: [C.background2, C.text2] }  // 主役（vary）だけ濃く
+      : { fixed: [C.text1, C.background1], vary: [C.accent1, C.background1], rest: [CLOUD ? "D5DEE8" : C.background2, C.text2] };
     blocks.forEach(([a, b, label, kind], i) => {
       const x = M + (a - start) * per, w = (b - a) * per - 0.04;
       rect(slide, x, y, w, h, style[kind][0], "block " + i);
@@ -379,7 +401,7 @@ function createDeck(opts = {}) {
                   { text: t, options: { fontSize: 14, bold: true, color: isHot ? C.background1 : C.text1 } }],
         { x: xx + 0.05, y, w: bw - 0.1, h, align: "center", valign: "middle", objectName: "step text " + i, build: b });
       if (i < labels.length - 1) arrow(slide, xx + bw + 0.05, y + h / 2, xx + bw + gap - 0.05, C.accent6, "step arrow " + i, b);
-      if (isHot && note) txt(slide, "▲ " + note, { x: xx - 0.2, y: y + h + 0.12, w: bw + 0.4, h: 0.35, fontSize: 13, bold: true, color: C.accent4, align: "center", valign: "middle", objectName: "step note", build: b });
+      if (isHot && note) txt(slide, "▲ " + note, { x: xx - 0.2, y: y + h + 0.12, w: bw + 0.4, h: 0.35, fontSize: 13, bold: true, color: PLAIN ? C.accent1 : C.accent4, align: "center", valign: "middle", objectName: "step note", build: b });
     });
   }
   /** アイコン付きカードを横に並べる。items: [[アイコン名, 見出し, 説明], ...] */
@@ -402,7 +424,8 @@ function createDeck(opts = {}) {
   }
   /** 濃い帯の注目メッセージ（気づき・結論）。label は左のチップ */
   function callout(slide, { y, h = 1.05, label, runs }) {
-    if (CLOUD) card(slide, M, y, CW, h, C.text1, "callout");
+    if (PLAIN) card(slide, M, y, CW, h, C.accent5, "callout");   // plain は淡い面（濃い面は1ページ1か所に取っておく）
+    else if (CLOUD) card(slide, M, y, CW, h, C.text1, "callout");
     else panel(slide, M, y, CW, h, C.text1, "callout");
     let tx = M + 0.4;
     if (label) {
@@ -410,23 +433,25 @@ function createDeck(opts = {}) {
       txt(slide, label, { x: M + 0.25, y: y + (h - 0.45) / 2, w: 1.0, h: 0.45, fontSize: 14, bold: true, color: C.background1, align: "center", valign: "middle", objectName: "callout chip text" });
       tx = M + 1.5;
     }
-    txt(slide, runs, { x: tx, y, w: W - M - 0.2 - tx, h, fontSize: 14, color: C.background1, valign: "middle", lineSpacingMultiple: 1.25, objectName: "callout text" });
+    txt(slide, runs, { x: tx, y, w: W - M - 0.2 - tx, h, fontSize: 14, color: PLAIN ? C.text1 : C.background1, valign: "middle", lineSpacingMultiple: 1.25, objectName: "callout text" });
   }
   /** ステップのカード（ロードマップ）。items: [[ラベル, 見出し, 本文, 補足], ...] */
   function roadmap(slide, items, { y, h = 2.1, gap = 0.3, build = false } = {}) {
-    const fills = [C.accent6, C.accent2, C.text2, C.text1];
+    // plain は淡い→濃いへ段階的に（進むほど濃く）。淡い帯には濃い文字
+    const fills = PLAIN ? [C.accent5, "C4D9D0", C.accent2, C.accent1] : [C.accent6, C.accent2, C.text2, C.text1];
+    const fg = (i) => (PLAIN && i % fills.length < 2 ? [C.accent1, C.text1] : [C.background2, C.background1]);
     const rw = (CW - gap * (items.length - 1)) / items.length, hh = 0.8;
     items.forEach(([lab, t, body, note], i) => {
       const x = M + i * (rw + gap), b = build ? i + 1 : undefined;
       surface(slide, x, y, rw, h, "road card " + i, b);
-      if (CLOUD) card(slide, x, y, rw, hh, fills[i % fills.length], "road band " + i, { flat: true, r: 0.12, build: b });
+      if (CLOUD) card(slide, x, y, rw, hh, fills[i % fills.length], "road band " + i, { flat: true, r: 0.12, build: b, line: PLAIN ? { type: "none" } : undefined });
       else rect(slide, x, y, rw, hh, fills[i % fills.length], "road band " + i, b);
-      txt(slide, [{ text: lab, options: { fontSize: 11, bold: true, color: C.background2, breakLine: true } }, { text: t, options: { fontSize: 16, bold: true, color: C.background1 } }],
+      txt(slide, [{ text: lab, options: { fontSize: 11, bold: true, color: fg(i)[0], breakLine: true } }, { text: t, options: { fontSize: 16, bold: true, color: fg(i)[1] } }],
         { x: x + 0.2, y, w: rw - 0.3, h: hh, valign: "middle", objectName: "road title " + i, build: b });
       const runs = [{ text: body, options: { fontSize: 13, breakLine: !!note } }];
       if (note) runs.push({ text: note, options: { fontSize: 12, bold: true, color: C.accent2 } });
       txt(slide, runs, { x: x + 0.2, y: y + hh + 0.15, w: rw - 0.3, h: h - hh - 0.3, lineSpacingMultiple: 1.15, objectName: "road body " + i, build: b });
-      if (i < items.length - 1) slide.addShape(pres.shapes.RIGHT_ARROW, { x: x + rw + 0.05, y: y + h / 2 - 0.13, w: gap - 0.1, h: 0.26, fill: { color: C.accent1 }, line: { type: "none" }, objectName: named("road arrow " + i, b) });
+      if (i < items.length - 1) slide.addShape(pres.shapes.RIGHT_ARROW, { x: x + rw + 0.05, y: y + h / 2 - 0.13, w: gap - 0.1, h: 0.26, fill: { color: PLAIN ? C.accent2 : C.accent1 }, line: { type: "none" }, objectName: named("road arrow " + i, b) });
     });
   }
 

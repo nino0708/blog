@@ -8,9 +8,8 @@ fc-list | grep -qi "BIZ UDPGothic" || need_apt+=(fonts-morisawa-bizud-gothic)   
 [ -f /usr/lib/libreoffice/program/libsdlo.so ] || need_apt+=(libreoffice-impress) # PDF化に必要
 command -v pdftoppm >/dev/null || need_apt+=(poppler-utils)                       # ページ画像化
 [ -f /usr/lib/libreoffice/program/libsclo.so ] || need_apt+=(libreoffice-calc)   # Excelの再計算・PDF化
-fc-list | grep -qi "Noto Sans CJK JP" || need_apt+=(fonts-noto-cjk)          # style: "cloud" の和文（Noto Sans JP）
-fc-list | grep -qi "BIZ UDPMincho" || need_apt+=(fonts-morisawa-bizud-mincho)       # style: "plain" の見出し（明朝）
-fc-list | grep -qi "Inter" || need_apt+=(fonts-inter)                              # style: "cloud" の英数字
+fc-list | grep -qi "Noto Sans CJK JP" || need_apt+=(fonts-noto-cjk)          # style: "plain" / "cloud" の和文（Noto Sans JP）
+fc-list | grep -qi "Inter" || need_apt+=(fonts-inter)                              # style: "plain" / "cloud" の英数字
 if [ ${#need_apt[@]} -gt 0 ]; then
   echo "apt: ${need_apt[*]}"
   (apt-get update -qq >/dev/null 2>&1; DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends "${need_apt[@]}" >/dev/null 2>&1) \

@@ -26,9 +26,9 @@ const kit = require(path.join(__dirname, "..", "scripts", "deck_kit.js"));
   {
     const s = await d.page("はじめに", "02 ｜ CONTENTS", "目次", "「結果 → 工夫 → 次の一歩」の順に紹介する");
     d.toc(s, [
-      ["結果", C.accent2, [["03", "数字で見る", "参加者・回数・満足度の変化"]]],
+      ["結果", C.accent1, [["03", "数字で見る", "参加者・回数・満足度の変化"]]],
       ["工夫", C.accent1, [["04", "続けるための工夫", "効いた3つの仕組み"]]],
-      ["まとめ", C.accent4, [["05", "次の一歩", "来期にやること"]]],
+      ["まとめ", C.accent1, [["05", "次の一歩", "来期にやること"]]],
     ], { rowH: 1.05, gap: 0.12, groupGap: 0.3 });
   }
 
@@ -53,17 +53,18 @@ const kit = require(path.join(__dirname, "..", "scripts", "deck_kit.js"));
         { x: sx + 1.9, y, w: sw - 2.15, h: 0.5, align: "right", valign: "middle", objectName: "basic v " + i });
     });
     const cy = TOP + hh + 0.25, ch = BOTTOM - cy;
-    d.card(s, M, cy, CW, ch, C.text1, "insight card");
-    d.txt(s, "分析", { x: M + 0.35, y: cy + 0.25, w: 2, h: 0.35, fontSize: 13, bold: true, color: CYAN, charSpacing: 2, valign: "middle", objectName: "insight label" });
+    d.card(s, M, cy, CW, ch, C.background1, "insight card");   // 分析は白＋左の緑の線（濃い面は使わない）
+    d.rect(s, M, cy, 0.07, ch, C.accent1, "insight bar");
+    d.txt(s, "分析", { x: M + 0.35, y: cy + 0.25, w: 2, h: 0.35, fontSize: 13, bold: true, color: C.accent1, charSpacing: 2, valign: "middle", objectName: "insight label" });
     d.txt(s, "「15分だけ」「聞くだけOK」の回を始めた月から、新しく入った人が増えた。\n→ 工夫の中身はP.4",
-      { x: M + 0.35, y: cy + 0.7, w: CW - 0.7, h: ch - 0.9, fontSize: 15, color: C.background1, lineSpacingMultiple: 1.3, objectName: "insight text" });
+      { x: M + 0.35, y: cy + 0.7, w: CW - 0.7, h: ch - 0.9, fontSize: 15, lineSpacingMultiple: 1.3, objectName: "insight text" });
   }
 
   // 4. 比べる型：左は控えめ（灰色）、右が主役（白＋オレンジの見出し）。下に手順
   {
     const s = await d.page("工夫", "04 ｜ IDEAS", "続けるための工夫", "参加のハードルを下げる3つの仕組みが効いた");
     const lw = 4.2, rx = M + 4.45, rw = CW - 4.45, h = 3.5;
-    d.card(s, M, TOP + 0.3, lw, h - 0.3, "E3EAF2", "before card", { flat: true });
+    d.card(s, M, TOP + 0.3, lw, h - 0.3, C.background2, "before card", { flat: true });
     d.txt(s, "以前のやり方", { x: M + 0.3, y: TOP + 0.45, w: lw - 0.6, h: 0.45, fontSize: 16, bold: true, color: C.text2, valign: "middle", objectName: "before head" });
     ["1回1時間・発表は必須", "資料を準備しないと参加しにくい", "日程が毎回ばらばら"].forEach((t, i) => {
       d.txt(s, "－  " + t, { x: M + 0.3, y: TOP + 1.05 + i * 0.5, w: lw - 0.5, h: 0.42, fontSize: 14, color: C.text2, valign: "middle", objectName: "before item " + i });
@@ -87,10 +88,10 @@ const kit = require(path.join(__dirname, "..", "scripts", "deck_kit.js"));
     const gap = 0.25, w = (CW - gap * 2) / 3, h = 2.3;
     items.forEach(([t, desc], i) => {
       const x = M + i * (w + gap), last = i === items.length - 1;
-      d.card(s, x, TOP, w, h, last ? C.text1 : C.background1, "next " + i);
-      d.txt(s, String(i + 1).padStart(2, "0"), { x: x + 0.3, y: TOP + 0.2, w: w - 0.6, h: 0.7, fontSize: 36, bold: true, color: last ? C.accent3 : C.accent1, valign: "middle", objectName: "next num " + i });
-      d.txt(s, t, { x: x + 0.3, y: TOP + 0.95, w: w - 0.5, h: 0.45, fontSize: 17, bold: true, color: last ? C.background1 : C.text1, valign: "middle", objectName: "next title " + i });
-      d.txt(s, desc, { x: x + 0.3, y: TOP + 1.45, w: w - 0.55, h: 0.75, fontSize: 13, color: last ? MUTED : C.text2, lineSpacingMultiple: 1.2, wrap: true, objectName: "next desc " + i });
+      d.card(s, x, TOP, w, h, last ? C.accent5 : C.background1, "next " + i);   // 下に濃い締めの帯があるので、ここは淡い面
+      d.txt(s, String(i + 1).padStart(2, "0"), { x: x + 0.3, y: TOP + 0.2, w: w - 0.6, h: 0.7, fontSize: 36, bold: true, color: C.accent1, valign: "middle", objectName: "next num " + i });
+      d.txt(s, t, { x: x + 0.3, y: TOP + 0.95, w: w - 0.5, h: 0.45, fontSize: 17, bold: true, color: C.text1, valign: "middle", objectName: "next title " + i });
+      d.txt(s, desc, { x: x + 0.3, y: TOP + 1.45, w: w - 0.55, h: 0.75, fontSize: 13, color: C.text2, lineSpacingMultiple: 1.2, wrap: true, objectName: "next desc " + i });
     });
     const by = TOP + h + 0.3;
     await d.closingArt(s, { y: by, h: BOTTOM - by, motif: "none", text: "まずは次回、15分だけ", accent: "のぞいてみてください", sub: "【所属】【氏名】" });
