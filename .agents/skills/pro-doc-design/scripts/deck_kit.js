@@ -43,13 +43,17 @@ const PALETTES = {
   wine:  { dk1: "2A1F24", lt1: "FFFFFF", dk2: "5A4A50", lt2: "F6F1F2", accent1: "A3243B", accent2: "2F5D8A", accent3: "2E7D32", accent4: "B4540A", accent5: "7A5195", accent6: "7C6E73", hlink: "2F5D8A", folHlink: "7C6E73" },
   // style: "cloud" の既定。濃紺の帯・淡い青の面・オレンジ1色の強調
   cloud: { dk1: "13233A", lt1: "FFFFFF", dk2: "4A5B70", lt2: "EAF1F9", accent1: "EC7211", accent2: "1E6FD9", accent3: "14A3C7", accent4: "C7361B", accent5: "FDEBDC", accent6: "7B8A9C", hlink: "1E6FD9", folHlink: "7B8A9C" },
+  // style: "plain"：緑1色の濃淡だけ。強調は一番濃い緑と太字、区別は濃淡と文字ラベルで行う
+  plain: { dk1: "12372C", lt1: "FFFFFF", dk2: "52655D", lt2: "EEF4F1", accent1: "1F6B52", accent2: "4C8573", accent3: "A9CBBE", accent4: "0B2B21", accent5: "E3EEE9", accent6: "8A9C95", hlink: "1F6B52", folHlink: "8A9C95" },
   mono:  { dk1: "1F1F1F", lt1: "FFFFFF", dk2: "555555", lt2: "F2F2F2", accent1: "D9480F", accent2: "3B5BA5", accent3: "2B8A3E", accent4: "C92A2A", accent5: "6741D9", accent6: "777777", hlink: "3B5BA5", folHlink: "777777" },
 };
 
 function createDeck(opts = {}) {
   const size = SIZES[opts.size || "A4"];
-  const CLOUD = opts.style === "cloud";
-  const paletteName = opts.palette || (CLOUD ? "cloud" : "navy");
+  const PLAIN = opts.style === "plain";            // 装飾なし・緑1色の濃淡
+  const CLOUD = opts.style === "cloud" || PLAIN;   // 帯＋POINT＋カードの骨組みは共通
+  const paletteName = opts.palette || (PLAIN ? "plain" : CLOUD ? "cloud" : "navy");
+  const headFont = opts.headFont || (PLAIN ? "BIZ UDPMincho" : null);   // 見出し・大きな数字の書体（明朝）
   const colors = { ...PALETTES[paletteName], ...(opts.colors || {}) };
   const font = opts.font || (CLOUD ? "Noto Sans JP" : "BIZ UDPGothic");   // 和文（テーマの ea / Jpan）
   const latinFont = opts.latinFont || (CLOUD && !opts.font ? "Inter" : font); // 英数字（テーマの latin）
@@ -64,7 +68,7 @@ function createDeck(opts = {}) {
   const W = size.w, H = size.h, M = opts.margin ?? 0.5, CW = W - 2 * M;
   const LANG = "ja-JP";
   const BORDER = opts.border || "D5DBE3";
-  const TOP = CLOUD ? 2.1 : 1.15;               // 本文の開始位置（cloud は帯＋POINTの下）
+  const TOP = CLOUD ? (PLAIN ? 2.05 : 2.1) : 1.15;               // 本文の開始位置（cloud は帯＋POINTの下）
   const BOTTOM = CLOUD ? H - 0.77 : H - 0.72;   // 本文の下端（フッターの上）
   const BAND = 1.31;                             // cloud：上部の濃紺の帯の高さ
 
@@ -121,10 +125,16 @@ function createDeck(opts = {}) {
   /** 角丸のカード（既定は白＋薄い影）。flat: true で影なし、r で角の丸み、line で枠線 */
   function card(slide, x, y, w, h, fill, name, o = {}) {
     const dark = fill === C.text1;  // 濃い面の影は角に黒い筋が出るので付けない
+    if (PLAIN) {  // 影なし。白い面は細い枠線、色付きの面は枠なし
+      const white = !fill || fill === C.background1;
+      slide.addShape(pres.shapes.RECTANGLE, { x, y, w, h, fill: { color: fill || C.background1 }, line: o.line || (white ? { color: "C9DDD5", width: 0.75 } : { type: "none" }), objectName: named(name, o.build) });
+      return;
+    }
     slide.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w, h, rectRadius: o.r ?? 0.16, fill: { color: fill || C.background1 }, line: o.line || { type: "none" }, shadow: o.flat || dark ? undefined : shadow(), objectName: named(name, o.build) });
   }
   /** 小さなラベル（丸いチップ） */
   function pill(slide, x, y, w, text, fill, color, name, fontSize = 11, h = 0.32, charSpacing) {
+    if (PLAIN) { slide.addShape(pres.shapes.RECTANGLE, { x, y, w, h, fill: { color: fill }, line: { type: "none" }, objectName: name }); txt(slide, text, { x, y, w, h, fontSize, bold: true, color, align: "center", valign: "middle", charSpacing, objectName: name + " text" }); return; }
     slide.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w, h, rectRadius: h / 2, fill: { color: fill }, line: { type: "none" }, objectName: name });
     txt(slide, text, { x, y, w, h, fontSize, bold: true, color, align: "center", valign: "middle", charSpacing, objectName: name + " text" });
   }
@@ -197,10 +207,26 @@ function createDeck(opts = {}) {
   // ---------- style: "cloud" のページ ----------
   const CYAN = "2EC4E6", MUTED = "C9D6E3";
   let art = null;
-  const cloudArt = () => (art ||= require(path.join(SCRIPTS, "cloud_art.js")));
+  const cloudArt = () => (art ||= require(path.join(SCRIPTS, PLAIN ? "plain_art.js" : "cloud_art.js")));
   let bandReady = false;
   async function ensureBand() {
     if (bandReady) return;
+    if (PLAIN) {
+      pres.defineSlideMaster({
+        title: "BAND",
+        background: { data: await cloudArt().pageArt({ wIn: W, hIn: H }) },
+        objects: [
+          { rect: { x: 0, y: 0, w: 0.28, h: H, fill: { color: C.text1 } } },
+          { placeholder: { options: { name: "title", type: "title", x: M, y: 0.6, w: CW, h: 0.65, fontSize: titleSize, bold: true, color: C.text1, fontFace: headFont, align: "left", valign: "middle", margin: 0 }, text: "" } },
+          { line: { x: M, y: 1.32, w: CW, h: 0, line: { color: C.text1, width: 1.25 } } },
+          { line: { x: M, y: H - 0.5, w: CW, h: 0, line: { color: "C9DDD5", width: 0.75 } } },
+          ...(opts.footer ? [{ text: { text: opts.footer, options: { x: M, y: H - 0.42, w: 6, h: 0.3, fontSize: 9, color: C.accent6, margin: 0, lang: LANG } } }] : []),
+        ],
+        slideNumber: { x: W - M - 0.6, y: H - 0.42, w: 0.6, h: 0.3, fontSize: 9, color: C.accent6, align: "right", margin: 0 },
+      });
+      bandReady = true;
+      return;
+    }
     pres.defineSlideMaster({
       title: "BAND",
       background: { data: await cloudArt().pageArt({ wIn: W, hIn: H, bandIn: BAND }) },
@@ -218,6 +244,17 @@ function createDeck(opts = {}) {
     await ensureBand();
     if (!sections.has(section)) { pres.addSection({ title: section }); sections.add(section); }
     const s = pres.addSlide({ masterName: "BAND", sectionTitle: section });
+    if (PLAIN) {
+      if (eyebrow) txt(s, eyebrow, { x: M, y: 0.36, w: 7, h: 0.28, fontSize: 11, bold: true, color: C.accent1, charSpacing: 3, valign: "middle", objectName: "eyebrow" });
+      txt(s, section, { x: 0, y: 0.4, w: 0.28, h: 2.6, fontSize: 9, bold: true, color: C.accent3, charSpacing: 4, align: "left", valign: "middle", vert: "vert270", objectName: "section tab" });
+      s.addText(title, { placeholder: "title", lang: LANG });
+      if (point) {
+        rect(s, M, 1.5, CW, 0.46, C.accent5, "point bg");
+        rect(s, M, 1.5, 0.07, 0.46, C.accent1, "point bar");
+        txt(s, point, { x: M + 0.3, y: 1.5, w: CW - 0.5, h: 0.46, fontSize: 15, bold: true, color: C.text1, valign: "middle", objectName: "point" });
+      }
+      return s;
+    }
     if (eyebrow) txt(s, eyebrow, { x: M, y: 0.2, w: 7, h: 0.32, fontSize: 11, bold: true, color: CYAN, charSpacing: 3, valign: "middle", objectName: "eyebrow" });
     s.addText(title, { placeholder: "title", lang: LANG });
     if (point) {
@@ -231,8 +268,19 @@ function createDeck(opts = {}) {
   async function cloudCover({ eyebrow, title, subtitle, presenter, motif = "chat", section = "表紙", titleSizes = [64, 54] }) {
     pres.addSection({ title: section }); sections.add(section);
     const s = pres.addSlide({ sectionTitle: section });
-    s.background = { data: await cloudArt().coverArt({ wIn: W, hIn: H, motif }) };
     const lines = Array.isArray(title) ? title : [title];
+    if (PLAIN) {
+      s.background = { data: await cloudArt().coverArt({ wIn: W, hIn: H }) };
+      if (eyebrow) txt(s, eyebrow, { x: 0.8, y: 1.6, w: 7, h: 0.4, fontSize: 13, bold: true, color: C.accent3, charSpacing: 4, valign: "middle", objectName: "eyebrow" });
+      txt(s, lines.map((t, i) => ({ text: t, options: { fontSize: titleSizes[Math.min(i, titleSizes.length - 1)], breakLine: i < lines.length - 1 } })),
+        { x: 0.8, y: 2.05, w: W - 1.6, h: 2.1, bold: true, fontFace: headFont, color: C.background1, valign: "middle", lineSpacingMultiple: 1.05, objectName: "title" });
+      rect(s, 0.8, 4.4, 1.2, 0.04, C.accent3, "cover rule");
+      if (subtitle) txt(s, typeof subtitle === "string" ? [{ text: subtitle, options: { fontSize: 20, color: C.background1 } }] : subtitle,
+        { x: 0.8, y: 4.7, w: W - 1.6, h: 1.4, valign: "top", lineSpacingMultiple: 1.1, color: C.accent3, objectName: "subtitle" });
+      if (presenter) txt(s, presenter, { x: 0.8, y: H - 1.2, w: 5, h: 0.4, fontSize: 14, color: C.accent3, valign: "middle", objectName: "presenter" });
+      return s;
+    }
+    s.background = { data: await cloudArt().coverArt({ wIn: W, hIn: H, motif }) };
     if (eyebrow) txt(s, eyebrow, { x: 0.8, y: 1.45, w: 6.5, h: 0.4, fontSize: 14, bold: true, color: CYAN, charSpacing: 4, valign: "middle", objectName: "eyebrow" });
     txt(s, lines.map((t, i) => ({ text: t, options: { fontSize: titleSizes[Math.min(i, titleSizes.length - 1)], breakLine: i < lines.length - 1 } })),
       { x: 0.8, y: 1.9, w: 7.6, h: 2.35, bold: true, color: C.background1, valign: "middle", lineSpacingMultiple: 1.0, objectName: "title" });
@@ -272,7 +320,7 @@ function createDeck(opts = {}) {
       return;
     }
     const runs = [{ text, options: accent ? { breakLine: true } : {} }];
-    if (accent) runs.push({ text: accent, options: { color: C.accent1 } });
+    if (accent) runs.push({ text: accent, options: { color: PLAIN ? C.accent3 : C.accent1 } });
     const subH = sub ? 0.4 : 0;
     txt(slide, runs, { x: M + 0.45, y: y + 0.15, w: textW, h: h - 0.3 - subH, fontSize: fontSize || (accent ? 24 : 20), bold: true, color: C.background1, valign: "middle", lineSpacingMultiple: 1.15, objectName: "closing text" });
     if (sub) txt(slide, sub, { x: M + 0.45, y: y + h - 0.15 - subH, w: 5, h: subH, fontSize: 13, color: MUTED, valign: "middle", objectName: "closing name" });
@@ -292,7 +340,7 @@ function createDeck(opts = {}) {
   /** 時間の長さに比例した帯（1日の流れ・期間）。blocks: [[開始, 終了, ラベル, "fixed"|"vary"|"rest"], ...] 単位は時 */
   function timelineBar(slide, { start, end, blocks, y = 1.95, h = 1.25 }) {
     const per = CW / (end - start);
-    const style = { fixed: [C.text1, C.background1], vary: [C.accent1, C.background1], rest: [CLOUD ? "D5DEE8" : C.background2, C.text2] };
+    const style = { fixed: [C.text1, C.background1], vary: [C.accent1, C.background1], rest: [CLOUD ? (PLAIN ? "D5E3DD" : "D5DEE8") : C.background2, C.text2] };
     blocks.forEach(([a, b, label, kind], i) => {
       const x = M + (a - start) * per, w = (b - a) * per - 0.04;
       rect(slide, x, y, w, h, style[kind][0], "block " + i);
@@ -396,7 +444,7 @@ function createDeck(opts = {}) {
   }
 
   return {
-    pres, C, W, H, M, CW, TOP, BOTTOM, BAND, BORDER, LANG, colors, font, latinFont, named, CYAN, MUTED,
+    pres, C, W, H, M, CW, TOP, BOTTOM, BAND, BORDER, LANG, colors, font, latinFont, headFont, named, CYAN, MUTED, PLAIN,
     txt, panel, rect, arrow, badge, icon, table, head, cat, wrapJa, card, pill, shadow,
     cover, content, closing, chips, timelineBar, flowRows, steps, cards, stat, callout, roadmap, save,
     page, cloudCover, toc, closingArt,
