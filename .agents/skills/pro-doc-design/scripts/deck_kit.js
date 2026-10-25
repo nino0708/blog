@@ -106,6 +106,13 @@ function createDeck(opts = {}) {
     return out;
   }
   const named = (name, build) => (build ? `b${build}|${name}` : name);
+  /** 1行の文字の幅（インチ）。実際の書体で測る（jp_wrap.py --measure） */
+  function measure(text, pt, bold = false) {
+    const args = [path.join(SCRIPTS, "jp_wrap.py"), "--measure", "--size", String(pt), "--font", font];
+    if (bold) args.push("--bold");
+    if (latinFont !== font) args.push("--latin", latinFont);
+    try { return parseFloat(execFileSync("python3", args, { input: text, encoding: "utf8" })); } catch (e) { return text.length * pt / 72; }
+  }
 
   /** テキストボックス。wrap: true で文節改行（文字列のときのみ）。build: n で段階表示。 */
   function txt(slide, text, o) {
@@ -138,6 +145,16 @@ function createDeck(opts = {}) {
     if (PLAIN) { slide.addShape(pres.shapes.RECTANGLE, { x, y, w, h, fill: { color: fill }, line: { type: "none" }, objectName: name }); txt(slide, text, { x, y, w, h, fontSize, bold: true, color, align: "center", valign: "middle", charSpacing, objectName: name + " text" }); return; }
     slide.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w, h, rectRadius: h / 2, fill: { color: fill }, line: { type: "none" }, objectName: name });
     txt(slide, text, { x, y, w, h, fontSize, bold: true, color, align: "center", valign: "middle", charSpacing, objectName: name + " text" });
+  }
+  /** 蛍光ペン：1行の文字の下半分に黄色い線を引く。文字より先に呼ぶ（線が文字の後ろに来る）。
+   *  y,h は文字を置く1行の枠（valign: "middle" 前提）。prefix は線を引かない前半、phrase が線を引く部分。
+   *  align: "center" のときは full（行全体）と boxW を渡す。強調は1ページ1か所まで */
+  const MARK = opts.markColor || "FFE07A";
+  function marker(slide, { x, y, h, fontSize, bold = false, prefix = "", phrase, align = "left", full, boxW, name = "marker" }) {
+    const e = fontSize / 72, pw = measure(phrase, fontSize, bold);
+    let mx = x + (prefix ? measure(prefix, fontSize, bold) : 0);
+    if (align === "center") mx = x + (boxW - measure(full || prefix + phrase, fontSize, bold)) / 2 + (prefix ? measure(prefix, fontSize, bold) : 0);
+    rect(slide, mx - 0.04, y + h / 2 + e * 0.04, pw + 0.08, e * 0.42, MARK, name);
   }
   /** 部品の下地：cloud は白いカード、それ以外は薄い面 */
   function surface(slide, x, y, w, h, name, build, line) {
@@ -401,14 +418,16 @@ function createDeck(opts = {}) {
     });
   }
   /** 横並びのステップ（手順）。hot: 強調する番号(0始まり)、note: 強調の補足 */
-  function steps(slide, labels, { x = M + 0.3, y, w = CW - 0.6, h = 0.9, gap = 0.32, hot = -1, note, build = false } = {}) {
+  function steps(slide, labels, { x = M + 0.3, y, w = CW - 0.6, h = 0.9, gap = 0.32, hot = -1, hotFill, note, build = false } = {}) {
+    const hf = hotFill || C.accent1, hotLight = !!hotFill && isLight(hotFill);
     const bw = (w - gap * (labels.length - 1)) / labels.length;
     labels.forEach((t, i) => {
       const xx = x + i * (bw + gap), isHot = i === hot, b = build ? i + 1 : undefined;
-      if (isHot) panel(slide, xx, y, bw, h, C.accent1, "step " + i, undefined, b);
+      if (isHot) panel(slide, xx, y, bw, h, hf, "step " + i, undefined, b);
       else surface(slide, xx, y, bw, h, "step " + i, b, { color: BORDER, width: 1 });
-      txt(slide, [{ text: "STEP " + (i + 1), options: { fontSize: 10, bold: true, color: isHot ? C.background1 : C.accent2, breakLine: true } },
-                  { text: t, options: { fontSize: 14, bold: true, color: isHot ? C.background1 : C.text1 } }],
+      const onDark = isHot && !hotLight;
+      txt(slide, [{ text: "STEP " + (i + 1), options: { fontSize: 10, bold: true, color: onDark ? C.background1 : C.accent2, breakLine: true } },
+                  { text: t, options: { fontSize: 14, bold: true, color: onDark ? C.background1 : C.text1 } }],
         { x: xx + 0.05, y, w: bw - 0.1, h, align: "center", valign: "middle", objectName: "step text " + i, build: b });
       if (i < labels.length - 1) arrow(slide, xx + bw + 0.05, y + h / 2, xx + bw + gap - 0.05, C.accent6, "step arrow " + i, b);
       if (isHot && note) txt(slide, "▲ " + note, { x: xx - 0.2, y: y + h + 0.12, w: bw + 0.4, h: 0.35, fontSize: 13, bold: true, color: PLAIN ? C.accent1 : C.accent4, align: "center", valign: "middle", objectName: "step note", build: b });
@@ -480,7 +499,7 @@ function createDeck(opts = {}) {
 
   return {
     pres, C, W, H, M, CW, TOP, BOTTOM, BAND, BORDER, LANG, colors, font, latinFont, headFont, named, CYAN, MUTED, PLAIN,
-    txt, panel, rect, arrow, badge, icon, table, head, cat, wrapJa, card, pill, shadow,
+    txt, panel, rect, arrow, badge, icon, table, head, cat, wrapJa, card, pill, shadow, measure, marker, MARK,
     cover, content, closing, chips, timelineBar, flowRows, steps, cards, stat, callout, roadmap, save,
     page, cloudCover, toc, closingArt,
   };

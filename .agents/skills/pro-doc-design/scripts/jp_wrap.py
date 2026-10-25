@@ -115,14 +115,18 @@ def wrap(text: str, width_in: float, size_pt: float, family="BIZ UDPGothic", bol
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--width", type=float, required=True, help="テキスト枠の内側の幅（インチ）")
+    ap.add_argument("--width", type=float, default=0, help="テキスト枠の内側の幅（インチ）")
     ap.add_argument("--size", type=float, required=True, help="フォントサイズ（pt）")
     ap.add_argument("--font", default="BIZ UDPGothic")
     ap.add_argument("--bold", action="store_true")
     ap.add_argument("--latin", default="", help="英数字の書体（和文と別にしているとき）")
+    ap.add_argument("--measure", action="store_true", help="改行せず、1行の幅（インチ）だけを出力する（蛍光ペンの位置決め用）")
     a = ap.parse_args()
     global LATIN
     LATIN = a.latin
+    if a.measure:
+        sys.stdout.write("%.4f" % text_width(sys.stdin.read().rstrip("\n"), a.size, a.font, a.bold))
+        return
     sys.stdout.write(wrap(sys.stdin.read().rstrip("\n"), a.width, a.size, a.font, a.bold))
 
 
