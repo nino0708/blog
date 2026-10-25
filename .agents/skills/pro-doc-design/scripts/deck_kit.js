@@ -329,7 +329,17 @@ function createDeck(opts = {}) {
   /** 締めの帯（cloud）：表紙のイラストを横長に切り抜いて敷き、上に一言と氏名。縦横比は保つ。
    *  帯が高い（1.8インチ前後）ときは accent で2行目をオレンジに。低い帯（0.9前後）は inline: true で1行にまとめ、
    *  crop: "bottom"（回路の線だけの所）を使う。モチーフが途中で切れると見苦しいため */
-  async function closingArt(slide, { y, h, text, accent, sub, motif = "chat", fontSize, textW = CW * 0.6, inline = false, crop = "motif" }) {
+  async function closingArt(slide, { x, w, y, h, text, accent, sub, motif = "chat", fontSize, textW = CW * 0.6, inline = false, crop = "motif" }) {
+    if (w && w < CW && h > w * 0.8) {   // 縦長の枠：絵の右側（雲）を比率を保ったまま切り抜き、文字は上に置く
+      const imgW = Math.max(w, h * W / H), imgH = imgW * H / W;
+      slide.addImage({ data: await cloudArt().coverArt({ wIn: W, hIn: H, motif }), x, y, w: imgW, h: imgH,
+        sizing: { type: "crop", x: imgW - w, y: (imgH - h) / 2, w, h }, objectName: "closing art" });
+      const runs = [{ text, options: { color: C.background1, breakLine: !!accent } }];
+      if (accent) runs.push({ text: accent, options: { color: PLAIN ? C.accent3 : C.accent1 } });
+      txt(slide, runs, { x: x + 0.4, y: y + 0.4, w: w - 0.7, h: h * 0.45, fontSize: fontSize || 22, bold: true, valign: "top", lineSpacingMultiple: 1.2, objectName: "closing text" });
+      if (sub) txt(slide, sub, { x: x + 0.4, y: y + h - 0.7, w: w - 0.7, h: 0.4, fontSize: 13, color: MUTED, valign: "middle", objectName: "closing name" });
+      return;
+    }
     const fullH = CW * H / W;                       // 元の比率のままの高さ
     const cy = crop === "bottom" ? fullH - h - 0.1 : Math.min(fullH - h, fullH * 0.16);
     slide.addImage({ data: await cloudArt().coverArt({ wIn: W, hIn: H, motif }), x: M, y, w: CW, h: fullH,
@@ -378,7 +388,7 @@ function createDeck(opts = {}) {
   }
   /** 分類→対応 の行（判断フロー）。rows: [[見出し, 補足, 色, 対応の文], ...]
    *  paren: false で補足を括弧なしの太字にする（例：見出し「STEP 1」＋補足「1問だけ選ぶ」） */
-  function flowRows(slide, rows, { x = M, y, w = CW, labelW = 2.8, rowH = 0.72, gap = 0.08, build = false, paren = true } = {}) {
+  function flowRows(slide, rows, { x = M, y, w = CW, labelW = 2.8, rowH = 0.72, gap = 0.08, build = false, paren = true, fontSize = 14 } = {}) {
     rows.forEach(([t, sub, col, act], i) => {
       const yy = y + i * (rowH + gap), b = build ? i + 1 : undefined;
       panel(slide, x, yy, labelW, rowH, col, "kind " + i, undefined, b);
@@ -387,7 +397,7 @@ function createDeck(opts = {}) {
       arrow(slide, x + labelW + 0.08, yy + rowH / 2, x + labelW + 0.45, C.accent6, "kind arrow " + i, b);
       const ax = x + labelW + 0.52, aw = w - labelW - 0.52;
       surface(slide, ax, yy, aw, rowH, "act " + i, b, { color: BORDER, width: 0.75 });
-      txt(slide, act, { x: ax + 0.2, y: yy, w: aw - 0.4, h: rowH, fontSize: 14, valign: "middle", lineSpacingMultiple: 1.1, objectName: "act text " + i, wrap: true, build: b });
+      txt(slide, act, { x: ax + 0.2, y: yy, w: aw - 0.4, h: rowH, fontSize, valign: "middle", lineSpacingMultiple: 1.1, objectName: "act text " + i, wrap: true, build: b });
     });
   }
   /** 横並びのステップ（手順）。hot: 強調する番号(0始まり)、note: 強調の補足 */
