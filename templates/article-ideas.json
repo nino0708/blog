@@ -3337,10 +3337,80 @@
       "angle": "2008年竣工・ほたるまち再開発の核・地上50階・高さ177m・福島区最高層・オリックス不動産ら5社",
       "status": "done"
     },
-    {"id": 372, "slug": "kabukiza-tower", "title": "歌舞伎座タワー", "category": "office", "status": "done"},
-    {"id": 373, "slug": "century-tower-tokyo", "title": "センチュリータワー（東京）", "category": "office", "status": "done"},
-    {"id": 374, "slug": "imperial-hotel-tokyo", "title": "帝国ホテル東京", "category": "office", "status": "done"},
-    {"id": 375, "slug": "palace-side-building", "title": "パレスサイドビル", "category": "office", "status": "done"},
-    {"id": 376, "slug": "tokyo-expressway-kk", "title": "東京高速道路（KK線）", "category": "expressway", "status": "done"}
+    {
+      "id": 372,
+      "slug": "kabukiza-tower",
+      "title": "歌舞伎座タワー",
+      "category": "office",
+      "status": "done"
+    },
+    {
+      "id": 373,
+      "slug": "century-tower-tokyo",
+      "title": "センチュリータワー（東京）",
+      "category": "office",
+      "status": "done"
+    },
+    {
+      "id": 374,
+      "slug": "imperial-hotel-tokyo",
+      "title": "帝国ホテル東京",
+      "category": "office",
+      "status": "done"
+    },
+    {
+      "id": 375,
+      "slug": "palace-side-building",
+      "title": "パレスサイドビル",
+      "category": "office",
+      "status": "done"
+    },
+    {
+      "id": 376,
+      "slug": "tokyo-expressway-kk",
+      "title": "東京高速道路（KK線）",
+      "category": "expressway",
+      "status": "done"
+    },
+    {
+      "id": 377,
+      "slug": "osaki-bright-tower",
+      "title": "大崎ブライトタワー",
+      "category": "office",
+      "area": "品川区",
+      "status": "done"
+    },
+    {
+      "id": 378,
+      "slug": "kyobashi-trust-tower",
+      "title": "京橋トラストタワー",
+      "category": "office",
+      "area": "中央区",
+      "status": "done"
+    },
+    {
+      "id": 379,
+      "slug": "kitanomaru-square",
+      "title": "北の丸スクエア",
+      "category": "office",
+      "area": "千代田区",
+      "status": "done"
+    },
+    {
+      "id": 380,
+      "slug": "shinagawa-seaside-east-tower",
+      "title": "品川シーサイドイーストタワー",
+      "category": "office",
+      "area": "品川区",
+      "status": "done"
+    },
+    {
+      "id": 381,
+      "slug": "breeze-tower-osaka",
+      "title": "梅田ブリーゼタワー",
+      "category": "office",
+      "area": "大阪市北区",
+      "status": "done"
+    }
   ]
 }
