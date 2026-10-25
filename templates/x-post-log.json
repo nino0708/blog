@@ -623,5 +623,30 @@
     "slug": "kyobashi-edogrand",
     "postedAt": "2026-10-24",
     "type": "quiz"
+  },
+  {
+    "slug": "kudan-kaikan-terrace",
+    "postedAt": "2026-10-25",
+    "type": "intro"
+  },
+  {
+    "slug": "marunouchi-oazo",
+    "postedAt": "2026-10-25",
+    "type": "intro"
+  },
+  {
+    "slug": "imperial-hotel-tokyo",
+    "postedAt": "2026-10-25",
+    "type": "intro"
+  },
+  {
+    "slug": "kyoto-station-building",
+    "postedAt": "2026-10-25",
+    "type": "intro"
+  },
+  {
+    "slug": "kabukiza-tower",
+    "postedAt": "2026-10-25",
+    "type": "quiz"
   }
 ]
