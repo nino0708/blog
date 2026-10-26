@@ -3341,6 +3341,11 @@
     {"id": 373, "slug": "century-tower-tokyo", "title": "センチュリータワー（東京）", "category": "office", "status": "done"},
     {"id": 374, "slug": "imperial-hotel-tokyo", "title": "帝国ホテル東京", "category": "office", "status": "done"},
     {"id": 375, "slug": "palace-side-building", "title": "パレスサイドビル", "category": "office", "status": "done"},
-    {"id": 376, "slug": "tokyo-expressway-kk", "title": "東京高速道路（KK線）", "category": "expressway", "status": "done"}
+    {"id": 376, "slug": "tokyo-expressway-kk", "title": "東京高速道路（KK線）", "category": "expressway", "status": "done"},
+    {"id": 377, "slug": "shibuya-axsh", "title": "渋谷アクシュ（SHIBUYA AXSH）", "category": "office", "area": "渋谷区", "angle": "2024年竣工・桜丘口再開発の中核・地上23階・高さ約120m・延床44,500m²", "status": "done"},
+    {"id": 378, "slug": "urbannet-midosuji-building", "title": "アーバンネット御堂筋ビル", "category": "office", "area": "大阪市中央区", "angle": "2024年竣工・御堂筋沿い・地上21階・延床42,425m²・NTT都市開発・鹿島建設設計施工", "status": "done"},
+    {"id": 379, "slug": "nakanoshima-art-museum", "title": "大阪中之島美術館", "category": "office", "area": "大阪市北区", "angle": "2022年開館・黒い直方体・地上5階・遠藤克彦建築研究所設計・大阪市立美術館", "status": "done"},
+    {"id": 380, "slug": "park-court-jingu-kitasando-the-tower", "title": "パークコート神宮北参道 ザ タワー", "category": "residence", "area": "渋谷区", "angle": "2023年竣工・千駄ヶ谷・地上27階・総戸数472戸・三井不動産レジデンシャル", "status": "done"},
+    {"id": 381, "slug": "tenjin-business-center", "title": "天神ビジネスセンター", "category": "office", "area": "福岡市中央区", "angle": "2021年竣工・天神ビッグバン先導事業・地上19階・高さ約89m・延床61,100m²・福岡地所", "status": "done"}
   ]
 }
