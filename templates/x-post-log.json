@@ -623,5 +623,30 @@
     "slug": "kyobashi-edogrand",
     "postedAt": "2026-10-24",
     "type": "quiz"
+  },
+  {
+    "slug": "century-tower-tokyo",
+    "postedAt": "2026-10-28",
+    "type": "intro"
+  },
+  {
+    "slug": "imperial-hotel-tokyo",
+    "postedAt": "2026-10-28",
+    "type": "intro"
+  },
+  {
+    "slug": "jp-tower-osaka",
+    "postedAt": "2026-10-28",
+    "type": "intro"
+  },
+  {
+    "slug": "jr-gate-tower",
+    "postedAt": "2026-10-28",
+    "type": "intro"
+  },
+  {
+    "slug": "jr-hakata-city",
+    "postedAt": "2026-10-28",
+    "type": "quiz"
   }
 ]
