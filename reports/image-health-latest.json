@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-27T08:20:48.912611+09:00",
+  "checkedAt": "2026-10-28T08:20:54.768718+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -478,6 +478,76 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/takanawa-gateway-city/",
+      "slug": "takanawa-gateway-city",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Takanawa_Gateway_City_%2840928%29.jpg/1280px-Takanawa_Gateway_City_%2840928%29.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/takanawa-gateway-city/",
+      "slug": "takanawa-gateway-city",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Takanawa_Gateway_City_%2840928%29.jpg/1280px-Takanawa_Gateway_City_%2840928%29.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tokyo-bay-aqua-line/",
+      "slug": "tokyo-bay-aqua-line",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Tokyo_Bay_Aqua-Line.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-bay-aqua-line/",
+      "slug": "tokyo-bay-aqua-line",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Tokyo_Bay_Aqua-Line.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tsunoshima-ohashi/",
+      "slug": "tsunoshima-ohashi",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Tsunoshima_ohashi_2017-07-29.jpg/1280px-Tsunoshima_ohashi_2017-07-29.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tsunoshima-ohashi/",
+      "slug": "tsunoshima-ohashi",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Tsunoshima_ohashi_2017-07-29.jpg/1280px-Tsunoshima_ohashi_2017-07-29.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yokohama-hammerhead/",
+      "slug": "yokohama-hammerhead",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/YOKOHAMA_HAMMERHEAD_-_D02b.jpg/1280px-YOKOHAMA_HAMMERHEAD_-_D02b.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yokohama-hammerhead/",
+      "slug": "yokohama-hammerhead",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/YOKOHAMA_HAMMERHEAD_-_D02b.jpg/1280px-YOKOHAMA_HAMMERHEAD_-_D02b.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yurakucho-itoshia/",
+      "slug": "yurakucho-itoshia",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yurakucho-itoshia/",
+      "slug": "yurakucho-itoshia",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/buildings/century-tower-tokyo/",
       "slug": "century-tower-tokyo",
       "lang": "ja",
@@ -888,14 +958,14 @@
       "slug": "nagoya-tv-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Nagoya_TV_Tower_4.JPG/1280px-Nagoya_TV_Tower_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nagoya_TV_Tower_3.JPG/1280px-Nagoya_TV_Tower_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/nagoya-tv-tower/",
       "slug": "nagoya-tv-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Nagoya_TV_Tower_4.JPG/1280px-Nagoya_TV_Tower_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nagoya_TV_Tower_3.JPG/1280px-Nagoya_TV_Tower_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/omiya-sonic-city/",
@@ -1392,14 +1462,14 @@
       "slug": "osaka-bay-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Osaka_Bay_Tower_%281%29.jpg/1280px-Osaka_Bay_Tower_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/OSAKA_BAY_TOWER_%282%29.jpg/1280px-OSAKA_BAY_TOWER_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/osaka-bay-tower/",
       "slug": "osaka-bay-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Osaka_Bay_Tower_%281%29.jpg/1280px-Osaka_Bay_Tower_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/OSAKA_BAY_TOWER_%282%29.jpg/1280px-OSAKA_BAY_TOWER_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/osaka-umeda-twin-towers-south/",
@@ -2890,14 +2960,14 @@
       "slug": "kddi-building-shinjuku",
       "lang": "ja",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/KDDI_Office_Building_Shinjuku_2007-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/KDDI_Osaka_No.2_Building.JPG/1280px-KDDI_Osaka_No.2_Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kddi-building-shinjuku/",
       "slug": "kddi-building-shinjuku",
       "lang": "en",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/KDDI_Office_Building_Shinjuku_2007-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/KDDI_Osaka_No.2_Building.JPG/1280px-KDDI_Osaka_No.2_Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/keio-plaza-hotel/",
