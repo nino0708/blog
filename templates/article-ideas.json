@@ -3337,10 +3337,85 @@
       "angle": "2008年竣工・ほたるまち再開発の核・地上50階・高さ177m・福島区最高層・オリックス不動産ら5社",
       "status": "done"
     },
-    {"id": 372, "slug": "kabukiza-tower", "title": "歌舞伎座タワー", "category": "office", "status": "done"},
-    {"id": 373, "slug": "century-tower-tokyo", "title": "センチュリータワー（東京）", "category": "office", "status": "done"},
-    {"id": 374, "slug": "imperial-hotel-tokyo", "title": "帝国ホテル東京", "category": "office", "status": "done"},
-    {"id": 375, "slug": "palace-side-building", "title": "パレスサイドビル", "category": "office", "status": "done"},
-    {"id": 376, "slug": "tokyo-expressway-kk", "title": "東京高速道路（KK線）", "category": "expressway", "status": "done"}
+    {
+      "id": 372,
+      "slug": "kabukiza-tower",
+      "title": "歌舞伎座タワー",
+      "category": "office",
+      "status": "done"
+    },
+    {
+      "id": 373,
+      "slug": "century-tower-tokyo",
+      "title": "センチュリータワー（東京）",
+      "category": "office",
+      "status": "done"
+    },
+    {
+      "id": 374,
+      "slug": "imperial-hotel-tokyo",
+      "title": "帝国ホテル東京",
+      "category": "office",
+      "status": "done"
+    },
+    {
+      "id": 375,
+      "slug": "palace-side-building",
+      "title": "パレスサイドビル",
+      "category": "office",
+      "status": "done"
+    },
+    {
+      "id": 376,
+      "slug": "tokyo-expressway-kk",
+      "title": "東京高速道路（KK線）",
+      "category": "expressway",
+      "status": "done"
+    },
+    {
+      "id": 377,
+      "category": "bridge",
+      "title": "東京湾アクアライン",
+      "slug": "tokyo-bay-aqua-line",
+      "area": "川崎市・木更津市",
+      "angle": "海底トンネルと橋梁を組み合わせた東京湾横断道路。1997年開通、全長約15km",
+      "status": "done"
+    },
+    {
+      "id": 378,
+      "category": "office",
+      "title": "高輪ゲートウェイシティ",
+      "slug": "takanawa-gateway-city",
+      "area": "港区",
+      "angle": "JR東日本が旧品川車両基地跡地に開発した大規模複合開発。2025年3月第1期開業",
+      "status": "done"
+    },
+    {
+      "id": 379,
+      "category": "office",
+      "title": "有楽町イトシア",
+      "slug": "yurakucho-itoshia",
+      "area": "千代田区",
+      "angle": "有楽町駅前の市街地再開発ビル。地上21階・高さ約108m。2007年開業",
+      "status": "done"
+    },
+    {
+      "id": 380,
+      "category": "office",
+      "title": "横浜ハンマーヘッド",
+      "slug": "yokohama-hammerhead",
+      "area": "横浜市中区",
+      "angle": "新港ふ頭の複合施設。1914年のクレーンを保存しながら客船ターミナル・ホテルを一体化。2019年開業",
+      "status": "done"
+    },
+    {
+      "id": 381,
+      "category": "bridge",
+      "title": "角島大橋",
+      "slug": "tsunoshima-ohashi",
+      "area": "下関市",
+      "angle": "山口県の本土と角島を結ぶ全長1780mの無料橋。エメラルドの海の絶景で知られる。2000年開通",
+      "status": "done"
+    }
   ]
 }
