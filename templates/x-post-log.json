@@ -648,5 +648,30 @@
     "slug": "jr-hakata-city",
     "postedAt": "2026-10-28",
     "type": "quiz"
+  },
+  {
+    "slug": "park-court-akasaka-the-tower",
+    "postedAt": "2026-10-28",
+    "type": "intro"
+  },
+  {
+    "slug": "kyoto-station-building",
+    "postedAt": "2026-10-28",
+    "type": "intro"
+  },
+  {
+    "slug": "world-business-garden",
+    "postedAt": "2026-10-28",
+    "type": "intro"
+  },
+  {
+    "slug": "tokyo-dome",
+    "postedAt": "2026-10-28",
+    "type": "intro"
+  },
+  {
+    "slug": "osaki-wiz-tower",
+    "postedAt": "2026-10-28",
+    "type": "quiz"
   }
 ]
