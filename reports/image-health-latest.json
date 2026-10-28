@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28T08:20:54.768718+09:00",
+  "checkedAt": "2026-10-29T08:21:07.412124+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -478,6 +478,76 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/aoi-tower-shizuoka/",
+      "slug": "aoi-tower-shizuoka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Aoi_tower_2021.jpg/1280px-Aoi_tower_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/aoi-tower-shizuoka/",
+      "slug": "aoi-tower-shizuoka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Aoi_tower_2021.jpg/1280px-Aoi_tower_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/hiroshima-jp-building/",
+      "slug": "hiroshima-jp-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Hiroshima_Station_Building.jpg/1280px-Hiroshima_Station_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/hiroshima-jp-building/",
+      "slug": "hiroshima-jp-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Hiroshima_Station_Building.jpg/1280px-Hiroshima_Station_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kobe-crystal-tower/",
+      "slug": "kobe-crystal-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kobe_Crystal_Tower_4.jpg/1280px-Kobe_Crystal_Tower_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kobe-crystal-tower/",
+      "slug": "kobe-crystal-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kobe_Crystal_Tower_4.jpg/1280px-Kobe_Crystal_Tower_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tenjin-business-center/",
+      "slug": "tenjin-business-center",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tenjin_Business_Center.jpg/1280px-Tenjin_Business_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tenjin-business-center/",
+      "slug": "tenjin-business-center",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tenjin_Business_Center.jpg/1280px-Tenjin_Business_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/toki-messe-niigata/",
+      "slug": "toki-messe-niigata",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Toki-Messe-01.jpg/1280px-Toki-Messe-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/toki-messe-niigata/",
+      "slug": "toki-messe-niigata",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Toki-Messe-01.jpg/1280px-Toki-Messe-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/takanawa-gateway-city/",
       "slug": "takanawa-gateway-city",
       "lang": "ja",
@@ -566,14 +636,14 @@
       "slug": "imperial-hotel-tokyo",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Imperial_Hotel_Tokyo.JPG/1280px-Imperial_Hotel_Tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Imperial_Hotel_TOKYO_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/en/buildings/imperial-hotel-tokyo/",
       "slug": "imperial-hotel-tokyo",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Imperial_Hotel_Tokyo.JPG/1280px-Imperial_Hotel_Tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Imperial_Hotel_TOKYO_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/kabukiza-tower/",
@@ -4108,14 +4178,14 @@
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioicho/",
       "slug": "tokyo-garden-terrace-kioicho",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Retail_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg/1280px-Tokyo_Garden_Terrace_Kioicho_Stream_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-midtown-hibiya/",
