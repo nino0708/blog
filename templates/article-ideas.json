@@ -3416,6 +3416,51 @@
       "area": "下関市",
       "angle": "山口県の本土と角島を結ぶ全長1780mの無料橋。エメラルドの海の絶景で知られる。2000年開通",
       "status": "done"
+    },
+    {
+      "id": 382,
+      "category": "office",
+      "title": "天神ビジネスセンター",
+      "slug": "tenjin-business-center",
+      "area": "福岡市中央区",
+      "angle": "天神ビッグバン第1号、免震構造の大型オフィス",
+      "status": "done"
+    },
+    {
+      "id": 383,
+      "category": "office",
+      "title": "広島JPビルディング",
+      "slug": "hiroshima-jp-building",
+      "area": "広島市南区",
+      "angle": "日本郵便が手掛けるポスト系高層複合ビル",
+      "status": "done"
+    },
+    {
+      "id": 384,
+      "category": "office",
+      "title": "神戸クリスタルタワー",
+      "slug": "kobe-crystal-tower",
+      "area": "神戸市中央区",
+      "angle": "ハーバーランド玄関口、ガラスカーテンウォールの32階建て",
+      "status": "done"
+    },
+    {
+      "id": 385,
+      "category": "office",
+      "title": "葵タワー",
+      "slug": "aoi-tower-shizuoka",
+      "area": "静岡市葵区",
+      "angle": "静岡市立美術館を内包する再開発複合タワー",
+      "status": "done"
+    },
+    {
+      "id": 386,
+      "category": "office",
+      "title": "朱鷺メッセ（万代島ビル）",
+      "slug": "toki-messe-niigata",
+      "area": "新潟市中央区",
+      "angle": "日本海側最高の展望室を持つ31階建てコンベンション",
+      "status": "done"
     }
   ]
 }
