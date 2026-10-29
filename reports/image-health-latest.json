@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-29T08:21:07.412124+09:00",
+  "checkedAt": "2026-10-30T08:23:18.968275+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -247,6 +247,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/35/",
+      "slug": "35",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -478,6 +485,125 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/en/buildings/page/35/",
+      "slug": "35",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/ark-hills-south-tower/",
+      "slug": "ark-hills-south-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/ARK_Hills_South_Tower.jpg/1280px-ARK_Hills_South_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/ark-hills-south-tower/",
+      "slug": "ark-hills-south-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/ARK_Hills_South_Tower.jpg/1280px-ARK_Hills_South_Tower.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/d-tower-nishi-shinjuku/",
+      "slug": "d-tower-nishi-shinjuku",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/d-tower-nishi-shinjuku/",
+      "slug": "d-tower-nishi-shinjuku",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/elza-tower-55/",
+      "slug": "elza-tower-55",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Kawaguchi_elsa_tower_001.jpg/1280px-Kawaguchi_elsa_tower_001.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/elza-tower-55/",
+      "slug": "elza-tower-55",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Kawaguchi_elsa_tower_001.jpg/1280px-Kawaguchi_elsa_tower_001.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/haneda-innovation-city/",
+      "slug": "haneda-innovation-city",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/HANEDA_INNOVATION_CITY_01.jpg/1280px-HANEDA_INNOVATION_CITY_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/haneda-innovation-city/",
+      "slug": "haneda-innovation-city",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/HANEDA_INNOVATION_CITY_01.jpg/1280px-HANEDA_INNOVATION_CITY_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/intercontinental-tokyo-bay/",
+      "slug": "intercontinental-tokyo-bay",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Hotel_Intercontinental_Tokyo_Bay_2.jpg/1280px-Hotel_Intercontinental_Tokyo_Bay_2.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/intercontinental-tokyo-bay/",
+      "slug": "intercontinental-tokyo-bay",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Hotel_Intercontinental_Tokyo_Bay_2.jpg/1280px-Hotel_Intercontinental_Tokyo_Bay_2.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/obp-crystal-tower/",
+      "slug": "obp-crystal-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Crystal_Tower_01.jpg/1280px-Crystal_Tower_01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/obp-crystal-tower/",
+      "slug": "obp-crystal-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Crystal_Tower_01.jpg/1280px-Crystal_Tower_01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/omm-building-osaka/",
+      "slug": "omm-building-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Osaka-Merchandise-Mart-Bldg-01.jpg/1280px-Osaka-Merchandise-Mart-Bldg-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/omm-building-osaka/",
+      "slug": "omm-building-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Osaka-Merchandise-Mart-Bldg-01.jpg/1280px-Osaka-Merchandise-Mart-Bldg-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/osaka-gas-building/",
+      "slug": "osaka-gas-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Osaka_Gas_Building_Osaka_Japan01-r.jpg/1280px-Osaka_Gas_Building_Osaka_Japan01-r.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/osaka-gas-building/",
+      "slug": "osaka-gas-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Osaka_Gas_Building_Osaka_Japan01-r.jpg/1280px-Osaka_Gas_Building_Osaka_Japan01-r.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/aoi-tower-shizuoka/",
       "slug": "aoi-tower-shizuoka",
       "lang": "ja",
@@ -510,14 +636,14 @@
       "slug": "kobe-crystal-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kobe_Crystal_Tower_4.jpg/1280px-Kobe_Crystal_Tower_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Kobe_Crystal_Tower_6.jpg/1280px-Kobe_Crystal_Tower_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kobe-crystal-tower/",
       "slug": "kobe-crystal-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kobe_Crystal_Tower_4.jpg/1280px-Kobe_Crystal_Tower_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Kobe_Crystal_Tower_6.jpg/1280px-Kobe_Crystal_Tower_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tenjin-business-center/",
@@ -636,14 +762,14 @@
       "slug": "imperial-hotel-tokyo",
       "lang": "ja",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Imperial_Hotel_TOKYO_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Imperial_Hotel_Tokyo.JPG/1280px-Imperial_Hotel_Tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/imperial-hotel-tokyo/",
       "slug": "imperial-hotel-tokyo",
       "lang": "en",
       "state": "ok",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Imperial_Hotel_TOKYO_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Imperial_Hotel_Tokyo.JPG/1280px-Imperial_Hotel_Tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/kabukiza-tower/",
