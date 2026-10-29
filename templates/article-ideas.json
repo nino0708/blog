@@ -3461,6 +3461,96 @@
       "area": "新潟市中央区",
       "angle": "日本海側最高の展望室を持つ31階建てコンベンション",
       "status": "done"
+    },
+    {
+      "id": 387,
+      "category": "office",
+      "title": "大阪中之島タワー",
+      "slug": "osaka-nakanoshima-tower",
+      "area": "大阪市北区",
+      "angle": "実在建物として事実確認できず - 関電ビルは2004年竣工でkanden-building.mdに既存記事あり",
+      "status": "done"
+    },
+    {
+      "id": 388,
+      "category": "office",
+      "title": "Dタワー西新宿",
+      "slug": "d-tower-nishi-shinjuku",
+      "area": "新宿区",
+      "angle": "大和ハウス工業初の大型オフィス開発・西新宿エリアへの進出",
+      "status": "done"
+    },
+    {
+      "id": 389,
+      "category": "office",
+      "title": "クリスタルタワー(OBP)",
+      "slug": "obp-crystal-tower",
+      "area": "大阪市中央区",
+      "angle": "大阪ビジネスパーク(OBP)を象徴する1990年竣工の高層タワー",
+      "status": "done"
+    },
+    {
+      "id": 390,
+      "category": "office",
+      "title": "羽田イノベーションシティ",
+      "slug": "haneda-innovation-city",
+      "area": "大田区",
+      "angle": "羽田空港隣接の産業交流拠点・2020年開業のスマートシティ",
+      "status": "done"
+    },
+    {
+      "id": 391,
+      "category": "residence",
+      "title": "エルザタワー55",
+      "slug": "elza-tower-55",
+      "area": "川口市",
+      "angle": "竣工〜2004年まで日本一高い住宅だった埼玉の55階建て超高層マンション",
+      "status": "done"
+    },
+    {
+      "id": 387,
+      "category": "office",
+      "title": "Dタワー西新宿",
+      "slug": "d-tower-nishi-shinjuku",
+      "area": "新宿区",
+      "angle": "大和ハウス工業開発の複合タワー（オフィス・サービスアパートメント・保育所）",
+      "status": "done"
+    },
+    {
+      "id": 388,
+      "category": "office",
+      "title": "大阪ガスビルディング",
+      "slug": "osaka-gas-building",
+      "area": "大阪市中央区",
+      "angle": "1933年竣工・安井武雄設計の登録有形文化財、御堂筋沿いの近代建築",
+      "status": "done"
+    },
+    {
+      "id": 389,
+      "category": "office",
+      "title": "アークヒルズサウスタワー",
+      "slug": "ark-hills-south-tower",
+      "area": "港区",
+      "angle": "森ビルがアークヒルズ地区に2013年竣工した108mオフィスタワー",
+      "status": "done"
+    },
+    {
+      "id": 390,
+      "category": "office",
+      "title": "ホテルインターコンチネンタル東京ベイ",
+      "slug": "intercontinental-tokyo-bay",
+      "area": "港区",
+      "angle": "1995年開業の竹芝ウォーターフロントホテル、東京湾望む339室",
+      "status": "done"
+    },
+    {
+      "id": 391,
+      "category": "office",
+      "title": "OMMビル",
+      "slug": "omm-building-osaka",
+      "area": "大阪市中央区",
+      "angle": "1969年竣工の天満橋商業複合ビル（大阪マーチャンダイズマート）",
+      "status": "done"
     }
   ]
 }
