@@ -673,5 +673,30 @@
     "slug": "osaki-wiz-tower",
     "postedAt": "2026-10-28",
     "type": "quiz"
+  },
+  {
+    "slug": "aoi-tower-shizuoka",
+    "postedAt": "2026-10-29",
+    "type": "intro"
+  },
+  {
+    "slug": "ark-hills-south-tower",
+    "postedAt": "2026-10-29",
+    "type": "intro"
+  },
+  {
+    "slug": "d-tower-nishi-shinjuku",
+    "postedAt": "2026-10-29",
+    "type": "intro"
+  },
+  {
+    "slug": "elza-tower-55",
+    "postedAt": "2026-10-29",
+    "type": "intro"
+  },
+  {
+    "slug": "haneda-innovation-city",
+    "postedAt": "2026-10-29",
+    "type": "quiz"
   }
 ]
