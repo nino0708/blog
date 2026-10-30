@@ -2,27 +2,32 @@
   {
     "slug": "azabudai-hills-mori-jp-tower",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-10-30"
   },
   {
     "slug": "tokyo-skytree",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-10-30"
   },
   {
     "slug": "shibuya-scramble-square",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-10-30"
   },
   {
     "slug": "roppongi-hills-mori-tower",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-10-30"
   },
   {
     "slug": "kasumigaseki-building",
     "postedAt": "2026-09-20",
-    "type": "quiz"
+    "type": "quiz",
+    "last_posted": "2026-10-30"
   },
   {
     "slug": "abeno-harukas",
