@@ -3551,6 +3551,51 @@
       "area": "大阪市中央区",
       "angle": "1969年竣工の天満橋商業複合ビル（大阪マーチャンダイズマート）",
       "status": "done"
+    },
+    {
+      "id": 392,
+      "category": "office",
+      "title": "リーガロイヤルホテル大阪",
+      "slug": "rihga-royal-hotel-osaka",
+      "area": "大阪市北区",
+      "angle": "1935年創業・中之島の堂島川沿いに立つ老舗ホテル、タワーウイング1973年竣工30階",
+      "status": "done"
+    },
+    {
+      "id": 393,
+      "category": "office",
+      "title": "グランドハイアット東京",
+      "slug": "grand-hyatt-tokyo",
+      "area": "港区",
+      "angle": "六本木ヒルズ内の地上21階・387室ラグジュアリーホテル、2003年4月開業",
+      "status": "done"
+    },
+    {
+      "id": 394,
+      "category": "office",
+      "title": "パシフィコ横浜",
+      "slug": "pacifico-yokohama",
+      "area": "横浜市西区",
+      "angle": "みなとみらい21の国際会議・展示施設、国立大ホール最大5002席・1991年開業",
+      "status": "done"
+    },
+    {
+      "id": 395,
+      "category": "office",
+      "title": "リバーウォーク北九州",
+      "slug": "riverwalk-kitakyushu",
+      "area": "北九州市小倉北区",
+      "angle": "ジャーディ設計・小倉城隣接の文化商業複合体、2003年開業・延床178000m²",
+      "status": "done"
+    },
+    {
+      "id": 396,
+      "category": "office",
+      "title": "水戸芸術館",
+      "slug": "mito-arts-tower",
+      "area": "水戸市",
+      "angle": "磯崎新設計・高さ約100mチタン螺旋タワー、1990年開館・水戸市制100周年記念",
+      "status": "done"
     }
   ]
 }
