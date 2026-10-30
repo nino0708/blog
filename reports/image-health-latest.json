@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30T08:23:18.968275+09:00",
+  "checkedAt": "2026-10-31T08:21:39.791615+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -254,6 +254,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/36/",
+      "slug": "36",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -492,6 +499,83 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/en/buildings/page/36/",
+      "slug": "36",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/grand-hyatt-tokyo/",
+      "slug": "grand-hyatt-tokyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Grand_Hyatt_Tokyo_20150429-001.jpg/1280px-Grand_Hyatt_Tokyo_20150429-001.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/grand-hyatt-tokyo/",
+      "slug": "grand-hyatt-tokyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Grand_Hyatt_Tokyo_20150429-001.jpg/1280px-Grand_Hyatt_Tokyo_20150429-001.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/mito-arts-tower/",
+      "slug": "mito-arts-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Mito_Art_Tower_2013.jpg/1280px-Mito_Art_Tower_2013.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/mito-arts-tower/",
+      "slug": "mito-arts-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Mito_Art_Tower_2013.jpg/1280px-Mito_Art_Tower_2013.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/pacifico-yokohama/",
+      "slug": "pacifico-yokohama",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Pacifico-Yokohama-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/pacifico-yokohama/",
+      "slug": "pacifico-yokohama",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Pacifico-Yokohama-01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/rihga-royal-hotel-osaka/",
+      "slug": "rihga-royal-hotel-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Rihga_Royal_Hotel_and_Osaka_International_Convention_Center.jpg/1280px-Rihga_Royal_Hotel_and_Osaka_International_Convention_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/rihga-royal-hotel-osaka/",
+      "slug": "rihga-royal-hotel-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Rihga_Royal_Hotel_and_Osaka_International_Convention_Center.jpg/1280px-Rihga_Royal_Hotel_and_Osaka_International_Convention_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/riverwalk-kitakyushu/",
+      "slug": "riverwalk-kitakyushu",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Riverwalk_Kitakyushu_01.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/riverwalk-kitakyushu/",
+      "slug": "riverwalk-kitakyushu",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Riverwalk_Kitakyushu_01.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/ark-hills-south-tower/",
       "slug": "ark-hills-south-tower",
       "lang": "ja",
@@ -636,14 +720,14 @@
       "slug": "kobe-crystal-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Kobe_Crystal_Tower_6.jpg/1280px-Kobe_Crystal_Tower_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kobe_Crystal_Tower_4.jpg/1280px-Kobe_Crystal_Tower_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kobe-crystal-tower/",
       "slug": "kobe-crystal-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Kobe_Crystal_Tower_6.jpg/1280px-Kobe_Crystal_Tower_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kobe_Crystal_Tower_4.jpg/1280px-Kobe_Crystal_Tower_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tenjin-business-center/",
