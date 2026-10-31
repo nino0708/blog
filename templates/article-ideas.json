@@ -3596,6 +3596,55 @@
       "area": "水戸市",
       "angle": "磯崎新設計・高さ約100mチタン螺旋タワー、1990年開館・水戸市制100周年記念",
       "status": "done"
+    },
+    {
+      "id": 397,
+      "category": "office",
+      "title": "モード学園スパイラルタワーズ",
+      "slug": "nagoya-mode-gakuen-spiral-towers",
+      "area": "名古屋市西区",
+      "angle": "3棟の扇形タワーが螺旋を描くユニークな外観。名古屋駅前の個性的ランドマーク",
+      "status": "done"
+    },
+    {
+      "id": 398,
+      "category": "office",
+      "title": "アエル",
+      "slug": "osaka-obp-twin21",
+      "area": "仙台市青葉区",
+      "angle": "仙台の玄関口・仙台駅前に立つ複合ビル。展望台から杜の都を見渡す",
+      "status": "done",
+      "title_ja": "TWIN21",
+      "title_en": "TWIN21"
+    },
+    {
+      "id": 399,
+      "category": "office",
+      "title": "JRタワー",
+      "slug": "hiroshima-orizuru-tower",
+      "area": "札幌市中央区",
+      "angle": "2003年開業、北海道最高峰の38階タワー。JR札幌駅と一体になった複合施設",
+      "status": "done",
+      "title_ja": "おりづるタワー",
+      "title_en": "Orizuru Tower"
+    },
+    {
+      "id": 400,
+      "category": "office",
+      "title": "グリーンスプリングス",
+      "slug": "tachikawa-green-springs",
+      "area": "立川市",
+      "angle": "2020年開業の立川北エリア複合施設。自然環境と文化施設を組み合わせた新しい都市空間",
+      "status": "done"
+    },
+    {
+      "id": 401,
+      "category": "office",
+      "title": "SS30",
+      "slug": "sendai-ss30",
+      "area": "仙台市青葉区",
+      "angle": "1989年竣工、東北初の超高層ビル。日建設計が手がけた143mのランドマーク",
+      "status": "done"
     }
   ]
 }
