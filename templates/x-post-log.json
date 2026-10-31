@@ -678,5 +678,30 @@
     "slug": "osaki-wiz-tower",
     "postedAt": "2026-10-28",
     "type": "quiz"
+  },
+  {
+    "slug": "nagoya-mode-gakuen-spiral-towers",
+    "postedAt": "2026-10-31",
+    "type": "intro"
+  },
+  {
+    "slug": "osaka-obp-twin21",
+    "postedAt": "2026-10-31",
+    "type": "intro"
+  },
+  {
+    "slug": "hiroshima-orizuru-tower",
+    "postedAt": "2026-10-31",
+    "type": "intro"
+  },
+  {
+    "slug": "tachikawa-green-springs",
+    "postedAt": "2026-10-31",
+    "type": "intro"
+  },
+  {
+    "slug": "elza-tower-55",
+    "postedAt": "2026-10-31",
+    "type": "quiz"
   }
 ]
