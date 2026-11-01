@@ -3596,6 +3596,51 @@
       "area": "水戸市",
       "angle": "磯崎新設計・高さ約100mチタン螺旋タワー、1990年開館・水戸市制100周年記念",
       "status": "done"
+    },
+    {
+      "id": 397,
+      "category": "office",
+      "title": "新宿東宝ビル",
+      "slug": "shinjuku-toho-building",
+      "area": "東京都新宿区歌舞伎町",
+      "angle": "東宝開発・竹中工務店設計施工・地上30階、2015年竣工・映画館+ホテル複合施設",
+      "status": "done"
+    },
+    {
+      "id": 398,
+      "category": "office",
+      "title": "福岡大名ガーデンシティ",
+      "slug": "fukuoka-daimyo-garden-city",
+      "area": "福岡市中央区大名",
+      "angle": "天神ビッグバン中核・旧大名小学校跡地・地上25階・高さ111m・積水ハウスら5社共同開発、2022年竣工",
+      "status": "done"
+    },
+    {
+      "id": 399,
+      "category": "residence",
+      "title": "シエリアタワー中之島",
+      "slug": "cielia-tower-nakanoshima",
+      "area": "大阪市福島区",
+      "angle": "関電不動産開発・地上46階・2025年竣工・中之島エリア居住化を象徴するタワーマンション",
+      "status": "done"
+    },
+    {
+      "id": 400,
+      "category": "residence",
+      "title": "シティタワー大阪天満 ザ・リバー&パークス",
+      "slug": "city-tower-osaka-tenma",
+      "area": "大阪市北区天満",
+      "angle": "住友不動産開発・大林組施工・地上45階・総戸数650戸・大川沿い立地、2010年竣工",
+      "status": "done"
+    },
+    {
+      "id": 401,
+      "category": "office",
+      "title": "KABUTO ONE",
+      "slug": "kabuto-one",
+      "area": "東京都中央区日本橋兜町",
+      "angle": "平和不動産・地上15階・高さ84m・延床39170m²・兜町再生プロジェクト、2021年竣工",
+      "status": "done"
     }
   ]
 }
