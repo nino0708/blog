@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-02T08:22:10.863422+09:00",
+  "checkedAt": "2026-11-03T08:21:30.830493+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -506,6 +506,76 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/ariake-garden/",
+      "slug": "ariake-garden",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Ariake_Garden_1.jpg/1280px-Ariake_Garden_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/ariake-garden/",
+      "slug": "ariake-garden",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Ariake_Garden_1.jpg/1280px-Ariake_Garden_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/expo2025-osaka-ring/",
+      "slug": "expo2025-osaka-ring",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/expo2025-osaka-ring/",
+      "slug": "expo2025-osaka-ring",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kita-osaka-extension/",
+      "slug": "kita-osaka-extension",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kita-osaka-extension/",
+      "slug": "kita-osaka-extension",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nagasaki-stadium-city/",
+      "slug": "nagasaki-stadium-city",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Nagasaki_stadium_city_brick.jpg/1280px-Nagasaki_stadium_city_brick.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nagasaki-stadium-city/",
+      "slug": "nagasaki-stadium-city",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Nagasaki_stadium_city_brick.jpg/1280px-Nagasaki_stadium_city_brick.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/utsunomiya-lrt/",
+      "slug": "utsunomiya-lrt",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/utsunomiya-lrt/",
+      "slug": "utsunomiya-lrt",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/buildings/cielia-tower-nakanoshima/",
       "slug": "cielia-tower-nakanoshima",
       "lang": "ja",
@@ -790,14 +860,14 @@
       "slug": "kobe-crystal-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Kobe_Crystal_Tower_20150726.JPG/1280px-Kobe_Crystal_Tower_20150726.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kobe_Crystal_Tower_4.jpg/1280px-Kobe_Crystal_Tower_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kobe-crystal-tower/",
       "slug": "kobe-crystal-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Kobe_Crystal_Tower_20150726.JPG/1280px-Kobe_Crystal_Tower_20150726.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kobe_Crystal_Tower_4.jpg/1280px-Kobe_Crystal_Tower_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tenjin-business-center/",
