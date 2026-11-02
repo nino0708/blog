@@ -3641,6 +3641,51 @@
       "area": "東京都中央区日本橋兜町",
       "angle": "平和不動産・地上15階・高さ84m・延床39170m²・兜町再生プロジェクト、2021年竣工",
       "status": "done"
+    },
+    {
+      "id": 402,
+      "category": "railway",
+      "title": "宇都宮ライトレール（ライトライン）",
+      "slug": "utsunomiya-lrt",
+      "area": "宇都宮市・芳賀郡",
+      "angle": "2023年8月開業・日本初の全線新設LRT・14.6km・19停留所・上下分離方式",
+      "status": "done"
+    },
+    {
+      "id": 403,
+      "category": "office",
+      "title": "有明ガーデン",
+      "slug": "ariake-garden",
+      "area": "江東区",
+      "angle": "住友不動産開発・2020年4月開業・延床約87,600m²・203店舗・温浴施設複合",
+      "status": "done"
+    },
+    {
+      "id": 404,
+      "category": "tower",
+      "title": "大阪・関西万博 大屋根リング",
+      "slug": "expo2025-osaka-ring",
+      "area": "大阪市此花区（夢洲）",
+      "angle": "2024年完成・内径約615m・木造環状・世界最大木造建築ギネス認定・建設費約344億円",
+      "status": "done"
+    },
+    {
+      "id": 405,
+      "category": "railway",
+      "title": "北大阪急行電鉄延伸線（箕面萱野延伸）",
+      "slug": "kita-osaka-extension",
+      "area": "豊中市・箕面市",
+      "angle": "2024年3月23日開業・千里中央〜箕面萱野2.5km・2駅新設・御堂筋線直通",
+      "status": "done"
+    },
+    {
+      "id": 406,
+      "category": "office",
+      "title": "長崎スタジアムシティ",
+      "slug": "nagasaki-stadium-city",
+      "area": "長崎市",
+      "angle": "2024年10月14日開業・ジャパネットHD・1000億円超民間投資・約2万席サッカースタジアム+アリーナ+商業複合",
+      "status": "done"
     }
   ]
 }
