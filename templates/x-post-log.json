@@ -703,5 +703,30 @@
     "slug": "kasumigaseki-building",
     "postedAt": "2026-11-01",
     "type": "quiz"
+  },
+  {
+    "slug": "aoi-tower-shizuoka",
+    "postedAt": "2026-11-03",
+    "type": "intro"
+  },
+  {
+    "slug": "ariake-garden",
+    "postedAt": "2026-11-03",
+    "type": "intro"
+  },
+  {
+    "slug": "ark-hills-south-tower",
+    "postedAt": "2026-11-03",
+    "type": "intro"
+  },
+  {
+    "slug": "cielia-tower-nakanoshima",
+    "postedAt": "2026-11-03",
+    "type": "intro"
+  },
+  {
+    "slug": "city-tower-osaka-tenma",
+    "postedAt": "2026-11-03",
+    "type": "quiz"
   }
 ]
