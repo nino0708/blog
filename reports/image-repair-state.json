@@ -428,26 +428,38 @@
     "reason": "記事mdが見つからない"
   },
   "cielia-tower-nakanoshima": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "city-tower-osaka-tenma": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "kabuto-one": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "expo2025-osaka-ring": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "kita-osaka-extension": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "utsunomiya-lrt": {
+    "attempts": 2,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "37": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "shin-tomei-expressway": {
     "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }

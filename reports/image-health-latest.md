@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-03 08:21 JST
-- 対象: 公開済み記事 828 ページ（https://builtjapan.com）
-- 正常表示: 666 / 828（80.4%）
-- **要対応: 162 件**（画像なし 162 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-11-04 08:23 JST
+- 対象: 公開済み記事 840 ページ（https://builtjapan.com）
+- 正常表示: 674 / 840（80.2%）
+- **要対応: 166 件**（画像なし 166 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -63,6 +63,7 @@
 | [34（JA）](https://builtjapan.com/buildings/page/34/) | ヒーロー画像なし（プレースホルダ表示） |
 | [35（JA）](https://builtjapan.com/buildings/page/35/) | ヒーロー画像なし（プレースホルダ表示） |
 | [36（JA）](https://builtjapan.com/buildings/page/36/) | ヒーロー画像なし（プレースホルダ表示） |
+| [37（JA）](https://builtjapan.com/buildings/page/37/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（JA）](https://builtjapan.com/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -75,6 +76,7 @@
 | [park-tower-kachidoki（JA）](https://builtjapan.com/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-fukuras（JA）](https://builtjapan.com/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（JA）](https://builtjapan.com/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shin-tomei-expressway（JA）](https://builtjapan.com/buildings/shin-tomei-expressway/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-fudosan-shinjuku-grand-tower（JA）](https://builtjapan.com/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（JA）](https://builtjapan.com/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -144,6 +146,7 @@
 | [34（EN）](https://builtjapan.com/en/buildings/page/34/) | ヒーロー画像なし（プレースホルダ表示） |
 | [35（EN）](https://builtjapan.com/en/buildings/page/35/) | ヒーロー画像なし（プレースホルダ表示） |
 | [36（EN）](https://builtjapan.com/en/buildings/page/36/) | ヒーロー画像なし（プレースホルダ表示） |
+| [37（EN）](https://builtjapan.com/en/buildings/page/37/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（EN）](https://builtjapan.com/en/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -156,6 +159,7 @@
 | [park-tower-kachidoki（EN）](https://builtjapan.com/en/buildings/park-tower-kachidoki/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-fukuras（EN）](https://builtjapan.com/en/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（EN）](https://builtjapan.com/en/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shin-tomei-expressway（EN）](https://builtjapan.com/en/buildings/shin-tomei-expressway/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-fudosan-shinjuku-grand-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
