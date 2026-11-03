@@ -32,27 +32,32 @@
   {
     "slug": "abeno-harukas",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "akashi-kaikyo-bridge",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "ark-mori-building",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "cerulean-tower",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "air-rise-tower",
     "postedAt": "2026-09-20",
-    "type": "quiz"
+    "type": "quiz",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "marunouchi-nijubashi-building",
