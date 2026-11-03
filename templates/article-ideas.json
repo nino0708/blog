@@ -3686,6 +3686,51 @@
       "area": "長崎市",
       "angle": "2024年10月14日開業・ジャパネットHD・1000億円超民間投資・約2万席サッカースタジアム+アリーナ+商業複合",
       "status": "done"
+    },
+    {
+      "id": 407,
+      "category": "office",
+      "title": "さいたまスーパーアリーナ",
+      "slug": "saitama-super-arena",
+      "area": "さいたま市中央区",
+      "angle": "2000年9月開業・MAS2000共同設計室+ダン・マイス・最大37000人収容・可動式スタンドで3形態切替",
+      "status": "done"
+    },
+    {
+      "id": 408,
+      "category": "expressway",
+      "title": "新東名高速道路",
+      "slug": "shin-tomei-expressway",
+      "area": "静岡県・愛知県",
+      "angle": "2012年4月先行開通・海老名南JCT〜豊田東JCT約254km・設計速度120km/h・東名の渋滞緩和と防災代替路",
+      "status": "done"
+    },
+    {
+      "id": 409,
+      "category": "tower",
+      "title": "名港トリトン",
+      "slug": "meiko-triton",
+      "area": "名古屋市",
+      "angle": "1998年3月供用・伊勢湾岸自動車道の名古屋港をまたぐ3本の斜張橋・名港中央大橋橋長1170m・赤白青のカラーリング",
+      "status": "done"
+    },
+    {
+      "id": 410,
+      "category": "office",
+      "title": "みずほPayPayドーム福岡",
+      "slug": "fukuoka-paypay-dome",
+      "area": "福岡市中央区",
+      "angle": "1993年4月開業・竹中工務店+前田建設JV・約760億円・日本初開閉式ドーム・収容40178人",
+      "status": "done"
+    },
+    {
+      "id": 411,
+      "category": "office",
+      "title": "MARK IS みなとみらい",
+      "slug": "mark-is-minatomirai",
+      "area": "横浜市西区",
+      "angle": "2013年6月21日開業・三菱地所・延床約116200m²・MM21地区最大商業施設・みなとみらい線直結",
+      "status": "done"
     }
   ]
 }
