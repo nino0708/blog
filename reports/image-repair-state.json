@@ -443,16 +443,19 @@
     "gaveUp": true
   },
   "expo2025-osaka-ring": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "kita-osaka-extension": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "utsunomiya-lrt": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "37": {
     "attempts": 3,
@@ -460,6 +463,10 @@
     "reason": "記事mdが見つからない"
   },
   "shin-tomei-expressway": {
+    "attempts": 2,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "tv-asahi-headquarters": {
     "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }

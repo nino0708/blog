@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-04 08:23 JST
-- 対象: 公開済み記事 840 ページ（https://builtjapan.com）
-- 正常表示: 674 / 840（80.2%）
-- **要対応: 166 件**（画像なし 166 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-11-05 08:23 JST
+- 対象: 公開済み記事 850 ページ（https://builtjapan.com）
+- 正常表示: 682 / 850（80.2%）
+- **要対応: 168 件**（画像なし 168 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -89,6 +89,7 @@
 | [tokyo-world-gate-akasaka（JA）](https://builtjapan.com/buildings/tokyo-world-gate-akasaka/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（JA）](https://builtjapan.com/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（JA）](https://builtjapan.com/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
+| [tv-asahi-headquarters（JA）](https://builtjapan.com/buildings/tv-asahi-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
 | [utsunomiya-lrt（JA）](https://builtjapan.com/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（JA）](https://builtjapan.com/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（JA）](https://builtjapan.com/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -172,6 +173,7 @@
 | [tokyo-world-gate-akasaka（EN）](https://builtjapan.com/en/buildings/tokyo-world-gate-akasaka/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（EN）](https://builtjapan.com/en/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
+| [tv-asahi-headquarters（EN）](https://builtjapan.com/en/buildings/tv-asahi-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
 | [utsunomiya-lrt（EN）](https://builtjapan.com/en/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（EN）](https://builtjapan.com/en/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |

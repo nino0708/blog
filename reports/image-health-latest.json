@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-04T08:23:06.076101+09:00",
+  "checkedAt": "2026-11-05T08:23:41.433105+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -518,6 +518,76 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shinjuku-east-side-square/",
+      "slug": "shinjuku-east-side-square",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Square_Enix_HQ_%28Shinjuku_Eastside_Square%29.jpg/1280px-Square_Enix_HQ_%28Shinjuku_Eastside_Square%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinjuku-east-side-square/",
+      "slug": "shinjuku-east-side-square",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Square_Enix_HQ_%28Shinjuku_Eastside_Square%29.jpg/1280px-Square_Enix_HQ_%28Shinjuku_Eastside_Square%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shinjuku-front-tower/",
+      "slug": "shinjuku-front-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Shinjuku_front_tower_2011.jpg/1280px-Shinjuku_front_tower_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinjuku-front-tower/",
+      "slug": "shinjuku-front-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Shinjuku_front_tower_2011.jpg/1280px-Shinjuku_front_tower_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shinjuku-monolith/",
+      "slug": "shinjuku-monolith",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Shinjuku-Monolith-Building-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinjuku-monolith/",
+      "slug": "shinjuku-monolith",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Shinjuku-Monolith-Building-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tv-asahi-headquarters/",
+      "slug": "tv-asahi-headquarters",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tv-asahi-headquarters/",
+      "slug": "tv-asahi-headquarters",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yurakucho-marion/",
+      "slug": "yurakucho-marion",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Yurakucho_Marion_2.jpg/1280px-Yurakucho_Marion_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yurakucho-marion/",
+      "slug": "yurakucho-marion",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Yurakucho_Marion_2.jpg/1280px-Yurakucho_Marion_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/fukuoka-paypay-dome/",
