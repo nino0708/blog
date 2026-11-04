@@ -3731,6 +3731,51 @@
       "area": "横浜市西区",
       "angle": "2013年6月21日開業・三菱地所・延床約116200m²・MM21地区最大商業施設・みなとみらい線直結",
       "status": "done"
+    },
+    {
+      "id": 412,
+      "category": "office",
+      "title": "新宿フロントタワー",
+      "slug": "shinjuku-front-tower",
+      "area": "新宿区",
+      "angle": "2011年竣工・34階。西新宿と中野坂上の中間に立つ大型オフィスビル",
+      "status": "done"
+    },
+    {
+      "id": 413,
+      "category": "office",
+      "title": "新宿モノリス",
+      "slug": "shinjuku-monolith",
+      "area": "新宿区",
+      "angle": "1990年竣工のNTT系超高層ビル。黒いファサードが西新宿のスカイラインに独特の存在感",
+      "status": "done"
+    },
+    {
+      "id": 414,
+      "category": "office",
+      "title": "有楽町マリオン",
+      "slug": "yurakucho-marion",
+      "area": "千代田区",
+      "angle": "1984年竣工・朝日新聞旧東京本社跡地。有楽町と銀座の境界に立つ複合商業施設",
+      "status": "done"
+    },
+    {
+      "id": 415,
+      "category": "office",
+      "title": "新宿イーストサイドスクエア",
+      "slug": "shinjuku-east-side-square",
+      "area": "新宿区",
+      "angle": "2012年竣工・20階。東新宿駅直結の大規模オフィス複合",
+      "status": "done"
+    },
+    {
+      "id": 416,
+      "category": "office",
+      "title": "テレビ朝日本社ビル",
+      "slug": "tv-asahi-headquarters",
+      "area": "港区",
+      "angle": "2003年竣工・六本木ヒルズの一角。槇文彦設計の放送局兼オフィスビル",
+      "status": "done"
     }
   ]
 }
