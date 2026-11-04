@@ -708,5 +708,30 @@
     "slug": "kasumigaseki-building",
     "postedAt": "2026-11-01",
     "type": "quiz"
+  },
+  {
+    "slug": "ariake-garden",
+    "postedAt": "2026-11-04",
+    "type": "intro"
+  },
+  {
+    "slug": "ark-hills-south-tower",
+    "postedAt": "2026-11-04",
+    "type": "intro"
+  },
+  {
+    "slug": "expo2025-osaka-ring",
+    "postedAt": "2026-11-04",
+    "type": "intro"
+  },
+  {
+    "slug": "fukuoka-daimyo-garden-city",
+    "postedAt": "2026-11-04",
+    "type": "intro"
+  },
+  {
+    "slug": "elza-tower-55",
+    "postedAt": "2026-11-04",
+    "type": "quiz"
   }
 ]
