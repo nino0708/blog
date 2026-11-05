@@ -733,5 +733,30 @@
     "slug": "elza-tower-55",
     "postedAt": "2026-11-04",
     "type": "quiz"
+  },
+  {
+    "slug": "yokohama-hammerhead",
+    "postedAt": "2026-11-05",
+    "type": "intro"
+  },
+  {
+    "slug": "nihonbashi-muromachi-mitsui-tower",
+    "postedAt": "2026-11-05",
+    "type": "intro"
+  },
+  {
+    "slug": "sendai-ss30",
+    "postedAt": "2026-11-05",
+    "type": "intro"
+  },
+  {
+    "slug": "msb-tamachi",
+    "postedAt": "2026-11-05",
+    "type": "intro"
+  },
+  {
+    "slug": "shinjuku-i-land-tower",
+    "postedAt": "2026-11-05",
+    "type": "quiz"
   }
 ]
