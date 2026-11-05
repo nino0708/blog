@@ -3776,6 +3776,42 @@
       "area": "港区",
       "angle": "2003年竣工・六本木ヒルズの一角。槇文彦設計の放送局兼オフィスビル",
       "status": "done"
+    },
+    {
+      "id": 417,
+      "category": "residence",
+      "title": "代官山アドレスザ・タワー",
+      "slug": "daikanyama-address-tower",
+      "area": "渋谷区",
+      "angle": "旧同潤会アパート跡地に建つ36階タワーマンション。代官山地区市街地再開発事業で2000年竣工・高さ119.9m",
+      "status": "done"
+    },
+    {
+      "id": 418,
+      "category": "office",
+      "title": "ハービスOSAKA",
+      "slug": "herbis-osaka",
+      "area": "大阪市北区",
+      "angle": "阪神電気鉄道開発・竹中工務店設計施工・40階190m・リッツカールトン大阪入居・1997年竣工",
+      "status": "done"
+    },
+    {
+      "id": 419,
+      "category": "office",
+      "title": "海峡ゆめタワー",
+      "slug": "kaikyo-yume-tower",
+      "area": "下関市",
+      "angle": "山口県開発・NTTファシリティーズ設計・30階153m・関門海峡展望タワー・1996年竣工",
+      "status": "done"
+    },
+    {
+      "id": 420,
+      "category": "office",
+      "title": "グランシップ（静岡コンベンションアーツセンター）",
+      "slug": "granship",
+      "area": "静岡市葵区",
+      "angle": "静岡県開発・磯崎新設計・12階・船型外観・1998年竣工・コンサートホール収容2000人超",
+      "status": "done"
     }
   ]
 }
