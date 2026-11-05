@@ -3596,6 +3596,51 @@
       "area": "水戸市",
       "angle": "磯崎新設計・高さ約100mチタン螺旋タワー、1990年開館・水戸市制100周年記念",
       "status": "done"
+    },
+    {
+      "id": 397,
+      "category": "residence",
+      "title": "代官山アドレスザ・タワー",
+      "slug": "daikanyama-address-tower",
+      "area": "渋谷区",
+      "angle": "旧同潤会アパート跡地に建つ36階タワーマンション。代官山の街区更新と都市居住の変化を記録",
+      "status": "done"
+    },
+    {
+      "id": 398,
+      "category": "office",
+      "title": "ハービスOSAKA",
+      "slug": "herbis-osaka",
+      "area": "大阪市北区",
+      "angle": "1997年竣工、地上40階・高さ190mの大阪西梅田の超高層複合ビル",
+      "status": "done"
+    },
+    {
+      "id": 399,
+      "category": "office",
+      "title": "海峡ゆめタワー",
+      "slug": "kaikyo-yume-tower",
+      "area": "下関市",
+      "angle": "下関・関門海峡を見渡す153mの展望タワー。山口県のランドマーク",
+      "status": "done"
+    },
+    {
+      "id": 400,
+      "category": "office",
+      "title": "グランシップ（静岡コンベンションアーツセンター）",
+      "slug": "granship",
+      "area": "静岡市葵区",
+      "angle": "磯崎新設計の船型コンベンション施設。1998年竣工、静岡の文化拠点",
+      "status": "done"
+    },
+    {
+      "id": 401,
+      "category": "office",
+      "title": "さいたまスーパーアリーナ",
+      "slug": "saitama-super-arena",
+      "area": "さいたま市中央区",
+      "angle": "2000年開業の可動式多目的アリーナ。日本最大級の収容人数を誇る",
+      "status": "done"
     }
   ]
 }
