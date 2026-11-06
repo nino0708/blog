@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-05 08:23 JST
-- 対象: 公開済み記事 850 ページ（https://builtjapan.com）
-- 正常表示: 682 / 850（80.2%）
-- **要対応: 168 件**（画像なし 168 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-11-07 08:21 JST
+- 対象: 公開済み記事 860 ページ（https://builtjapan.com）
+- 正常表示: 688 / 860（80.0%）
+- **要対応: 172 件**（画像なし 172 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -16,6 +16,7 @@
 | [city-tower-osaka-tenma（JA）](https://builtjapan.com/buildings/city-tower-osaka-tenma/) | ヒーロー画像なし（プレースホルダ表示） |
 | [commore-yotsuya（JA）](https://builtjapan.com/buildings/commore-yotsuya/) | ヒーロー画像なし（プレースホルダ表示） |
 | [d-tower-nishi-shinjuku（JA）](https://builtjapan.com/buildings/d-tower-nishi-shinjuku/) | ヒーロー画像なし（プレースホルダ表示） |
+| [daikanyama-address-tower（JA）](https://builtjapan.com/buildings/daikanyama-address-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [elsa-tower-55（JA）](https://builtjapan.com/buildings/elsa-tower-55/) | ヒーロー画像なし（プレースホルダ表示） |
 | [expo2025-osaka-ring（JA）](https://builtjapan.com/buildings/expo2025-osaka-ring/) | ヒーロー画像なし（プレースホルダ表示） |
 | [grand-prince-hotel-shin-takanawa（JA）](https://builtjapan.com/buildings/grand-prince-hotel-shin-takanawa/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -64,6 +65,7 @@
 | [35（JA）](https://builtjapan.com/buildings/page/35/) | ヒーロー画像なし（プレースホルダ表示） |
 | [36（JA）](https://builtjapan.com/buildings/page/36/) | ヒーロー画像なし（プレースホルダ表示） |
 | [37（JA）](https://builtjapan.com/buildings/page/37/) | ヒーロー画像なし（プレースホルダ表示） |
+| [38（JA）](https://builtjapan.com/buildings/page/38/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（JA）](https://builtjapan.com/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -100,6 +102,7 @@
 | [city-tower-osaka-tenma（EN）](https://builtjapan.com/en/buildings/city-tower-osaka-tenma/) | ヒーロー画像なし（プレースホルダ表示） |
 | [commore-yotsuya（EN）](https://builtjapan.com/en/buildings/commore-yotsuya/) | ヒーロー画像なし（プレースホルダ表示） |
 | [d-tower-nishi-shinjuku（EN）](https://builtjapan.com/en/buildings/d-tower-nishi-shinjuku/) | ヒーロー画像なし（プレースホルダ表示） |
+| [daikanyama-address-tower（EN）](https://builtjapan.com/en/buildings/daikanyama-address-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [elsa-tower-55（EN）](https://builtjapan.com/en/buildings/elsa-tower-55/) | ヒーロー画像なし（プレースホルダ表示） |
 | [expo2025-osaka-ring（EN）](https://builtjapan.com/en/buildings/expo2025-osaka-ring/) | ヒーロー画像なし（プレースホルダ表示） |
 | [grand-prince-hotel-shin-takanawa（EN）](https://builtjapan.com/en/buildings/grand-prince-hotel-shin-takanawa/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -148,6 +151,7 @@
 | [35（EN）](https://builtjapan.com/en/buildings/page/35/) | ヒーロー画像なし（プレースホルダ表示） |
 | [36（EN）](https://builtjapan.com/en/buildings/page/36/) | ヒーロー画像なし（プレースホルダ表示） |
 | [37（EN）](https://builtjapan.com/en/buildings/page/37/) | ヒーロー画像なし（プレースホルダ表示） |
+| [38（EN）](https://builtjapan.com/en/buildings/page/38/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（EN）](https://builtjapan.com/en/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
