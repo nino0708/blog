@@ -758,5 +758,30 @@
     "slug": "shinjuku-i-land-tower",
     "postedAt": "2026-11-05",
     "type": "quiz"
+  },
+  {
+    "slug": "shibuya-axsh",
+    "postedAt": "2026-11-06",
+    "type": "intro"
+  },
+  {
+    "slug": "kanda-square",
+    "postedAt": "2026-11-06",
+    "type": "intro"
+  },
+  {
+    "slug": "ariake-arena",
+    "postedAt": "2026-11-06",
+    "type": "intro"
+  },
+  {
+    "slug": "nakanoshima-museum-of-art-osaka",
+    "postedAt": "2026-11-06",
+    "type": "intro"
+  },
+  {
+    "slug": "century-park-tower",
+    "postedAt": "2026-11-06",
+    "type": "quiz"
   }
 ]
