@@ -3812,6 +3812,51 @@
       "area": "静岡市葵区",
       "angle": "静岡県開発・磯崎新設計・12階・船型外観・1998年竣工・コンサートホール収容2000人超",
       "status": "done"
+    },
+    {
+      "id": 421,
+      "category": "office",
+      "title": "渋谷アクシュ（SHIBUYA AXSH）",
+      "slug": "shibuya-axsh",
+      "area": "渋谷区",
+      "angle": "東急・渋谷二丁目17地区再開発・23階120m・2024年竣工・渋谷駅東口徒歩3分・東急設計コンサルタント等設計共同企業体",
+      "status": "done"
+    },
+    {
+      "id": 422,
+      "category": "office",
+      "title": "神田スクエア（KANDA SQUARE）",
+      "slug": "kanda-square",
+      "area": "千代田区",
+      "angle": "住友商事・日建設計・21階105m・2020年竣工・東京電機大学旧神田キャンパス跡地・神田錦町",
+      "status": "done"
+    },
+    {
+      "id": 423,
+      "category": "office",
+      "title": "有明アリーナ",
+      "slug": "ariake-arena",
+      "area": "江東区",
+      "angle": "東京都整備・久米設計基本設計・竹中工務店施工・5階37m・2019年竣工・東京2020五輪バレーボール会場・収容15000席",
+      "status": "done"
+    },
+    {
+      "id": 424,
+      "category": "office",
+      "title": "大阪中之島美術館",
+      "slug": "nakanoshima-museum-of-art-osaka",
+      "area": "大阪市北区",
+      "angle": "大阪市・遠藤克彦建築研究所設計・5階39m・2021年竣工・黒い直方体・延床17305m2・2022年2月開館",
+      "status": "done"
+    },
+    {
+      "id": 425,
+      "category": "residence",
+      "title": "センチュリーパークタワー",
+      "slug": "century-park-tower",
+      "area": "中央区",
+      "angle": "三井不動産・日本設計・54階180m・1999年竣工・リバーシティ21内・中央区佃・総戸数756戸",
+      "status": "done"
     }
   ]
 }
