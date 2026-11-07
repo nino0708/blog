@@ -3812,6 +3812,51 @@
       "area": "静岡市葵区",
       "angle": "静岡県開発・磯崎新設計・12階・船型外観・1998年竣工・コンサートホール収容2000人超",
       "status": "done"
+    },
+    {
+      "id": 421,
+      "category": "office",
+      "title": "渋谷アクシュ",
+      "slug": "shibuya-axsh",
+      "area": "渋谷区",
+      "angle": "2024年竣工・渋谷東口宮益坂エリア。23階120m。東急主導の市街地再開発。",
+      "status": "done"
+    },
+    {
+      "id": 422,
+      "category": "office",
+      "title": "有明アリーナ",
+      "slug": "ariake-arena",
+      "area": "江東区",
+      "angle": "2019年竣工・東京オリンピックバレーボール会場。5階37m・15,000席。東京都発注。",
+      "status": "done"
+    },
+    {
+      "id": 423,
+      "category": "office",
+      "title": "大阪中之島美術館",
+      "slug": "osaka-nakanoshima-museum-of-art",
+      "area": "大阪市北区",
+      "angle": "2022年開館・中之島の黒い直方体。5階39m。遠藤克彦設計。大阪の近現代美術。",
+      "status": "done"
+    },
+    {
+      "id": 424,
+      "category": "office",
+      "title": "せんだいメディアテーク",
+      "slug": "sendai-mediatheque",
+      "area": "仙台市青葉区",
+      "angle": "2001年開館・定禅寺通。地下2階地上7階。伊東豊雄設計・13本チューブ構造。",
+      "status": "done"
+    },
+    {
+      "id": 425,
+      "category": "office",
+      "title": "21_21 DESIGN SIGHT",
+      "slug": "21-21-design-sight",
+      "area": "港区",
+      "angle": "2007年開館・東京ミッドタウンガーデン。地下1階地上2階。安藤忠雄+日建設計。",
+      "status": "done"
     }
   ]
 }
