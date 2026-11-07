@@ -758,5 +758,30 @@
     "slug": "shinjuku-i-land-tower",
     "postedAt": "2026-11-05",
     "type": "quiz"
+  },
+  {
+    "slug": "abeno-harukas",
+    "postedAt": "2026-11-07",
+    "type": "intro"
+  },
+  {
+    "slug": "akashi-kaikyo-bridge",
+    "postedAt": "2026-11-07",
+    "type": "intro"
+  },
+  {
+    "slug": "ark-mori-building",
+    "postedAt": "2026-11-07",
+    "type": "intro"
+  },
+  {
+    "slug": "cerulean-tower",
+    "postedAt": "2026-11-07",
+    "type": "intro"
+  },
+  {
+    "slug": "air-rise-tower",
+    "postedAt": "2026-11-07",
+    "type": "quiz"
   }
 ]
