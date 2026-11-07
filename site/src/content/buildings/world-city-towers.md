@@ -13,6 +13,9 @@ architect: "日建設計"
 tags: ["港区", "タワーマンション", "港南", "湾岸", "品川"]
 publishedAt: 2026-10-07
 summary: "東京都港区港南4丁目に2006〜2007年にかけて竣工したアクア・キャピタル・ブリーズの3棟・総戸数2,090戸の大規模タワーマンション群。住友不動産が開発し、日建設計の山梨知彦が設計を担当。品川駅徒歩圏に広大な居住地を形成している。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/World_city_towers_5.jpg/1280px-World_city_towers_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Yurara2019 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:World_city_towers_5.jpg"
 verified: true
 sources:
   - "日本語Wikipedia「ワールドシティタワーズ」（アクアタワー41F/2006年3月・キャピタルタワー42F/2007年2月・ブリーズタワー43F/2007年2月・最高点高さ139.85m・総戸数2,090戸・総延床291,272m²・住所：東京都港区港南4丁目・設計：日建設計（山梨知彦）・施工：清水建設・PS三菱・西武建設JV・売主：住友不動産）"

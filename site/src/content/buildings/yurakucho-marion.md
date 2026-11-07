@@ -7,6 +7,9 @@ completedYear: 1984
 tags: ["千代田区", "有楽町", "商業施設", "銀座", "再開発"]
 publishedAt: 2026-11-04
 summary: "1984年竣工の複合商業ビル。朝日新聞東京本社の旧敷地に建ち、有楽町と銀座の境界に立つ待ち合わせの定番スポットとして長く東京の日常風景の一部になってきた。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Yurakucho_Marion_2.jpg/1280px-Yurakucho_Marion_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Yurakucho_Marion_2.jpg"
 verified: true
 sources:
   - "j-cast.com「西武有楽町店閉鎖」2010年（有楽町マリオンは朝日新聞東京本社の旧敷地・1984年開業）"

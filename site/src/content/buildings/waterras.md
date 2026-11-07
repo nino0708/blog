@@ -12,6 +12,9 @@ architect: "佐藤総合計画"
 tags: ["千代田区", "神田", "超高層ビル", "再開発"]
 publishedAt: 2026-08-30
 summary: "2013年竣工、地上41階・高さ約164mのワテラスタワーを中核とする淡路町の複合再開発。住宅・オフィス・商業・産学連携スペースを積層し、「神田の街に人を留める」ことを目指した市街地再開発事業。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Waterras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "Keramahani / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Waterras.jpg"
 verified: true
 sources:
   - "Wikipedia「ワテラス」（竣工2013年3月・タワー地上41階地下3階塔屋1階・高さ164.8m・所在地：千代田区神田淡路町二丁目101番）"

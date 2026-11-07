@@ -12,6 +12,9 @@ architect: "三菱地所設計"
 tags: ["横浜市神奈川区", "横浜駅", "超高層ビル", "関東"]
 publishedAt: 2026-09-09
 summary: "横浜駅東口・金港町に2009年竣工。三菱倉庫が手がけた地上31階・高さ156.5mの環境対応型オフィスビル。みなとみらいとは異なる横浜駅周辺の都市更新を体現する一棟。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/53/Yokohama_dia_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "flamingo_eagle / Public domain"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Yokohama_dia_building.jpg"
 verified: true
 sources: ["三菱倉庫株式会社プレスリリース 2009年12月15日「横浜駅東口で環境対応型の超高層オフィスビル『横浜ダイヤビルディング』が竣工」（地上31階・地下2階・高さ156.5m・2009年12月竣工・設計:三菱地所設計・施工:竹中工務店）", "ヨコハマ経済新聞 2009年「横浜駅東口に環境対応型高層ビル『横浜ダイヤビルディング』が完成」"]
 ---

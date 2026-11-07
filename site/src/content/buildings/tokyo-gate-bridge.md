@@ -11,6 +11,9 @@ architect: "セントラルコンサルタント・パシフィックコンサ�
 tags: ["江東区", "橋梁", "東京港", "土木遺産", "臨海部", "若洲", "物流インフラ"]
 publishedAt: 2026-08-12
 summary: "2012年2月12日開通、全長2,618mの鋼トラス橋。水面から最上部まで約87.8m、主径間440mは国内第2位のトラス橋。羽田の航空制限空域に配慮したトラス構造が「恐竜の骨格」を思わせる独特のシルエットを生んだ。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Tokyo_Gate_Bridge_2018.jpg/1280px-Tokyo_Gate_Bridge_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Gate_Bridge_2018.jpg"
 verified: true
 sources:
   - "東京港臨海道路（東京ゲートブリッジ）開通 国土交通省関東地方整備局 https://www.ktr.mlit.go.jp/syuto/syuto_topics0005.html"

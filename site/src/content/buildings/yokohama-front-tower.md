@@ -12,6 +12,9 @@ architect: "松田平田設計・UG都市建築・東急設計コンサルタン
 tags: ["横浜市神奈川区", "横浜", "タワーマンション", "超高層マンション", "再開発", "横浜駅"]
 publishedAt: 2026-10-19
 summary: "横浜駅きた西口に直結する地上約42階・高さ約178mの超高層複合タワー。国家戦略住宅整備事業の国内第1号認定を受けた横浜駅きた西口鶴屋地区の再開発で2023年に竣工し、住宅・ホテル・商業が一体となる。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/The_Yokohama_Front_Tower_20221127.jpg/1280px-The_Yokohama_Front_Tower_20221127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Suicasmo / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:The_Yokohama_Front_Tower_20221127.jpg"
 verified: true
 sources:
   - "相鉄不動産2022年12月プレスリリース（地上約42〜43階・高さ約178m・竣工2023年・横浜駅きた西口直結・施工: 大林組・設計: 松田平田設計・UG都市建築・東急設計コンサルタントJV）"

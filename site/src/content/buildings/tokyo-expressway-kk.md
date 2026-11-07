@@ -6,6 +6,9 @@ completedYear: 1966
 tags: ["銀座", "高速道路", "廃道", "歴史的インフラ"]
 publishedAt: 2026-10-24
 summary: "1959年から開通した都心部の無料高速道路。銀座・汐留・京橋を経由する全長約2kmで、2025年4月に廃止。都市公園「Roof Park」への転換計画が進む。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_Expressway_1.jpg/1280px-Tokyo_Expressway_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Ebiebi2 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Expressway_1.jpg"
 verified: true
 sources: ["東京高速道路株式会社 公式サイト", "国土交通省 関東地方整備局", "東京都都市整備局 KK線活用方針"]
 ---

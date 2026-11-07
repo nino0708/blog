@@ -15,6 +15,9 @@ architect: "久米設計・東急設計コンサルタントJV（外装デザイ
 tags: ["新宿区", "歌舞伎町", "超高層ビル", "エンターテインメント", "ホテル", "再開発"]
 publishedAt: 2026-07-26
 summary: "2023年1月竣工、地上48階・高さ約225mの超高層複合施設。ライブホール・劇場・映画館・2つのホテルを垂直に積み上げたオフィスレスの設計が、歌舞伎町という街の性格を体現する。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Tokyu_Kabukicho_Tower_1.jpg/1280px-Tokyu_Kabukicho_Tower_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyu_Kabukicho_Tower_1.jpg"
 verified: true
 sources:
   - "清水建設 施工実績「東急歌舞伎町タワー」https://www.shimz.co.jp/works/jp_off_202301_kabukitower.html"

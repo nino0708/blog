@@ -12,6 +12,9 @@ architect: "安井建築設計事務所"
 tags: ["江東区", "臨海副都心", "クルーズ", "港湾", "青海", "お台場", "ゆりかもめ"]
 publishedAt: 2026-08-17
 summary: "2020年9月10日開業。東京都江東区青海に建つ地上4階建の大型客船ターミナルで、延床面積は約19,000㎡。岸壁延長430m・水深11.5mの岸壁を持ち、世界最大級のクルーズ客船が接岸できる。ゆりかもめ「東京国際クルーズターミナル駅」直結。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Tokyo_International_Cruise_Terminal.jpg/1280px-Tokyo_International_Cruise_Terminal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_International_Cruise_Terminal.jpg"
 verified: true
 sources:
   - "東京港ターミナル株式会社 施設案内（地上4階建・延床面積約19,000㎡・岸壁延長430m・水深11.5m）https://www.tptc.co.jp/terminal/guide/cruise/facility"

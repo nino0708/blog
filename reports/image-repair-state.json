@@ -74,10 +74,6 @@
     "reason": "確信できる外観画像が見つからない",
     "gaveUp": true
   },
-  "tokyo-midtown-hibiya": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
-  },
   "10": {
     "attempts": 3,
     "gaveUp": true,
@@ -468,8 +464,9 @@
     "gaveUp": true
   },
   "tv-asahi-headquarters": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "38": {
     "attempts": 3,
@@ -477,7 +474,7 @@
     "reason": "記事mdが見つからない"
   },
   "daikanyama-address-tower": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   }
 }

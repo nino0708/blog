@@ -13,6 +13,9 @@ architect: "隈研吾建築都市設計事務所"
 tags: ["千代田区", "永田町", "ホテル", "再開発"]
 publishedAt: 2026-10-12
 summary: "2010年竣工、千代田区永田町に立つ地上29階の複合タワー。隈研吾建築都市設計事務所が設計し、国会議事堂に隣接する旧ホテルオークラ別館の跡地に建てられた。上層部にはザ・キャピトルホテル東急が入居する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/58/Tokyu-Capitol-Tower-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "Rs1421 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyu-Capitol-Tower-01.jpg"
 verified: true
 sources:
   - "Wikipedia「東急キャピトルタワー」（2010年竣工・地上29階地下4階・千代田区永田町2-10-3）"

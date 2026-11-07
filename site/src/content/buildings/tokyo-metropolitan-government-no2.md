@@ -14,6 +14,9 @@ architect: "丹下健三・都市・建築設計事務所"
 tags: ["新宿区", "西新宿", "超高層ビル", "行政", "丹下健三"]
 publishedAt: 2026-09-24
 summary: "丹下健三設計の東京都庁コンプレックスを構成する地上34階・高さ約163mの庁舎棟。1991年に第一本庁舎と一体的に開業し、西新宿副都心のシルエットを定める一棟。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Tokyo_Metropolitan_Government_Building_2022-03-02.jpg/1280px-Tokyo_Metropolitan_Government_Building_2022-03-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Asanagi / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Metropolitan_Government_Building_2022-03-02.jpg"
 verified: true
 sources: ["東京都庁舎 - Wikipedia（第二本庁舎：地上34階・地下3階・高さ約163m・丹下健三設計）", "東京都庁第二本庁舎 | 超高層ビル部（地上34階・163m）", "TANGE建築都市設計 公式（東京都庁舎：丹下健三設計・1991年）"]
 ---

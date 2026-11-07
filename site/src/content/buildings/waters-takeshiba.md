@@ -15,6 +15,9 @@ architect: "JR東日本建築設計"
 tags: ["港区", "竹芝", "浜松町", "再開発", "文化施設"]
 publishedAt: 2026-10-16
 summary: "東京・竹芝ふ頭に2020年竣工したJR東日本の複合施設。地上26階・高さ109.86メートルのタワー棟と劇団四季の専用劇場2館が一体となった、海辺の文化・商業複合拠点。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Waters_takeshiba_tower_building.jpg/1280px-Waters_takeshiba_tower_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Beryllium Transistor / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Waters_takeshiba_tower_building.jpg"
 verified: true
 sources:
   - "JR東日本「WATERS takeshiba」プロジェクト概要（地上26階・高さ109.86m・設計JR東日本建築設計・施工清水建設）"

@@ -13,6 +13,9 @@ developer: "サッポロビール"
 tags: ["目黒区", "恵比寿", "恵比寿ガーデンプレイス", "ホテル"]
 publishedAt: 2026-10-17
 summary: "東京都目黒区三田の恵比寿ガーデンプレイス内に立つ地上23階・高さ89.9mのホテル。1994年にサッポロビールがビール工場跡地を再開発した恵比寿ガーデンプレイスの中核施設として開業し、客室445室を擁する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Westin_Hotel_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "Harani0403 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Westin_Hotel_Tokyo.jpg"
 verified: true
 sources:
   - "ウェスティンホテル東京 - Wikipedia（竣工1994年・地上23階・地下5階・高さ89.9m・恵比寿ガーデンプレイス内・客室445室・サッポロビール開発）"

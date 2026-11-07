@@ -14,6 +14,9 @@ architect: "内藤多仲 / 日建設計"
 tags: ["港区", "電波塔", "戦後建築", "芝公園", "観光"]
 publishedAt: 2026-07-24
 summary: "1958年竣工、高さ333mの自立式鉄骨電波塔。エッフェル塔を超えた高さで戦後日本の復興を象徴し、今も東京のシルエットを定め続ける。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Japan-Tokyo-tower-1024.jpg/1280px-Japan-Tokyo-tower-1024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Ermell / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Japan-Tokyo-tower-1024.jpg"
 verified: true
 sources:
   - "東京タワー公式サイト 会社概要 https://www.tokyotower.co.jp/company/"

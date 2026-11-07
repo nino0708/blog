@@ -15,6 +15,9 @@ architect: "ホプキンスアーキテクツ（マスターデザインアー�
 tags: ["千代田区", "超高層ビル", "再開発", "日比谷", "有楽町"]
 publishedAt: 2026-07-27
 summary: "2018年2月竣工、千代田区有楽町。地上35階・高さ約192メートルの複合施設。三井不動産がホプキンスアーキテクツと日建設計とともに計画し、旧三信ビルディング跡地に日比谷公園に向けて開いた広場を持つ高層複合を実現した。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Tokyo_Midtown_Hibiya.jpg/1280px-Tokyo_Midtown_Hibiya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Midtown_Hibiya.jpg"
 verified: true
 sources:
   - "三井不動産プレスリリース・各種建物データベース（竣工2018年2月・地上35階地下4階・高さ191.46m・住所:千代田区有楽町1-1-2・開発:三井不動産・マスターデザインアーキテクト:ホプキンスアーキテクツ）"

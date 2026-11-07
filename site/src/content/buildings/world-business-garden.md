@@ -12,6 +12,9 @@ architect: "日本設計"
 tags: ["千葉市", "幕張新都心", "超高層ビル", "オフィスビル"]
 publishedAt: 2026-09-11
 summary: "1991年竣工、地上35階・高さ157メートルのツインタワー型オフィス複合施設。鹿島建設・三井不動産・第一生命の共同開発で日本設計が設計。幕張新都心の業務核として、マリブイーストとマリブウエストの2棟で構成される。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a8/World_Business_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:World_Business_Garden.jpg"
 verified: true
 sources:
   - "Wikipedia「ワールドビジネスガーデン」（竣工1991年・地上35階地下1階塔屋2階・157m・千葉市美浜区中瀬二丁目6・設計：日本設計・事業者：鹿島建設・三井不動産・第一生命）"

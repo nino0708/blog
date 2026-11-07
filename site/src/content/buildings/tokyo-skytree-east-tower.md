@@ -14,6 +14,9 @@ architect: "日建設計"
 tags: ["墨田区", "超高層ビル", "押上", "スカイツリー", "東武"]
 publishedAt: 2026-09-07
 summary: "東京スカイツリータウンを構成するオフィスビル棟。2012年竣工の地上31階・高さ158mで、塔の足元に業務床を提供しながら、634mの電波塔と同じ街区で共存する。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Tokyo_Skytree_East_Tower_2012.JPG/1280px-Tokyo_Skytree_East_Tower_2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_East_Tower_2012.JPG"
 verified: true
 sources:
   - "東京スカイツリーイーストタワー - Wikipedia（竣工2012年・地上31階地下3階・高さ158m）"
