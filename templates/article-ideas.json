@@ -3812,6 +3812,51 @@
       "area": "静岡市葵区",
       "angle": "静岡県開発・磯崎新設計・12階・船型外観・1998年竣工・コンサートホール収容2000人超",
       "status": "done"
+    },
+    {
+      "id": 421,
+      "category": "office",
+      "title": "せんだいメディアテーク",
+      "slug": "sendai-mediatheque",
+      "area": "仙台市青葉区",
+      "angle": "伊東豊雄設計・チューブ構造・地上7階・2001年開館・図書館＋映像メディア＋ギャラリー複合",
+      "status": "done"
+    },
+    {
+      "id": 422,
+      "category": "office",
+      "title": "金沢21世紀美術館",
+      "slug": "kanazawa-21st-century-museum",
+      "area": "金沢市",
+      "angle": "SANAA設計・円形直径約113m・2004年開館・4入口・無料ゾーン併設",
+      "status": "done"
+    },
+    {
+      "id": 423,
+      "category": "office",
+      "title": "東京文化会館",
+      "slug": "tokyo-bunka-kaikan",
+      "area": "台東区",
+      "angle": "前川國男設計・1961年竣工・大ホール2303席・上野公園・近代建築",
+      "status": "done"
+    },
+    {
+      "id": 424,
+      "category": "office",
+      "title": "六本木ティーキューブ",
+      "slug": "roppongi-t-cube",
+      "area": "港区",
+      "angle": "地上27階・2003年竣工・六本木3-1-1・基準階500坪超・国際ビジネス拠点",
+      "status": "done"
+    },
+    {
+      "id": 425,
+      "category": "office",
+      "title": "大阪中之島美術館",
+      "slug": "osaka-nakanoshima-museum-of-art",
+      "area": "大阪市北区",
+      "angle": "遠藤克彦建築研究所設計・黒い直方体・地上5階・高さ39m・延床約20012㎡・2022年開館",
+      "status": "done"
     }
   ]
 }
