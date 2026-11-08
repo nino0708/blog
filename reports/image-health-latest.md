@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-08 08:20 JST
-- 対象: 公開済み記事 860 ページ（https://builtjapan.com）
-- 正常表示: 636 / 860（74.0%）
-- **要対応: 224 件**（画像なし 224 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-11-09 08:21 JST
+- 対象: 公開済み記事 880 ページ（https://builtjapan.com）
+- 正常表示: 708 / 880（80.5%）
+- **要対応: 172 件**（画像なし 172 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -22,6 +22,7 @@
 | [grand-prince-hotel-shin-takanawa（JA）](https://builtjapan.com/buildings/grand-prince-hotel-shin-takanawa/) | ヒーロー画像なし（プレースホルダ表示） |
 | [granpark-tower（JA）](https://builtjapan.com/buildings/granpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [harumi-flag-sky-duo（JA）](https://builtjapan.com/buildings/harumi-flag-sky-duo/) | ヒーロー画像なし（プレースホルダ表示） |
+| [hiroshima-station-minamoa（JA）](https://builtjapan.com/buildings/hiroshima-station-minamoa/) | ヒーロー画像なし（プレースホルダ表示） |
 | [iidabashi-grand-bloom（JA）](https://builtjapan.com/buildings/iidabashi-grand-bloom/) | ヒーロー画像なし（プレースホルダ表示） |
 | [japan-national-stadium（JA）](https://builtjapan.com/buildings/japan-national-stadium/) | ヒーロー画像なし（プレースホルダ表示） |
 | [kabuto-one（JA）](https://builtjapan.com/buildings/kabuto-one/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -85,42 +86,15 @@
 | [sumitomo-toranomon-tower（JA）](https://builtjapan.com/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（JA）](https://builtjapan.com/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toda-building（JA）](https://builtjapan.com/buildings/toda-building/) | ヒーロー画像なし（プレースホルダ表示） |
-| [toki-messe-niigata（JA）](https://builtjapan.com/buildings/toki-messe-niigata/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokiwabashi-tower（JA）](https://builtjapan.com/buildings/tokiwabashi-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome-hotel（JA）](https://builtjapan.com/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（JA）](https://builtjapan.com/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-expressway-kk（JA）](https://builtjapan.com/buildings/tokyo-expressway-kk/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-garden-terrace-kioi-cho（JA）](https://builtjapan.com/buildings/tokyo-garden-terrace-kioi-cho/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-garden-terrace-kioicho（JA）](https://builtjapan.com/buildings/tokyo-garden-terrace-kioicho/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-gate-bridge（JA）](https://builtjapan.com/buildings/tokyo-gate-bridge/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-international-cruise-terminal（JA）](https://builtjapan.com/buildings/tokyo-international-cruise-terminal/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-metropolitan-government-no2（JA）](https://builtjapan.com/buildings/tokyo-metropolitan-government-no2/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-midtown-hibiya（JA）](https://builtjapan.com/buildings/tokyo-midtown-hibiya/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-skytree-east-tower（JA）](https://builtjapan.com/buildings/tokyo-skytree-east-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-tower（JA）](https://builtjapan.com/buildings/tokyo-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-world-gate-akasaka（JA）](https://builtjapan.com/buildings/tokyo-world-gate-akasaka/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyu-capitol-tower（JA）](https://builtjapan.com/buildings/tokyu-capitol-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyu-kabukicho-tower（JA）](https://builtjapan.com/buildings/tokyu-kabukicho-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyu-plaza-omotesando-harajuku（JA）](https://builtjapan.com/buildings/tokyu-plaza-omotesando-harajuku/) | ヒーロー画像なし（プレースホルダ表示） |
-| [toranomon-hills-residential-tower（JA）](https://builtjapan.com/buildings/toranomon-hills-residential-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（JA）](https://builtjapan.com/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tower-111（JA）](https://builtjapan.com/buildings/tower-111/) | ヒーロー画像なし（プレースホルダ表示） |
-| [toyosu-center-building（JA）](https://builtjapan.com/buildings/toyosu-center-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（JA）](https://builtjapan.com/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tv-asahi-headquarters（JA）](https://builtjapan.com/buildings/tv-asahi-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
-| [ueno-frontier-tower（JA）](https://builtjapan.com/buildings/ueno-frontier-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [utsunomiya-lrt（JA）](https://builtjapan.com/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
-| [waterras（JA）](https://builtjapan.com/buildings/waterras/) | ヒーロー画像なし（プレースホルダ表示） |
-| [waters-takeshiba（JA）](https://builtjapan.com/buildings/waters-takeshiba/) | ヒーロー画像なし（プレースホルダ表示） |
-| [westin-tokyo（JA）](https://builtjapan.com/buildings/westin-tokyo/) | ヒーロー画像なし（プレースホルダ表示） |
-| [world-business-garden（JA）](https://builtjapan.com/buildings/world-business-garden/) | ヒーロー画像なし（プレースホルダ表示） |
-| [world-city-towers（JA）](https://builtjapan.com/buildings/world-city-towers/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（JA）](https://builtjapan.com/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
-| [yokohama-dia-building（JA）](https://builtjapan.com/buildings/yokohama-dia-building/) | ヒーロー画像なし（プレースホルダ表示） |
-| [yokohama-front-tower（JA）](https://builtjapan.com/buildings/yokohama-front-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [yomiuri-shimbun-building（JA）](https://builtjapan.com/buildings/yomiuri-shimbun-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（JA）](https://builtjapan.com/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
-| [yurakucho-marion（JA）](https://builtjapan.com/buildings/yurakucho-marion/) | ヒーロー画像なし（プレースホルダ表示） |
 | [buildings（EN）](https://builtjapan.com/en/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（EN）](https://builtjapan.com/en/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -134,6 +108,7 @@
 | [grand-prince-hotel-shin-takanawa（EN）](https://builtjapan.com/en/buildings/grand-prince-hotel-shin-takanawa/) | ヒーロー画像なし（プレースホルダ表示） |
 | [granpark-tower（EN）](https://builtjapan.com/en/buildings/granpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [harumi-flag-sky-duo（EN）](https://builtjapan.com/en/buildings/harumi-flag-sky-duo/) | ヒーロー画像なし（プレースホルダ表示） |
+| [hiroshima-station-minamoa（EN）](https://builtjapan.com/en/buildings/hiroshima-station-minamoa/) | ヒーロー画像なし（プレースホルダ表示） |
 | [iidabashi-grand-bloom（EN）](https://builtjapan.com/en/buildings/iidabashi-grand-bloom/) | ヒーロー画像なし（プレースホルダ表示） |
 | [japan-national-stadium（EN）](https://builtjapan.com/en/buildings/japan-national-stadium/) | ヒーロー画像なし（プレースホルダ表示） |
 | [kabuto-one（EN）](https://builtjapan.com/en/buildings/kabuto-one/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -197,42 +172,15 @@
 | [sumitomo-toranomon-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（EN）](https://builtjapan.com/en/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toda-building（EN）](https://builtjapan.com/en/buildings/toda-building/) | ヒーロー画像なし（プレースホルダ表示） |
-| [toki-messe-niigata（EN）](https://builtjapan.com/en/buildings/toki-messe-niigata/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokiwabashi-tower（EN）](https://builtjapan.com/en/buildings/tokiwabashi-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome-hotel（EN）](https://builtjapan.com/en/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome（EN）](https://builtjapan.com/en/buildings/tokyo-dome/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-expressway-kk（EN）](https://builtjapan.com/en/buildings/tokyo-expressway-kk/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-garden-terrace-kioi-cho（EN）](https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioi-cho/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-garden-terrace-kioicho（EN）](https://builtjapan.com/en/buildings/tokyo-garden-terrace-kioicho/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-gate-bridge（EN）](https://builtjapan.com/en/buildings/tokyo-gate-bridge/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-international-cruise-terminal（EN）](https://builtjapan.com/en/buildings/tokyo-international-cruise-terminal/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-metropolitan-government-no2（EN）](https://builtjapan.com/en/buildings/tokyo-metropolitan-government-no2/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-midtown-hibiya（EN）](https://builtjapan.com/en/buildings/tokyo-midtown-hibiya/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-skytree-east-tower（EN）](https://builtjapan.com/en/buildings/tokyo-skytree-east-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyo-tower（EN）](https://builtjapan.com/en/buildings/tokyo-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-world-gate-akasaka（EN）](https://builtjapan.com/en/buildings/tokyo-world-gate-akasaka/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyu-capitol-tower（EN）](https://builtjapan.com/en/buildings/tokyu-capitol-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyu-kabukicho-tower（EN）](https://builtjapan.com/en/buildings/tokyu-kabukicho-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tokyu-plaza-omotesando-harajuku（EN）](https://builtjapan.com/en/buildings/tokyu-plaza-omotesando-harajuku/) | ヒーロー画像なし（プレースホルダ表示） |
-| [toranomon-hills-residential-tower（EN）](https://builtjapan.com/en/buildings/toranomon-hills-residential-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tower-111（EN）](https://builtjapan.com/en/buildings/tower-111/) | ヒーロー画像なし（プレースホルダ表示） |
-| [toyosu-center-building（EN）](https://builtjapan.com/en/buildings/toyosu-center-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（EN）](https://builtjapan.com/en/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tv-asahi-headquarters（EN）](https://builtjapan.com/en/buildings/tv-asahi-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
-| [ueno-frontier-tower（EN）](https://builtjapan.com/en/buildings/ueno-frontier-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [utsunomiya-lrt（EN）](https://builtjapan.com/en/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
-| [waterras（EN）](https://builtjapan.com/en/buildings/waterras/) | ヒーロー画像なし（プレースホルダ表示） |
-| [waters-takeshiba（EN）](https://builtjapan.com/en/buildings/waters-takeshiba/) | ヒーロー画像なし（プレースホルダ表示） |
-| [westin-tokyo（EN）](https://builtjapan.com/en/buildings/westin-tokyo/) | ヒーロー画像なし（プレースホルダ表示） |
-| [world-business-garden（EN）](https://builtjapan.com/en/buildings/world-business-garden/) | ヒーロー画像なし（プレースホルダ表示） |
-| [world-city-towers（EN）](https://builtjapan.com/en/buildings/world-city-towers/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
-| [yokohama-dia-building（EN）](https://builtjapan.com/en/buildings/yokohama-dia-building/) | ヒーロー画像なし（プレースホルダ表示） |
-| [yokohama-front-tower（EN）](https://builtjapan.com/en/buildings/yokohama-front-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [yomiuri-shimbun-building（EN）](https://builtjapan.com/en/buildings/yomiuri-shimbun-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（EN）](https://builtjapan.com/en/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
-| [yurakucho-marion（EN）](https://builtjapan.com/en/buildings/yurakucho-marion/) | ヒーロー画像なし（プレースホルダ表示） |
 
 ## 直し方
 

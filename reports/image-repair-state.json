@@ -474,7 +474,12 @@
     "reason": "記事mdが見つからない"
   },
   "daikanyama-address-tower": {
-    "attempts": 2,
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "hiroshima-station-minamoa": {
+    "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }
 }
