@@ -3857,6 +3857,51 @@
       "area": "大阪市北区",
       "angle": "遠藤克彦建築研究所設計・黒い直方体・地上5階・高さ39m・延床約20012㎡・2022年開館",
       "status": "done"
+    },
+    {
+      "id": 426,
+      "category": "office",
+      "title": "広島駅ビル ミナモア",
+      "slug": "hiroshima-station-minamoa",
+      "area": "広島市南区",
+      "angle": "2025年3月開業・地上20階・高さ約100m・広電2階乗り入れ・JR西日本",
+      "status": "done"
+    },
+    {
+      "id": 427,
+      "category": "office",
+      "title": "石川県庁",
+      "slug": "ishikawa-prefectural-office",
+      "area": "金沢市",
+      "angle": "2003年開庁・地上19階・高さ98.8m・19階展望ロビー無料・鞍月地区",
+      "status": "done"
+    },
+    {
+      "id": 428,
+      "category": "tower",
+      "title": "関門橋",
+      "slug": "kanmon-bridge",
+      "area": "北九州市門司区・下関市",
+      "angle": "1973年開通・全長1068m・中央支間712m・桁下高61m・開通時東洋最長吊橋",
+      "status": "done"
+    },
+    {
+      "id": 429,
+      "category": "office",
+      "title": "マリンメッセ福岡",
+      "slug": "marine-messe-fukuoka",
+      "area": "福岡市博多区",
+      "angle": "1995年A館開館・2021年B館開館・A館最大15000人・九州最大級屋内会場",
+      "status": "done"
+    },
+    {
+      "id": 430,
+      "category": "office",
+      "title": "仙台国際センター",
+      "slug": "sendai-international-center",
+      "area": "仙台市青葉区",
+      "angle": "展示棟2015年完成・展示室約3000㎡・第3回国連防災世界会議主会場・仙台防災枠組採択",
+      "status": "done"
     }
   ]
 }
