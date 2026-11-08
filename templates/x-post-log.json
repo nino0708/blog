@@ -783,5 +783,30 @@
     "slug": "tokyo-bunka-kaikan",
     "postedAt": "2026-11-08",
     "type": "quiz"
+  },
+  {
+    "slug": "aoi-tower-shizuoka",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "cielia-tower-nakanoshima",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "city-tower-osaka-tenma",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "d-tower-nishi-shinjuku",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "daikanyama-address-tower",
+    "postedAt": "2026-11-08",
+    "type": "quiz"
   }
 ]
