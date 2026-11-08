@@ -758,5 +758,30 @@
     "slug": "shinjuku-i-land-tower",
     "postedAt": "2026-11-05",
     "type": "quiz"
+  },
+  {
+    "slug": "sendai-mediatheque",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "kanazawa-21st-century-museum",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "osaka-nakanoshima-museum-of-art",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "roppongi-t-cube",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "tokyo-bunka-kaikan",
+    "postedAt": "2026-11-08",
+    "type": "quiz"
   }
 ]
