@@ -808,5 +808,30 @@
     "slug": "daikanyama-address-tower",
     "postedAt": "2026-11-08",
     "type": "quiz"
+  },
+  {
+    "slug": "ariake-arena",
+    "postedAt": "2026-11-10",
+    "type": "intro"
+  },
+  {
+    "slug": "vantelin-dome-nagoya",
+    "postedAt": "2026-11-10",
+    "type": "intro"
+  },
+  {
+    "slug": "kyocera-dome-osaka",
+    "postedAt": "2026-11-10",
+    "type": "intro"
+  },
+  {
+    "slug": "chubu-centrair-airport",
+    "postedAt": "2026-11-10",
+    "type": "intro"
+  },
+  {
+    "slug": "yokohama-arena",
+    "postedAt": "2026-11-10",
+    "type": "quiz"
   }
 ]
