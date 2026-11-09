@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-09T08:21:34.205476+09:00",
+  "checkedAt": "2026-11-10T08:21:13.146404+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -275,6 +275,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/39/",
+      "slug": "39",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -532,6 +539,83 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/page/39/",
+      "slug": "39",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/ariake-arena/",
+      "slug": "ariake-arena",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Tokyo_Ariake_Arena.jpg/1280px-Tokyo_Ariake_Arena.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/ariake-arena/",
+      "slug": "ariake-arena",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Tokyo_Ariake_Arena.jpg/1280px-Tokyo_Ariake_Arena.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/chubu-centrair-airport/",
+      "slug": "chubu-centrair-airport",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Chubu_International_Airport_Aerial_photograph.2010.jpg/1280px-Chubu_International_Airport_Aerial_photograph.2010.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/chubu-centrair-airport/",
+      "slug": "chubu-centrair-airport",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Chubu_International_Airport_Aerial_photograph.2010.jpg/1280px-Chubu_International_Airport_Aerial_photograph.2010.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kyocera-dome-osaka/",
+      "slug": "kyocera-dome-osaka",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kyocera_Dome_Osaka1.jpg/1280px-Kyocera_Dome_Osaka1.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kyocera-dome-osaka/",
+      "slug": "kyocera-dome-osaka",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kyocera_Dome_Osaka1.jpg/1280px-Kyocera_Dome_Osaka1.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/vantelin-dome-nagoya/",
+      "slug": "vantelin-dome-nagoya",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Nagoya_Dome_-_3.jpg/1280px-Nagoya_Dome_-_3.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/vantelin-dome-nagoya/",
+      "slug": "vantelin-dome-nagoya",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Nagoya_Dome_-_3.jpg/1280px-Nagoya_Dome_-_3.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yokohama-arena/",
+      "slug": "yokohama-arena",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Yokohama_Arena_2013.jpg/1280px-Yokohama_Arena_2013.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yokohama-arena/",
+      "slug": "yokohama-arena",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Yokohama_Arena_2013.jpg/1280px-Yokohama_Arena_2013.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/hiroshima-station-minamoa/",
@@ -832,14 +916,14 @@
       "slug": "meiko-triton",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Meiko_Triton_20171008A.jpg/1280px-Meiko_Triton_20171008A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Meiko_Triton_20171111A.jpg/1280px-Meiko_Triton_20171111A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/meiko-triton/",
       "slug": "meiko-triton",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Meiko_Triton_20171008A.jpg/1280px-Meiko_Triton_20171008A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Meiko_Triton_20171111A.jpg/1280px-Meiko_Triton_20171111A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/saitama-super-arena/",
@@ -2246,14 +2330,14 @@
       "slug": "osaka-bay-tower",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Osaka_Bay_Tower_%281%29.jpg/1280px-Osaka_Bay_Tower_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Osaka_Bay_Tower_%282%29.jpg/1280px-Osaka_Bay_Tower_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/osaka-bay-tower/",
       "slug": "osaka-bay-tower",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Osaka_Bay_Tower_%281%29.jpg/1280px-Osaka_Bay_Tower_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Osaka_Bay_Tower_%282%29.jpg/1280px-Osaka_Bay_Tower_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/osaka-umeda-twin-towers-south/",
@@ -4486,14 +4570,14 @@
       "slug": "st-lukes-garden",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/St_Luke%27s_Garden_1.JPG/1280px-St_Luke%27s_Garden_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/",
