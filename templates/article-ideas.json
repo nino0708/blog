@@ -3902,6 +3902,51 @@
       "area": "仙台市青葉区",
       "angle": "展示棟2015年完成・展示室約3000㎡・第3回国連防災世界会議主会場・仙台防災枠組採択",
       "status": "done"
+    },
+    {
+      "id": 431,
+      "category": "office",
+      "title": "有明アリーナ",
+      "slug": "ariake-arena",
+      "area": "江東区",
+      "angle": "2019年竣工・東京五輪バレーボール会場・久米設計＋竹中工務店JV・収容約15,000人・高さ37m",
+      "status": "done"
+    },
+    {
+      "id": 432,
+      "category": "office",
+      "title": "バンテリンドームナゴヤ",
+      "slug": "vantelin-dome-nagoya",
+      "area": "名古屋市東区",
+      "angle": "1997年開業・高さ66.9m・直径187.2m・旧ナゴヤドーム・野球36,418席・コンサート最大49,000人",
+      "status": "done"
+    },
+    {
+      "id": 433,
+      "category": "office",
+      "title": "京セラドーム大阪",
+      "slug": "kyocera-dome-osaka",
+      "area": "大阪市西区",
+      "angle": "1997年開業・高さ72m・直径166m・日建設計・44,000人収容・大阪初の屋根付き球場",
+      "status": "done"
+    },
+    {
+      "id": 434,
+      "category": "railway",
+      "title": "中部国際空港（セントレア）",
+      "slug": "chubu-centrair-airport",
+      "area": "愛知県常滑市",
+      "angle": "2005年開港・伊勢湾の人工島・3,500m滑走路・愛知万博に合わせた開港・中部国際空港株式会社",
+      "status": "done"
+    },
+    {
+      "id": 435,
+      "category": "office",
+      "title": "横浜アリーナ",
+      "slug": "yokohama-arena",
+      "area": "横浜市港北区",
+      "angle": "1989年開業・竹中工務店設計・収容約17,000人・新横浜に建つ大型コンサートアリーナ",
+      "status": "done"
     }
   ]
 }
