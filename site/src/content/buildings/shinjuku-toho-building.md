@@ -11,6 +11,9 @@ architect: "竹中工務店"
 tags: ["新宿区", "歌舞伎町", "超高層ビル", "複合施設"]
 publishedAt: 2026-11-01
 summary: "東宝株式会社が歌舞伎町の縁の地に建てた地上30階の複合ビル。映画館・商業・ホテルを一棟に収め、2015年3月に竣工した。竹中工務店が設計施工を担った。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Shinjuku_Toho_Building.jpg/1280px-Shinjuku_Toho_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinjuku_Toho_Building.jpg"
 verified: true
 sources:
   - "東宝株式会社 施設概要（公開情報）"

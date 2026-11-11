@@ -12,6 +12,9 @@ architect: "日建設計"
 tags: ["渋谷区", "商業施設", "再開発", "新宿南口"]
 publishedAt: 2026-10-03
 summary: "1996年開業、旧新宿貨物駅跡地の大規模再開発によって誕生した複合商業施設。高島屋新宿店を核テナントに据え、JR新宿駅南口のランドマークとなった。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Takashimaya-Times-Square.jpg/1280px-Takashimaya-Times-Square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "MaedaAkihiko / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Takashimaya-Times-Square.jpg"
 verified: true
 sources:
   - "Wikipedia『タカシマヤタイムズスクエア』（竣工1996年・地上14階・地下4階・高さ77m・設計日建設計・開発レールシティ東開発）"

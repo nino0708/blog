@@ -9,6 +9,9 @@ floorsBelow: 3
 tags: ["新宿区", "西新宿", "オフィスビル", "超高層ビル", "NTT"]
 publishedAt: 2026-11-04
 summary: "1990年竣工の地上30階・地下3階建てオフィスビル。西新宿超高層街の一角に立つ黒みがかった外壁が特徴で、NTT系企業の拠点として知られる。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/05/Shinjuku-Monolith-Building-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "Rs1421 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinjuku-Monolith-Building-02.jpg"
 verified: true
 sources:
   - "at-office.jp 物件情報（竣工1990年・所在地 新宿区西新宿2-3-1・地上30階地下3階）"

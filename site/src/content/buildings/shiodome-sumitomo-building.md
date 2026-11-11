@@ -12,6 +12,9 @@ architect: "日建設計"
 tags: ["港区", "超高層ビル", "汐留", "再開発", "複合ビル"]
 publishedAt: 2026-10-03
 summary: "2004年竣工、汐留シオサイトの一角に立つ地上27階・高さ128.1mの複合超高層ビル。住友不動産と住友生命保険が共同開発し、旧汐留貨物駅跡地再開発の一翼を担う。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Shiodome_Sumitomo_Building_2007.JPG/1280px-Shiodome_Sumitomo_Building_2007.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Itoshin87 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shiodome_Sumitomo_Building_2007.JPG"
 verified: true
 sources:
   - "Wikipedia『汐留住友ビル』（竣工2004年・地上27階・地下3階・高さ128.1m・設計日建設計・開発住友不動産・住友生命保険）"

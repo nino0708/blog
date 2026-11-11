@@ -10,6 +10,9 @@ heightM: 200
 tags: ["新宿区", "西新宿", "超高層ビル", "オフィス", "BCS賞"]
 publishedAt: 2026-08-25
 summary: "東京都新宿区西新宿に立つ地上43階・高さ200mの超高層オフィスビル。1976年に安田火災海上本社ビルとして竣工し、第19回BCS賞を受賞した。曲面を帯びたファサードが西新宿の直線的な超高層群のなかで異彩を放つ。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sompo-Japan_Nagoya_Building.jpg/1280px-Sompo-Japan_Nagoya_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kiyok / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Sompo-Japan_Nagoya_Building.jpg"
 verified: true
 sources:
   - "超高層ビル・都市開発研究所「損保ジャパン本社ビル」https://skyscrapers-and-urbandevelopment.com/page-258/page-29431/page-572/page-3778/"

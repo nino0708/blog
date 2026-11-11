@@ -12,6 +12,9 @@ architect: "梓設計"
 tags: ["港区", "タワーマンション", "再開発", "白金高輪"]
 publishedAt: 2026-09-21
 summary: "2022年竣工・東棟地上45階・高さ約156mの港区白金の大規模複合タワーマンション。5社合同の市街地再開発により総戸数1247戸が生まれた、白金高輪エリアの新たなランドマーク。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shirokane_The_Sky_3.jpg"
 verified: true
 sources:
   - "白金ザ・スカイ Wikipedia"

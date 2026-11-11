@@ -13,6 +13,9 @@ architect: "竹中工務店"
 tags: ["大阪市中央区", "心斎橋", "商業施設", "再開発", "大阪"]
 publishedAt: 2026-11-11
 summary: "大阪・心斎橋筋に建つ地上14階・地下2階の複合商業施設。延べ床面積約58,000㎡を竹中工務店が設計施工し、2020年11月に開業。旧そごう心斎橋本館跡に建つ大阪ミナミの新拠点。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/PARCO_Shinsaibashi_%283%29.jpg/1280px-PARCO_Shinsaibashi_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Mr.ちゅらさん / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:PARCO_Shinsaibashi_(3).jpg"
 verified: true
 sources: ["心斎橋PARCO - Wikipedia（地上14階・地下2階・延床面積約58,000㎡・2020年11月開業・大阪市中央区心斎橋筋一丁目8番3号・設計施工：竹中工務店）"]
 ---

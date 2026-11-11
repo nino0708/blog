@@ -13,6 +13,9 @@ architect: "三菱地所設計・竹中工務店"
 tags: ["名古屋市", "超高層ビル", "栄", "再開発"]
 publishedAt: 2026-08-24
 summary: "2026年3月に竣工した地上41階・高さ211.7mの栄エリア最高層ビル。名古屋市営地下鉄栄駅に直結し、商業施設・シネコン・オフィス・コンラッド名古屋を縦に積んだ複合施設として、名駅一極集中が続いてきた名古屋の超高層史に栄側から新たな頁を加えた。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/The_Landmark_Nagoya_Sakae_2026-04_ac.jpg/1280px-The_Landmark_Nagoya_Sakae_2026-04_ac.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Asturio Cantabrio / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:The_Landmark_Nagoya_Sakae_2026-04_ac.jpg"
 verified: true
 sources:
   - "三菱地所ニュースリリース 2026-03-17「ザ・ランドマーク名古屋栄」誕生（mec.co.jp）― 竣工2026年3月31日・地上41階地下4階・延床面積109,679.74m²・三菱地所設計・竹中工務店・所在地確認"

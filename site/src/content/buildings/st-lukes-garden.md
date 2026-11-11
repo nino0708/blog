@@ -12,6 +12,9 @@ architect: "日建設計"
 tags: ["中央区", "明石町", "超高層ビル", "複合開発", "隅田川"]
 publishedAt: 2026-08-21
 summary: "東京都中央区明石町に1994年5月竣工した超高層複合施設。聖路加タワー（地上51階・高さ約220m）と住居棟から成り、隅田川に面して大川端のスカイラインを形成する。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:St_Luke%27s_Garden_2.JPG"
 verified: true
 sources:
   - "聖路加タワー オフィス情報（三井不動産・東急不動産・CBRE等）より地上51階・地下4階・高さ220.63m・竣工1994年5月・中央区明石町8-1・設計日建設計を確認"

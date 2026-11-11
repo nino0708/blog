@@ -11,6 +11,9 @@ architect: "三菱地所設計"
 tags: ["港区", "超高層住宅", "高輪", "タワーマンション"]
 publishedAt: 2026-09-05
 summary: "2005年10月竣工、地上47階の超高層マンション。桜田通りに面した9,000平方メートルを超える高輪の敷地に、三菱地所設計・大成建設が手がけた港区を代表するタワー棟。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Takanawa_Residence.jpg/1280px-Takanawa_Residence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Takanawa_Residence.jpg"
 verified: true
 sources:
   - "高輪ザ・レジデンス - Wikipedia（竣工2005年10月・地上47階地下1階・タワー棟486戸・テラス棟88戸・設計：三菱地所設計・施工：大成建設・港区高輪1丁目）"
