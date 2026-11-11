@@ -833,5 +833,30 @@
     "slug": "yokohama-arena",
     "postedAt": "2026-11-10",
     "type": "quiz"
+  },
+  {
+    "slug": "fukuoka-paypay-dome",
+    "postedAt": "2026-11-11",
+    "type": "intro"
+  },
+  {
+    "slug": "kabukiza-tower",
+    "postedAt": "2026-11-11",
+    "type": "intro"
+  },
+  {
+    "slug": "kyoto-tower",
+    "postedAt": "2026-11-11",
+    "type": "intro"
+  },
+  {
+    "slug": "jr-shinjuku-miraina-tower",
+    "postedAt": "2026-11-11",
+    "type": "intro"
+  },
+  {
+    "slug": "kachidoki-the-tower",
+    "postedAt": "2026-11-11",
+    "type": "quiz"
   }
 ]
