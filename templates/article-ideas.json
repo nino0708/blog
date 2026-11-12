@@ -3992,6 +3992,51 @@
       "area": "大阪市中央区",
       "angle": "2020年11月開業・地上14階・延床58,000㎡・竹中工務店設計施工・旧そごう跡地・大阪ミナミ",
       "status": "done"
+    },
+    {
+      "id": 441,
+      "category": "office",
+      "title": "サッポロファクトリー",
+      "slug": "sapporo-factory",
+      "area": "札幌市中央区",
+      "angle": "1993年開業・延床123,322m²・7棟構成・1876年開拓使麦酒醸造所跡地・産業遺産再生",
+      "status": "done"
+    },
+    {
+      "id": 442,
+      "category": "office",
+      "title": "新国立劇場",
+      "slug": "new-national-theatre-tokyo",
+      "area": "渋谷区",
+      "angle": "1997年竣工・地上5階地下4階・延床68,879m²・設計：柳澤孝彦・日本初の国立現代舞台芸術劇場・初台",
+      "status": "done"
+    },
+    {
+      "id": 443,
+      "category": "office",
+      "title": "日本科学未来館",
+      "slug": "miraikan",
+      "area": "江東区",
+      "angle": "2001年開館・地上7階・延床40,744m²・JST運営・お台場・宇宙船地球号ドーム",
+      "status": "done"
+    },
+    {
+      "id": 444,
+      "category": "office",
+      "title": "豊田スタジアム",
+      "slug": "toyota-stadium",
+      "area": "豊田市",
+      "angle": "2001年完成・地上6階・収容44,380人・黒川紀章設計・2002FIFAワールドカップ会場・名古屋グランパス本拠地",
+      "status": "done"
+    },
+    {
+      "id": 445,
+      "category": "office",
+      "title": "北九州市立美術館",
+      "slug": "kitakyushu-museum-of-art",
+      "area": "北九州市戸畑区",
+      "angle": "1974年開館・地上3階・延床11,500m²・磯崎新設計・望遠鏡型キャノピー・日本建築学会賞1975年",
+      "status": "done"
     }
   ]
 }
