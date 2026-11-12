@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-12T08:21:47.060611+09:00",
+  "checkedAt": "2026-11-13T08:22:09.521014+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -282,6 +282,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/40/",
+      "slug": "40",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -548,6 +555,83 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/en/buildings/page/40/",
+      "slug": "40",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/kitakyushu-museum-of-art/",
+      "slug": "kitakyushu-museum-of-art",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Kitakyushu_Municipal_Museum_of_Art_20090728.JPG/1280px-Kitakyushu_Municipal_Museum_of_Art_20090728.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/kitakyushu-museum-of-art/",
+      "slug": "kitakyushu-museum-of-art",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Kitakyushu_Municipal_Museum_of_Art_20090728.JPG/1280px-Kitakyushu_Municipal_Museum_of_Art_20090728.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/miraikan/",
+      "slug": "miraikan",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Miraikan.jpg/1280px-Miraikan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/miraikan/",
+      "slug": "miraikan",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Miraikan.jpg/1280px-Miraikan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/new-national-theatre-tokyo/",
+      "slug": "new-national-theatre-tokyo",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/New_National_Theatre%2C_Tokyo_2010.jpg/1280px-New_National_Theatre%2C_Tokyo_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/new-national-theatre-tokyo/",
+      "slug": "new-national-theatre-tokyo",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/New_National_Theatre%2C_Tokyo_2010.jpg/1280px-New_National_Theatre%2C_Tokyo_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/sapporo-factory/",
+      "slug": "sapporo-factory",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Sapporo_Factory1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/sapporo-factory/",
+      "slug": "sapporo-factory",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Sapporo_Factory1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/toyota-stadium/",
+      "slug": "toyota-stadium",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Toyota_Stadium_photo.jpg/1280px-Toyota_Stadium_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/toyota-stadium/",
+      "slug": "toyota-stadium",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Toyota_Stadium_photo.jpg/1280px-Toyota_Stadium_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/hirakawacho-mori-tower/",
       "slug": "hirakawacho-mori-tower",
       "lang": "ja",
@@ -607,15 +691,15 @@
       "url": "https://builtjapan.com/buildings/shinsaibashi-parco/",
       "slug": "shinsaibashi-parco",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/PARCO_Shinsaibashi_%283%29.jpg/1280px-PARCO_Shinsaibashi_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shinsaibashi-parco/",
       "slug": "shinsaibashi-parco",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/PARCO_Shinsaibashi_%283%29.jpg/1280px-PARCO_Shinsaibashi_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/ariake-arena/",
@@ -915,15 +999,15 @@
       "url": "https://builtjapan.com/buildings/shinjuku-monolith/",
       "slug": "shinjuku-monolith",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Shinjuku-Monolith-Building-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shinjuku-monolith/",
       "slug": "shinjuku-monolith",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Shinjuku-Monolith-Building-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/tv-asahi-headquarters/",
@@ -1153,15 +1237,15 @@
       "url": "https://builtjapan.com/buildings/shinjuku-toho-building/",
       "slug": "shinjuku-toho-building",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Shinjuku_Toho_Building.jpg/1280px-Shinjuku_Toho_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shinjuku-toho-building/",
       "slug": "shinjuku-toho-building",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Shinjuku_Toho_Building.jpg/1280px-Shinjuku_Toho_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/grand-hyatt-tokyo/",
@@ -1391,15 +1475,15 @@
       "url": "https://builtjapan.com/buildings/tenjin-business-center/",
       "slug": "tenjin-business-center",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tenjin_Business_Center.jpg/1280px-Tenjin_Business_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tenjin-business-center/",
       "slug": "tenjin-business-center",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tenjin_Business_Center.jpg/1280px-Tenjin_Business_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/toki-messe-niigata/",
@@ -1937,15 +2021,15 @@
       "url": "https://builtjapan.com/buildings/takamatsu-symbol-tower/",
       "slug": "takamatsu-symbol-tower",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Takamatsu_Symbol_Tower_20170121.jpg/1280px-Takamatsu_Symbol_Tower_20170121.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/takamatsu-symbol-tower/",
       "slug": "takamatsu-symbol-tower",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Takamatsu_Symbol_Tower_20170121.jpg/1280px-Takamatsu_Symbol_Tower_20170121.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/westin-tokyo/",
@@ -2637,43 +2721,43 @@
       "url": "https://builtjapan.com/buildings/shiodome-city-center/",
       "slug": "shiodome-city-center",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Shiodome_City_Center_23.jpg/1280px-Shiodome_City_Center_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shiodome-city-center/",
       "slug": "shiodome-city-center",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Shiodome_City_Center_23.jpg/1280px-Shiodome_City_Center_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/shiodome-sumitomo-building/",
       "slug": "shiodome-sumitomo-building",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Shiodome_Sumitomo_Building_2007.JPG/1280px-Shiodome_Sumitomo_Building_2007.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shiodome-sumitomo-building/",
       "slug": "shiodome-sumitomo-building",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Shiodome_Sumitomo_Building_2007.JPG/1280px-Shiodome_Sumitomo_Building_2007.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/takashimaya-times-square/",
       "slug": "takashimaya-times-square",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Takashimaya-Times-Square.jpg/1280px-Takashimaya-Times-Square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/takashimaya-times-square/",
       "slug": "takashimaya-times-square",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Takashimaya-Times-Square.jpg/1280px-Takashimaya-Times-Square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/azabudai-hills-residence-a/",
@@ -3057,15 +3141,15 @@
       "url": "https://builtjapan.com/buildings/shinjuku-oak-tower/",
       "slug": "shinjuku-oak-tower",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG/1280px-Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shinjuku-oak-tower/",
       "slug": "shinjuku-oak-tower",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG/1280px-Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/telecom-center/",
@@ -3225,15 +3309,15 @@
       "url": "https://builtjapan.com/buildings/shirokane-the-sky/",
       "slug": "shirokane-the-sky",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shirokane-the-sky/",
       "slug": "shirokane-the-sky",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Shirokane_The_Sky_3.jpg/1280px-Shirokane_The_Sky_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/fuji-tv-headquarters/",
@@ -3967,15 +4051,15 @@
       "url": "https://builtjapan.com/buildings/takanawa-the-residence/",
       "slug": "takanawa-the-residence",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Takanawa_Residence.jpg/1280px-Takanawa_Residence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/takanawa-the-residence/",
       "slug": "takanawa-the-residence",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Takanawa_Residence.jpg/1280px-Takanawa_Residence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/nissay-hamamatsucho-crea-tower/",
@@ -4513,15 +4597,15 @@
       "url": "https://builtjapan.com/buildings/sompo-japan-headquarters/",
       "slug": "sompo-japan-headquarters",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sompo-Japan_Nagoya_Building.jpg/1280px-Sompo-Japan_Nagoya_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/sompo-japan-headquarters/",
       "slug": "sompo-japan-headquarters",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sompo-Japan_Nagoya_Building.jpg/1280px-Sompo-Japan_Nagoya_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/x-tower-osaka-bay/",
@@ -4555,15 +4639,15 @@
       "url": "https://builtjapan.com/buildings/the-landmark-nagoya-sakae/",
       "slug": "the-landmark-nagoya-sakae",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/The_Landmark_Nagoya_Sakae_2026-04_ac.jpg/1280px-The_Landmark_Nagoya_Sakae_2026-04_ac.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/the-landmark-nagoya-sakae/",
       "slug": "the-landmark-nagoya-sakae",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/The_Landmark_Nagoya_Sakae_2026-04_ac.jpg/1280px-The_Landmark_Nagoya_Sakae_2026-04_ac.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/jr-central-towers/",
@@ -4639,15 +4723,15 @@
       "url": "https://builtjapan.com/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/st-lukes-garden/",
       "slug": "st-lukes-garden",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/St_Luke%27s_Garden_2.JPG/1280px-St_Luke%27s_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/",

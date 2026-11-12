@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-12 08:21 JST
-- 対象: 公開済み記事 902 ページ（https://builtjapan.com）
-- 正常表示: 696 / 902（77.2%）
-- **要対応: 206 件**（画像なし 206 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-11-13 08:22 JST
+- 対象: 公開済み記事 914 ページ（https://builtjapan.com）
+- 正常表示: 734 / 914（80.3%）
+- **要対応: 180 件**（画像なし 180 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -70,6 +70,7 @@
 | [38（JA）](https://builtjapan.com/buildings/page/38/) | ヒーロー画像なし（プレースホルダ表示） |
 | [39（JA）](https://builtjapan.com/buildings/page/39/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
+| [40（JA）](https://builtjapan.com/buildings/page/40/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（JA）](https://builtjapan.com/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
 | [7（JA）](https://builtjapan.com/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -82,25 +83,11 @@
 | [shibuya-fukuras（JA）](https://builtjapan.com/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（JA）](https://builtjapan.com/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shin-tomei-expressway（JA）](https://builtjapan.com/buildings/shin-tomei-expressway/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shinjuku-monolith（JA）](https://builtjapan.com/buildings/shinjuku-monolith/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shinjuku-oak-tower（JA）](https://builtjapan.com/buildings/shinjuku-oak-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shinjuku-toho-building（JA）](https://builtjapan.com/buildings/shinjuku-toho-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shinsaibashi-parco（JA）](https://builtjapan.com/buildings/shinsaibashi-parco/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shiodome-city-center（JA）](https://builtjapan.com/buildings/shiodome-city-center/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shiodome-sumitomo-building（JA）](https://builtjapan.com/buildings/shiodome-sumitomo-building/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shirokane-the-sky（JA）](https://builtjapan.com/buildings/shirokane-the-sky/) | ヒーロー画像なし（プレースホルダ表示） |
-| [sompo-japan-headquarters（JA）](https://builtjapan.com/buildings/sompo-japan-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
-| [st-lukes-garden（JA）](https://builtjapan.com/buildings/st-lukes-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-fudosan-shinjuku-grand-tower（JA）](https://builtjapan.com/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（JA）](https://builtjapan.com/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（JA）](https://builtjapan.com/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-toranomon-tower（JA）](https://builtjapan.com/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [takamatsu-symbol-tower（JA）](https://builtjapan.com/buildings/takamatsu-symbol-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [takanawa-the-residence（JA）](https://builtjapan.com/buildings/takanawa-the-residence/) | ヒーロー画像なし（プレースホルダ表示） |
-| [takashimaya-times-square（JA）](https://builtjapan.com/buildings/takashimaya-times-square/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tenjin-business-center（JA）](https://builtjapan.com/buildings/tenjin-business-center/) | ヒーロー画像なし（プレースホルダ表示） |
-| [the-landmark-nagoya-sakae（JA）](https://builtjapan.com/buildings/the-landmark-nagoya-sakae/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（JA）](https://builtjapan.com/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toda-building（JA）](https://builtjapan.com/buildings/toda-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome-hotel（JA）](https://builtjapan.com/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -173,6 +160,7 @@
 | [38（EN）](https://builtjapan.com/en/buildings/page/38/) | ヒーロー画像なし（プレースホルダ表示） |
 | [39（EN）](https://builtjapan.com/en/buildings/page/39/) | ヒーロー画像なし（プレースホルダ表示） |
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
+| [40（EN）](https://builtjapan.com/en/buildings/page/40/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（EN）](https://builtjapan.com/en/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
 | [7（EN）](https://builtjapan.com/en/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -185,25 +173,11 @@
 | [shibuya-fukuras（EN）](https://builtjapan.com/en/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（EN）](https://builtjapan.com/en/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shin-tomei-expressway（EN）](https://builtjapan.com/en/buildings/shin-tomei-expressway/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shinjuku-monolith（EN）](https://builtjapan.com/en/buildings/shinjuku-monolith/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shinjuku-oak-tower（EN）](https://builtjapan.com/en/buildings/shinjuku-oak-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shinjuku-toho-building（EN）](https://builtjapan.com/en/buildings/shinjuku-toho-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shinsaibashi-parco（EN）](https://builtjapan.com/en/buildings/shinsaibashi-parco/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shiodome-city-center（EN）](https://builtjapan.com/en/buildings/shiodome-city-center/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shiodome-sumitomo-building（EN）](https://builtjapan.com/en/buildings/shiodome-sumitomo-building/) | ヒーロー画像なし（プレースホルダ表示） |
-| [shirokane-the-sky（EN）](https://builtjapan.com/en/buildings/shirokane-the-sky/) | ヒーロー画像なし（プレースホルダ表示） |
-| [sompo-japan-headquarters（EN）](https://builtjapan.com/en/buildings/sompo-japan-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
-| [st-lukes-garden（EN）](https://builtjapan.com/en/buildings/st-lukes-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-fudosan-shinjuku-grand-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-mita-twin-building（EN）](https://builtjapan.com/en/buildings/sumitomo-mita-twin-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-toranomon-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-toranomon-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [takamatsu-symbol-tower（EN）](https://builtjapan.com/en/buildings/takamatsu-symbol-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [takanawa-the-residence（EN）](https://builtjapan.com/en/buildings/takanawa-the-residence/) | ヒーロー画像なし（プレースホルダ表示） |
-| [takashimaya-times-square（EN）](https://builtjapan.com/en/buildings/takashimaya-times-square/) | ヒーロー画像なし（プレースホルダ表示） |
-| [tenjin-business-center（EN）](https://builtjapan.com/en/buildings/tenjin-business-center/) | ヒーロー画像なし（プレースホルダ表示） |
-| [the-landmark-nagoya-sakae（EN）](https://builtjapan.com/en/buildings/the-landmark-nagoya-sakae/) | ヒーロー画像なし（プレースホルダ表示） |
 | [the-parkhouse-gran-chidorigafuchi（EN）](https://builtjapan.com/en/buildings/the-parkhouse-gran-chidorigafuchi/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toda-building（EN）](https://builtjapan.com/en/buildings/toda-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tokyo-dome-hotel（EN）](https://builtjapan.com/en/buildings/tokyo-dome-hotel/) | ヒーロー画像なし（プレースホルダ表示） |
