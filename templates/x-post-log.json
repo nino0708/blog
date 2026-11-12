@@ -858,5 +858,30 @@
     "slug": "kachidoki-the-tower",
     "postedAt": "2026-11-11",
     "type": "quiz"
+  },
+  {
+    "slug": "grand-hyatt-tokyo",
+    "postedAt": "2026-11-12",
+    "type": "intro"
+  },
+  {
+    "slug": "granship",
+    "postedAt": "2026-11-12",
+    "type": "intro"
+  },
+  {
+    "slug": "haneda-innovation-city",
+    "postedAt": "2026-11-12",
+    "type": "intro"
+  },
+  {
+    "slug": "herbis-osaka",
+    "postedAt": "2026-11-12",
+    "type": "intro"
+  },
+  {
+    "slug": "hirakawacho-mori-tower",
+    "postedAt": "2026-11-12",
+    "type": "quiz"
   }
 ]
