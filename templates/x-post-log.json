@@ -883,5 +883,30 @@
     "slug": "hirakawacho-mori-tower",
     "postedAt": "2026-11-12",
     "type": "quiz"
+  },
+  {
+    "slug": "dentsu-shiodome",
+    "postedAt": "2026-11-14",
+    "type": "intro"
+  },
+  {
+    "slug": "hibiya-fort-tower",
+    "postedAt": "2026-11-14",
+    "type": "intro"
+  },
+  {
+    "slug": "hiroshima-jp-building",
+    "postedAt": "2026-11-14",
+    "type": "intro"
+  },
+  {
+    "slug": "hiroshima-station-minamoa",
+    "postedAt": "2026-11-14",
+    "type": "intro"
+  },
+  {
+    "slug": "intercontinental-tokyo-bay",
+    "postedAt": "2026-11-14",
+    "type": "quiz"
   }
 ]
