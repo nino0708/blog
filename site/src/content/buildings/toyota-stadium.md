@@ -13,6 +13,9 @@ architect: "黒川紀章建築都市設計事務所"
 tags: ["豊田市", "スタジアム", "サッカー", "ワールドカップ", "愛知県"]
 publishedAt: 2026-11-12
 summary: "2001年10月完成、愛知県豊田市。収容44,380人・延床約102,000m²の全天候型サッカー専用スタジアム。2002 FIFAワールドカップ日韓大会の開催会場の一つで、設計は黒川紀章建築都市設計事務所。名鉄三河線「豊田市」駅から徒歩約10分。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Toyota_Stadium_photo.jpg/1280px-Toyota_Stadium_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "TylerDurdenXXX / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Toyota_Stadium_photo.jpg"
 verified: true
 sources:
   - "Wikipedia「豊田スタジアム」（2001年完成・収容45,000人・設計：黒川紀章建築都市設計事務所）"

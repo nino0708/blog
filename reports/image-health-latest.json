@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-13T08:22:09.521014+09:00",
+  "checkedAt": "2026-11-14T08:21:23.254035+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -562,6 +562,76 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/dentsu-shiodome/",
+      "slug": "dentsu-shiodome",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Dentsu_Headquarters_Building_20090802.jpg/1280px-Dentsu_Headquarters_Building_20090802.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/dentsu-shiodome/",
+      "slug": "dentsu-shiodome",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Dentsu_Headquarters_Building_20090802.jpg/1280px-Dentsu_Headquarters_Building_20090802.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/hibiya-fort-tower/",
+      "slug": "hibiya-fort-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/HIBIYA_FORT_TOWER.jpg/1280px-HIBIYA_FORT_TOWER.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/hibiya-fort-tower/",
+      "slug": "hibiya-fort-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/HIBIYA_FORT_TOWER.jpg/1280px-HIBIYA_FORT_TOWER.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nagoya-mode-gakuen-spiral-towers/",
+      "slug": "nagoya-mode-gakuen-spiral-towers",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Mode_Gakuen_Spiral_Towers_1.jpg/1280px-Mode_Gakuen_Spiral_Towers_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nagoya-mode-gakuen-spiral-towers/",
+      "slug": "nagoya-mode-gakuen-spiral-towers",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Mode_Gakuen_Spiral_Towers_1.jpg/1280px-Mode_Gakuen_Spiral_Towers_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nomura-shinjuku-building/",
+      "slug": "nomura-shinjuku-building",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Shinjuku-Nomura-Building-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nomura-shinjuku-building/",
+      "slug": "nomura-shinjuku-building",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Shinjuku-Nomura-Building-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/rinku-gate-tower/",
+      "slug": "rinku-gate-tower",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Rinku_Gate_Tower_Building02s3200.jpg/1280px-Rinku_Gate_Tower_Building02s3200.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/rinku-gate-tower/",
+      "slug": "rinku-gate-tower",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Rinku_Gate_Tower_Building02s3200.jpg/1280px-Rinku_Gate_Tower_Building02s3200.jpg"
+    },
+    {
       "url": "https://builtjapan.com/buildings/kitakyushu-museum-of-art/",
       "slug": "kitakyushu-museum-of-art",
       "lang": "ja",
@@ -621,15 +691,15 @@
       "url": "https://builtjapan.com/buildings/toyota-stadium/",
       "slug": "toyota-stadium",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Toyota_Stadium_photo.jpg/1280px-Toyota_Stadium_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/toyota-stadium/",
       "slug": "toyota-stadium",
       "lang": "en",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Toyota_Stadium_photo.jpg/1280px-Toyota_Stadium_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/hirakawacho-mori-tower/",
@@ -985,15 +1055,15 @@
       "url": "https://builtjapan.com/buildings/shinjuku-front-tower/",
       "slug": "shinjuku-front-tower",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Shinjuku_front_tower_2011.jpg/1280px-Shinjuku_front_tower_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shinjuku-front-tower/",
       "slug": "shinjuku-front-tower",
       "lang": "en",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Shinjuku_front_tower_2011.jpg/1280px-Shinjuku_front_tower_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/shinjuku-monolith/",
@@ -1070,14 +1140,14 @@
       "slug": "meiko-triton",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Meiko_Triton_20171008A.jpg/1280px-Meiko_Triton_20171008A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Meiko_Triton_20170925A.jpg/1280px-Meiko_Triton_20170925A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/meiko-triton/",
       "slug": "meiko-triton",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Meiko_Triton_20171008A.jpg/1280px-Meiko_Triton_20171008A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Meiko_Triton_20170925A.jpg/1280px-Meiko_Triton_20170925A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/saitama-super-arena/",
@@ -1825,15 +1895,15 @@
       "url": "https://builtjapan.com/buildings/shinjuku-el-tower/",
       "slug": "shinjuku-el-tower",
       "lang": "ja",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinjuku_L_tower.jpg/1280px-Shinjuku_L_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shinjuku-el-tower/",
       "slug": "shinjuku-el-tower",
       "lang": "en",
-      "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinjuku_L_tower.jpg/1280px-Shinjuku_L_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-world-gate-akasaka/",

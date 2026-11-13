@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-13 08:22 JST
-- 対象: 公開済み記事 914 ページ（https://builtjapan.com）
-- 正常表示: 734 / 914（80.3%）
-- **要対応: 180 件**（画像なし 180 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-11-14 08:21 JST
+- 対象: 公開済み記事 924 ページ（https://builtjapan.com）
+- 正常表示: 738 / 924（79.9%）
+- **要対応: 186 件**（画像なし 186 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -83,6 +83,8 @@
 | [shibuya-fukuras（JA）](https://builtjapan.com/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（JA）](https://builtjapan.com/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shin-tomei-expressway（JA）](https://builtjapan.com/buildings/shin-tomei-expressway/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shinjuku-el-tower（JA）](https://builtjapan.com/buildings/shinjuku-el-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shinjuku-front-tower（JA）](https://builtjapan.com/buildings/shinjuku-front-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-fudosan-shinjuku-grand-tower（JA）](https://builtjapan.com/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（JA）](https://builtjapan.com/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -95,6 +97,7 @@
 | [tokyo-world-gate-akasaka（JA）](https://builtjapan.com/buildings/tokyo-world-gate-akasaka/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（JA）](https://builtjapan.com/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（JA）](https://builtjapan.com/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
+| [toyota-stadium（JA）](https://builtjapan.com/buildings/toyota-stadium/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tv-asahi-headquarters（JA）](https://builtjapan.com/buildings/tv-asahi-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
 | [utsunomiya-lrt（JA）](https://builtjapan.com/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（JA）](https://builtjapan.com/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -173,6 +176,8 @@
 | [shibuya-fukuras（EN）](https://builtjapan.com/en/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（EN）](https://builtjapan.com/en/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shin-tomei-expressway（EN）](https://builtjapan.com/en/buildings/shin-tomei-expressway/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shinjuku-el-tower（EN）](https://builtjapan.com/en/buildings/shinjuku-el-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shinjuku-front-tower（EN）](https://builtjapan.com/en/buildings/shinjuku-front-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-fudosan-shinjuku-grand-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -185,6 +190,7 @@
 | [tokyo-world-gate-akasaka（EN）](https://builtjapan.com/en/buildings/tokyo-world-gate-akasaka/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tornare-nihonbashi-hamacho（EN）](https://builtjapan.com/en/buildings/tornare-nihonbashi-hamacho/) | ヒーロー画像なし（プレースホルダ表示） |
 | [toyosu-foresia（EN）](https://builtjapan.com/en/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
+| [toyota-stadium（EN）](https://builtjapan.com/en/buildings/toyota-stadium/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tv-asahi-headquarters（EN）](https://builtjapan.com/en/buildings/tv-asahi-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
 | [utsunomiya-lrt（EN）](https://builtjapan.com/en/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |

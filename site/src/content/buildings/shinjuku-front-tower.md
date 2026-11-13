@@ -8,6 +8,9 @@ floorsAbove: 34
 tags: ["新宿区", "西新宿", "オフィスビル", "超高層ビル", "北新宿"]
 publishedAt: 2026-11-04
 summary: "2011年竣工の地上34階建てオフィスタワー。西新宿駅と中野坂上駅のほぼ中間に位置し、大型フロアを擁する大規模オフィスビルとして北新宿エリアの業務集積を支える。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Shinjuku_front_tower_2011.jpg/1280px-Shinjuku_front_tower_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "User:Kentin / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinjuku_front_tower_2011.jpg"
 verified: true
 sources:
   - "officee.jp 物件情報（竣工2011年5月・所在地 新宿区北新宿2-21-1・地上34階・基準階約511坪・EV18基）"

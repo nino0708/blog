@@ -14,6 +14,9 @@ architect: "清水建設"
 tags: ["新宿区", "オフィスビル", "西新宿"]
 publishedAt: 2026-10-22
 summary: "1989年（平成元年）竣工、地上31階・高さ121メートルの西新宿のオフィスビル。大手生命保険会社など4社が共同開発した複合ビルで、新宿副都心形成期に名を連ねる一棟。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinjuku_L_tower.jpg/1280px-Shinjuku_L_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "User:Kentin / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinjuku_L_tower.jpg"
 verified: true
 sources: ["新宿エルタワー - Wikipedia（https://ja.wikipedia.org/wiki/新宿エルタワー）"]
 ---
