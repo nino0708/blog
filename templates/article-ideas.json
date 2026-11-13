@@ -4037,6 +4037,51 @@
       "area": "北九州市戸畑区",
       "angle": "1974年開館・地上3階・延床11,500m²・磯崎新設計・望遠鏡型キャノピー・日本建築学会賞1975年",
       "status": "done"
+    },
+    {
+      "id": 446,
+      "category": "office",
+      "title": "りんくうゲートタワービル",
+      "slug": "rinku-gate-tower",
+      "area": "泉佐野市",
+      "angle": "1996年8月竣工・地上56階・高さ256m・設計日建設計+安井建築設計事務所・関西国際空港隣接・国際会議場+オフィス+ホテルの複合ビル",
+      "status": "done"
+    },
+    {
+      "id": 447,
+      "category": "office",
+      "title": "名古屋モード学園スパイラルタワーズ",
+      "slug": "nagoya-mode-gakuen-spiral-towers",
+      "area": "名古屋市中村区",
+      "angle": "2008年竣工・地上36階・高さ170m・設計日建設計・3本の教育棟ウイングが螺旋状に絡み合う前衛建築・名古屋駅至近",
+      "status": "done"
+    },
+    {
+      "id": 448,
+      "category": "office",
+      "title": "日比谷フォートタワー",
+      "slug": "hibiya-fort-tower",
+      "area": "港区",
+      "angle": "2021年7月開業・地上27階・高さ138.4m・設計日建設計+清水建設JV・新橋田村町地区市街地再開発・日比谷×虎ノ門の狭間",
+      "status": "done"
+    },
+    {
+      "id": 449,
+      "category": "office",
+      "title": "新宿野村ビル",
+      "slug": "nomura-shinjuku-building",
+      "area": "新宿区",
+      "angle": "1978年6月竣工・地上50階・高さ209.9m・設計安井建築設計事務所・施工熊谷組・野村不動産本社・西新宿副都心開発の先駆け",
+      "status": "done"
+    },
+    {
+      "id": 450,
+      "category": "office",
+      "title": "電通本社ビル",
+      "slug": "dentsu-shiodome",
+      "area": "港区",
+      "angle": "2002年12月開業・地上48階・高さ213m・デザインジャン・ヌーベル・施工大林+鹿島+清水+大成+竹中JV・汐留再開発・カレッタ汐留",
+      "status": "done"
     }
   ]
 }
