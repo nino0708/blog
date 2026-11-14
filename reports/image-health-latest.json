@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-14T08:21:23.254035+09:00",
+  "checkedAt": "2026-11-15T08:21:30.122533+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -289,6 +289,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/41/",
+      "slug": "41",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -562,6 +569,93 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/en/buildings/page/41/",
+      "slug": "41",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/escon-field-hokkaido/",
+      "slug": "escon-field-hokkaido",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg/800px-ES_CON_FIELD_HOKKAIDO_exterior.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/escon-field-hokkaido/",
+      "slug": "escon-field-hokkaido",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg/800px-ES_CON_FIELD_HOKKAIDO_exterior.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/mazda-zoom-zoom-stadium/",
+      "slug": "mazda-zoom-zoom-stadium",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg/800px-MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/mazda-zoom-zoom-stadium/",
+      "slug": "mazda-zoom-zoom-stadium",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg/800px-MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/miyashita-park/",
+      "slug": "miyashita-park",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg/800px-Miyashita_Park_seen_from_Shibuya_Stream.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/miyashita-park/",
+      "slug": "miyashita-park",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg/800px-Miyashita_Park_seen_from_Shibuya_Stream.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/osaka-jo-hall/",
+      "slug": "osaka-jo-hall",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Osaka-jo_Hall_in_201408.JPG/800px-Osaka-jo_Hall_in_201408.JPG",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/osaka-jo-hall/",
+      "slug": "osaka-jo-hall",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Osaka-jo_Hall_in_201408.JPG/800px-Osaka-jo_Hall_in_201408.JPG",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tokyo-big-sight/",
+      "slug": "tokyo-big-sight",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg/800px-Tokyo_Big_Sight_exterior_2024-02-12.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-big-sight/",
+      "slug": "tokyo-big-sight",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg/800px-Tokyo_Big_Sight_exterior_2024-02-12.jpg",
+      "detail": "HTTP 400"
+    },
+    {
       "url": "https://builtjapan.com/buildings/dentsu-shiodome/",
       "slug": "dentsu-shiodome",
       "lang": "ja",
@@ -691,15 +785,15 @@
       "url": "https://builtjapan.com/buildings/toyota-stadium/",
       "slug": "toyota-stadium",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Toyota_Stadium_photo.jpg/1280px-Toyota_Stadium_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/toyota-stadium/",
       "slug": "toyota-stadium",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Toyota_Stadium_photo.jpg/1280px-Toyota_Stadium_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/hirakawacho-mori-tower/",
@@ -1055,15 +1149,15 @@
       "url": "https://builtjapan.com/buildings/shinjuku-front-tower/",
       "slug": "shinjuku-front-tower",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Shinjuku_front_tower_2011.jpg/1280px-Shinjuku_front_tower_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shinjuku-front-tower/",
       "slug": "shinjuku-front-tower",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Shinjuku_front_tower_2011.jpg/1280px-Shinjuku_front_tower_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/shinjuku-monolith/",
@@ -1895,15 +1989,15 @@
       "url": "https://builtjapan.com/buildings/shinjuku-el-tower/",
       "slug": "shinjuku-el-tower",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinjuku_L_tower.jpg/1280px-Shinjuku_L_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/shinjuku-el-tower/",
       "slug": "shinjuku-el-tower",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Shinjuku_L_tower.jpg/1280px-Shinjuku_L_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-world-gate-akasaka/",

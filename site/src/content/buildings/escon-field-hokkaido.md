@@ -13,7 +13,7 @@ architect: "大林組、HKS"
 tags: ["北広島市", "スタジアム", "北海道", "野球場"]
 publishedAt: 2026-11-14
 summary: "2022年12月竣工、日本初の天然芝＋開閉式屋根を持つ北海道日本ハムファイターズの本拠地球場。北広島市のHOKKAIDO BALLPARK F VILLAGEに立ち、延床面積121,563㎡・収容約35,000人を誇る。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg/800px-ES_CON_FIELD_HOKKAIDO_exterior.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg"
 heroImageCredit: "全日本空車 / CC BY-SA 4.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:ES_CON_FIELD_HOKKAIDO_exterior.jpg"
 verified: true

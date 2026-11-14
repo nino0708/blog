@@ -13,7 +13,7 @@ architect: "日建設計"
 tags: ["大阪市中央区", "アリーナ", "コンサート会場", "大阪城"]
 publishedAt: 2026-11-14
 summary: "1983年10月開館、大阪城公園内に立つ収容最大16,000人の多目的アリーナ。日建設計が手掛けた地上3階・地下1階の建物は、大阪城の景観を損なわないよう建物の一部を地下に沈めた設計が特徴。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Osaka-jo_Hall_in_201408.JPG/800px-Osaka-jo_Hall_in_201408.JPG"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/59/Osaka-jo_Hall_in_201408.JPG"
 heroImageCredit: "Mc681 / CC BY-SA 4.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Osaka-jo_Hall_in_201408.JPG"
 verified: true

@@ -13,7 +13,7 @@ architect: "AXS佐藤総合計画"
 tags: ["江東区", "展示場", "コンベンション", "有明"]
 publishedAt: 2026-11-14
 summary: "1995年竣工、有明に立つ国内最大級の国際展示場。逆三角形に迫り出す会議棟（高さ58m）が象徴的で、延床面積316,990㎡を誇る。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg/800px-Tokyo_Big_Sight_exterior_2024-02-12.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg"
 heroImageCredit: "Masahiko OHKUBO / CC BY 2.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Big_Sight_exterior_2024-02-12.jpg"
 verified: true

@@ -10,7 +10,7 @@ architect: "増岡建築設計事務所"
 tags: ["広島市南区", "スタジアム", "野球場", "広島"]
 publishedAt: 2026-11-14
 summary: "2009年4月開業、広島東洋カープの本拠地として移転開業した天然芝の野球場。収容約32,000人のオープンエア設計で、広島市南区南蟹屋に立つ。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg/800px-MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg"
 heroImageCredit: "HKT3012 / CC BY-SA 3.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg"
 verified: true

@@ -13,7 +13,7 @@ architect: "日建設計、竹中工務店"
 tags: ["渋谷区", "商業施設", "渋谷", "公園複合"]
 publishedAt: 2026-11-14
 summary: "2020年8月開業、渋谷区と三井不動産が連携した商業複合施設。ノースブロック地上18階・高さ75.1m、全長約330mの屋上公園が特徴。日建設計と竹中工務店が設計施工を担当した。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg/800px-Miyashita_Park_seen_from_Shibuya_Stream.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg"
 heroImageCredit: "Syced / CC0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Miyashita_Park_seen_from_Shibuya_Stream.jpg"
 verified: true
