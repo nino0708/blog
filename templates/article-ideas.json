@@ -4082,6 +4082,51 @@
       "area": "港区",
       "angle": "2002年12月開業・地上48階・高さ213m・デザインジャン・ヌーベル・施工大林+鹿島+清水+大成+竹中JV・汐留再開発・カレッタ汐留",
       "status": "done"
+    },
+    {
+      "id": 451,
+      "category": "office",
+      "title": "エスコンフィールドHOKKAIDO",
+      "slug": "escon-field-hokkaido",
+      "area": "北広島市",
+      "angle": "2022年12月竣工・地上6階・高さ70m・日本初の天然芝＋開閉式屋根・収容約35,000人・HOKKAIDO BALLPARK F VILLAGE",
+      "status": "done"
+    },
+    {
+      "id": 452,
+      "category": "office",
+      "title": "東京ビッグサイト",
+      "slug": "tokyo-big-sight",
+      "area": "江東区",
+      "angle": "1995年竣工・地上8階・高さ58m・延床316,990㎡・逆三角形会議棟・AXS佐藤総合計画設計・国内最大級展示場",
+      "status": "done"
+    },
+    {
+      "id": 453,
+      "category": "office",
+      "title": "大阪城ホール",
+      "slug": "osaka-jo-hall",
+      "area": "大阪市中央区",
+      "angle": "1983年10月開館・地上3階・高さ21m・収容16,000人・日建設計・大阪城公園内・景観に配慮した低層設計",
+      "status": "done"
+    },
+    {
+      "id": 454,
+      "category": "office",
+      "title": "宮下パーク",
+      "slug": "miyashita-park",
+      "area": "渋谷区",
+      "angle": "2020年8月開業・ノースブロック地上18階・高さ75.1m・延床約46,000㎡・三井不動産・日建設計+竹中工務店・全長約330m屋上公園",
+      "status": "done"
+    },
+    {
+      "id": 455,
+      "category": "office",
+      "title": "マツダ Zoom-Zoom スタジアム広島",
+      "slug": "mazda-zoom-zoom-stadium",
+      "area": "広島市南区",
+      "angle": "2009年4月開業・収容約32,000人・天然芝オープンエア設計・増岡建築設計事務所・竹中工務店施工・JR広島駅隣接",
+      "status": "done"
     }
   ]
 }
