@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-15T08:21:30.122533+09:00",
+  "checkedAt": "2026-11-16T08:21:25.894405+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -579,81 +579,71 @@
       "url": "https://builtjapan.com/buildings/escon-field-hokkaido/",
       "slug": "escon-field-hokkaido",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg/800px-ES_CON_FIELD_HOKKAIDO_exterior.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/escon-field-hokkaido/",
       "slug": "escon-field-hokkaido",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg/800px-ES_CON_FIELD_HOKKAIDO_exterior.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/mazda-zoom-zoom-stadium/",
       "slug": "mazda-zoom-zoom-stadium",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg/800px-MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/mazda-zoom-zoom-stadium/",
       "slug": "mazda-zoom-zoom-stadium",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg/800px-MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/miyashita-park/",
       "slug": "miyashita-park",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg/800px-Miyashita_Park_seen_from_Shibuya_Stream.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/miyashita-park/",
       "slug": "miyashita-park",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg/800px-Miyashita_Park_seen_from_Shibuya_Stream.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/osaka-jo-hall/",
       "slug": "osaka-jo-hall",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Osaka-jo_Hall_in_201408.JPG/800px-Osaka-jo_Hall_in_201408.JPG",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Osaka-jo_Hall_in_201408.JPG"
     },
     {
       "url": "https://builtjapan.com/en/buildings/osaka-jo-hall/",
       "slug": "osaka-jo-hall",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Osaka-jo_Hall_in_201408.JPG/800px-Osaka-jo_Hall_in_201408.JPG",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Osaka-jo_Hall_in_201408.JPG"
     },
     {
       "url": "https://builtjapan.com/buildings/tokyo-big-sight/",
       "slug": "tokyo-big-sight",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg/800px-Tokyo_Big_Sight_exterior_2024-02-12.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tokyo-big-sight/",
       "slug": "tokyo-big-sight",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg/800px-Tokyo_Big_Sight_exterior_2024-02-12.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/dentsu-shiodome/",
@@ -814,14 +804,14 @@
       "slug": "kanda-square",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/KANDA_SQUARE-5.jpg/1280px-KANDA_SQUARE-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/KANDA_SQUARE-2.jpg/1280px-KANDA_SQUARE-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kanda-square/",
       "slug": "kanda-square",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/KANDA_SQUARE-5.jpg/1280px-KANDA_SQUARE-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/KANDA_SQUARE-2.jpg/1280px-KANDA_SQUARE-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/osaki-bright-tower/",

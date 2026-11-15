@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-15 08:21 JST
+- 実行: 2026-11-16 08:21 JST
 - 対象: 公開済み記事 936 ページ（https://builtjapan.com）
-- 正常表示: 744 / 936（79.5%）
-- **要対応: 192 件**（画像なし 182 / 壊れ 10 / ページ異常 0）
+- 正常表示: 754 / 936（80.6%）
+- **要対応: 182 件**（画像なし 182 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -191,21 +191,6 @@
 | [utsunomiya-lrt（EN）](https://builtjapan.com/en/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（EN）](https://builtjapan.com/en/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
-
-## 画像が壊れている（srcはあるが取得できない）
-
-| 記事 | 詳細 |
-|---|---|
-| [escon-field-hokkaido（JA）](https://builtjapan.com/buildings/escon-field-hokkaido/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg/800px-ES_CON_FIELD_HOKKAIDO_exterior.jpg` |
-| [mazda-zoom-zoom-stadium（JA）](https://builtjapan.com/buildings/mazda-zoom-zoom-stadium/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg/800px-MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg` |
-| [miyashita-park（JA）](https://builtjapan.com/buildings/miyashita-park/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg/800px-Miyashita_Park_seen_from_Shibuya_Stream.jpg` |
-| [osaka-jo-hall（JA）](https://builtjapan.com/buildings/osaka-jo-hall/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Osaka-jo_Hall_in_201408.JPG/800px-Osaka-jo_Hall_in_201408.JPG` |
-| [tokyo-big-sight（JA）](https://builtjapan.com/buildings/tokyo-big-sight/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg/800px-Tokyo_Big_Sight_exterior_2024-02-12.jpg` |
-| [escon-field-hokkaido（EN）](https://builtjapan.com/en/buildings/escon-field-hokkaido/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/ES_CON_FIELD_HOKKAIDO_exterior.jpg/800px-ES_CON_FIELD_HOKKAIDO_exterior.jpg` |
-| [mazda-zoom-zoom-stadium（EN）](https://builtjapan.com/en/buildings/mazda-zoom-zoom-stadium/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg/800px-MAZDA_Zoom-Zoom_Stadium_Hiroshima_facade.jpg` |
-| [miyashita-park（EN）](https://builtjapan.com/en/buildings/miyashita-park/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg/800px-Miyashita_Park_seen_from_Shibuya_Stream.jpg` |
-| [osaka-jo-hall（EN）](https://builtjapan.com/en/buildings/osaka-jo-hall/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Osaka-jo_Hall_in_201408.JPG/800px-Osaka-jo_Hall_in_201408.JPG` |
-| [tokyo-big-sight（EN）](https://builtjapan.com/en/buildings/tokyo-big-sight/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tokyo_Big_Sight_exterior_2024-02-12.jpg/800px-Tokyo_Big_Sight_exterior_2024-02-12.jpg` |
 
 ## 直し方
 
