@@ -908,5 +908,35 @@
     "slug": "intercontinental-tokyo-bay",
     "postedAt": "2026-11-14",
     "type": "quiz"
+  },
+  {
+    "slug": "marunouchi-nijubashi-building",
+    "postedAt": "2026-11-15",
+    "type": "intro",
+    "last_posted": "2026-11-15"
+  },
+  {
+    "slug": "pacific-century-place-marunouchi",
+    "postedAt": "2026-11-15",
+    "type": "intro",
+    "last_posted": "2026-11-15"
+  },
+  {
+    "slug": "bunkyo-civic-center",
+    "postedAt": "2026-11-15",
+    "type": "intro",
+    "last_posted": "2026-11-15"
+  },
+  {
+    "slug": "shirokane-the-sky",
+    "postedAt": "2026-11-15",
+    "type": "intro",
+    "last_posted": "2026-11-15"
+  },
+  {
+    "slug": "shibuya-solasta",
+    "postedAt": "2026-11-15",
+    "type": "quiz",
+    "last_posted": "2026-11-15"
   }
 ]
