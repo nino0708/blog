@@ -4127,6 +4127,51 @@
       "area": "広島市南区",
       "angle": "2009年4月開業・収容約32,000人・天然芝オープンエア設計・増岡建築設計事務所・竹中工務店施工・JR広島駅隣接",
       "status": "done"
+    },
+    {
+      "id": 456,
+      "category": "office",
+      "title": "神戸三宮阪急ビル",
+      "slug": "hankyu-sannomiya-building",
+      "area": "神戸市中央区",
+      "angle": "2021年竣工・地上29階・高さ121m・延床28,850㎡・阪急阪神不動産・三宮駅直結の複合タワー",
+      "status": "done"
+    },
+    {
+      "id": 457,
+      "category": "office",
+      "title": "銀座ソニーパーク",
+      "slug": "ginza-sony-park",
+      "area": "中央区銀座",
+      "angle": "2024年竣工・地上5階地下4階・高さ33.86m・延床4,390㎡・ソニー・竹中工務店施工・ブランド体験空間",
+      "status": "done"
+    },
+    {
+      "id": 458,
+      "category": "expressway",
+      "title": "名神高速道路",
+      "slug": "meishin-expressway",
+      "area": "名古屋〜神戸",
+      "angle": "1965年全線開通・延長190km・日本初の本格都市間高速・NEXCO中日本+NEXCO西日本",
+      "status": "done"
+    },
+    {
+      "id": 459,
+      "category": "expressway",
+      "title": "阪神高速道路",
+      "slug": "hanshin-expressway",
+      "area": "大阪・兵庫",
+      "angle": "1964年開通・都市高速ネットワーク・延長約260km・阪神高速道路株式会社",
+      "status": "done"
+    },
+    {
+      "id": 460,
+      "category": "railway",
+      "title": "富山ライトレール",
+      "slug": "toyama-light-rail",
+      "area": "富山市",
+      "angle": "2006年4月29日開業・路線長7.6km・13駅・日本初のLRT化・2020年富山地方鉄道に統合",
+      "status": "done"
     }
   ]
 }
