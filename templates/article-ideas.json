@@ -4127,6 +4127,51 @@
       "area": "広島市南区",
       "angle": "2009年4月開業・収容約32,000人・天然芝オープンエア設計・増岡建築設計事務所・竹中工務店施工・JR広島駅隣接",
       "status": "done"
+    },
+    {
+      "id": 456,
+      "category": "tower",
+      "title": "東山スカイタワー",
+      "slug": "higashiyama-sky-tower",
+      "area": "名古屋市千種区",
+      "angle": "1989年竣工・高さ134m・東山公園の丘の上に立ち標高214m・名古屋市制100周年記念整備・電波塔兼展望タワー・2004年日本夜景遺産選定",
+      "status": "done"
+    },
+    {
+      "id": 457,
+      "category": "office",
+      "title": "幕張テクノガーデン",
+      "slug": "makuhari-techno-garden",
+      "area": "千葉市美浜区",
+      "angle": "1990年開業・地上25階・高さ106m・民活法に基づくインテリジェントビル第1号・第32回BCS賞受賞・海浜幕張新都心の形成",
+      "status": "done"
+    },
+    {
+      "id": 458,
+      "category": "office",
+      "title": "リーガロイヤルホテル広島",
+      "slug": "rihga-royal-hiroshima",
+      "area": "広島市中区",
+      "angle": "1994年開業・地上35階・高さ150m・広島市内最高層クラス・平和記念公園至近の複合ホテル",
+      "status": "done"
+    },
+    {
+      "id": 459,
+      "category": "office",
+      "title": "新横浜プリンスホテル",
+      "slug": "shin-yokohama-prince-hotel",
+      "area": "横浜市港北区",
+      "angle": "1992年竣工・地上42階・高さ約149m・新横浜の高層ホテル・904室・西武プロパティーズ開発",
+      "status": "done"
+    },
+    {
+      "id": 460,
+      "category": "office",
+      "title": "淀屋橋ゲートタワー",
+      "slug": "yodoyabashi-gate-tower",
+      "area": "大阪市中央区",
+      "angle": "2025年竣工・地上29階・高さ135m・延床約132,330m²・大阪メトロ淀屋橋駅直結・オフィス主体複合ビル・2026年7月開業",
+      "status": "done"
     }
   ]
 }
