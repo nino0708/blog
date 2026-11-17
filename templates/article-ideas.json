@@ -4190,6 +4190,33 @@
       "area": "大田区",
       "angle": "2010年開業・地上5階・延床153,581㎡・梓設計ほか設計JV・国際線専用ターミナル・2020年第3ターミナル改称・江戸テーマ内装",
       "status": "done"
+    },
+    {
+      "id": 463,
+      "category": "office",
+      "title": "東京芸術劇場",
+      "slug": "tokyo-metropolitan-theatre",
+      "area": "豊島区",
+      "angle": "1990年開館・地上9階地下4階・芦原義信建築設計研究所・東京都立複合文化施設・池袋駅西口徒歩2分・複数ホール収容",
+      "status": "done"
+    },
+    {
+      "id": 464,
+      "category": "office",
+      "title": "神戸市庁舎第1号館",
+      "slug": "kobe-city-hall-tower",
+      "area": "神戸市中央区",
+      "angle": "1989年竣工・地上30階地下3階・高さ132m・日建設計・24階無料展望ロビー・神戸市行政の中枢",
+      "status": "done"
+    },
+    {
+      "id": 465,
+      "category": "bridge",
+      "title": "中央大橋",
+      "slug": "chuo-ohashi-tokyo",
+      "area": "中央区",
+      "angle": "1993年8月開通・橋長210.7m・東京都建設局・斜張橋・レインボーブリッジと同日開通・パリ市贈彫刻メッセンジャー",
+      "status": "done"
     }
   ]
 }
