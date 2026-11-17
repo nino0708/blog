@@ -4127,6 +4127,69 @@
       "area": "広島市南区",
       "angle": "2009年4月開業・収容約32,000人・天然芝オープンエア設計・増岡建築設計事務所・竹中工務店施工・JR広島駅隣接",
       "status": "done"
+    },
+    {
+      "id": 456,
+      "category": "office",
+      "title": "石川県立図書館",
+      "slug": "ishikawa-prefectural-library",
+      "area": "金沢市",
+      "angle": "2022年7月開館・地上4階地下1階・延床22,720㎡・仙田満設計・グレートホール・旧金沢大学工学部跡地",
+      "status": "done"
+    },
+    {
+      "id": 457,
+      "category": "office",
+      "title": "大分県立美術館（OPAM）",
+      "slug": "opam-oita",
+      "area": "大分市",
+      "angle": "2015年4月開館（2014年10月竣工）・地上4階地下1階・延床17,084㎡・坂茂建築設計・竹工芸模様ガラス格子外壁・プリツカー賞受賞建築",
+      "status": "done"
+    },
+    {
+      "id": 458,
+      "category": "office",
+      "title": "熊本城ホール",
+      "slug": "kumamoto-jo-hall",
+      "area": "熊本市中央区",
+      "angle": "2019年9月竣工・延床約30,000㎡・日建設計・桜町再開発・熊本城隣接・熊本地震復興の象徴コンベンション施設",
+      "status": "done"
+    },
+    {
+      "id": 459,
+      "category": "railway",
+      "title": "西九州新幹線",
+      "slug": "nishi-kyushu-shinkansen",
+      "area": "佐賀県・長崎県",
+      "angle": "2022年9月23日開業・武雄温泉〜長崎約66km・5駅・N700S系8000番台6両編成・JR九州・リレーかもめ接続",
+      "status": "done"
+    },
+    {
+      "id": 460,
+      "category": "office",
+      "title": "パナソニックスタジアム吹田",
+      "slug": "panasonic-stadium-suita",
+      "area": "吹田市",
+      "angle": "2015年10月供用・地上6階・高さ40.33m・延床66,509㎡・竹中工務店設計施工・収容約40,000人・ガンバ大阪本拠地・サポーター寄付で建設",
+      "status": "done"
+    },
+    {
+      "id": 461,
+      "category": "office",
+      "title": "浜松アクトタワー",
+      "slug": "hamamatsu-act-tower",
+      "area": "浜松市",
+      "angle": "1994年竣工・地上45階・高さ213m・久米設計・浜松駅北口再開発・静岡県内最高建物・ホテル+オフィス+商業複合",
+      "status": "done"
+    },
+    {
+      "id": 462,
+      "category": "office",
+      "title": "羽田空港第3ターミナル",
+      "slug": "haneda-airport-terminal-3",
+      "area": "大田区",
+      "angle": "2010年開業・地上5階・延床153,581㎡・梓設計ほか設計JV・国際線専用ターミナル・2020年第3ターミナル改称・江戸テーマ内装",
+      "status": "done"
     }
   ]
 }
