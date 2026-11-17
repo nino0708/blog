@@ -908,5 +908,25 @@
     "slug": "intercontinental-tokyo-bay",
     "postedAt": "2026-11-14",
     "type": "quiz"
+  },
+  {
+    "slug": "escon-field-hokkaido",
+    "postedAt": "2026-11-17"
+  },
+  {
+    "slug": "ishikawa-prefectural-office",
+    "postedAt": "2026-11-17"
+  },
+  {
+    "slug": "kabuto-one",
+    "postedAt": "2026-11-17"
+  },
+  {
+    "slug": "kachidoki-view-tower",
+    "postedAt": "2026-11-17"
+  },
+  {
+    "slug": "kaikyo-yume-tower",
+    "postedAt": "2026-11-17"
   }
 ]
