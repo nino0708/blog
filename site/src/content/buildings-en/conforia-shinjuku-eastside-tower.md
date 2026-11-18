@@ -1,22 +1,18 @@
 ---
 title: "Conforia Shinjuku East Side Tower"
 area: "Shinjuku Ward, Tokyo"
-summary: "A 32-story residential tower completed in 2011 on the east side of Shinjuku, Tokyo. Holding 761 units at a height of approximately 112 metres, it offers views of Shinjuku Gyoen and the city skyline from a location between Shinjuku's commercial energy and the park's greenery."
-tags: ["Shinjuku Ward", "Skyscraper", "Tower Apartment", "Shinjuku", "Tokyo"]
+summary: "A 32-story, 112 m residential tower completed in December 2011 in Shinjuku Ward, Tokyo, with 761 units on the eastern fringe of Shinjuku's commercial district."
+tags: ["Shinjuku Ward", "Residential Tower", "Tokyo", "Shinjuku"]
 ---
 
-## East of the Tracks, Below the Summit
+## East of the Bright Lights
 
-Shinjuku Ward, Tokyo. The western side of Shinjuku is dominated by the glass and steel of corporate headquarters; the eastern side is a layered district of entertainment, shopping, and urban residential living. Conforia Shinjuku East Side Tower, a 32-story condominium completed in 2011, occupies a position that draws from both: close enough to the station cluster to offer commuter convenience, yet near enough to Shinjuku Gyoen to enjoy a measure of the park's tranquillity.
+Conforia Shinjuku East Side Tower stands at 6-27-29 Shinjuku, Shinjuku Ward, Tokyo, on the quieter residential edge of one of the world's busiest urban districts. Completed in December 2011, the building rises 32 stories and one basement level to a height of approximately 112 m and houses 761 units. The scale is generous even by Tokyo standards: 761 apartments in a single rental tower represents a significant concentration of housing in a ward where land comes at a premium. The building's glass and metal curtain wall maintains a clean, urban profile against the layered roofline of the surrounding mid-rise residential fabric, and its upper floors command views back across the dense commercial core of Shinjuku toward the skyscrapers of the western subcenter. Shinjuku Sanchome Station (Tokyo Metro Marunouchi and Fukutoshin Lines) and JR Shinjuku Station are both within walking distance, giving residents fast connections across central Tokyo.
 
-The tower stands approximately 112 metres tall and accommodates 761 units across 32 floors above ground and one below. The scale — 761 homes in a single structure — places it firmly in the category of large-scale urban residential towers that became a defining feature of inner-Tokyo development in the 2000s and early 2010s.
+## At the Threshold Between Two Shinjukus
 
-## Shinjuku's East Side as Urban Living Ground
-
-While Shinjuku station's west exit sends commuters toward Nishi-Shinjuku's skyscraper district and the east exit opens toward Kabukicho and Isetan, the quieter corridors toward Shinjuku Gyoen have attracted a denser pattern of residential high-rises. The appeal is straightforward: multiple rail lines within walking distance, Shinjuku's full commercial offering on one side, and the relief of one of Tokyo's largest parks on the other.
-
-Conforia Shinjuku East Side Tower represents a moment in Tokyo's inner-city residential evolution when supertall residential construction was expanding beyond the waterfront and reaching deep into established commercial and entertainment zones. By 2011, the idea of living in a 32-story tower in the heart of Shinjuku had become not just possible but desirable.
+Shinjuku contains multitudes. The western subcenter, built from the 1970s onward, is home to some of Tokyo's tallest office towers. To the east, Kabukicho and the entertainment quarters generate some of the city's most concentrated nightlife. But the 6-chome district where this tower stands sits a step removed from both — a zone where the commercial energy gradually gives way to residential streets, where the city's noise dims to a manageable level and the density begins to feel livable rather than overwhelming. That threshold position is the building's essential logic. With 761 units, it functions as a small vertical neighborhood, bringing a large number of residents into immediate proximity to Shinjuku's transport and employment opportunities while remaining shielded from its most intense pressures. The building contributed to the ongoing densification of this transition zone, a pattern seen in many Tokyo wards as residential demand gravitates toward the periphery of major transit hubs.
 
 ## Summary
 
-Completed in 2011 at 32 floors and roughly 112 metres, Conforia Shinjuku East Side Tower holds 761 units in one of Tokyo's most intensely used urban districts. Its position near Shinjuku Gyoen gives it a dual character: the city's energy on one side, the park's greenery on the other. Walk from the garden's north gate toward the tower, through the mix of boutiques, restaurants, and residential streets that define this part of Shinjuku, and you will get a clear sense of how Tokyo's inner city continues to reinvent itself.
+Completed in December 2011, 32 floors, approximately 112 m — Conforia Shinjuku East Side Tower is a 761-unit rental high-rise at the residential margin of Shinjuku, one of Tokyo's great urban crossroads. Walk east from Shinjuku Sanchome and the tower marks the point where the city's commercial tide turns residential: a useful place to understand just how many different cities Shinjuku contains.

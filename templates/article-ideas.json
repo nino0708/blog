@@ -4166,11 +4166,11 @@
     },
     {
       "id": 460,
-      "category": "office",
-      "title": "日本橋室町三井タワー（COREDO室町テラス）",
-      "slug": "coredo-muromachi-terrace",
-      "area": "中央区",
-      "angle": "2019年竣工・26階・地下3階・高さ140.5m・延床166,728㎡・三井不動産・日本設計+ペリクラーク・日本橋再生計画の集大成",
+      "category": "tower",
+      "title": "鶴見つばさ橋",
+      "slug": "tsurumi-tsubasa-bridge",
+      "area": "横浜市鶴見区",
+      "angle": "1994年開通・国道357号（東京湾岸道路）に架かる斜張橋・京浜工業地帯の港湾エリアを跨ぐ",
       "status": "done"
     }
   ]
