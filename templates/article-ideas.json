@@ -4127,6 +4127,51 @@
       "area": "広島市南区",
       "angle": "2009年4月開業・収容約32,000人・天然芝オープンエア設計・増岡建築設計事務所・竹中工務店施工・JR広島駅隣接",
       "status": "done"
+    },
+    {
+      "id": 456,
+      "category": "residence",
+      "title": "ザ・北浜",
+      "slug": "the-kitahama",
+      "area": "大阪市中央区",
+      "angle": "2009年竣工・54階・高さ209.35m・484戸・鹿島建設設計施工・土佐堀川沿い・竣工当時の日本最高層分譲マンション",
+      "status": "done"
+    },
+    {
+      "id": 457,
+      "category": "residence",
+      "title": "スカイタワー41",
+      "slug": "sky-tower-41-kaminoyama",
+      "area": "上山市",
+      "angle": "1999年竣工・41階・高さ133.95m・389戸・山形県上山市・竣工当時東北最高層・蔵王連峰を望む温泉・城下町立地",
+      "status": "done"
+    },
+    {
+      "id": 458,
+      "category": "office",
+      "title": "天神ビジネスセンター",
+      "slug": "tenjin-business-center-fukuoka",
+      "area": "福岡市中央区",
+      "angle": "2021年竣工・19階・地下2階・高さ89m・延床61,100㎡・福岡地所・日本設計・天神ビッグバン構想の先導プロジェクト",
+      "status": "done"
+    },
+    {
+      "id": 459,
+      "category": "residence",
+      "title": "コンフォリア新宿イーストサイドタワー",
+      "slug": "conforia-shinjuku-eastside-tower",
+      "area": "新宿区",
+      "angle": "2011年竣工・32階・地下1階・高さ約112m・761戸・新宿御苑近接・新宿東側の大規模タワーマンション",
+      "status": "done"
+    },
+    {
+      "id": 460,
+      "category": "office",
+      "title": "日本橋室町三井タワー（COREDO室町テラス）",
+      "slug": "coredo-muromachi-terrace",
+      "area": "中央区",
+      "angle": "2019年竣工・26階・地下3階・高さ140.5m・延床166,728㎡・三井不動産・日本設計+ペリクラーク・日本橋再生計画の集大成",
+      "status": "done"
     }
   ]
 }
