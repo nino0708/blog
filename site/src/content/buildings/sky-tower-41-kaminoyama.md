@@ -9,7 +9,7 @@ heightM: 133.95
 tags: ["上山市", "タワーマンション", "山形", "東北"]
 publishedAt: 2026-11-18
 summary: "1999年竣工、山形県上山市に立つ地上41階・高さ133.95mの超高層分譲マンション。東北地方有数の超高層住宅として、全389戸を擁する。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/9d/SkyTower41_Aug_2023.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/69/Sky_Tower-41_Yamagata_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
 heroImageCredit: "掬茶 / CC BY-SA 4.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:SkyTower41_Aug_2023.jpg"
 verified: true

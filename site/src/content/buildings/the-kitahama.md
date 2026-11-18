@@ -11,7 +11,7 @@ architect: "鹿島設計"
 tags: ["大阪市中央区", "タワーマンション", "大阪"]
 publishedAt: 2026-11-18
 summary: "2009年竣工、地上54階・高さ209.35mの超高層分譲マンション。大阪市中央区の北浜金融街に立ち、全484戸を擁する大阪を代表するタワーマンション。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kitahama_in_201406.jpg"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/The_Kitahama_in_201509_001.JPG/1280px-The_Kitahama_in_201509_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
 heroImageCredit: "Mc681 / CC BY-SA 3.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:The_Kitahama_in_201406.jpg"
 verified: true

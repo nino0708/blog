@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-18T08:21:38.154382+09:00",
+  "checkedAt": "2026-11-19T08:22:22.523826+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -574,6 +574,82 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/conforia-shinjuku-eastside-tower/",
+      "slug": "conforia-shinjuku-eastside-tower",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/conforia-shinjuku-eastside-tower/",
+      "slug": "conforia-shinjuku-eastside-tower",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/sky-tower-41-kaminoyama/",
+      "slug": "sky-tower-41-kaminoyama",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/SkyTower41_Aug_2023.jpg",
+      "detail": "HTTP 404"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/sky-tower-41-kaminoyama/",
+      "slug": "sky-tower-41-kaminoyama",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/SkyTower41_Aug_2023.jpg",
+      "detail": "HTTP 404"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tenjin-business-center-fukuoka/",
+      "slug": "tenjin-business-center-fukuoka",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tenjin_Business_Center.jpg",
+      "detail": "HTTP 404"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tenjin-business-center-fukuoka/",
+      "slug": "tenjin-business-center-fukuoka",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tenjin_Business_Center.jpg",
+      "detail": "HTTP 404"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/the-kitahama/",
+      "slug": "the-kitahama",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kitahama_in_201406.jpg",
+      "detail": "HTTP 404"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/the-kitahama/",
+      "slug": "the-kitahama",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kitahama_in_201406.jpg",
+      "detail": "HTTP 404"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tsurumi-tsubasa-bridge/",
+      "slug": "tsurumi-tsubasa-bridge",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Tsurumi-tsubasa-bridge.jpg/1280px-Tsurumi-tsubasa-bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tsurumi-tsubasa-bridge/",
+      "slug": "tsurumi-tsubasa-bridge",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Tsurumi-tsubasa-bridge.jpg/1280px-Tsurumi-tsubasa-bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/escon-field-hokkaido/",

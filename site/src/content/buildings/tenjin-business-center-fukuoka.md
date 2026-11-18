@@ -13,7 +13,7 @@ architect: "日本設計"
 tags: ["福岡市中央区", "オフィスビル", "天神", "再開発"]
 publishedAt: 2026-11-18
 summary: "2021年9月竣工、地上19階・高さ89mのオフィスビル。福岡地所が開発し、天神ビッグバン構想の先導プロジェクトとして福岡市天神のビジネス街を牽引する存在。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tenjin_Business_Center.jpg"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tenjin_Business_Center.jpg/1280px-Tenjin_Business_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
 heroImageCredit: "Ave reijin / CC0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Tenjin_Business_Center.jpg"
 verified: true
