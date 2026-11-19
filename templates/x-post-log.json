@@ -933,5 +933,30 @@
     "slug": "kaikyo-yume-tower",
     "postedAt": "2026-11-18",
     "type": "quiz"
+  },
+  {
+    "slug": "conforia-shinjuku-eastside-tower",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kanda-square",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kanmon-bridge",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kddi-building-shinjuku",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kdx-yokohama-minatomirai-tower",
+    "postedAt": "2026-11-20",
+    "type": "quiz"
   }
 ]
