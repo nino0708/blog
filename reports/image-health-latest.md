@@ -1,15 +1,17 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-19 08:22 JST
-- 対象: 公開済み記事 946 ページ（https://builtjapan.com）
-- 正常表示: 756 / 946（79.9%）
-- **要対応: 190 件**（画像なし 184 / 壊れ 6 / ページ異常 0）
+- 実行: 2026-11-20 08:22 JST
+- 対象: 公開済み記事 958 ページ（https://builtjapan.com）
+- 正常表示: 768 / 958（80.2%）
+- **要対応: 190 件**（画像なし 190 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
 | 記事 | 詳細 |
 |---|---|
 | [buildings（JA）](https://builtjapan.com/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
+| [ajinomoto-stadium（JA）](https://builtjapan.com/buildings/ajinomoto-stadium/) | ヒーロー画像なし（プレースホルダ表示） |
+| [atc-osaka（JA）](https://builtjapan.com/buildings/atc-osaka/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（JA）](https://builtjapan.com/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（JA）](https://builtjapan.com/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
 | [cielia-tower-nakanoshima（JA）](https://builtjapan.com/buildings/cielia-tower-nakanoshima/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -73,6 +75,7 @@
 | [4（JA）](https://builtjapan.com/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [40（JA）](https://builtjapan.com/buildings/page/40/) | ヒーロー画像なし（プレースホルダ表示） |
 | [41（JA）](https://builtjapan.com/buildings/page/41/) | ヒーロー画像なし（プレースホルダ表示） |
+| [42（JA）](https://builtjapan.com/buildings/page/42/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（JA）](https://builtjapan.com/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
 | [7（JA）](https://builtjapan.com/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -102,6 +105,8 @@
 | [yokohama-city-hall（JA）](https://builtjapan.com/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（JA）](https://builtjapan.com/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [buildings（EN）](https://builtjapan.com/en/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
+| [ajinomoto-stadium（EN）](https://builtjapan.com/en/buildings/ajinomoto-stadium/) | ヒーロー画像なし（プレースホルダ表示） |
+| [atc-osaka（EN）](https://builtjapan.com/en/buildings/atc-osaka/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
 | [brillia-hamarikyu（EN）](https://builtjapan.com/en/buildings/brillia-hamarikyu/) | ヒーロー画像なし（プレースホルダ表示） |
 | [cielia-tower-nakanoshima（EN）](https://builtjapan.com/en/buildings/cielia-tower-nakanoshima/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -165,6 +170,7 @@
 | [4（EN）](https://builtjapan.com/en/buildings/page/4/) | ヒーロー画像なし（プレースホルダ表示） |
 | [40（EN）](https://builtjapan.com/en/buildings/page/40/) | ヒーロー画像なし（プレースホルダ表示） |
 | [41（EN）](https://builtjapan.com/en/buildings/page/41/) | ヒーロー画像なし（プレースホルダ表示） |
+| [42（EN）](https://builtjapan.com/en/buildings/page/42/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（EN）](https://builtjapan.com/en/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
 | [7（EN）](https://builtjapan.com/en/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -193,17 +199,6 @@
 | [utsunomiya-lrt（EN）](https://builtjapan.com/en/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（EN）](https://builtjapan.com/en/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
-
-## 画像が壊れている（srcはあるが取得できない）
-
-| 記事 | 詳細 |
-|---|---|
-| [sky-tower-41-kaminoyama（JA）](https://builtjapan.com/buildings/sky-tower-41-kaminoyama/) | HTTP 404<br>`https://upload.wikimedia.org/wikipedia/commons/9/9d/SkyTower41_Aug_2023.jpg` |
-| [tenjin-business-center-fukuoka（JA）](https://builtjapan.com/buildings/tenjin-business-center-fukuoka/) | HTTP 404<br>`https://upload.wikimedia.org/wikipedia/commons/2/2e/Tenjin_Business_Center.jpg` |
-| [the-kitahama（JA）](https://builtjapan.com/buildings/the-kitahama/) | HTTP 404<br>`https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kitahama_in_201406.jpg` |
-| [sky-tower-41-kaminoyama（EN）](https://builtjapan.com/en/buildings/sky-tower-41-kaminoyama/) | HTTP 404<br>`https://upload.wikimedia.org/wikipedia/commons/9/9d/SkyTower41_Aug_2023.jpg` |
-| [tenjin-business-center-fukuoka（EN）](https://builtjapan.com/en/buildings/tenjin-business-center-fukuoka/) | HTTP 404<br>`https://upload.wikimedia.org/wikipedia/commons/2/2e/Tenjin_Business_Center.jpg` |
-| [the-kitahama（EN）](https://builtjapan.com/en/buildings/the-kitahama/) | HTTP 404<br>`https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kitahama_in_201406.jpg` |
 
 ## 直し方
 

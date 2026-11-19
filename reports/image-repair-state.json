@@ -509,6 +509,19 @@
     "reason": "記事mdが見つからない"
   },
   "conforia-shinjuku-eastside-tower": {
+    "attempts": 2,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "42": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "ajinomoto-stadium": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "atc-osaka": {
     "attempts": 1,
     "reason": "確信できる外観画像が見つからない"
   }

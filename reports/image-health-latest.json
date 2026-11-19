@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-19T08:22:22.523826+09:00",
+  "checkedAt": "2026-11-20T08:22:34.181673+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -296,6 +296,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/42/",
+      "slug": "42",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -576,6 +583,83 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/en/buildings/page/42/",
+      "slug": "42",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/ajinomoto-stadium/",
+      "slug": "ajinomoto-stadium",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/ajinomoto-stadium/",
+      "slug": "ajinomoto-stadium",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/atc-osaka/",
+      "slug": "atc-osaka",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/atc-osaka/",
+      "slug": "atc-osaka",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/edo-tokyo-museum/",
+      "slug": "edo-tokyo-museum",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Edo-Tokyo_Museum.jpg/1280px-Edo-Tokyo_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/edo-tokyo-museum/",
+      "slug": "edo-tokyo-museum",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Edo-Tokyo_Museum.jpg/1280px-Edo-Tokyo_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tokyo-aquatics-center/",
+      "slug": "tokyo-aquatics-center",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Tokyo_Aquatics_Centre.jpg/1280px-Tokyo_Aquatics_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-aquatics-center/",
+      "slug": "tokyo-aquatics-center",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Tokyo_Aquatics_Centre.jpg/1280px-Tokyo_Aquatics_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/toyama-kirari/",
+      "slug": "toyama-kirari",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/TOYAMA_KIRARI_Toyama_Glass_Art_Museum_ac_%282%29.jpg/1280px-TOYAMA_KIRARI_Toyama_Glass_Art_Museum_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/toyama-kirari/",
+      "slug": "toyama-kirari",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/TOYAMA_KIRARI_Toyama_Glass_Art_Museum_ac_%282%29.jpg/1280px-TOYAMA_KIRARI_Toyama_Glass_Art_Museum_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/conforia-shinjuku-eastside-tower/",
       "slug": "conforia-shinjuku-eastside-tower",
       "lang": "ja",
@@ -593,49 +677,43 @@
       "url": "https://builtjapan.com/buildings/sky-tower-41-kaminoyama/",
       "slug": "sky-tower-41-kaminoyama",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/SkyTower41_Aug_2023.jpg",
-      "detail": "HTTP 404"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sky_Tower-41_Yamagata_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/en/buildings/sky-tower-41-kaminoyama/",
       "slug": "sky-tower-41-kaminoyama",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/SkyTower41_Aug_2023.jpg",
-      "detail": "HTTP 404"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sky_Tower-41_Yamagata_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/tenjin-business-center-fukuoka/",
       "slug": "tenjin-business-center-fukuoka",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tenjin_Business_Center.jpg",
-      "detail": "HTTP 404"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tenjin_Business_Center.jpg/1280px-Tenjin_Business_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tenjin-business-center-fukuoka/",
       "slug": "tenjin-business-center-fukuoka",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tenjin_Business_Center.jpg",
-      "detail": "HTTP 404"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tenjin_Business_Center.jpg/1280px-Tenjin_Business_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/the-kitahama/",
       "slug": "the-kitahama",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kitahama_in_201406.jpg",
-      "detail": "HTTP 404"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/The_Kitahama_in_201509_001.JPG/1280px-The_Kitahama_in_201509_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/the-kitahama/",
       "slug": "the-kitahama",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kitahama_in_201406.jpg",
-      "detail": "HTTP 404"
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/The_Kitahama_in_201509_001.JPG/1280px-The_Kitahama_in_201509_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/tsurumi-tsubasa-bridge/",
