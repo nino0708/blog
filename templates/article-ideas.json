@@ -4172,6 +4172,51 @@
       "area": "横浜市鶴見区",
       "angle": "1994年開通・国道357号（東京湾岸道路）に架かる斜張橋・京浜工業地帯の港湾エリアを跨ぐ",
       "status": "done"
+    },
+    {
+      "id": 461,
+      "category": "museum",
+      "title": "江戸東京博物館",
+      "slug": "edo-tokyo-museum",
+      "area": "墨田区",
+      "angle": "菊竹清訓設計、高さ62mの高床式大型建築",
+      "status": "done"
+    },
+    {
+      "id": 462,
+      "category": "museum",
+      "title": "TOYAMAキラリ（富山市ガラス美術館）",
+      "slug": "toyama-kirari",
+      "area": "富山市",
+      "angle": "隈研吾設計、ガラス・アルミ・御影石の複合立面",
+      "status": "done"
+    },
+    {
+      "id": 463,
+      "category": "sports",
+      "title": "東京アクアティクスセンター",
+      "slug": "tokyo-aquatics-center",
+      "area": "江東区",
+      "angle": "東京五輪競泳会場、高さ37m・3大会場",
+      "status": "done"
+    },
+    {
+      "id": 464,
+      "category": "commercial",
+      "title": "大阪南港ATC（アジア太平洋トレードセンター）",
+      "slug": "atc-osaka",
+      "area": "住之江区",
+      "angle": "ベイエリア開発の象徴的複合商業施設",
+      "status": "done"
+    },
+    {
+      "id": 465,
+      "category": "sports",
+      "title": "東京スタジアム（味の素スタジアム）",
+      "slug": "ajinomoto-stadium",
+      "area": "調布市",
+      "angle": "日本設計・多目的スタジアム、収容約50,000席",
+      "status": "done"
     }
   ]
 }
