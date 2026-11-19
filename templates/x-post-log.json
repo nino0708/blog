@@ -958,5 +958,30 @@
     "slug": "kdx-yokohama-minatomirai-tower",
     "postedAt": "2026-11-20",
     "type": "quiz"
+  },
+  {
+    "slug": "keio-plaza-hotel-tokyo",
+    "postedAt": "2026-11-21",
+    "type": "intro"
+  },
+  {
+    "slug": "kobe-crystal-tower",
+    "postedAt": "2026-11-21",
+    "type": "intro"
+  },
+  {
+    "slug": "la-tour-shinjuku",
+    "postedAt": "2026-11-21",
+    "type": "intro"
+  },
+  {
+    "slug": "kitakyushu-museum-of-art",
+    "postedAt": "2026-11-21",
+    "type": "intro"
+  },
+  {
+    "slug": "kiyosubashi",
+    "postedAt": "2026-11-21",
+    "type": "quiz"
   }
 ]
