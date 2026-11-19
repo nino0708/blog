@@ -1,19 +1,22 @@
 ---
-title: "ATC Osaka (Asia Pacific Trade Center)"
+title: "Asia Pacific Trade Centre (ATC)"
 area: "Suminoe Ward, Osaka"
-summary: "Completed in 1994 on Osaka's reclaimed Cosmo Square waterfront, ATC Osaka is a twelve-storey complex that was developed as a trade and exhibition hub for the Asia-Pacific region, anchoring the Nanko district's 1990s regeneration."
-developer: "Asia Pacific Trade Center Co., Ltd."
-tags: ["Suminoe", "Nanko", "Cosmo Square", "Waterfront"]
+summary: "Completed in April 1994 in Osaka's Nanko waterfront district, this large-scale complex centres on the ITM Building — 12 floors above ground, 56 metres tall, with a total floor area of approximately 260,000 square metres. Originally conceived as an international trade hub, it has evolved into a combined commercial, office, and exhibition destination on Osaka Bay."
+tags: ["Suminoe Ward", "Osaka Nanko", "Waterfront", "Mixed-Use", "Cosmosquare"]
 ---
 
-## Trade on the Waterfront
+## A Trade Hub Born on Reclaimed Land
 
-ATC Osaka — formally the Asia Pacific Trade Center — occupies the water's edge at Cosmo Square in Osaka's Suminoe Ward. The complex was completed in 1994 as part of a planned trade and exhibition district intended to deepen Osaka's commercial links with the Asia-Pacific region. Its twelve-storey buildings, known as the ITM wing and the Os wing, face the waterfront on a broad site that integrates exhibition halls, retail floors and office space. Two rapid-transit lines converge close to the building — the Cosmo Square and Trade Center-mae stations — making the complex one of the most accessible large-scale facilities in southern Osaka. The surrounding Cosmo Square district was built on reclaimed land during Osaka's 1980s and 1990s waterfront expansion, and ATC was designed as the centrepiece of that new urban zone.
+The Asia Pacific Trade Centre (ATC) rises from the reclaimed Nanko Kitazone district of Osaka's Suminoe Ward, directly connected to Tradecenter-mae Station on the Osaka Metro Nanko Port Town Line. Its centrepiece, the ITM Building (International Trade Mart), was completed in April 1994 — twelve floors above ground, one below, with a total height of 56 metres and a gross floor area of around 260,000 square metres. Construction was carried out by Takenaka Corporation.
 
-## Anchor of Nanko's Regeneration
+The complex emerged from Osaka City's ambitious 1990s bay area development strategy, in which the artificial islands of Cosmosquare were envisioned as a new international business quarter connected by light rail to central Osaka. The ATC was intended to anchor that vision as a home for international trade fairs, export showrooms, and multinational companies seeking a Pacific Rim address. The building's scale — 24 elevators serving twelve floors across a vast floor plate — reflects the confidence of that era's ambitions.
 
-The South Port development was one of the defining urban projects of Japan's late-bubble years, pushing the city's commercial and exhibition functions out to the bay. When ATC opened in 1994, the neighbouring Intex Osaka exhibition complex was already operating, and the South Port zone was intended to cluster trade shows, international business meetings and logistics. ATC was designed to absorb the commercial and business functions within that cluster. Over the three decades since opening, the facility has evolved with the city: today it operates primarily as a shopping, dining and cultural destination, drawing leisure visitors as well as business travellers. As a piece of architecture it remains a document of the scale and ambition of Osaka's late-twentieth-century waterfront vision.
+## From Trade Fair Venue to Weekend Destination
+
+The late 1990s brought economic headwinds that reshaped the building's identity. As trade fair activity softened, the ATC gradually transformed its retail floors into a destination for fashion, interiors, and outdoor lifestyle brands. Today the lower levels operate as a commercial complex drawing Osaka shoppers on weekends, while upper floors retain office and exhibition tenants.
+
+The waterfront location has proven to be a durable asset. The building sits at the edge of Osaka Bay, within walking distance of the seaside promenade, and the view across the water towards the city skyline draws visitors who might otherwise have no particular business there. Summer outdoor events along the waterfront have become a regular feature of the site's calendar, binding the ATC more firmly into Osaka's leisure geography.
 
 ## Summary
 
-ATC Osaka was completed in 1994 — twelve floors above ground, operated by Asia Pacific Trade Center Co., Ltd. on the Cosmo Square waterfront. Over thirty years it has shifted from a trade-promotion hub to a broad-based commercial and cultural venue, while continuing to anchor the Nanko district's distinctive bay-edge identity. A visit to South Port, with its wide promenades and sea horizon, offers a rare chance to read the story of Osaka's post-industrial shoreline at close range.
+The Asia Pacific Trade Centre (ATC) was completed in April 1994, with the ITM Building standing 12 floors tall at 56 metres and encompassing around 260,000 square metres of floor space. Built as the centrepiece of Osaka's Nanko bay area development, it has shifted from its origins as a trade centre towards a mixed commercial and office role while retaining its identity as one of the defining buildings of Cosmosquare. Take the Nanko Port Town Line out to Tradecenter-mae and walk the waterfront to appreciate both the building's scale and the expansive bay setting it commands.
