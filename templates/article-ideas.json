@@ -4217,6 +4217,51 @@
       "area": "調布市",
       "angle": "日本設計・多目的スタジアム、収容約50,000席",
       "status": "done"
+    },
+    {
+      "id": 466,
+      "category": "residence",
+      "title": "千葉セントラルタワー",
+      "slug": "chiba-central-tower",
+      "area": "千葉市中央区",
+      "angle": "2009年竣工・43階・高さ151.5m・オリックス不動産開発の千葉市を代表するタワーマンション",
+      "status": "done"
+    },
+    {
+      "id": 467,
+      "category": "residence",
+      "title": "エクラスタワー武蔵小杉",
+      "slug": "eclat-tower-musashikosugi",
+      "area": "川崎市中原区",
+      "angle": "2013年竣工・39階・壁面緑化でグッドデザイン賞受賞。武蔵小杉再開発を代表するタワーレジデンス",
+      "status": "done"
+    },
+    {
+      "id": 468,
+      "category": "office",
+      "title": "東京カテドラル聖マリア大聖堂",
+      "slug": "tokyo-st-mary-cathedral",
+      "area": "文京区",
+      "angle": "1964年竣工・丹下健三設計・HPシェル構造・ステンレス外装。戦後日本建築の到達点",
+      "status": "done"
+    },
+    {
+      "id": 469,
+      "category": "office",
+      "title": "シーバンスS館",
+      "slug": "seavans-s-tower",
+      "area": "港区",
+      "angle": "1991年竣工・24階・港区芝浦。旧清水建設本社→Daibiru管理のウォーターフロントオフィス",
+      "status": "done"
+    },
+    {
+      "id": 470,
+      "category": "railway",
+      "title": "相鉄・東急直通線（東急新横浜線・相鉄新横浜線）",
+      "slug": "sotetsu-tokyu-shin-yokohama-line",
+      "area": "横浜市・川崎市",
+      "angle": "2023年3月18日開業・東急新横浜線5.8km+相鉄新横浜線6.3km・新横浜を核に海老名〜浦和美園を直通",
+      "status": "done"
     }
   ]
 }
