@@ -4262,6 +4262,51 @@
       "area": "横浜市・川崎市",
       "angle": "2023年3月18日開業・東急新横浜線5.8km+相鉄新横浜線6.3km・新横浜を核に海老名〜浦和美園を直通",
       "status": "done"
+    },
+    {
+      "id": 471,
+      "category": "residence",
+      "title": "シティタワー広島",
+      "slug": "city-tower-hiroshima",
+      "area": "広島市南区",
+      "angle": "2016年8月竣工・52階地下2階・高さ189m・住友不動産・広島駅南口B街区再開発・中国地方最高層級",
+      "status": "done"
+    },
+    {
+      "id": 472,
+      "category": "residence",
+      "title": "アーバンビューグランドタワー",
+      "slug": "urban-view-grand-tower",
+      "area": "広島市中区",
+      "angle": "2004年竣工・43階・高さ166m・商業・オフィス・住宅の複合超高層・アーバンコーポレイション開発",
+      "status": "done"
+    },
+    {
+      "id": 473,
+      "category": "office",
+      "title": "中日ビル（名古屋）",
+      "slug": "chunichi-building-nagoya",
+      "area": "名古屋市中区",
+      "angle": "2023年7月竣工・33階地下5階・高さ158m・竹中工務店設計施工・名古屋・栄の複合再開発",
+      "status": "done"
+    },
+    {
+      "id": 474,
+      "category": "residence",
+      "title": "ONE札幌ステーションタワー",
+      "slug": "one-sapporo-station-tower",
+      "area": "札幌市北区",
+      "angle": "2023年10月竣工・48階地下2階・高さ175m・札幌駅北口再開発・北海道最高層タワーマンション",
+      "status": "done"
+    },
+    {
+      "id": 475,
+      "category": "residence",
+      "title": "hitoto広島 The Tower",
+      "slug": "hitoto-hiroshima-the-tower",
+      "area": "広島市中区",
+      "angle": "2020年竣工・53階地下1階・高さ178m・旧広島大学跡地・三菱地所レジデンス等5社共同開発",
+      "status": "done"
     }
   ]
 }
