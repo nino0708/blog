@@ -983,5 +983,30 @@
     "slug": "kiyosubashi",
     "postedAt": "2026-11-21",
     "type": "quiz"
+  },
+  {
+    "slug": "ajinomoto-stadium",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "atc-osaka",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "edo-tokyo-museum",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kita-osaka-extension",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kudan-kaikan-terrace",
+    "postedAt": "2026-11-20",
+    "type": "quiz"
   }
 ]
