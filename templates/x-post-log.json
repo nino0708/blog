@@ -1008,5 +1008,30 @@
     "slug": "kudan-kaikan-terrace",
     "postedAt": "2026-11-20",
     "type": "quiz"
+  },
+  {
+    "slug": "chiba-central-tower",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "land-axis-tower-saitama",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "marunouchi-oazo",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "nagoya-jrg-central-towers",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "miraikan",
+    "postedAt": "2026-11-23",
+    "type": "quiz"
   }
 ]
