@@ -4217,6 +4217,51 @@
       "area": "調布市",
       "angle": "日本設計・多目的スタジアム、収容約50,000席",
       "status": "done"
+    },
+    {
+      "id": 466,
+      "category": "sports",
+      "title": "日本武道館",
+      "slug": "nihon-budokan",
+      "area": "千代田区",
+      "angle": "1964年東京オリンピック柔道会場・八角形の聖地",
+      "status": "done"
+    },
+    {
+      "id": 467,
+      "category": "office",
+      "title": "神奈川県庁本庁舎",
+      "slug": "kanagawa-prefectural-office",
+      "area": "横浜市中区",
+      "angle": "横浜三塔「キング」帝冠様式の重要文化財",
+      "status": "done"
+    },
+    {
+      "id": 468,
+      "category": "sports",
+      "title": "エディオンピースウイング広島",
+      "slug": "edion-peace-wing-hiroshima",
+      "area": "広島市中区",
+      "angle": "2024年開業・旧広島市民球場跡地のサッカー専用スタジアム",
+      "status": "done"
+    },
+    {
+      "id": 469,
+      "category": "sports",
+      "title": "ベルーナドーム",
+      "slug": "belluna-dome",
+      "area": "所沢市",
+      "angle": "世界初の後付けドーム・西武ライオンズの本拠地",
+      "status": "done"
+    },
+    {
+      "id": 470,
+      "category": "office",
+      "title": "東京都美術館",
+      "slug": "tokyo-metropolitan-art-museum",
+      "area": "台東区",
+      "angle": "前川國男設計・上野公園の地下展示空間",
+      "status": "done"
     }
   ]
 }
