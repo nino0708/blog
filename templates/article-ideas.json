@@ -4217,6 +4217,51 @@
       "area": "調布市",
       "angle": "日本設計・多目的スタジアム、収容約50,000席",
       "status": "done"
+    },
+    {
+      "id": 466,
+      "category": "office",
+      "title": "豊洲市場",
+      "slug": "toyosu-market",
+      "area": "江東区",
+      "angle": "2018年10月開場。築地から移転した東京都中央卸売市場。高床式建物群と土壌汚染対策",
+      "status": "done"
+    },
+    {
+      "id": 467,
+      "category": "sports",
+      "title": "日産スタジアム（横浜国際総合競技場）",
+      "slug": "nissan-stadium",
+      "area": "横浜市港北区",
+      "angle": "1998年3月開場。日本最大収容72,327席。2002年FIFAワールドカップ決勝会場",
+      "status": "done"
+    },
+    {
+      "id": 468,
+      "category": "office",
+      "title": "日本武道館",
+      "slug": "nippon-budokan",
+      "area": "千代田区",
+      "angle": "1964年東京オリンピックのために建設。山田守設計。八角形平面・高さ42m",
+      "status": "done"
+    },
+    {
+      "id": 469,
+      "category": "sports",
+      "title": "両国国技館",
+      "slug": "ryogoku-kokugikan",
+      "area": "墨田区",
+      "angle": "1985年1月落成。収容11,098人の相撲の聖地。延床35,700m²",
+      "status": "done"
+    },
+    {
+      "id": 470,
+      "category": "hotel",
+      "title": "新横浜プリンスホテル",
+      "slug": "shin-yokohama-prince-hotel",
+      "area": "横浜市港北区",
+      "angle": "1992年3月竣工。清水建設設計・42階・高さ149m。新横浜のランドマーク",
+      "status": "done"
     }
   ]
 }
