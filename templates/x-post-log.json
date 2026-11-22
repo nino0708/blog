@@ -983,5 +983,30 @@
     "slug": "kiyosubashi",
     "postedAt": "2026-11-21",
     "type": "quiz"
+  },
+  {
+    "slug": "toyosu-market",
+    "postedAt": "2026-11-22",
+    "type": "intro"
+  },
+  {
+    "slug": "nissan-stadium",
+    "postedAt": "2026-11-22",
+    "type": "intro"
+  },
+  {
+    "slug": "nippon-budokan",
+    "postedAt": "2026-11-22",
+    "type": "intro"
+  },
+  {
+    "slug": "ryogoku-kokugikan",
+    "postedAt": "2026-11-22",
+    "type": "intro"
+  },
+  {
+    "slug": "shin-yokohama-prince-hotel",
+    "postedAt": "2026-11-22",
+    "type": "quiz"
   }
 ]
