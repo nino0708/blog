@@ -4217,6 +4217,51 @@
       "area": "調布市",
       "angle": "日本設計・多目的スタジアム、収容約50,000席",
       "status": "done"
+    },
+    {
+      "id": 466,
+      "category": "commercial",
+      "title": "渋谷ミヤシタパーク",
+      "slug": "shibuya-miyashita-park",
+      "area": "渋谷区",
+      "angle": "旧宮下公園を立体都市公園に再生、商業・ホテル複合",
+      "status": "done"
+    },
+    {
+      "id": 467,
+      "category": "office",
+      "title": "別府タワー",
+      "slug": "beppu-tower",
+      "area": "大分県別府市",
+      "angle": "1957年完成・内藤多仲設計・別府の観光タワー。国登録有形文化財",
+      "status": "done"
+    },
+    {
+      "id": 468,
+      "category": "expressway",
+      "title": "西瀬戸自動車道（しまなみ海道）",
+      "slug": "nishi-seto-expressway",
+      "area": "広島県尾道市〜愛媛県今治市",
+      "angle": "2006年全線開通・46.6km・6橋梁で瀬戸内の島々を繋ぐ本四連絡道",
+      "status": "done"
+    },
+    {
+      "id": 469,
+      "category": "bridge",
+      "title": "多々羅大橋",
+      "slug": "tatara-bridge",
+      "area": "広島県・愛媛県",
+      "angle": "しまなみ海道、主径間890m・完成時世界最長の斜張橋",
+      "status": "done"
+    },
+    {
+      "id": 470,
+      "category": "expressway",
+      "title": "名神高速道路",
+      "slug": "meishin-expressway",
+      "area": "愛知県〜兵庫県",
+      "angle": "日本初の高速道路、全長189.3km・1965年全線開通",
+      "status": "done"
     }
   ]
 }
