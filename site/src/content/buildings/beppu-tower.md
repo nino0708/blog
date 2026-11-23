@@ -10,7 +10,7 @@ architect: "内藤多仲"
 tags: ["大分県", "別府市", "観光タワー", "内藤多仲", "登録有形文化財"]
 publishedAt: 2026-11-23
 summary: "1957年に完成した大分県別府市の観光タワー。「タワー博士」内藤多仲の設計で、展望台は地上約55m地点に位置する。2007年に国の登録有形文化財に指定され、別府温泉観光の顔として親しまれてきた。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Beppu_Tower_20230212.jpg/1200px-Beppu_Tower_20230212.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/38/Beppu_Tower_20230212.jpg"
 heroImageCredit: "Tabitan / CC BY-SA 4.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Beppu_Tower_20230212.jpg"
 verified: true

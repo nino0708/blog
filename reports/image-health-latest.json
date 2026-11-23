@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-23T08:24:28.775540+09:00",
+  "checkedAt": "2026-11-24T08:22:26.244216+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -588,6 +588,80 @@
       "lang": "en",
       "state": "missing",
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/beppu-tower/",
+      "slug": "beppu-tower",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Beppu_Tower_20230212.jpg/1200px-Beppu_Tower_20230212.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/beppu-tower/",
+      "slug": "beppu-tower",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Beppu_Tower_20230212.jpg/1200px-Beppu_Tower_20230212.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/meishin-expressway/",
+      "slug": "meishin-expressway",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meishin_Expressway01.jpg/1280px-Meishin_Expressway01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/meishin-expressway/",
+      "slug": "meishin-expressway",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meishin_Expressway01.jpg/1280px-Meishin_Expressway01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/nishi-seto-expressway/",
+      "slug": "nishi-seto-expressway",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/View_of_Nishi-Seto_Expressway_on_west_side_of_Tatara_Bridge_from_Tatara_Sports_Park.jpg/1280px-View_of_Nishi-Seto_Expressway_on_west_side_of_Tatara_Bridge_from_Tatara_Sports_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/nishi-seto-expressway/",
+      "slug": "nishi-seto-expressway",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/View_of_Nishi-Seto_Expressway_on_west_side_of_Tatara_Bridge_from_Tatara_Sports_Park.jpg/1280px-View_of_Nishi-Seto_Expressway_on_west_side_of_Tatara_Bridge_from_Tatara_Sports_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shibuya-miyashita-park/",
+      "slug": "shibuya-miyashita-park",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg/1280px-Miyashita_Park_seen_from_Shibuya_Stream.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shibuya-miyashita-park/",
+      "slug": "shibuya-miyashita-park",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Miyashita_Park_seen_from_Shibuya_Stream.jpg/1280px-Miyashita_Park_seen_from_Shibuya_Stream.jpg"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tatara-bridge/",
+      "slug": "tatara-bridge",
+      "lang": "ja",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg/1200px-Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg",
+      "detail": "HTTP 400"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tatara-bridge/",
+      "slug": "tatara-bridge",
+      "lang": "en",
+      "state": "broken",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg/1200px-Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg",
+      "detail": "HTTP 400"
     },
     {
       "url": "https://builtjapan.com/buildings/ajinomoto-stadium/",

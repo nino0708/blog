@@ -10,7 +10,7 @@ developer: "本州四国連絡橋公団"
 tags: ["広島県", "愛媛県", "斜張橋", "しまなみ海道", "本州四国連絡橋"]
 publishedAt: 2026-11-23
 summary: "1999年5月に開通した広島県生口島〜愛媛県大三島を結ぶ斜張橋。主径間890mは完成時の世界最長記録を更新し、全長1,480mにわたって瀬戸内海を跨ぐ。しまなみ海道を代表する橋梁の一つ。"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg/1200px-Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg"
 heroImageCredit: "そらみみ / CC BY-SA 4.0"
 heroImageLink: "https://commons.wikimedia.org/wiki/File:Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg"
 verified: true
