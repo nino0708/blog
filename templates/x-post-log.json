@@ -983,5 +983,30 @@
     "slug": "kiyosubashi",
     "postedAt": "2026-11-21",
     "type": "quiz"
+  },
+  {
+    "slug": "edo-tokyo-museum",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "miraikan",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "mode-gakuen-spiral-towers",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "makuhari-messe",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "nakanoshima-festival-tower",
+    "postedAt": "2026-11-23",
+    "type": "quiz"
   }
 ]
