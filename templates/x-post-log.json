@@ -1008,5 +1008,30 @@
     "slug": "nakanoshima-festival-tower",
     "postedAt": "2026-11-23",
     "type": "quiz"
+  },
+  {
+    "slug": "abeno-harukas",
+    "postedAt": "2026-11-24",
+    "type": "intro"
+  },
+  {
+    "slug": "akashi-kaikyo-bridge",
+    "postedAt": "2026-11-24",
+    "type": "intro"
+  },
+  {
+    "slug": "ark-mori-building",
+    "postedAt": "2026-11-24",
+    "type": "intro"
+  },
+  {
+    "slug": "cerulean-tower",
+    "postedAt": "2026-11-24",
+    "type": "intro"
+  },
+  {
+    "slug": "air-rise-tower",
+    "postedAt": "2026-11-24",
+    "type": "quiz"
   }
 ]
