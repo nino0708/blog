@@ -4307,6 +4307,15 @@
       "area": "大阪市北区",
       "angle": "2000年開館・黒川紀章設計・中之島の地上13階国際会議場",
       "status": "done"
+    },
+    {
+      "id": 476,
+      "category": "building",
+      "title": "武蔵野プレイス",
+      "slug": "musashino-place",
+      "area": "武蔵野市",
+      "angle": "2011年竣工・kw+hg architects設計・武蔵境駅直結の地上4階地下3階複合公共施設",
+      "status": "done"
     }
   ]
 }
