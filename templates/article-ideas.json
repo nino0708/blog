@@ -4262,6 +4262,51 @@
       "area": "愛知県〜兵庫県",
       "angle": "日本初の高速道路、全長189.3km・1965年全線開通",
       "status": "done"
+    },
+    {
+      "id": 471,
+      "category": "building",
+      "title": "21_21 DESIGN SIGHT",
+      "slug": "2121-design-sight",
+      "area": "港区",
+      "angle": "安藤忠雄設計・2007年開館、建物の大部分が地下に埋まるデザインミュージアム",
+      "status": "done"
+    },
+    {
+      "id": 472,
+      "category": "building",
+      "title": "豊洲市場",
+      "slug": "toyosu-market",
+      "area": "江東区",
+      "angle": "2018年開場・東京ガス跡地に整備された日本最大規模の中央卸売市場",
+      "status": "done"
+    },
+    {
+      "id": 473,
+      "category": "building",
+      "title": "ベルーナドーム",
+      "slug": "belluna-dome",
+      "area": "埼玉県所沢市",
+      "angle": "1979年開場・1999年にドーム屋根を後付けした埼玉西武ライオンズの本拠地",
+      "status": "done"
+    },
+    {
+      "id": 474,
+      "category": "building",
+      "title": "東京都現代美術館",
+      "slug": "tokyo-metropolitan-museum-contemporary-art",
+      "area": "江東区",
+      "angle": "1995年開館・延床33,515㎡・柳澤孝彦設計の国内最大規模の現代美術館",
+      "status": "done"
+    },
+    {
+      "id": 475,
+      "category": "building",
+      "title": "大阪国際会議場",
+      "slug": "osaka-international-convention-center",
+      "area": "大阪市北区",
+      "angle": "2000年開館・黒川紀章設計・中之島の地上13階国際会議場",
+      "status": "done"
     }
   ]
 }
