@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-24T08:22:26.244216+09:00",
+  "checkedAt": "2026-11-25T08:22:16.077384+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -303,6 +303,13 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/page/43/",
+      "slug": "43",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/en/buildings/page/2/",
       "slug": "2",
       "lang": "en",
@@ -590,20 +597,109 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/en/buildings/page/43/",
+      "slug": "43",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/2121-design-sight/",
+      "slug": "2121-design-sight",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/2121-design-sight/",
+      "slug": "2121-design-sight",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/belluna-dome/",
+      "slug": "belluna-dome",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Belluna_Dome_Scoreboard.jpg/1280px-Belluna_Dome_Scoreboard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/belluna-dome/",
+      "slug": "belluna-dome",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Belluna_Dome_Scoreboard.jpg/1280px-Belluna_Dome_Scoreboard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/musashino-place/",
+      "slug": "musashino-place",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Musashino_Place.JPG/1280px-Musashino_Place.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/musashino-place/",
+      "slug": "musashino-place",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Musashino_Place.JPG/1280px-Musashino_Place.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/osaka-international-convention-center/",
+      "slug": "osaka-international-convention-center",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Osaka_International_Convention_Center-01.jpg/1280px-Osaka_International_Convention_Center-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/osaka-international-convention-center/",
+      "slug": "osaka-international-convention-center",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Osaka_International_Convention_Center-01.jpg/1280px-Osaka_International_Convention_Center-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/tokyo-metropolitan-museum-contemporary-art/",
+      "slug": "tokyo-metropolitan-museum-contemporary-art",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Museum_of_Contemporary_Art_Tokyo_2009.jpg/1280px-Museum_of_Contemporary_Art_Tokyo_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/tokyo-metropolitan-museum-contemporary-art/",
+      "slug": "tokyo-metropolitan-museum-contemporary-art",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Museum_of_Contemporary_Art_Tokyo_2009.jpg/1280px-Museum_of_Contemporary_Art_Tokyo_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/toyosu-market/",
+      "slug": "toyosu-market",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/toyosu-market/",
+      "slug": "toyosu-market",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
       "url": "https://builtjapan.com/buildings/beppu-tower/",
       "slug": "beppu-tower",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Beppu_Tower_20230212.jpg/1200px-Beppu_Tower_20230212.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Beppu_Tower_20230212.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/beppu-tower/",
       "slug": "beppu-tower",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Beppu_Tower_20230212.jpg/1200px-Beppu_Tower_20230212.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Beppu_Tower_20230212.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/meishin-expressway/",
@@ -651,17 +747,15 @@
       "url": "https://builtjapan.com/buildings/tatara-bridge/",
       "slug": "tatara-bridge",
       "lang": "ja",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg/1200px-Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg"
     },
     {
       "url": "https://builtjapan.com/en/buildings/tatara-bridge/",
       "slug": "tatara-bridge",
       "lang": "en",
-      "state": "broken",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg/1200px-Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg",
-      "detail": "HTTP 400"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg"
     },
     {
       "url": "https://builtjapan.com/buildings/ajinomoto-stadium/",
@@ -1032,14 +1126,14 @@
       "slug": "kanda-square",
       "lang": "ja",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/KANDA_SQUARE-2.jpg/1280px-KANDA_SQUARE-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/KANDA_SQUARE-5.jpg/1280px-KANDA_SQUARE-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/en/buildings/kanda-square/",
       "slug": "kanda-square",
       "lang": "en",
       "state": "ok",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/KANDA_SQUARE-2.jpg/1280px-KANDA_SQUARE-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/KANDA_SQUARE-5.jpg/1280px-KANDA_SQUARE-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "url": "https://builtjapan.com/buildings/osaki-bright-tower/",

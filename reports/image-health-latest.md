@@ -1,15 +1,16 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-24 08:22 JST
-- 対象: 公開済み記事 968 ページ（https://builtjapan.com）
-- 正常表示: 774 / 968（80.0%）
-- **要対応: 194 件**（画像なし 190 / 壊れ 4 / ページ異常 0）
+- 実行: 2026-11-25 08:22 JST
+- 対象: 公開済み記事 982 ページ（https://builtjapan.com）
+- 正常表示: 788 / 982（80.2%）
+- **要対応: 194 件**（画像なし 194 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
 | 記事 | 詳細 |
 |---|---|
 | [buildings（JA）](https://builtjapan.com/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
+| [2121-design-sight（JA）](https://builtjapan.com/buildings/2121-design-sight/) | ヒーロー画像なし（プレースホルダ表示） |
 | [ajinomoto-stadium（JA）](https://builtjapan.com/buildings/ajinomoto-stadium/) | ヒーロー画像なし（プレースホルダ表示） |
 | [atc-osaka（JA）](https://builtjapan.com/buildings/atc-osaka/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（JA）](https://builtjapan.com/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -76,6 +77,7 @@
 | [40（JA）](https://builtjapan.com/buildings/page/40/) | ヒーロー画像なし（プレースホルダ表示） |
 | [41（JA）](https://builtjapan.com/buildings/page/41/) | ヒーロー画像なし（プレースホルダ表示） |
 | [42（JA）](https://builtjapan.com/buildings/page/42/) | ヒーロー画像なし（プレースホルダ表示） |
+| [43（JA）](https://builtjapan.com/buildings/page/43/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（JA）](https://builtjapan.com/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（JA）](https://builtjapan.com/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
 | [7（JA）](https://builtjapan.com/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -105,6 +107,7 @@
 | [yokohama-city-hall（JA）](https://builtjapan.com/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（JA）](https://builtjapan.com/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [buildings（EN）](https://builtjapan.com/en/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
+| [2121-design-sight（EN）](https://builtjapan.com/en/buildings/2121-design-sight/) | ヒーロー画像なし（プレースホルダ表示） |
 | [ajinomoto-stadium（EN）](https://builtjapan.com/en/buildings/ajinomoto-stadium/) | ヒーロー画像なし（プレースホルダ表示） |
 | [atc-osaka（EN）](https://builtjapan.com/en/buildings/atc-osaka/) | ヒーロー画像なし（プレースホルダ表示） |
 | [bayz-tower-and-garden（EN）](https://builtjapan.com/en/buildings/bayz-tower-and-garden/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -171,6 +174,7 @@
 | [40（EN）](https://builtjapan.com/en/buildings/page/40/) | ヒーロー画像なし（プレースホルダ表示） |
 | [41（EN）](https://builtjapan.com/en/buildings/page/41/) | ヒーロー画像なし（プレースホルダ表示） |
 | [42（EN）](https://builtjapan.com/en/buildings/page/42/) | ヒーロー画像なし（プレースホルダ表示） |
+| [43（EN）](https://builtjapan.com/en/buildings/page/43/) | ヒーロー画像なし（プレースホルダ表示） |
 | [5（EN）](https://builtjapan.com/en/buildings/page/5/) | ヒーロー画像なし（プレースホルダ表示） |
 | [6（EN）](https://builtjapan.com/en/buildings/page/6/) | ヒーロー画像なし（プレースホルダ表示） |
 | [7（EN）](https://builtjapan.com/en/buildings/page/7/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -199,15 +203,6 @@
 | [utsunomiya-lrt（EN）](https://builtjapan.com/en/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（EN）](https://builtjapan.com/en/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
-
-## 画像が壊れている（srcはあるが取得できない）
-
-| 記事 | 詳細 |
-|---|---|
-| [beppu-tower（JA）](https://builtjapan.com/buildings/beppu-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Beppu_Tower_20230212.jpg/1200px-Beppu_Tower_20230212.jpg` |
-| [tatara-bridge（JA）](https://builtjapan.com/buildings/tatara-bridge/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg/1200px-Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg` |
-| [beppu-tower（EN）](https://builtjapan.com/en/buildings/beppu-tower/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Beppu_Tower_20230212.jpg/1200px-Beppu_Tower_20230212.jpg` |
-| [tatara-bridge（EN）](https://builtjapan.com/en/buildings/tatara-bridge/) | HTTP 400<br>`https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg/1200px-Tatara_Bridge_from_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22_4.jpg` |
 
 ## 直し方
 
