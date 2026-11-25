@@ -4316,6 +4316,51 @@
       "area": "武蔵野市",
       "angle": "2011年竣工・kw+hg architects設計・武蔵境駅直結の地上4階地下3階複合公共施設",
       "status": "done"
+    },
+    {
+      "id": 477,
+      "category": "office",
+      "title": "スパイラル",
+      "slug": "spiral-minami-aoyama",
+      "area": "港区",
+      "angle": "1985年竣工・槇文彦設計・南青山の複合文化施設。ギャラリー・ホール・レストランを束ねるポストモダン建築の代表作",
+      "status": "done"
+    },
+    {
+      "id": 478,
+      "category": "building",
+      "title": "横浜美術館",
+      "slug": "yokohama-museum-of-art",
+      "area": "横浜市西区",
+      "angle": "1988年竣工・1989年開館・丹下健三設計・みなとみらい21地区の8階建て美術館",
+      "status": "done"
+    },
+    {
+      "id": 479,
+      "category": "building",
+      "title": "広島平和記念資料館（本館）",
+      "slug": "hiroshima-peace-memorial-museum",
+      "area": "広島市中区",
+      "angle": "1955年竣工・丹下健三設計・ピロティー式の国重要文化財。原爆被害を伝える博物館建築",
+      "status": "done"
+    },
+    {
+      "id": 480,
+      "category": "tower",
+      "title": "若戸大橋",
+      "slug": "wakato-bridge",
+      "area": "北九州市",
+      "angle": "1962年竣工・吊橋部627m・3径間2ヒンジ補剛トラス吊橋。国重要文化財・戸畑〜若松を結ぶ近代土木遺産",
+      "status": "done"
+    },
+    {
+      "id": 481,
+      "category": "tower",
+      "title": "長崎女神大橋",
+      "slug": "nagasaki-megami-bridge",
+      "area": "長崎市",
+      "angle": "2005年竣工・主橋梁部橋長880m・主塔高170m・3径間連続鋼斜張橋。愛称ヴィーナス・ウィング",
+      "status": "done"
     }
   ]
 }
