@@ -11,6 +11,9 @@ architect: "安井建築設計事務所"
 tags: ["新宿区", "西新宿", "超高層ビル", "1970年代", "オフィスビル"]
 publishedAt: 2026-11-13
 summary: "1978年6月竣工、地上50階・地下4階・高さ約210メートルの超高層オフィスビル。野村不動産が所有する西新宿のランドマークで、1970年代に進んだ新宿副都心開発を象徴する一棟。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Shinjuku-Nomura-Building-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "Rs1421 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shinjuku-Nomura-Building-01.jpg"
 verified: true
 sources:
   - "English Wikipedia: Shinjuku Nomura Building（高さ209.9m・50階・竣工1978年・設計安井建築設計事務所・施工熊谷組）https://en.wikipedia.org/wiki/Shinjuku_Nomura_Building"

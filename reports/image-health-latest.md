@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-25 08:22 JST
+- 実行: 2026-11-26 08:22 JST
 - 対象: 公開済み記事 982 ページ（https://builtjapan.com）
-- 正常表示: 788 / 982（80.2%）
-- **要対応: 194 件**（画像なし 194 / 壊れ 0 / ページ異常 0）
+- 正常表示: 786 / 982（80.0%）
+- **要対応: 196 件**（画像なし 196 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -37,6 +37,7 @@
 | [marunouchi-trust-city（JA）](https://builtjapan.com/buildings/marunouchi-trust-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nihonbashi-nomura-mitsui-tower（JA）](https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nissay-hamamatsucho-crea-tower（JA）](https://builtjapan.com/buildings/nissay-hamamatsucho-crea-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [nomura-shinjuku-building（JA）](https://builtjapan.com/buildings/nomura-shinjuku-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [omiya-sonic-city（JA）](https://builtjapan.com/buildings/omiya-sonic-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-bright-core（JA）](https://builtjapan.com/buildings/osaki-bright-core/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-bright-tower（JA）](https://builtjapan.com/buildings/osaki-bright-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -134,6 +135,7 @@
 | [marunouchi-trust-city（EN）](https://builtjapan.com/en/buildings/marunouchi-trust-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nihonbashi-nomura-mitsui-tower（EN）](https://builtjapan.com/en/buildings/nihonbashi-nomura-mitsui-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nissay-hamamatsucho-crea-tower（EN）](https://builtjapan.com/en/buildings/nissay-hamamatsucho-crea-tower/) | ヒーロー画像なし（プレースホルダ表示） |
+| [nomura-shinjuku-building（EN）](https://builtjapan.com/en/buildings/nomura-shinjuku-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [omiya-sonic-city（EN）](https://builtjapan.com/en/buildings/omiya-sonic-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-bright-core（EN）](https://builtjapan.com/en/buildings/osaki-bright-core/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-bright-tower（EN）](https://builtjapan.com/en/buildings/osaki-bright-tower/) | ヒーロー画像なし（プレースホルダ表示） |
