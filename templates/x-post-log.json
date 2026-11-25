@@ -1033,5 +1033,30 @@
     "slug": "air-rise-tower",
     "postedAt": "2026-11-24",
     "type": "quiz"
+  },
+  {
+    "slug": "2121-design-sight",
+    "postedAt": "2026-11-25",
+    "type": "intro"
+  },
+  {
+    "slug": "ajinomoto-stadium",
+    "postedAt": "2026-11-25",
+    "type": "intro"
+  },
+  {
+    "slug": "atc-osaka",
+    "postedAt": "2026-11-25",
+    "type": "intro"
+  },
+  {
+    "slug": "belluna-dome",
+    "postedAt": "2026-11-25",
+    "type": "intro"
+  },
+  {
+    "slug": "beppu-tower",
+    "postedAt": "2026-11-25",
+    "type": "quiz"
   }
 ]
