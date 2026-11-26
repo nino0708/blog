@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-26T08:22:45.336642+09:00",
+  "checkedAt": "2026-11-27T08:21:42.602565+09:00",
   "pages": [
     {
       "url": "https://builtjapan.com/buildings/",
@@ -604,6 +604,76 @@
       "detail": "ヒーロー画像なし（プレースホルダ表示）"
     },
     {
+      "url": "https://builtjapan.com/buildings/bunkyo-green-court/",
+      "slug": "bunkyo-green-court",
+      "lang": "ja",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Bunkyo_green_court_honkomagome.JPG/1280px-Bunkyo_green_court_honkomagome.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/bunkyo-green-court/",
+      "slug": "bunkyo-green-court",
+      "lang": "en",
+      "state": "ok",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Bunkyo_green_court_honkomagome.JPG/1280px-Bunkyo_green_court_honkomagome.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/orix-honmachi-building/",
+      "slug": "orix-honmachi-building",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/orix-honmachi-building/",
+      "slug": "orix-honmachi-building",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/shinjuku-takashimaya-times-square/",
+      "slug": "shinjuku-takashimaya-times-square",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/shinjuku-takashimaya-times-square/",
+      "slug": "shinjuku-takashimaya-times-square",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yodobashi-akihabara/",
+      "slug": "yodobashi-akihabara",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yodobashi-akihabara/",
+      "slug": "yodobashi-akihabara",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/buildings/yokohama-new-city-hall/",
+      "slug": "yokohama-new-city-hall",
+      "lang": "ja",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
+      "url": "https://builtjapan.com/en/buildings/yokohama-new-city-hall/",
+      "slug": "yokohama-new-city-hall",
+      "lang": "en",
+      "state": "missing",
+      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+    },
+    {
       "url": "https://builtjapan.com/buildings/2121-design-sight/",
       "slug": "2121-design-sight",
       "lang": "ja",
@@ -1013,15 +1083,15 @@
       "url": "https://builtjapan.com/buildings/nomura-shinjuku-building/",
       "slug": "nomura-shinjuku-building",
       "lang": "ja",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Shinjuku-Nomura-Building-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/en/buildings/nomura-shinjuku-building/",
       "slug": "nomura-shinjuku-building",
       "lang": "en",
-      "state": "missing",
-      "detail": "ヒーロー画像なし（プレースホルダ表示）"
+      "state": "ok",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Shinjuku-Nomura-Building-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "url": "https://builtjapan.com/buildings/rinku-gate-tower/",

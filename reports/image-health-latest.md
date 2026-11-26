@@ -1,9 +1,9 @@
 # Built Japan 画像ヘルスチェック
 
-- 実行: 2026-11-26 08:22 JST
-- 対象: 公開済み記事 982 ページ（https://builtjapan.com）
-- 正常表示: 786 / 982（80.0%）
-- **要対応: 196 件**（画像なし 196 / 壊れ 0 / ページ異常 0）
+- 実行: 2026-11-27 08:21 JST
+- 対象: 公開済み記事 992 ページ（https://builtjapan.com）
+- 正常表示: 790 / 992（79.6%）
+- **要対応: 202 件**（画像なし 202 / 壊れ 0 / ページ異常 0）
 
 ## 画像なし（heroImage未設定 → グレーのプレースホルダ）
 
@@ -37,8 +37,8 @@
 | [marunouchi-trust-city（JA）](https://builtjapan.com/buildings/marunouchi-trust-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nihonbashi-nomura-mitsui-tower（JA）](https://builtjapan.com/buildings/nihonbashi-nomura-mitsui-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nissay-hamamatsucho-crea-tower（JA）](https://builtjapan.com/buildings/nissay-hamamatsucho-crea-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [nomura-shinjuku-building（JA）](https://builtjapan.com/buildings/nomura-shinjuku-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [omiya-sonic-city（JA）](https://builtjapan.com/buildings/omiya-sonic-city/) | ヒーロー画像なし（プレースホルダ表示） |
+| [orix-honmachi-building（JA）](https://builtjapan.com/buildings/orix-honmachi-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-bright-core（JA）](https://builtjapan.com/buildings/osaki-bright-core/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-bright-tower（JA）](https://builtjapan.com/buildings/osaki-bright-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-thinkpark-tower（JA）](https://builtjapan.com/buildings/osaki-thinkpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -91,6 +91,7 @@
 | [shibuya-fukuras（JA）](https://builtjapan.com/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（JA）](https://builtjapan.com/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shin-tomei-expressway（JA）](https://builtjapan.com/buildings/shin-tomei-expressway/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shinjuku-takashimaya-times-square（JA）](https://builtjapan.com/buildings/shinjuku-takashimaya-times-square/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（JA）](https://builtjapan.com/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-fudosan-shinjuku-grand-tower（JA）](https://builtjapan.com/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（JA）](https://builtjapan.com/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -105,7 +106,9 @@
 | [toyosu-foresia（JA）](https://builtjapan.com/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tv-asahi-headquarters（JA）](https://builtjapan.com/buildings/tv-asahi-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
 | [utsunomiya-lrt（JA）](https://builtjapan.com/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
+| [yodobashi-akihabara（JA）](https://builtjapan.com/buildings/yodobashi-akihabara/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（JA）](https://builtjapan.com/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
+| [yokohama-new-city-hall（JA）](https://builtjapan.com/buildings/yokohama-new-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（JA）](https://builtjapan.com/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [buildings（EN）](https://builtjapan.com/en/buildings/) | ヒーロー画像なし（プレースホルダ表示） |
 | [2121-design-sight（EN）](https://builtjapan.com/en/buildings/2121-design-sight/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -135,8 +138,8 @@
 | [marunouchi-trust-city（EN）](https://builtjapan.com/en/buildings/marunouchi-trust-city/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nihonbashi-nomura-mitsui-tower（EN）](https://builtjapan.com/en/buildings/nihonbashi-nomura-mitsui-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [nissay-hamamatsucho-crea-tower（EN）](https://builtjapan.com/en/buildings/nissay-hamamatsucho-crea-tower/) | ヒーロー画像なし（プレースホルダ表示） |
-| [nomura-shinjuku-building（EN）](https://builtjapan.com/en/buildings/nomura-shinjuku-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [omiya-sonic-city（EN）](https://builtjapan.com/en/buildings/omiya-sonic-city/) | ヒーロー画像なし（プレースホルダ表示） |
+| [orix-honmachi-building（EN）](https://builtjapan.com/en/buildings/orix-honmachi-building/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-bright-core（EN）](https://builtjapan.com/en/buildings/osaki-bright-core/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-bright-tower（EN）](https://builtjapan.com/en/buildings/osaki-bright-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [osaki-thinkpark-tower（EN）](https://builtjapan.com/en/buildings/osaki-thinkpark-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -189,6 +192,7 @@
 | [shibuya-fukuras（EN）](https://builtjapan.com/en/buildings/shibuya-fukuras/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shibuya-sakura-stage（EN）](https://builtjapan.com/en/buildings/shibuya-sakura-stage/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shin-tomei-expressway（EN）](https://builtjapan.com/en/buildings/shin-tomei-expressway/) | ヒーロー画像なし（プレースホルダ表示） |
+| [shinjuku-takashimaya-times-square（EN）](https://builtjapan.com/en/buildings/shinjuku-takashimaya-times-square/) | ヒーロー画像なし（プレースホルダ表示） |
 | [shinonome-canal-court-codan（EN）](https://builtjapan.com/en/buildings/shinonome-canal-court-codan/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-fudosan-shinjuku-grand-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-fudosan-shinjuku-grand-tower/) | ヒーロー画像なし（プレースホルダ表示） |
 | [sumitomo-iidabashi-first-tower（EN）](https://builtjapan.com/en/buildings/sumitomo-iidabashi-first-tower/) | ヒーロー画像なし（プレースホルダ表示） |
@@ -203,7 +207,9 @@
 | [toyosu-foresia（EN）](https://builtjapan.com/en/buildings/toyosu-foresia/) | ヒーロー画像なし（プレースホルダ表示） |
 | [tv-asahi-headquarters（EN）](https://builtjapan.com/en/buildings/tv-asahi-headquarters/) | ヒーロー画像なし（プレースホルダ表示） |
 | [utsunomiya-lrt（EN）](https://builtjapan.com/en/buildings/utsunomiya-lrt/) | ヒーロー画像なし（プレースホルダ表示） |
+| [yodobashi-akihabara（EN）](https://builtjapan.com/en/buildings/yodobashi-akihabara/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yokohama-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
+| [yokohama-new-city-hall（EN）](https://builtjapan.com/en/buildings/yokohama-new-city-hall/) | ヒーロー画像なし（プレースホルダ表示） |
 | [yurakucho-itoshia（EN）](https://builtjapan.com/en/buildings/yurakucho-itoshia/) | ヒーロー画像なし（プレースホルダ表示） |
 
 ## 直し方
