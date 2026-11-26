@@ -4316,6 +4316,51 @@
       "area": "武蔵野市",
       "angle": "2011年竣工・kw+hg architects設計・武蔵境駅直結の地上4階地下3階複合公共施設",
       "status": "done"
+    },
+    {
+      "id": 477,
+      "category": "office",
+      "title": "ヨドバシカメラ マルチメディアAkiba",
+      "slug": "yodobashi-akihabara",
+      "area": "千代田区",
+      "angle": "2005年開業・9階建て・高さ60m・延床61,400㎡。秋葉原駅前の垂直型大型商業施設",
+      "status": "done"
+    },
+    {
+      "id": 478,
+      "category": "office",
+      "title": "オリックス本町ビル",
+      "slug": "orix-honmachi-building",
+      "area": "大阪市西区",
+      "angle": "2011年竣工・地上29階・竹中工務店設計施工・超高層RC造免震という稀有な構造",
+      "status": "done"
+    },
+    {
+      "id": 479,
+      "category": "office",
+      "title": "新宿タカシマヤタイムズスクエア",
+      "slug": "shinjuku-takashimaya-times-square",
+      "area": "渋谷区",
+      "angle": "1996年開業・本館地下1階・地上14階・設計日建設計・日本設計。JR新宿南口直結の大型商業複合",
+      "status": "done"
+    },
+    {
+      "id": 480,
+      "category": "office",
+      "title": "横浜市新市庁舎",
+      "slug": "yokohama-new-city-hall",
+      "area": "横浜市中区",
+      "angle": "2020年竣工・地上32階・高さ155.4m・竹中西松JV。横浜市の新本庁舎として関内地区の再生拠点",
+      "status": "done"
+    },
+    {
+      "id": 481,
+      "category": "office",
+      "title": "文京グリーンコート",
+      "slug": "bunkyo-green-court",
+      "area": "文京区",
+      "angle": "文京区本駒込のオフィス複合施設。1998年竣工(要裏取り)",
+      "status": "done"
     }
   ]
 }
