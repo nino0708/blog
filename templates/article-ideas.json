@@ -4361,6 +4361,51 @@
       "area": "文京区",
       "angle": "文京区本駒込のオフィス複合施設。1998年竣工(要裏取り)",
       "status": "done"
+    },
+    {
+      "id": 482,
+      "category": "office",
+      "title": "神戸市役所1号館",
+      "slug": "kobe-city-hall-no1",
+      "area": "神戸市中央区",
+      "angle": "1989年竣工・地上30階・高さ132m・日建設計。24階に無料展望ロビーあり、阪神淡路大震災を経て市政の拠点であり続ける行政ビル",
+      "status": "done"
+    },
+    {
+      "id": 483,
+      "category": "office",
+      "title": "埼玉スタジアム2002",
+      "slug": "saitama-stadium-2002",
+      "area": "さいたま市緑区",
+      "angle": "2001年竣工・収容63,700席・梓設計。日本最大のサッカー専用スタジアムで2002 FIFA W杯開催地・浦和レッズのホーム",
+      "status": "done"
+    },
+    {
+      "id": 484,
+      "category": "residence",
+      "title": "アパホテル&リゾート横浜ベイタワー",
+      "slug": "apa-hotel-resort-yokohama-bay-tower",
+      "area": "横浜市中区",
+      "angle": "2019年竣工・地上35階・高さ約145m・客室2311室。横浜みなとみらいのランドマーク超高層ホテル",
+      "status": "done"
+    },
+    {
+      "id": 485,
+      "category": "office",
+      "title": "熊本城ホール",
+      "slug": "kumamoto-jo-hall",
+      "area": "熊本市中央区",
+      "angle": "2019年竣工・日建設計・延床約3万㎡・メインホール2300席。さくらまちクマモト再開発の中核、熊本城の東側に建つコンベンション複合施設",
+      "status": "done"
+    },
+    {
+      "id": 486,
+      "category": "bridge",
+      "title": "神戸ポートライナー（ポートアイランド線）",
+      "slug": "kobe-portliner",
+      "area": "神戸市",
+      "angle": "1981年2月5日開業・世界初の実用無人自動運転AGT・12駅。神戸新交通が運行、2006年神戸空港まで延伸",
+      "status": "done"
     }
   ]
 }
