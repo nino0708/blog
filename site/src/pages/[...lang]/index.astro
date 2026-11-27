@@ -83,9 +83,9 @@ const [titleA, titleB] = t('home.title2').split('\n');
         </div>
       )}
       <ul class="hero-stats">
-        <li><b>{buildingCount}</b><span>{t('home.stat.buildings')}</span></li>
-        <li><b>{articleCount}</b><span>{t('home.stat.articles')}</span></li>
-        <li><b>JP / EN</b><span>{t('home.stat.bilingual')}</span></li>
+        <li><span class="stat-num">{buildingCount}</span><span>{t('home.stat.buildings')}</span></li>
+        <li><span class="stat-num">{articleCount}</span><span>{t('home.stat.articles')}</span></li>
+        <li><span class="stat-num">JP / EN</span><span>{t('home.stat.bilingual')}</span></li>
       </ul>
     </div>
     <p class="hero-credit">{t('home.hero.credit')}: <a href="https://commons.wikimedia.org/wiki/File:Tokyo,_Japan_is_seen_from_a_U.S._Nighthawk_helicopter_(54883848249).jpg" target="_blank" rel="noopener">The White House</a>{t('home.hero.credit.suffix')}</p>
