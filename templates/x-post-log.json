@@ -1058,5 +1058,30 @@
     "slug": "kasumigaseki-building",
     "postedAt": "2026-11-27",
     "type": "quiz"
+  },
+  {
+    "slug": "2121-design-sight",
+    "postedAt": "2026-11-27",
+    "type": "intro"
+  },
+  {
+    "slug": "ajinomoto-stadium",
+    "postedAt": "2026-11-27",
+    "type": "intro"
+  },
+  {
+    "slug": "apa-hotel-resort-yokohama-bay-tower",
+    "postedAt": "2026-11-27",
+    "type": "intro"
+  },
+  {
+    "slug": "atc-osaka",
+    "postedAt": "2026-11-27",
+    "type": "intro"
+  },
+  {
+    "slug": "belluna-dome",
+    "postedAt": "2026-11-27",
+    "type": "quiz"
   }
 ]
