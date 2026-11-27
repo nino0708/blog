@@ -13,6 +13,9 @@ architect: "JR東日本東京工事事務所・JR東日本建築設計事務所"
 tags: ["千代田区", "丸の内", "超高層ビル", "東京駅", "再開発"]
 publishedAt: 2026-08-28
 summary: "2007年3月竣工、JR東京駅日本橋口に直結する地上35階・高さ約166mの複合タワー。JR東日本が手がけた「東京ステーションシティ」開発の第1号棟で、オフィス・コンファレンス・ホテル（ホテルメトロポリタン丸の内）を一棟に統合する。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Sapia_Tower.jpg/1280px-Sapia_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "稲妻ノ歯鯨 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Sapia_Tower.jpg"
 verified: true
 sources:
   - "東京都環境局「サピアタワー建物諸元（2020年11月現在）」所在地・用途・延床81,752㎡ https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/toplevel-certification-files-r2_sapiatower"

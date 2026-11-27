@@ -13,6 +13,9 @@ developer: "渋谷二丁目17地区市街地再開発組合"
 tags: ["渋谷区", "渋谷", "超高層ビル", "再開発", "複合開発"]
 publishedAt: 2026-11-11
 summary: "渋谷駅東口に隣接する地上23階・高さ約120mの複合タワー。渋谷ストリームの北隣に2024年7月開業し、オフィス・ホール・商業が一体化した渋谷再開発の新拠点。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Shibuya_Axsh_%2865602%29.jpg/1280px-Shibuya_Axsh_%2865602%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Syced / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shibuya_Axsh_(65602).jpg"
 verified: true
 sources: ["渋谷アクシュ - Wikipedia（地上23階・地下4階・高さ約120m・2024年7月開業・渋谷区渋谷二丁目17番1号・開発：渋谷二丁目17地区市街地再開発組合）"]
 ---

@@ -8,6 +8,9 @@ developer: "仙台市"
 tags: ["仙台市", "コンベンション", "国際会議", "青葉山", "国連防災世界会議"]
 publishedAt: 2026-11-08
 summary: "仙台市青葉区青葉山に立つ国際会議・展示場施設。2015年1月に展示棟が完成し、同年3月には第3回国連防災世界会議（WCDRR）の開催地となった。展示室面積は約3,000平方メートル。歴史ある会議棟と新設の展示棟が一体となり、仙台の国際MICE拠点を担っている。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/International_Center_Station_%28Sendai%29_20220910.jpg/1280px-International_Center_Station_%28Sendai%29_20220910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "掬茶 / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:International_Center_Station_(Sendai)_20220910.jpg"
 verified: true
 sources:
   - "仙台国際センター 公式サイト（仙台市青葉区青葉山・展示棟2015年開館・展示室面積約3,000㎡）"

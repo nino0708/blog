@@ -10,6 +10,9 @@ developer: "サッポロビール株式会社"
 tags: ["札幌市中央区", "商業施設", "産業遺産", "再生"]
 publishedAt: 2026-11-12
 summary: "1876年創業の開拓使麦酒醸造所跡地に誕生した商業複合施設。1993年開業、地上9階・延床123,322m²の7棟構成で、1892年築の赤レンガ倉庫とガラス屋根のアトリウムが共存する産業遺産再生の代表例。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/11/Sapporo_Factory1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "Daigaku2051 / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Sapporo_Factory1.JPG"
 verified: true
 sources:
   - "サッポロビール 社史 (1993年開業・開拓使麦酒醸造所跡地)"

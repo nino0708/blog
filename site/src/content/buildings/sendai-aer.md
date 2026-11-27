@@ -14,6 +14,9 @@ architect: "岡設計"
 tags: ["仙台市", "仙台", "超高層ビル", "複合施設"]
 publishedAt: 2026-10-12
 summary: "1998年竣工、仙台駅西口に直結する地上31階・高さ145.5mの複合高層ビル。商業フロアとオフィスを縦に積み重ね、最上階の31階は無料展望テラスとして開放。SS30・仙台トラストタワーとともに仙台駅前の超高層ゾーンを形成する。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/07/Aer_%28Sendai%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "The original uploader was Los688 at Japanese Wikipedia. / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Aer_(Sendai).JPG"
 verified: true
 sources:
   - "Wikipedia「アエル (仙台市)」（1998年3月竣工・地上31階地下3階・高さ145.5m・延床面積約93,000㎡）"

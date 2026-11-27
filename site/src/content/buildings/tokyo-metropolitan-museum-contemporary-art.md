@@ -12,6 +12,9 @@ architect: "柳澤孝彦＋TAK建築・都市計画研究所"
 tags: ["江東区", "美術館", "木場", "現代美術"]
 publishedAt: 2026-11-24
 summary: "1995年開館、国内最大規模の現代美術館。木場公園に隣接する延床面積33,515㎡の施設で、柳澤孝彦の設計による石張り外壁の重厚な建築が江東区の文化拠点として知られる。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Museum_of_Contemporary_Art_Tokyo_2009.jpg/1280px-Museum_of_Contemporary_Art_Tokyo_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Wiiii / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Museum_of_Contemporary_Art_Tokyo_2009.jpg"
 verified: true
 sources: ["東京都現代美術館 公式サイト（施設概要）", "柳澤孝彦＋TAK建築・都市計画研究所 作品情報"]
 ---

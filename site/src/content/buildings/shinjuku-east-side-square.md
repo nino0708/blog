@@ -8,6 +8,9 @@ floorsAbove: 20
 tags: ["新宿区", "東新宿", "オフィスビル", "再開発", "大規模オフィス"]
 publishedAt: 2026-11-04
 summary: "2012年竣工の地上20階建て大規模オフィス・商業複合施設。東新宿駅直結の立地に約1,780坪という大型フロアを擁し、新宿東口側の業務集積を担う。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Square_Enix_HQ_%28Shinjuku_Eastside_Square%29.jpg/1280px-Square_Enix_HQ_%28Shinjuku_Eastside_Square%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Wirtz / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Square_Enix_HQ_(Shinjuku_Eastside_Square).jpg"
 verified: true
 sources:
   - "officee.jp 物件情報（竣工2012年・所在地 新宿区新宿6-27-30・地上20階・基準階約1780坪・東新宿駅徒歩1分）"

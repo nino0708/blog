@@ -10,6 +10,9 @@ floorsAbove: 30
 tags: ["大阪市北区", "中之島", "ホテル", "関西"]
 publishedAt: 2026-10-30
 summary: "大阪・中之島の堂島川沿いに立つ老舗大型ホテル。1935年創業の新大阪ホテルを前身に持ち、1965年竣工のウエストウイング（15階）、1973年竣工の地上30階タワーウイングで構成される関西有数の大型ホテル。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Rihga_Royal_Hotel_and_Osaka_International_Convention_Center.jpg/1280px-Rihga_Royal_Hotel_and_Osaka_International_Convention_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Waei / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Rihga_Royal_Hotel_and_Osaka_International_Convention_Center.jpg"
 verified: true
 sources:
   - "BELCA維持保全優良建築物表彰 資料（ウエストウイング1965年竣工、タワーウイング1973年竣工）"

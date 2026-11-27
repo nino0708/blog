@@ -14,6 +14,9 @@ architect: "山下設計"
 tags: ["江東区", "スポーツ施設", "東京五輪", "水泳", "辰巳"]
 publishedAt: 2026-11-19
 summary: "2020年竣工、東京都江東区辰巳に立つ国際公認の水泳競技施設。東京2020オリンピック・パラリンピックの競泳・水球・アーティスティックスイミング・飛込競技の会場として建設され、3つの国際基準プールを備える。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Tokyo_Aquatics_Centre.jpg/1280px-Tokyo_Aquatics_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Arne Müseler / CC BY-SA 3.0 de"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Aquatics_Centre.jpg"
 verified: true
 sources: ["東京都財務局 施設概要資料", "大林組 施工実績（東京アクアティクスセンター）"]
 ---

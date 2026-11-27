@@ -11,6 +11,9 @@ architect: "MAS・2000共同設計室（代表：日建設計）、ダン・マ�
 tags: ["さいたま市", "アリーナ", "さいたま新都心", "可動式スタンド"]
 publishedAt: 2026-11-03
 summary: "2000年9月開業のさいたま新都心の中核施設。スタジアム・メインアリーナ・コミュニティアリーナの3形態に切り替えられる可動システムを備え、最大約37,000人を収容する。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Saitama_Super_Arena_02.jpg/1280px-Saitama_Super_Arena_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Saitama_Super_Arena_02.jpg"
 verified: true
 sources:
   - "埼玉県公式サイト さいたまスーパーアリーナ施設概要"
