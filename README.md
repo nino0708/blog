@@ -1,6 +1,6 @@
-# Tokyo Towers Journal
+# Built Japan（builtjapan.com）
 
-東京の大型オフィスビル・タワーマンションを巡る趣味の建築情報ブログ。**日本語/英語のマルチランゲージ**（インバウンド観光客向けに英語版も配信）。
+日本の高層建築・橋・高速道路・交通網を1件ずつ記録する建築情報ブログ。**日本語/英語のマルチランゲージ**（インバウンド観光客向けに英語版も配信）。
 **Astro（静的サイト）+ S3/CloudFront 配信 + 記事自動生成（Lambda）+ AWSネイティブCI/CD（CodeBuild）** で構成。
 
 ## アーキテクチャ
@@ -34,7 +34,7 @@
 ## ディレクトリ
 
 ```
-tokyo-building-blog/
+blog/
 ├── site/                 # Astro フロントエンド
 │   ├── src/content/buildings/      # 日本語記事Markdown（Lambdaがここに追記）
 │   ├── src/content/buildings-en/   # 英語記事Markdown（同上・slugはJPと一致）
@@ -42,10 +42,16 @@ tokyo-building-blog/
 │   ├── src/lib/content.ts # 記事データの入口（日英を同じ形で返す）
 │   ├── src/pages/[...lang]/ # 全ページ。日英を1ファイルで生成（/xxx/ と /en/xxx/）
 │   └── src/components, layouts, styles
-├── generator/            # 記事生成Lambda
+├── generator/            # 記事生成Lambda（Python・標準ライブラリのみ）
 │   ├── data/buildings.json   # 建物seed（事実の出典）★ここを育てる。*_en に英語の固有名詞
-│   ├── index.mjs         # ハンドラ（seed→Claude→日英ファクトチェック→GitHubコミット）
-│   └── prompts.mjs       # 日本語/英語の生成・検証プロンプト
+│   ├── data/hero-image-block.json # 自動で付けてはいけない写真・記事
+│   ├── index.py          # ハンドラ（seed→Claude→日英ファクトチェック→GitHubコミット）
+│   ├── prompts.py        # 日本語/英語の生成・検証プロンプト
+│   └── backfill_images.py / repair_images.py / commons.py # 記事写真の自動補完・修復
+├── analytics/            # アクセス集計Lambda(index.py)・画像チェック(image_health.py / people_check.py)
+├── reports/              # 分析部・画像監視部の出力（週次アクセスレポートなど）
+├── templates/            # 手動で記事を書くときのテンプレ・ネタ帳・X投稿の補助スクリプト
+├── .github/workflows/    # PRのビルド検査・画像の監視
 ├── infra/
 │   ├── 01-hosting.yaml   # S3 + CloudFront + (任意)ACM/独自ドメイン
 │   └── 02-pipeline.yaml  # CodeBuild + Lambda + EventBridge
@@ -60,15 +66,15 @@ tokyo-building-blog/
 cd site
 npm install
 npm run dev      # http://localhost:4321
-npm run build    # dist/ を生成（日英あわせて43ページ確認済み）
+npm run build    # dist/ を生成
+npm run check:links  # 内部リンク切れの検査
 ```
 
 記事をローカルで1本生成して確認:
 
 ```bash
 cd generator
-npm install
-ANTHROPIC_API_KEY=sk-ant-... node index.mjs --local
+ANTHROPIC_API_KEY=sk-ant-... python3 index.py --local
 # → site/src/content/buildings/<slug>.md を書き出す（GitHubコミットなし）
 ```
 
@@ -92,8 +98,8 @@ aws cloudformation deploy --template-file infra/01-hosting.yaml \
 
 ### 3. Lambda(generator)をパッケージしてS3へ
 ```bash
-cd generator && npm install --omit=dev
-zip -r ../generator.zip . -x "*.git*"
+cd generator
+zip -r ../generator.zip . -x "*.git*" "__pycache__/*"
 aws s3 cp ../generator.zip s3://<任意のデプロイ用バケット>/tokyo-building-blog/generator.zip
 ```
 
@@ -103,7 +109,7 @@ aws cloudformation deploy --template-file infra/02-pipeline.yaml \
   --stack-name tbb-pipeline \
   --parameter-overrides \
     SiteBucketName=<手順2の出力> DistributionId=<手順2の出力> \
-    GitHubOwner=itsukinino GitHubRepo=portfolio GitHubBranch=main \
+    GitHubOwner=nino0708 GitHubRepo=blog GitHubBranch=main \
     AnthropicSecretArn=<手順1> GitHubTokenSecretArn=<手順1> \
     LambdaCodeS3Bucket=<手順3のバケット> \
   --capabilities CAPABILITY_IAM
@@ -116,7 +122,7 @@ aws codebuild import-source-credentials --server-type GITHUB \
   --auth-type PERSONAL_ACCESS_TOKEN --token ghp_...
 ```
 
-これで「週次でLambdaが記事生成→GitHubコミット→CodeBuildがビルド→S3/CloudFrontへ反映」が回る。
+これで「毎日Lambdaが記事生成→GitHubコミット→CodeBuildがビルド→S3/CloudFrontへ反映」が回る。
 
 ## 運用
 
@@ -132,5 +138,5 @@ aws codebuild import-source-credentials --server-type GITHUB \
 
 ## コスト感（趣味運用・目安）
 
-S3/CloudFrontは低トラフィックなら月数十円〜。Lambdaは週1実行で実質無料枠。
+S3/CloudFrontは低トラフィックなら月数十円〜。Lambdaは1日1回の実行で実質無料枠。
 主コストはClaude APIの記事生成（1記事あたり数円〜十数円程度）。CodeBuildも月数ビルドなら無料枠内に収まりやすい。

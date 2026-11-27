@@ -7,7 +7,7 @@
   missing — <img>自体が無い（heroImage未設定 → グレーのプレースホルダ表示になる）
   broken  — <img>はあるが画像URLが取得できない（例: Wikimediaのthumb幅が原寸超で400）
 
-出力: reports/image-health-latest.md（+ 日付版）。外部依存ゼロ(urllibのみ)。
+出力: reports/image-health-latest.md。外部依存ゼロ(urllibのみ)。
 
 プロキシ制限環境（Claude Code セッション等）では builtjapan.com / upload.wikimedia.org に
 到達できないため、自動的に GitHub Actions ワークフロー「image-monitor」を起動して代替する。
@@ -345,10 +345,8 @@ def main():
 
     report = render(results, len(urls))
     os.makedirs(cfg["report_dir"], exist_ok=True)
-    stamp = datetime.now(JST).strftime("%Y-%m-%d")
-    for name in (f"image-health-{stamp}.md", "image-health-latest.md"):
-        with open(os.path.join(cfg["report_dir"], name), "w", encoding="utf-8") as f:
-            f.write(report)
+    with open(os.path.join(cfg["report_dir"], "image-health-latest.md"), "w", encoding="utf-8") as f:
+        f.write(report)
     # 修復スクリプト(generator/repair_images.py)が読む機械可読版
     with open(os.path.join(cfg["report_dir"], "image-health-latest.json"), "w",
               encoding="utf-8") as f:

@@ -6,7 +6,8 @@
 
 出力:
   reports/people-check-latest.md   … 人が写っていそうな記事の一覧(人が目で最終判断する)
-  reports/people-check/<slug>.jpg  … 疑わしい写真の縮小版(検出した位置に赤枠)
+  reports/people-check/<slug>.jpg  … 疑わしい写真の縮小版(検出した位置に赤枠)。リポジトリには入れず、
+                                      GitHub Actions の Artifacts(people-check-thumbs)として残す
 
 使ってはいけない写真は generator/data/hero-image-block.json に登録する。
 依存: opencv-python-headless, numpy(GitHub Actions の people-check ワークフローで入れる)。

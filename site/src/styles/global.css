@@ -70,8 +70,9 @@ h1, h2, h3, .brand { font-family: var(--font-display); }
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.12rem; letter-spacing: 0.01em; color: var(--text); flex: none; }
 .brand:hover { text-decoration: none; }
-.brand-mark { flex: none; display: block; }
-.brand-text { white-space: nowrap; }
+.brand-mark { flex: none; display: block; border-radius: 22%; }
+/* ロゴの文字はアイコン画像の「Built Japan」に合わせた太いグロテスク体 */
+.brand-text { white-space: nowrap; font-family: "Inter", "Helvetica Neue", Arial, sans-serif; font-weight: 800; letter-spacing: -0.015em; }
 .brand-text span { color: var(--accent); }
 
 .nav-desktop { display: flex; align-items: center; gap: 2px; margin-left: 10px; }
@@ -610,8 +611,8 @@ html.drawer-open { overflow: hidden; }
   grid-template-columns: 1.6fr repeat(3, 1fr);
   gap: 28px 24px;
 }
-.footer-brand .brand { font-size: 1.1rem; color: #fff; --logo-bg: #fff; }
-.footer-brand .brand-mark rect:not(:first-child) { fill: var(--ink); }
+.footer-brand .brand { font-size: 1.1rem; color: #fff; }
+.footer-brand .brand-mark { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4); } /* 暗いフッターでも輪郭が見えるように */
 .footer-col h2 {
   font-size: 0.8rem; font-weight: 700; color: #fff;
   margin: 0 0 10px; border: none; padding: 0; letter-spacing: 0.04em;

@@ -36,9 +36,9 @@
    npm run build            # スキーマ違反があればここで落ちる
    ```
 
-5. **デプロイ**（自動ビルドは `nino0708/blog` リポジトリのpushで走る）
-   `claude code/tokyo-building-blog/` と デプロイ実体 `/Users/itsukinino/blog` の**両方**に
-   同じ2ファイルを置いてから push → CodeBuild が S3/CloudFront へ反映。
+5. **デプロイ**
+   `nino0708/blog` の main に push する。毎朝7:50 JSTの自動デプロイで CodeBuild が S3/CloudFront へ反映する。
+   作業用のクローンは1つでよい（別フォルダに同じファイルを二重に置く必要はない）。
 
 ## やってはいけない
 
@@ -49,5 +49,5 @@
 
 ## 自動投稿（Lambda）との違い
 
-毎日6:30の自動投稿は `generator/data/buildings.json` の seed を元にLambdaが生成する別経路。
+Lambda（`generator/`）の自動投稿は `generator/data/buildings.json` の seed を元に生成する別経路。
 手動でテンプレから書く場合は seed への追加は不要（自動投稿に載せたい建物だけ seed に足す）。
