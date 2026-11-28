@@ -11,6 +11,9 @@ architect: "鹿島建設（設計・施工JV）"
 tags: ["新潟市", "コンベンション", "展望台", "日本海側", "万代島"]
 publishedAt: 2026-10-28
 summary: "新潟市中央区万代島に立つ地上31階・高さ約140メートルのタワーを中核とするコンベンション施設。2003年5月開業、日本海側随一の高さを誇る展望室（31階・約125メートル）が知られる。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Toki-Messe-01.jpg/1280px-Toki-Messe-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "J o / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Toki-Messe-01.jpg"
 verified: true
 sources: ["新潟観光コンベンション協会 公式情報", "旅行メディア情報（高さ140.5m・31F・2003年3月竣工・設計：鹿島建設）"]
 ---

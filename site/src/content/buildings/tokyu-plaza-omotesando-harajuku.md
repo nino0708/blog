@@ -14,6 +14,9 @@ architect: "中村拓志 / NAP建築設計事務所"
 tags: ["渋谷区", "表参道", "原宿", "商業施設"]
 publishedAt: 2026-10-10
 summary: "2012年4月竣工。表参道と明治通りが交差する角地に立つ地上7階・地下2階の複合商業施設。中村拓志（NAP建築設計事務所）が設計した鏡面エントランスと屋上おもはらの森が、原宿の街並みに新たな層を加えた。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/TOKYU_PLAZA_OMOTESANDO_HARAJUKU.jpg/1280px-TOKYU_PLAZA_OMOTESANDO_HARAJUKU.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Hiroshi Nakamura &amp; NAP / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:TOKYU_PLAZA_OMOTESANDO_HARAJUKU.jpg"
 verified: true
 sources:
   - "AFP BB News「東急プラザ表参道原宿」地上7階・地下2階・延床面積11,855㎡・2012年4月18日開業"

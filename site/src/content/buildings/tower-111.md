@@ -14,6 +14,9 @@ architect: "三菱地所株式会社"
 tags: ["富山市", "富山県", "北陸", "超高層ビル", "オフィス"]
 publishedAt: 2026-10-15
 summary: "1994年4月27日竣工。富山市の超高層ビルで高さ111m、地上22階・地下1階。設計は三菱地所、施工は佐藤工業・清水建設JV。高さがちょうど111mであることがタワー名の由来。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Tower_111.JPG/1280px-Tower_111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "RESPITE / Public domain"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tower_111.JPG"
 verified: true
 sources:
   - "富山市「タワー111ビル概要」関連資料"

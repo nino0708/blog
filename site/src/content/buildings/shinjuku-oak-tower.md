@@ -13,6 +13,9 @@ developer: "住友不動産"
 tags: ["新宿区", "西新宿", "超高層ビル", "オフィスビル", "再開発"]
 publishedAt: 2026-09-24
 summary: "2003年竣工、地上38階・高さ約184mの高層オフィスビル。西新宿六丁目の地区再開発で生まれた、副都心のさらなる高層化を担う一棟。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG/1280px-Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kentin / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Sumitomo_fudosan_shinjuku_oak_tower_2009.JPG"
 verified: true
 sources: ["住友不動産新宿オークタワー - bb-building.net（地上38階・地下2階・高さ184.25m・2003年竣工）", "住友不動産 公式（新宿区西新宿6-8-1）", "CBRE物件情報（住友不動産新宿オークタワー：38階建・高さ約184m）"]
 ---

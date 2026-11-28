@@ -12,6 +12,9 @@ architect: "三菱地所設計"
 tags: ["台東区", "上野", "超高層ビル", "複合施設", "オフィス", "再開発"]
 publishedAt: 2026-10-19
 summary: "旧松坂屋上野店南館の跡地に2017年に竣工した地上23階・高さ約117mの複合施設。J.フロントリテイリングが開発し、商業フロアとシネマコンプレックスを下層に、オフィスフロアを上層に配した上野の新たなランドマーク。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Ueno_Frontier_Tower.jpg/1280px-Ueno_Frontier_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Avenafatua / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Ueno_Frontier_Tower.jpg"
 verified: true
 sources:
   - "マイナビニュース2017年11月報道（竣工: 2017年11月4日・地上23階・地下2階・高さ約117m・旧松坂屋上野店南館跡地・開発: J.フロントリテイリング・設計: 三菱地所設計）"

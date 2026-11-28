@@ -3596,6 +3596,771 @@
       "area": "水戸市",
       "angle": "磯崎新設計・高さ約100mチタン螺旋タワー、1990年開館・水戸市制100周年記念",
       "status": "done"
+    },
+    {
+      "id": 397,
+      "category": "office",
+      "title": "新宿東宝ビル",
+      "slug": "shinjuku-toho-building",
+      "area": "東京都新宿区歌舞伎町",
+      "angle": "東宝開発・竹中工務店設計施工・地上30階、2015年竣工・映画館+ホテル複合施設",
+      "status": "done"
+    },
+    {
+      "id": 398,
+      "category": "office",
+      "title": "福岡大名ガーデンシティ",
+      "slug": "fukuoka-daimyo-garden-city",
+      "area": "福岡市中央区大名",
+      "angle": "天神ビッグバン中核・旧大名小学校跡地・地上25階・高さ111m・積水ハウスら5社共同開発、2022年竣工",
+      "status": "done"
+    },
+    {
+      "id": 399,
+      "category": "residence",
+      "title": "シエリアタワー中之島",
+      "slug": "cielia-tower-nakanoshima",
+      "area": "大阪市福島区",
+      "angle": "関電不動産開発・地上46階・2025年竣工・中之島エリア居住化を象徴するタワーマンション",
+      "status": "done"
+    },
+    {
+      "id": 400,
+      "category": "residence",
+      "title": "シティタワー大阪天満 ザ・リバー&パークス",
+      "slug": "city-tower-osaka-tenma",
+      "area": "大阪市北区天満",
+      "angle": "住友不動産開発・大林組施工・地上45階・総戸数650戸・大川沿い立地、2010年竣工",
+      "status": "done"
+    },
+    {
+      "id": 401,
+      "category": "office",
+      "title": "KABUTO ONE",
+      "slug": "kabuto-one",
+      "area": "東京都中央区日本橋兜町",
+      "angle": "平和不動産・地上15階・高さ84m・延床39170m²・兜町再生プロジェクト、2021年竣工",
+      "status": "done"
+    },
+    {
+      "id": 402,
+      "category": "railway",
+      "title": "宇都宮ライトレール（ライトライン）",
+      "slug": "utsunomiya-lrt",
+      "area": "宇都宮市・芳賀郡",
+      "angle": "2023年8月開業・日本初の全線新設LRT・14.6km・19停留所・上下分離方式",
+      "status": "done"
+    },
+    {
+      "id": 403,
+      "category": "office",
+      "title": "有明ガーデン",
+      "slug": "ariake-garden",
+      "area": "江東区",
+      "angle": "住友不動産開発・2020年4月開業・延床約87,600m²・203店舗・温浴施設複合",
+      "status": "done"
+    },
+    {
+      "id": 404,
+      "category": "tower",
+      "title": "大阪・関西万博 大屋根リング",
+      "slug": "expo2025-osaka-ring",
+      "area": "大阪市此花区（夢洲）",
+      "angle": "2024年完成・内径約615m・木造環状・世界最大木造建築ギネス認定・建設費約344億円",
+      "status": "done"
+    },
+    {
+      "id": 405,
+      "category": "railway",
+      "title": "北大阪急行電鉄延伸線（箕面萱野延伸）",
+      "slug": "kita-osaka-extension",
+      "area": "豊中市・箕面市",
+      "angle": "2024年3月23日開業・千里中央〜箕面萱野2.5km・2駅新設・御堂筋線直通",
+      "status": "done"
+    },
+    {
+      "id": 406,
+      "category": "office",
+      "title": "長崎スタジアムシティ",
+      "slug": "nagasaki-stadium-city",
+      "area": "長崎市",
+      "angle": "2024年10月14日開業・ジャパネットHD・1000億円超民間投資・約2万席サッカースタジアム+アリーナ+商業複合",
+      "status": "done"
+    },
+    {
+      "id": 407,
+      "category": "office",
+      "title": "さいたまスーパーアリーナ",
+      "slug": "saitama-super-arena",
+      "area": "さいたま市中央区",
+      "angle": "2000年9月開業・MAS2000共同設計室+ダン・マイス・最大37000人収容・可動式スタンドで3形態切替",
+      "status": "done"
+    },
+    {
+      "id": 408,
+      "category": "expressway",
+      "title": "新東名高速道路",
+      "slug": "shin-tomei-expressway",
+      "area": "静岡県・愛知県",
+      "angle": "2012年4月先行開通・海老名南JCT〜豊田東JCT約254km・設計速度120km/h・東名の渋滞緩和と防災代替路",
+      "status": "done"
+    },
+    {
+      "id": 409,
+      "category": "tower",
+      "title": "名港トリトン",
+      "slug": "meiko-triton",
+      "area": "名古屋市",
+      "angle": "1998年3月供用・伊勢湾岸自動車道の名古屋港をまたぐ3本の斜張橋・名港中央大橋橋長1170m・赤白青のカラーリング",
+      "status": "done"
+    },
+    {
+      "id": 410,
+      "category": "office",
+      "title": "みずほPayPayドーム福岡",
+      "slug": "fukuoka-paypay-dome",
+      "area": "福岡市中央区",
+      "angle": "1993年4月開業・竹中工務店+前田建設JV・約760億円・日本初開閉式ドーム・収容40178人",
+      "status": "done"
+    },
+    {
+      "id": 411,
+      "category": "office",
+      "title": "MARK IS みなとみらい",
+      "slug": "mark-is-minatomirai",
+      "area": "横浜市西区",
+      "angle": "2013年6月21日開業・三菱地所・延床約116200m²・MM21地区最大商業施設・みなとみらい線直結",
+      "status": "done"
+    },
+    {
+      "id": 412,
+      "category": "office",
+      "title": "新宿フロントタワー",
+      "slug": "shinjuku-front-tower",
+      "area": "新宿区",
+      "angle": "2011年竣工・34階。西新宿と中野坂上の中間に立つ大型オフィスビル",
+      "status": "done"
+    },
+    {
+      "id": 413,
+      "category": "office",
+      "title": "新宿モノリス",
+      "slug": "shinjuku-monolith",
+      "area": "新宿区",
+      "angle": "1990年竣工のNTT系超高層ビル。黒いファサードが西新宿のスカイラインに独特の存在感",
+      "status": "done"
+    },
+    {
+      "id": 414,
+      "category": "office",
+      "title": "有楽町マリオン",
+      "slug": "yurakucho-marion",
+      "area": "千代田区",
+      "angle": "1984年竣工・朝日新聞旧東京本社跡地。有楽町と銀座の境界に立つ複合商業施設",
+      "status": "done"
+    },
+    {
+      "id": 415,
+      "category": "office",
+      "title": "新宿イーストサイドスクエア",
+      "slug": "shinjuku-east-side-square",
+      "area": "新宿区",
+      "angle": "2012年竣工・20階。東新宿駅直結の大規模オフィス複合",
+      "status": "done"
+    },
+    {
+      "id": 416,
+      "category": "office",
+      "title": "テレビ朝日本社ビル",
+      "slug": "tv-asahi-headquarters",
+      "area": "港区",
+      "angle": "2003年竣工・六本木ヒルズの一角。槇文彦設計の放送局兼オフィスビル",
+      "status": "done"
+    },
+    {
+      "id": 417,
+      "category": "residence",
+      "title": "代官山アドレスザ・タワー",
+      "slug": "daikanyama-address-tower",
+      "area": "渋谷区",
+      "angle": "旧同潤会アパート跡地に建つ36階タワーマンション。代官山地区市街地再開発事業で2000年竣工・高さ119.9m",
+      "status": "done"
+    },
+    {
+      "id": 418,
+      "category": "office",
+      "title": "ハービスOSAKA",
+      "slug": "herbis-osaka",
+      "area": "大阪市北区",
+      "angle": "阪神電気鉄道開発・竹中工務店設計施工・40階190m・リッツカールトン大阪入居・1997年竣工",
+      "status": "done"
+    },
+    {
+      "id": 419,
+      "category": "office",
+      "title": "海峡ゆめタワー",
+      "slug": "kaikyo-yume-tower",
+      "area": "下関市",
+      "angle": "山口県開発・NTTファシリティーズ設計・30階153m・関門海峡展望タワー・1996年竣工",
+      "status": "done"
+    },
+    {
+      "id": 420,
+      "category": "office",
+      "title": "グランシップ（静岡コンベンションアーツセンター）",
+      "slug": "granship",
+      "area": "静岡市葵区",
+      "angle": "静岡県開発・磯崎新設計・12階・船型外観・1998年竣工・コンサートホール収容2000人超",
+      "status": "done"
+    },
+    {
+      "id": 421,
+      "category": "office",
+      "title": "せんだいメディアテーク",
+      "slug": "sendai-mediatheque",
+      "area": "仙台市青葉区",
+      "angle": "伊東豊雄設計・チューブ構造・地上7階・2001年開館・図書館＋映像メディア＋ギャラリー複合",
+      "status": "done"
+    },
+    {
+      "id": 422,
+      "category": "office",
+      "title": "金沢21世紀美術館",
+      "slug": "kanazawa-21st-century-museum",
+      "area": "金沢市",
+      "angle": "SANAA設計・円形直径約113m・2004年開館・4入口・無料ゾーン併設",
+      "status": "done"
+    },
+    {
+      "id": 423,
+      "category": "office",
+      "title": "東京文化会館",
+      "slug": "tokyo-bunka-kaikan",
+      "area": "台東区",
+      "angle": "前川國男設計・1961年竣工・大ホール2303席・上野公園・近代建築",
+      "status": "done"
+    },
+    {
+      "id": 424,
+      "category": "office",
+      "title": "六本木ティーキューブ",
+      "slug": "roppongi-t-cube",
+      "area": "港区",
+      "angle": "地上27階・2003年竣工・六本木3-1-1・基準階500坪超・国際ビジネス拠点",
+      "status": "done"
+    },
+    {
+      "id": 425,
+      "category": "office",
+      "title": "大阪中之島美術館",
+      "slug": "osaka-nakanoshima-museum-of-art",
+      "area": "大阪市北区",
+      "angle": "遠藤克彦建築研究所設計・黒い直方体・地上5階・高さ39m・延床約20012㎡・2022年開館",
+      "status": "done"
+    },
+    {
+      "id": 426,
+      "category": "office",
+      "title": "広島駅ビル ミナモア",
+      "slug": "hiroshima-station-minamoa",
+      "area": "広島市南区",
+      "angle": "2025年3月開業・地上20階・高さ約100m・広電2階乗り入れ・JR西日本",
+      "status": "done"
+    },
+    {
+      "id": 427,
+      "category": "office",
+      "title": "石川県庁",
+      "slug": "ishikawa-prefectural-office",
+      "area": "金沢市",
+      "angle": "2003年開庁・地上19階・高さ98.8m・19階展望ロビー無料・鞍月地区",
+      "status": "done"
+    },
+    {
+      "id": 428,
+      "category": "tower",
+      "title": "関門橋",
+      "slug": "kanmon-bridge",
+      "area": "北九州市門司区・下関市",
+      "angle": "1973年開通・全長1068m・中央支間712m・桁下高61m・開通時東洋最長吊橋",
+      "status": "done"
+    },
+    {
+      "id": 429,
+      "category": "office",
+      "title": "マリンメッセ福岡",
+      "slug": "marine-messe-fukuoka",
+      "area": "福岡市博多区",
+      "angle": "1995年A館開館・2021年B館開館・A館最大15000人・九州最大級屋内会場",
+      "status": "done"
+    },
+    {
+      "id": 430,
+      "category": "office",
+      "title": "仙台国際センター",
+      "slug": "sendai-international-center",
+      "area": "仙台市青葉区",
+      "angle": "展示棟2015年完成・展示室約3000㎡・第3回国連防災世界会議主会場・仙台防災枠組採択",
+      "status": "done"
+    },
+    {
+      "id": 431,
+      "category": "office",
+      "title": "有明アリーナ",
+      "slug": "ariake-arena",
+      "area": "江東区",
+      "angle": "2019年竣工・東京五輪バレーボール会場・久米設計＋竹中工務店JV・収容約15,000人・高さ37m",
+      "status": "done"
+    },
+    {
+      "id": 432,
+      "category": "office",
+      "title": "バンテリンドームナゴヤ",
+      "slug": "vantelin-dome-nagoya",
+      "area": "名古屋市東区",
+      "angle": "1997年開業・高さ66.9m・直径187.2m・旧ナゴヤドーム・野球36,418席・コンサート最大49,000人",
+      "status": "done"
+    },
+    {
+      "id": 433,
+      "category": "office",
+      "title": "京セラドーム大阪",
+      "slug": "kyocera-dome-osaka",
+      "area": "大阪市西区",
+      "angle": "1997年開業・高さ72m・直径166m・日建設計・44,000人収容・大阪初の屋根付き球場",
+      "status": "done"
+    },
+    {
+      "id": 434,
+      "category": "railway",
+      "title": "中部国際空港（セントレア）",
+      "slug": "chubu-centrair-airport",
+      "area": "愛知県常滑市",
+      "angle": "2005年開港・伊勢湾の人工島・3,500m滑走路・愛知万博に合わせた開港・中部国際空港株式会社",
+      "status": "done"
+    },
+    {
+      "id": 435,
+      "category": "office",
+      "title": "横浜アリーナ",
+      "slug": "yokohama-arena",
+      "area": "横浜市港北区",
+      "angle": "1989年開業・竹中工務店設計・収容約17,000人・新横浜に建つ大型コンサートアリーナ",
+      "status": "done"
+    },
+    {
+      "id": 436,
+      "category": "office",
+      "title": "渋谷アクシュ",
+      "slug": "shibuya-axsh",
+      "area": "渋谷区",
+      "angle": "2024年7月開業・地上23階・高さ約120m・渋谷ストリーム北隣・渋谷二丁目17地区再開発",
+      "status": "done"
+    },
+    {
+      "id": 437,
+      "category": "office",
+      "title": "神田スクエア",
+      "slug": "kanda-square",
+      "area": "千代田区",
+      "angle": "2020年2月竣工・地上21階・高さ約121m・住友商事開発・日建設計・神田錦町再開発",
+      "status": "done"
+    },
+    {
+      "id": 438,
+      "category": "office",
+      "title": "大崎ブライトタワー",
+      "slug": "osaki-bright-tower",
+      "area": "品川区",
+      "angle": "2015年4月竣工・地上31階・高さ142.9m・日本設計・大崎駅西口再開発・ブライトコア隣接",
+      "status": "done"
+    },
+    {
+      "id": 439,
+      "category": "office",
+      "title": "平河町森タワー",
+      "slug": "hirakawacho-mori-tower",
+      "area": "千代田区",
+      "angle": "2009年12月竣工・地上24階・高さ約102m・森ビル開発・永田町・平河町",
+      "status": "done"
+    },
+    {
+      "id": 440,
+      "category": "office",
+      "title": "心斎橋PARCO",
+      "slug": "shinsaibashi-parco",
+      "area": "大阪市中央区",
+      "angle": "2020年11月開業・地上14階・延床58,000㎡・竹中工務店設計施工・旧そごう跡地・大阪ミナミ",
+      "status": "done"
+    },
+    {
+      "id": 441,
+      "category": "office",
+      "title": "サッポロファクトリー",
+      "slug": "sapporo-factory",
+      "area": "札幌市中央区",
+      "angle": "1993年開業・延床123,322m²・7棟構成・1876年開拓使麦酒醸造所跡地・産業遺産再生",
+      "status": "done"
+    },
+    {
+      "id": 442,
+      "category": "office",
+      "title": "新国立劇場",
+      "slug": "new-national-theatre-tokyo",
+      "area": "渋谷区",
+      "angle": "1997年竣工・地上5階地下4階・延床68,879m²・設計：柳澤孝彦・日本初の国立現代舞台芸術劇場・初台",
+      "status": "done"
+    },
+    {
+      "id": 443,
+      "category": "office",
+      "title": "日本科学未来館",
+      "slug": "miraikan",
+      "area": "江東区",
+      "angle": "2001年開館・地上7階・延床40,744m²・JST運営・お台場・宇宙船地球号ドーム",
+      "status": "done"
+    },
+    {
+      "id": 444,
+      "category": "office",
+      "title": "豊田スタジアム",
+      "slug": "toyota-stadium",
+      "area": "豊田市",
+      "angle": "2001年完成・地上6階・収容44,380人・黒川紀章設計・2002FIFAワールドカップ会場・名古屋グランパス本拠地",
+      "status": "done"
+    },
+    {
+      "id": 445,
+      "category": "office",
+      "title": "北九州市立美術館",
+      "slug": "kitakyushu-museum-of-art",
+      "area": "北九州市戸畑区",
+      "angle": "1974年開館・地上3階・延床11,500m²・磯崎新設計・望遠鏡型キャノピー・日本建築学会賞1975年",
+      "status": "done"
+    },
+    {
+      "id": 446,
+      "category": "office",
+      "title": "りんくうゲートタワービル",
+      "slug": "rinku-gate-tower",
+      "area": "泉佐野市",
+      "angle": "1996年8月竣工・地上56階・高さ256m・設計日建設計+安井建築設計事務所・関西国際空港隣接・国際会議場+オフィス+ホテルの複合ビル",
+      "status": "done"
+    },
+    {
+      "id": 447,
+      "category": "office",
+      "title": "名古屋モード学園スパイラルタワーズ",
+      "slug": "nagoya-mode-gakuen-spiral-towers",
+      "area": "名古屋市中村区",
+      "angle": "2008年竣工・地上36階・高さ170m・設計日建設計・3本の教育棟ウイングが螺旋状に絡み合う前衛建築・名古屋駅至近",
+      "status": "done"
+    },
+    {
+      "id": 448,
+      "category": "office",
+      "title": "日比谷フォートタワー",
+      "slug": "hibiya-fort-tower",
+      "area": "港区",
+      "angle": "2021年7月開業・地上27階・高さ138.4m・設計日建設計+清水建設JV・新橋田村町地区市街地再開発・日比谷×虎ノ門の狭間",
+      "status": "done"
+    },
+    {
+      "id": 449,
+      "category": "office",
+      "title": "新宿野村ビル",
+      "slug": "nomura-shinjuku-building",
+      "area": "新宿区",
+      "angle": "1978年6月竣工・地上50階・高さ209.9m・設計安井建築設計事務所・施工熊谷組・野村不動産本社・西新宿副都心開発の先駆け",
+      "status": "done"
+    },
+    {
+      "id": 450,
+      "category": "office",
+      "title": "電通本社ビル",
+      "slug": "dentsu-shiodome",
+      "area": "港区",
+      "angle": "2002年12月開業・地上48階・高さ213m・デザインジャン・ヌーベル・施工大林+鹿島+清水+大成+竹中JV・汐留再開発・カレッタ汐留",
+      "status": "done"
+    },
+    {
+      "id": 451,
+      "category": "office",
+      "title": "エスコンフィールドHOKKAIDO",
+      "slug": "escon-field-hokkaido",
+      "area": "北広島市",
+      "angle": "2022年12月竣工・地上6階・高さ70m・日本初の天然芝＋開閉式屋根・収容約35,000人・HOKKAIDO BALLPARK F VILLAGE",
+      "status": "done"
+    },
+    {
+      "id": 452,
+      "category": "office",
+      "title": "東京ビッグサイト",
+      "slug": "tokyo-big-sight",
+      "area": "江東区",
+      "angle": "1995年竣工・地上8階・高さ58m・延床316,990㎡・逆三角形会議棟・AXS佐藤総合計画設計・国内最大級展示場",
+      "status": "done"
+    },
+    {
+      "id": 453,
+      "category": "office",
+      "title": "大阪城ホール",
+      "slug": "osaka-jo-hall",
+      "area": "大阪市中央区",
+      "angle": "1983年10月開館・地上3階・高さ21m・収容16,000人・日建設計・大阪城公園内・景観に配慮した低層設計",
+      "status": "done"
+    },
+    {
+      "id": 454,
+      "category": "office",
+      "title": "宮下パーク",
+      "slug": "miyashita-park",
+      "area": "渋谷区",
+      "angle": "2020年8月開業・ノースブロック地上18階・高さ75.1m・延床約46,000㎡・三井不動産・日建設計+竹中工務店・全長約330m屋上公園",
+      "status": "done"
+    },
+    {
+      "id": 455,
+      "category": "office",
+      "title": "マツダ Zoom-Zoom スタジアム広島",
+      "slug": "mazda-zoom-zoom-stadium",
+      "area": "広島市南区",
+      "angle": "2009年4月開業・収容約32,000人・天然芝オープンエア設計・増岡建築設計事務所・竹中工務店施工・JR広島駅隣接",
+      "status": "done"
+    },
+    {
+      "id": 456,
+      "category": "residence",
+      "title": "ザ・北浜",
+      "slug": "the-kitahama",
+      "area": "大阪市中央区",
+      "angle": "2009年竣工・54階・高さ209.35m・484戸・鹿島建設設計施工・土佐堀川沿い・竣工当時の日本最高層分譲マンション",
+      "status": "done"
+    },
+    {
+      "id": 457,
+      "category": "residence",
+      "title": "スカイタワー41",
+      "slug": "sky-tower-41-kaminoyama",
+      "area": "上山市",
+      "angle": "1999年竣工・41階・高さ133.95m・389戸・山形県上山市・竣工当時東北最高層・蔵王連峰を望む温泉・城下町立地",
+      "status": "done"
+    },
+    {
+      "id": 458,
+      "category": "office",
+      "title": "天神ビジネスセンター",
+      "slug": "tenjin-business-center-fukuoka",
+      "area": "福岡市中央区",
+      "angle": "2021年竣工・19階・地下2階・高さ89m・延床61,100㎡・福岡地所・日本設計・天神ビッグバン構想の先導プロジェクト",
+      "status": "done"
+    },
+    {
+      "id": 459,
+      "category": "residence",
+      "title": "コンフォリア新宿イーストサイドタワー",
+      "slug": "conforia-shinjuku-eastside-tower",
+      "area": "新宿区",
+      "angle": "2011年竣工・32階・地下1階・高さ約112m・761戸・新宿御苑近接・新宿東側の大規模タワーマンション",
+      "status": "done"
+    },
+    {
+      "id": 460,
+      "category": "tower",
+      "title": "鶴見つばさ橋",
+      "slug": "tsurumi-tsubasa-bridge",
+      "area": "横浜市鶴見区",
+      "angle": "1994年開通・国道357号（東京湾岸道路）に架かる斜張橋・京浜工業地帯の港湾エリアを跨ぐ",
+      "status": "done"
+    },
+    {
+      "id": 461,
+      "category": "museum",
+      "title": "江戸東京博物館",
+      "slug": "edo-tokyo-museum",
+      "area": "墨田区",
+      "angle": "菊竹清訓設計、高さ62mの高床式大型建築",
+      "status": "done"
+    },
+    {
+      "id": 462,
+      "category": "museum",
+      "title": "TOYAMAキラリ（富山市ガラス美術館）",
+      "slug": "toyama-kirari",
+      "area": "富山市",
+      "angle": "隈研吾設計、ガラス・アルミ・御影石の複合立面",
+      "status": "done"
+    },
+    {
+      "id": 463,
+      "category": "sports",
+      "title": "東京アクアティクスセンター",
+      "slug": "tokyo-aquatics-center",
+      "area": "江東区",
+      "angle": "東京五輪競泳会場、高さ37m・3大会場",
+      "status": "done"
+    },
+    {
+      "id": 464,
+      "category": "commercial",
+      "title": "大阪南港ATC（アジア太平洋トレードセンター）",
+      "slug": "atc-osaka",
+      "area": "住之江区",
+      "angle": "ベイエリア開発の象徴的複合商業施設",
+      "status": "done"
+    },
+    {
+      "id": 465,
+      "category": "sports",
+      "title": "東京スタジアム（味の素スタジアム）",
+      "slug": "ajinomoto-stadium",
+      "area": "調布市",
+      "angle": "日本設計・多目的スタジアム、収容約50,000席",
+      "status": "done"
+    },
+    {
+      "id": 466,
+      "category": "commercial",
+      "title": "渋谷ミヤシタパーク",
+      "slug": "shibuya-miyashita-park",
+      "area": "渋谷区",
+      "angle": "旧宮下公園を立体都市公園に再生、商業・ホテル複合",
+      "status": "done"
+    },
+    {
+      "id": 467,
+      "category": "office",
+      "title": "別府タワー",
+      "slug": "beppu-tower",
+      "area": "大分県別府市",
+      "angle": "1957年完成・内藤多仲設計・別府の観光タワー。国登録有形文化財",
+      "status": "done"
+    },
+    {
+      "id": 468,
+      "category": "expressway",
+      "title": "西瀬戸自動車道（しまなみ海道）",
+      "slug": "nishi-seto-expressway",
+      "area": "広島県尾道市〜愛媛県今治市",
+      "angle": "2006年全線開通・46.6km・6橋梁で瀬戸内の島々を繋ぐ本四連絡道",
+      "status": "done"
+    },
+    {
+      "id": 469,
+      "category": "bridge",
+      "title": "多々羅大橋",
+      "slug": "tatara-bridge",
+      "area": "広島県・愛媛県",
+      "angle": "しまなみ海道、主径間890m・完成時世界最長の斜張橋",
+      "status": "done"
+    },
+    {
+      "id": 470,
+      "category": "expressway",
+      "title": "名神高速道路",
+      "slug": "meishin-expressway",
+      "area": "愛知県〜兵庫県",
+      "angle": "日本初の高速道路、全長189.3km・1965年全線開通",
+      "status": "done"
+    },
+    {
+      "id": 471,
+      "category": "building",
+      "title": "21_21 DESIGN SIGHT",
+      "slug": "2121-design-sight",
+      "area": "港区",
+      "angle": "安藤忠雄設計・2007年開館、建物の大部分が地下に埋まるデザインミュージアム",
+      "status": "done"
+    },
+    {
+      "id": 472,
+      "category": "building",
+      "title": "豊洲市場",
+      "slug": "toyosu-market",
+      "area": "江東区",
+      "angle": "2018年開場・東京ガス跡地に整備された日本最大規模の中央卸売市場",
+      "status": "done"
+    },
+    {
+      "id": 473,
+      "category": "building",
+      "title": "ベルーナドーム",
+      "slug": "belluna-dome",
+      "area": "埼玉県所沢市",
+      "angle": "1979年開場・1999年にドーム屋根を後付けした埼玉西武ライオンズの本拠地",
+      "status": "done"
+    },
+    {
+      "id": 474,
+      "category": "building",
+      "title": "東京都現代美術館",
+      "slug": "tokyo-metropolitan-museum-contemporary-art",
+      "area": "江東区",
+      "angle": "1995年開館・延床33,515㎡・柳澤孝彦設計の国内最大規模の現代美術館",
+      "status": "done"
+    },
+    {
+      "id": 475,
+      "category": "building",
+      "title": "大阪国際会議場",
+      "slug": "osaka-international-convention-center",
+      "area": "大阪市北区",
+      "angle": "2000年開館・黒川紀章設計・中之島の地上13階国際会議場",
+      "status": "done"
+    },
+    {
+      "id": 476,
+      "category": "building",
+      "title": "武蔵野プレイス",
+      "slug": "musashino-place",
+      "area": "武蔵野市",
+      "angle": "2011年竣工・kw+hg architects設計・武蔵境駅直結の地上4階地下3階複合公共施設",
+      "status": "done"
+    },
+    {
+      "id": 477,
+      "category": "office",
+      "title": "ヨドバシカメラ マルチメディアAkiba",
+      "slug": "yodobashi-akihabara",
+      "area": "千代田区",
+      "angle": "2005年開業・9階建て・高さ60m・延床61,400㎡。秋葉原駅前の垂直型大型商業施設",
+      "status": "done"
+    },
+    {
+      "id": 478,
+      "category": "office",
+      "title": "オリックス本町ビル",
+      "slug": "orix-honmachi-building",
+      "area": "大阪市西区",
+      "angle": "2011年竣工・地上29階・竹中工務店設計施工・超高層RC造免震という稀有な構造",
+      "status": "done"
+    },
+    {
+      "id": 479,
+      "category": "office",
+      "title": "新宿タカシマヤタイムズスクエア",
+      "slug": "shinjuku-takashimaya-times-square",
+      "area": "渋谷区",
+      "angle": "1996年開業・本館地下1階・地上14階・設計日建設計・日本設計。JR新宿南口直結の大型商業複合",
+      "status": "done"
+    },
+    {
+      "id": 480,
+      "category": "office",
+      "title": "横浜市新市庁舎",
+      "slug": "yokohama-new-city-hall",
+      "area": "横浜市中区",
+      "angle": "2020年竣工・地上32階・高さ155.4m・竹中西松JV。横浜市の新本庁舎として関内地区の再生拠点",
+      "status": "done"
+    },
+    {
+      "id": 481,
+      "category": "office",
+      "title": "文京グリーンコート",
+      "slug": "bunkyo-green-court",
+      "area": "文京区",
+      "angle": "文京区本駒込のオフィス複合施設。1998年竣工(要裏取り)",
+      "status": "done"
     }
   ]
 }

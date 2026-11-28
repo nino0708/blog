@@ -15,6 +15,9 @@ architect: "日建設計（設計・監理）、Kohn Pedersen Fox Associates（�
 tags: ["千代田区", "超高層ビル", "再開発", "紀尾井町", "ホテル複合"]
 publishedAt: 2026-07-27
 summary: "2016年竣工、千代田区紀尾井町。旧グランドプリンスホテル赤坂の広大な跡地に、地上36階・高さ180メートルのタワーが立ち上がった複合施設。日建設計とKPFが設計を担い、オフィス・ホテル・商業を一体にした千代田区の新たなランドマーク。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Tokyo_Garden_Terrace_Kioicho.jpg/1280px-Tokyo_Garden_Terrace_Kioicho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Garden_Terrace_Kioicho.jpg"
 verified: true
 sources:
   - "各種建物データベース（竣工2016年・地上36階地下2階・高さ180m・住所:千代田区紀尾井町1-2・開発:西武プロパティーズ・設計:日建設計/KPF）"

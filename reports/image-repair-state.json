@@ -74,10 +74,6 @@
     "reason": "確信できる外観画像が見つからない",
     "gaveUp": true
   },
-  "tokyo-midtown-hibiya": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
-  },
   "10": {
     "attempts": 3,
     "gaveUp": true,
@@ -418,12 +414,144 @@
     "reason": "記事mdが見つからない"
   },
   "d-tower-nishi-shinjuku": {
-    "attempts": 2,
-    "reason": "確信できる外観画像が見つからない"
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
   },
   "36": {
     "attempts": 3,
     "gaveUp": true,
     "reason": "記事mdが見つからない"
+  },
+  "cielia-tower-nakanoshima": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "city-tower-osaka-tenma": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "kabuto-one": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "expo2025-osaka-ring": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "kita-osaka-extension": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "utsunomiya-lrt": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "37": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "shin-tomei-expressway": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "tv-asahi-headquarters": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "38": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "daikanyama-address-tower": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "hiroshima-station-minamoa": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "39": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "hirakawacho-mori-tower": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "osaki-bright-tower": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "40": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "41": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "conforia-shinjuku-eastside-tower": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "42": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "ajinomoto-stadium": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "atc-osaka": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "2121-design-sight": {
+    "attempts": 3,
+    "reason": "確信できる外観画像が見つからない",
+    "gaveUp": true
+  },
+  "43": {
+    "attempts": 3,
+    "gaveUp": true,
+    "reason": "記事mdが見つからない"
+  },
+  "orix-honmachi-building": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "shinjuku-takashimaya-times-square": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "yodobashi-akihabara": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
+  },
+  "yokohama-new-city-hall": {
+    "attempts": 1,
+    "reason": "確信できる外観画像が見つからない"
   }
 }

@@ -13,6 +13,9 @@ architect: "三菱地所設計"
 tags: ["千代田区", "大手町", "超高層ビル", "再開発", "TOKYO TORCH"]
 publishedAt: 2026-08-22
 summary: "東京駅日本橋口前、大手町二丁目に2021年竣工した地上38階・高さ約212mのオフィス超高層。三菱地所が開発するTOKYO TORCH再開発の第1弾として完成し、隣接して建設中の日本一を目指すトーチタワーの先陣を切る。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tokiwabashi_Tower_3.jpg/1280px-Tokiwabashi_Tower_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokiwabashi_Tower_3.jpg"
 verified: true
 sources: ["三菱地所 プレスリリース 2020年9月17日「東京駅前常盤橋プロジェクト 街区名称を「TOKYO TORCH」に決定」(mec.co.jp/news/archives/mec200917_Tokiwabashi.pdf)", "三菱地所「「TOKYO TORCH」「Torch Tower」新築工事着工」2023年9月27日 (mec.co.jp/news/detail/2023/09/27_mec230927_torchtower)", "OFFICE AND「TOKYO TORCH 常盤橋タワーを徹底解説」(livex-inc.com/office_and/tokyo/tokyotorch-tokiwabashi-tower/)"]
 ---

@@ -12,6 +12,9 @@ architect: "日建設計"
 tags: ["港区", "超高層ビル", "汐留", "再開発", "複合ビル"]
 publishedAt: 2026-10-03
 summary: "2003年竣工、汐留シオサイトに立つ地上36階・高さ171mの複合超高層ビル。上層部にコンラッド東京ホテルを擁し、住友商事とNTT都市開発が共同開発した汐留再開発の中核棟。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Shiodome_City_Center_23.jpg/1280px-Shiodome_City_Center_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Shiodome_City_Center_23.jpg"
 verified: true
 sources:
   - "コンラッド東京公式（所在地：東京都港区東新橋1-9-1・28〜37階・2005年7月開業）"

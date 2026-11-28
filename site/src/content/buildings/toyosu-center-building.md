@@ -12,6 +12,9 @@ architect: "日建設計"
 tags: ["江東区", "豊洲", "超高層ビル", "再開発", "IHI", "日建設計"]
 publishedAt: 2026-09-06
 summary: "1992年竣工の地上37階・高さ165メートルの超高層オフィスビル。IHIが豊洲工場敷地の業務転換の第一手として日建設計に設計を委ね建てた、豊洲エリアで最初の超高層建築。"
+heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/41/Toyosu_Center_Building_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+heroImageCredit: "Tennen-Gas / CC BY-SA 3.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Toyosu_Center_Building_001.JPG"
 verified: true
 sources:
   - "豊洲センタービル - Wikipedia（地上37階・地下2階・高さ165m・1992年10月竣工）"

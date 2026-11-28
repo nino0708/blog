@@ -12,6 +12,9 @@ developer: "福岡地所"
 tags: ["福岡市", "超高層ビル", "再開発", "天神ビッグバン"]
 publishedAt: 2026-10-28
 summary: "福岡・天神の中心に立つ地上19階建てのオフィスビル。2021年9月竣工、延床面積6万1100平方メートル超を誇り、天神ビッグバン計画の先陣を切った象徴的な一棟。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tenjin_Business_Center.jpg/1280px-Tenjin_Business_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Ave reijin / CC0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tenjin_Business_Center.jpg"
 verified: true
 sources: ["福岡市公式資料（建築確認等）", "福岡市都市整備局 都市再開発課発表資料（2023年）"]
 ---

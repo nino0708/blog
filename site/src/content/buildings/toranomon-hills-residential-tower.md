@@ -14,6 +14,9 @@ architect: "久米設計"
 tags: ["港区", "超高層ビル", "タワーマンション", "虎ノ門"]
 publishedAt: 2026-09-20
 summary: "2022年1月竣工、地上54階・高さ約221m。竣工時点で日本一の高さを誇ったタワーマンション。虎ノ門ヒルズ第3棟として森ビルが開発し、547戸の住戸が東京メトロ虎ノ門駅至近の愛宕に立地する。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Toranomon_Hills_Residential_Tower.jpg/1280px-Toranomon_Hills_Residential_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "しっかかもっかか / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Toranomon_Hills_Residential_Tower.jpg"
 verified: true
 sources:
   - "blue-style.com 超高層マンション情報（竣工2022年1月・地上54階地下4階・高さ221.25m・最高部221.55m）"

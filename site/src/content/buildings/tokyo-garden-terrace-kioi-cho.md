@@ -14,6 +14,9 @@ architect: "Kohn Pedersen Fox Associates（基本設計）、日建設計（実�
 tags: ["千代田区", "紀尾井町", "超高層ビル", "再開発", "ホテル", "複合施設"]
 publishedAt: 2026-10-10
 summary: "旧グランドプリンスホテル赤坂跡地に2016年竣工した複合施設。地上36階・高さ180mの紀尾井タワーにはザ・プリンスギャラリー東京紀尾井町が入居する。KPFと日建設計が設計し、江戸期の藩邸に由来する静かな高台の街に現代の超高層を加えた。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Tokyo_Garden_Terrace_Kioicho.jpg/1280px-Tokyo_Garden_Terrace_Kioicho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Akonnchiroll / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tokyo_Garden_Terrace_Kioicho.jpg"
 verified: true
 sources:
   - "Skyscraper Center「Tokyo Garden Terrace Kioicho Kioi Tower」36F/180m https://www.skyscrapercenter.com/building/tokyo-garden-terrace-kioicho-kioi-tower/26345"

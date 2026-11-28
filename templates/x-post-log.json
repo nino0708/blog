@@ -32,27 +32,32 @@
   {
     "slug": "abeno-harukas",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "akashi-kaikyo-bridge",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "ark-mori-building",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "cerulean-tower",
     "postedAt": "2026-09-20",
-    "type": "intro"
+    "type": "intro",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "air-rise-tower",
     "postedAt": "2026-09-20",
-    "type": "quiz"
+    "type": "quiz",
+    "last_posted": "2026-11-03"
   },
   {
     "slug": "marunouchi-nijubashi-building",
@@ -677,6 +682,381 @@
   {
     "slug": "osaki-wiz-tower",
     "postedAt": "2026-10-28",
+    "type": "quiz"
+  },
+  {
+    "slug": "azabudai-hills-mori-jp-tower",
+    "postedAt": "2026-11-01",
+    "type": "intro"
+  },
+  {
+    "slug": "tokyo-skytree",
+    "postedAt": "2026-11-01",
+    "type": "intro"
+  },
+  {
+    "slug": "shibuya-scramble-square",
+    "postedAt": "2026-11-01",
+    "type": "intro"
+  },
+  {
+    "slug": "roppongi-hills-mori-tower",
+    "postedAt": "2026-11-01",
+    "type": "intro"
+  },
+  {
+    "slug": "kasumigaseki-building",
+    "postedAt": "2026-11-01",
+    "type": "quiz"
+  },
+  {
+    "slug": "ariake-garden",
+    "postedAt": "2026-11-04",
+    "type": "intro"
+  },
+  {
+    "slug": "ark-hills-south-tower",
+    "postedAt": "2026-11-04",
+    "type": "intro"
+  },
+  {
+    "slug": "expo2025-osaka-ring",
+    "postedAt": "2026-11-04",
+    "type": "intro"
+  },
+  {
+    "slug": "fukuoka-daimyo-garden-city",
+    "postedAt": "2026-11-04",
+    "type": "intro"
+  },
+  {
+    "slug": "elza-tower-55",
+    "postedAt": "2026-11-04",
+    "type": "quiz"
+  },
+  {
+    "slug": "yokohama-hammerhead",
+    "postedAt": "2026-11-05",
+    "type": "intro"
+  },
+  {
+    "slug": "nihonbashi-muromachi-mitsui-tower",
+    "postedAt": "2026-11-05",
+    "type": "intro"
+  },
+  {
+    "slug": "sendai-ss30",
+    "postedAt": "2026-11-05",
+    "type": "intro"
+  },
+  {
+    "slug": "msb-tamachi",
+    "postedAt": "2026-11-05",
+    "type": "intro"
+  },
+  {
+    "slug": "shinjuku-i-land-tower",
+    "postedAt": "2026-11-05",
+    "type": "quiz"
+  },
+  {
+    "slug": "sendai-mediatheque",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "kanazawa-21st-century-museum",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "osaka-nakanoshima-museum-of-art",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "roppongi-t-cube",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "tokyo-bunka-kaikan",
+    "postedAt": "2026-11-08",
+    "type": "quiz"
+  },
+  {
+    "slug": "aoi-tower-shizuoka",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "cielia-tower-nakanoshima",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "city-tower-osaka-tenma",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "d-tower-nishi-shinjuku",
+    "postedAt": "2026-11-08",
+    "type": "intro"
+  },
+  {
+    "slug": "daikanyama-address-tower",
+    "postedAt": "2026-11-08",
+    "type": "quiz"
+  },
+  {
+    "slug": "ariake-arena",
+    "postedAt": "2026-11-10",
+    "type": "intro"
+  },
+  {
+    "slug": "vantelin-dome-nagoya",
+    "postedAt": "2026-11-10",
+    "type": "intro"
+  },
+  {
+    "slug": "kyocera-dome-osaka",
+    "postedAt": "2026-11-10",
+    "type": "intro"
+  },
+  {
+    "slug": "chubu-centrair-airport",
+    "postedAt": "2026-11-10",
+    "type": "intro"
+  },
+  {
+    "slug": "yokohama-arena",
+    "postedAt": "2026-11-10",
+    "type": "quiz"
+  },
+  {
+    "slug": "fukuoka-paypay-dome",
+    "postedAt": "2026-11-11",
+    "type": "intro"
+  },
+  {
+    "slug": "kabukiza-tower",
+    "postedAt": "2026-11-11",
+    "type": "intro"
+  },
+  {
+    "slug": "kyoto-tower",
+    "postedAt": "2026-11-11",
+    "type": "intro"
+  },
+  {
+    "slug": "jr-shinjuku-miraina-tower",
+    "postedAt": "2026-11-11",
+    "type": "intro"
+  },
+  {
+    "slug": "kachidoki-the-tower",
+    "postedAt": "2026-11-11",
+    "type": "quiz"
+  },
+  {
+    "slug": "grand-hyatt-tokyo",
+    "postedAt": "2026-11-12",
+    "type": "intro"
+  },
+  {
+    "slug": "granship",
+    "postedAt": "2026-11-12",
+    "type": "intro"
+  },
+  {
+    "slug": "haneda-innovation-city",
+    "postedAt": "2026-11-12",
+    "type": "intro"
+  },
+  {
+    "slug": "herbis-osaka",
+    "postedAt": "2026-11-12",
+    "type": "intro"
+  },
+  {
+    "slug": "hirakawacho-mori-tower",
+    "postedAt": "2026-11-12",
+    "type": "quiz"
+  },
+  {
+    "slug": "dentsu-shiodome",
+    "postedAt": "2026-11-14",
+    "type": "intro"
+  },
+  {
+    "slug": "hibiya-fort-tower",
+    "postedAt": "2026-11-14",
+    "type": "intro"
+  },
+  {
+    "slug": "hiroshima-jp-building",
+    "postedAt": "2026-11-14",
+    "type": "intro"
+  },
+  {
+    "slug": "hiroshima-station-minamoa",
+    "postedAt": "2026-11-14",
+    "type": "intro"
+  },
+  {
+    "slug": "intercontinental-tokyo-bay",
+    "postedAt": "2026-11-14",
+    "type": "quiz"
+  },
+  {
+    "slug": "escon-field-hokkaido",
+    "postedAt": "2026-11-18",
+    "type": "intro"
+  },
+  {
+    "slug": "ishikawa-prefectural-office",
+    "postedAt": "2026-11-18",
+    "type": "intro"
+  },
+  {
+    "slug": "kabuto-one",
+    "postedAt": "2026-11-18",
+    "type": "intro"
+  },
+  {
+    "slug": "kachidoki-view-tower",
+    "postedAt": "2026-11-18",
+    "type": "intro"
+  },
+  {
+    "slug": "kaikyo-yume-tower",
+    "postedAt": "2026-11-18",
+    "type": "quiz"
+  },
+  {
+    "slug": "conforia-shinjuku-eastside-tower",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kanda-square",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kanmon-bridge",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kddi-building-shinjuku",
+    "postedAt": "2026-11-20",
+    "type": "intro"
+  },
+  {
+    "slug": "kdx-yokohama-minatomirai-tower",
+    "postedAt": "2026-11-20",
+    "type": "quiz"
+  },
+  {
+    "slug": "keio-plaza-hotel-tokyo",
+    "postedAt": "2026-11-21",
+    "type": "intro"
+  },
+  {
+    "slug": "kobe-crystal-tower",
+    "postedAt": "2026-11-21",
+    "type": "intro"
+  },
+  {
+    "slug": "la-tour-shinjuku",
+    "postedAt": "2026-11-21",
+    "type": "intro"
+  },
+  {
+    "slug": "kitakyushu-museum-of-art",
+    "postedAt": "2026-11-21",
+    "type": "intro"
+  },
+  {
+    "slug": "kiyosubashi",
+    "postedAt": "2026-11-21",
+    "type": "quiz"
+  },
+  {
+    "slug": "edo-tokyo-museum",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "miraikan",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "mode-gakuen-spiral-towers",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "makuhari-messe",
+    "postedAt": "2026-11-23",
+    "type": "intro"
+  },
+  {
+    "slug": "nakanoshima-festival-tower",
+    "postedAt": "2026-11-23",
+    "type": "quiz"
+  },
+  {
+    "slug": "abeno-harukas",
+    "postedAt": "2026-11-24",
+    "type": "intro"
+  },
+  {
+    "slug": "akashi-kaikyo-bridge",
+    "postedAt": "2026-11-24",
+    "type": "intro"
+  },
+  {
+    "slug": "ark-mori-building",
+    "postedAt": "2026-11-24",
+    "type": "intro"
+  },
+  {
+    "slug": "cerulean-tower",
+    "postedAt": "2026-11-24",
+    "type": "intro"
+  },
+  {
+    "slug": "air-rise-tower",
+    "postedAt": "2026-11-24",
+    "type": "quiz"
+  },
+  {
+    "slug": "azabudai-hills-mori-jp-tower",
+    "postedAt": "2026-11-27",
+    "type": "intro"
+  },
+  {
+    "slug": "tokyo-skytree",
+    "postedAt": "2026-11-27",
+    "type": "intro"
+  },
+  {
+    "slug": "shibuya-scramble-square",
+    "postedAt": "2026-11-27",
+    "type": "intro"
+  },
+  {
+    "slug": "roppongi-hills-mori-tower",
+    "postedAt": "2026-11-27",
+    "type": "intro"
+  },
+  {
+    "slug": "kasumigaseki-building",
+    "postedAt": "2026-11-27",
     "type": "quiz"
   }
 ]

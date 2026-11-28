@@ -11,6 +11,9 @@ architect: "日建設計"
 tags: ["千代田区", "大手町", "超高層ビル", "メディア"]
 publishedAt: 2026-08-22
 summary: "千代田区大手町に2013年竣工した地上33階・高さ200mの超高層ビル。読売新聞東京本社の拠点であり、低層部に多目的ホールを内包する複合構成が特徴。設計は日建設計、施工は清水建設が手がけた。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Yomiuri_Shimbun_Tokyo_Headquarters_Building_2.jpg/1280px-Yomiuri_Shimbun_Tokyo_Headquarters_Building_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Kakidai / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Yomiuri_Shimbun_Tokyo_Headquarters_Building_2.jpg"
 verified: true
 sources: ["日経クロステック「読売新聞ビル竣工、大手町エリア最高の200m」2013年11月28日 (xtech.nikkei.com/kn/article/building/news/20131127/642109/)", "オフィスナビ「読売新聞ビル（千代田区大手町）のビル情報」(office-navi.jp/building/02034008/)"]
 ---

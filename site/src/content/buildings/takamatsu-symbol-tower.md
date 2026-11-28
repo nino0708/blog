@@ -11,6 +11,9 @@ heightM: 151.3
 tags: ["高松市", "超高層ビル", "四国", "サンポート高松"]
 publishedAt: 2026-10-17
 summary: "2004年開業、高さ151.3メートル、地上30階。四国最高層を誇る複合タワーで、高松港に隣接するサンポート高松再開発地区の核施設として整備された。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Takamatsu_Symbol_Tower_20170121.jpg/1280px-Takamatsu_Symbol_Tower_20170121.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Suicasmo / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Takamatsu_Symbol_Tower_20170121.jpg"
 verified: true
 sources: ["サンポート高松公式サイト（要最終確認）", "高松市資料（要最終確認）"]
 ---
