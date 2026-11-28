@@ -38,6 +38,8 @@ const toolIcons: Record<string, string> = {
   rankings: 'M5 20V11M12 20V4M19 20v-6',
   stamps: 'M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z',
 };
+// 新着の下の「一覧をすべて見る」リンク。先頭はビル・マンション、続けて橋・高速道路・交通網・観光。
+const feedLists = readItems(lang);
 const tools = toolItems(lang).map((i) => ({ ...i, icon: toolIcons[i.href.split('/').filter(Boolean).pop() ?? ''] }));
 
 // カテゴリ: 記事数と、いちばん新しい写真つき記事の写真
@@ -114,6 +116,11 @@ const [titleA, titleB] = t('home.title2').split('\n');
     <div class="grid grid-feed">
       {latest.map((post, i) => <PostCard lang={lang} post={post} priority={i === 0} />)}
     </div>
+    <nav class="feed-more" aria-label={t('home.feed.more.label')}>
+      {feedLists.map((i, n) => (
+        <a href={i.href}>{n === 0 ? t('home.feed.more') : t('home.feed.more.other').replace('%s', i.label)}</a>
+      ))}
+    </nav>
   </section>
 
   <section class="home-section">

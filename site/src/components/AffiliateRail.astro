@@ -72,7 +72,7 @@ const cards = [
       z-index: 5;
       padding: 16px 16px 14px;
       border-radius: 16px;
-      background: rgba(255, 255, 255, 0.72);
+      background: var(--surface-glass);
       backdrop-filter: saturate(1.4) blur(12px);
       -webkit-backdrop-filter: saturate(1.4) blur(12px);
       border: 1px solid var(--line);
@@ -98,10 +98,10 @@ const cards = [
       background: transparent; color: var(--text-muted); font-size: 1.05rem;
       transition: background 0.15s ease, color 0.15s ease;
     }
-    .aff-rail-close:hover { background: rgba(0, 0, 0, 0.06); color: var(--text); }
+    .aff-rail-close:hover { background: var(--hover-bg-strong); color: var(--text); }
 
     .aff-rail-pr {
-      display: inline-block; font-size: 0.6rem; font-weight: 700; color: #fff;
+      display: inline-block; font-size: 0.6rem; font-weight: 700; color: var(--surface);
       background: var(--text-muted); padding: 1px 6px; border-radius: 4px; letter-spacing: 0.04em;
     }
     .aff-rail-eyebrow {
@@ -115,7 +115,7 @@ const cards = [
     .aff-rail-cta {
       display: block; text-align: center;
       padding: 9px 10px; border-radius: 999px;
-      background: var(--brand); color: #fff; font-size: 0.8rem; font-weight: 700;
+      background: var(--brand); color: var(--on-brand); font-size: 0.8rem; font-weight: 700;
       text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
     .aff-rail-cta:hover {

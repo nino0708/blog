@@ -84,6 +84,9 @@ const websiteLd = {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1015" media="(prefers-color-scheme: dark)" />
     <!-- JS有効を示すクラスを描画前に付与(スクロール演出の初期非表示はJS有効時のみ＝no-JSでも内容は必ず表示) -->
     <script is:inline>document.documentElement.classList.add('js');</script>
     <title>{fullTitle}</title>

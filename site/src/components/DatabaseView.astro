@@ -314,7 +314,7 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
     transition: all 0.15s ease;
   }
   .db-chip:hover { border-color: var(--brand); color: var(--brand); }
-  .db-chip.is-active { background: var(--brand); border-color: var(--brand); color: #fff; }
+  .db-chip.is-active { background: var(--brand); border-color: var(--brand); color: var(--on-brand); }
   .db-sort { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(--text-muted); }
   .db-sort select {
     border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px;
@@ -345,7 +345,7 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
   .h-val { display: block; }
   .h-bar { display: block; height: 4px; margin-top: 4px; border-radius: 2px; background: var(--brand-soft); overflow: hidden; }
   .h-bar span { display: block; height: 100%; background: var(--brand); border-radius: 2px; }
-  .badge.tower { background: #e7f0ea; color: #2e7d52; }
+  .badge.tower { background: var(--badge-tower-bg); color: var(--badge-tower-fg); }
   .db-read { font-weight: 700; font-size: 0.85rem; color: var(--brand); }
   .db-stub {
     font-size: 0.74rem; font-weight: 700; color: var(--text-muted);
@@ -375,7 +375,7 @@ const cities = [...cityCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].loca
   }
   .db-stamp-btn:hover { border-color: var(--brand); color: var(--brand); }
   .db-stamp-btn.is-stamped {
-    background: var(--brand); border-color: var(--brand); color: #fff;
+    background: var(--brand); border-color: var(--brand); color: var(--on-brand);
   }
   .rank-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 16px; }
 

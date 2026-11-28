@@ -65,15 +65,15 @@ const t = useT(lang);
     color: var(--brand); font-weight: 800; font-size: 0.95rem;
     transition: all 0.15s ease;
   }
-  .stamp-btn:hover { background: var(--brand); color: #fff; }
-  .stamp-btn:hover .stamp-seal { border-color: #fff; }
+  .stamp-btn:hover { background: var(--brand); color: var(--on-brand); }
+  .stamp-btn:hover .stamp-seal { border-color: var(--on-brand); }
   .stamp-seal {
     width: 18px; height: 18px; border-radius: 50%;
     border: 2px dashed var(--brand); flex: none;
     transition: all 0.15s ease;
   }
   .stamp-btn.is-stamped {
-    background: var(--brand); border-color: var(--brand); color: #fff;
+    background: var(--brand); border-color: var(--brand); color: var(--on-brand);
     box-shadow: var(--shadow);
   }
   .stamp-btn.is-stamped .stamp-seal {
