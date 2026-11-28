@@ -34,12 +34,14 @@ interface Props {
   /** 同じカテゴリの前後の記事(新しい記事 / 古い記事) */
   newer?: { title: string; href: string };
   older?: { title: string; href: string };
+  /** 本文の見出し(h2)。2つ以上あれば本文の前に目次を出す */
+  toc?: { slug: string; text: string }[];
 }
 const {
   lang, title, summary, area, categoryLabel, verified,
   heroImage, heroImageCredit, heroImageLink,
   tags, tagBase, linkableTags = [], sources, listPath,
-  related = [], booksKeyword, mapLabel, newer, older,
+  related = [], booksKeyword, mapLabel, newer, older, toc = [],
 } = Astro.props;
 const t = useT(lang);
 const commonsLabel = lang === 'ja' ? 'Wikimedia Commons' : 'via Wikimedia Commons';
@@ -75,6 +77,15 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
         </figcaption>
       )}
     </figure>
+  )}
+
+  {toc.length >= 2 && (
+    <nav class="toc" aria-label={t('toc.title')}>
+      <p class="toc-title">{t('toc.title')}</p>
+      <ol>
+        {toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+      </ol>
+    </nav>
   )}
 
   <slot />
@@ -141,8 +152,8 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${q}`;
     aspect-ratio: 16 / 9;
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--line-soft);
+    background: var(--wash);
   }
   .map-embed iframe {
     position: absolute;

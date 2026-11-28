@@ -19,7 +19,9 @@ export async function getStaticPaths() {
 }
 
 const { lang, post } = Astro.props as { lang: Lang; post: BuildingPost };
-const { Content } = await post.entry.render();
+const { Content, headings } = await post.entry.render();
+// 目次は本文のh2だけ(idはAstroがMarkdownの見出しに自動で付ける)
+const toc = headings.filter((h) => h.depth === 2).map((h) => ({ slug: h.slug, text: h.text }));
 const f = post.facts; // 数値の事実(日本語版が出典)
 const ja = lang === 'ja';
 
@@ -161,6 +163,7 @@ const nearHref = hasCoords
     crumbs={crumbs}
     newer={newer}
     older={older}
+    toc={toc}
   >
     <Content />
   </BuildingArticle>
