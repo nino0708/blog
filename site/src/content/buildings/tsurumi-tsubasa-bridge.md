@@ -7,6 +7,9 @@ completedYear: 1994
 tags: ["横浜市", "斜張橋", "橋梁", "京浜工業地帯", "国道357号"]
 publishedAt: 2026-11-18
 summary: "1994年開通、国道357号（東京湾岸道路）に架かる横浜市鶴見区の大型斜張橋。京浜工業地帯の港湾エリアを跨ぎ、東京湾岸を結ぶ幹線道路のランドマーク的な構造物。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Tsurumi-tsubasa-bridge.jpg/1280px-Tsurumi-tsubasa-bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "LERK / CC BY 2.5"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Tsurumi-tsubasa-bridge.jpg"
 verified: true
 sources: ["Wikipedia「鶴見つばさ橋」（概要）"]
 ---

@@ -10,6 +10,9 @@ developer: "東京都"
 tags: ["江東区", "市場", "豊洲", "再開発"]
 publishedAt: 2026-11-24
 summary: "2018年に開場した日本最大規模の中央卸売市場。東京ガスの工場跡地に整備された閉鎖型の施設で、徹底した温度管理のもとで鮮魚・青果の流通を担う。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Arne Müseler / CC BY-SA 3.0 de"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:Toyosu_Market_Tokyo_2.jpg"
 verified: true
 sources: ["東京都中央卸売市場 豊洲市場 公式サイト", "東京都 豊洲市場整備の概要"]
 ---

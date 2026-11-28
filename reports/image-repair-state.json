@@ -539,19 +539,19 @@
     "reason": "記事mdが見つからない"
   },
   "orix-honmachi-building": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "shinjuku-takashimaya-times-square": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "yodobashi-akihabara": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   },
   "yokohama-new-city-hall": {
-    "attempts": 1,
+    "attempts": 2,
     "reason": "確信できる外観画像が見つからない"
   }
 }

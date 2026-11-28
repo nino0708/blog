@@ -14,6 +14,9 @@ architect: "日本設計"
 tags: ["渋谷区", "渋谷", "複合施設", "クリエイター", "再開発"]
 publishedAt: 2026-09-24
 summary: "2017年に東急が開業した地上16階・高さ約67mの複合施設。商業・シェアオフィス・賃貸住宅を縦積みし、大規模再開発とは異なるスケール感で渋谷の街を更新した建物。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/SHIBUYA_CAST.jpg/1280px-SHIBUYA_CAST.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "しんぎんぐきゃっと / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:SHIBUYA_CAST.jpg"
 verified: true
 sources: ["渋谷キャスト - Wikipedia（地上16階・地下2階・高さ66.97m・2017年4月竣工・渋谷区渋谷1丁目・設計：日本設計・大成建設JV）", "SHIBUYA CAST. 公式（東急株式会社開発・商業・シェアオフィス・賃貸住宅の複合施設）", "日刊建設工業新聞（2017年4月28日開業）"]
 ---

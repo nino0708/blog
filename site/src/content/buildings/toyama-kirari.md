@@ -12,6 +12,9 @@ architect: "隈研吾建築都市設計事務所"
 tags: ["富山市", "ガラス美術館", "隈研吾", "図書館"]
 publishedAt: 2026-11-19
 summary: "2015年開館、隈研吾設計の複合施設。ガラス・アルミ・白御影石の1,000枚のパネルが織りなす外観と、富山市立図書館・富山市ガラス美術館を収めた地上6階建て。"
+heroImage: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/TOYAMA_KIRARI_Toyama_Glass_Art_Museum_ac_%282%29.jpg/1280px-TOYAMA_KIRARI_Toyama_Glass_Art_Museum_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+heroImageCredit: "Asturio Cantabrio / CC BY-SA 4.0"
+heroImageLink: "https://commons.wikimedia.org/wiki/File:TOYAMA_KIRARI_Toyama_Glass_Art_Museum_ac_(2).jpg"
 verified: true
 sources: ["富山市ガラス美術館 公式サイト", "隈研吾建築都市設計事務所 作品情報"]
 ---
